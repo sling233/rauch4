@@ -1,0 +1,21 @@
+import math
+import numpy as np
+str1 = "particle minecraft:dust_color_transition 0.7 0 0.3 1 0 0 0 ~"
+def circle(r,d):
+    c = []
+    dh = int(d/2)
+    for z in range(dh):
+        a = math.sin(math.pi*z/(dh-1)-math.pi/2)
+        p = math.cos(np.arcsin(a))
+
+        dn = int(round(abs(p)*d,0))
+
+        if dn != 0:
+            for i in range(dn-1):
+                step = 2*math.pi*i/(dn-1)
+                c.append(str1 + str(round(r*p*math.sin(step),3)) + " ~" + str(round(a*r,3)) + " ~" + str(round(r*p*math.cos(step),3)) + " 0 0 0 1 1 force" )
+                #c.append(step)
+    return "\n".join(c)
+    #return(c)
+
+print(circle(3,40))

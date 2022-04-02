@@ -1,0 +1,52 @@
+playsound minecraft:block.respawn_anchor.set_spawn master @s
+/playsound minecraft:block.respawn_anchor.deplete master @s
+
+mit armor toughness 9999999:
+dmg = wepondmg * (1-armor/25)
+
+add features:
+  mehr sounds
+  mehr partikel
+  items für progression und so, deathmatch evtl geld am anfang, koth geld mit zeit und kills
+
+  f andere fähigkeit
+    zarzahn recall point(zerstörbar)
+    raucher damage buff für team
+    hacker q hackbombe
+    hacker f ffähigkeitswolke
+    hacker r vielleicht estwas ändern
+    tele double dash
+    tank q vielleicht etwas ändern
+    tank f
+
+  MARKER
+  raucher woolken rework
+  raucher q ist boring
+
+  wip - 99% - neuer modus team deathmatch (first to 100 kills)
+    braucht noch minimale optimierungen / polishing vielleicht ist es sogar fertig idk
+
+  bugs:
+  12 leute maximal
+  einmal hab ich zahrzahnstun und zahrzahn hook den tag behalten
+  evtl werden killmessages gespammt nachdem das game zuende ist weil mc dumm ist und denkt /kill wären kills aber mal sehen
+  wenn in queue kann man andere teams schlagen
+
+  falls ich mal ne debug funktion mache:
+    teste nach lobby armorstand, map armorstands, evtl duplikationen davon, tags
+
+  ######done#######
+  #fähigkeiten mit damage increase
+  #bolt q rework
+  #blaster projectile
+  #wenn bolt während q trifft und stirbt ist seine nächste q immer getroffen bei dieser person
+  #neuer modus : teestmodus
+  #  lobby system verbessern
+  #    team manager
+  #    anderer kram
+  #stun armorstands nach game deleten
+  #entity cramming automatisch ausmachgen
+  #bolt debuff game ende entfernen
+  #automatisch falldamage aus
+  #automatisch deathmessage aus
+  #team collision rules automatisch rumstellen
