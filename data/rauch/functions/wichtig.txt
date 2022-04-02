@@ -4,14 +4,14 @@ playsound minecraft:block.respawn_anchor.set_spawn master @s
 mit armor toughness 9999999:
 dmg = wepondmg * (1-armor/25)
 dmg values:
-bolt: 28
+bolt: 28, r 48
 zar: 28
 rau: 16
 hac: 24
 bow: 8
 tlele: 30
 tank: 20
-pik: 22
+pik: 22, q:96 fast: 92 (138)
 
 add features:
   mehr sounds
@@ -37,6 +37,7 @@ add features:
     braucht noch minimale optimierungen / polishing vielleicht ist es sogar fertig idk
 
   bugs:
+  zarzahn hook wenn stirbt wird zu spectator gezogen
   time since rest resets nach tot, sachen fixcen
   bolt ich hatte bolt_hitby  auf 4, hab nur mit wocka gespielt, er war bolt. vermutlich wegen nem hack oder death oder so
   12 leute maximal
