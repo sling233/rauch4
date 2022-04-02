@@ -45,7 +45,6 @@ scoreboard objectives remove death.custom:minecraft.deaths
 scoreboard objectives remove decode
 scoreboard objectives remove drop
 scoreboard objectives remove dropcoas
-scoreboard objectives remove elytracool
 scoreboard objectives remove stats_g_damage_d
 scoreboard objectives remove stats_g_damage_t
 scoreboard objectives remove stats_g_deaths
@@ -185,19 +184,6 @@ bossbar remove stun9
 bossbar remove stun10
 bossbar remove stun11
 bossbar remove stun12
-
-bossbar remove elytra1
-bossbar remove elytra2
-bossbar remove elytra3
-bossbar remove elytra4
-bossbar remove elytra5
-bossbar remove elytra6
-bossbar remove elytra7
-bossbar remove elytra8
-bossbar remove elytra9
-bossbar remove elytra10
-bossbar remove elytra11
-bossbar remove elytra12
 
 bossbar remove speed1
 bossbar remove speed2

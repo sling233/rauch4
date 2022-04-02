@@ -110,19 +110,6 @@ execute store result bossbar minecraft:respawn10 value run scoreboard players ge
 execute store result bossbar minecraft:respawn11 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=11}] respawntimer
 execute store result bossbar minecraft:respawn12 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=12}] respawntimer
 
-execute store result bossbar minecraft:elytra1 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=1}] elytracool
-execute store result bossbar minecraft:elytra2 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=2}] elytracool
-execute store result bossbar minecraft:elytra3 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=3}] elytracool
-execute store result bossbar minecraft:elytra4 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=4}] elytracool
-execute store result bossbar minecraft:elytra5 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=5}] elytracool
-execute store result bossbar minecraft:elytra6 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=6}] elytracool
-execute store result bossbar minecraft:elytra7 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=7}] elytracool
-execute store result bossbar minecraft:elytra8 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=8}] elytracool
-execute store result bossbar minecraft:elytra9 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=9}] elytracool
-execute store result bossbar minecraft:elytra10 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=10}] elytracool
-execute store result bossbar minecraft:elytra11 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=11}] elytracool
-execute store result bossbar minecraft:elytra12 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=12}] elytracool
-
 execute store result bossbar minecraft:speed1 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=1}] fly
 execute store result bossbar minecraft:speed2 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=2}] fly
 execute store result bossbar minecraft:speed3 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=3}] fly
@@ -238,19 +225,6 @@ bossbar set minecraft:respawn9 players @a[tag=game,tag=dead,scores={pnum=9}]
 bossbar set minecraft:respawn10 players @a[tag=game,tag=dead,scores={pnum=10}]
 bossbar set minecraft:respawn11 players @a[tag=game,tag=dead,scores={pnum=11}]
 bossbar set minecraft:respawn12 players @a[tag=game,tag=dead,scores={pnum=12}]
-
-bossbar set minecraft:elytra1 players @a[tag=game,scores={pnum=1,elytracool=..160,kit=8}]
-bossbar set minecraft:elytra2 players @a[tag=game,scores={pnum=2,elytracool=..160,kit=8}]
-bossbar set minecraft:elytra3 players @a[tag=game,scores={pnum=3,elytracool=..160,kit=8}]
-bossbar set minecraft:elytra4 players @a[tag=game,scores={pnum=4,elytracool=..160,kit=8}]
-bossbar set minecraft:elytra5 players @a[tag=game,scores={pnum=5,elytracool=..160,kit=8}]
-bossbar set minecraft:elytra6 players @a[tag=game,scores={pnum=6,elytracool=..160,kit=8}]
-bossbar set minecraft:elytra7 players @a[tag=game,scores={pnum=7,elytracool=..160,kit=8}]
-bossbar set minecraft:elytra8 players @a[tag=game,scores={pnum=8,elytracool=..160,kit=8}]
-bossbar set minecraft:elytra9 players @a[tag=game,scores={pnum=9,elytracool=..160,kit=8}]
-bossbar set minecraft:elytra10 players @a[tag=game,scores={pnum=10,elytracool=..160,kit=8}]
-bossbar set minecraft:elytra11 players @a[tag=game,scores={pnum=11,elytracool=..160,kit=8}]
-bossbar set minecraft:elytra12 players @a[tag=game,scores={pnum=12,elytracool=..160,kit=8}]
 
 bossbar set minecraft:speed1 players @a[tag=game,scores={pnum=1,fly=1..}]
 bossbar set minecraft:speed2 players @a[tag=game,scores={pnum=2,fly=1..}]

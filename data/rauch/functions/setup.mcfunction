@@ -49,7 +49,6 @@ scoreboard objectives add death minecraft.custom:minecraft.deaths
 scoreboard objectives add decode dummy
 scoreboard objectives add drop minecraft.custom:minecraft.drop
 scoreboard objectives add dropcoas minecraft.dropped:minecraft.carrot_on_a_stick
-scoreboard objectives add elytracool minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add stats_g_damage_d minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add stats_g_damage_t minecraft.custom:minecraft.damage_taken
 scoreboard objectives add stats_g_deaths minecraft.custom:minecraft.deaths
@@ -388,43 +387,6 @@ bossbar set minecraft:stun11 max 40
 bossbar add stun12 {"text":"Stunned","color":"red"}
 bossbar set minecraft:stun12 color red
 bossbar set minecraft:stun12 max 40
-
-bossbar add elytra1 {"text":"Elytra","color":"yellow"}
-bossbar set minecraft:elytra1 color yellow
-bossbar set minecraft:elytra1 max 160
-bossbar add elytra2 {"text":"Elytra","color":"yellow"}
-bossbar set minecraft:elytra2 color yellow
-bossbar set minecraft:elytra2 max 160
-bossbar add elytra3 {"text":"Elytra","color":"yellow"}
-bossbar set minecraft:elytra3 color yellow
-bossbar set minecraft:elytra3 max 160
-bossbar add elytra4 {"text":"Elytra","color":"yellow"}
-bossbar set minecraft:elytra4 color yellow
-bossbar set minecraft:elytra4 max 160
-bossbar add elytra5 {"text":"Elytra","color":"yellow"}
-bossbar set minecraft:elytra5 color yellow
-bossbar set minecraft:elytra5 max 160
-bossbar add elytra6 {"text":"Elytra","color":"yellow"}
-bossbar set minecraft:elytra6 color yellow
-bossbar set minecraft:elytra6 max 160
-bossbar add elytra7 {"text":"Elytra","color":"yellow"}
-bossbar set minecraft:elytra7 color yellow
-bossbar set minecraft:elytra7 max 160
-bossbar add elytra8 {"text":"Elytra","color":"yellow"}
-bossbar set minecraft:elytra8 color yellow
-bossbar set minecraft:elytra8 max 160
-bossbar add elytra9 {"text":"Elytra","color":"yellow"}
-bossbar set minecraft:elytra9 color yellow
-bossbar set minecraft:elytra9 max 160
-bossbar add elytra10 {"text":"Elytra","color":"yellow"}
-bossbar set minecraft:elytra10 color yellow
-bossbar set minecraft:elytra10 max 160
-bossbar add elytra11 {"text":"Elytra","color":"yellow"}
-bossbar set minecraft:elytra11 color yellow
-bossbar set minecraft:elytra11 max 160
-bossbar add elytra12 {"text":"Elytra","color":"yellow"}
-bossbar set minecraft:elytra12 color yellow
-bossbar set minecraft:elytra12 max 160
 
 bossbar add speed1 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed1 color green
