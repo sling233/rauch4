@@ -19,7 +19,7 @@ execute as @s[scores={kit=8,flyerFSchedule=0}] run effect clear @s minecraft:lev
 execute as @s[scores={kit=8,flyerQSchedule=..-1}] run function rauch:game/core/ability/class/flyer/q/schedule
 execute as @s[scores={kit=8,fly=1..},tag=!flying] run tag @s add flying
 execute as @s[scores={kit=8},tag=flying] unless score @s fly matches 1.. run function rauch:game/core/ability/class/flyer/f/land
-execute as @s[scores={kit=8,fly=80..},tag=!fast] run function rauch:game/core/ability/class/flyer/f/fast
+execute as @s[scores={kit=8,fly=85..},tag=!fast] run function rauch:game/core/ability/class/flyer/f/fast
 #general
 execute as @s[scores={hack=0..}] run function rauch:game/core/mechanics/hacked
 execute as @s[scores={teleweak=0..}] run function rauch:game/core/ability/class/teleporter/r/debuff

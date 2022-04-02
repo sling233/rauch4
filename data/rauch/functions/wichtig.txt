@@ -33,9 +33,9 @@ add features:
   raucher woolken rework
   raucher q ist boring
 
-  wip - 99% - neuer modus team deathmatch (first to 100 kills)
-    braucht noch minimale optimierungen / polishing vielleicht ist es sogar fertig idk
-
+  respawn deathmatch braucht noch minimale optimierungen / polishing vielleicht ist es sogar fertig idk
+  capture the flag braucht noch minimale optimierungen / polishing vielleicht ist es sogar fertig idk
+ 
   bugs:
   zarzahn hook wenn stirbt wird zu spectator gezogen
   time since rest resets nach tot, sachen fixcen
