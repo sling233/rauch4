@@ -4,7 +4,7 @@ playsound minecraft:block.respawn_anchor.set_spawn master @s
 mit armor toughness 9999999:
 dmg = wepondmg * (1-armor/25)
 dmg values:
-bolt:
+bolt: true
 zar:
 rau:
 hac:
