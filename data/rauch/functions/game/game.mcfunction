@@ -29,3 +29,4 @@ execute if entity @a[tag=game] if score Global mode matches 0 run function rauch
 execute if entity @a[tag=game] if score Global mode matches 1 run function rauch:game/king_of_the_hill/king_of_the_hill
 execute if entity @a[tag=game] if score Global mode matches 2 run function rauch:game/respawn_deathmatch/respawn_deathmatch
 execute if entity @a[tag=game] if score Global mode matches 3 run function rauch:game/practice/practice
+execute if entity @a[tag=game] if score Global mode matches 4 run function rauch:game/capture_the_flag/capture_the_flag

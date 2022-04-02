@@ -105,6 +105,12 @@ scoreboard objectives add zPos dummy
 scoreboard objectives add killNumRed dummy
 scoreboard objectives add killNumBlue dummy
 scoreboard objectives add killsDisplay dummy {"text":"Kills","color":"yellow"}
+#capture_the_flag
+scoreboard objectives add flagDistanceBlue dummy
+scoreboard objectives add flagDistanceRed dummy
+scoreboard objectives add flag_points_red dummy
+scoreboard objectives add flag_points_blue dummy
+scoreboard objectives add flagDisplay dummy {"text":"Points","color":"yellow"}
 
 scoreboard players set Global 0 0
 scoreboard players set Global 1 1
@@ -120,7 +126,7 @@ scoreboard players set Global 256 256
 scoreboard players set Global 512 512
 scoreboard players set Global 1024 1024
 scoreboard players set Global 2048 2048
-execute unless score Global mode matches 0..3 run scoreboard players set Global mode 0
+execute unless score Global mode matches 0..4 run scoreboard players set Global mode 0
 
 scoreboard objectives setdisplay belowName Health
 scoreboard objectives setdisplay list health_display
