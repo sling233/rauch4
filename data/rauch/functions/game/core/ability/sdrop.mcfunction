@@ -7,9 +7,9 @@ execute as @s[scores={kit=6,cool2=0},predicate=!rauch:sneak,predicate=rauch:skil
 execute as @s[scores={kit=7,cool2=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/core/ability/class/tank/q
 execute as @s[scores={kit=8,cool2=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/core/ability/class/flyer/q
 
-execute as @s[predicate=rauch:hack] run tellraw @s {"text":"You are hacked and cannot activate your skill!","color":"red"}
+execute as @s[predicate=rauch:hack] run tellraw @s {"text":"You are hacked and cannot use your abilities!","color":"red"}
 execute as @s[predicate=rauch:hack] run playsound minecraft:block.chain.break master @s
-execute as @s[predicate=rauch:stun] run tellraw @s {"text":"You are stunned and cannot activate your skill!","color":"red"}
+execute as @s[predicate=rauch:stun] run tellraw @s {"text":"You are stunned and cannot use your abilities!","color":"red"}
 execute as @s[predicate=rauch:stun] run playsound minecraft:block.chain.break master @s
 
 clear @s minecraft:carrot_on_a_stick

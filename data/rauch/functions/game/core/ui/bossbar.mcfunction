@@ -136,6 +136,19 @@ execute store result bossbar minecraft:speed10 value run scoreboard players get 
 execute store result bossbar minecraft:speed11 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=11}] fly
 execute store result bossbar minecraft:speed12 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=12}] fly
 
+execute store result bossbar minecraft:zarzahn_f1 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=1}] zarzahn_f
+execute store result bossbar minecraft:zarzahn_f2 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=2}] zarzahn_f
+execute store result bossbar minecraft:zarzahn_f3 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=3}] zarzahn_f
+execute store result bossbar minecraft:zarzahn_f4 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=4}] zarzahn_f
+execute store result bossbar minecraft:zarzahn_f5 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=5}] zarzahn_f
+execute store result bossbar minecraft:zarzahn_f6 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=6}] zarzahn_f
+execute store result bossbar minecraft:zarzahn_f7 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=7}] zarzahn_f
+execute store result bossbar minecraft:zarzahn_f8 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=8}] zarzahn_f
+execute store result bossbar minecraft:zarzahn_f9 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=9}] zarzahn_f
+execute store result bossbar minecraft:zarzahn_f10 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=10}] zarzahn_f
+execute store result bossbar minecraft:zarzahn_f11 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=11}] zarzahn_f
+execute store result bossbar minecraft:zarzahn_f12 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=12}] zarzahn_f
+
 bossbar set minecraft:bolt1 players @a[tag=game,scores={pnum=1,bolt=1..}]
 bossbar set minecraft:bolt2 players @a[tag=game,scores={pnum=2,bolt=1..}]
 bossbar set minecraft:bolt3 players @a[tag=game,scores={pnum=3,bolt=1..}]
@@ -251,3 +264,16 @@ bossbar set minecraft:speed9 players @a[tag=game,scores={pnum=9,fly=1..}]
 bossbar set minecraft:speed10 players @a[tag=game,scores={pnum=10,fly=1..}]
 bossbar set minecraft:speed11 players @a[tag=game,scores={pnum=11,fly=1..}]
 bossbar set minecraft:speed12 players @a[tag=game,scores={pnum=12,fly=1..}]
+
+bossbar set minecraft:zarzahn_f1 players @a[tag=game,scores={pnum=1,zarzahn_f=1..}]
+bossbar set minecraft:zarzahn_f2 players @a[tag=game,scores={pnum=2,zarzahn_f=1..}]
+bossbar set minecraft:zarzahn_f3 players @a[tag=game,scores={pnum=3,zarzahn_f=1..}]
+bossbar set minecraft:zarzahn_f4 players @a[tag=game,scores={pnum=4,zarzahn_f=1..}]
+bossbar set minecraft:zarzahn_f5 players @a[tag=game,scores={pnum=5,zarzahn_f=1..}]
+bossbar set minecraft:zarzahn_f6 players @a[tag=game,scores={pnum=6,zarzahn_f=1..}]
+bossbar set minecraft:zarzahn_f7 players @a[tag=game,scores={pnum=7,zarzahn_f=1..}]
+bossbar set minecraft:zarzahn_f8 players @a[tag=game,scores={pnum=8,zarzahn_f=1..}]
+bossbar set minecraft:zarzahn_f9 players @a[tag=game,scores={pnum=9,zarzahn_f=1..}]
+bossbar set minecraft:zarzahn_f10 players @a[tag=game,scores={pnum=10,zarzahn_f=1..}]
+bossbar set minecraft:zarzahn_f11 players @a[tag=game,scores={pnum=11,zarzahn_f=1..}]
+bossbar set minecraft:zarzahn_f12 players @a[tag=game,scores={pnum=12,zarzahn_f=1..}]

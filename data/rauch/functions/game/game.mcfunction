@@ -16,6 +16,7 @@ execute as @e[type=area_effect_cloud,tag=r_h,tag=indicator] run function rauch:g
 execute as @e[type=area_effect_cloud,tag=r_s,tag=indicator] run function rauch:game/core/ability/class/raucher/r/slow/indicator
 execute as @e[type=area_effect_cloud,tag=r_h,tag=cloud] run function rauch:game/core/ability/class/raucher/r/heal/grounded
 execute as @e[type=area_effect_cloud,tag=r_s,tag=cloud] run function rauch:game/core/ability/class/raucher/r/slow/grounded
+execute as @e[type=marker,tag=zar_point] run function rauch:game/core/ability/class/zarzahn/f/point
 
 execute as @e[type=area_effect_cloud,tag=shield] at @s run function rauch:game/core/ability/class/tank/r/shield
 execute as @e[type=area_effect_cloud,tag=hacker2] run function rauch:game/core/ability/class/hacker/q/move

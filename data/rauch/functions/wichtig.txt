@@ -3,11 +3,21 @@ playsound minecraft:block.respawn_anchor.set_spawn master @s
 
 mit armor toughness 9999999:
 dmg = wepondmg * (1-armor/25)
+dmg values:
+bolt:
+zar:
+rau:
+hac:
+bow:
+tlele:
+tank:
+pik:
 
 add features:
   mehr sounds
   mehr partikel
   items für progression und so, deathmatch evtl geld am anfang, koth geld mit zeit und kills
+  bossbars werden sehr ineffizient gehandeled
 
   f andere fähigkeit
     zarzahn recall point(zerstörbar)

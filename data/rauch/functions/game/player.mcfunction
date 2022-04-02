@@ -7,6 +7,7 @@ execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick"}]}] r
 #class specific
 execute as @s[scores={bolt=0..}] run function rauch:game/core/ability/class/bolt/q/charge
 execute as @s[scores={boltdmg=0..}] run function rauch:game/core/ability/class/bolt/q/buff
+execute as @s[scores={zarzahn_f=0..}] run function rauch:game/core/ability/class/zarzahn/f/warptimer
 execute as @s[scores={hacking=0..}] run function rauch:game/core/ability/class/hacker/q/hacking
 execute as @s[scores={tank=0..}] run function rauch:game/core/ability/class/tank/q/particle
 execute as @s[scores={tele2=0..}] run function rauch:game/core/ability/class/teleporter/q/invisible

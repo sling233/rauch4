@@ -99,6 +99,7 @@ scoreboard objectives add time_times dummy {"text":"Time until win","color":"yel
 scoreboard objectives add walk minecraft.custom:minecraft.walk_one_cm
 scoreboard objectives add xPos dummy
 scoreboard objectives add yPos dummy
+scoreboard objectives add zarzahn_f dummy
 scoreboard objectives add zarzahn_id dummy
 scoreboard objectives add zPos dummy
 #respawnDeathmatch
@@ -535,3 +536,40 @@ bossbar set minecraft:respawn11 max 120
 bossbar add respawn12 {"text":"Respawn","color":"yellow"}
 bossbar set minecraft:respawn12 color yellow
 bossbar set minecraft:respawn12 max 120
+
+bossbar add zarzahn_f1 {"text":"Warp","color":"dark_purple"}
+bossbar set minecraft:zarzahn_f1 color purple
+bossbar set minecraft:zarzahn_f1 max 200
+bossbar add zarzahn_f2 {"text":"Warp","color":"dark_purple"}
+bossbar set minecraft:zarzahn_f2 color purple
+bossbar set minecraft:zarzahn_f2 max 200
+bossbar add zarzahn_f3 {"text":"Warp","color":"dark_purple"}
+bossbar set minecraft:zarzahn_f3 color purple
+bossbar set minecraft:zarzahn_f3 max 200
+bossbar add zarzahn_f4 {"text":"Warp","color":"dark_purple"}
+bossbar set minecraft:zarzahn_f4 color purple
+bossbar set minecraft:zarzahn_f4 max 200
+bossbar add zarzahn_f5 {"text":"Warp","color":"dark_purple"}
+bossbar set minecraft:zarzahn_f5 color purple
+bossbar set minecraft:zarzahn_f5 max 200
+bossbar add zarzahn_f6 {"text":"Warp","color":"dark_purple"}
+bossbar set minecraft:zarzahn_f6 color purple
+bossbar set minecraft:zarzahn_f6 max 200
+bossbar add zarzahn_f7 {"text":"Warp","color":"dark_purple"}
+bossbar set minecraft:zarzahn_f7 color purple
+bossbar set minecraft:zarzahn_f7 max 200
+bossbar add zarzahn_f8 {"text":"Warp","color":"dark_purple"}
+bossbar set minecraft:zarzahn_f8 color purple
+bossbar set minecraft:zarzahn_f8 max 200
+bossbar add zarzahn_f9 {"text":"Warp","color":"dark_purple"}
+bossbar set minecraft:zarzahn_f9 color purple
+bossbar set minecraft:zarzahn_f9 max 200
+bossbar add zarzahn_f10 {"text":"Warp","color":"dark_purple"}
+bossbar set minecraft:zarzahn_f10 color purple
+bossbar set minecraft:zarzahn_f10 max 200
+bossbar add zarzahn_f11 {"text":"Warp","color":"dark_purple"}
+bossbar set minecraft:zarzahn_f11 color purple
+bossbar set minecraft:zarzahn_f11 max 200
+bossbar add zarzahn_f12 {"text":"Warp","color":"dark_purple"}
+bossbar set minecraft:zarzahn_f12 color purple
+bossbar set minecraft:zarzahn_f12 max 200

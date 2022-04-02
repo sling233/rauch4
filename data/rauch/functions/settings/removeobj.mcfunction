@@ -95,6 +95,7 @@ scoreboard objectives remove time_times
 scoreboard objectives remove walk
 scoreboard objectives remove xPos
 scoreboard objectives remove yPos
+scoreboard objectives remove zarzahn_f
 scoreboard objectives remove zarzahn_id
 scoreboard objectives remove zPos
 #respawnDeathmatch
@@ -249,6 +250,19 @@ bossbar remove respawn9
 bossbar remove respawn10
 bossbar remove respawn11
 bossbar remove respawn12
+
+bossbar remove zarzahn_f1
+bossbar remove zarzahn_f2
+bossbar remove zarzahn_f3
+bossbar remove zarzahn_f4
+bossbar remove zarzahn_f5
+bossbar remove zarzahn_f6
+bossbar remove zarzahn_f7
+bossbar remove zarzahn_f8
+bossbar remove zarzahn_f9
+bossbar remove zarzahn_f10
+bossbar remove zarzahn_f11
+bossbar remove zarzahn_f12
 
 team remove Red
 team remove Blue

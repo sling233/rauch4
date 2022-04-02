@@ -8,6 +8,7 @@ kill @e[type=area_effect_cloud,tag=cloud]
 kill @e[type=area_effect_cloud,tag=indicator]
 kill @e[type=area_effect_cloud,tag=projectile]
 kill @e[type=marker,tag=projectile]
+kill @e[type=marker,tag=zar_point]
 tp @e[type=slime,tag=push] ~ ~-1000 ~
 tp @e[type=slime,tag=pik_push] ~ ~-1000 ~
 
