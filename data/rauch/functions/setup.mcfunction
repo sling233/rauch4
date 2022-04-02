@@ -390,40 +390,52 @@ bossbar set minecraft:stun12 max 40
 
 bossbar add speed1 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed1 color green
-bossbar set minecraft:speed1 max 100
+bossbar set minecraft:speed1 max 160
+bossbar set minecraft:speed1 style notched_6
 bossbar add speed2 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed2 color green
-bossbar set minecraft:speed2 max 100
+bossbar set minecraft:speed2 max 160
+bossbar set minecraft:speed2 style notched_6
 bossbar add speed3 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed3 color green
-bossbar set minecraft:speed3 max 100
+bossbar set minecraft:speed3 max 160
+bossbar set minecraft:speed3 style notched_6
 bossbar add speed4 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed4 color green
-bossbar set minecraft:speed4 max 100
+bossbar set minecraft:speed4 max 160
+bossbar set minecraft:speed4 style notched_6
 bossbar add speed5 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed5 color green
-bossbar set minecraft:speed5 max 100
+bossbar set minecraft:speed5 max 160
+bossbar set minecraft:speed5 style notched_6
 bossbar add speed6 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed6 color green
-bossbar set minecraft:speed6 max 100
+bossbar set minecraft:speed6 max 160
+bossbar set minecraft:speed6 style notched_6
 bossbar add speed7 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed7 color green
-bossbar set minecraft:speed7 max 100
+bossbar set minecraft:speed7 max 160
+bossbar set minecraft:speed7 style notched_6
 bossbar add speed8 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed8 color green
-bossbar set minecraft:speed8 max 100
+bossbar set minecraft:speed8 max 160
+bossbar set minecraft:speed8 style notched_6
 bossbar add speed9 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed9 color green
-bossbar set minecraft:speed9 max 100
+bossbar set minecraft:speed9 max 160
+bossbar set minecraft:speed9 style notched_6
 bossbar add speed10 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed10 color green
-bossbar set minecraft:speed10 max 100
+bossbar set minecraft:speed10 max 160
+bossbar set minecraft:speed10 style notched_6
 bossbar add speed11 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed11 color green
-bossbar set minecraft:speed11 max 100
+bossbar set minecraft:speed11 max 160
+bossbar set minecraft:speed11 style notched_6
 bossbar add speed12 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed12 color green
-bossbar set minecraft:speed12 max 100
+bossbar set minecraft:speed12 max 160
+bossbar set minecraft:speed12 style notched_6
 
 bossbar add tank1 {"text":"Unstoppable","color":"dark_green"}
 bossbar set minecraft:tank1 color green
