@@ -105,6 +105,12 @@ scoreboard objectives add zPos dummy
 scoreboard objectives add killNumRed dummy
 scoreboard objectives add killNumBlue dummy
 scoreboard objectives add killsDisplay dummy {"text":"Kills","color":"yellow"}
+#capture_the_flag
+scoreboard objectives add flagDistanceBlue dummy
+scoreboard objectives add flagDistanceRed dummy
+scoreboard objectives add flag_points_red dummy
+scoreboard objectives add flag_points_blue dummy
+scoreboard objectives add flagDisplay dummy {"text":"Points","color":"yellow"}
 
 scoreboard players set Global 0 0
 scoreboard players set Global 1 1
@@ -120,7 +126,7 @@ scoreboard players set Global 256 256
 scoreboard players set Global 512 512
 scoreboard players set Global 1024 1024
 scoreboard players set Global 2048 2048
-execute unless score Global mode matches 0..3 run scoreboard players set Global mode 0
+execute unless score Global mode matches 0..4 run scoreboard players set Global mode 0
 
 scoreboard objectives setdisplay belowName Health
 scoreboard objectives setdisplay list health_display
@@ -390,51 +396,51 @@ bossbar set minecraft:stun12 max 40
 
 bossbar add speed1 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed1 color green
-bossbar set minecraft:speed1 max 160
+bossbar set minecraft:speed1 max 170
 bossbar set minecraft:speed1 style notched_6
 bossbar add speed2 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed2 color green
-bossbar set minecraft:speed2 max 160
+bossbar set minecraft:speed2 max 170
 bossbar set minecraft:speed2 style notched_6
 bossbar add speed3 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed3 color green
-bossbar set minecraft:speed3 max 160
+bossbar set minecraft:speed3 max 170
 bossbar set minecraft:speed3 style notched_6
 bossbar add speed4 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed4 color green
-bossbar set minecraft:speed4 max 160
+bossbar set minecraft:speed4 max 170
 bossbar set minecraft:speed4 style notched_6
 bossbar add speed5 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed5 color green
-bossbar set minecraft:speed5 max 160
+bossbar set minecraft:speed5 max 170
 bossbar set minecraft:speed5 style notched_6
 bossbar add speed6 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed6 color green
-bossbar set minecraft:speed6 max 160
+bossbar set minecraft:speed6 max 170
 bossbar set minecraft:speed6 style notched_6
 bossbar add speed7 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed7 color green
-bossbar set minecraft:speed7 max 160
+bossbar set minecraft:speed7 max 170
 bossbar set minecraft:speed7 style notched_6
 bossbar add speed8 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed8 color green
-bossbar set minecraft:speed8 max 160
+bossbar set minecraft:speed8 max 170
 bossbar set minecraft:speed8 style notched_6
 bossbar add speed9 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed9 color green
-bossbar set minecraft:speed9 max 160
+bossbar set minecraft:speed9 max 170
 bossbar set minecraft:speed9 style notched_6
 bossbar add speed10 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed10 color green
-bossbar set minecraft:speed10 max 160
+bossbar set minecraft:speed10 max 170
 bossbar set minecraft:speed10 style notched_6
 bossbar add speed11 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed11 color green
-bossbar set minecraft:speed11 max 160
+bossbar set minecraft:speed11 max 170
 bossbar set minecraft:speed11 style notched_6
 bossbar add speed12 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed12 color green
-bossbar set minecraft:speed12 max 160
+bossbar set minecraft:speed12 max 170
 bossbar set minecraft:speed12 style notched_6
 
 bossbar add tank1 {"text":"Unstoppable","color":"dark_green"}

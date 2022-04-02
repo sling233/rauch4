@@ -17,3 +17,4 @@ execute if score Global mode matches 0 run function rauch:game/deathmatch/condit
 execute if score Global mode matches 1 run function rauch:game/king_of_the_hill/conditions
 execute if score Global mode matches 2 run function rauch:game/respawn_deathmatch/conditions
 execute if score Global mode matches 3 run function rauch:game/practice/conditions
+execute if score Global mode matches 4 run function rauch:game/capture_the_flag/conditions

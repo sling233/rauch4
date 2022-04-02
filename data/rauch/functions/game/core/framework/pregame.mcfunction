@@ -42,7 +42,7 @@ item replace entity @s[scores={kit=7}] armor.feet with minecraft:diamond_boots{d
 #pikka
 item replace entity @s[scores={kit=8}] armor.chest with elytra{display:{Name:'{"text":"Cool Elytra","color":"aqua"}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
 
-item replace entity @s armor.head with oak_button{display:{Name:'{"text":"Pssssst","color":"aqua","italic":false}'},HideFlags:1,CustomModelData:0,Enchantments:[{id:"minecraft:protection",lvl:20s},{id:"minecraft:binding_curse",lvl:1s}]} 1
+item replace entity @s armor.head with warped_fungus_on_a_stick{display:{Name:'{"text":"Pssssst","color":"aqua","italic":false}'},HideFlags:1,CustomModelData:0,Enchantments:[{id:"minecraft:protection",lvl:20s},{id:"minecraft:binding_curse",lvl:1s}]} 1
 
 #effect give @s minecraft:hunger 6 255 true
 effect give @s minecraft:resistance 6 255 true
