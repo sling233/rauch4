@@ -13,5 +13,6 @@ scoreboard players operation @e[type=armor_stand,tag=map,tag=setup,limit=1] mapI
 scoreboard players set @e[type=armor_stand,tag=map,tag=adding,tag=setup] mapParticle -1
 scoreboard players set @e[type=armor_stand,tag=map,tag=adding,tag=setup] mapTime -1
 tag @e[type=armor_stand,tag=map,tag=adding,tag=setup] remove setup
+scoreboard players reset Global mapId
 
 clear @s
