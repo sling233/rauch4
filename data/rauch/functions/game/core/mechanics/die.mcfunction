@@ -19,3 +19,4 @@ clear @s carrot_on_a_stick
 clear @s bow
 function rauch:game/core/mechanics/weapon
 scoreboard players reset @s death
+execute if score Global mode matches 4 run function rauch:game/capture_the_flag/flag_drop
