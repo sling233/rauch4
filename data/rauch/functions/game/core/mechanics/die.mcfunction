@@ -13,7 +13,7 @@ scoreboard players set @s cool1 1
 scoreboard players set @s cool2 1
 scoreboard players set @s cool3 1
 tag @s remove bolt
-execute at @s[scores={kit=1}] as @a[tag=game] if score @s bolt_hitby = @p pnum run tag @s remove bolt
+execute as @s[scores={bolt_hit=1..}] run function rauch:game/core/ability/class/bolt/q/remove_hit_id
 execute at @s as @e[type=minecraft:armor_stand,tag=stun] if score @s pnum = @p pnum run kill @s
 clear @s carrot_on_a_stick
 clear @s bow
