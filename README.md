@@ -1,4 +1,4 @@
-# rauch4
+# Rauchergames
 
 Very epic Minecraft Datapack game i spent way too much time on. But it's very epic.
 
