@@ -67,12 +67,12 @@ scoreboard objectives add plcount dummy
 scoreboard objectives add pnum dummy
 scoreboard objectives add projectileRMax dummy
 scoreboard objectives add projectileRNum dummy
-scoreboard objectives add push_levitation_timer minecraft.custom:time_since_rest
+scoreboard objectives add push_levitation_timer minecraft.custom:minecraft.time_since_rest
 #scoreboard objectives add projectileQNum dummy
 #scoreboard objectives add projectileQMax dummy
 scoreboard objectives add recall dummy
-scoreboard objectives add respawntimer minecraft.custom:time_since_rest
-scoreboard objectives add slime_despawn_timer minecraft.custom:time_since_rest
+scoreboard objectives add respawntimer minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add slime_despawn_timer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add squid minecraft.used:minecraft.squid_spawn_egg
 scoreboard objectives add stun dummy
 scoreboard objectives add tank dummy

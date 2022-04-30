@@ -17,7 +17,7 @@ execute as @s[scores={kit=3,slime_despawn_timer=-1}] run function rauch:game/cor
 execute as @s[scores={kit=8,slime_despawn_timer=-1}] run function rauch:game/core/ability/class/flyer/r/despawn
 execute as @s[scores={push_levitation_timer=-1}] run effect clear @s minecraft:levitation
 execute as @s[scores={kit=8,flyerRSchedule=..0}] run function rauch:game/core/ability/class/flyer/r/schedule
-execute as @s[scores={kit=8,flyerFSchedule=0}] run effect clear @s minecraft:levitation
+execute as @s[scores={kit=8,flyerFSchedule=-1}] run effect clear @s minecraft:levitation
 execute as @s[scores={kit=8,flyerQSchedule=..-1}] run function rauch:game/core/ability/class/flyer/q/schedule
 execute as @s[scores={kit=8,fly=1..},tag=!flying] run tag @s add flying
 execute as @s[scores={kit=8},tag=flying] unless score @s fly matches 1.. run function rauch:game/core/ability/class/flyer/f/land

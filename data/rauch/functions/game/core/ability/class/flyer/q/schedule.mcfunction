@@ -3,7 +3,7 @@ execute if score @s flyerQSchedule matches -58 as @s[tag=flyer_q_ground] run eff
 execute if score @s flyerQSchedule matches -28 run effect clear @s minecraft:levitation
 execute if score @s flyerQSchedule matches -28 run effect give @s minecraft:levitation 1 128 true
 execute if score @s flyerQSchedule matches -58 run tag @s remove flyer_q_ground
-execute if score @s flyerFSchedule matches 1 run tag @s add allow_cancel
+execute if score @s flyerFSchedule matches -1 run tag @s add allow_cancel
 #execute if score @s flyerQSchedule matches -28.. as @s[nbt={OnGround:1b}] run function rauch:game/core/ability/class/flyer/q/hitground
 execute if score @s flyerQSchedule matches -57..-29 as @s[tag=allow_cancel] as @s[nbt={OnGround:1b}] run function rauch:game/core/ability/class/flyer/q/hitground
 execute if score @s flyerQSchedule matches -28.. as @s[nbt={OnGround:1b}] run function rauch:game/core/ability/class/flyer/q/hitground
