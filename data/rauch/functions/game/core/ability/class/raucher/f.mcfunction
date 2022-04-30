@@ -4,4 +4,7 @@ scoreboard players operation @e[type=marker,tag=setup,tag=raucher_rocket,limit=1
 execute as @s[team=Red] run tag @e[type=marker,tag=setup,tag=raucher_rocket] add red
 execute as @s[team=Blue] run tag @e[type=marker,tag=setup,tag=raucher_rocket] add blu
 tag @e[type=marker,tag=setup,tag=raucher_rocket] remove setup
-scoreboard players operation @s cool1 = @s cool1_target
+execute at @s run playsound minecraft:entity.firework_rocket.launch master @a
+
+
+scoreboard players operation @s cool3 = @s cool3_target

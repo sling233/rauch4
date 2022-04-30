@@ -1,10 +1,10 @@
 scoreboard players add @s click 1
-execute at @s run tp @s ^ ^ ^0.40
-execute at @s run particle minecraft:firework ~ ~ ~ 0.05 0.05 0.05 0.1 5 force
-execute at @s run tp @s ^ ^ ^0.40
-execute at @s run particle minecraft:firework ~ ~ ~ 0.05 0.05 0.05 0.1 5 force
-execute at @s run tp @s ^ ^ ^0.40
-execute at @s run particle minecraft:firework ~ ~ ~ 0.05 0.05 0.05 0.1 5 force
+execute at @s run tp @s ^ ^ ^0.32
+execute at @s run particle minecraft:firework ~ ~ ~ 0.05 0.05 0.05 0.02 2 force
+execute at @s run tp @s ^ ^ ^0.32
+execute at @s run particle minecraft:firework ~ ~ ~ 0.05 0.05 0.05 0.02 2 force
+execute at @s run tp @s ^ ^ ^0.32
+execute at @s run particle minecraft:firework ~ ~ ~ 0.05 0.05 0.05 0.02 2 force
 
 execute at @s[team=red] unless score @s click matches 18.. if block ^ ^ ^0.5 #nonsolid positioned ~-1 ~-1 ~-1 if entity @a[team=Blue,tag=test,dx=1,dy=1,dz=1] at @s run function rauch:game/core/ability/class/raucher/f/explode
 execute at @s[team=blu] unless score @s click matches 18.. if block ^ ^ ^0.5 #nonsolid positioned ~-1 ~-1 ~-1 if entity @a[team=Red,tag=test,dx=1,dy=1,dz=1] at @s run function rauch:game/core/ability/class/raucher/f/explode
