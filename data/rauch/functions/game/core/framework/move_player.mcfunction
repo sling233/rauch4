@@ -12,7 +12,9 @@ attribute @s minecraft:generic.armor modifier remove 0-0-0-1-0
 attribute @s minecraft:generic.max_health base set 20
 attribute @s minecraft:generic.attack_damage base set 1
 
-kill @s
+clear @s minecraft:elytra
+say clear elytra
+#kill @s
 
 scoreboard players reset @s bolt
 scoreboard players reset @s boltdmg
