@@ -13,6 +13,7 @@ execute as @s[scores={hacking=0..}] run function rauch:game/core/ability/class/h
 execute as @s[scores={tank=0..}] run function rauch:game/core/ability/class/tank/q/particle
 execute as @s[scores={tele2=0..}] run function rauch:game/core/ability/class/teleporter/q/invisible
 execute as @s[scores={kit=2,slime_despawn_timer=-1}] run function rauch:game/core/ability/class/zarzahn/q/despawn
+execute as @s[scores={kit=3,slime_despawn_timer=-1}] run function rauch:game/core/ability/class/raucher/f/despawn
 execute as @s[scores={kit=8,slime_despawn_timer=-1}] run function rauch:game/core/ability/class/flyer/r/despawn
 execute as @s[scores={push_levitation_timer=-1}] run effect clear @s minecraft:levitation
 execute as @s[scores={kit=8,flyerRSchedule=..0}] run function rauch:game/core/ability/class/flyer/r/schedule
