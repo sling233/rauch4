@@ -6,8 +6,8 @@ execute as @a run scoreboard players operation @s stats_g_damage_d -= Global 2
 execute as @a run scoreboard players operation @s stats_g_damage_d /= Global 20
 execute as @a run scoreboard players operation @s stats_g_damage_t /= Global 20
 
-execute as @a[team=Red] at @s run playsound minecraft:music_disc.13 record @s
-execute as @a[team=Blue] at @s run playsound minecraft:music_disc.11 record @s
+#execute as @a[team=Red] at @s run playsound minecraft:music_disc.13 record @s
+#execute as @a[team=Blue] at @s run playsound minecraft:music_disc.11 record @s
 
 execute as @a run tellraw @s ""
 execute as @a[team=Red] run tellraw @s [{"text":"---------------- ","color":"yellow"},{"text":"Defeat","color":"red"},{"text":" -----------------","color":"yellow"}]

@@ -1,5 +1,5 @@
 scoreboard players remove Global gamestart 1
-execute if score Global gamestart matches 110 as @a[tag=game] at @s run playsound minecraft:music_disc.wait record @s
+#execute if score Global gamestart matches 110 as @a[tag=game] at @s run playsound minecraft:music_disc.wait record @s
 execute if score Global gamestart matches 100 as @a[tag=game] run title @s title {"text":"5","color":"gold"}
 execute if score Global gamestart matches 100 as @a[tag=game] run title @s[team=Red] subtitle {"text":"You are in Team Red","color":"red"}
 execute if score Global gamestart matches 100 as @a[tag=game] run title @s[team=Blue] subtitle {"text":"You are in Team Blue","color":"blue"}
