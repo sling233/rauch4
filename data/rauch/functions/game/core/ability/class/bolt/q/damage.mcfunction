@@ -7,5 +7,5 @@ execute at @s run summon lightning_bolt ~ ~10 ~
 #function rauch:game/core/mechanics/stuninit
 effect give @s instant_damage 1 2
 
-execute unless score @s bolt_hitby matches 1..4095 run effect clear @s minecraft:glowing
-execute unless score @s bolt_hitby matches 1..4095 run tag @s remove bolt
+execute as @s[tag=!boltHitBy1,tag=!boltHitBy2,tag=!boltHitBy3,tag=!boltHitBy4,tag=!boltHitBy5,tag=!boltHitBy6,tag=!boltHitBy7,tag=!boltHitBy8,tag=!boltHitBy9,tag=!boltHitBy10,tag=!boltHitBy11,tag=!boltHitBy12] run effect clear @s minecraft:glowing
+execute as @s[tag=!boltHitBy1,tag=!boltHitBy2,tag=!boltHitBy3,tag=!boltHitBy4,tag=!boltHitBy5,tag=!boltHitBy6,tag=!boltHitBy7,tag=!boltHitBy8,tag=!boltHitBy9,tag=!boltHitBy10,tag=!boltHitBy11,tag=!boltHitBy12] run tag @s remove bolt

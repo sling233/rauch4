@@ -16,8 +16,6 @@ scoreboard objectives remove adminsetting
 scoreboard objectives remove arrows
 scoreboard objectives remove arrowreg
 scoreboard objectives remove bolt
-scoreboard objectives remove bolt_hitby
-scoreboard objectives remove bolt_hit
 scoreboard objectives remove boltdmg
 scoreboard objectives remove capture_info
 scoreboard objectives remove center_blue

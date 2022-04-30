@@ -61,5 +61,4 @@ tag @s remove spawn
 
 #effect give @s minecraft:jump_boost 1 255 true ### no jump
 effect give @s minecraft:saturation 1 1 true
-effect give @s[scores={bolt_hitby=1..}] minecraft:glowing 1 1 true
 #effect give @s[scores={hunger=3..}] minecraft:hunger 1 250 true ### no sprint
