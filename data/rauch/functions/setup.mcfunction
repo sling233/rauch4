@@ -86,7 +86,6 @@ scoreboard objectives add walk minecraft.custom:minecraft.walk_one_cm
 scoreboard objectives add xPos dummy
 scoreboard objectives add yPos dummy
 scoreboard objectives add zarzahn_f dummy
-scoreboard objectives add zarzahn_id dummy
 scoreboard objectives add zPos dummy
 #respawnDeathmatch
 scoreboard objectives add killNumRed dummy

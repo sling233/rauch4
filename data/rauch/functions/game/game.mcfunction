@@ -22,7 +22,7 @@ execute as @e[type=area_effect_cloud,tag=shield] at @s run function rauch:game/c
 execute as @e[type=area_effect_cloud,tag=hacker2] run function rauch:game/core/ability/class/hacker/q/move
 execute as @e[type=area_effect_cloud,tag=hacker] run function rauch:game/core/ability/class/hacker/r/projectile
 execute as @e[type=area_effect_cloud,tag=teleporter] run function rauch:game/core/ability/class/teleporter/r/projectile
-execute as @e[type=area_effect_cloud,tag=zarzahn] run function rauch:game/core/ability/class/zarzahn/r/projectile
+execute as @e[type=marker,tag=zarzahn] run function rauch:game/core/ability/class/zarzahn/r/projectile
 execute as @e[type=marker,tag=bolt_blast] run function rauch:game/core/ability/class/bolt/r/projectile
 execute as @e[type=marker,tag=raucher_rocket] run function rauch:game/core/ability/class/raucher/f/projectile
 

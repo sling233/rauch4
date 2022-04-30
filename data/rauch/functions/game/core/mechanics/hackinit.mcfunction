@@ -11,4 +11,5 @@ execute at @s[scores={pnum=10}] store result bossbar minecraft:hack10 max run sc
 execute at @s[scores={pnum=11}] store result bossbar minecraft:hack11 max run scoreboard players get @s hack
 execute at @s[scores={pnum=12}] store result bossbar minecraft:hack12 max run scoreboard players get @s hack
 execute as @s[scores={kit=8}] run item replace entity @s armor.chest with elytra{Damage:432,display:{Name:'{"text":"Cool Elytra","color":"aqua"}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
-execute as @s[scores={kit=1,bolt=1..}] run function rauch:game/core/ability/class/bolt/q/remove_hit_id
+execute as @s[scores={kit=1}] run function rauch:game/core/ability/class/bolt/q/remove_hit_id
+execute as @s[scores={kit=2}] run function rauch:game/core/ability/class/zarzahn/r/hook_remove
