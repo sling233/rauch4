@@ -1,6 +1,7 @@
 execute unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:"{\"text\":\"Lobby Spawn\",\"color\":\"blue\",\"italic\":false}"},EntityTag:{Tags:["main"]}} 1
-
 execute unless entity @e[type=armor_stand,tag=main] run tellraw @a[nbt={Inventory:[{id:"minecraft:squid_spawn_egg"}]}] {"text":"Please set the Lobby Spawnpoint.","bold":true,"color":"blue"}
+
+execute as @a[tag=!main,tag=!game,tag=!addmap] run tag @s add main
 
 scoreboard objectives add 0 dummy
 scoreboard objectives add 1 dummy
