@@ -12,8 +12,20 @@ scoreboard players reset @s arrowreg
 scoreboard players set @s cool1 1
 scoreboard players set @s cool2 1
 scoreboard players set @s cool3 1
+function rauch:game/core/ability/class/bolt/q/remove_hit_id
 tag @s remove bolt
-execute as @s[scores={bolt_hit=1..}] run function rauch:game/core/ability/class/bolt/q/remove_hit_id
+tag @s remove boltHitBy1
+tag @s remove boltHitBy2
+tag @s remove boltHitBy3
+tag @s remove boltHitBy4
+tag @s remove boltHitBy5
+tag @s remove boltHitBy6
+tag @s remove boltHitBy7
+tag @s remove boltHitBy8
+tag @s remove boltHitBy9
+tag @s remove boltHitBy10
+tag @s remove boltHitBy11
+tag @s remove boltHitBy12
 execute at @s as @e[type=minecraft:armor_stand,tag=stun] if score @s pnum = @p pnum run kill @s
 clear @s carrot_on_a_stick
 clear @s bow

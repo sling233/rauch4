@@ -16,7 +16,6 @@ kill @s
 
 scoreboard players reset @s bolt
 scoreboard players reset @s boltdmg
-scoreboard players reset @s bolt_hitby
 scoreboard players reset @s leave
 scoreboard players reset @s death
 scoreboard players reset @s stats_g_damage_d
@@ -42,6 +41,18 @@ tag @s remove flying
 tag @s remove fast
 tag @s remove allow_cancel
 tag @s remove flyer_q_ground
+tag @a remove boltHitBy1
+tag @a remove boltHitBy2
+tag @a remove boltHitBy3
+tag @a remove boltHitBy4
+tag @a remove boltHitBy5
+tag @a remove boltHitBy6
+tag @a remove boltHitBy7
+tag @a remove boltHitBy8
+tag @a remove boltHitBy9
+tag @a remove boltHitBy10
+tag @a remove boltHitBy11
+tag @a remove boltHitBy12
 effect clear @s
 recipe take @s *
 advancement revoke @s everything

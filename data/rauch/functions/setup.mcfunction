@@ -1,28 +1,14 @@
 execute unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:"{\"text\":\"Lobby Spawn\",\"color\":\"blue\",\"italic\":false}"},EntityTag:{Tags:["main"]}} 1
 execute unless entity @e[type=armor_stand,tag=main] run tellraw @a[nbt={Inventory:[{id:"minecraft:squid_spawn_egg"}]}] {"text":"Please set the Lobby Spawnpoint.","bold":true,"color":"blue"}
 
-execute as @a[tag=!main,tag=!game,tag=!addmap] run tag @s add main
+execute as @a[tag=!main,tag=!game,tag=!addmap] run tag @s add lobby
 
-scoreboard objectives add 0 dummy
-scoreboard objectives add 1 dummy
 scoreboard objectives add 2 dummy
-scoreboard objectives add 4 dummy
-scoreboard objectives add 8 dummy
-scoreboard objectives add 16 dummy
 scoreboard objectives add 20 dummy
-scoreboard objectives add 32 dummy
-scoreboard objectives add 64 dummy
-scoreboard objectives add 128 dummy
-scoreboard objectives add 256 dummy
-scoreboard objectives add 512 dummy
-scoreboard objectives add 1024 dummy
-scoreboard objectives add 2048 dummy
 scoreboard objectives add adminsetting trigger
 scoreboard objectives add arrows dummy
 scoreboard objectives add arrowreg dummy
 scoreboard objectives add bolt dummy
-scoreboard objectives add bolt_hitby dummy
-scoreboard objectives add bolt_hit dummy
 scoreboard objectives add boltdmg dummy
 scoreboard objectives add capture_info dummy
 scoreboard objectives add center_blue dummy
@@ -113,20 +99,8 @@ scoreboard objectives add flag_points_red dummy
 scoreboard objectives add flag_points_blue dummy
 scoreboard objectives add flagDisplay dummy {"text":"Points","color":"yellow"}
 
-scoreboard players set Global 0 0
-scoreboard players set Global 1 1
 scoreboard players set Global 2 2
-scoreboard players set Global 4 4
-scoreboard players set Global 8 8
-scoreboard players set Global 16 16
 scoreboard players set Global 20 20
-scoreboard players set Global 32 32
-scoreboard players set Global 64 64
-scoreboard players set Global 128 128
-scoreboard players set Global 256 256
-scoreboard players set Global 512 512
-scoreboard players set Global 1024 1024
-scoreboard players set Global 2048 2048
 execute unless score Global mode matches 0..4 run scoreboard players set Global mode 0
 
 scoreboard objectives setdisplay belowName Health
