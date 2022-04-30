@@ -1,7 +1,7 @@
 execute as @s[scores={cool3=0,kit=1},predicate=!rauch:sneak,predicate=!rauch:hack,predicate=!rauch:stun] run function rauch:game/core/ability/class/bolt/f
 execute as @s[scores={kit=2,zarzahn_f=1..},predicate=!rauch:sneak,predicate=!rauch:hack,predicate=!rauch:stun] run function rauch:game/core/ability/class/zarzahn/f
 execute as @s[scores={cool3=0,kit=2},predicate=rauch:sneak,predicate=!rauch:hack,predicate=!rauch:stun] run function rauch:game/core/ability/class/zarzahn/sf
-execute as @s[scores={cool3=0,kit=3},predicate=!rauch:sneak,predicate=!rauch:hack,predicate=!rauch:stun] run function rauch:game/core/ability/dash/sdash
+execute as @s[scores={cool3=0,kit=3},predicate=!rauch:hack,predicate=!rauch:stun] run function rauch:game/core/ability/class/raucher/f
 execute as @s[scores={cool3=0,kit=4},predicate=!rauch:sneak,predicate=!rauch:hack,predicate=!rauch:stun] run function rauch:game/core/ability/dash/sdash
 execute as @s[scores={cool3=0,kit=5},predicate=!rauch:sneak,predicate=!rauch:hack,predicate=!rauch:stun] run function rauch:game/core/ability/dash/sdash
 execute as @s[scores={cool3=0,kit=6},predicate=!rauch:sneak,predicate=!rauch:hack,predicate=!rauch:stun] run function rauch:game/core/ability/dash/sdash

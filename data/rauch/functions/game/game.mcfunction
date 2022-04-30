@@ -24,6 +24,7 @@ execute as @e[type=area_effect_cloud,tag=hacker] run function rauch:game/core/ab
 execute as @e[type=area_effect_cloud,tag=teleporter] run function rauch:game/core/ability/class/teleporter/r/projectile
 execute as @e[type=area_effect_cloud,tag=zarzahn] run function rauch:game/core/ability/class/zarzahn/r/projectile
 execute as @e[type=marker,tag=bolt_blast] run function rauch:game/core/ability/class/bolt/r/projectile
+execute as @e[type=marker,tag=raucher_rocket] run function rauch:game/core/ability/class/raucher/f/rocket
 
 execute if entity @a[tag=game] if score Global mode matches 0 run function rauch:game/deathmatch/deathmatch
 execute if entity @a[tag=game] if score Global mode matches 1 run function rauch:game/king_of_the_hill/king_of_the_hill
