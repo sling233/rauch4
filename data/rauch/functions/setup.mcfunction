@@ -136,7 +136,7 @@ team join blue_display Blue:
 #gamerule doMobLoot false
 #gamerule doMobSpawning false
 #gamerule doTileDrops false
-#gamerule sendCommandFeedback false
+gamerule sendCommandFeedback false
 gamerule keepInventory true
 gamerule doImmediateRespawn true
 gamerule naturalRegeneration false
