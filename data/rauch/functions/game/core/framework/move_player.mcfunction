@@ -7,6 +7,7 @@ attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-6
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-7
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-8
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-9
+attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-10
 attribute @s minecraft:generic.knockback_resistance modifier remove 0-0-0-2-0
 attribute @s minecraft:generic.armor modifier remove 0-0-0-1-0
 attribute @s minecraft:generic.max_health base set 20
@@ -17,6 +18,7 @@ clear @s minecraft:elytra
 
 scoreboard players reset @s bolt
 scoreboard players reset @s boltdmg
+scoreboard players reset @s raucherdmg
 scoreboard players reset @s leave
 scoreboard players reset @s death
 scoreboard players reset @s stats_g_damage_d

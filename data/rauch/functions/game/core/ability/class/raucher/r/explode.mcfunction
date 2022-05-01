@@ -9,7 +9,7 @@ playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 1 1
 tag @s add temp
 execute as @a if score @s pnum = @e[type=marker,tag=raucher_rocket,tag=temp,limit=1] pnum run scoreboard players set @s slime_despawn_timer -5
 
-function rauch:game/core/ability/class/raucher/f/spawn
+function rauch:game/core/ability/class/raucher/r/spawn
 
 
 #execute at @s[tag=blu] as @a[team=Red,distance=..3] run function rauch:game/core/ability/class/bolt/r/hit

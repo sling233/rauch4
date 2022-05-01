@@ -24,5 +24,5 @@ tag @e[type=armor_stand,tag=r_h,tag=setup] remove setup
 
 execute at @s run playsound minecraft:entity.player.attack.sweep master @a
 
-execute if score @s projectileRNum = @s projectileRMax run scoreboard players operation @s cool1 = @s cool1_target
+execute if score @s projectileRNum = @s projectileRMax run scoreboard players operation @s cool3 = @s cool3_target
 scoreboard players remove @s projectileRNum 1

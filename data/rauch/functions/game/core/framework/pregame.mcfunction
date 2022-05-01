@@ -12,6 +12,7 @@ scoreboard players set @s stats_g_damage_t 0
 scoreboard players set @s elytra 1000
 scoreboard players reset @s leave
 scoreboard players reset @s death
+scoreboard players reset @s raucherdmg
 function rauch:game/core/mechanics/weapon
 function rauch:game/core/mechanics/stats
 #bolt

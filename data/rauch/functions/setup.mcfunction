@@ -71,6 +71,7 @@ scoreboard objectives add projectileRNum dummy
 scoreboard objectives add push_levitation_timer minecraft.custom:minecraft.time_since_rest
 #scoreboard objectives add projectileQNum dummy
 #scoreboard objectives add projectileQMax dummy
+scoreboard objectives add raucherdmg dummy
 scoreboard objectives add recall dummy
 scoreboard objectives add respawntimer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add slime_despawn_timer minecraft.custom:minecraft.time_since_rest
