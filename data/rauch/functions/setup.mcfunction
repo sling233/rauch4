@@ -45,6 +45,7 @@ scoreboard objectives add flyerFSchedule minecraft.custom:minecraft.time_since_r
 scoreboard objectives add flyerQSchedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add gamestart dummy
 scoreboard objectives add hack dummy
+scoreboard objectives add hacker_ability dummy
 scoreboard objectives add hacking dummy
 scoreboard objectives add Health health {"text":"❤","color":"red"}
 scoreboard objectives add health_display dummy

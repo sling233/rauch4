@@ -52,6 +52,7 @@ scoreboard objectives remove flyerFSchedule
 scoreboard objectives remove flyerQSchedule
 scoreboard objectives remove gamestart
 scoreboard objectives remove hack
+scoreboard objectives remove hacker_ability
 scoreboard objectives remove hacking
 scoreboard objectives remove Health
 scoreboard objectives remove health_display

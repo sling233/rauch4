@@ -25,6 +25,7 @@ execute as @s[scores={kit=8,fly=85..},tag=!fast] run function rauch:game/core/ab
 #general
 execute as @s[scores={hack=0..}] run function rauch:game/core/mechanics/hacked
 execute as @s[scores={teleweak=0..}] run function rauch:game/core/ability/class/teleporter/r/debuff
+execute as @s[scores={hacker_ability=0..}] run function rauch:game/core/ability/class/hacker/f/ability_boost
 #execute as @s[scores={boltdmg=0..}] run function rauch:game/core/ability/class/bolt/q/debuff
 
 execute as @s[scores={stun=0..}] run function rauch:game/core/mechanics/stun
