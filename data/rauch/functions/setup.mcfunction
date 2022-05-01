@@ -150,32 +150,32 @@ gamerule announceAdvancements false
 #bossbars
 bossbar add red_capturing {"text":"Capturing...","color":"dark_red"}
 bossbar set minecraft:red_capturing color red
-bossbar set minecraft:red_capturing max 300
+bossbar set minecraft:red_capturing max 100
 bossbar set minecraft:red_capturing visible false
 
 bossbar add blue_capturing {"text":"Capturing...","color":"blue"}
 bossbar set minecraft:blue_capturing color blue
-bossbar set minecraft:blue_capturing max 300
+bossbar set minecraft:blue_capturing max 100
 bossbar set minecraft:blue_capturing visible false
 
 bossbar add red_captured {"text":"Captured","color":"dark_red"}
 bossbar set minecraft:red_captured color red
-bossbar set minecraft:red_captured max 300
+bossbar set minecraft:red_captured max 100
 bossbar set minecraft:red_captured visible false
 
 bossbar add blue_captured {"text":"Captured","color":"blue"}
 bossbar set minecraft:blue_captured color blue
-bossbar set minecraft:blue_captured max 300
+bossbar set minecraft:blue_captured max 100
 bossbar set minecraft:blue_captured visible false
 
 bossbar add red_contested {"text":"Contested","color":"dark_red"}
 bossbar set minecraft:red_contested color red
-bossbar set minecraft:red_contested max 300
+bossbar set minecraft:red_contested max 100
 bossbar set minecraft:red_contested visible false
 
 bossbar add blue_contested {"text":"Contested","color":"blue"}
 bossbar set minecraft:blue_contested color blue
-bossbar set minecraft:blue_contested max 300
+bossbar set minecraft:blue_contested max 100
 bossbar set minecraft:blue_contested visible false
 
 
