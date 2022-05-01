@@ -13,6 +13,7 @@ scoreboard players set @s elytra 1000
 scoreboard players reset @s leave
 scoreboard players reset @s death
 scoreboard players reset @s raucherdmg
+scoreboard players reset @s tank_resistance
 function rauch:game/core/mechanics/weapon
 function rauch:game/core/mechanics/stats
 #bolt

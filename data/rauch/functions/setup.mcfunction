@@ -78,6 +78,7 @@ scoreboard objectives add slime_despawn_timer minecraft.custom:minecraft.time_si
 scoreboard objectives add squid minecraft.used:minecraft.squid_spawn_egg
 scoreboard objectives add stun dummy
 scoreboard objectives add tank dummy
+scoreboard objectives add tank_resistance dummy
 scoreboard objectives add tele2 dummy
 scoreboard objectives add teleporter_id dummy
 scoreboard objectives add teleweak dummy

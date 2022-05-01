@@ -7,6 +7,7 @@ scoreboard players reset @s hack
 scoreboard players reset @s bolt
 scoreboard players reset @s boltdmg
 scoreboard players reset @s raucherdmg
+scoreboard players reset @s tank_resistance
 scoreboard players reset @s hacking
 scoreboard players reset @s tank
 scoreboard players reset @s tele2

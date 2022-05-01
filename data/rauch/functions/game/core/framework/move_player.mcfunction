@@ -9,6 +9,7 @@ attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-8
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-9
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-10
 attribute @s minecraft:generic.knockback_resistance modifier remove 0-0-0-2-0
+attribute @s minecraft:generic.knockback_resistance modifier remove 0-0-0-2-1
 attribute @s minecraft:generic.armor modifier remove 0-0-0-1-0
 attribute @s minecraft:generic.max_health base set 20
 attribute @s minecraft:generic.attack_damage base set 1

@@ -84,6 +84,7 @@ scoreboard objectives remove slime_despawn_timer
 scoreboard objectives remove squid
 scoreboard objectives remove stun
 scoreboard objectives remove tank
+scoreboard objectives remove tank_resistance
 scoreboard objectives remove tele2
 scoreboard objectives remove teleporter_id
 scoreboard objectives remove teleweak
