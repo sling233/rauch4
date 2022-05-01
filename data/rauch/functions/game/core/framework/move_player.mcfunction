@@ -13,7 +13,6 @@ attribute @s minecraft:generic.max_health base set 20
 attribute @s minecraft:generic.attack_damage base set 1
 
 clear @s minecraft:elytra
-say clear elytra
 #kill @s
 
 scoreboard players reset @s bolt
