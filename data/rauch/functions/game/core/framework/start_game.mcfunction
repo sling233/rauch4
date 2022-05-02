@@ -13,7 +13,9 @@ execute if score @e[type=armor_stand,tag=map,tag=root,tag=active,limit=1] mapTim
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=active,limit=1] mapTime matches 3 run time set night
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=active,limit=1] mapTime matches 4 run time set midnight
 
+
 #condition functions
+function rauch:game/core/framework/default_conditions
 execute if score Global mode matches 0 run function rauch:game/deathmatch/conditions
 execute if score Global mode matches 1 run function rauch:game/king_of_the_hill/conditions
 execute if score Global mode matches 2 run function rauch:game/respawn_deathmatch/conditions
