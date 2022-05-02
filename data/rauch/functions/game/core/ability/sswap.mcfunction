@@ -15,7 +15,6 @@ execute as @s[predicate=rauch:hack] run playsound minecraft:block.chain.break ma
 execute as @s[predicate=rauch:stun] run tellraw @s {"text":"You are stunned and cannot use your abilities!","color":"red"}
 execute as @s[predicate=rauch:stun] run playsound minecraft:block.chain.break master @s
 
-#execute as @s[predicate=rauch:sneak] run scoreboard players set @s recall 100
 
 clear @s minecraft:carrot_on_a_stick
 function rauch:game/core/mechanics/weapon

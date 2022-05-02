@@ -19,11 +19,10 @@ execute as @s[scores={push_levitation_timer=-1}] run effect clear @s minecraft:l
 execute as @s[scores={kit=8,flyerRSchedule=..0}] run function rauch:game/core/ability/flyer/r/schedule
 execute as @s[scores={kit=8,flyerFSchedule=-1}] run effect clear @s minecraft:levitation
 execute as @s[scores={kit=8,flyerQSchedule=..-1}] run function rauch:game/core/ability/flyer/q/schedule
-execute as @s[scores={kit=8,fly=1..},tag=!flying] run tag @s add flying
-execute as @s[scores={kit=8},tag=flying] unless score @s fly matches 1.. run function rauch:game/core/ability/flyer/f/land
-execute as @s[scores={kit=8,fly=85..},tag=!fast] run function rauch:game/core/ability/flyer/f/fast
+execute as @s[scores={kit=8,fly=1..},tag=!flying] run function rauch:game/core/ability/flyer/f/liftoff
+execute as @s[scores={kit=8},tag=flying] run function rauch:game/core/ability/flyer/f/flying
 #general
-execute as @s[scores={hack=0..}] run function rauch:game/core/mechanics/hacked
+execute as @s[scores={hack=0..}] run function rauch:game/core/mechanics/hack
 execute as @s[scores={teleweak=0..}] run function rauch:game/core/ability/teleporter/r/debuff
 execute as @s[scores={hacker_ability=0..}] run function rauch:game/core/ability/hacker/f/ability_boost
 execute as @s[scores={raucherdmg=0..}] run function rauch:game/core/ability/raucher/q/buff
@@ -31,7 +30,6 @@ execute as @s[scores={tank_resistance=0..}] run function rauch:game/core/ability
 #execute as @s[scores={boltdmg=0..}] run function rauch:game/core/ability/bolt/q/debuff
 
 execute as @s[scores={stun=0..}] run function rauch:game/core/mechanics/stun
-execute as @s[scores={recall=0..}] run function rauch:game/core/ability/recall
 execute at @s[scores={damage_taken=0..}] run function rauch:game/core/ui/damage_taken
 
 execute as @s[tag=zarzahn_hook] run function rauch:game/core/ability/zarzahn/r/hook

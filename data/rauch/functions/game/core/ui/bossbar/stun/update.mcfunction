@@ -1,0 +1,12 @@
+execute as @s[scores={pnum=1}] store result bossbar minecraft:stun1 value run scoreboard players get @s stun
+execute as @s[scores={pnum=2}] store result bossbar minecraft:stun2 value run scoreboard players get @s stun
+execute as @s[scores={pnum=3}] store result bossbar minecraft:stun3 value run scoreboard players get @s stun
+execute as @s[scores={pnum=4}] store result bossbar minecraft:stun4 value run scoreboard players get @s stun
+execute as @s[scores={pnum=5}] store result bossbar minecraft:stun5 value run scoreboard players get @s stun
+execute as @s[scores={pnum=6}] store result bossbar minecraft:stun6 value run scoreboard players get @s stun
+execute as @s[scores={pnum=7}] store result bossbar minecraft:stun7 value run scoreboard players get @s stun
+execute as @s[scores={pnum=8}] store result bossbar minecraft:stun8 value run scoreboard players get @s stun
+execute as @s[scores={pnum=9}] store result bossbar minecraft:stun9 value run scoreboard players get @s stun
+execute as @s[scores={pnum=10}] store result bossbar minecraft:stun10 value run scoreboard players get @s stun
+execute as @s[scores={pnum=11}] store result bossbar minecraft:stun11 value run scoreboard players get @s stun
+execute as @s[scores={pnum=12}] store result bossbar minecraft:stun12 value run scoreboard players get @s stun

@@ -1,6 +1,6 @@
 #say charge
 scoreboard players remove @s bolt 1
-
+function rauch:game/core/ui/bossbar/bolt/update
 execute at @s[scores={hitPnum=1..12}] as @a if score @s pnum = @p hitPnum run function rauch:game/core/ability/bolt/q/hit
 
 execute at @s[scores={bolt=..0}] run function rauch:game/core/ability/bolt/q/release

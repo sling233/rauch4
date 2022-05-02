@@ -25,3 +25,4 @@ execute as @s[scores={bolt=6..}] run say what
 execute as @s[scores={bolt=1..}] run scoreboard players set @s boltdmg 80
 
 scoreboard players reset @s bolt
+function rauch:game/core/ui/bossbar/bolt/invisible

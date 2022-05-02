@@ -1,8 +1,12 @@
 gamemode spectator @s
 tag @s add dead
-scoreboard players set @s respawntimer 0
+
+scoreboard players set @s respawn 0
+function rauch:game/core/ui/bossbar/allinvisible
+# respawn visible wenn mode nicht deathmatch oder testing mode ist
+execute unless score Global mode matches 0 unless score Global mode matches 3 run function rauch:game/core/ui/bossbar/respawn/visible
+
 scoreboard players reset @s stun
-scoreboard players reset @s recall
 scoreboard players reset @s hack
 scoreboard players reset @s bolt
 scoreboard players reset @s boltdmg

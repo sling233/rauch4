@@ -1,0 +1,12 @@
+execute as @s[scores={pnum=1}] run bossbar set minecraft:tank1 visible true
+execute as @s[scores={pnum=2}] run bossbar set minecraft:tank2 visible true
+execute as @s[scores={pnum=3}] run bossbar set minecraft:tank3 visible true
+execute as @s[scores={pnum=4}] run bossbar set minecraft:tank4 visible true
+execute as @s[scores={pnum=5}] run bossbar set minecraft:tank5 visible true
+execute as @s[scores={pnum=6}] run bossbar set minecraft:tank6 visible true
+execute as @s[scores={pnum=7}] run bossbar set minecraft:tank7 visible true
+execute as @s[scores={pnum=8}] run bossbar set minecraft:tank8 visible true
+execute as @s[scores={pnum=9}] run bossbar set minecraft:tank9 visible true
+execute as @s[scores={pnum=10}] run bossbar set minecraft:tank10 visible true
+execute as @s[scores={pnum=11}] run bossbar set minecraft:tank11 visible true
+execute as @s[scores={pnum=12}] run bossbar set minecraft:tank12 visible true

@@ -1,12 +1,6 @@
 scoreboard players remove @s stun 1
+function rauch:game/core/ui/bossbar/stun/update
 
-
-
-#tag @s add stn
-#execute at @s run setblock ~ 255 ~ oak_sign{Text1:'{"score":{"name":"@a[tag=stn,limit=1]","objective":"stun"},"color":"red"}'} replace
-#execute at @s as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set from block ~ 255 ~ Text1
-#execute at @s run setblock ~ 255 ~ air
-#tag @s remove stn
 execute at @s[scores={stun=59}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉"}'
 execute at @s[scores={stun=54}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉"}'
 execute at @s[scores={stun=49}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉"}'

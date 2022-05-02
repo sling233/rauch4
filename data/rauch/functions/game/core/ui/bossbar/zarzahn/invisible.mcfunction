@@ -1,0 +1,12 @@
+execute as @s[scores={pnum=1}] run bossbar set minecraft:zarzahn_f1 visible false
+execute as @s[scores={pnum=2}] run bossbar set minecraft:zarzahn_f2 visible false
+execute as @s[scores={pnum=3}] run bossbar set minecraft:zarzahn_f3 visible false
+execute as @s[scores={pnum=4}] run bossbar set minecraft:zarzahn_f4 visible false
+execute as @s[scores={pnum=5}] run bossbar set minecraft:zarzahn_f5 visible false
+execute as @s[scores={pnum=6}] run bossbar set minecraft:zarzahn_f6 visible false
+execute as @s[scores={pnum=7}] run bossbar set minecraft:zarzahn_f7 visible false
+execute as @s[scores={pnum=8}] run bossbar set minecraft:zarzahn_f8 visible false
+execute as @s[scores={pnum=9}] run bossbar set minecraft:zarzahn_f9 visible false
+execute as @s[scores={pnum=10}] run bossbar set minecraft:zarzahn_f10 visible false
+execute as @s[scores={pnum=11}] run bossbar set minecraft:zarzahn_f11 visible false
+execute as @s[scores={pnum=12}] run bossbar set minecraft:zarzahn_f12 visible false

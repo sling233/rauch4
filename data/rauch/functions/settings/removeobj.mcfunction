@@ -22,9 +22,6 @@ scoreboard objectives remove center_blue
 scoreboard objectives remove center_red
 scoreboard objectives remove click
 scoreboard objectives remove clouds
-#scoreboard objectives remove coolnew
-#scoreboard objectives remove coolnews
-#scoreboard objectives remove coolnewds
 scoreboard objectives remove cool1
 scoreboard objectives remove cool1_s
 scoreboard objectives remove cool1_ds
@@ -75,10 +72,7 @@ scoreboard objectives remove pnum
 scoreboard objectives remove projectileRMax
 scoreboard objectives remove projectileRNum
 scoreboard objectives remove push_levitation_timer
-#scoreboard objectives remove projectileQNum
-#scoreboard objectives remove projectileQMax
-scoreboard objectives remove recall
-scoreboard objectives remove respawntimer
+scoreboard objectives remove respawn
 scoreboard objectives remove slime_despawn_timer
 scoreboard objectives remove squid
 scoreboard objectives remove stun
@@ -143,19 +137,6 @@ bossbar remove hack9
 bossbar remove hack10
 bossbar remove hack11
 bossbar remove hack12
-
-bossbar remove recall1
-bossbar remove recall2
-bossbar remove recall3
-bossbar remove recall4
-bossbar remove recall5
-bossbar remove recall6
-bossbar remove recall7
-bossbar remove recall8
-bossbar remove recall9
-bossbar remove recall10
-bossbar remove recall11
-bossbar remove recall12
 
 bossbar remove stun1
 bossbar remove stun2

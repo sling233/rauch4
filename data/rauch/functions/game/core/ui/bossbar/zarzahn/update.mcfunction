@@ -1,0 +1,12 @@
+execute as @s[scores={pnum=1}] store result bossbar minecraft:zarzahn_f1 value run scoreboard players get @s zarzahn_f
+execute as @s[scores={pnum=2}] store result bossbar minecraft:zarzahn_f2 value run scoreboard players get @s zarzahn_f
+execute as @s[scores={pnum=3}] store result bossbar minecraft:zarzahn_f3 value run scoreboard players get @s zarzahn_f
+execute as @s[scores={pnum=4}] store result bossbar minecraft:zarzahn_f4 value run scoreboard players get @s zarzahn_f
+execute as @s[scores={pnum=5}] store result bossbar minecraft:zarzahn_f5 value run scoreboard players get @s zarzahn_f
+execute as @s[scores={pnum=6}] store result bossbar minecraft:zarzahn_f6 value run scoreboard players get @s zarzahn_f
+execute as @s[scores={pnum=7}] store result bossbar minecraft:zarzahn_f7 value run scoreboard players get @s zarzahn_f
+execute as @s[scores={pnum=8}] store result bossbar minecraft:zarzahn_f8 value run scoreboard players get @s zarzahn_f
+execute as @s[scores={pnum=9}] store result bossbar minecraft:zarzahn_f9 value run scoreboard players get @s zarzahn_f
+execute as @s[scores={pnum=10}] store result bossbar minecraft:zarzahn_f10 value run scoreboard players get @s zarzahn_f
+execute as @s[scores={pnum=11}] store result bossbar minecraft:zarzahn_f11 value run scoreboard players get @s zarzahn_f
+execute as @s[scores={pnum=12}] store result bossbar minecraft:zarzahn_f12 value run scoreboard players get @s zarzahn_f

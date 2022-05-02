@@ -1,0 +1,12 @@
+execute as @s[scores={pnum=1}] store result bossbar minecraft:speed1 value run scoreboard players get @s fly
+execute as @s[scores={pnum=2}] store result bossbar minecraft:speed2 value run scoreboard players get @s fly
+execute as @s[scores={pnum=3}] store result bossbar minecraft:speed3 value run scoreboard players get @s fly
+execute as @s[scores={pnum=4}] store result bossbar minecraft:speed4 value run scoreboard players get @s fly
+execute as @s[scores={pnum=5}] store result bossbar minecraft:speed5 value run scoreboard players get @s fly
+execute as @s[scores={pnum=6}] store result bossbar minecraft:speed6 value run scoreboard players get @s fly
+execute as @s[scores={pnum=7}] store result bossbar minecraft:speed7 value run scoreboard players get @s fly
+execute as @s[scores={pnum=8}] store result bossbar minecraft:speed8 value run scoreboard players get @s fly
+execute as @s[scores={pnum=9}] store result bossbar minecraft:speed9 value run scoreboard players get @s fly
+execute as @s[scores={pnum=10}] store result bossbar minecraft:speed10 value run scoreboard players get @s fly
+execute as @s[scores={pnum=11}] store result bossbar minecraft:speed11 value run scoreboard players get @s fly
+execute as @s[scores={pnum=12}] store result bossbar minecraft:speed12 value run scoreboard players get @s fly

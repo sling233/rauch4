@@ -25,5 +25,11 @@ scoreboard players reset Global time_times
 scoreboard players reset Global killNumRed
 scoreboard players reset Global killNumBlue
 scoreboard players reset Global killsDisplay
+bossbar set minecraft:red_capturing visible false
+bossbar set minecraft:blue_capturing visible false
+bossbar set minecraft:red_captured visible false
+bossbar set minecraft:blue_captured visible false
+bossbar set minecraft:red_contested visible false
+bossbar set minecraft:blue_contested visible false
 
 execute as @a[tag=game] run function rauch:game/core/framework/move_player

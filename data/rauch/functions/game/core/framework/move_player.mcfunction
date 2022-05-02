@@ -27,8 +27,7 @@ scoreboard players reset @s stats_g_damage_t
 scoreboard players reset @s stats_g_deaths
 scoreboard players reset @s stats_g_kills
 scoreboard players reset @s hack
-scoreboard players reset @s recall
-scoreboard players reset @s respawntimer
+scoreboard players reset @s respawn
 scoreboard players reset @s stun
 scoreboard players reset @s tank
 scoreboard players reset @s pnum
@@ -64,6 +63,7 @@ advancement revoke @s everything
 tag @a add clear
 schedule function rauch:game/core/framework/clear 10t
 function rauch:game/core/ui/bossbar
+function rauch:game/core/ui/bossbar/allinvisible
 
 tag @s add lobby
 gamemode adventure @s

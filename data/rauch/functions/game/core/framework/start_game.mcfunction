@@ -13,7 +13,8 @@ execute if score @e[type=armor_stand,tag=map,tag=root,tag=active,limit=1] mapTim
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=active,limit=1] mapTime matches 3 run time set night
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=active,limit=1] mapTime matches 4 run time set midnight
 
-
+function rauch:game/core/ui/bossbar/setplayers
+function rauch:game/core/ui/bossbar/allinvisible
 #condition functions
 function rauch:game/core/framework/default_conditions
 execute if score Global mode matches 0 run function rauch:game/deathmatch/conditions

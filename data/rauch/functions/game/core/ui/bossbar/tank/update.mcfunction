@@ -1,0 +1,12 @@
+execute as @s[scores={pnum=1}] store result bossbar minecraft:tank1 value run scoreboard players get @s tank
+execute as @s[scores={pnum=2}] store result bossbar minecraft:tank2 value run scoreboard players get @s tank
+execute as @s[scores={pnum=3}] store result bossbar minecraft:tank3 value run scoreboard players get @s tank
+execute as @s[scores={pnum=4}] store result bossbar minecraft:tank4 value run scoreboard players get @s tank
+execute as @s[scores={pnum=5}] store result bossbar minecraft:tank5 value run scoreboard players get @s tank
+execute as @s[scores={pnum=6}] store result bossbar minecraft:tank6 value run scoreboard players get @s tank
+execute as @s[scores={pnum=7}] store result bossbar minecraft:tank7 value run scoreboard players get @s tank
+execute as @s[scores={pnum=8}] store result bossbar minecraft:tank8 value run scoreboard players get @s tank
+execute as @s[scores={pnum=9}] store result bossbar minecraft:tank9 value run scoreboard players get @s tank
+execute as @s[scores={pnum=10}] store result bossbar minecraft:tank10 value run scoreboard players get @s tank
+execute as @s[scores={pnum=11}] store result bossbar minecraft:tank11 value run scoreboard players get @s tank
+execute as @s[scores={pnum=12}] store result bossbar minecraft:tank12 value run scoreboard players get @s tank

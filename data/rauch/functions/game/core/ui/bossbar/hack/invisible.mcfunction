@@ -1,0 +1,12 @@
+execute as @s[scores={pnum=1}] run bossbar set minecraft:hack1 visible false
+execute as @s[scores={pnum=2}] run bossbar set minecraft:hack2 visible false
+execute as @s[scores={pnum=3}] run bossbar set minecraft:hack3 visible false
+execute as @s[scores={pnum=4}] run bossbar set minecraft:hack4 visible false
+execute as @s[scores={pnum=5}] run bossbar set minecraft:hack5 visible false
+execute as @s[scores={pnum=6}] run bossbar set minecraft:hack6 visible false
+execute as @s[scores={pnum=7}] run bossbar set minecraft:hack7 visible false
+execute as @s[scores={pnum=8}] run bossbar set minecraft:hack8 visible false
+execute as @s[scores={pnum=9}] run bossbar set minecraft:hack9 visible false
+execute as @s[scores={pnum=10}] run bossbar set minecraft:hack10 visible false
+execute as @s[scores={pnum=11}] run bossbar set minecraft:hack11 visible false
+execute as @s[scores={pnum=12}] run bossbar set minecraft:hack12 visible false

@@ -1,0 +1,12 @@
+execute as @s[scores={pnum=1}] store result bossbar minecraft:bolt1 value run scoreboard players get @s bolt
+execute as @s[scores={pnum=2}] store result bossbar minecraft:bolt2 value run scoreboard players get @s bolt
+execute as @s[scores={pnum=3}] store result bossbar minecraft:bolt3 value run scoreboard players get @s bolt
+execute as @s[scores={pnum=4}] store result bossbar minecraft:bolt4 value run scoreboard players get @s bolt
+execute as @s[scores={pnum=5}] store result bossbar minecraft:bolt5 value run scoreboard players get @s bolt
+execute as @s[scores={pnum=6}] store result bossbar minecraft:bolt6 value run scoreboard players get @s bolt
+execute as @s[scores={pnum=7}] store result bossbar minecraft:bolt7 value run scoreboard players get @s bolt
+execute as @s[scores={pnum=8}] store result bossbar minecraft:bolt8 value run scoreboard players get @s bolt
+execute as @s[scores={pnum=9}] store result bossbar minecraft:bolt9 value run scoreboard players get @s bolt
+execute as @s[scores={pnum=10}] store result bossbar minecraft:bolt10 value run scoreboard players get @s bolt
+execute as @s[scores={pnum=11}] store result bossbar minecraft:bolt11 value run scoreboard players get @s bolt
+execute as @s[scores={pnum=12}] store result bossbar minecraft:bolt12 value run scoreboard players get @s bolt

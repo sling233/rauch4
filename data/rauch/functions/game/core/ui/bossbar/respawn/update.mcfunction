@@ -1,0 +1,12 @@
+execute as @s[scores={pnum=1}] store result bossbar minecraft:respawn1 value run scoreboard players get @s respawn
+execute as @s[scores={pnum=2}] store result bossbar minecraft:respawn2 value run scoreboard players get @s respawn
+execute as @s[scores={pnum=3}] store result bossbar minecraft:respawn3 value run scoreboard players get @s respawn
+execute as @s[scores={pnum=4}] store result bossbar minecraft:respawn4 value run scoreboard players get @s respawn
+execute as @s[scores={pnum=5}] store result bossbar minecraft:respawn5 value run scoreboard players get @s respawn
+execute as @s[scores={pnum=6}] store result bossbar minecraft:respawn6 value run scoreboard players get @s respawn
+execute as @s[scores={pnum=7}] store result bossbar minecraft:respawn7 value run scoreboard players get @s respawn
+execute as @s[scores={pnum=8}] store result bossbar minecraft:respawn8 value run scoreboard players get @s respawn
+execute as @s[scores={pnum=9}] store result bossbar minecraft:respawn9 value run scoreboard players get @s respawn
+execute as @s[scores={pnum=10}] store result bossbar minecraft:respawn10 value run scoreboard players get @s respawn
+execute as @s[scores={pnum=11}] store result bossbar minecraft:respawn11 value run scoreboard players get @s respawn
+execute as @s[scores={pnum=12}] store result bossbar minecraft:respawn12 value run scoreboard players get @s respawn

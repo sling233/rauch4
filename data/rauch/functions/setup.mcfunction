@@ -71,8 +71,7 @@ scoreboard objectives add push_levitation_timer minecraft.custom:minecraft.time_
 #scoreboard objectives add projectileQNum dummy
 #scoreboard objectives add projectileQMax dummy
 scoreboard objectives add raucherdmg dummy
-scoreboard objectives add recall dummy
-scoreboard objectives add respawntimer minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add respawn dummy
 scoreboard objectives add slime_despawn_timer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add squid minecraft.used:minecraft.squid_spawn_egg
 scoreboard objectives add stun dummy
@@ -137,7 +136,7 @@ team join blue_display Blue:
 #gamerule doMobLoot false
 #gamerule doMobSpawning false
 #gamerule doTileDrops false
-gamerule sendCommandFeedback false
+#gamerule sendCommandFeedback false
 gamerule keepInventory true
 gamerule doImmediateRespawn true
 gamerule naturalRegeneration false
@@ -255,44 +254,6 @@ bossbar set minecraft:hack11 max 200
 bossbar add hack12 {"text":"Hack","color":"dark_purple"}
 bossbar set minecraft:hack12 color purple
 bossbar set minecraft:hack12 max 200
-
-
-bossbar add recall1 {"text":"Recall","color":"dark_green"}
-bossbar set minecraft:recall1 color green
-bossbar set minecraft:recall1 max 100
-bossbar add recall2 {"text":"Recall","color":"dark_green"}
-bossbar set minecraft:recall2 color green
-bossbar set minecraft:recall2 max 100
-bossbar add recall3 {"text":"Recall","color":"dark_green"}
-bossbar set minecraft:recall3 color green
-bossbar set minecraft:recall3 max 100
-bossbar add recall4 {"text":"Recall","color":"dark_green"}
-bossbar set minecraft:recall4 color green
-bossbar set minecraft:recall4 max 100
-bossbar add recall5 {"text":"Recall","color":"dark_green"}
-bossbar set minecraft:recall5 color green
-bossbar set minecraft:recall5 max 100
-bossbar add recall6 {"text":"Recall","color":"dark_green"}
-bossbar set minecraft:recall6 color green
-bossbar set minecraft:recall6 max 100
-bossbar add recall7 {"text":"Recall","color":"dark_green"}
-bossbar set minecraft:recall7 color green
-bossbar set minecraft:recall7 max 100
-bossbar add recall8 {"text":"Recall","color":"dark_green"}
-bossbar set minecraft:recall8 color green
-bossbar set minecraft:recall8 max 100
-bossbar add recall9 {"text":"Recall","color":"dark_green"}
-bossbar set minecraft:recall9 color green
-bossbar set minecraft:recall9 max 100
-bossbar add recall10 {"text":"Recall","color":"dark_green"}
-bossbar set minecraft:recall10 color green
-bossbar set minecraft:recall10 max 100
-bossbar add recall11 {"text":"Recall","color":"dark_green"}
-bossbar set minecraft:recall11 color green
-bossbar set minecraft:recall11 max 100
-bossbar add recall12 {"text":"Recall","color":"dark_green"}
-bossbar set minecraft:recall12 color green
-bossbar set minecraft:recall12 max 100
 
 
 bossbar add stun1 {"text":"Stunned","color":"red"}
