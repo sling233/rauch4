@@ -45,6 +45,7 @@ tag @s remove flying
 tag @s remove fast
 tag @s remove allow_cancel
 tag @s remove flyer_q_ground
+tag @s remove flagPickedUp
 tag @a remove boltHitBy1
 tag @a remove boltHitBy2
 tag @a remove boltHitBy3
