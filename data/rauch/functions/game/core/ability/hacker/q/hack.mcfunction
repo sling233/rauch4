@@ -1,5 +1,5 @@
-execute at @s[tag=red] as @a[team=Blue,distance=..5.44] run function rauch:game/core/ability/hacker/q/hacked
-execute at @s[tag=blu] as @a[team=Red,distance=..5.44] run function rauch:game/core/ability/hacker/q/hacked
+execute at @s[tag=red] as @a[team=Blue,distance=..5.5] run function rauch:game/core/ability/hacker/q/hacked
+execute at @s[tag=blu] as @a[team=Red,distance=..5.5] run function rauch:game/core/ability/hacker/q/hacked
 execute at @s run playsound minecraft:entity.guardian.hurt master @a
 
 kill @s
