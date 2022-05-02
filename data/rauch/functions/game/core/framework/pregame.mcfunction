@@ -12,6 +12,7 @@ scoreboard players set @s stats_g_damage_t 0
 scoreboard players set @s elytra 1000
 scoreboard players reset @s leave
 scoreboard players reset @s death
+scoreboard players reset @s dropcoas
 scoreboard players reset @s raucherdmg
 scoreboard players reset @s tank_resistance
 function rauch:game/core/mechanics/weapon
@@ -48,4 +49,4 @@ item replace entity @s armor.head with warped_fungus_on_a_stick{display:{Name:'{
 
 #effect give @s minecraft:hunger 6 255 true
 effect give @s minecraft:resistance 6 255 true
-effect give @s minecraft:regeneration 5 255 true
+effect give @s minecraft:regeneration 3 255 true
