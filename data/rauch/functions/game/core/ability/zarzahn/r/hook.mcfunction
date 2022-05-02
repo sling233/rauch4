@@ -1,3 +1,4 @@
+scoreboard players set @s stun 2
 execute at @s[tag=zarHook1] as @a[scores={pnum=1}] run function rauch:game/core/ability/zarzahn/r/pull
 execute at @s[tag=zarHook2] as @a[scores={pnum=2}] run function rauch:game/core/ability/zarzahn/r/pull
 execute at @s[tag=zarHook3] as @a[scores={pnum=3}] run function rauch:game/core/ability/zarzahn/r/pull
