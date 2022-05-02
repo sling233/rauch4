@@ -27,7 +27,6 @@ scoreboard players reset @s stats_g_damage_t
 scoreboard players reset @s stats_g_deaths
 scoreboard players reset @s stats_g_kills
 scoreboard players reset @s hack
-scoreboard players reset @s hacking
 scoreboard players reset @s recall
 scoreboard players reset @s respawntimer
 scoreboard players reset @s stun

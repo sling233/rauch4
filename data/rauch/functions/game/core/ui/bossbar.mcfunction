@@ -58,19 +58,6 @@ execute store result bossbar minecraft:stun10 value run scoreboard players get @
 execute store result bossbar minecraft:stun11 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=11}] stun
 execute store result bossbar minecraft:stun12 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=12}] stun
 
-execute store result bossbar minecraft:thehack1 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=1}] hacking
-execute store result bossbar minecraft:thehack2 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=2}] hacking
-execute store result bossbar minecraft:thehack3 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=3}] hacking
-execute store result bossbar minecraft:thehack4 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=4}] hacking
-execute store result bossbar minecraft:thehack5 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=5}] hacking
-execute store result bossbar minecraft:thehack6 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=6}] hacking
-execute store result bossbar minecraft:thehack7 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=7}] hacking
-execute store result bossbar minecraft:thehack8 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=8}] hacking
-execute store result bossbar minecraft:thehack9 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=9}] hacking
-execute store result bossbar minecraft:thehack10 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=10}] hacking
-execute store result bossbar minecraft:thehack11 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=11}] hacking
-execute store result bossbar minecraft:thehack12 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=12}] hacking
-
 execute store result bossbar minecraft:hack1 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=1}] hack
 execute store result bossbar minecraft:hack2 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=2}] hack
 execute store result bossbar minecraft:hack3 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=3}] hack
@@ -123,18 +110,18 @@ execute store result bossbar minecraft:speed10 value run scoreboard players get 
 execute store result bossbar minecraft:speed11 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=11}] fly
 execute store result bossbar minecraft:speed12 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=12}] fly
 
-execute store result bossbar minecraft:zarzahn_f1 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=1}] zarzahn_f
-execute store result bossbar minecraft:zarzahn_f2 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=2}] zarzahn_f
-execute store result bossbar minecraft:zarzahn_f3 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=3}] zarzahn_f
-execute store result bossbar minecraft:zarzahn_f4 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=4}] zarzahn_f
-execute store result bossbar minecraft:zarzahn_f5 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=5}] zarzahn_f
-execute store result bossbar minecraft:zarzahn_f6 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=6}] zarzahn_f
-execute store result bossbar minecraft:zarzahn_f7 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=7}] zarzahn_f
-execute store result bossbar minecraft:zarzahn_f8 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=8}] zarzahn_f
-execute store result bossbar minecraft:zarzahn_f9 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=9}] zarzahn_f
-execute store result bossbar minecraft:zarzahn_f10 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=10}] zarzahn_f
-execute store result bossbar minecraft:zarzahn_f11 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=11}] zarzahn_f
-execute store result bossbar minecraft:zarzahn_f12 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=12}] zarzahn_f
+#execute store result bossbar minecraft:zarzahn_f1 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=1}] zarzahn_f
+#execute store result bossbar minecraft:zarzahn_f2 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=2}] zarzahn_f
+#execute store result bossbar minecraft:zarzahn_f3 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=3}] zarzahn_f
+#execute store result bossbar minecraft:zarzahn_f4 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=4}] zarzahn_f
+#execute store result bossbar minecraft:zarzahn_f5 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=5}] zarzahn_f
+#execute store result bossbar minecraft:zarzahn_f6 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=6}] zarzahn_f
+#execute store result bossbar minecraft:zarzahn_f7 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=7}] zarzahn_f
+#execute store result bossbar minecraft:zarzahn_f8 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=8}] zarzahn_f
+#execute store result bossbar minecraft:zarzahn_f9 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=9}] zarzahn_f
+#execute store result bossbar minecraft:zarzahn_f10 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=10}] zarzahn_f
+#execute store result bossbar minecraft:zarzahn_f11 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=11}] zarzahn_f
+#execute store result bossbar minecraft:zarzahn_f12 value run scoreboard players get @a[tag=game,limit=1,scores={pnum=12}] zarzahn_f
 
 bossbar set minecraft:bolt1 players @a[tag=game,scores={pnum=1,bolt=1..}]
 bossbar set minecraft:bolt2 players @a[tag=game,scores={pnum=2,bolt=1..}]
@@ -188,18 +175,6 @@ bossbar set minecraft:hack10 players @a[tag=game,scores={pnum=10,hack=0..}]
 bossbar set minecraft:hack11 players @a[tag=game,scores={pnum=11,hack=0..}]
 bossbar set minecraft:hack12 players @a[tag=game,scores={pnum=12,hack=0..}]
 
-bossbar set minecraft:thehack1 players @a[tag=game,scores={pnum=1,hacking=1..}]
-bossbar set minecraft:thehack2 players @a[tag=game,scores={pnum=2,hacking=1..}]
-bossbar set minecraft:thehack3 players @a[tag=game,scores={pnum=3,hacking=1..}]
-bossbar set minecraft:thehack4 players @a[tag=game,scores={pnum=4,hacking=1..}]
-bossbar set minecraft:thehack5 players @a[tag=game,scores={pnum=5,hacking=1..}]
-bossbar set minecraft:thehack6 players @a[tag=game,scores={pnum=6,hacking=1..}]
-bossbar set minecraft:thehack7 players @a[tag=game,scores={pnum=7,hacking=1..}]
-bossbar set minecraft:thehack8 players @a[tag=game,scores={pnum=8,hacking=1..}]
-bossbar set minecraft:thehack9 players @a[tag=game,scores={pnum=9,hacking=1..}]
-bossbar set minecraft:thehack11 players @a[tag=game,scores={pnum=11,hacking=1..}]
-bossbar set minecraft:thehack12 players @a[tag=game,scores={pnum=12,hacking=1..}]
-
 bossbar set minecraft:tank1 players @a[tag=game,scores={pnum=1,tank=1..}]
 bossbar set minecraft:tank2 players @a[tag=game,scores={pnum=2,tank=1..}]
 bossbar set minecraft:tank3 players @a[tag=game,scores={pnum=3,tank=1..}]
@@ -239,15 +214,15 @@ bossbar set minecraft:speed10 players @a[tag=game,scores={pnum=10,fly=1..}]
 bossbar set minecraft:speed11 players @a[tag=game,scores={pnum=11,fly=1..}]
 bossbar set minecraft:speed12 players @a[tag=game,scores={pnum=12,fly=1..}]
 
-bossbar set minecraft:zarzahn_f1 players @a[tag=game,scores={pnum=1,zarzahn_f=1..}]
-bossbar set minecraft:zarzahn_f2 players @a[tag=game,scores={pnum=2,zarzahn_f=1..}]
-bossbar set minecraft:zarzahn_f3 players @a[tag=game,scores={pnum=3,zarzahn_f=1..}]
-bossbar set minecraft:zarzahn_f4 players @a[tag=game,scores={pnum=4,zarzahn_f=1..}]
-bossbar set minecraft:zarzahn_f5 players @a[tag=game,scores={pnum=5,zarzahn_f=1..}]
-bossbar set minecraft:zarzahn_f6 players @a[tag=game,scores={pnum=6,zarzahn_f=1..}]
-bossbar set minecraft:zarzahn_f7 players @a[tag=game,scores={pnum=7,zarzahn_f=1..}]
-bossbar set minecraft:zarzahn_f8 players @a[tag=game,scores={pnum=8,zarzahn_f=1..}]
-bossbar set minecraft:zarzahn_f9 players @a[tag=game,scores={pnum=9,zarzahn_f=1..}]
-bossbar set minecraft:zarzahn_f10 players @a[tag=game,scores={pnum=10,zarzahn_f=1..}]
-bossbar set minecraft:zarzahn_f11 players @a[tag=game,scores={pnum=11,zarzahn_f=1..}]
-bossbar set minecraft:zarzahn_f12 players @a[tag=game,scores={pnum=12,zarzahn_f=1..}]
+#bossbar set minecraft:zarzahn_f1 players @a[tag=game,scores={pnum=1,zarzahn_f=1..}]
+#bossbar set minecraft:zarzahn_f2 players @a[tag=game,scores={pnum=2,zarzahn_f=1..}]
+#bossbar set minecraft:zarzahn_f3 players @a[tag=game,scores={pnum=3,zarzahn_f=1..}]
+#bossbar set minecraft:zarzahn_f4 players @a[tag=game,scores={pnum=4,zarzahn_f=1..}]
+#bossbar set minecraft:zarzahn_f5 players @a[tag=game,scores={pnum=5,zarzahn_f=1..}]
+#bossbar set minecraft:zarzahn_f6 players @a[tag=game,scores={pnum=6,zarzahn_f=1..}]
+#bossbar set minecraft:zarzahn_f7 players @a[tag=game,scores={pnum=7,zarzahn_f=1..}]
+#bossbar set minecraft:zarzahn_f8 players @a[tag=game,scores={pnum=8,zarzahn_f=1..}]
+#bossbar set minecraft:zarzahn_f9 players @a[tag=game,scores={pnum=9,zarzahn_f=1..}]
+#bossbar set minecraft:zarzahn_f10 players @a[tag=game,scores={pnum=10,zarzahn_f=1..}]
+#bossbar set minecraft:zarzahn_f11 players @a[tag=game,scores={pnum=11,zarzahn_f=1..}]
+#bossbar set minecraft:zarzahn_f12 players @a[tag=game,scores={pnum=12,zarzahn_f=1..}]

@@ -53,7 +53,6 @@ scoreboard objectives remove flyerQSchedule
 scoreboard objectives remove gamestart
 scoreboard objectives remove hack
 scoreboard objectives remove hacker_ability
-scoreboard objectives remove hacking
 scoreboard objectives remove Health
 scoreboard objectives remove health_display
 scoreboard objectives remove hitPnum
@@ -157,19 +156,6 @@ bossbar remove recall9
 bossbar remove recall10
 bossbar remove recall11
 bossbar remove recall12
-
-bossbar remove thehack1
-bossbar remove thehack2
-bossbar remove thehack3
-bossbar remove thehack4
-bossbar remove thehack5
-bossbar remove thehack6
-bossbar remove thehack7
-bossbar remove thehack8
-bossbar remove thehack9
-bossbar remove thehack10
-bossbar remove thehack11
-bossbar remove thehack12
 
 bossbar remove stun1
 bossbar remove stun2
