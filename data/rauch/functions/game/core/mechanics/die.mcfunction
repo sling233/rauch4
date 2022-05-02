@@ -38,5 +38,6 @@ execute at @s as @e[type=minecraft:armor_stand,tag=stun] if score @s pnum = @p p
 clear @s carrot_on_a_stick
 clear @s bow
 function rauch:game/core/mechanics/weapon
+function rauch:game/core/mechanics/armor
 scoreboard players reset @s death
 execute if score Global mode matches 4 run function rauch:game/capture_the_flag/flag_drop
