@@ -15,8 +15,8 @@ scoreboard players reset @s arrowreg
 scoreboard players set @s cool1 1
 scoreboard players set @s cool2 1
 scoreboard players set @s cool3 1
-execute as @s[scores={kit=1}] run function rauch:game/core/ability/class/bolt/q/remove_hit_id
-execute as @s[scores={kit=2}] run function rauch:game/core/ability/class/zarzahn/r/hook_remove
+execute as @s[scores={kit=1}] run function rauch:game/core/ability/bolt/q/remove_hit_id
+execute as @s[scores={kit=2}] run function rauch:game/core/ability/zarzahn/r/hook_remove
 tag @s remove bolt
 tag @s remove boltHitBy1
 tag @s remove boltHitBy2
