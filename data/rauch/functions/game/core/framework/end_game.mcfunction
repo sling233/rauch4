@@ -4,12 +4,14 @@ kill @e[type=armor_stand,tag=stun]
 kill @e[type=armor_stand,tag=r_s]
 kill @e[type=armor_stand,tag=r_h]
 kill @e[type=armor_stand,tag=flag]
+kill @e[type=armor_stand,tag=projectile]
 kill @e[type=area_effect_cloud,tag=shield]
 kill @e[type=area_effect_cloud,tag=cloud]
 kill @e[type=area_effect_cloud,tag=indicator]
 kill @e[type=area_effect_cloud,tag=projectile]
 kill @e[type=marker,tag=projectile]
 kill @e[type=marker,tag=zar_point]
+kill @e[type=marker,tag=hacker_bomb]
 tp @e[type=slime,tag=push] ~ ~-1000 ~
 tp @e[type=slime,tag=pik_push] ~ ~-1000 ~
 
