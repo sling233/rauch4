@@ -2,14 +2,13 @@ clear @s
 gamemode adventure @s
 recipe take @s *
 advancement revoke @s everything
-scoreboard players set @s cool1 0
-scoreboard players set @s cool2 0
-scoreboard players set @s cool3 0
+scoreboard players set @s cool1 1
+scoreboard players set @s cool2 1
+scoreboard players set @s cool3 1
 scoreboard players set @s stats_g_kills 0
 scoreboard players set @s stats_g_deaths 0
 scoreboard players set @s stats_g_damage_d 0
 scoreboard players set @s stats_g_damage_t 0
-scoreboard players set @s elytra 1000
 scoreboard players reset @s leave
 scoreboard players reset @s death
 scoreboard players reset @s dropcoas

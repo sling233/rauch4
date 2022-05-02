@@ -95,7 +95,6 @@ scoreboard objectives remove walk
 scoreboard objectives remove xPos
 scoreboard objectives remove yPos
 scoreboard objectives remove zarzahn_f
-scoreboard objectives remove zarzahn_id
 scoreboard objectives remove zPos
 #respawnDeathmatch
 scoreboard objectives remove killNumRed

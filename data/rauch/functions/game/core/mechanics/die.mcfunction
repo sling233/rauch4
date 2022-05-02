@@ -12,6 +12,7 @@ scoreboard players reset @s hacking
 scoreboard players reset @s tank
 scoreboard players reset @s tele2
 scoreboard players reset @s arrowreg
+scoreboard players reset @s zarzahn_f
 scoreboard players set @s cool1 1
 scoreboard players set @s cool2 1
 scoreboard players set @s cool3 1
