@@ -4,6 +4,7 @@ execute unless entity @e[type=armor_stand,tag=main] run tellraw @a[nbt={Inventor
 execute as @a[tag=!main,tag=!game,tag=!addmap] run tag @s add lobby
 
 scoreboard objectives add 2 dummy
+scoreboard objectives add 10 dummy
 scoreboard objectives add 20 dummy
 scoreboard objectives add adminsetting trigger
 scoreboard objectives add arrows dummy
@@ -46,6 +47,7 @@ scoreboard objectives add flyerQSchedule minecraft.custom:minecraft.time_since_r
 scoreboard objectives add gamestart dummy
 scoreboard objectives add hack dummy
 scoreboard objectives add hacker_ability dummy
+scoreboard objectives add heal dummy
 scoreboard objectives add Health health {"text":"❤","color":"red"}
 scoreboard objectives add health_display dummy
 scoreboard objectives add hitPnum dummy
@@ -76,6 +78,7 @@ scoreboard objectives add slime_despawn_timer minecraft.custom:minecraft.time_si
 scoreboard objectives add squid minecraft.used:minecraft.squid_spawn_egg
 scoreboard objectives add stun dummy
 scoreboard objectives add tank dummy
+scoreboard objectives add tank_damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add tank_resistance dummy
 scoreboard objectives add tele2 dummy
 scoreboard objectives add teleporter_id dummy
@@ -100,6 +103,7 @@ scoreboard objectives add flag_points_blue dummy
 scoreboard objectives add flagDisplay dummy {"text":"Points","color":"yellow"}
 
 scoreboard players set Global 2 2
+scoreboard players set Global 10 10
 scoreboard players set Global 20 20
 execute unless score Global mode matches 0..4 run scoreboard players set Global mode 0
 
@@ -342,40 +346,40 @@ bossbar set minecraft:speed12 color green
 bossbar set minecraft:speed12 max 170
 bossbar set minecraft:speed12 style notched_6
 
-bossbar add tank1 {"text":"Unstoppable","color":"dark_green"}
+bossbar add tank1 {"text":"Absorbing","color":"dark_green"}
 bossbar set minecraft:tank1 color green
 bossbar set minecraft:tank1 max 80
-bossbar add tank2 {"text":"Unstoppable","color":"dark_green"}
+bossbar add tank2 {"text":"Absorbing","color":"dark_green"}
 bossbar set minecraft:tank2 color green
 bossbar set minecraft:tank2 max 80
-bossbar add tank3 {"text":"Unstoppable","color":"dark_green"}
+bossbar add tank3 {"text":"Absorbing","color":"dark_green"}
 bossbar set minecraft:tank3 color green
 bossbar set minecraft:tank3 max 80
-bossbar add tank4 {"text":"Unstoppable","color":"dark_green"}
+bossbar add tank4 {"text":"Absorbing","color":"dark_green"}
 bossbar set minecraft:tank4 color green
 bossbar set minecraft:tank4 max 80
-bossbar add tank5 {"text":"Unstoppable","color":"dark_green"}
+bossbar add tank5 {"text":"Absorbing","color":"dark_green"}
 bossbar set minecraft:tank5 color green
 bossbar set minecraft:tank5 max 80
-bossbar add tank6 {"text":"Unstoppable","color":"dark_green"}
+bossbar add tank6 {"text":"Absorbing","color":"dark_green"}
 bossbar set minecraft:tank6 color green
 bossbar set minecraft:tank6 max 80
-bossbar add tank7 {"text":"Unstoppable","color":"dark_green"}
+bossbar add tank7 {"text":"Absorbing","color":"dark_green"}
 bossbar set minecraft:tank7 color green
 bossbar set minecraft:tank7 max 80
-bossbar add tank8 {"text":"Unstoppable","color":"dark_green"}
+bossbar add tank8 {"text":"Absorbing","color":"dark_green"}
 bossbar set minecraft:tank8 color green
 bossbar set minecraft:tank8 max 80
-bossbar add tank9 {"text":"Unstoppable","color":"dark_green"}
+bossbar add tank9 {"text":"Absorbing","color":"dark_green"}
 bossbar set minecraft:tank9 color green
 bossbar set minecraft:tank9 max 80
-bossbar add tank10 {"text":"Unstoppable","color":"dark_green"}
+bossbar add tank10 {"text":"Absorbing","color":"dark_green"}
 bossbar set minecraft:tank10 color green
 bossbar set minecraft:tank10 max 80
-bossbar add tank11 {"text":"Unstoppable","color":"dark_green"}
+bossbar add tank11 {"text":"Absorbing","color":"dark_green"}
 bossbar set minecraft:tank11 color green
 bossbar set minecraft:tank11 max 80
-bossbar add tank12 {"text":"Unstoppable","color":"dark_green"}
+bossbar add tank12 {"text":"Absorbing","color":"dark_green"}
 bossbar set minecraft:tank12 color green
 bossbar set minecraft:tank12 max 80
 

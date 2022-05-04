@@ -1,7 +1,6 @@
 scoreboard players set @s tank 80
 function rauch:game/core/ui/bossbar/tank/visible
-attribute @s minecraft:generic.attack_damage modifier add 0-0-0-0-2 "tankweak" -0.5 multiply_base
-attribute @s minecraft:generic.knockback_resistance modifier add 0-0-0-2-0 "nokb" 999999 add
-effect give @s resistance 4 2 true
+scoreboard players reset @s tank_damage_taken
+execute at @s run playsound minecraft:entity.evoker.prepare_summon master @a
 
 scoreboard players operation @s cool3 = @s cool3_target
