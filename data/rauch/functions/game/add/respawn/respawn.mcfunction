@@ -5,3 +5,4 @@ function rauch:game/core/mechanics/stats
 function rauch:game/core/ui/bossbar/respawn/invisible
 tag @s remove dead
 effect give @s instant_health 10 10 true
+effect give @s minecraft:hunger 6 255 true

@@ -22,6 +22,7 @@ execute as @s[scores={kit=8,flyerQSchedule=..-1}] run function rauch:game/core/a
 execute as @s[scores={kit=8,fly=1..},tag=!flying] run function rauch:game/core/ability/flyer/f/liftoff
 execute as @s[scores={kit=8},tag=flying] run function rauch:game/core/ability/flyer/f/flying
 #general
+execute as @s[tag=raucher_control,tag=!raucher_debuff] run function rauch:game/core/ability/raucher/f/slow/leave
 execute as @s[scores={hack=0..}] run function rauch:game/core/mechanics/hack
 execute as @s[scores={teleweak=0..}] run function rauch:game/core/ability/teleporter/r/debuff
 execute as @s[scores={hacker_ability=0..}] run function rauch:game/core/ability/hacker/f/ability_boost
@@ -59,7 +60,9 @@ scoreboard players reset @s deaths
 scoreboard players reset @s hitPnum
 scoreboard players reset @s fly
 tag @s remove spawn
+tag @s remove raucher_debuff
 
 #effect give @s minecraft:jump_boost 1 255 true ### no jump
-effect give @s minecraft:saturation 1 1 true
-#effect give @s[scores={hunger=3..}] minecraft:hunger 1 250 true ### no sprint
+### no sprint
+effect give @s[scores={hunger=..7},tag=!raucher_control] minecraft:saturation 1 0 true
+#effect give @s[scores={hunger=9..}] minecraft:hunger 1 250 true

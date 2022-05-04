@@ -19,6 +19,6 @@ function rauch:game/core/mechanics/weapon
 function rauch:game/core/mechanics/stats
 function rauch:game/core/mechanics/armor
 
-#effect give @s minecraft:hunger 6 255 true
+effect give @s minecraft:hunger 6 255 true
 effect give @s minecraft:resistance 6 255 true
 effect give @s minecraft:regeneration 3 255 true
