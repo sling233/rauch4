@@ -22,6 +22,8 @@ scoreboard players set @s cool3 1
 execute as @s[scores={kit=1}] run function rauch:game/core/ability/bolt/q/remove_hit_id
 execute as @s[scores={kit=2}] run function rauch:game/core/ability/zarzahn/r/hook_remove
 tag @s remove bolt
+scoreboard players reset @s raucher_debuff
+scoreboard players reset @s raucher_control
 tag @s remove boltHitBy1
 tag @s remove boltHitBy2
 tag @s remove boltHitBy3
