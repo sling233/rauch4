@@ -7,7 +7,7 @@ execute as @e[type=armor_stand,tag=map,tag=active,tag=t2] at @s run function rau
 execute as @a[tag=game,tag=!dead] run function rauch:game/player
 function rauch:game/core/ui/particle
 
-
+#projektile
 execute as @e[type=armor_stand,tag=r_h] run function rauch:game/core/ability/raucher/f/heal/heal
 execute as @e[type=armor_stand,tag=r_s] run function rauch:game/core/ability/raucher/f/slow/slow
 execute as @e[type=armor_stand,tag=hacker_bomb,tag=!onground] run function rauch:game/core/ability/hacker/q/projectile
@@ -17,9 +17,10 @@ execute as @e[type=area_effect_cloud,tag=r_h,tag=cloud] run function rauch:game/
 execute as @e[type=area_effect_cloud,tag=r_s,tag=cloud] run function rauch:game/core/ability/raucher/f/slow/grounded
 execute as @e[type=marker,tag=hacker_bomb,tag=center] run function rauch:game/core/ability/hacker/q/grounded
 execute as @e[type=marker,tag=hacker_bomb,tag=indicator] run function rauch:game/core/ability/hacker/q/indicator
-execute as @e[type=marker,tag=zar_point] run function rauch:game/core/ability/zarzahn/f/point
 
-execute as @e[type=area_effect_cloud,tag=shield] at @s run function rauch:game/core/ability/tank/r/shield
+#anderes
+execute as @e[type=marker,tag=zar_point] run function rauch:game/core/ability/zarzahn/f/point
+execute as @e[type=marker,tag=shield] at @s run function rauch:game/core/ability/tank/r/shield
 execute as @e[type=area_effect_cloud,tag=hacker2] run function rauch:game/core/ability/hacker/q/move
 execute as @e[type=area_effect_cloud,tag=hacker] run function rauch:game/core/ability/hacker/r/projectile
 execute as @e[type=area_effect_cloud,tag=teleporter] run function rauch:game/core/ability/teleporter/r/projectile

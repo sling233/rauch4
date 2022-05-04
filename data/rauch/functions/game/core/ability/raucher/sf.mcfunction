@@ -1,5 +1,5 @@
-execute as @s[team=Red] at @s anchored eyes run summon armor_stand ^ ^ ^0.1 {Invulnerable:1b,Marker:0b,Invisible:1b,Tags:["red","r_h","setup"]}
-execute as @s[team=Blue] at @s anchored eyes run summon armor_stand ^ ^ ^0.1 {Invulnerable:1b,Marker:0b,Invisible:1b,Tags:["blu","r_h","setup"]}
+execute as @s[team=Red] at @s anchored eyes run summon armor_stand ^ ^ ^0.1 {Invulnerable:1b,Marker:0b,Invisible:1b,Tags:["red","r_h","setup","projectile"]}
+execute as @s[team=Blue] at @s anchored eyes run summon armor_stand ^ ^ ^0.1 {Invulnerable:1b,Marker:0b,Invisible:1b,Tags:["blu","r_h","setup","projectile"]}
 
 execute as @s at @s anchored eyes run summon area_effect_cloud ^ ^ ^ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["vector"]}
 

@@ -1,18 +1,8 @@
-#execute at @s[team=Red] if entity @a[team=Blue,distance=..8] run effect give @s instant_health 1 2 true
-#execute at @s[team=Blue] if entity @a[team=Red,distance=..8] run effect give @s instant_health 1 2 true
+execute at @s[team=Red] run summon marker ~ ~0.1 ~ {Tags:["red","shield","setup"]}
+execute at @s[team=Blue] run summon marker ~ ~0.1 ~ {Tags:["blu","shield","setup"]}
+scoreboard players operation @e[type=marker,tag=shield,tag=setup] pnum = @s pnum
+tag @e[type=marker,tag=shield,tag=setup] remove setup
 
-#execute at @s[team=Red] unless entity @a[team=Blue,distance=..8] run tellraw @s {"text":"An enemy must be within 8 blocks in order for you to activate your skill","color":"red"}
-#execute at @s[team=Blue] unless entity @a[team=Red,distance=..8] run tellraw @s {"text":"An enemy must be within 8 blocks in order for you to activate your skill","color":"red"}
-
-#execute at @s[team=Red] if entity @a[team=Blue,distance=..8] run scoreboard players operation @s cool1 = @s cool1_target
-#execute at @s[team=Blue] if entity @a[team=Red,distance=..8] run scoreboard players operation @s cool1 = @s cool1_target
-
-
-#execute at @s[team=Red] if entity @a[team=Blue,distance=..8] run playsound minecraft:block.brewing_stand.brew master @a
-#execute at @s[team=Blue] if entity @a[team=Red,distance=..8] run playsound minecraft:block.brewing_stand.brew master @a
-
-
-execute at @s[team=Red] run summon area_effect_cloud ~ ~0.1 ~ {Duration:120,Tags:["red","shield"]}
-execute at @s[team=Blue] run summon area_effect_cloud ~ ~0.1 ~ {Duration:120,Tags:["blu","shield"]}
+execute at @s run playsound minecraft:entity.illusioner.prepare_mirror master @a
 
 scoreboard players operation @s cool1 = @s cool1_target
