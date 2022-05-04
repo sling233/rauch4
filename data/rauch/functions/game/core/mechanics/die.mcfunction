@@ -19,6 +19,7 @@ scoreboard players reset @s zarzahn_f
 scoreboard players set @s cool1 1
 scoreboard players set @s cool2 1
 scoreboard players set @s cool3 1
+execute as @s[scores={kit=3}] run scoreboard players operation @s projectileRNum = @s projectileRMax
 execute as @s[scores={kit=1}] run function rauch:game/core/ability/bolt/q/remove_hit_id
 execute as @s[scores={kit=2}] run function rauch:game/core/ability/zarzahn/r/hook_remove
 tag @s remove bolt

@@ -15,9 +15,9 @@ execute as @s run scoreboard players operation @e[type=armor_stand,limit=1,tag=r
 execute as @s run scoreboard players operation @e[type=armor_stand,limit=1,tag=r_h,sort=nearest,tag=setup] yPos -= @e[type=area_effect_cloud,limit=1,tag=vector,sort=nearest] yPos
 execute as @s run scoreboard players operation @e[type=armor_stand,limit=1,tag=r_h,sort=nearest,tag=setup] zPos -= @e[type=area_effect_cloud,limit=1,tag=vector,sort=nearest] zPos
 
-execute as @s as @e[type=armor_stand,tag=r_h,tag=setup,sort=nearest] store result entity @s Motion[0] double 0.000015 run scoreboard players get @s xPos
-execute as @s as @e[type=armor_stand,tag=r_h,tag=setup,sort=nearest] store result entity @s Motion[1] double 0.000015 run scoreboard players get @s yPos
-execute as @s as @e[type=armor_stand,tag=r_h,tag=setup,sort=nearest] store result entity @s Motion[2] double 0.000015 run scoreboard players get @s zPos
+execute as @s as @e[type=armor_stand,tag=r_h,tag=setup,sort=nearest] store result entity @s Motion[0] double 0.000017 run scoreboard players get @s xPos
+execute as @s as @e[type=armor_stand,tag=r_h,tag=setup,sort=nearest] store result entity @s Motion[1] double 0.000017 run scoreboard players get @s yPos
+execute as @s as @e[type=armor_stand,tag=r_h,tag=setup,sort=nearest] store result entity @s Motion[2] double 0.000017 run scoreboard players get @s zPos
 
 kill @e[type=area_effect_cloud,tag=vector]
 tag @e[type=armor_stand,tag=r_h,tag=setup] remove setup
