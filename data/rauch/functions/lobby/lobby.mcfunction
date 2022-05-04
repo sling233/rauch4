@@ -30,8 +30,7 @@ title @s[scores={kit=7},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text"
 title @s[scores={kit=8},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Pikka","color":"yellow"}]
 
 #title @s[tag=queue] actionbar [{"text":"Waiting for players... ","color":"yellow"}]
-#title @s[tag=queue] actionbar [{"text":"Queue: ","color":"yellow"},{"selector":"@a[tag=queue,team=Red]"},{"text":" "},{"selector":"@a[tag=queue,team=Blue]"},{"text":" "},{"selector":"@a[tag=queue,team=Lobby]"}]
-title @s[tag=queue] actionbar [{"text":"Queue: ","color":"yellow"},{"selector":"@a[tag=queue,team=Red]"},{"selector":"@a[tag=queue,team=Blue]"},{"selector":"@a[tag=queue,team=Lobby]"}]
+title @s[tag=queue] actionbar [{"text":"Queue: ","color":"yellow"},{"selector":"@a[tag=queue]"}]
 
 scoreboard players enable @s[tag=admin] adminsetting
 scoreboard players enable @s kitselect
