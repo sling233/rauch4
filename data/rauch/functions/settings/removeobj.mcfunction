@@ -6,9 +6,6 @@ scoreboard objectives remove arrows
 scoreboard objectives remove arrowreg
 scoreboard objectives remove bolt
 scoreboard objectives remove boltdmg
-scoreboard objectives remove capture_info
-scoreboard objectives remove center_blue
-scoreboard objectives remove center_red
 scoreboard objectives remove click
 scoreboard objectives remove clouds
 scoreboard objectives remove cool1
@@ -70,14 +67,19 @@ scoreboard objectives remove tank_damage_taken
 scoreboard objectives remove tank_resistance
 scoreboard objectives remove tele2
 scoreboard objectives remove teleweak
-scoreboard objectives remove time_blue
-scoreboard objectives remove time_red
-scoreboard objectives remove time_times
 scoreboard objectives remove walk
 scoreboard objectives remove xPos
 scoreboard objectives remove yPos
 scoreboard objectives remove zarzahn_f
 scoreboard objectives remove zPos
+#king of the hill
+scoreboard objectives remove capture_info
+scoreboard objectives remove control
+scoreboard objectives remove time_blue
+scoreboard objectives remove time_red
+scoreboard objectives remove blu_calc
+scoreboard objectives remove red_calc
+scoreboard objectives remove time_times
 #respawnDeathmatch
 scoreboard objectives remove killNumRed
 scoreboard objectives remove killNumBlue
@@ -100,12 +102,7 @@ team remove red_display
 team remove blue_display
 
 #bossbars
-bossbar remove red_capturing
-bossbar remove red_contested
-bossbar remove red_captured
-bossbar remove blue_capturing
-bossbar remove blue_contested
-bossbar remove blue_captured
+bossbar remove center_control
 
 bossbar remove bolt1
 bossbar remove bolt2

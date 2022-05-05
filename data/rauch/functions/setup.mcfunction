@@ -11,14 +11,8 @@ scoreboard objectives add arrows dummy
 scoreboard objectives add arrowreg dummy
 scoreboard objectives add bolt dummy
 scoreboard objectives add boltdmg dummy
-scoreboard objectives add capture_info dummy
-scoreboard objectives add center_blue dummy
-scoreboard objectives add center_red dummy
 scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add clouds dummy
-#scoreboard objectives add coolnew dummy
-#scoreboard objectives add coolnews dummy
-#scoreboard objectives add coolnewds dummy
 scoreboard objectives add cool1 dummy
 scoreboard objectives add cool1_s dummy
 scoreboard objectives add cool1_ds dummy
@@ -68,8 +62,6 @@ scoreboard objectives add pnum dummy
 scoreboard objectives add projectileRMax dummy
 scoreboard objectives add projectileRNum dummy
 scoreboard objectives add push_levitation_timer minecraft.custom:minecraft.time_since_rest
-#scoreboard objectives add projectileQNum dummy
-#scoreboard objectives add projectileQMax dummy
 scoreboard objectives add raucherdmg dummy
 scoreboard objectives add respawn dummy
 scoreboard objectives add slime_despawn_timer minecraft.custom:minecraft.time_since_rest
@@ -80,19 +72,24 @@ scoreboard objectives add tank_damage_taken minecraft.custom:minecraft.damage_ta
 scoreboard objectives add tank_resistance dummy
 scoreboard objectives add tele2 dummy
 scoreboard objectives add teleweak dummy
-scoreboard objectives add time_blue dummy
-scoreboard objectives add time_red dummy
-scoreboard objectives add time_times dummy {"text":"Time until win","color":"yellow"}
 scoreboard objectives add walk minecraft.custom:minecraft.walk_one_cm
 scoreboard objectives add xPos dummy
 scoreboard objectives add yPos dummy
 scoreboard objectives add zarzahn_f dummy
 scoreboard objectives add zPos dummy
+#king of the hill
+scoreboard objectives add capture_info dummy
+scoreboard objectives add control dummy
+scoreboard objectives add time_blue dummy
+scoreboard objectives add time_red dummy
+scoreboard objectives add blu_calc dummy
+scoreboard objectives add red_calc dummy
+scoreboard objectives add time_times dummy {"text":"Points left:","color":"yellow"}
 #respawnDeathmatch
 scoreboard objectives add killNumRed dummy
 scoreboard objectives add killNumBlue dummy
 scoreboard objectives add killsDisplay dummy {"text":"Kills","color":"yellow"}
-#capture_the_flag
+#capture the flag
 scoreboard objectives add flagDistanceBlue dummy
 scoreboard objectives add flagDistanceRed dummy
 scoreboard objectives add flag_points_red dummy
@@ -150,36 +147,10 @@ gamerule announceAdvancements false
 #gamerule showDeathMessages true
 
 #bossbars
-bossbar add red_capturing {"text":"Capturing...","color":"dark_red"}
-bossbar set minecraft:red_capturing color red
-bossbar set minecraft:red_capturing max 100
-bossbar set minecraft:red_capturing visible false
-
-bossbar add blue_capturing {"text":"Capturing...","color":"blue"}
-bossbar set minecraft:blue_capturing color blue
-bossbar set minecraft:blue_capturing max 100
-bossbar set minecraft:blue_capturing visible false
-
-bossbar add red_captured {"text":"Captured","color":"dark_red"}
-bossbar set minecraft:red_captured color red
-bossbar set minecraft:red_captured max 100
-bossbar set minecraft:red_captured visible false
-
-bossbar add blue_captured {"text":"Captured","color":"blue"}
-bossbar set minecraft:blue_captured color blue
-bossbar set minecraft:blue_captured max 100
-bossbar set minecraft:blue_captured visible false
-
-bossbar add red_contested {"text":"Contested","color":"dark_red"}
-bossbar set minecraft:red_contested color red
-bossbar set minecraft:red_contested max 100
-bossbar set minecraft:red_contested visible false
-
-bossbar add blue_contested {"text":"Contested","color":"blue"}
-bossbar set minecraft:blue_contested color blue
-bossbar set minecraft:blue_contested max 100
-bossbar set minecraft:blue_contested visible false
-
+bossbar add center_control [{"text":"Red","color":"red"},{"text":"             "},{"text":"Neutral","color":"yellow"},{"text":"             "},{"text":"Blu","color":"blue"}]
+bossbar set minecraft:center_control color white
+bossbar set minecraft:center_control max 200
+bossbar set minecraft:center_control style notched_10
 
 bossbar add bolt1 {"text":"Thunder","color":"blue"}
 bossbar set minecraft:bolt1 color blue

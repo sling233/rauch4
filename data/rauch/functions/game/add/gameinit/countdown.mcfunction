@@ -20,6 +20,7 @@ execute if score Global gamestart matches 20 as @a[tag=game] run title @s title 
 execute if score Global gamestart matches 0 as @a[tag=game] run title @s title {"text":"The Game has started!","color":"gold"}
 #execute if score Global gamestart matches 0 as @a[tag=game] at @s run playsound minecraft:entity.ender_dragon.growl master @s ~ ~ ~
 
+execute if score Global gamestart matches 0 as @a[tag=game] run title @s subtitle {"text":""}
 execute if score Global gamestart matches 0 run scoreboard players reset Global gamestart
 scoreboard players set @a[tag=game] cool1 2
 scoreboard players set @a[tag=game] cool2 2
