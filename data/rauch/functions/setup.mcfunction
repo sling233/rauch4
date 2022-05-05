@@ -147,7 +147,7 @@ gamerule announceAdvancements false
 #gamerule showDeathMessages true
 
 #bossbars
-bossbar add center_control [{"text":"Red","color":"red"},{"text":"             "},{"text":"Neutral","color":"yellow"},{"text":"             "},{"text":"Blu","color":"blue"}]
+bossbar add center_control [{"text":"Red","color":"red"},{"text":"             "},{"text":"Neutral","color":"yellow"},{"text":"             "},{"text":"Blue","color":"blue"}]
 bossbar set minecraft:center_control color white
 bossbar set minecraft:center_control max 200
 bossbar set minecraft:center_control style notched_10
