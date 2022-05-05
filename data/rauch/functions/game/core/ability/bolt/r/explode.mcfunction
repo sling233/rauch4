@@ -10,6 +10,7 @@ execute at @s[tag=red] as @a[team=Blue,distance=..3] run function rauch:game/cor
 execute as @a[tag=temp] run effect give @s minecraft:instant_damage 1 2 true
 #particle minecraft:cloud ~ ~ ~ 0.1 0.1 0.1 0.4 700 force
 
+kill @s
 
 particle minecraft:dust_color_transition 0.7 0 0.3 1 0 0 0 ~0.0 ~-2.959 ~0.494 0.2 0.2 0.2 1 1 force
 particle minecraft:dust_color_transition 0.7 0 0.3 1 0 0 0 ~0.428 ~-2.959 ~0.247 0.2 0.2 0.2 1 1 force
@@ -477,5 +478,3 @@ particle minecraft:dust_color_transition 0.7 0 0.3 1 0 0 0 ~0.428 ~2.959 ~-0.247
 particle minecraft:dust_color_transition 0.7 0 0.3 1 0 0 0 ~0.0 ~2.959 ~-0.494 0.2 0.2 0.2 1 1 force
 particle minecraft:dust_color_transition 0.7 0 0.3 1 0 0 0 ~-0.428 ~2.959 ~-0.247 0.2 0.2 0.2 1 1 force
 particle minecraft:dust_color_transition 0.7 0 0.3 1 0 0 0 ~-0.428 ~2.959 ~0.247 0.2 0.2 0.2 1 1 force
-
-kill @s
