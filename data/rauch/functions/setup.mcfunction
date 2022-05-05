@@ -81,7 +81,6 @@ scoreboard objectives add tank dummy
 scoreboard objectives add tank_damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add tank_resistance dummy
 scoreboard objectives add tele2 dummy
-scoreboard objectives add teleporter_id dummy
 scoreboard objectives add teleweak dummy
 scoreboard objectives add time_blue dummy
 scoreboard objectives add time_red dummy

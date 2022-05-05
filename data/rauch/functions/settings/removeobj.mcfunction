@@ -79,7 +79,6 @@ scoreboard objectives remove stun
 scoreboard objectives remove tank
 scoreboard objectives remove tank_resistance
 scoreboard objectives remove tele2
-scoreboard objectives remove teleporter_id
 scoreboard objectives remove teleweak
 scoreboard objectives remove time_blue
 scoreboard objectives remove time_red

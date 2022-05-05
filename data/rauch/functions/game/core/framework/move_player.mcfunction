@@ -34,7 +34,6 @@ scoreboard players reset @s stun
 scoreboard players reset @s tank
 scoreboard players reset @s pnum
 scoreboard players reset @s tele2
-scoreboard players reset @s teleporter_id
 scoreboard players reset @s teleweak
 scoreboard players reset @s zarzahn_f
 tag @s remove game
