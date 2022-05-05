@@ -4,12 +4,11 @@ particle minecraft:explosion ~ ~ ~ 1 1 1 1 10 force
 particle minecraft:flash ~ ~ ~ 0.1 0.1 0.1 1 1 force
 playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 1 1
 
-tag @s add temp
 execute at @s[tag=blu] as @a[team=Red,distance=..3] run function rauch:game/core/ability/bolt/r/hit
 execute at @s[tag=red] as @a[team=Blue,distance=..3] run function rauch:game/core/ability/bolt/r/hit
 execute as @a[tag=temp] run effect give @s minecraft:instant_damage 1 2 true
 #particle minecraft:cloud ~ ~ ~ 0.1 0.1 0.1 0.4 700 force
-
+tag @s add hit
 kill @s
 
 particle minecraft:dust_color_transition 0.7 0 0.3 1 0 0 0 ~0.0 ~-2.959 ~0.494 0.2 0.2 0.2 1 1 force
