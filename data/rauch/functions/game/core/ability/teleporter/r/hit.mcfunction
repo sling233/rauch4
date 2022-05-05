@@ -1,5 +1,5 @@
-scoreboard players operation @s 0 = @e[type=marker,tag=teleporter,tag=temp,limit=1] pnum
-execute at @s as @a if score @s pnum = @p 0 run tag @s add tele
+scoreboard players operation @s 2 = @e[type=marker,tag=teleporter,tag=temp,limit=1] pnum
+execute at @s as @a if score @s pnum = @p 2 run tag @s add tele
 
 tp @a[tag=tele] @s
 execute as @a[tag=tele] at @s run tp @s ~ ~ ~ ~ 0

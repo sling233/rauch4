@@ -61,8 +61,6 @@ scoreboard objectives add mapTime trigger
 scoreboard objectives add maxArrows dummy
 scoreboard objectives add maxClouds dummy
 scoreboard objectives add mode dummy
-scoreboard objectives add music_id dummy
-scoreboard objectives add music_length dummy
 scoreboard objectives add particle_ambient dummy
 scoreboard objectives add particleDensity dummy
 scoreboard objectives add plcount dummy

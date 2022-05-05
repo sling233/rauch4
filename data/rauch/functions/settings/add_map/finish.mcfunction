@@ -17,11 +17,11 @@ execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapPar
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapParticle matches 10 run tellraw @s [{"text":"-> ","color":"dark_green"},{"text":"Witch","color":"light_purple"}]
 
 tellraw @s {"text":"Map Time","color":"green"}
-execute unless score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapTime matches 1..3 run tellraw @s [{"text":"-> ","color":"dark_green"},{"text":"Unset","color":"light_purple"}]
+execute unless score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapTime matches 1..4 run tellraw @s [{"text":"-> ","color":"dark_green"},{"text":"Unset","color":"light_purple"}]
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapTime matches 1 run tellraw @s [{"text":"-> ","color":"dark_green"},{"text":"Day","color":"light_purple"}]
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapTime matches 2 run tellraw @s [{"text":"-> ","color":"dark_green"},{"text":"Noon","color":"light_purple"}]
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapTime matches 3 run tellraw @s [{"text":"-> ","color":"dark_green"},{"text":"Night","color":"light_purple"}]
-execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapTime matches 3 run tellraw @s [{"text":"-> ","color":"dark_green"},{"text":"Midnight","color":"light_purple"}]
+execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapTime matches 4 run tellraw @s [{"text":"-> ","color":"dark_green"},{"text":"Midnight","color":"light_purple"}]
 
 tellraw @s {"text":"Added Map","color":"green"}
 tellraw @s [{"text":"-> ","color":"dark_green"},{"nbt":"CustomName","entity":"@e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1]","interpret":true,"color":"light_purple"}]

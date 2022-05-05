@@ -9,7 +9,6 @@ execute as @s[scores={death=1..}] run function rauch:game/core/mechanics/die
 execute as @s[scores={bolt=0..}] run function rauch:game/core/ability/bolt/q/charge
 execute as @s[scores={boltdmg=0..}] run function rauch:game/core/ability/bolt/q/buff
 execute as @s[scores={zarzahn_f=0..}] run function rauch:game/core/ability/zarzahn/f/warptimer
-execute as @s[scores={hacking=0..}] run function rauch:game/core/ability/hacker/q/hacking
 execute as @s[scores={tank=0..}] run function rauch:game/core/ability/tank/f/particle
 execute as @s[scores={tele2=0..}] run function rauch:game/core/ability/teleporter/q/invisible
 execute as @s[scores={kit=2,slime_despawn_timer=-1}] run function rauch:game/core/ability/zarzahn/q/despawn

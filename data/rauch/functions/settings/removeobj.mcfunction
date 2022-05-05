@@ -1,17 +1,6 @@
-scoreboard objectives remove 0
-scoreboard objectives remove 1
 scoreboard objectives remove 2
-scoreboard objectives remove 4
-scoreboard objectives remove 8
-scoreboard objectives remove 16
+scoreboard objectives remove 10
 scoreboard objectives remove 20
-scoreboard objectives remove 32
-scoreboard objectives remove 64
-scoreboard objectives remove 128
-scoreboard objectives remove 256
-scoreboard objectives remove 512
-scoreboard objectives remove 1024
-scoreboard objectives remove 2048
 scoreboard objectives remove adminsetting
 scoreboard objectives remove arrows
 scoreboard objectives remove arrowreg
@@ -36,7 +25,7 @@ scoreboard objectives remove cool3_ds
 scoreboard objectives remove cool3_target
 scoreboard objectives remove damage_dealt
 scoreboard objectives remove damage_taken
-scoreboard objectives remove death.custom:minecraft.deaths
+scoreboard objectives remove death
 scoreboard objectives remove decode
 scoreboard objectives remove drop
 scoreboard objectives remove dropcoas
@@ -50,6 +39,7 @@ scoreboard objectives remove flyerQSchedule
 scoreboard objectives remove gamestart
 scoreboard objectives remove hack
 scoreboard objectives remove hacker_ability
+scoreboard objectives remove heal
 scoreboard objectives remove Health
 scoreboard objectives remove health_display
 scoreboard objectives remove hitPnum
@@ -63,8 +53,6 @@ scoreboard objectives remove mapTime
 scoreboard objectives remove maxArrows
 scoreboard objectives remove maxClouds
 scoreboard objectives remove mode
-scoreboard objectives remove music_id
-scoreboard objectives remove music_length
 scoreboard objectives remove particle_ambient
 scoreboard objectives remove particleDensity
 scoreboard objectives remove plcount
@@ -72,11 +60,13 @@ scoreboard objectives remove pnum
 scoreboard objectives remove projectileRMax
 scoreboard objectives remove projectileRNum
 scoreboard objectives remove push_levitation_timer
+scoreboard objectives remove raucherdmg
 scoreboard objectives remove respawn
 scoreboard objectives remove slime_despawn_timer
 scoreboard objectives remove squid
 scoreboard objectives remove stun
 scoreboard objectives remove tank
+scoreboard objectives remove tank_damage_taken
 scoreboard objectives remove tank_resistance
 scoreboard objectives remove tele2
 scoreboard objectives remove teleweak
@@ -92,6 +82,12 @@ scoreboard objectives remove zPos
 scoreboard objectives remove killNumRed
 scoreboard objectives remove killNumBlue
 scoreboard objectives remove killsDisplay
+#capturethefalg
+scoreboard objectives remove flagDistanceBlue
+scoreboard objectives remove flagDistanceRed
+scoreboard objectives remove flag_points_red
+scoreboard objectives remove flag_points_blue
+scoreboard objectives remove flagDisplay
 
 scoreboard objectives setdisplay belowName
 scoreboard objectives setdisplay list
@@ -221,4 +217,6 @@ team remove Lobby
 team remove red_display
 team remove blue_display
 
+kill @e[type=armor_stand,tag=map]
+clear @a minecraft:written_book
 function rauch:setup
