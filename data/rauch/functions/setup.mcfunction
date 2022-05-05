@@ -89,6 +89,8 @@ scoreboard objectives add time_times dummy {"text":"Points left:","color":"yello
 scoreboard objectives add killNumRed dummy
 scoreboard objectives add killNumBlue dummy
 scoreboard objectives add killsDisplay dummy {"text":"Kills","color":"yellow"}
+scoreboard objectives add rd_kills_to_win dummy
+execute unless score Global rd_kills_to_win matches 1.. run scoreboard players set Global rd_kills_to_win 20
 #capture the flag
 scoreboard objectives add flagDistanceBlue dummy
 scoreboard objectives add flagDistanceRed dummy
@@ -134,7 +136,7 @@ team join blue_display Blue:
 #gamerule doMobLoot false
 #gamerule doMobSpawning false
 #gamerule doTileDrops false
-#gamerule sendCommandFeedback false
+gamerule sendCommandFeedback false
 gamerule keepInventory true
 gamerule doImmediateRespawn true
 gamerule naturalRegeneration false

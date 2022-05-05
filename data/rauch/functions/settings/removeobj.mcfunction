@@ -84,6 +84,7 @@ scoreboard objectives remove time_times
 scoreboard objectives remove killNumRed
 scoreboard objectives remove killNumBlue
 scoreboard objectives remove killsDisplay
+scoreboard objectives remove rd_kills_to_win
 #capturethefalg
 scoreboard objectives remove flagDistanceBlue
 scoreboard objectives remove flagDistanceRed

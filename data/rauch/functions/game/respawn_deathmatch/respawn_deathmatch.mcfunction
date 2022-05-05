@@ -6,6 +6,6 @@ function rauch:game/add/respawn/respawn_main
 scoreboard players operation Red: killsDisplay = Global killNumRed
 scoreboard players operation Blue: killsDisplay = Global killNumBlue
 
-execute if score Global killNumRed matches 20.. if score Global killNumBlue matches 20.. run function rauch:game/add/stats/tie
-execute if score Global killNumRed matches 20.. unless score Global killNumBlue matches 20.. run function rauch:game/add/stats/win_red
-execute if score Global killNumBlue matches 20.. unless score Global killNumRed matches 20.. run function rauch:game/add/stats/win_blue
+execute if score Global killNumRed >= Global rd_kills_to_win if score Global killNumBlue >= Global rd_kills_to_win run function rauch:game/add/stats/tie
+execute if score Global killNumRed >= Global rd_kills_to_win unless score Global killNumBlue >= Global rd_kills_to_win run function rauch:game/add/stats/win_red
+execute if score Global killNumBlue >= Global rd_kills_to_win unless score Global killNumRed >= Global rd_kills_to_win run function rauch:game/add/stats/win_blue

@@ -65,7 +65,7 @@ tag @a add clear
 schedule function rauch:game/core/framework/clear 10t
 function rauch:game/core/ui/bossbar
 function rauch:game/core/ui/bossbar/allinvisible
-
+title @s subtitle {"text":""}
 tag @s add lobby
 gamemode adventure @s
 execute at @e[type=armor_stand,tag=main] run tp @s ~ ~-20 ~
