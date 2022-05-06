@@ -13,4 +13,4 @@ execute at @s run particle minecraft:dust_color_transition 0.7 0 0.3 1 0 0 0 ~ ~
 execute as @s[tag=!hit] run function rauch:game/core/ability/bolt/r/detect
 
 
-execute at @s[scores={click=18..}] run kill @s
+execute at @s[scores={click=18..},tag=!hit] at @s run function rauch:game/core/ability/bolt/r/explode

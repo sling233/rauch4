@@ -3,9 +3,9 @@ execute as @a[tag=queue] run function rauch:game/core/framework/teamsetup
 scoreboard players reset Global pnum
 
 #mapgedöns
-summon armor_stand ~ ~100 ~ {Invulnerable:1b,NoGravity:1b,Tags:["active","map","t1"]}
-summon armor_stand ~ ~100 ~ {Invulnerable:1b,NoGravity:1b,Tags:["active","map","t2"]}
-summon armor_stand ~ ~100 ~ {Invulnerable:1b,NoGravity:1b,Tags:["active","map","ce"]}
+summon armor_stand ~ ~100 ~ {Invulnerable:1b,Invisible:1b,NoGravity:1b,Tags:["active","map","t1"]}
+summon armor_stand ~ ~100 ~ {Invulnerable:1b,Invisible:1b,NoGravity:1b,Tags:["active","map","t2"]}
+summon armor_stand ~ ~100 ~ {Invulnerable:1b,Invisible:1b,NoGravity:1b,Tags:["active","map","ce"]}
 execute as @e[type=armor_stand,tag=map,tag=active] run function rauch:game/core/framework/mapsetup
 scoreboard players operation Global mapParticle = @e[type=armor_stand,tag=map,tag=root,tag=active] mapParticle
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=active,limit=1] mapTime matches 1 run time set day

@@ -49,7 +49,7 @@ execute if score @s kit matches 3 run function rauch:game/core/ui/actionbar/cool
 execute if score @s kit matches 5 run function rauch:game/core/ui/actionbar/cooldisrp
 
 #stuff
-execute as @s[tag=spawn] run function rauch:game/core/shop/shop
+#execute as @s[tag=spawn] run function rauch:game/core/shop/shop
 
 #scores & effects
 scoreboard players operation @s health_display = @s Health
@@ -58,10 +58,7 @@ scoreboard players reset @s dropcoas
 scoreboard players reset @s deaths
 scoreboard players reset @s hitPnum
 scoreboard players reset @s fly
-tag @s remove spawn
+#tag @s remove spawn
 tag @s remove raucher_debuff
 
-#effect give @s minecraft:jump_boost 1 255 true ### no jump
-### no sprint
 effect give @s[scores={hunger=..7},tag=!raucher_control] minecraft:saturation 1 0 true
-#effect give @s[scores={hunger=9..}] minecraft:hunger 1 250 true
