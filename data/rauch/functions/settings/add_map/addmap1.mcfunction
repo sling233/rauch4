@@ -11,7 +11,7 @@ scoreboard players operation @e[type=armor_stand,tag=map,tag=setup,limit=1] mapI
 
 scoreboard players add Global mapId 1
 tellraw @s {"text":"----------- Adding a Map -----------","color":"yellow"}
-tellraw @s [{"text":"Map ","color":"yellow"},{"score":{"name":"Global","objective":"mapId"},"color":"light_purple"},{"text":"/8"}]
+tellraw @s [{"text":"Map ","color":"yellow"},{"score":{"name":"Global","objective":"mapId"},"color":"light_purple"},{"text":"/8                                "},{"text":"[Guide]","clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorialmap0"}}]
 execute as @e[type=armor_stand,tag=root,tag=map] if score @s mapId > Global mapId run tellraw @p {"text":"Map Ids are scuffed. Recalculate Map Ids","color":"red"}
 
 scoreboard players set @e[type=armor_stand,tag=map,tag=adding,tag=setup] mapParticle -1
