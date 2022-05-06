@@ -1,9 +1,9 @@
 execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:"{\"text\":\"Lobby Spawn\",\"color\":\"blue\",\"italic\":false}"},EntityTag:{Tags:["main"]}} 1
 execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run tellraw @a[nbt={Inventory:[{id:"minecraft:squid_spawn_egg"}]}] {"text":"Please set the Lobby position.","bold":true,"color":"blue"}
-execute unless entity @a[tag=admin] run tellraw @a [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}}]
+execute unless entity @a[tag=admin] unless score Global click matches 1 run tellraw @a [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here","italic":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set Global click 1"}}]
 execute as @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:"{\"text\":\"Lobby Spawn\",\"color\":\"blue\",\"italic\":false}"},EntityTag:{Tags:["main"]}} 1
 execute as @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run tellraw @s[nbt={Inventory:[{id:"minecraft:squid_spawn_egg"}]}] {"text":"Please set the Lobby Spawnpoint.","bold":true,"color":"blue"}
-execute as @a[tag=admin] run tellraw @s [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}}]
+execute as @a[tag=admin] unless score Global click matches 1 run tellraw @s [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here","italic":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set Global click 1"}}]
 
 execute as @a[tag=!lobby,tag=!game,tag=!addmap] run tag @s add lobby
 
