@@ -1,4 +1,3 @@
-bossbar set minecraft:center_control visible false
 
 bossbar set minecraft:bolt1 visible false
 bossbar set minecraft:bolt2 visible false

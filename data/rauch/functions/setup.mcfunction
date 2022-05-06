@@ -2,12 +2,13 @@ execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] 
 execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run tellraw @a[nbt={Inventory:[{id:"minecraft:squid_spawn_egg"}]}] {"text":"Please set the Lobby position.","bold":true,"color":"blue"}
 execute unless entity @a[tag=admin] run tellraw @a [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}}]
 execute as @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:"{\"text\":\"Lobby Spawn\",\"color\":\"blue\",\"italic\":false}"},EntityTag:{Tags:["main"]}} 1
-execute as @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run tellraw @a[nbt={Inventory:[{id:"minecraft:squid_spawn_egg"}]}] {"text":"Please set the Lobby Spawnpoint.","bold":true,"color":"blue"}
-execute as @a[tag=admin] run tellraw @a [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}}]
+execute as @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run tellraw @s[nbt={Inventory:[{id:"minecraft:squid_spawn_egg"}]}] {"text":"Please set the Lobby Spawnpoint.","bold":true,"color":"blue"}
+execute as @a[tag=admin] run tellraw @s [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}}]
 
 execute as @a[tag=!lobby,tag=!game,tag=!addmap] run tag @s add lobby
 
 scoreboard objectives add 2 dummy
+scoreboard objectives add 9 dummy
 scoreboard objectives add 10 dummy
 scoreboard objectives add 20 dummy
 scoreboard objectives add adminsetting trigger
@@ -103,6 +104,7 @@ scoreboard objectives add flag_points_blue dummy
 scoreboard objectives add flagDisplay dummy {"text":"Points","color":"yellow"}
 
 scoreboard players set Global 2 2
+scoreboard players set Global 9 9
 scoreboard players set Global 10 10
 scoreboard players set Global 20 20
 execute unless score Global mode matches 0..4 run scoreboard players set Global mode 0
