@@ -6,10 +6,11 @@ execute at @s run particle minecraft:explosion ~ ~ ~ 1 1 1 1 20 force
 execute at @s run particle minecraft:flash ~ ~ ~ 0.1 0.1 0.1 1 1 force
 execute at @s run playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 1 1
 
+tag @s add temp
 execute as @a if score @s pnum = @e[type=marker,tag=raucher_rocket,tag=temp,limit=1] pnum run scoreboard players set @s slime_despawn_timer -5
+tag @s remove temp
 
 function rauch:game/core/ability/raucher/r/spawn
-
 
 tag @s add hit
 kill @s
