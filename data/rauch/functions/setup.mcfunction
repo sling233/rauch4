@@ -1,9 +1,9 @@
 execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:"{\"text\":\"Lobby Spawn\",\"color\":\"blue\",\"italic\":false}"},EntityTag:{Tags:["main"]}} 1
 execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run tellraw @a[nbt={Inventory:[{id:"minecraft:squid_spawn_egg"}]}] {"text":"Please set the Lobby position.","bold":true,"color":"blue"}
-execute unless entity @a[tag=admin] run tellraw @a [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial0"}}]
+execute unless entity @a[tag=admin] run tellraw @a [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}}]
 execute as @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:"{\"text\":\"Lobby Spawn\",\"color\":\"blue\",\"italic\":false}"},EntityTag:{Tags:["main"]}} 1
 execute as @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run tellraw @a[nbt={Inventory:[{id:"minecraft:squid_spawn_egg"}]}] {"text":"Please set the Lobby Spawnpoint.","bold":true,"color":"blue"}
-execute as @a[tag=admin] run tellraw @a [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial0"}}]
+execute as @a[tag=admin] run tellraw @a [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}}]
 
 execute as @a[tag=!lobby,tag=!game,tag=!addmap] run tag @s add lobby
 
@@ -140,7 +140,7 @@ team join blue_display Blue:
 #gamerule doMobLoot false
 #gamerule doMobSpawning false
 #gamerule doTileDrops false
-#gamerule sendCommandFeedback false
+gamerule sendCommandFeedback false
 gamerule keepInventory true
 gamerule doImmediateRespawn true
 gamerule naturalRegeneration false
