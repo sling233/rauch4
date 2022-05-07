@@ -12,6 +12,6 @@ execute at @s positioned ^ ^ ^-2 run playsound minecraft:entity.enderman.telepor
 #why not -0.5 wtf this actually makes no sense
 attribute @s minecraft:generic.attack_damage modifier add 0-0-0-0-1 "teleweak" -0.167 multiply_base
 scoreboard players set @s teleweak 80
-effect give @s slowness 4 1
+effect give @s slowness 4 1 true
 execute as @e[type=marker,tag=teleporter,tag=temp,limit=1] run tag @s add hit
 execute as @e[type=marker,tag=teleporter,tag=temp,limit=1] run kill @s
