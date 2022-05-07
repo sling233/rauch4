@@ -23,7 +23,7 @@ execute as @a[scores={kit=5}] run scoreboard players set @s cool1_target 200
 execute as @a[scores={kit=5}] run scoreboard players set @s cool2_target 320
 execute as @a[scores={kit=5}] run scoreboard players set @s cool3_target 800
 
-execute as @a[scores={kit=6}] run scoreboard players set @s cool1_target 360
+execute as @a[scores={kit=6}] run scoreboard players set @s cool1_target 460
 execute as @a[scores={kit=6}] run scoreboard players set @s cool2_target 520
 execute as @a[scores={kit=6}] run scoreboard players set @s cool3_target 500
 

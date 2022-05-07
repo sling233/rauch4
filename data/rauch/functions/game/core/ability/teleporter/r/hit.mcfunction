@@ -13,5 +13,5 @@ execute at @s positioned ^ ^ ^-2 run playsound minecraft:entity.enderman.telepor
 attribute @s minecraft:generic.attack_damage modifier add 0-0-0-0-1 "teleweak" -0.167 multiply_base
 scoreboard players set @s teleweak 80
 effect give @s slowness 4 1 true
-execute as @e[type=marker,tag=teleporter,tag=temp,limit=1] run tag @s add hit
-execute as @e[type=marker,tag=teleporter,tag=temp,limit=1] run kill @s
+execute as @e[type=marker,tag=teleporter,tag=temp] run tag @s add hit
+execute as @e[type=marker,tag=teleporter,tag=temp] run kill @s

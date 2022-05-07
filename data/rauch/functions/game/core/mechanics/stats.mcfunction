@@ -15,7 +15,7 @@ attribute @s[scores={kit=2}] minecraft:generic.max_health base set 36
 attribute @s[scores={kit=3}] minecraft:generic.max_health base set 24
 attribute @s[scores={kit=4}] minecraft:generic.max_health base set 32
 attribute @s[scores={kit=5}] minecraft:generic.max_health base set 20
-attribute @s[scores={kit=6}] minecraft:generic.max_health base set 28
+attribute @s[scores={kit=6}] minecraft:generic.max_health base set 24
 attribute @s[scores={kit=7}] minecraft:generic.max_health base set 50
 attribute @s[scores={kit=8}] minecraft:generic.max_health base set 26
 
