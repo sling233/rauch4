@@ -45,3 +45,5 @@ function rauch:game/core/mechanics/weapon
 function rauch:game/core/mechanics/armor
 scoreboard players reset @s death
 execute if score Global mode matches 4 run function rauch:game/capture_the_flag/flag_drop
+execute if score Global mode matches 2 as @s[team=Red] run scoreboard players add Global killNumBlue 1
+execute if score Global mode matches 2 as @s[team=Blue] run scoreboard players add Global killNumRed 1
