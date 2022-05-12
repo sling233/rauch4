@@ -1,5 +1,3 @@
-#execute as @a[scores={death=1..}] run function rauch:game/respawn_deathmatch/die
-#execute as @a[scores={respawn=80}] run function rauch:game/respawn_deathmatch/respawn
 execute as @a[scores={death=1..},team=Red] run scoreboard players add Global killNumBlue 1
 execute as @a[scores={death=1..},team=Blue] run scoreboard players add Global killNumRed 1
 function rauch:game/add/respawn/respawn_main

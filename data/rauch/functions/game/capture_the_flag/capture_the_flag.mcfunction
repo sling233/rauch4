@@ -1,7 +1,3 @@
-
-#execute as @a[scores={death=1..},team=Red] run scoreboard players add Global killNumBlue 1
-#execute as @a[scores={death=1..},team=Blue] run scoreboard players add Global killNumRed 1
-
 execute as @a[tag=flagPickedUp] run function rauch:game/capture_the_flag/flag_picked_up
 execute at @e[type=minecraft:armor_stand,tag=flag,limit=1] as @a[tag=game,tag=!dead,distance=..1,limit=1] run function rauch:game/capture_the_flag/flag_pickup
 

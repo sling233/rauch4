@@ -1,4 +1,4 @@
-execute at @s run tag @a[distance=..5] add temp
+execute at @s run tag @a[tag=game,tag=!dead,distance=..5] add temp
 #ändern zu Red, nur für testen
 execute as @a[tag=temp] run scoreboard players set @s push_levitation_timer -4
 execute as @a[tag=temp] run effect give @s minecraft:levitation 1 20 true
