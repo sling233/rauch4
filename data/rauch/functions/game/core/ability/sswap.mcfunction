@@ -4,7 +4,6 @@ execute as @s[scores={cool3=0,kit=2},predicate=rauch:sneak,predicate=!rauch:hack
 execute as @s[scores={kit=3,projectileRNum=1..},predicate=!rauch:sneak,predicate=!rauch:hack,predicate=!rauch:stun] run function rauch:game/core/ability/raucher/f
 execute as @s[scores={kit=3,projectileRNum=1..},predicate=rauch:sneak,predicate=!rauch:hack,predicate=!rauch:stun] run function rauch:game/core/ability/raucher/sf
 execute as @s[scores={cool3=0,kit=4},predicate=!rauch:hack,predicate=!rauch:stun] run function rauch:game/core/ability/hacker/f
-execute as @s[scores={cool3=0,kit=5},predicate=!rauch:sneak,predicate=!rauch:hack,predicate=!rauch:stun] run function rauch:game/core/ability/dash/sdash
 execute as @s[scores={cool3=0,kit=6},predicate=!rauch:hack,predicate=!rauch:stun] run function rauch:game/core/ability/teleporter/f
 execute as @s[scores={cool3=0,kit=7},predicate=!rauch:hack,predicate=!rauch:stun] run function rauch:game/core/ability/tank/f
 execute as @s[scores={cool3=0,kit=8},predicate=!rauch:hack,predicate=!rauch:stun] run function rauch:game/core/ability/flyer/f/jump

@@ -27,7 +27,6 @@ execute as @s[scores={teleweak=0..}] run function rauch:game/core/ability/telepo
 execute as @s[scores={hacker_ability=0..}] run function rauch:game/core/ability/hacker/f/ability_boost
 execute as @s[scores={raucherdmg=0..}] run function rauch:game/core/ability/raucher/q/buff
 execute as @s[scores={tank_resistance=0..}] run function rauch:game/core/ability/tank/q/resistance
-#execute as @s[scores={boltdmg=0..}] run function rauch:game/core/ability/bolt/q/debuff
 
 execute as @s[scores={stun=0..}] run function rauch:game/core/mechanics/stun
 execute at @s[scores={damage_taken=0..}] run function rauch:game/core/ui/damage_taken
@@ -37,16 +36,13 @@ execute as @s[tag=bolt] as @s[nbt={HurtTime:0s}] run function rauch:game/core/ab
 
 #ui
 execute as @s[scores={kit=3,cool3=0}] if score @s projectileRNum < @s projectileRMax run function rauch:game/core/ability/raucher/f/addcloud
-execute as @s[scores={kit=5,cool1=0}] if score @s projectileRNum < @s projectileRMax run function rauch:game/core/ability/bowmaster/r/addarrow
-#execute as @s[scores={kit=8,cool1=0}] if score @s projectileRNum < @s projectileRMax run function rauch:game/core/ability/flyer/r/addrocket
 
 execute as @s[scores={cool1=1..}] run function rauch:game/core/ui/counter1
 execute as @s[scores={cool2=1..}] run function rauch:game/core/ui/counter2
 execute as @s[scores={cool3=1..}] run function rauch:game/core/ui/counter3
 
-execute unless score @s kit matches 3 unless score @s kit matches 5 run function rauch:game/core/ui/actionbar/cooldisnor
+execute unless score @s kit matches 3 run function rauch:game/core/ui/actionbar/cooldisnor
 execute if score @s kit matches 3 run function rauch:game/core/ui/actionbar/cooldisrp
-execute if score @s kit matches 5 run function rauch:game/core/ui/actionbar/cooldisrp
 
 #stuff
 #execute as @s[tag=spawn] run function rauch:game/core/shop/shop

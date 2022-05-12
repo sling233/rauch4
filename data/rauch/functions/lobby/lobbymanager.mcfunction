@@ -1,5 +1,5 @@
 #ausgangsbedingungen werden gelesen
-execute as @s[scores={kit=1..8}] run tag @s add kit
+execute as @s[scores={kit=1..8}] unless score @s kit matches 5 run tag @s add kit
 execute as @s[tag=queue] run tag @s add queuetemp
 execute at @s as @e[type=armor_stand,tag=map,tag=root,tag=active] if score @s mapId = Global mapId run tag @p add map
 
