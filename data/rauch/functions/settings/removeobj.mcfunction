@@ -60,7 +60,6 @@ scoreboard objectives remove push_levitation_timer
 scoreboard objectives remove raucherdmg
 scoreboard objectives remove respawn
 scoreboard objectives remove slime_despawn_timer
-scoreboard objectives remove squid
 scoreboard objectives remove stun
 scoreboard objectives remove tank
 scoreboard objectives remove tank_damage_taken

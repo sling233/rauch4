@@ -37,10 +37,6 @@ scoreboard objectives add death minecraft.custom:minecraft.deaths
 scoreboard objectives add decode dummy
 scoreboard objectives add drop minecraft.custom:minecraft.drop
 scoreboard objectives add dropcoas minecraft.dropped:minecraft.carrot_on_a_stick
-scoreboard objectives add stats_g_damage_d minecraft.custom:minecraft.damage_dealt
-scoreboard objectives add stats_g_damage_t minecraft.custom:minecraft.damage_taken
-scoreboard objectives add stats_g_deaths minecraft.custom:minecraft.deaths
-scoreboard objectives add stats_g_kills playerKillCount
 scoreboard objectives add fly minecraft.custom:minecraft.aviate_one_cm
 scoreboard objectives add flyerFSchedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add flyerQSchedule minecraft.custom:minecraft.time_since_rest
@@ -71,7 +67,10 @@ scoreboard objectives add push_levitation_timer minecraft.custom:minecraft.time_
 scoreboard objectives add raucherdmg dummy
 scoreboard objectives add respawn dummy
 scoreboard objectives add slime_despawn_timer minecraft.custom:minecraft.time_since_rest
-scoreboard objectives add squid minecraft.used:minecraft.squid_spawn_egg
+scoreboard objectives add stats_g_damage_d minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add stats_g_damage_t minecraft.custom:minecraft.damage_taken
+scoreboard objectives add stats_g_deaths minecraft.custom:minecraft.deaths
+scoreboard objectives add stats_g_kills playerKillCount
 scoreboard objectives add stun dummy
 scoreboard objectives add tank dummy
 scoreboard objectives add tank_damage_taken minecraft.custom:minecraft.damage_taken

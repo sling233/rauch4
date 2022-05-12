@@ -11,6 +11,6 @@ execute if entity @e[type=squid,tag=main] run clear @s minecraft:squid_spawn_egg
 execute at @e[type=squid,tag=main] run forceload remove all
 execute at @e[type=squid,tag=main] run forceload add ~ ~
 
-scoreboard players reset @s squid
+advancement revoke @s only rauch:squid
 tp @e[type=squid,tag=main] ~ ~-1000 ~
 kill @e[type=squid,tag=main]
