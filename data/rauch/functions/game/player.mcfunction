@@ -32,6 +32,7 @@ execute as @s[scores={stun=0..}] run function rauch:game/core/mechanics/stun
 execute at @s[scores={damage_taken=0..}] run function rauch:game/core/ui/damage_taken
 
 execute as @s[tag=zarzahn_hook] run function rauch:game/core/ability/zarzahn/r/hook
+execute as @s[tag=flyer_dmg_schedule,tag=!bolt] as @s[nbt={HurtTime:0s}] run function rauch:game/core/ability/flyer/q/damage
 execute as @s[tag=bolt] as @s[nbt={HurtTime:0s}] run function rauch:game/core/ability/bolt/q/damage
 
 #ui

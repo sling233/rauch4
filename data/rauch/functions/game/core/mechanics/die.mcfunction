@@ -24,6 +24,7 @@ execute as @s[scores={kit=3}] run scoreboard players operation @s projectileRNum
 execute as @s[scores={kit=1}] run function rauch:game/core/ability/bolt/q/remove_hit_id
 execute as @s[scores={kit=2}] run function rauch:game/core/ability/zarzahn/r/hook_remove
 tag @s remove bolt
+tag @s remove flyer_dmg_schedule
 scoreboard players reset @s raucher_debuff
 scoreboard players reset @s raucher_control
 tag @s remove boltHitBy1

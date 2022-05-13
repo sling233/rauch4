@@ -39,6 +39,7 @@ scoreboard players reset @s zarzahn_f
 tag @s remove game
 tag @s remove dead
 tag @s remove bolt
+tag @s remove flyer_dmg_schedule
 tag @s remove zarzahn_hook
 tag @s remove flying
 tag @s remove fast

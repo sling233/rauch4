@@ -1,6 +1,12 @@
 scoreboard players remove @s stun 1
 function rauch:game/core/ui/bossbar/stun/update
 
+execute at @s[scores={stun=89}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"}'
+execute at @s[scores={stun=84}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"}'
+execute at @s[scores={stun=79}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"}'
+execute at @s[scores={stun=74}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"}'
+execute at @s[scores={stun=69}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉▉"}'
+execute at @s[scores={stun=64}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉"}'
 execute at @s[scores={stun=59}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉"}'
 execute at @s[scores={stun=54}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉"}'
 execute at @s[scores={stun=49}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉"}'
