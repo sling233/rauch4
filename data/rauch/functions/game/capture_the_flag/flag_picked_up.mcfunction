@@ -17,4 +17,3 @@ execute as @s[team=Red] run scoreboard players operation Global flagDistanceRed 
 execute as @s[team=Blue] run scoreboard players operation Global flagDistanceBlue = Global xPos
 
 scoreboard players set @s hack 200
-execute as @s[scores={death=1..}] run function rauch:game/capture_the_flag/flag_drop
