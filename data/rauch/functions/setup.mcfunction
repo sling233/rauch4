@@ -44,7 +44,7 @@ scoreboard objectives add gamestart dummy
 scoreboard objectives add hack dummy
 scoreboard objectives add hacker_ability dummy
 scoreboard objectives add heal dummy
-scoreboard objectives add Health health {"text":"❤","color":"red"}
+scoreboard objectives add health health {"text":"❤","color":"red"}
 scoreboard objectives add health_display dummy
 scoreboard objectives add hitPnum dummy
 scoreboard objectives add hunger food
@@ -78,6 +78,9 @@ scoreboard objectives add tank_resistance dummy
 scoreboard objectives add tele2 dummy
 scoreboard objectives add teleweak dummy
 scoreboard objectives add walk minecraft.custom:minecraft.walk_one_cm
+scoreboard objectives add wark_buff dummy
+scoreboard objectives add wark_detect dummy
+scoreboard objectives add wark_startup dummy
 scoreboard objectives add xPos dummy
 scoreboard objectives add yPos dummy
 scoreboard objectives add zarzahn_f dummy
@@ -110,7 +113,7 @@ scoreboard players set Global 10 10
 scoreboard players set Global 20 20
 execute unless score Global mode matches 0..4 run scoreboard players set Global mode 0
 
-scoreboard objectives setdisplay belowName Health
+scoreboard objectives setdisplay belowName health
 scoreboard objectives setdisplay list health_display
 
 #teams
@@ -433,3 +436,40 @@ bossbar set minecraft:zarzahn_f11 max 300
 bossbar add zarzahn_f12 {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f12 color purple
 bossbar set minecraft:zarzahn_f12 max 300
+
+bossbar add wark1 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark1 color purple
+bossbar set minecraft:wark1 max 80
+bossbar add wark2 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark2 color purple
+bossbar set minecraft:wark2 max 80
+bossbar add wark3 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark3 color purple
+bossbar set minecraft:wark3 max 80
+bossbar add wark4 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark4 color purple
+bossbar set minecraft:wark4 max 80
+bossbar add wark5 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark5 color purple
+bossbar set minecraft:wark5 max 80
+bossbar add wark6 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark6 color purple
+bossbar set minecraft:wark6 max 80
+bossbar add wark7 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark7 color purple
+bossbar set minecraft:wark7 max 80
+bossbar add wark8 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark8 color purple
+bossbar set minecraft:wark8 max 80
+bossbar add wark9 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark9 color purple
+bossbar set minecraft:wark9 max 80
+bossbar add wark10 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark10 color purple
+bossbar set minecraft:wark10 max 80
+bossbar add wark11 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark11 color purple
+bossbar set minecraft:wark11 max 80
+bossbar add wark12 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark12 color purple
+bossbar set minecraft:wark12 max 80

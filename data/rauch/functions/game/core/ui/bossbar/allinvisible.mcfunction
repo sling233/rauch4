@@ -1,4 +1,3 @@
-
 bossbar set minecraft:bolt1 visible false
 bossbar set minecraft:bolt2 visible false
 bossbar set minecraft:bolt3 visible false
@@ -89,3 +88,16 @@ bossbar set minecraft:zarzahn_f9 visible false
 bossbar set minecraft:zarzahn_f10 visible false
 bossbar set minecraft:zarzahn_f11 visible false
 bossbar set minecraft:zarzahn_f12 visible false
+
+bossbar set minecraft:wark1 visible false
+bossbar set minecraft:wark2 visible false
+bossbar set minecraft:wark3 visible false
+bossbar set minecraft:wark4 visible false
+bossbar set minecraft:wark5 visible false
+bossbar set minecraft:wark6 visible false
+bossbar set minecraft:wark7 visible false
+bossbar set minecraft:wark8 visible false
+bossbar set minecraft:wark9 visible false
+bossbar set minecraft:wark10 visible false
+bossbar set minecraft:wark11 visible false
+bossbar set minecraft:wark12 visible false

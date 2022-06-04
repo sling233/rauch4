@@ -37,7 +37,7 @@ scoreboard objectives remove gamestart
 scoreboard objectives remove hack
 scoreboard objectives remove hacker_ability
 scoreboard objectives remove heal
-scoreboard objectives remove Health
+scoreboard objectives remove health
 scoreboard objectives remove health_display
 scoreboard objectives remove hitPnum
 scoreboard objectives remove hunger
@@ -67,6 +67,9 @@ scoreboard objectives remove tank_resistance
 scoreboard objectives remove tele2
 scoreboard objectives remove teleweak
 scoreboard objectives remove walk
+scoreboard objectives remove wark_buff
+scoreboard objectives remove wark_detect
+scoreboard objectives remove wark_startup
 scoreboard objectives remove xPos
 scoreboard objectives remove yPos
 scoreboard objectives remove zarzahn_f
@@ -207,6 +210,19 @@ bossbar remove zarzahn_f9
 bossbar remove zarzahn_f10
 bossbar remove zarzahn_f11
 bossbar remove zarzahn_f12
+
+bossbar remove wark1
+bossbar remove wark2
+bossbar remove wark3
+bossbar remove wark4
+bossbar remove wark5
+bossbar remove wark6
+bossbar remove wark7
+bossbar remove wark8
+bossbar remove wark9
+bossbar remove wark10
+bossbar remove wark11
+bossbar remove wark12
 
 team remove Red
 team remove Blue

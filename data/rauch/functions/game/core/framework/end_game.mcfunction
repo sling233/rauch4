@@ -8,6 +8,7 @@ kill @e[type=marker,tag=indicator]
 kill @e[type=marker,tag=projectile]
 kill @e[type=marker,tag=zar_point]
 kill @e[type=marker,tag=hacker_bomb]
+kill @e[type=marker,tag=wark_detect]
 tp @e[type=slime,tag=push] ~ ~-1000 ~
 tp @e[type=slime,tag=pik_push] ~ ~-1000 ~
 

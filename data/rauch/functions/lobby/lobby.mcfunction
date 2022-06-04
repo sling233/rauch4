@@ -18,7 +18,7 @@ execute as @s[tag=lobby,scores={adminsetting=1..}] run function rauch:lobby/sett
 team join Lobby @s[team=!Lobby,tag=!queue,tag=lobby]
 effect give @s minecraft:saturation 1 1 true
 effect give @s minecraft:resistance 1 4 true
-effect give @s[scores={Health=..20}] minecraft:instant_health 1 10 true
+effect give @s[scores={health=..20}] minecraft:instant_health 1 10 true
 
 title @s[scores={kit=1},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Bolt","color":"yellow"}]
 title @s[scores={kit=2},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Zarzahn","color":"yellow"}]

@@ -1,5 +1,5 @@
 execute at @s[team=Red] positioned ^ ^ ^3.5 as @a[team=Red,tag=game,tag=!dead,distance=..3,limit=1] run tag @s add temp
-execute at @s[team=Red] positioned ^ ^ ^3.5 as @a[team=Red,tag=game,tag=!dead,distance=..3,limit=1] run tag @s add temp
+execute at @s[team=Red] positioned ^ ^ ^7.5 as @a[team=Red,tag=game,tag=!dead,distance=..3,limit=1] run tag @s add temp
 execute at @s[team=Blue] positioned ^ ^ ^3.5 as @a[team=Blue,tag=game,tag=!dead,distance=..3,limit=1] run tag @s add temp
 execute at @s[team=Blue] positioned ^ ^ ^7.5 as @a[team=Blue,tag=game,tag=!dead,distance=..3,limit=1] run tag @s add temp
 execute at @s as @a[tag=temp,sort=nearest,limit=1] run function rauch:game/core/ability/raucher/q/hit

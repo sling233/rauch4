@@ -11,6 +11,8 @@ attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-8
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-9
 #raucherdmg
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-10
+#wark buff
+attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-11
 #kbfix
 attribute @s minecraft:generic.knockback_resistance modifier remove 0-0-0-2-0
 #tankkb
@@ -43,6 +45,8 @@ scoreboard players reset @s pnum
 scoreboard players reset @s tele2
 scoreboard players reset @s teleweak
 scoreboard players reset @s zarzahn_f
+scoreboard players reset @s wark_detect
+scoreboard players reset @s wark_startup
 tag @s remove game
 tag @s remove dead
 tag @s remove bolt
