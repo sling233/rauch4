@@ -1,16 +1,23 @@
+#teleweak
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-1
-#attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-2
+#pikkafast
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-3
+#boltbuff
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-4
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-5
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-6
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-7
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-8
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-9
+#raucherdmg
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-10
-#attribute @s minecraft:generic.knockback_resistance modifier remove 0-0-0-2-0
+#kbfix
+attribute @s minecraft:generic.knockback_resistance modifier remove 0-0-0-2-0
+#tankkb
 attribute @s minecraft:generic.knockback_resistance modifier remove 0-0-0-2-1
+#armorfix
 attribute @s minecraft:generic.armor modifier remove 0-0-0-1-0
+
 attribute @s minecraft:generic.max_health base set 20
 attribute @s minecraft:generic.attack_damage base set 1
 

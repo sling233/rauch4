@@ -24,6 +24,7 @@ title @s[scores={kit=1},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text"
 title @s[scores={kit=2},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Zarzahn","color":"yellow"}]
 title @s[scores={kit=3},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Raucher","color":"yellow"}]
 title @s[scores={kit=4},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Hacker","color":"yellow"}]
+title @s[scores={kit=5},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Wark","color":"yellow"}]
 title @s[scores={kit=6},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Teleporter","color":"yellow"}]
 title @s[scores={kit=7},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Tank","color":"yellow"}]
 title @s[scores={kit=8},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Pikka","color":"yellow"}]

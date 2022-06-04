@@ -11,6 +11,10 @@ item replace entity @s[scores={kit=3}] armor.feet with minecraft:diamond_boots{d
 item replace entity @s[scores={kit=4}] armor.chest with minecraft:leather_chestplate{display:{Name:"{\"text\":\"Hacker's Chestplate\",\"color\":\"aqua\",\"italic\":false}",color:0},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
 item replace entity @s[scores={kit=4}] armor.legs with minecraft:leather_leggings{display:{Name:"{\"text\":\"Hacker's Leggings\",\"color\":\"aqua\",\"italic\":false}",color:0},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
 item replace entity @s[scores={kit=4}] armor.feet with minecraft:leather_boots{display:{Name:"{\"text\":\"Hacker's Boots\",\"color\":\"aqua\",\"italic\":false}",color:0},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
+#wark
+item replace entity @s[scores={kit=5}] armor.chest with minecraft:netherite_chestplate{display:{Name:"{\"text\":\"Wark's Chestplate\",\"color\":\"aqua\",\"italic\":false}"},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
+item replace entity @s[scores={kit=5}] armor.legs with minecraft:netherite_leggings{display:{Name:"{\"text\":\"Wark's Leggings\",\"color\":\"aqua\",\"italic\":false}"},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
+item replace entity @s[scores={kit=5}] armor.feet with minecraft:netherite_boots{display:{Name:"{\"text\":\"Wark's Boots\",\"color\":\"aqua\",\"italic\":false}"},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
 #teleporter
 item replace entity @s[scores={kit=6}] armor.chest with minecraft:leather_chestplate{display:{Name:"{\"text\":\"Teleporter's Chestplate\",\"color\":\"aqua\",\"italic\":false}",color:11162879},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
 item replace entity @s[scores={kit=6}] armor.legs with minecraft:leather_leggings{display:{Name:"{\"text\":\"Teleporter's Leggings\",\"color\":\"aqua\",\"italic\":false}",color:11162879},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
