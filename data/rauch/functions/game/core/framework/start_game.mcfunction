@@ -1,5 +1,5 @@
 scoreboard players reset Global pnum
-execute as @a[tag=queue] run function rauch:game/core/framework/teamsetup
+execute as @a[tag=queue,limit=12] run function rauch:game/core/framework/teamsetup
 scoreboard players reset Global pnum
 
 #mapgedöns
