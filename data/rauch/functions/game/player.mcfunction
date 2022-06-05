@@ -15,6 +15,7 @@ execute as @s[scores={kit=2,slime_despawn_timer=-1}] run function rauch:game/cor
 execute as @s[scores={kit=3,slime_despawn_timer=-1}] run function rauch:game/core/ability/raucher/r/despawn
 execute as @s[scores={kit=5,wark_buff=0..}] run function rauch:game/core/ability/wark/q/buff
 execute as @s[scores={kit=5,wark_r=..-1}] run function rauch:game/core/ability/wark/r/schedule
+execute as @s[scores={kit=5,slime_despawn_timer=-1}] run function rauch:game/core/ability/wark/f/despawn
 execute as @s[scores={kit=8,slime_despawn_timer=-1}] run function rauch:game/core/ability/flyer/r/despawn
 execute as @s[scores={push_levitation_timer=-1}] run effect clear @s minecraft:levitation
 execute as @s[scores={kit=8,flyerRSchedule=..0}] run function rauch:game/core/ability/flyer/r/schedule

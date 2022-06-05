@@ -47,6 +47,7 @@ scoreboard players reset @s teleweak
 scoreboard players reset @s zarzahn_f
 scoreboard players reset @s wark_detect
 scoreboard players reset @s wark_startup
+scoreboard players reset @s wark_buff
 tag @s remove game
 tag @s remove dead
 tag @s remove bolt

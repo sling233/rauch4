@@ -1,6 +1,6 @@
 scoreboard players reset @s wark_startup
-execute as @s[scores={health=20..}] run scoreboard players set @s wark_detect 10
-execute as @s[scores={health=11..19}] run scoreboard players set @s wark_detect 50
+execute as @s[scores={health=20..}] run scoreboard players set @s wark_detect 20
+execute as @s[scores={health=11..19}] run scoreboard players set @s wark_detect 60
 execute as @s[scores={health=..10}] run scoreboard players set @s wark_detect 80
 
 
