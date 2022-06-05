@@ -70,6 +70,7 @@ scoreboard objectives remove walk
 scoreboard objectives remove wark_buff
 scoreboard objectives remove wark_detect
 scoreboard objectives remove wark_startup
+scoreboard objectives remove wark_r
 scoreboard objectives remove xPos
 scoreboard objectives remove yPos
 scoreboard objectives remove zarzahn_f

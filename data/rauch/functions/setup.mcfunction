@@ -81,6 +81,7 @@ scoreboard objectives add walk minecraft.custom:minecraft.walk_one_cm
 scoreboard objectives add wark_buff dummy
 scoreboard objectives add wark_detect dummy
 scoreboard objectives add wark_startup dummy
+scoreboard objectives add wark_r minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add xPos dummy
 scoreboard objectives add yPos dummy
 scoreboard objectives add zarzahn_f dummy
