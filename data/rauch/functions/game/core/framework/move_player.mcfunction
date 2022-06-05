@@ -71,7 +71,8 @@ tag @a remove boltHitBy10
 tag @a remove boltHitBy11
 tag @a remove boltHitBy12
 effect clear @s
-recipe take @s *
+team empty Blue
+team empty Red
 advancement revoke @s everything
 #clear @s
 tag @a add clear
