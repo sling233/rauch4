@@ -1,8 +1,5 @@
-execute at @s[team=Red] run function rauch:game/core/ability/wark/f/detectred
-execute at @s[team=Blue] run function rauch:game/core/ability/wark/f/detectblue
+scoreboard players set @s wark_f -3
+effect give @s minecraft:levitation 1 50 true
 
-
-execute if entity @a[tag=temp] run function rauch:game/core/ability/wark/f/hit
-execute unless entity @a[tag=temp] at @s run playsound minecraft:entity.puffer_fish.blow_out master @s
-execute unless entity @a[tag=temp] at @s run tellraw @s {"text":"No enemy found!","color":"red"}
-tag @a remove temp
+execute at @s run playsound minecraft:entity.warden.attack_impact master @a
+scoreboard players operation @s cool3 = @s cool3_target

@@ -6,5 +6,5 @@ scoreboard players operation @e[type=marker,tag=setup,tag=wark,limit=1] pnum = @
 tag @e[type=marker,tag=setup,tag=wark] remove setup
 execute at @s run playsound minecraft:entity.warden.sonic_charge master @a
 execute as @e[type=marker,tag=wark] at @s run function rauch:game/core/ability/wark/r/move
-scoreboard players set @s wark_r -30
+scoreboard players set @s wark_r -31
 scoreboard players operation @s cool1 = @s cool1_target
