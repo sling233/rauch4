@@ -101,3 +101,16 @@ bossbar set minecraft:wark9 visible false
 bossbar set minecraft:wark10 visible false
 bossbar set minecraft:wark11 visible false
 bossbar set minecraft:wark12 visible false
+
+bossbar set minecraft:wark_r1 visible false
+bossbar set minecraft:wark_r2 visible false
+bossbar set minecraft:wark_r3 visible false
+bossbar set minecraft:wark_r4 visible false
+bossbar set minecraft:wark_r5 visible false
+bossbar set minecraft:wark_r6 visible false
+bossbar set minecraft:wark_r7 visible false
+bossbar set minecraft:wark_r8 visible false
+bossbar set minecraft:wark_r9 visible false
+bossbar set minecraft:wark_r10 visible false
+bossbar set minecraft:wark_r11 visible false
+bossbar set minecraft:wark_r12 visible false

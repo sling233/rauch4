@@ -48,6 +48,7 @@ scoreboard players reset @s zarzahn_f
 scoreboard players reset @s wark_detect
 scoreboard players reset @s wark_startup
 scoreboard players reset @s wark_buff
+scoreboard players reset @s wark_r
 tag @s remove game
 tag @s remove dead
 tag @s remove bolt
@@ -70,6 +71,18 @@ tag @a remove boltHitBy9
 tag @a remove boltHitBy10
 tag @a remove boltHitBy11
 tag @a remove boltHitBy12
+tag @a remove wark_hitby1
+tag @a remove wark_hitby2
+tag @a remove wark_hitby3
+tag @a remove wark_hitby4
+tag @a remove wark_hitby5
+tag @a remove wark_hitby6
+tag @a remove wark_hitby7
+tag @a remove wark_hitby8
+tag @a remove wark_hitby9
+tag @a remove wark_hitby10
+tag @a remove wark_hitby11
+tag @a remove wark_hitby12
 effect clear @s
 team empty Blue
 team empty Red
