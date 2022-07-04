@@ -17,8 +17,9 @@ tag @s add temp3
 execute at @s as @a[tag=temp2,limit=1,sort=furthest] run function rauch:game/core/ability/wark/r/hit
 tag @s remove temp3
 
-#execute if entity @a[tag=temp2] at @s run playsound minecraft:entity.warden.listening_angry master @a
+execute if entity @a[tag=temp2] at @s run playsound minecraft:entity.warden.tendril_clicks master @s
 execute if entity @a[tag=temp2] run scoreboard players operation @s cool1 = @s cool1_target
+execute if entity @a[tag=temp2] run effect give @s glowing 12 0 true
 execute unless entity @a[tag=temp2] at @s run playsound minecraft:entity.puffer_fish.blow_out master @s
 execute unless entity @a[tag=temp2] at @s run tellraw @s {"text":"No tagged enemy found!","color":"red"}
 

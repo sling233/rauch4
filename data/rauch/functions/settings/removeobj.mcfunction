@@ -1,9 +1,9 @@
+scoreboard objectives remove 0
 scoreboard objectives remove 2
+scoreboard objectives remove 9
 scoreboard objectives remove 10
 scoreboard objectives remove 20
 scoreboard objectives remove adminsetting
-scoreboard objectives remove arrows
-scoreboard objectives remove arrowreg
 scoreboard objectives remove bolt
 scoreboard objectives remove boltdmg
 scoreboard objectives remove click
@@ -23,13 +23,9 @@ scoreboard objectives remove cool3_target
 scoreboard objectives remove damage_dealt
 scoreboard objectives remove damage_taken
 scoreboard objectives remove death
-scoreboard objectives remove decode
 scoreboard objectives remove drop
 scoreboard objectives remove dropcoas
-scoreboard objectives remove stats_g_damage_d
-scoreboard objectives remove stats_g_damage_t
-scoreboard objectives remove stats_g_deaths
-scoreboard objectives remove stats_g_kills
+scoreboard objectives remove elytra
 scoreboard objectives remove fly
 scoreboard objectives remove flyerFSchedule
 scoreboard objectives remove flyerQSchedule
@@ -47,7 +43,6 @@ scoreboard objectives remove leave
 scoreboard objectives remove mapId
 scoreboard objectives remove mapParticle
 scoreboard objectives remove mapTime
-scoreboard objectives remove maxArrows
 scoreboard objectives remove maxClouds
 scoreboard objectives remove mode
 scoreboard objectives remove particle_ambient
@@ -60,6 +55,10 @@ scoreboard objectives remove push_levitation_timer
 scoreboard objectives remove raucherdmg
 scoreboard objectives remove respawn
 scoreboard objectives remove slime_despawn_timer
+scoreboard objectives remove stats_g_damage_d
+scoreboard objectives remove stats_g_damage_t
+scoreboard objectives remove stats_g_deaths
+scoreboard objectives remove stats_g_kills
 scoreboard objectives remove stun
 scoreboard objectives remove tank
 scoreboard objectives remove tank_damage_taken
@@ -71,6 +70,18 @@ scoreboard objectives remove wark_buff
 scoreboard objectives remove wark_detect
 scoreboard objectives remove wark_startup
 scoreboard objectives remove wark_r
+scoreboard objectives remove wark_hit1
+scoreboard objectives remove wark_hit2
+scoreboard objectives remove wark_hit3
+scoreboard objectives remove wark_hit4
+scoreboard objectives remove wark_hit5
+scoreboard objectives remove wark_hit6
+scoreboard objectives remove wark_hit7
+scoreboard objectives remove wark_hit8
+scoreboard objectives remove wark_hit9
+scoreboard objectives remove wark_hit10
+scoreboard objectives remove wark_hit11
+scoreboard objectives remove wark_hit12
 scoreboard objectives remove wark_f
 scoreboard objectives remove xPos
 scoreboard objectives remove yPos
@@ -225,6 +236,19 @@ bossbar remove wark9
 bossbar remove wark10
 bossbar remove wark11
 bossbar remove wark12
+
+bossbar remove wark_r1
+bossbar remove wark_r2
+bossbar remove wark_r3
+bossbar remove wark_r4
+bossbar remove wark_r5
+bossbar remove wark_r6
+bossbar remove wark_r7
+bossbar remove wark_r8
+bossbar remove wark_r9
+bossbar remove wark_r10
+bossbar remove wark_r11
+bossbar remove wark_r12
 
 team remove Red
 team remove Blue

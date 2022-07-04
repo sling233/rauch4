@@ -25,6 +25,6 @@ execute if entity @p[tag=temp3,scores={pnum=11}] run tag @s add wark_hitby11
 execute if entity @p[tag=temp3,scores={pnum=12}] run tag @s add wark_hitby12
 
 tellraw @s [{"text":"The Wark ","color":"red"},{"selector":"@a[tag=temp3,limit=1]"},{"text":" focused on you! Hit them to break the curse!"}]
-
+execute at @s run playsound minecraft:entity.warden.dig master @s
 scoreboard players set @s wark_r 240
 function rauch:game/core/ui/bossbar/wark_r/visible

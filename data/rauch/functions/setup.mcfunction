@@ -13,8 +13,6 @@ scoreboard objectives add 9 dummy
 scoreboard objectives add 10 dummy
 scoreboard objectives add 20 dummy
 scoreboard objectives add adminsetting trigger
-scoreboard objectives add arrows dummy
-scoreboard objectives add arrowreg dummy
 scoreboard objectives add bolt dummy
 scoreboard objectives add boltdmg dummy
 scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
@@ -34,9 +32,9 @@ scoreboard objectives add cool3_target dummy
 scoreboard objectives add damage_dealt minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add death minecraft.custom:minecraft.deaths
-scoreboard objectives add decode dummy
 scoreboard objectives add drop minecraft.custom:minecraft.drop
 scoreboard objectives add dropcoas minecraft.dropped:minecraft.carrot_on_a_stick
+scoreboard objectives add elytra minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add fly minecraft.custom:minecraft.aviate_one_cm
 scoreboard objectives add flyerFSchedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add flyerQSchedule minecraft.custom:minecraft.time_since_rest
@@ -54,7 +52,6 @@ scoreboard objectives add leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add mapId dummy
 scoreboard objectives add mapParticle trigger
 scoreboard objectives add mapTime trigger
-scoreboard objectives add maxArrows dummy
 scoreboard objectives add maxClouds dummy
 scoreboard objectives add mode dummy
 scoreboard objectives add particle_ambient dummy

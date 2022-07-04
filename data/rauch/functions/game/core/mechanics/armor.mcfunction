@@ -24,6 +24,7 @@ item replace entity @s[scores={kit=7}] armor.chest with minecraft:diamond_chestp
 item replace entity @s[scores={kit=7}] armor.legs with minecraft:diamond_leggings{display:{Name:"{\"text\":\"Tank's Leggings\",\"color\":\"aqua\",\"italic\":false}"},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
 item replace entity @s[scores={kit=7}] armor.feet with minecraft:diamond_boots{display:{Name:"{\"text\":\"Tank's Boots\",\"color\":\"aqua\",\"italic\":false}"},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
 #pikka
-item replace entity @s[scores={kit=8}] armor.chest with elytra{display:{Name:'{"text":"Cool Elytra","color":"aqua"}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
+item replace entity @s[scores={kit=8}] armor.chest with elytra{Damage:432,display:{Name:'{"text":"Cool Elytra","color":"aqua"}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
+execute as @s[scores={kit=8}] unless score @s elytra matches ..-1 unless score @s hack matches 1.. run item replace entity @s armor.chest with elytra{display:{Name:'{"text":"Cool Elytra","color":"aqua"}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
 
 item replace entity @s armor.head with warped_fungus_on_a_stick{display:{Name:'{"text":"Pssssst","color":"aqua","italic":false}'},HideFlags:1,CustomModelData:0,Enchantments:[{id:"minecraft:protection",lvl:20s},{id:"minecraft:binding_curse",lvl:1s}]} 1
