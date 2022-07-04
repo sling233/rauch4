@@ -1,0 +1,6 @@
+tellraw @s [{"text":"\n------ Spawn a prebuilt map ------","color":"yellow"}]
+tellraw @s [{"text":"Spawns a prebuilt map and automatically sets up spawn positions etc.","color":"yellow"}]
+tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Splat","color":"light_purple","hoverEvent":{"action":"show_text","contents":[{"text":"A medium-sized map balanced for Deathmatch but also usable for other game modes.\nSize: 73x21"}]},"clickEvent":{"action":"run_command","value":"/function rauch:settings/spawn_map/splat/spawn"}},{"text":"]"}]
+tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Ancient","color":"light_purple","hoverEvent":{"action":"show_text","contents":[{"text":"A larger map good for King of the Hill and Deathmatch. Not recommended for Capture the Flag.\nSize: 65x41"}]},"clickEvent":{"action":"run_command","value":"/function rauch:settings/spawn_map/ancient/spawn"}},{"text":"]"}]
+tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Greck","color":"light_purple","hoverEvent":{"action":"show_text","contents":[{"text":"A large map good for Capture the Flag. Not recommended for other game modes.\nSize: 85x23"}]},"clickEvent":{"action":"run_command","value":"/function rauch:settings/spawn_map/greck/spawn"}},{"text":"]"}]
+tellraw @s [{"text":"-------------------------------","color":"yellow"}]

@@ -1,0 +1,12 @@
+execute as @s[scores={pnum=1}] store result bossbar minecraft:wark_r1 value run scoreboard players get @s wark_r
+execute as @s[scores={pnum=2}] store result bossbar minecraft:wark_r2 value run scoreboard players get @s wark_r
+execute as @s[scores={pnum=3}] store result bossbar minecraft:wark_r3 value run scoreboard players get @s wark_r
+execute as @s[scores={pnum=4}] store result bossbar minecraft:wark_r4 value run scoreboard players get @s wark_r
+execute as @s[scores={pnum=5}] store result bossbar minecraft:wark_r5 value run scoreboard players get @s wark_r
+execute as @s[scores={pnum=6}] store result bossbar minecraft:wark_r6 value run scoreboard players get @s wark_r
+execute as @s[scores={pnum=7}] store result bossbar minecraft:wark_r7 value run scoreboard players get @s wark_r
+execute as @s[scores={pnum=8}] store result bossbar minecraft:wark_r8 value run scoreboard players get @s wark_r
+execute as @s[scores={pnum=9}] store result bossbar minecraft:wark_r9 value run scoreboard players get @s wark_r
+execute as @s[scores={pnum=10}] store result bossbar minecraft:wark_r10 value run scoreboard players get @s wark_r
+execute as @s[scores={pnum=11}] store result bossbar minecraft:wark_r11 value run scoreboard players get @s wark_r
+execute as @s[scores={pnum=12}] store result bossbar minecraft:wark_r12 value run scoreboard players get @s wark_r

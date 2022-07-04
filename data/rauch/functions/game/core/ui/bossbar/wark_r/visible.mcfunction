@@ -1,0 +1,12 @@
+execute as @s[scores={pnum=1}] run bossbar set minecraft:wark_r1 visible true
+execute as @s[scores={pnum=2}] run bossbar set minecraft:wark_r2 visible true
+execute as @s[scores={pnum=3}] run bossbar set minecraft:wark_r3 visible true
+execute as @s[scores={pnum=4}] run bossbar set minecraft:wark_r4 visible true
+execute as @s[scores={pnum=5}] run bossbar set minecraft:wark_r5 visible true
+execute as @s[scores={pnum=6}] run bossbar set minecraft:wark_r6 visible true
+execute as @s[scores={pnum=7}] run bossbar set minecraft:wark_r7 visible true
+execute as @s[scores={pnum=8}] run bossbar set minecraft:wark_r8 visible true
+execute as @s[scores={pnum=9}] run bossbar set minecraft:wark_r9 visible true
+execute as @s[scores={pnum=10}] run bossbar set minecraft:wark_r10 visible true
+execute as @s[scores={pnum=11}] run bossbar set minecraft:wark_r11 visible true
+execute as @s[scores={pnum=12}] run bossbar set minecraft:wark_r12 visible true

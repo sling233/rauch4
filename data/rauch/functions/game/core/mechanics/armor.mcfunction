@@ -11,6 +11,10 @@ item replace entity @s[scores={kit=3}] armor.feet with minecraft:diamond_boots{d
 item replace entity @s[scores={kit=4}] armor.chest with minecraft:leather_chestplate{display:{Name:"{\"text\":\"Hacker's Chestplate\",\"color\":\"aqua\",\"italic\":false}",color:0},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
 item replace entity @s[scores={kit=4}] armor.legs with minecraft:leather_leggings{display:{Name:"{\"text\":\"Hacker's Leggings\",\"color\":\"aqua\",\"italic\":false}",color:0},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
 item replace entity @s[scores={kit=4}] armor.feet with minecraft:leather_boots{display:{Name:"{\"text\":\"Hacker's Boots\",\"color\":\"aqua\",\"italic\":false}",color:0},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
+#wark
+item replace entity @s[scores={kit=5}] armor.chest with minecraft:netherite_chestplate{display:{Name:"{\"text\":\"Wark's Chestplate\",\"color\":\"aqua\",\"italic\":false}"},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
+item replace entity @s[scores={kit=5}] armor.legs with minecraft:netherite_leggings{display:{Name:"{\"text\":\"Wark's Leggings\",\"color\":\"aqua\",\"italic\":false}"},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
+item replace entity @s[scores={kit=5}] armor.feet with minecraft:netherite_boots{display:{Name:"{\"text\":\"Wark's Boots\",\"color\":\"aqua\",\"italic\":false}"},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
 #teleporter
 item replace entity @s[scores={kit=6}] armor.chest with minecraft:leather_chestplate{display:{Name:"{\"text\":\"Teleporter's Chestplate\",\"color\":\"aqua\",\"italic\":false}",color:11162879},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
 item replace entity @s[scores={kit=6}] armor.legs with minecraft:leather_leggings{display:{Name:"{\"text\":\"Teleporter's Leggings\",\"color\":\"aqua\",\"italic\":false}",color:11162879},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
@@ -20,6 +24,7 @@ item replace entity @s[scores={kit=7}] armor.chest with minecraft:diamond_chestp
 item replace entity @s[scores={kit=7}] armor.legs with minecraft:diamond_leggings{display:{Name:"{\"text\":\"Tank's Leggings\",\"color\":\"aqua\",\"italic\":false}"},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
 item replace entity @s[scores={kit=7}] armor.feet with minecraft:diamond_boots{display:{Name:"{\"text\":\"Tank's Boots\",\"color\":\"aqua\",\"italic\":false}"},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
 #pikka
-item replace entity @s[scores={kit=8}] armor.chest with elytra{display:{Name:'{"text":"Cool Elytra","color":"aqua"}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
+item replace entity @s[scores={kit=8}] armor.chest with elytra{Damage:432,display:{Name:'{"text":"Cool Elytra","color":"aqua"}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
+execute as @s[scores={kit=8}] unless score @s elytra matches ..-1 unless score @s hack matches 1.. run item replace entity @s armor.chest with elytra{display:{Name:'{"text":"Cool Elytra","color":"aqua"}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
 
 item replace entity @s armor.head with warped_fungus_on_a_stick{display:{Name:'{"text":"Pssssst","color":"aqua","italic":false}'},HideFlags:1,CustomModelData:0,Enchantments:[{id:"minecraft:protection",lvl:20s},{id:"minecraft:binding_curse",lvl:1s}]} 1

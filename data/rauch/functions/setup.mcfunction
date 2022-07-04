@@ -1,9 +1,9 @@
 execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:"{\"text\":\"Lobby Spawn\",\"color\":\"blue\",\"italic\":false}"},EntityTag:{Tags:["main"]}} 1
 execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run tellraw @a[nbt={Inventory:[{id:"minecraft:squid_spawn_egg"}]}] {"text":"Please set the Lobby position.","bold":true,"color":"blue"}
-execute unless entity @a[tag=admin] unless score Global click matches 1 run tellraw @a [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here","italic":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set Global click 1"}}]
+execute unless entity @a[tag=admin] unless score Global click matches 1 run tellraw @a [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:settings/disable_message"}}]
 execute as @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:"{\"text\":\"Lobby Spawn\",\"color\":\"blue\",\"italic\":false}"},EntityTag:{Tags:["main"]}} 1
 execute as @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run tellraw @s[nbt={Inventory:[{id:"minecraft:squid_spawn_egg"}]}] {"text":"Please set the Lobby Spawnpoint.","bold":true,"color":"blue"}
-execute as @a[tag=admin] unless score Global click matches 1 run tellraw @s [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here","italic":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set Global click 1"}}]
+execute as @a[tag=admin] unless score Global click matches 1 run tellraw @s [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:settings/disable_message"}}]
 
 execute as @a[tag=!lobby,tag=!game,tag=!addmap] run tag @s add lobby
 
@@ -13,8 +13,6 @@ scoreboard objectives add 9 dummy
 scoreboard objectives add 10 dummy
 scoreboard objectives add 20 dummy
 scoreboard objectives add adminsetting trigger
-scoreboard objectives add arrows dummy
-scoreboard objectives add arrowreg dummy
 scoreboard objectives add bolt dummy
 scoreboard objectives add boltdmg dummy
 scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
@@ -34,9 +32,9 @@ scoreboard objectives add cool3_target dummy
 scoreboard objectives add damage_dealt minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add death minecraft.custom:minecraft.deaths
-scoreboard objectives add decode dummy
 scoreboard objectives add drop minecraft.custom:minecraft.drop
 scoreboard objectives add dropcoas minecraft.dropped:minecraft.carrot_on_a_stick
+scoreboard objectives add elytra minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add fly minecraft.custom:minecraft.aviate_one_cm
 scoreboard objectives add flyerFSchedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add flyerQSchedule minecraft.custom:minecraft.time_since_rest
@@ -44,7 +42,7 @@ scoreboard objectives add gamestart dummy
 scoreboard objectives add hack dummy
 scoreboard objectives add hacker_ability dummy
 scoreboard objectives add heal dummy
-scoreboard objectives add Health health {"text":"❤","color":"red"}
+scoreboard objectives add health health {"text":"❤","color":"red"}
 scoreboard objectives add health_display dummy
 scoreboard objectives add hitPnum dummy
 scoreboard objectives add hunger food
@@ -54,7 +52,6 @@ scoreboard objectives add leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add mapId dummy
 scoreboard objectives add mapParticle trigger
 scoreboard objectives add mapTime trigger
-scoreboard objectives add maxArrows dummy
 scoreboard objectives add maxClouds dummy
 scoreboard objectives add mode dummy
 scoreboard objectives add particle_ambient dummy
@@ -78,6 +75,23 @@ scoreboard objectives add tank_resistance dummy
 scoreboard objectives add tele2 dummy
 scoreboard objectives add teleweak dummy
 scoreboard objectives add walk minecraft.custom:minecraft.walk_one_cm
+scoreboard objectives add wark_buff dummy
+scoreboard objectives add wark_detect dummy
+scoreboard objectives add wark_startup dummy
+scoreboard objectives add wark_r dummy
+scoreboard objectives add wark_hit1 minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add wark_hit2 minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add wark_hit3 minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add wark_hit4 minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add wark_hit5 minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add wark_hit6 minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add wark_hit7 minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add wark_hit8 minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add wark_hit9 minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add wark_hit10 minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add wark_hit11 minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add wark_hit12 minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add wark_f minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add xPos dummy
 scoreboard objectives add yPos dummy
 scoreboard objectives add zarzahn_f dummy
@@ -110,7 +124,7 @@ scoreboard players set Global 10 10
 scoreboard players set Global 20 20
 execute unless score Global mode matches 0..4 run scoreboard players set Global mode 0
 
-scoreboard objectives setdisplay belowName Health
+scoreboard objectives setdisplay belowName health
 scoreboard objectives setdisplay list health_display
 
 #teams
@@ -140,8 +154,8 @@ team modify blue_display color blue
 team join blue_display Blue:
 
 #gamerules
-#gamerule doMobLoot false
-#gamerule doMobSpawning false
+gamerule doMobLoot false
+gamerule doMobSpawning false
 #gamerule doTileDrops false
 gamerule sendCommandFeedback false
 gamerule keepInventory true
@@ -151,9 +165,8 @@ gamerule maxEntityCramming 0
 gamerule fallDamage false
 gamerule showDeathMessages false
 gamerule announceAdvancements false
-
 #gamerule mobGriefing false
-#gamerule showDeathMessages true
+
 
 #bossbars
 bossbar add center_control [{"text":"Red","color":"red"},{"text":"             "},{"text":"Neutral","color":"yellow"},{"text":"             "},{"text":"Blue","color":"blue"}]
@@ -433,3 +446,77 @@ bossbar set minecraft:zarzahn_f11 max 300
 bossbar add zarzahn_f12 {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f12 color purple
 bossbar set minecraft:zarzahn_f12 max 300
+
+bossbar add wark1 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark1 color purple
+bossbar set minecraft:wark1 max 80
+bossbar add wark2 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark2 color purple
+bossbar set minecraft:wark2 max 80
+bossbar add wark3 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark3 color purple
+bossbar set minecraft:wark3 max 80
+bossbar add wark4 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark4 color purple
+bossbar set minecraft:wark4 max 80
+bossbar add wark5 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark5 color purple
+bossbar set minecraft:wark5 max 80
+bossbar add wark6 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark6 color purple
+bossbar set minecraft:wark6 max 80
+bossbar add wark7 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark7 color purple
+bossbar set minecraft:wark7 max 80
+bossbar add wark8 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark8 color purple
+bossbar set minecraft:wark8 max 80
+bossbar add wark9 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark9 color purple
+bossbar set minecraft:wark9 max 80
+bossbar add wark10 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark10 color purple
+bossbar set minecraft:wark10 max 80
+bossbar add wark11 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark11 color purple
+bossbar set minecraft:wark11 max 80
+bossbar add wark12 {"text":"Wark Scan","color":"dark_purple"}
+bossbar set minecraft:wark12 color purple
+bossbar set minecraft:wark12 max 80
+
+bossbar add wark_r1 {"text":"Wark Focus","color":"dark_purple"}
+bossbar set minecraft:wark_r1 color purple
+bossbar set minecraft:wark_r1 max 240
+bossbar add wark_r2 {"text":"Wark Focus","color":"dark_purple"}
+bossbar set minecraft:wark_r2 color purple
+bossbar set minecraft:wark_r2 max 240
+bossbar add wark_r3 {"text":"Wark Focus","color":"dark_purple"}
+bossbar set minecraft:wark_r3 color purple
+bossbar set minecraft:wark_r3 max 240
+bossbar add wark_r4 {"text":"Wark Focus","color":"dark_purple"}
+bossbar set minecraft:wark_r4 color purple
+bossbar set minecraft:wark_r4 max 240
+bossbar add wark_r5 {"text":"Wark Focus","color":"dark_purple"}
+bossbar set minecraft:wark_r5 color purple
+bossbar set minecraft:wark_r5 max 240
+bossbar add wark_r6 {"text":"Wark Focus","color":"dark_purple"}
+bossbar set minecraft:wark_r6 color purple
+bossbar set minecraft:wark_r6 max 240
+bossbar add wark_r7 {"text":"Wark Focus","color":"dark_purple"}
+bossbar set minecraft:wark_r7 color purple
+bossbar set minecraft:wark_r7 max 240
+bossbar add wark_r8 {"text":"Wark Focus","color":"dark_purple"}
+bossbar set minecraft:wark_r8 color purple
+bossbar set minecraft:wark_r8 max 240
+bossbar add wark_r9 {"text":"Wark Focus","color":"dark_purple"}
+bossbar set minecraft:wark_r9 color purple
+bossbar set minecraft:wark_r9 max 240
+bossbar add wark_r10 {"text":"Wark Focus","color":"dark_purple"}
+bossbar set minecraft:wark_r10 color purple
+bossbar set minecraft:wark_r10 max 240
+bossbar add wark_r11 {"text":"Wark Focus","color":"dark_purple"}
+bossbar set minecraft:wark_r11 color purple
+bossbar set minecraft:wark_r11 max 240
+bossbar add wark_r12 {"text":"Wark Focus","color":"dark_purple"}
+bossbar set minecraft:wark_r12 color purple
+bossbar set minecraft:wark_r12 max 240

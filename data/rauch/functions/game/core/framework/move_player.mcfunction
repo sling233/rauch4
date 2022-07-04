@@ -1,16 +1,25 @@
+#teleweak
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-1
-#attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-2
+#pikkafast
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-3
+#boltbuff
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-4
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-5
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-6
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-7
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-8
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-9
+#raucherdmg
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-10
-#attribute @s minecraft:generic.knockback_resistance modifier remove 0-0-0-2-0
+#wark buff
+attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-11
+#kbfix
+attribute @s minecraft:generic.knockback_resistance modifier remove 0-0-0-2-0
+#tankkb
 attribute @s minecraft:generic.knockback_resistance modifier remove 0-0-0-2-1
+#armorfix
 attribute @s minecraft:generic.armor modifier remove 0-0-0-1-0
+
 attribute @s minecraft:generic.max_health base set 20
 attribute @s minecraft:generic.attack_damage base set 1
 
@@ -36,6 +45,10 @@ scoreboard players reset @s pnum
 scoreboard players reset @s tele2
 scoreboard players reset @s teleweak
 scoreboard players reset @s zarzahn_f
+scoreboard players reset @s wark_detect
+scoreboard players reset @s wark_startup
+scoreboard players reset @s wark_buff
+scoreboard players reset @s wark_r
 tag @s remove game
 tag @s remove dead
 tag @s remove bolt
@@ -58,8 +71,21 @@ tag @a remove boltHitBy9
 tag @a remove boltHitBy10
 tag @a remove boltHitBy11
 tag @a remove boltHitBy12
+tag @a remove wark_hitby1
+tag @a remove wark_hitby2
+tag @a remove wark_hitby3
+tag @a remove wark_hitby4
+tag @a remove wark_hitby5
+tag @a remove wark_hitby6
+tag @a remove wark_hitby7
+tag @a remove wark_hitby8
+tag @a remove wark_hitby9
+tag @a remove wark_hitby10
+tag @a remove wark_hitby11
+tag @a remove wark_hitby12
 effect clear @s
-recipe take @s *
+team empty Blue
+team empty Red
 advancement revoke @s everything
 #clear @s
 tag @a add clear

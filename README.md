@@ -2,8 +2,8 @@
 
 Very epic Minecraft Datapack game i spent way too much time on. But it's very epic.
 
-When downloading make sure you place the folder "rauch4" into .minecraft/saves/<Your_World>/datapacks/ (in rauch4, there should be a file called "pack.mcmeta", not another folder "rauch4". might not be a prolem but idk how github manages zipping and stuff)
+To use, go to the latest release and download rauch4.zip into .minecraft/saves/<Your_World>/datapacks. No need to extract.
 
-Go to your world and type `/reload`. From here an in-game guide is available.
+In Minecraft, go to your world and type `/reload`. From here an in-game guide is available.
 
 To play the game properly you also need the resource pack, you can get it [here](https://github.com/flaviusmus/rauch_texturepack).
