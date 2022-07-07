@@ -14,5 +14,5 @@ execute as @s[scores={pnum=12}] run tag @p remove zarHook12
 effect clear @p minecraft:slow_falling
 scoreboard players set @p stun 25
 execute as @p run function rauch:game/core/mechanics/stuninit
-tag @p[tag=!zarHook1,tag=!zarHook2,tag=!zarHook3,tag=!zarHook4,tag=!zarHook5,tag=!zarHook6,tag=!zarHook7,tag=!zarHook8,tag=!zarHook9,tag=!zarHook10,tag=!zarHook11,tag=!zarHook12] remove zarzahn_hook
+execute as @p run tag @s[tag=!zarHook1,tag=!zarHook2,tag=!zarHook3,tag=!zarHook4,tag=!zarHook5,tag=!zarHook6,tag=!zarHook7,tag=!zarHook8,tag=!zarHook9,tag=!zarHook10,tag=!zarHook11,tag=!zarHook12] remove zarzahn_hook
 tag @p remove temp

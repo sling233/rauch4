@@ -59,41 +59,41 @@ tag @s remove fast
 tag @s remove allow_cancel
 tag @s remove flyer_q_ground
 tag @s remove flagPickedUp
-tag @a remove boltHitBy1
-tag @a remove boltHitBy2
-tag @a remove boltHitBy3
-tag @a remove boltHitBy4
-tag @a remove boltHitBy5
-tag @a remove boltHitBy6
-tag @a remove boltHitBy7
-tag @a remove boltHitBy8
-tag @a remove boltHitBy9
-tag @a remove boltHitBy10
-tag @a remove boltHitBy11
-tag @a remove boltHitBy12
-tag @a remove wark_hitby1
-tag @a remove wark_hitby2
-tag @a remove wark_hitby3
-tag @a remove wark_hitby4
-tag @a remove wark_hitby5
-tag @a remove wark_hitby6
-tag @a remove wark_hitby7
-tag @a remove wark_hitby8
-tag @a remove wark_hitby9
-tag @a remove wark_hitby10
-tag @a remove wark_hitby11
-tag @a remove wark_hitby12
+tag @s remove boltHitBy1
+tag @s remove boltHitBy2
+tag @s remove boltHitBy3
+tag @s remove boltHitBy4
+tag @s remove boltHitBy5
+tag @s remove boltHitBy6
+tag @s remove boltHitBy7
+tag @s remove boltHitBy8
+tag @s remove boltHitBy9
+tag @s remove boltHitBy10
+tag @s remove boltHitBy11
+tag @s remove boltHitBy12
+tag @s remove wark_hitby1
+tag @s remove wark_hitby2
+tag @s remove wark_hitby3
+tag @s remove wark_hitby4
+tag @s remove wark_hitby5
+tag @s remove wark_hitby6
+tag @s remove wark_hitby7
+tag @s remove wark_hitby8
+tag @s remove wark_hitby9
+tag @s remove wark_hitby10
+tag @s remove wark_hitby11
+tag @s remove wark_hitby12
 effect clear @s
 team empty Blue
 team empty Red
 advancement revoke @s everything
 #clear @s
-tag @a add clear
+tag @s add clear
 schedule function rauch:game/core/framework/clear 10t
 function rauch:game/core/ui/bossbar
 function rauch:game/core/ui/bossbar/allinvisible
 title @s subtitle {"text":""}
 tag @s add lobby
 gamemode adventure @s
-execute at @e[type=armor_stand,tag=main] run tp @s ~ ~-20 ~
-execute at @e[type=armor_stand,tag=main] run spawnpoint @s ~ ~-20 ~
+execute at @e[type=armor_stand,tag=main,limit=1] run tp @s ~ ~-20 ~
+execute at @e[type=armor_stand,tag=main,limit=1] run spawnpoint @s ~ ~-20 ~
