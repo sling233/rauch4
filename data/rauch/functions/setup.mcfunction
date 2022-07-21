@@ -15,6 +15,7 @@ scoreboard objectives add 20 dummy
 scoreboard objectives add adminsetting trigger
 scoreboard objectives add bolt dummy
 scoreboard objectives add boltdmg dummy
+scoreboard objectives add boltspeed minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add clouds dummy
 scoreboard objectives add cool1 dummy

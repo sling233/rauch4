@@ -6,6 +6,7 @@ scoreboard objectives remove 20
 scoreboard objectives remove adminsetting
 scoreboard objectives remove bolt
 scoreboard objectives remove boltdmg
+scoreboard objectives remove boltspeed
 scoreboard objectives remove click
 scoreboard objectives remove clouds
 scoreboard objectives remove cool1
