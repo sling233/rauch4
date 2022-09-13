@@ -8,6 +8,6 @@ scoreboard players operation Blue: flagDisplay = Global flag_points_blue
 execute if score Global flagDistanceRed matches ..9 as @a[tag=flagPickedUp] run function rauch:game/capture_the_flag/red_score
 execute if score Global flagDistanceBlue matches ..9 as @a[tag=flagPickedUp] run function rauch:game/capture_the_flag/blue_score
 
-execute if score Global flag_points_red matches 5.. if score Global flag_points_blue matches 5.. run function rauch:game/add/stats/tie
-execute if score Global flag_points_red matches 5.. unless score Global flag_points_blue matches 5.. run function rauch:game/add/stats/win_red
-execute if score Global flag_points_blue matches 5.. unless score Global flag_points_red matches 5.. run function rauch:game/add/stats/win_blue
+execute unless score Global gameend matches 1.. if score Global flag_points_red matches 5.. if score Global flag_points_blue matches 5.. run function rauch:game/add/stats/tie
+execute unless score Global gameend matches 1.. if score Global flag_points_red matches 5.. unless score Global flag_points_blue matches 5.. run function rauch:game/add/stats/win_red
+execute unless score Global gameend matches 1.. if score Global flag_points_blue matches 5.. unless score Global flag_points_red matches 5.. run function rauch:game/add/stats/win_blue

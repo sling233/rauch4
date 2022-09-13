@@ -1,8 +1,6 @@
 execute as @a[tag=game,scores={leave=1..}] run function rauch:game/core/framework/move_player
 execute if score Global gamestart matches 0.. run function rauch:game/add/gameinit/countdown
-
-#execute as @e[type=armor_stand,tag=map,tag=active,tag=t1] at @s run function rauch:game/core/mechanics/spawn1
-#execute as @e[type=armor_stand,tag=map,tag=active,tag=t2] at @s run function rauch:game/core/mechanics/spawn2
+execute if score Global gameend matches 0.. run function rauch:game/core/framework/end_delay
 
 execute as @a[tag=game,tag=!dead] run function rauch:game/player
 function rauch:game/core/ui/particle

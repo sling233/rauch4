@@ -30,6 +30,7 @@ scoreboard objectives remove elytra
 scoreboard objectives remove fly
 scoreboard objectives remove flyerFSchedule
 scoreboard objectives remove flyerQSchedule
+scoreboard objectives remove gameend
 scoreboard objectives remove gamestart
 scoreboard objectives remove hack
 scoreboard objectives remove hacker_ability

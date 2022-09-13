@@ -22,6 +22,7 @@ scoreboard players reset Global time_times
 scoreboard players reset Global killNumRed
 scoreboard players reset Global killNumBlue
 scoreboard players reset Global killsDisplay
+scoreboard players reset Global gameend
 scoreboard objectives setdisplay sidebar
 bossbar set minecraft:center_control visible false
 

@@ -15,4 +15,5 @@ execute as @a run tellraw @s [{"text":"Damage Dealt: ","color":"yellow"},{"score
 execute as @a run tellraw @s [{"text":"Damage Taken: ","color":"yellow"},{"score":{"name":"@s","objective":"stats_g_damage_t"}}]
 tellraw @a {"text":"---------------------------------------- ","color":"yellow"}
 execute as @a run tellraw @s ""
-function rauch:game/core/framework/end_game
+
+scoreboard players set Global gameend 1

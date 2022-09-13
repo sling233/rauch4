@@ -39,6 +39,7 @@ scoreboard objectives add elytra minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add fly minecraft.custom:minecraft.aviate_one_cm
 scoreboard objectives add flyerFSchedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add flyerQSchedule minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add gameend dummy
 scoreboard objectives add gamestart dummy
 scoreboard objectives add hack dummy
 scoreboard objectives add hacker_ability dummy
@@ -170,7 +171,7 @@ gamerule announceAdvancements false
 
 
 #bossbars
-bossbar add center_control [{"text":"Red","color":"red"},{"text":"             "},{"text":"Neutral","color":"yellow"},{"text":"             "},{"text":"Blue","color":"blue"}]
+bossbar add center_control [{"text":"Neutral","color":"yellow"}]
 bossbar set minecraft:center_control color white
 bossbar set minecraft:center_control max 200
 bossbar set minecraft:center_control style notched_10
