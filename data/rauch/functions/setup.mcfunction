@@ -36,6 +36,7 @@ scoreboard objectives add death minecraft.custom:minecraft.deaths
 scoreboard objectives add drop minecraft.custom:minecraft.drop
 scoreboard objectives add dropcoas minecraft.dropped:minecraft.carrot_on_a_stick
 scoreboard objectives add elytra minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add elytra_cooldown dummy
 scoreboard objectives add fly minecraft.custom:minecraft.aviate_one_cm
 scoreboard objectives add flyerFSchedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add flyerQSchedule minecraft.custom:minecraft.time_since_rest

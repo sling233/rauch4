@@ -27,6 +27,7 @@ scoreboard objectives remove death
 scoreboard objectives remove drop
 scoreboard objectives remove dropcoas
 scoreboard objectives remove elytra
+scoreboard objectives remove elytra_cooldown
 scoreboard objectives remove fly
 scoreboard objectives remove flyerFSchedule
 scoreboard objectives remove flyerQSchedule
