@@ -1,12 +1,17 @@
-execute if score @p pnum matches 1 as @s[tag=!boltHitBy1] run function rauch:game/core/ability/bolt/q/hitby
-execute if score @p pnum matches 2 as @s[tag=!boltHitBy2] run function rauch:game/core/ability/bolt/q/hitby
-execute if score @p pnum matches 3 as @s[tag=!boltHitBy3] run function rauch:game/core/ability/bolt/q/hitby
-execute if score @p pnum matches 4 as @s[tag=!boltHitBy4] run function rauch:game/core/ability/bolt/q/hitby
-execute if score @p pnum matches 5 as @s[tag=!boltHitBy5] run function rauch:game/core/ability/bolt/q/hitby
-execute if score @p pnum matches 6 as @s[tag=!boltHitBy6] run function rauch:game/core/ability/bolt/q/hitby
-execute if score @p pnum matches 7 as @s[tag=!boltHitBy7] run function rauch:game/core/ability/bolt/q/hitby
-execute if score @p pnum matches 8 as @s[tag=!boltHitBy8] run function rauch:game/core/ability/bolt/q/hitby
-execute if score @p pnum matches 9 as @s[tag=!boltHitBy9] run function rauch:game/core/ability/bolt/q/hitby
-execute if score @p pnum matches 10 as @s[tag=!boltHitBy10] run function rauch:game/core/ability/bolt/q/hitby
-execute if score @p pnum matches 11 as @s[tag=!boltHitBy11] run function rauch:game/core/ability/bolt/q/hitby
-execute if score @p pnum matches 12 as @s[tag=!boltHitBy12] run function rauch:game/core/ability/bolt/q/hitby
+# executed at location of bolt person, as damage receiver
+
+execute at @s run particle minecraft:bubble_pop ~ ~1 ~ 0.2 0.4 0.1 0 40 force
+execute at @s run particle minecraft:flash ~ ~2 ~ 0 0 0 1 3 force
+execute at @s run summon lightning_bolt ~ ~6 ~
+
+# damage queue
+function rauch:game/core/mechanics/dmg_queue/find_me
+data modify storage game_data damage_queue[0].list prepend value {"amount":24,"from":-1}
+execute store result storage game_data damage_queue[0].list[0].from int 1 run scoreboard players get @p pnum
+tag @s add dmg_queue
+
+# check if still targeted by someone
+scoreboard objectives add found dummy
+function rauch:game/core/ability/bolt/q/array/bolt_hit_cycle
+execute unless score Global found matches 1 run effect clear @s minecraft:glowing
+scoreboard objectives remove found

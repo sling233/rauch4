@@ -30,7 +30,7 @@ execute at @s[scores={damage_taken=0..}] run function rauch:game/core/ui/damage_
 
 execute as @s[tag=zarzahn_hook] run function rauch:game/core/ability/zarzahn/r/hook
 execute as @s[tag=flyer_dmg_schedule,tag=!bolt] as @s[nbt={HurtTime:0s}] run function rauch:game/core/ability/flyer/q/damage
-execute as @s[tag=bolt] as @s[nbt={HurtTime:0s}] run function rauch:game/core/ability/bolt/q/damage
+function rauch:game/core/mechanics/dmg_queue/try_damage
 
 #ui
 execute as @s[scores={kit=3,cool3=0}] if score @s projectileRNum < @s projectileRMax run function rauch:game/core/ability/raucher/f/addcloud

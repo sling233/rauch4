@@ -6,6 +6,7 @@ function rauch:game/core/ui/bossbar/allinvisible
 # respawn visible wenn mode nicht deathmatch oder testing mode ist
 execute unless score Global mode matches 0 unless score Global mode matches 3 run function rauch:game/core/ui/bossbar/respawn/visible
 
+
 scoreboard players reset @s stun
 scoreboard players reset @s hack
 scoreboard players reset @s bolt
@@ -34,25 +35,13 @@ scoreboard players set @s cool1 1
 scoreboard players set @s cool2 1
 scoreboard players set @s cool3 1
 execute as @s[scores={kit=3}] run scoreboard players operation @s projectileRNum = @s projectileRMax
-execute as @s[scores={kit=1}] run function rauch:game/core/ability/bolt/q/remove_hit_id
+function rauch:game/core/mechanics/dmg_queue/clear_my_queue
+execute as @s[scores={kit=1}] run function rauch:game/core/ability/bolt/q/clear_hit_list
 execute as @s[scores={kit=5}] run function rauch:game/core/ability/wark/r/remove_hit_id
 execute as @s[scores={kit=2}] run function rauch:game/core/ability/zarzahn/r/hook_remove
-tag @s remove bolt
 tag @s remove flyer_dmg_schedule
 scoreboard players reset @s raucher_debuff
 scoreboard players reset @s raucher_control
-tag @s remove boltHitBy1
-tag @s remove boltHitBy2
-tag @s remove boltHitBy3
-tag @s remove boltHitBy4
-tag @s remove boltHitBy5
-tag @s remove boltHitBy6
-tag @s remove boltHitBy7
-tag @s remove boltHitBy8
-tag @s remove boltHitBy9
-tag @s remove boltHitBy10
-tag @s remove boltHitBy11
-tag @s remove boltHitBy12
 tag @s remove wark_hitby1
 tag @s remove wark_hitby2
 tag @s remove wark_hitby3

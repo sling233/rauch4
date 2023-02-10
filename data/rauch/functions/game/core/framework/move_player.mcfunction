@@ -51,7 +51,6 @@ scoreboard players reset @s wark_buff
 scoreboard players reset @s wark_r
 tag @s remove game
 tag @s remove dead
-tag @s remove bolt
 tag @s remove flyer_dmg_schedule
 tag @s remove zarzahn_hook
 tag @s remove flying
@@ -59,18 +58,6 @@ tag @s remove fast
 tag @s remove allow_cancel
 tag @s remove flyer_q_ground
 tag @s remove flagPickedUp
-tag @s remove boltHitBy1
-tag @s remove boltHitBy2
-tag @s remove boltHitBy3
-tag @s remove boltHitBy4
-tag @s remove boltHitBy5
-tag @s remove boltHitBy6
-tag @s remove boltHitBy7
-tag @s remove boltHitBy8
-tag @s remove boltHitBy9
-tag @s remove boltHitBy10
-tag @s remove boltHitBy11
-tag @s remove boltHitBy12
 tag @s remove wark_hitby1
 tag @s remove wark_hitby2
 tag @s remove wark_hitby3

@@ -1,3 +1,9 @@
+# create game data storage
+#data remove storage game_data
+#data merge storage minecraft:game_data {bolt_hit:[{name:"bad code"}]}
+data merge storage minecraft:game_data {bolt_hit:[],damage_queue:[]}
+
+# player ids und setup und so
 scoreboard players reset Global pnum
 execute as @a[tag=queue,limit=12] run function rauch:game/core/framework/teamsetup
 scoreboard players reset Global pnum
@@ -12,6 +18,7 @@ execute if score @e[type=armor_stand,tag=map,tag=root,tag=active,limit=1] mapTim
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=active,limit=1] mapTime matches 2 run time set noon
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=active,limit=1] mapTime matches 3 run time set night
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=active,limit=1] mapTime matches 4 run time set midnight
+
 
 function rauch:game/core/ui/bossbar/setplayers
 function rauch:game/core/ui/bossbar/allinvisible
