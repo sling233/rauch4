@@ -160,7 +160,7 @@ team join blue_display Blue:
 gamerule doMobLoot false
 gamerule doMobSpawning false
 #gamerule doTileDrops false
-gamerule sendCommandFeedback true
+gamerule sendCommandFeedback false
 gamerule keepInventory true
 gamerule doImmediateRespawn true
 gamerule naturalRegeneration false
@@ -168,6 +168,10 @@ gamerule maxEntityCramming 0
 gamerule fallDamage false
 gamerule showDeathMessages false
 gamerule announceAdvancements false
+gamerule doDaylightCycle false
+gamerule doFireTick false
+gamerule doWeatherCycle false
+gamerule randomTickSpeed 0
 #gamerule mobGriefing false
 
 
