@@ -5,3 +5,5 @@ effect give @s minecraft:glowing 1000000 0 true
 
 scoreboard players set @s hack 200
 function rauch:game/core/mechanics/hackinit
+
+function rauch:game/core/mechanics/armor

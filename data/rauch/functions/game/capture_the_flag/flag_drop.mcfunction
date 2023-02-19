@@ -1,5 +1,4 @@
 function rauch:game/capture_the_flag/spawn_flag
-effect give @e[type=minecraft:armor_stand,tag=flag] minecraft:glowing 1000000 0
 
 tag @s remove flagPickedUp
 
@@ -10,3 +9,5 @@ scoreboard players set Global flagDistanceBlue 1000000
 
 scoreboard players reset @s hack
 function rauch:game/core/mechanics/hackend
+
+function rauch:game/core/mechanics/armor
