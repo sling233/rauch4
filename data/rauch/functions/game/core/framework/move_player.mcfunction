@@ -51,7 +51,6 @@ scoreboard players reset @s wark_buff
 scoreboard players reset @s wark_r
 tag @s remove game
 tag @s remove dead
-tag @s remove flyer_dmg_schedule
 tag @s remove zarzahn_hook
 tag @s remove flying
 tag @s remove fast
@@ -72,12 +71,12 @@ tag @s remove wark_hitby11
 tag @s remove wark_hitby12
 effect clear @s
 team leave @s
-clear @s
+#clear @s
 # this will remove the firstjoin advancement, which will automatically moves the player to the lobby the next tick
 advancement revoke @s everything
 
-#tag @s add clear
-#schedule function rauch:game/core/framework/clear 10t
+tag @s add clear
+schedule function rauch:game/core/framework/clear 10t
 #title @s subtitle {"text":""}
 #title @s clear
 #tag @s add lobby
