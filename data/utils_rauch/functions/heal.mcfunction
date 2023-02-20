@@ -1,0 +1,1 @@
+effect give @a instant_health 10 100 true
