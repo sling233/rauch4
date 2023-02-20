@@ -64,7 +64,7 @@ scoreboard objectives remove stats_g_deaths
 scoreboard objectives remove stats_g_kills
 scoreboard objectives remove stun
 scoreboard objectives remove tank
-scoreboard objectives remove tank_damage_taken
+scoreboard objectives remove tank_damage_dealt
 scoreboard objectives remove tank_resistance
 scoreboard objectives remove tele2
 scoreboard objectives remove teleweak
