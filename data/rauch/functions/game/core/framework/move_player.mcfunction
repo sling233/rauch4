@@ -71,16 +71,16 @@ tag @s remove wark_hitby10
 tag @s remove wark_hitby11
 tag @s remove wark_hitby12
 effect clear @s
-team empty Blue
-team empty Red
+team leave @s
+clear @s
+# this will remove the firstjoin advancement, which will automatically moves the player to the lobby the next tick
 advancement revoke @s everything
-#clear @s
-tag @s add clear
-schedule function rauch:game/core/framework/clear 10t
-function rauch:game/core/ui/bossbar
-function rauch:game/core/ui/bossbar/allinvisible
-title @s subtitle {"text":""}
-tag @s add lobby
-gamemode adventure @s
-execute at @e[type=armor_stand,tag=main,limit=1] run tp @s ~ ~-20 ~
-execute at @e[type=armor_stand,tag=main,limit=1] run spawnpoint @s ~ ~-20 ~
+
+#tag @s add clear
+#schedule function rauch:game/core/framework/clear 10t
+#title @s subtitle {"text":""}
+#title @s clear
+#tag @s add lobby
+#gamemode adventure @s
+#execute at @e[type=armor_stand,tag=main,limit=1] run tp @s ~ ~-20 ~
+#execute at @e[type=armor_stand,tag=main,limit=1] run spawnpoint @s ~ ~-20 ~

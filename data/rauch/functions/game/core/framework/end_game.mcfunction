@@ -25,5 +25,5 @@ scoreboard players reset Global killsDisplay
 scoreboard players reset Global gameend
 scoreboard objectives setdisplay sidebar
 bossbar set minecraft:center_control visible false
-
+function rauch:game/core/ui/bossbar/allinvisible
 execute as @a[tag=game] run function rauch:game/core/framework/move_player

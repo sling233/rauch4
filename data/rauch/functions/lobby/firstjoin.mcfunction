@@ -1,3 +1,4 @@
-execute as @s[tag=!game,tag=lobby] run tag @s add lobby
-execute as @s[tag=!game,tag=lobby] at @e[type=armor_stand,tag=main] run tp @a ~ ~-20 ~
+tag @s add lobby
+execute at @e[type=armor_stand,tag=main] run tp @s ~ ~-20 ~
+execute at @e[type=armor_stand,tag=main] run spawnpoint @s ~ ~-20 ~
 gamemode adventure @s

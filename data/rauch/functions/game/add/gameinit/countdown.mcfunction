@@ -28,5 +28,11 @@ execute if score Global mode matches 1 run scoreboard players set Global time_bl
 scoreboard players set @a[tag=game] cool1 2
 scoreboard players set @a[tag=game] cool2 2
 scoreboard players set @a[tag=game] cool3 2
-execute at @e[tag=t1,tag=map,tag=active,type=armor_stand] run tp @a[team=Red] ~ ~-20 ~
-execute at @e[tag=t2,tag=map,tag=active,type=armor_stand] run tp @a[team=Blue] ~ ~-20 ~
+
+# tp players every 10 ticks because tp-ing every tick leads to problems for minecraft on servers
+scoreboard objectives add mod10 dummy
+scoreboard players operation Global mod10 = Global gamestart
+scoreboard players operation Global mod10 %= Global 10
+execute if score Global mod10 matches 0 at @e[tag=t1,tag=map,tag=active,type=armor_stand] run tp @a[team=Red] ~ ~-20 ~
+execute if score Global mod10 matches 0 at @e[tag=t2,tag=map,tag=active,type=armor_stand] run tp @a[team=Blue] ~ ~-20 ~
+scoreboard objectives remove mod10

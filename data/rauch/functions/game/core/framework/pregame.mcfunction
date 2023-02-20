@@ -1,7 +1,7 @@
 clear @s
 gamemode adventure @s
 recipe take @s *
-advancement revoke @s everything
+#advancement revoke @s everything
 scoreboard players set @s cool1 1
 scoreboard players set @s cool2 1
 scoreboard players set @s cool3 1
