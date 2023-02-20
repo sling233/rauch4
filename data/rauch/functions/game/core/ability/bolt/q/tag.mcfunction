@@ -1,3 +1,4 @@
+# executed as bolt (tagged person is whatever bolts hitPnum is)
 # set @s's data to front of bolt_hit
 function rauch:game/core/ability/bolt/q/array/find_me
 

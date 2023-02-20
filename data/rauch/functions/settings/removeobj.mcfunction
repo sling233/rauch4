@@ -1,5 +1,6 @@
 scoreboard objectives remove 0
 scoreboard objectives remove 2
+scoreboard objectives remove 3
 scoreboard objectives remove 9
 scoreboard objectives remove 10
 scoreboard objectives remove 20

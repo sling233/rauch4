@@ -1,4 +1,8 @@
-#effect give @s minecraft:instant_damage 1 2 true
-scoreboard players operation @s 2 = @e[type=marker,tag=temp,limit=1] pnum
-execute at @a if score @p pnum = @s 2 run damage @s 24 minecraft:lightning_bolt by @p
-execute as @s at @a[scores={bolt=1..}] if score @p pnum = @s 2 run function rauch:game/core/ability/bolt/q/hit
+# save who the projectile belonged to (basically, who hit this player)
+scoreboard objectives add hitByPnum dummy
+scoreboard players operation @s hitByPnum = @e[type=marker,tag=temp,limit=1] pnum
+
+# execute at this, as bolt
+execute at @s as @a if score @s pnum = @p hitByPnum run function rauch:game/core/ability/bolt/r/hit_action
+
+scoreboard objectives remove hitByPnum

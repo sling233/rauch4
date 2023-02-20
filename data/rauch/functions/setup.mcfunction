@@ -9,6 +9,7 @@ execute as @a[tag=!lobby,tag=!game,tag=!addmap] run tag @s add lobby
 
 scoreboard objectives add 0 dummy
 scoreboard objectives add 2 dummy
+scoreboard objectives add 3 dummy
 scoreboard objectives add 9 dummy
 scoreboard objectives add 10 dummy
 scoreboard objectives add 20 dummy
@@ -122,6 +123,7 @@ scoreboard objectives add flagDisplay dummy {"text":"Points","color":"yellow"}
 
 scoreboard players set Global 0 0
 scoreboard players set Global 2 2
+scoreboard players set Global 3 3
 scoreboard players set Global 9 9
 scoreboard players set Global 10 10
 scoreboard players set Global 20 20
