@@ -23,7 +23,7 @@ attribute @s[scores={kit=8}] minecraft:generic.max_health base set 26
 
 attribute @s[scores={kit=1}] minecraft:generic.attack_damage base set 14
 attribute @s[scores={kit=2}] minecraft:generic.attack_damage base set 12
-attribute @s[scores={kit=3}] minecraft:generic.attack_damage base set 8
+attribute @s[scores={kit=3}] minecraft:generic.attack_damage base set 9
 attribute @s[scores={kit=4}] minecraft:generic.attack_damage base set 11
 attribute @s[scores={kit=5}] minecraft:generic.attack_damage base set 12
 attribute @s[scores={kit=6}] minecraft:generic.attack_damage base set 14
