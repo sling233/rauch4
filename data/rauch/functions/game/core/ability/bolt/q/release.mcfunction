@@ -17,7 +17,7 @@ execute if score Global t_list_count matches 5 run attribute @s minecraft:generi
 execute if score Global t_list_count matches 6 run attribute @s minecraft:generic.attack_damage modifier add 0-0-0-0-9 "boltdmg6" 14.4 add
 execute if score Global t_list_count matches 7.. run say what
 
-execute as @s[scores={t_list_count=1..}] run scoreboard players set @s boltdmg 80
+execute if score Global t_list_count matches 1.. run scoreboard players set @s boltdmg 80
 
 scoreboard objectives remove t_list_count
 data remove storage game_data bolt_hit[0].list
