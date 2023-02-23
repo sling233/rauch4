@@ -1,4 +1,4 @@
-# Rauchergames
+# Wokkagames
 
 Minecraft Datapack Game with abilities and stuff, meant to play with friends (i spent way too much time programming this).
 
