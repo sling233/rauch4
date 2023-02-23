@@ -1,4 +1,4 @@
-execute as @a[tag=game] run function rauch:game/core/framework/move_player
+execute as @a[tag=game] run function rauch:game/framework/move_player
 tag @a add lobby
 clear @a
 execute at @e[type=armor_stand,tag=main] run tp @a ~ ~-20 ~

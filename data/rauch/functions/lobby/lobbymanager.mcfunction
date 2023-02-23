@@ -23,8 +23,8 @@ execute as @s[tag=queuetemp] as @s[nbt={SelectedItemSlot:7}] run team join Blue 
 execute as @s[tag=queuetemp] as @s[nbt={SelectedItemSlot:6}] run team join Red @s
 execute as @s[tag=queuetemp] as @s[nbt={SelectedItemSlot:5}] run team join Lobby @s
 
-execute as @s[tag=queuetemp,tag=admin] as @s[nbt={SelectedItemSlot:0}] run function rauch:game/add/gameinit/customteams_start
-execute as @s[tag=queuetemp,tag=admin] as @s[nbt={SelectedItemSlot:1}] run function rauch:game/add/gameinit/randomteams_start
+execute as @s[tag=queuetemp,tag=admin] as @s[nbt={SelectedItemSlot:0}] run function rauch:game/framework/gameinit/customteams_start
+execute as @s[tag=queuetemp,tag=admin] as @s[nbt={SelectedItemSlot:1}] run function rauch:game/framework/gameinit/randomteams_start
 
 tag @s remove queuetemp
 tag @s remove kit
