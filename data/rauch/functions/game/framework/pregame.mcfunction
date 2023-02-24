@@ -15,6 +15,7 @@ scoreboard players reset @s dropcoas
 scoreboard players reset @s raucherdmg
 scoreboard players reset @s tank_resistance
 
+scoreboard players set @s armor_target 20
 function rauch:game/mechanics/weapon
 function rauch:game/mechanics/stats
 function rauch:game/mechanics/armor

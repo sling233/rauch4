@@ -17,5 +17,14 @@ execute at @s[tag=blu] run particle minecraft:dust 0.2 0.2 0.7 1 ^3 ^0.2 ^ 0.05 
 execute at @s[tag=red] run particle minecraft:dust 0.7 0.2 0.2 1 ^-3 ^0.2 ^ 0.05 0.05 0.05 1 1 force
 execute at @s[tag=blu] run particle minecraft:dust 0.2 0.2 0.7 1 ^-3 ^0.2 ^ 0.05 0.05 0.05 1 1 force
 
-execute at @s run tp @s ~ ~ ~ ~10 0
+execute at @s[tag=red] run particle minecraft:dust 0.7 0.2 0.2 1 ^2.12 ^0.2 ^2.12 0.05 0.05 0.05 1 1 force
+execute at @s[tag=blu] run particle minecraft:dust 0.2 0.2 0.7 1 ^2.12 ^0.2 ^2.12 0.05 0.05 0.05 1 1 force
+execute at @s[tag=red] run particle minecraft:dust 0.7 0.2 0.2 1 ^-2.12 ^0.2 ^-2.12 0.05 0.05 0.05 1 1 force
+execute at @s[tag=blu] run particle minecraft:dust 0.2 0.2 0.7 1 ^-2.12 ^0.2 ^-2.12 0.05 0.05 0.05 1 1 force
+execute at @s[tag=red] run particle minecraft:dust 0.7 0.2 0.2 1 ^2.12 ^0.2 ^-2.12 0.05 0.05 0.05 1 1 force
+execute at @s[tag=blu] run particle minecraft:dust 0.2 0.2 0.7 1 ^2.12 ^0.2 ^-2.12 0.05 0.05 0.05 1 1 force
+execute at @s[tag=red] run particle minecraft:dust 0.7 0.2 0.2 1 ^-2.12 ^0.2 ^2.12 0.05 0.05 0.05 1 1 force
+execute at @s[tag=blu] run particle minecraft:dust 0.2 0.2 0.7 1 ^-2.12 ^0.2 ^2.12 0.05 0.05 0.05 1 1 force
+
+execute at @s run tp @s ~ ~ ~ ~5 0
 execute as @s[scores={click=130..}] run kill @s

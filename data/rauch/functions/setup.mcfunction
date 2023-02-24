@@ -14,6 +14,7 @@ scoreboard objectives add 9 dummy
 scoreboard objectives add 10 dummy
 scoreboard objectives add 20 dummy
 scoreboard objectives add adminsetting trigger
+scoreboard objectives add armor_target dummy
 scoreboard objectives add bolt dummy
 scoreboard objectives add boltdmg dummy
 scoreboard objectives add boltspeed minecraft.custom:minecraft.time_since_rest

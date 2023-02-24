@@ -36,6 +36,7 @@ scoreboard players set @s cool2 1
 scoreboard players set @s cool3 1
 execute as @s[scores={kit=3}] run scoreboard players operation @s projectileRNum = @s projectileRMax
 function rauch:game/mechanics/dmg_queue/clear_my_queue
+function rauch:game/ability/raucher/f/slow/leave
 execute as @s[scores={kit=1}] run function rauch:game/ability/bolt/q/clear_hit_list
 execute as @s[scores={kit=5}] run function rauch:game/ability/wark/r/remove_hit_id
 execute as @s[scores={kit=2}] run function rauch:game/ability/zarzahn/r/hook_remove

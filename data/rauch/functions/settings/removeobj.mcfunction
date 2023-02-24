@@ -5,6 +5,7 @@ scoreboard objectives remove 9
 scoreboard objectives remove 10
 scoreboard objectives remove 20
 scoreboard objectives remove adminsetting
+scoreboard objectives remove armor_target
 scoreboard objectives remove bolt
 scoreboard objectives remove boltdmg
 scoreboard objectives remove boltspeed
