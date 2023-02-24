@@ -12,6 +12,7 @@ scoreboard objectives add 2 dummy
 scoreboard objectives add 3 dummy
 scoreboard objectives add 9 dummy
 scoreboard objectives add 10 dummy
+scoreboard objectives add 12 dummy
 scoreboard objectives add 20 dummy
 scoreboard objectives add adminsetting trigger
 scoreboard objectives add armor_target dummy
@@ -127,6 +128,7 @@ scoreboard players set Global 2 2
 scoreboard players set Global 3 3
 scoreboard players set Global 9 9
 scoreboard players set Global 10 10
+scoreboard players set Global 12 12
 scoreboard players set Global 20 20
 execute unless score Global mode matches 0..4 run scoreboard players set Global mode 0
 

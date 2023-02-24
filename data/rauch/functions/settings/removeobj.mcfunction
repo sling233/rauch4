@@ -3,6 +3,7 @@ scoreboard objectives remove 2
 scoreboard objectives remove 3
 scoreboard objectives remove 9
 scoreboard objectives remove 10
+scoreboard objectives remove 12
 scoreboard objectives remove 20
 scoreboard objectives remove adminsetting
 scoreboard objectives remove armor_target

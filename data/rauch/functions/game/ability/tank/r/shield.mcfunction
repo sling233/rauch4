@@ -6,7 +6,7 @@ execute as @s[tag=blu] as @e[type=marker,tag=red,tag=projectile,distance=..7] at
 execute as @s[tag=red] as @e[type=marker,tag=blu,tag=indicator,distance=..7] run kill @s
 execute as @s[tag=blu] as @e[type=marker,tag=red,tag=indicator,distance=..7] run kill @s
 
-execute at @s[tag=red] run function rauch:game/ability/tank/r/particler
-execute at @s[tag=blu] run function rauch:game/ability/tank/r/particleb
+execute at @s[tag=red] run function rauch:game/ability/tank/r/particle_r
+execute at @s[tag=blu] run function rauch:game/ability/tank/r/particle_b
 
 execute at @s[scores={click=150..}] run function rauch:game/ability/tank/r/time
