@@ -47,6 +47,7 @@ scoreboard objectives add gameend dummy
 scoreboard objectives add gamestart dummy
 scoreboard objectives add hack dummy
 scoreboard objectives add hacker_ability dummy
+scoreboard objectives add hacker_damage_timer dummy
 scoreboard objectives add heal dummy
 scoreboard objectives add health health {"text":"❤","color":"red"}
 scoreboard objectives add health_display dummy

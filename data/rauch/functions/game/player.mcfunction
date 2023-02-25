@@ -17,6 +17,7 @@ execute as @s[scores={kit=8}] run function rauch:game/ability/flyer/flyer
 execute as @s[scores={push_levitation_timer=-1}] run effect clear @s minecraft:levitation
 execute as @s[tag=raucher_control,tag=!raucher_debuff] run function rauch:game/ability/raucher/f/slow/leave
 execute as @s[scores={hack=0..}] run function rauch:game/mechanics/hack
+execute as @s[scores={hacker_damage_timer=0..}] run function rauch:game/ability/hacker/r/debuff
 execute as @s[scores={teleweak=0..}] run function rauch:game/ability/teleporter/r/debuff
 execute as @s[scores={hacker_ability=0..}] run function rauch:game/ability/hacker/f/ability_boost
 execute as @s[scores={raucherdmg=0..}] run function rauch:game/ability/raucher/q/buff

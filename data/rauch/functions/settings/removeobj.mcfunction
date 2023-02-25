@@ -38,6 +38,7 @@ scoreboard objectives remove gameend
 scoreboard objectives remove gamestart
 scoreboard objectives remove hack
 scoreboard objectives remove hacker_ability
+scoreboard objectives remove hacker_damage_timer
 scoreboard objectives remove heal
 scoreboard objectives remove health
 scoreboard objectives remove health_display
