@@ -30,7 +30,7 @@ execute as @s[scores={stun=0..}] run function rauch:game/mechanics/stun
 execute at @s[scores={damage_taken=0..}] run function rauch:game/ui/damage_taken
 
 execute as @s[tag=zarzahn_hook] run function rauch:game/ability/zarzahn/r/hook
-function rauch:game/mechanics/dmg_queue/try_damage
+#function rauch:game/mechanics/dmg_queue/try_damage
 
 #ui
 execute as @s[scores={kit=3,cool3=0}] if score @s projectileRNum < @s projectileRMax run function rauch:game/ability/raucher/f/addcloud

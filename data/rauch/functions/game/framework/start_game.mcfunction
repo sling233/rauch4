@@ -1,7 +1,8 @@
 # create game data storage
 #data remove storage game_data
 #data merge storage minecraft:game_data {bolt_hit:[{name:"bad code"}]}
-data merge storage minecraft:game_data {bolt_hit:[],damage_queue:[]}
+#data merge storage minecraft:game_data {bolt_hit:[],damage_queue:[]}
+data merge storage minecraft:game_data {bolt_hit:[]}
 
 # player ids und setup und so
 scoreboard players reset Global pnum

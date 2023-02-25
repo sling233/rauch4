@@ -23,6 +23,6 @@
     }
   },
   "rewards": {
-    "function": "rauch:game/core/ui/deathmessages/kill12"
+    "function": "rauch:game/ui/deathmessages/kill12"
   }
 }

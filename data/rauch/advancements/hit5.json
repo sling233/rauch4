@@ -23,6 +23,6 @@
     }
   },
   "rewards": {
-    "function": "rauch:game/core/mechanics/hitdetect/hit5"
+    "function": "rauch:game/mechanics/hitdetect/hit5"
   }
 }
