@@ -1,6 +1,6 @@
 kill @e[type=armor_stand,tag=flag]
 tag @s add flagPickedUp
-effect give @s minecraft:glowing 1000000 0 true
+effect give @s minecraft:glowing infinite 0 true
 #effect give @s minecraft:jump_boost 1000000 128 true
 
 title @a[tag=game] title ""
