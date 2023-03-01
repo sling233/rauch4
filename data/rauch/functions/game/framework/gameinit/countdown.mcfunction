@@ -28,6 +28,7 @@ execute if score Global mode matches 1 run scoreboard players set Global time_bl
 scoreboard players set @a[tag=game] cool1 2
 scoreboard players set @a[tag=game] cool2 2
 scoreboard players set @a[tag=game] cool3 2
+scoreboard players set @a[tag=game,scores={kit=5}] wark_charge 0
 
 # tp players every 10 ticks because tp-ing every tick leads to problems for minecraft on servers
 scoreboard objectives add mod10 dummy
