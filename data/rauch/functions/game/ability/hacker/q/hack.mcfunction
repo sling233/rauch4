@@ -1,5 +1,7 @@
+execute at @a if score @p pnum = @s pnum run tag @p add t_hacker
 execute at @s[tag=red] as @a[team=Blue,tag=game,tag=!dead,distance=..5.5] run function rauch:game/ability/hacker/q/hacked
 execute at @s[tag=blu] as @a[team=Red,tag=game,tag=!dead,distance=..5.5] run function rauch:game/ability/hacker/q/hacked
+tag @a remove t_hacker
 execute at @s run playsound minecraft:entity.guardian.hurt master @a
 
 kill @s

@@ -5,6 +5,7 @@ recipe take @s *
 scoreboard players set @s cool1 1
 scoreboard players set @s cool2 1
 scoreboard players set @s cool3 1
+scoreboard players set @s[scores={kit=4}] hacker_charges 1
 scoreboard players set @s stats_g_kills 0
 scoreboard players set @s stats_g_deaths 0
 scoreboard players set @s stats_g_damage_d 0
@@ -21,5 +22,5 @@ function rauch:game/mechanics/stats
 function rauch:game/mechanics/armor
 
 effect give @s minecraft:hunger 6 255 true
-effect give @s minecraft:resistance 6 255 true
+effect give @s minecraft:resistance 4 255 true
 effect give @s minecraft:regeneration 3 255 true

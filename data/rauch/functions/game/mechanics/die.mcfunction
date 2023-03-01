@@ -11,6 +11,7 @@ scoreboard players reset @s stun
 scoreboard players reset @s hack
 scoreboard players reset @s bolt
 scoreboard players reset @s boltdmg
+scoreboard players reset @s hacker_damage_timer
 scoreboard players reset @s raucherdmg
 scoreboard players reset @s tank_resistance
 scoreboard players reset @s tank
@@ -37,8 +38,16 @@ scoreboard players set @s cool3 1
 scoreboard players set @s armor_target 20
 execute as @s[scores={kit=3}] run scoreboard players operation @s projectileRNum = @s projectileRMax
 execute as @s[scores={kit=1}] run function rauch:game/ability/bolt/q/clear_hit_list
+#execute as @s[scores={kit=4}] run function rauch:game/ability/hacker/r/clear_my_tag_list
+#execute as @s[scores={kit=4}] run function rauch:game/ability/hacker/q/clear_my_tag_list
 execute as @s[scores={kit=5}] run function rauch:game/ability/wark/r/remove_hit_id
 execute as @s[scores={kit=2}] run function rauch:game/ability/zarzahn/r/hook_remove
+# check if @s was tagged by a hacker (got_reawrd is so the hacker doesn't get 2 charges if r and q tagged @s when he died)
+scoreboard objectives add got_reward dummy
+function rauch:game/ability/hacker/r/array/check_me
+function rauch:game/ability/hacker/q/array/check_me
+scoreboard objectives remove got_reward
+
 scoreboard players reset @s raucher_debuff
 tag @s remove wark_hitby1
 tag @s remove wark_hitby2

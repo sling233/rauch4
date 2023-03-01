@@ -7,7 +7,7 @@ execute as @s[scores={death=1..}] run function rauch:game/mechanics/die
 execute as @s[scores={kit=1}] run function rauch:game/ability/bolt/bolt
 execute as @s[scores={kit=2}] run function rauch:game/ability/zarzahn/zarzahn
 execute as @s[scores={kit=3}] run function rauch:game/ability/raucher/raucher
-#execute as @s[scores={kit=4}] run function rauch:game/ability/hacker/hacker
+execute as @s[scores={kit=4}] run function rauch:game/ability/hacker/hacker
 execute as @s[scores={kit=5}] run function rauch:game/ability/wark/wark
 execute as @s[scores={kit=6}] run function rauch:game/ability/teleporter/teleporter
 execute as @s[scores={kit=7}] run function rauch:game/ability/tank/tank
@@ -39,8 +39,9 @@ execute as @s[scores={cool1=1..}] run function rauch:game/ui/counter1
 execute as @s[scores={cool2=1..}] run function rauch:game/ui/counter2
 execute as @s[scores={cool3=1..}] run function rauch:game/ui/counter3
 
-execute unless score @s kit matches 3 run function rauch:game/ui/actionbar/cooldisnor
+execute unless score @s kit matches 3..4 run function rauch:game/ui/actionbar/cooldisnor
 execute if score @s kit matches 3 run function rauch:game/ui/actionbar/cooldisrp
+execute if score @s kit matches 4 run function rauch:game/ui/actionbar/cooldis_hacker
 
 #stuff
 #execute as @s[tag=spawn] run function rauch:game/shop/shop

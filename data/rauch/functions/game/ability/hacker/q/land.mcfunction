@@ -1,8 +1,7 @@
-kill @s
 execute at @s run playsound minecraft:block.conduit.deactivate master @a
-execute at @s[tag=red] run summon marker ~ ~ ~ {Tags:["hacker_bomb","center","red"]}
-execute at @s[tag=blu] run summon marker ~ ~ ~ {Tags:["hacker_bomb","center","blu"]}
-
+execute at @s[tag=red] run summon marker ~ ~ ~ {Tags:["hacker_bomb","center","setup","red"]}
+execute at @s[tag=blu] run summon marker ~ ~ ~ {Tags:["hacker_bomb","center","setup","blu"]}
+scoreboard players operation @e[type=marker,tag=hacker_bomb,tag=setup,limit=1] pnum = @s pnum
 summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind0","setup"]}
 summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind1","setup"]}
 summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind2","setup"]}
@@ -22,6 +21,7 @@ execute at @s rotated 270 0 run tp @e[type=marker,tag=setup,tag=hacker_bomb,tag=
 execute at @s rotated 315 0 run tp @e[type=marker,tag=setup,tag=hacker_bomb,tag=ind7] ~ ~ ~ ~ ~
 
 tag @e[type=marker,tag=setup,tag=hacker_bomb] remove setup
+kill @s
 execute at @s run particle minecraft:dust 0.1 0.2 0.1 1 ~0.0 ~0.1 ~5.44 0.02 0.02 0.02 1 1 force
 execute at @s run particle minecraft:dust 0.1 0.2 0.1 1 ~0.379 ~0.1 ~5.427 0.02 0.02 0.02 1 1 force
 execute at @s run particle minecraft:dust 0.1 0.2 0.1 1 ~0.757 ~0.1 ~5.387 0.02 0.02 0.02 1 1 force

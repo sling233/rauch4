@@ -43,6 +43,7 @@ scoreboard players reset @s tank
 scoreboard players reset @s pnum
 scoreboard players reset @s tele2
 scoreboard players reset @s teleweak
+scoreboard players reset @s hacker_damage_timer
 scoreboard players reset @s zarzahn_f
 scoreboard players reset @s wark_detect
 scoreboard players reset @s wark_startup

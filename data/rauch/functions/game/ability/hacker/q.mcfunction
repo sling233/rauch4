@@ -20,6 +20,7 @@ execute as @s as @e[type=armor_stand,tag=hacker_bomb,tag=setup,sort=nearest] sto
 execute as @s as @e[type=armor_stand,tag=hacker_bomb,tag=setup,sort=nearest] store result entity @s Motion[2] double 0.000015 run scoreboard players get @s zPos
 
 kill @e[type=marker,tag=vector]
+scoreboard players operation @e[type=armor_stand,tag=setup,tag=hacker_bomb,limit=1] pnum = @s pnum
 tag @e[type=armor_stand,tag=hacker_bomb,tag=setup] remove setup
 
 execute at @s run playsound minecraft:entity.player.attack.sweep master @a
