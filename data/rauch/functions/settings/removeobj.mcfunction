@@ -77,21 +77,9 @@ scoreboard objectives remove tele2
 scoreboard objectives remove teleweak
 scoreboard objectives remove walk
 scoreboard objectives remove wark_buff
+scoreboard objectives remove wark_charge
 scoreboard objectives remove wark_detect
 scoreboard objectives remove wark_startup
-scoreboard objectives remove wark_r
-scoreboard objectives remove wark_hit1
-scoreboard objectives remove wark_hit2
-scoreboard objectives remove wark_hit3
-scoreboard objectives remove wark_hit4
-scoreboard objectives remove wark_hit5
-scoreboard objectives remove wark_hit6
-scoreboard objectives remove wark_hit7
-scoreboard objectives remove wark_hit8
-scoreboard objectives remove wark_hit9
-scoreboard objectives remove wark_hit10
-scoreboard objectives remove wark_hit11
-scoreboard objectives remove wark_hit12
 scoreboard objectives remove wark_f
 scoreboard objectives remove xPos
 scoreboard objectives remove yPos
@@ -246,19 +234,6 @@ bossbar remove wark9
 bossbar remove wark10
 bossbar remove wark11
 bossbar remove wark12
-
-bossbar remove wark_r1
-bossbar remove wark_r2
-bossbar remove wark_r3
-bossbar remove wark_r4
-bossbar remove wark_r5
-bossbar remove wark_r6
-bossbar remove wark_r7
-bossbar remove wark_r8
-bossbar remove wark_r9
-bossbar remove wark_r10
-bossbar remove wark_r11
-bossbar remove wark_r12
 
 team remove Red
 team remove Blue

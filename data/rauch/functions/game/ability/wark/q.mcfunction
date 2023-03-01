@@ -1,13 +1,8 @@
-execute at @s[team=Red] run function rauch:game/ability/wark/q/detectred
-execute at @s[team=Blue] run function rauch:game/ability/wark/q/detectblue
-
-scoreboard players set Global wark_startup 9999999
-execute as @a[tag=temp] run function rauch:game/ability/wark/q/evaluate
-execute at @s as @a[tag=least,limit=1] run function rauch:game/ability/wark/q/hit
-
-execute if entity @a[tag=least] at @s run playsound minecraft:entity.warden.listening_angry master @a
-execute if entity @a[tag=least] run scoreboard players operation @s cool2 = @s cool2_target
-execute unless entity @a[tag=least] at @s run playsound minecraft:entity.puffer_fish.blow_out master @s
-execute unless entity @a[tag=least] at @s run tellraw @s {"text":"No enemy found!","color":"red"}
-tag @a remove temp
-tag @a remove least
+execute at @s run playsound minecraft:entity.warden.roar master @a
+execute as @s[team=Red] as @a[team=Blue,tag=!dead] run effect give @s darkness 2 0 true
+execute as @s[team=Blue] as @a[team=Red,tag=!dead] run effect give @s darkness 2 0 true
+effect give @s minecraft:speed 6 2 false
+effect give @s minecraft:jump_boost 6 1 false
+attribute @s minecraft:generic.attack_damage modifier add 0-0-0-0-11 "warkbuff" 0.5 multiply
+scoreboard players set @s wark_buff 120
+scoreboard players remove @s wark_charge 100000

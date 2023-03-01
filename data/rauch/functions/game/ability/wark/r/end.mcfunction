@@ -1,2 +1,3 @@
-function rauch:game/ui/bossbar/wark_r/invisible
-scoreboard players reset @s wark_r
+function rauch:game/ui/bossbar/wark/invisible
+execute at @s as @e[type=marker,tag=wark_detect] if score @s wark_charge = @p pnum run kill @s
+scoreboard players reset @s wark_detect

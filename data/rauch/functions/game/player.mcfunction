@@ -22,9 +22,8 @@ execute as @s[scores={teleweak=0..}] run function rauch:game/ability/teleporter/
 execute as @s[scores={hacker_ability=0..}] run function rauch:game/ability/hacker/f/ability_boost
 execute as @s[scores={raucherdmg=0..}] run function rauch:game/ability/raucher/q/buff
 execute as @s[scores={tank_resistance=0..}] run function rauch:game/ability/tank/q/resistance
-execute as @s[scores={wark_startup=0..}] run function rauch:game/ability/wark/q/startup
-execute as @s[scores={wark_detect=0..}] run function rauch:game/ability/wark/q/trapped_player
-execute as @s[scores={wark_r=0..}] run function rauch:game/ability/wark/r/focused_player
+execute as @s[scores={wark_startup=0..}] run function rauch:game/ability/wark/r/startup
+execute as @s[scores={wark_detect=0..}] run function rauch:game/ability/wark/r/trapped_player
 
 execute as @s[scores={stun=0..}] run function rauch:game/mechanics/stun
 execute at @s[scores={damage_taken=0..}] run function rauch:game/ui/damage_taken
@@ -39,9 +38,10 @@ execute as @s[scores={cool1=1..}] run function rauch:game/ui/counter1
 execute as @s[scores={cool2=1..}] run function rauch:game/ui/counter2
 execute as @s[scores={cool3=1..}] run function rauch:game/ui/counter3
 
-execute unless score @s kit matches 3..4 run function rauch:game/ui/actionbar/cooldisnor
+execute unless score @s kit matches 3..5 run function rauch:game/ui/actionbar/cooldisnor
 execute if score @s kit matches 3 run function rauch:game/ui/actionbar/cooldisrp
 execute if score @s kit matches 4 run function rauch:game/ui/actionbar/cooldis_hacker
+execute if score @s kit matches 5 run function rauch:game/ui/actionbar/cooldis_wark
 
 #stuff
 #execute as @s[tag=spawn] run function rauch:game/shop/shop

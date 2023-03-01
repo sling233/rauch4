@@ -6,6 +6,7 @@ scoreboard players set @s cool1 1
 scoreboard players set @s cool2 1
 scoreboard players set @s cool3 1
 scoreboard players set @s[scores={kit=4}] hacker_charges 1
+scoreboard players set @s[scores={kit=5}] wark_charge 0
 scoreboard players set @s stats_g_kills 0
 scoreboard players set @s stats_g_deaths 0
 scoreboard players set @s stats_g_damage_d 0

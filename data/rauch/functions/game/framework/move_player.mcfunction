@@ -45,10 +45,10 @@ scoreboard players reset @s tele2
 scoreboard players reset @s teleweak
 scoreboard players reset @s hacker_damage_timer
 scoreboard players reset @s zarzahn_f
+#scoreboard players reset @s wark_charge
 scoreboard players reset @s wark_detect
 scoreboard players reset @s wark_startup
 scoreboard players reset @s wark_buff
-scoreboard players reset @s wark_r
 tag @s remove game
 tag @s remove dead
 tag @s remove zarzahn_hook
@@ -57,18 +57,6 @@ tag @s remove fast
 tag @s remove allow_cancel
 tag @s remove flyer_q_ground
 tag @s remove flagPickedUp
-tag @s remove wark_hitby1
-tag @s remove wark_hitby2
-tag @s remove wark_hitby3
-tag @s remove wark_hitby4
-tag @s remove wark_hitby5
-tag @s remove wark_hitby6
-tag @s remove wark_hitby7
-tag @s remove wark_hitby8
-tag @s remove wark_hitby9
-tag @s remove wark_hitby10
-tag @s remove wark_hitby11
-tag @s remove wark_hitby12
 effect clear @s
 team leave @s
 #clear @s

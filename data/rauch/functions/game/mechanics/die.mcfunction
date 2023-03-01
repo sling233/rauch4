@@ -19,19 +19,6 @@ scoreboard players reset @s tele2
 scoreboard players reset @s teleweak
 scoreboard players reset @s arrowreg
 scoreboard players reset @s zarzahn_f
-scoreboard players reset @s wark_r
-scoreboard players reset @s wark1
-scoreboard players reset @s wark2
-scoreboard players reset @s wark3
-scoreboard players reset @s wark4
-scoreboard players reset @s wark5
-scoreboard players reset @s wark6
-scoreboard players reset @s wark7
-scoreboard players reset @s wark8
-scoreboard players reset @s wark9
-scoreboard players reset @s wark10
-scoreboard players reset @s wark11
-scoreboard players reset @s wark12
 scoreboard players set @s cool1 1
 scoreboard players set @s cool2 1
 scoreboard players set @s cool3 1
@@ -40,7 +27,7 @@ execute as @s[scores={kit=3}] run scoreboard players operation @s projectileRNum
 execute as @s[scores={kit=1}] run function rauch:game/ability/bolt/q/clear_hit_list
 #execute as @s[scores={kit=4}] run function rauch:game/ability/hacker/r/clear_my_tag_list
 #execute as @s[scores={kit=4}] run function rauch:game/ability/hacker/q/clear_my_tag_list
-execute as @s[scores={kit=5}] run function rauch:game/ability/wark/r/remove_hit_id
+execute as @s[scores={kit=5}] run function rauch:game/ability/wark/r/remove_my_trap
 execute as @s[scores={kit=2}] run function rauch:game/ability/zarzahn/r/hook_remove
 # check if @s was tagged by a hacker (got_reawrd is so the hacker doesn't get 2 charges if r and q tagged @s when he died)
 scoreboard objectives add got_reward dummy
@@ -49,18 +36,6 @@ function rauch:game/ability/hacker/q/array/check_me
 scoreboard objectives remove got_reward
 
 scoreboard players reset @s raucher_debuff
-tag @s remove wark_hitby1
-tag @s remove wark_hitby2
-tag @s remove wark_hitby3
-tag @s remove wark_hitby4
-tag @s remove wark_hitby5
-tag @s remove wark_hitby6
-tag @s remove wark_hitby7
-tag @s remove wark_hitby8
-tag @s remove wark_hitby9
-tag @s remove wark_hitby10
-tag @s remove wark_hitby11
-tag @s remove wark_hitby12
 tag @s remove raucher_control
 execute at @s as @e[type=minecraft:armor_stand,tag=stun] if score @s pnum = @p pnum run kill @s
 clear @s carrot_on_a_stick
