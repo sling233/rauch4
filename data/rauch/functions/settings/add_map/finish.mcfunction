@@ -2,7 +2,7 @@ data modify entity @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] Cust
 
 tellraw @s [{"text":"Internal Id: ","color":"green"},{"score":{"name":"@e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1]","objective":"mapId"},"color":"light_purple"}]
 
-execute unless score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapParticle matches 1..10 run tellraw @s [{"text":"Ambient Particle: ","color":"green"},{"text":"None","color":"light_purple"}]
+execute unless score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapParticle matches 1.. run tellraw @s [{"text":"Ambient Particle: ","color":"green"},{"text":"None","color":"light_purple"}]
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapParticle matches 1 run tellraw @s [{"text":"Ambient Particle: ","color":"green"},{"text":"Ash","color":"light_purple"}]
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapParticle matches 2 run tellraw @s [{"text":"Ambient Particle: ","color":"green"},{"text":"Crimson Spore","color":"light_purple"}]
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapParticle matches 3 run tellraw @s [{"text":"Ambient Particle: ","color":"green"},{"text":"Enchanted Hit","color":"light_purple"}]
@@ -13,6 +13,7 @@ execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapPar
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapParticle matches 8 run tellraw @s [{"text":"Ambient Particle: ","color":"green"},{"text":"Warped Spore","color":"light_purple"}]
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapParticle matches 9 run tellraw @s [{"text":"Ambient Particle: ","color":"green"},{"text":"White Ash","color":"light_purple"}]
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapParticle matches 10 run tellraw @s [{"text":"Ambient Particle: ","color":"green"},{"text":"Witch","color":"light_purple"}]
+execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapParticle matches 11 run tellraw @s [{"text":"Ambient Particle: ","color":"green"},{"text":"Spre Blossom","color":"light_purple"}]
 
 execute unless score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapTime matches 1..4 run tellraw @s [{"text":"Map Time: ","color":"green"},{"text":"Unset","color":"light_purple"}]
 execute if score @e[type=armor_stand,tag=map,tag=root,tag=adding,limit=1] mapTime matches 1 run tellraw @s [{"text":"Map Time: ","color":"green"},{"text":"Day","color":"light_purple"}]

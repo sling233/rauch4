@@ -8,3 +8,4 @@ execute if score Global mapParticle matches 7 as @a[tag=game,scores={particle_am
 execute if score Global mapParticle matches 8 as @a[tag=game,scores={particle_ambient=1}] at @s run particle minecraft:warped_spore ~ ~3 ~ 10 4 10 1 40 normal @s
 execute if score Global mapParticle matches 9 as @a[tag=game,scores={particle_ambient=1}] at @s run particle minecraft:white_ash ~ ~3 ~ 10 4 10 1 40 normal @s
 execute if score Global mapParticle matches 10 as @a[tag=game,scores={particle_ambient=1}] at @s run particle minecraft:witch ~ ~3 ~ 10 4 10 1 40 normal @s
+execute if score Global mapParticle matches 11 as @a[tag=game,scores={particle_ambient=1}] at @s run particle minecraft:spore_blossom_air ~ ~3 ~ 15 4 15 1 20 normal @s
