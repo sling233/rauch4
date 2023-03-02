@@ -11,6 +11,19 @@ bossbar set minecraft:bolt10 visible false
 bossbar set minecraft:bolt11 visible false
 bossbar set minecraft:bolt12 visible false
 
+bossbar set minecraft:elytra1 visible false
+bossbar set minecraft:elytra2 visible false
+bossbar set minecraft:elytra3 visible false
+bossbar set minecraft:elytra4 visible false
+bossbar set minecraft:elytra5 visible false
+bossbar set minecraft:elytra6 visible false
+bossbar set minecraft:elytra7 visible false
+bossbar set minecraft:elytra8 visible false
+bossbar set minecraft:elytra9 visible false
+bossbar set minecraft:elytra10 visible false
+bossbar set minecraft:elytra11 visible false
+bossbar set minecraft:elytra12 visible false
+
 bossbar set minecraft:stun1 visible false
 bossbar set minecraft:stun2 visible false
 bossbar set minecraft:stun3 visible false

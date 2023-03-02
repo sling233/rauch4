@@ -131,6 +131,19 @@ bossbar remove bolt10
 bossbar remove bolt11
 bossbar remove bolt12
 
+bossbar remove elytra1
+bossbar remove elytra2
+bossbar remove elytra3
+bossbar remove elytra4
+bossbar remove elytra5
+bossbar remove elytra6
+bossbar remove elytra7
+bossbar remove elytra8
+bossbar remove elytra9
+bossbar remove elytra10
+bossbar remove elytra11
+bossbar remove elytra12
+
 bossbar remove hack1
 bossbar remove hack2
 bossbar remove hack3

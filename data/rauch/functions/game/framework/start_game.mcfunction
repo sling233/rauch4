@@ -29,3 +29,5 @@ execute if score Global mode matches 1 run function rauch:game/mode/king_of_the_
 execute if score Global mode matches 2 run function rauch:game/mode/respawn_deathmatch/conditions
 execute if score Global mode matches 3 run function rauch:game/mode/practice/conditions
 execute if score Global mode matches 4 run function rauch:game/mode/capture_the_flag/conditions
+
+function rauch:game/ui/bossbar/elytra/set_max

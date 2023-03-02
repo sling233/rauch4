@@ -1,0 +1,12 @@
+execute as @s[scores={pnum=1}] run bossbar set minecraft:elytra1 visible true
+execute as @s[scores={pnum=2}] run bossbar set minecraft:elytra2 visible true
+execute as @s[scores={pnum=3}] run bossbar set minecraft:elytra3 visible true
+execute as @s[scores={pnum=4}] run bossbar set minecraft:elytra4 visible true
+execute as @s[scores={pnum=5}] run bossbar set minecraft:elytra5 visible true
+execute as @s[scores={pnum=6}] run bossbar set minecraft:elytra6 visible true
+execute as @s[scores={pnum=7}] run bossbar set minecraft:elytra7 visible true
+execute as @s[scores={pnum=8}] run bossbar set minecraft:elytra8 visible true
+execute as @s[scores={pnum=9}] run bossbar set minecraft:elytra9 visible true
+execute as @s[scores={pnum=10}] run bossbar set minecraft:elytra10 visible true
+execute as @s[scores={pnum=11}] run bossbar set minecraft:elytra11 visible true
+execute as @s[scores={pnum=12}] run bossbar set minecraft:elytra12 visible true
