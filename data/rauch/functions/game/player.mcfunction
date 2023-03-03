@@ -28,7 +28,6 @@ execute as @s[scores={wark_detect=0..}] run function rauch:game/ability/wark/r/t
 execute as @s[scores={stun=0..}] run function rauch:game/mechanics/stun
 execute at @s[scores={damage_taken=0..}] run function rauch:game/ui/damage_taken
 
-execute as @s[tag=zarzahn_hook] run function rauch:game/ability/zarzahn/r/hook
 #function rauch:game/mechanics/dmg_queue/try_damage
 
 #ui

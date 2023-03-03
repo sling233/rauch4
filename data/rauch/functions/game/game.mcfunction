@@ -17,6 +17,7 @@ execute as @e[type=armor_stand,tag=r_h] run function rauch:game/ability/raucher/
 execute as @e[type=armor_stand,tag=r_s] run function rauch:game/ability/raucher/f/slow/slow
 execute as @e[type=armor_stand,tag=hacker_bomb,tag=!onground] run function rauch:game/ability/hacker/q/projectile
 
+execute as @e[type=block_display,tag=zarzahn_vehicle] run function rauch:game/ability/zarzahn/r/hook
 #stationäres
 execute as @e[type=marker,tag=r_h,tag=indicator] run function rauch:game/ability/raucher/f/heal/indicator
 execute as @e[type=marker,tag=r_s,tag=indicator] run function rauch:game/ability/raucher/f/slow/indicator

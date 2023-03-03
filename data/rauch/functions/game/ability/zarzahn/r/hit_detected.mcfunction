@@ -1,20 +1,23 @@
-tag @s add hit
-execute at @s[tag=red] positioned ~-1 ~-1 ~-1 as @a[team=Blue,tag=!dead,dx=1,dy=1,dz=1,limit=1] run tag @s add temp
-execute at @s[tag=blu] positioned ~-1 ~-1 ~-1 as @a[team=Red,tag=!dead,dx=1,dy=1,dz=1,limit=1] run tag @s add temp
+# executed as player hit (marker has tag temp) global t_pnum has zarzahns (shooters) pnum
+execute if score Global t_pnum matches 1 run tag @s add zarHook1
+execute if score Global t_pnum matches 2 run tag @s add zarHook2
+execute if score Global t_pnum matches 3 run tag @s add zarHook3
+execute if score Global t_pnum matches 4 run tag @s add zarHook4
+execute if score Global t_pnum matches 5 run tag @s add zarHook5
+execute if score Global t_pnum matches 6 run tag @s add zarHook6
+execute if score Global t_pnum matches 7 run tag @s add zarHook7
+execute if score Global t_pnum matches 8 run tag @s add zarHook8
+execute if score Global t_pnum matches 9 run tag @s add zarHook9
+execute if score Global t_pnum matches 10 run tag @s add zarHook10
+execute if score Global t_pnum matches 11 run tag @s add zarHook11
+execute if score Global t_pnum matches 12 run tag @s add zarHook12
 
-execute as @s[scores={pnum=1}] run tag @a[tag=temp,sort=nearest,limit=1] add zarHook1
-execute as @s[scores={pnum=2}] run tag @a[tag=temp,sort=nearest,limit=1] add zarHook2
-execute as @s[scores={pnum=3}] run tag @a[tag=temp,sort=nearest,limit=1] add zarHook3
-execute as @s[scores={pnum=4}] run tag @a[tag=temp,sort=nearest,limit=1] add zarHook4
-execute as @s[scores={pnum=5}] run tag @a[tag=temp,sort=nearest,limit=1] add zarHook5
-execute as @s[scores={pnum=6}] run tag @a[tag=temp,sort=nearest,limit=1] add zarHook6
-execute as @s[scores={pnum=7}] run tag @a[tag=temp,sort=nearest,limit=1] add zarHook7
-execute as @s[scores={pnum=8}] run tag @a[tag=temp,sort=nearest,limit=1] add zarHook8
-execute as @s[scores={pnum=9}] run tag @a[tag=temp,sort=nearest,limit=1] add zarHook9
-execute as @s[scores={pnum=10}] run tag @a[tag=temp,sort=nearest,limit=1] add zarHook10
-execute as @s[scores={pnum=11}] run tag @a[tag=temp,sort=nearest,limit=1] add zarHook11
-execute as @s[scores={pnum=12}] run tag @a[tag=temp,sort=nearest,limit=1] add zarHook12
+execute at @s run playsound minecraft:block.chain.place master @a
+tag @s add zarzahn_hook
 
-execute as @a[tag=temp,sort=nearest,limit=1] run function rauch:game/ability/zarzahn/r/hit
+execute at @s run summon minecraft:block_display ~ ~0.4 ~ {Duration:10000,Tags:["zarzahn_vehicle","setup"]}
+scoreboard players operation @e[type=block_display,tag=zarzahn_vehicle,tag=setup] pnum = @s pnum
+scoreboard players operation @e[type=block_display,tag=zarzahn_vehicle,tag=setup] zarzahn_f = Global t_pnum
+tag @e[type=block_display,tag=zarzahn_vehicle,tag=setup] remove setup
 
-kill @s
+execute as @e[type=marker,tag=zarzahn,tag=temp] run function rauch:game/ability/zarzahn/r/kill
