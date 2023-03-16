@@ -1,5 +1,6 @@
 scoreboard players remove Global gamestart 1
 #execute if score Global gamestart matches 110 as @a[tag=game] at @s run playsound minecraft:music_disc.wait record @s
+execute if score Global gamestart matches 100 as @a[tag=game] run title @s times 10 0 10
 execute if score Global gamestart matches 100 as @a[tag=game] run title @s title {"text":"5","color":"gold"}
 execute if score Global gamestart matches 100 as @a[tag=game] run title @s[team=Red] subtitle {"text":"You are in Team Red","color":"red"}
 execute if score Global gamestart matches 100 as @a[tag=game] run title @s[team=Blue] subtitle {"text":"You are in Team Blue","color":"blue"}
@@ -18,9 +19,12 @@ execute if score Global gamestart matches 20 as @a[tag=game] run title @s title 
 #execute if score Global gamestart matches 20 as @a[tag=game] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~
 
 execute if score Global gamestart matches 0 as @a[tag=game] run title @s title {"text":"The Game has started!","color":"gold"}
+execute if score Global gamestart matches 0 as @a[tag=game] run title @s[team=Red] subtitle {"text":"You are in Team Red","color":"red"}
+execute if score Global gamestart matches 0 as @a[tag=game] run title @s[team=Blue] subtitle {"text":"You are in Team Blue","color":"blue"}
+execute if score Global gamestart matches 0 as @a[tag=game] run title @s times 10 30 10
 #execute if score Global gamestart matches 0 as @a[tag=game] at @s run playsound minecraft:entity.ender_dragon.growl master @s ~ ~ ~
 
-execute if score Global gamestart matches 0 as @a[tag=game] run title @s subtitle {"text":""}
+#execute if score Global gamestart matches 0 as @a[tag=game] run title @s subtitle {"text":""}
 execute if score Global gamestart matches 0 run scoreboard players reset Global gamestart
 
 execute if score Global mode matches 1 run scoreboard players set Global time_red 400200

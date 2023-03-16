@@ -25,7 +25,7 @@ attribute @s minecraft:generic.attack_damage base set 1
 
 clear @s minecraft:elytra
 #kill @s
-
+title @s times 10 30 10
 scoreboard players reset @s bolt
 scoreboard players reset @s boltdmg
 scoreboard players reset @s raucherdmg
