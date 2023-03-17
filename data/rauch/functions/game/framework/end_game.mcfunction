@@ -1,5 +1,5 @@
 time set day
-kill @e[type=armor_stand,tag=map,tag=!root]
+kill @e[type=marker,tag=map]
 kill @e[type=armor_stand,tag=stun]
 kill @e[type=armor_stand,tag=flag]
 kill @e[type=armor_stand,tag=projectile]

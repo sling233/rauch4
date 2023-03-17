@@ -38,6 +38,6 @@ scoreboard players set @a[tag=game,scores={kit=5}] wark_charge 0
 scoreboard objectives add mod10 dummy
 scoreboard players operation Global mod10 = Global gamestart
 scoreboard players operation Global mod10 %= Global 10
-execute if score Global mod10 matches 0 at @e[tag=t1,tag=map,tag=active,type=armor_stand] run tp @a[team=Red] ~ ~-20 ~
-execute if score Global mod10 matches 0 at @e[tag=t2,tag=map,tag=active,type=armor_stand] run tp @a[team=Blue] ~ ~-20 ~
+execute if score Global mod10 matches 0 at @e[type=marker,tag=t1,tag=map] run tp @a[team=Red] ~ ~-20 ~
+execute if score Global mod10 matches 0 at @e[type=marker,tag=t2,tag=map] run tp @a[team=Blue] ~ ~-20 ~
 scoreboard objectives remove mod10

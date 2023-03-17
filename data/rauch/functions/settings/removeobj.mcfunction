@@ -50,9 +50,8 @@ scoreboard objectives remove hunger
 scoreboard objectives remove kit
 scoreboard objectives remove kitselect
 scoreboard objectives remove leave
-scoreboard objectives remove mapId
 scoreboard objectives remove mapParticle
-scoreboard objectives remove mapTime
+scoreboard objectives remove map_setting
 scoreboard objectives remove maxClouds
 scoreboard objectives remove mode
 scoreboard objectives remove particle_ambient
@@ -254,6 +253,6 @@ team remove Lobby
 team remove red_display
 team remove blue_display
 
-kill @e[type=armor_stand,tag=map]
+tellraw @s [{"text":"Removed all scoreboard objectives, bossbars and teams relevant to the Wokkagames data pack. Everything left over has no infuence over the functionality of this pack. Type ","color":"yellow"},{"text":"/reload","color":"light_purple","hoverEvent":{"action":"show_text","contents":[{"text":"Click to suggest command"}]},"clickEvent":{"action":"suggest_command","value":"/reload"}},{"text":" to re-add everything.","color":"yellow"}]
 clear @a minecraft:written_book
-function rauch:setup
+#function rauch:setup

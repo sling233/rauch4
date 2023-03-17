@@ -1,6 +1,6 @@
 function rauch:game/mechanics/respawn/respawn_main
 
-execute at @e[type=armor_stand,tag=active,tag=map,tag=ce] positioned ~ ~-20 ~ run function rauch:game/mode/king_of_the_hill/point
+execute at @e[type=marker,tag=map,tag=ce] positioned ~ ~-20 ~ run function rauch:game/mode/king_of_the_hill/point
 execute store result bossbar center_control value run scoreboard players get Global control
 
 execute if score Global control matches ..99 unless score Global capture_info matches 1 unless score Global capture_info matches 4..6 run function rauch:game/mode/king_of_the_hill/setred

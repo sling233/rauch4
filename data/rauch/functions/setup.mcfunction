@@ -1,6 +1,6 @@
 execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:'{"text":"Lobby Spawn","color":"blue","italic":false}'},EntityTag:{Tags:["main"]}} 1
 execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run tellraw @a[nbt={Inventory:[{id:"minecraft:squid_spawn_egg"}]}] {"text":"Please set the Lobby position.","bold":true,"color":"blue"}
-execute unless entity @a[tag=admin] unless score Global click matches 1 run tellraw @a [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:settings/disable_message"}}]
+execute unless entity @a[tag=admin] unless score Global click matches 0..1 run tellraw @a [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:settings/disable_message"}}]
 execute as @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:'{"text":"Lobby Spawn","color":"blue","italic":false}'},EntityTag:{Tags:["main"]}} 1
 execute as @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run tellraw @s[nbt={Inventory:[{id:"minecraft:squid_spawn_egg"}]}] {"text":"Please set the Lobby Spawnpoint.","bold":true,"color":"blue"}
 execute as @a[tag=admin] unless score Global click matches 1 run tellraw @s [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:settings/disable_message"}}]
@@ -59,9 +59,8 @@ scoreboard objectives add hunger food
 scoreboard objectives add kit dummy
 scoreboard objectives add kitselect trigger
 scoreboard objectives add leave minecraft.custom:minecraft.leave_game
-scoreboard objectives add mapId dummy
-scoreboard objectives add mapParticle trigger
-scoreboard objectives add mapTime trigger
+scoreboard objectives add mapParticle dummy
+scoreboard objectives add map_setting trigger
 scoreboard objectives add maxClouds dummy
 scoreboard objectives add mode dummy
 scoreboard objectives add particle_ambient dummy
@@ -114,6 +113,8 @@ scoreboard objectives add flagDistanceRed dummy
 scoreboard objectives add flag_points_red dummy
 scoreboard objectives add flag_points_blue dummy
 scoreboard objectives add flagDisplay dummy {"text":"Points","color":"yellow"}
+
+execute unless score Global click matches 0.. run scoreboard players set Global mode 0
 
 scoreboard players set Global 0 0
 scoreboard players set Global 2 2

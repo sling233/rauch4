@@ -1,7 +1,11 @@
 execute at @s run place template rauch:greck1 ~ ~ ~
 execute at @s run place template rauch:greck2 ~48 ~ ~
-execute if entity @e[type=armor_stand,tag=map,tag=root,scores={mapId=7}] run tag @s add temp
+
+scoreboard objectives add t_map_count dummy
+execute store result score Global t_map_count run data get storage map_data maps
+execute if score Global t_map_count matches 8.. run tag @s add temp
 execute as @s[tag=temp] run tellraw @s {"text":"Could not automatically setup map","color":"red"}
 execute as @s[tag=!temp] run function rauch:settings/spawn_map/greck/setup
-clear @a minecraft:written_book{title:"Settings"}
+
+scoreboard objectives remove t_map_count
 tag @s remove temp

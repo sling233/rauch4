@@ -6,13 +6,12 @@ execute as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:4b}]}] run
 execute as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:7b}]}] run function rauch:settings/add_map/givecanceladdmap
 execute as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:8b}]}] run function rauch:settings/add_map/givefinish
 
-execute as @s[scores={mapParticle=1..}] run function rauch:settings/add_map/setparticle
-execute as @s[scores={mapTime=1..}] run function rauch:settings/add_map/settime
+
+execute as @s[scores={map_setting=1..}] run function rauch:settings/add_map/setting
 execute as @s[scores={click=1..}] as @s[nbt={SelectedItemSlot:2}] run function rauch:settings/add_map/setred
 execute as @s[scores={click=1..}] as @s[nbt={SelectedItemSlot:3}] run function rauch:settings/add_map/setblue
 execute as @s[scores={click=1..}] as @s[nbt={SelectedItemSlot:4}] run function rauch:settings/add_map/setcenter
 execute as @s[scores={click=1..}] as @s[nbt={SelectedItemSlot:7}] run function rauch:settings/add_map/cancel
 execute as @s[scores={click=1..}] as @s[nbt={SelectedItemSlot:8}] run function rauch:settings/add_map/finishcheck
 
-scoreboard players enable @s mapParticle
-scoreboard players enable @s mapTime
+scoreboard players enable @s map_setting
