@@ -15,7 +15,7 @@ execute if score Global t_pnum matches 12 run tag @s add zarHook12
 execute at @s run playsound minecraft:block.chain.place master @a
 tag @s add zarzahn_hook
 
-execute at @s run summon minecraft:block_display ~ ~0.4 ~ {Duration:10000,Tags:["zarzahn_vehicle","setup"]}
+execute at @s run summon minecraft:block_display ~ ~0.4 ~ {Tags:["zarzahn_vehicle","setup"]}
 scoreboard players operation @e[type=block_display,tag=zarzahn_vehicle,tag=setup] pnum = @s pnum
 scoreboard players operation @e[type=block_display,tag=zarzahn_vehicle,tag=setup] zarzahn_f = Global t_pnum
 tag @e[type=block_display,tag=zarzahn_vehicle,tag=setup] remove setup
