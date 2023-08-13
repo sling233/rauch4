@@ -1,0 +1,5 @@
+storage data_io:
+{pnum:2,storage:bolt_hit,data:some_data}
+
+get saves data from list storage with id == pnum to data
+write saves data to list storage with id == pnum from data
