@@ -62,6 +62,7 @@ scoreboard objectives add projectileRMax dummy
 scoreboard objectives add projectileRNum dummy
 scoreboard objectives add push_levitation_timer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add raucherdmg dummy
+scoreboard objectives add raucherdmg_num dummy
 scoreboard objectives add respawn dummy
 scoreboard objectives add slime_despawn_timer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add stats_g_damage_d minecraft.custom:minecraft.damage_dealt
@@ -127,7 +128,7 @@ scoreboard players set Global 12 12
 scoreboard players set Global 20 20
 execute unless score Global mode matches 0..4 run scoreboard players set Global mode 0
 
-scoreboard objectives setdisplay belowName health
+scoreboard objectives setdisplay below_name health
 scoreboard objectives setdisplay list health_display
 
 #teams
