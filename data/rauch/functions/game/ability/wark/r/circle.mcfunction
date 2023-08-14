@@ -1,3 +1,5 @@
+execute at @s at @a if score @p pnum = @s wark_charge if entity @s[distance=3..] run function rauch:game/ability/wark/r/detect_out
+
 particle minecraft:sculk_charge_pop ~0.0 ~0.1 ~2.5 0.1 0.1 0.1 0.05 1 force
 particle minecraft:sculk_charge_pop ~0.446 ~0.1 ~2.46 0.1 0.1 0.1 0.05 1 force
 particle minecraft:sculk_charge_pop ~0.878 ~0.1 ~2.341 0.1 0.1 0.1 0.05 1 force
