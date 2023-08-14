@@ -69,6 +69,7 @@ scoreboard objectives add stats_g_damage_d minecraft.custom:minecraft.damage_dea
 scoreboard objectives add stats_g_damage_t minecraft.custom:minecraft.damage_taken
 scoreboard objectives add stats_g_deaths minecraft.custom:minecraft.deaths
 scoreboard objectives add stats_g_kills playerKillCount
+scoreboard objectives add stats_g_points_scored dummy
 scoreboard objectives add stun dummy
 scoreboard objectives add tank dummy
 scoreboard objectives add tank_damage_dealt minecraft.custom:minecraft.damage_dealt
