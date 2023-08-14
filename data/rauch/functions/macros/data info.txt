@@ -1,4 +1,4 @@
-storage data_io:
+storage macros:
 {pnum:2,storage:bolt_hit,data:some_data}
 
 get saves data from list storage with id == pnum to data
