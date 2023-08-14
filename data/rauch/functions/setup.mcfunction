@@ -85,6 +85,7 @@ scoreboard objectives add wark_f minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add xPos dummy
 scoreboard objectives add yPos dummy
 scoreboard objectives add zarzahn_f dummy
+scoreboard objectives add zarzahn_hooking dummy
 scoreboard objectives add zPos dummy
 #king of the hill
 scoreboard objectives add capture_info dummy

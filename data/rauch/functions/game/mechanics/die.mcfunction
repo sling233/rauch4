@@ -6,7 +6,6 @@ function rauch:game/ui/bossbar/allinvisible
 # respawn visible wenn mode nicht deathmatch oder testing mode ist
 execute unless score Global mode matches 0 unless score Global mode matches 3 run function rauch:game/ui/bossbar/respawn/visible
 
-
 scoreboard players reset @s stun
 scoreboard players reset @s hack
 scoreboard players reset @s bolt
@@ -29,7 +28,9 @@ execute as @s[scores={kit=1}] run function rauch:game/ability/bolt/q/clear_hit_l
 #execute as @s[scores={kit=4}] run function rauch:game/ability/hacker/r/clear_my_tag_list
 #execute as @s[scores={kit=4}] run function rauch:game/ability/hacker/q/clear_my_tag_list
 execute as @s[scores={kit=5}] run function rauch:game/ability/wark/r/remove_my_trap
-execute as @s[scores={kit=2}] run function rauch:game/ability/zarzahn/r/hook_remove
+execute as @s[scores={kit=2}] run function rauch:game/ability/zarzahn/r/cancel_hook_zar
+
+execute as @s[tag=zarzahn_hook] run function rauch:game/ability/zarzahn/r/cancel_hook
 # check if @s was tagged by a hacker (got_reawrd is so the hacker doesn't get 2 charges if r and q tagged @s when he died)
 scoreboard objectives add got_reward dummy
 function rauch:game/ability/hacker/r/array/check_me
