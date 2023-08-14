@@ -10,13 +10,13 @@ attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-7
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-8
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-9
 #raucherdmg
-attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-10
+function rauch:game/ability/raucher/q/remove_buff
 #wark buff
 attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-11
 #kbfix
 attribute @s minecraft:generic.knockback_resistance modifier remove 0-0-0-2-0
 #tankkb
-attribute @s minecraft:generic.knockback_resistance modifier remove 0-0-0-2-1
+function rauch:game/ability/tank/q/remove_buff
 #armorfix
 attribute @s minecraft:generic.armor modifier remove 0-0-0-1-0
 
@@ -28,7 +28,6 @@ clear @s minecraft:elytra
 title @s times 10 30 10
 scoreboard players reset @s bolt
 scoreboard players reset @s boltdmg
-scoreboard players reset @s raucherdmg
 scoreboard players reset @s leave
 scoreboard players reset @s death
 scoreboard players reset @s stats_g_damage_d

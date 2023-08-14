@@ -13,13 +13,13 @@ scoreboard players reset @s bolt
 scoreboard players reset @s boltdmg
 scoreboard players reset @s hacker_damage_timer
 scoreboard players reset @s raucherdmg
+scoreboard players reset @s raucherdmg_num
 scoreboard players reset @s tank_resistance
+scoreboard players reset @s tank_resistance_num
 scoreboard players reset @s tank
 scoreboard players reset @s tele2
 scoreboard players reset @s teleweak
 scoreboard players reset @s zarzahn_f
-scoreboard players reset @s raucherdmg
-scoreboard players reset @s raucherdmg_num
 scoreboard players set @s cool1 1
 scoreboard players set @s cool2 1
 scoreboard players set @s cool3 1
