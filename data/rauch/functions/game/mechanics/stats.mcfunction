@@ -3,7 +3,7 @@ attribute @s minecraft:generic.attack_speed base set 100000
 
 attribute @s[scores={kit=1}] minecraft:generic.armor modifier add 0-0-0-1-0 "armorfix" -13 add
 attribute @s[scores={kit=2}] minecraft:generic.armor modifier add 0-0-0-1-0 "armorfix" -4 add
-attribute @s[scores={kit=3}] minecraft:generic.armor modifier add 0-0-0-1-0 "armorfix" -3 add
+attribute @s[scores={kit=3}] minecraft:generic.armor modifier add 0-0-0-1-0 "armorfix" -9 add
 attribute @s[scores={kit=4}] minecraft:generic.armor modifier add 0-0-0-1-0 "armorfix" -6 add
 attribute @s[scores={kit=5}] minecraft:generic.armor modifier add 0-0-0-1-0 "armorfix" -17 add
 attribute @s[scores={kit=6}] minecraft:generic.armor modifier add 0-0-0-1-0 "armorfix" -6 add
