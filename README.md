@@ -1,6 +1,6 @@
 # Wokkagames
 
-Minecraft Datapack Game with abilities and stuff, meant to play with friends (i spent way too much time programming this).
+Minecraft Datapack PvP Game with abilities, different classes and gamemodes, meant to play with friends.
 
 To use, go to the latest release and download wokkagames.zip into .minecraft/saves/<Your_World>/datapacks. No need to extract.
 
