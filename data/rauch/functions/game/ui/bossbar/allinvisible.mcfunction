@@ -50,19 +50,6 @@ bossbar set minecraft:hack10 visible false
 bossbar set minecraft:hack11 visible false
 bossbar set minecraft:hack12 visible false
 
-bossbar set minecraft:tank1 visible false
-bossbar set minecraft:tank2 visible false
-bossbar set minecraft:tank3 visible false
-bossbar set minecraft:tank4 visible false
-bossbar set minecraft:tank5 visible false
-bossbar set minecraft:tank6 visible false
-bossbar set minecraft:tank7 visible false
-bossbar set minecraft:tank8 visible false
-bossbar set minecraft:tank9 visible false
-bossbar set minecraft:tank10 visible false
-bossbar set minecraft:tank11 visible false
-bossbar set minecraft:tank12 visible false
-
 bossbar set minecraft:respawn1 visible false
 bossbar set minecraft:respawn2 visible false
 bossbar set minecraft:respawn3 visible false

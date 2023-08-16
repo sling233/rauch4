@@ -43,7 +43,6 @@ scoreboard objectives add hacker_ability dummy
 scoreboard objectives add hacker_charges dummy
 scoreboard objectives add hacker_damage_timer dummy
 scoreboard objectives add hacker_damage_timer_control dummy
-scoreboard objectives add heal dummy
 scoreboard objectives add health health {"text":"❤","color":"red"}
 scoreboard objectives add health_display dummy
 scoreboard objectives add hitPnum dummy
@@ -73,8 +72,7 @@ scoreboard objectives add stats_g_kills playerKillCount
 scoreboard objectives add stats_g_points_scored dummy
 scoreboard objectives add spectate_stop dummy
 scoreboard objectives add stun dummy
-scoreboard objectives add tank dummy
-scoreboard objectives add tank_damage_dealt minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add tank_damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add tank_resistance dummy
 scoreboard objectives add tank_resistance_num dummy
 scoreboard objectives add tele2 dummy
@@ -396,80 +394,6 @@ bossbar add speed12 {"text":"Speed","color":"green"}
 bossbar set minecraft:speed12 color green
 bossbar set minecraft:speed12 max 170
 bossbar set minecraft:speed12 style notched_6
-
-bossbar add tank1 {"text":"Absorbing","color":"dark_green"}
-bossbar set minecraft:tank1 color green
-bossbar set minecraft:tank1 max 80
-bossbar add tank2 {"text":"Absorbing","color":"dark_green"}
-bossbar set minecraft:tank2 color green
-bossbar set minecraft:tank2 max 80
-bossbar add tank3 {"text":"Absorbing","color":"dark_green"}
-bossbar set minecraft:tank3 color green
-bossbar set minecraft:tank3 max 80
-bossbar add tank4 {"text":"Absorbing","color":"dark_green"}
-bossbar set minecraft:tank4 color green
-bossbar set minecraft:tank4 max 80
-bossbar add tank5 {"text":"Absorbing","color":"dark_green"}
-bossbar set minecraft:tank5 color green
-bossbar set minecraft:tank5 max 80
-bossbar add tank6 {"text":"Absorbing","color":"dark_green"}
-bossbar set minecraft:tank6 color green
-bossbar set minecraft:tank6 max 80
-bossbar add tank7 {"text":"Absorbing","color":"dark_green"}
-bossbar set minecraft:tank7 color green
-bossbar set minecraft:tank7 max 80
-bossbar add tank8 {"text":"Absorbing","color":"dark_green"}
-bossbar set minecraft:tank8 color green
-bossbar set minecraft:tank8 max 80
-bossbar add tank9 {"text":"Absorbing","color":"dark_green"}
-bossbar set minecraft:tank9 color green
-bossbar set minecraft:tank9 max 80
-bossbar add tank10 {"text":"Absorbing","color":"dark_green"}
-bossbar set minecraft:tank10 color green
-bossbar set minecraft:tank10 max 80
-bossbar add tank11 {"text":"Absorbing","color":"dark_green"}
-bossbar set minecraft:tank11 color green
-bossbar set minecraft:tank11 max 80
-bossbar add tank12 {"text":"Absorbing","color":"dark_green"}
-bossbar set minecraft:tank12 color green
-bossbar set minecraft:tank12 max 80
-
-bossbar add respawn1 {"text":"Respawn","color":"yellow"}
-bossbar set minecraft:respawn1 color yellow
-bossbar set minecraft:respawn1 max 120
-bossbar add respawn2 {"text":"Respawn","color":"yellow"}
-bossbar set minecraft:respawn2 color yellow
-bossbar set minecraft:respawn2 max 120
-bossbar add respawn3 {"text":"Respawn","color":"yellow"}
-bossbar set minecraft:respawn3 color yellow
-bossbar set minecraft:respawn3 max 120
-bossbar add respawn4 {"text":"Respawn","color":"yellow"}
-bossbar set minecraft:respawn4 color yellow
-bossbar set minecraft:respawn4 max 120
-bossbar add respawn5 {"text":"Respawn","color":"yellow"}
-bossbar set minecraft:respawn5 color yellow
-bossbar set minecraft:respawn5 max 120
-bossbar add respawn6 {"text":"Respawn","color":"yellow"}
-bossbar set minecraft:respawn6 color yellow
-bossbar set minecraft:respawn6 max 120
-bossbar add respawn7 {"text":"Respawn","color":"yellow"}
-bossbar set minecraft:respawn7 color yellow
-bossbar set minecraft:respawn7 max 120
-bossbar add respawn8 {"text":"Respawn","color":"yellow"}
-bossbar set minecraft:respawn8 color yellow
-bossbar set minecraft:respawn8 max 120
-bossbar add respawn9 {"text":"Respawn","color":"yellow"}
-bossbar set minecraft:respawn9 color yellow
-bossbar set minecraft:respawn9 max 120
-bossbar add respawn10 {"text":"Respawn","color":"yellow"}
-bossbar set minecraft:respawn10 color yellow
-bossbar set minecraft:respawn10 max 120
-bossbar add respawn11 {"text":"Respawn","color":"yellow"}
-bossbar set minecraft:respawn11 color yellow
-bossbar set minecraft:respawn11 max 120
-bossbar add respawn12 {"text":"Respawn","color":"yellow"}
-bossbar set minecraft:respawn12 color yellow
-bossbar set minecraft:respawn12 max 120
 
 bossbar add zarzahn_f1 {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f1 color purple

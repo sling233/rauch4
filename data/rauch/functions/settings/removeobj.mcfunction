@@ -43,7 +43,6 @@ scoreboard objectives remove hacker_ability
 scoreboard objectives remove hacker_charges
 scoreboard objectives remove hacker_damage_timer
 scoreboard objectives remove hacker_damage_timer_control
-scoreboard objectives remove heal
 scoreboard objectives remove health
 scoreboard objectives remove health_display
 scoreboard objectives remove hitPnum
@@ -73,7 +72,6 @@ scoreboard objectives remove stats_g_kills
 scoreboard objectives remove stats_g_points_scored
 scoreboard objectives remove spectate_stop
 scoreboard objectives remove stun
-scoreboard objectives remove tank
 scoreboard objectives remove tank_damage_dealt
 scoreboard objectives remove tank_resistance
 scoreboard objectives remove tank_resistance_num
@@ -189,19 +187,6 @@ bossbar remove speed9
 bossbar remove speed10
 bossbar remove speed11
 bossbar remove speed12
-
-bossbar remove tank1
-bossbar remove tank2
-bossbar remove tank3
-bossbar remove tank4
-bossbar remove tank5
-bossbar remove tank6
-bossbar remove tank7
-bossbar remove tank8
-bossbar remove tank9
-bossbar remove tank10
-bossbar remove tank11
-bossbar remove tank12
 
 bossbar remove arrow1
 bossbar remove arrow2

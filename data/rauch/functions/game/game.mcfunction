@@ -26,7 +26,7 @@ execute as @e[type=marker,tag=r_s,tag=cloud] run function rauch:game/ability/rau
 execute as @e[type=marker,tag=hacker_bomb,tag=center] run function rauch:game/ability/hacker/q/grounded
 execute as @e[type=marker,tag=hacker_bomb,tag=indicator] run function rauch:game/ability/hacker/q/indicator
 execute as @e[type=marker,tag=zar_point] run function rauch:game/ability/zarzahn/f/point
-execute as @e[type=marker,tag=shield] at @s run function rauch:game/ability/tank/r/shield
+execute as @e[type=marker,tag=shield] at @s run function rauch:game/ability/tank/f/shield
 execute as @e[type=marker,tag=wark_detect,tag=active] at @s run function rauch:game/ability/wark/r/circle
 
 execute if entity @a[tag=game] if score Global mode matches 0 run function rauch:game/mode/deathmatch/deathmatch

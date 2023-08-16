@@ -1,1 +1,1 @@
-execute as @s[scores={tank=0..}] run function rauch:game/ability/tank/f/particle
+execute as @s[scores={tank_damage_taken=201..}] run scoreboard players set @s tank_damage_taken 200
