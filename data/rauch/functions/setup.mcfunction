@@ -34,6 +34,7 @@ scoreboard objectives add elytra_cooldown dummy
 scoreboard objectives add fly minecraft.custom:minecraft.aviate_one_cm
 scoreboard objectives add flyerFSchedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add flyerQSchedule minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add game_running dummy
 scoreboard objectives add gameend dummy
 scoreboard objectives add gamestart dummy
 scoreboard objectives add hack dummy
@@ -70,6 +71,7 @@ scoreboard objectives add stats_g_damage_t minecraft.custom:minecraft.damage_tak
 scoreboard objectives add stats_g_deaths minecraft.custom:minecraft.deaths
 scoreboard objectives add stats_g_kills playerKillCount
 scoreboard objectives add stats_g_points_scored dummy
+scoreboard objectives add spectate_stop dummy
 scoreboard objectives add stun dummy
 scoreboard objectives add tank dummy
 scoreboard objectives add tank_damage_dealt minecraft.custom:minecraft.damage_dealt
@@ -151,6 +153,16 @@ team add Lobby
 team modify Lobby color green
 team modify Lobby friendlyFire false
 #team modify Lobby prefix [{"text":"[","color":"dark_gray"},{"text":"Lobby","color":"green"},{"text":"] ","color":"dark_gray"}]
+
+team add Random
+team modify Random color gray
+team modify Random friendlyFire false
+#team modify Random prefix [{"text":"[","color":"dark_gray"},{"text":"Random","color":"gray"},{"text":"] ","color":"dark_gray"}]
+
+team add Spectator
+team modify Spectator color dark_green
+team modify Spectator friendlyFire false
+#team modify Spectator prefix [{"text":"[","color":"dark_gray"},{"text":"Spectator","color":"dark_green"},{"text":"] ","color":"dark_gray"}]
 
 team add red_display
 team modify red_display color red

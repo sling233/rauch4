@@ -6,6 +6,8 @@ effect clear @s minecraft:glowing
 
 title @a[tag=game] title ""
 title @a[tag=game] subtitle "Flag Dropped"
+title @a[tag=spectator] title ""
+title @a[tag=spectator] subtitle "Flag Dropped"
 
 scoreboard players set Global flagDistanceRed 1000000
 scoreboard players set Global flagDistanceBlue 1000000

@@ -1,3 +1,7 @@
+# check if there are players in queue
+execute unless entity @a[tag=queue] run tellraw @s [{"text":"Game can\'t be started because there are no players in queue!","color":"red"}]
+execute unless entity @a[tag=queue] run return 0
+
 # create game data storage
 data remove storage game_data bolt_hit
 data remove storage game_data hacker_r_tag
@@ -7,6 +11,8 @@ data remove storage game_data hacker_q_tag
 scoreboard players reset Global pnum
 execute as @a[tag=queue,limit=12] run function rauch:game/framework/teamsetup
 scoreboard players reset Global pnum
+# potentially left over players
+execute as @a[tag=queue] run function rauch:game/framework/leftover
 
 #mapgedöns
 summon marker ~ ~ ~ {Tags:["map","t1"]}
@@ -38,3 +44,5 @@ execute if score Global mode matches 4 run function rauch:game/mode/capture_the_
 
 # elytra bossbar after setup so ma is properly set
 function rauch:game/ui/bossbar/elytra/set_max
+
+scoreboard players set Global game_running 1

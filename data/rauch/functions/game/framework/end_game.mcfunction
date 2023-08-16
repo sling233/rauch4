@@ -28,3 +28,5 @@ scoreboard objectives setdisplay sidebar
 bossbar set minecraft:center_control visible false
 function rauch:game/ui/bossbar/allinvisible
 execute as @a[tag=game] run function rauch:game/framework/move_player
+execute as @a[tag=spectator] run function rauch:game/framework/spectate_stop
+scoreboard players reset Global game_running

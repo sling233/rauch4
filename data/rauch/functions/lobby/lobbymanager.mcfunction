@@ -1,31 +1,45 @@
 #ausgangsbedingungen werden gelesen
 execute as @s[scores={kit=1..8}] run tag @s add kit
-execute as @s[tag=queue] run tag @s add queuetemp
 execute if data storage map_data active run tag @s add map
-
-#wenn nicht in queue wird in queue gemoved, aber nur wenn map und kit valid sind
-execute as @s[tag=!queuetemp,tag=map,tag=kit] run tag @s add temp
-execute as @s[tag=temp] run tag @s add queue
-execute as @s[tag=temp] run clear @s
-tag @s remove temp
+execute as @s[tag=!queue,nbt={SelectedItemSlot:7}] run tag @s add join
+execute as @s[tag=!queue,nbt={SelectedItemSlot:6}] run tag @s add spectate
+execute as @s[tag=queue,nbt={SelectedItemSlot:8}] run tag @s add leave
+execute as @s[tag=queue,nbt=!{SelectedItemSlot:8}] run tag @s add color
+# ^ could also be an admin starting the game but it doesn't interfere ^
 
 #falls queue adding nicht successful war
 execute as @s[tag=!kit] run tellraw @s {"text":"You have to select a kit first","color":"red"}
 execute as @s[tag=!map] run tellraw @s {"text":"An Admin has to select a Map first","color":"red"}
 
-#wenn in queue
-execute as @s[tag=queuetemp] as @s[nbt={SelectedItemSlot:8}] run tag @s add temp
-execute as @s[tag=temp] run tag @s remove queue
-execute as @s[tag=temp] run clear @s
-tag @s remove temp
+#wenn nicht in queue wird in queue gemoved, aber nur wenn map und kit valid sind und kein game läuft
+execute as @s[tag=join,tag=map,tag=kit] unless score Global game_running matches 1 run tag @s add valid
+execute as @s[tag=valid] run tag @s add queue
+execute as @s[tag=valid] run team join Random @s
+execute as @s[tag=valid] run clear @s
+tag @s remove valid
 
-execute as @s[tag=queuetemp] as @s[nbt={SelectedItemSlot:7}] run team join Blue @s
-execute as @s[tag=queuetemp] as @s[nbt={SelectedItemSlot:6}] run team join Red @s
-execute as @s[tag=queuetemp] as @s[nbt={SelectedItemSlot:5}] run team join Lobby @s
+#wenn leaving queue
+execute as @s[tag=leave] run tag @s remove queue
+execute as @s[tag=leave] run clear @s
 
-execute as @s[tag=queuetemp,tag=admin] as @s[nbt={SelectedItemSlot:0}] run function rauch:game/framework/gameinit/customteams_start
-execute as @s[tag=queuetemp,tag=admin] as @s[nbt={SelectedItemSlot:1}] run function rauch:game/framework/gameinit/randomteams_start
+# change team
+execute as @s[tag=color] as @s[nbt={SelectedItemSlot:7}] run team join Blue @s
+execute as @s[tag=color] as @s[nbt={SelectedItemSlot:6}] run team join Red @s
+execute as @s[tag=color] as @s[nbt={SelectedItemSlot:5}] run team join Random @s
 
-tag @s remove queuetemp
+# spectate
+execute as @s[tag=spectate] if score Global game_running matches 1 run tag @s add valid
+execute as @s[tag=valid] run function rauch:game/framework/spectate_start
+execute as @s[tag=spectate,tag=!valid] run tellraw @s {"text":"There is no game running at the moment","color":"red"}
+tag @s remove valid
+
+# admin starts game
+execute as @s[tag=admin] as @s[nbt={SelectedItemSlot:1}] run function rauch:game/framework/gameinit/customteams_start
+#execute as @s[tag=queuetemp,tag=admin] as @s[nbt={SelectedItemSlot:1}] run function rauch:game/framework/gameinit/randomteams_start
+
 tag @s remove kit
 tag @s remove map
+tag @s remove join
+tag @s remove leave
+tag @s remove color
+tag @s remove spectate

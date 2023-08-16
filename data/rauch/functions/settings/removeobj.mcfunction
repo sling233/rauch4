@@ -34,6 +34,7 @@ scoreboard objectives remove elytra_cooldown
 scoreboard objectives remove fly
 scoreboard objectives remove flyerFSchedule
 scoreboard objectives remove flyerQSchedule
+scoreboard objectives remove game_running
 scoreboard objectives remove gameend
 scoreboard objectives remove gamestart
 scoreboard objectives remove hack
@@ -62,16 +63,20 @@ scoreboard objectives remove projectileRMax
 scoreboard objectives remove projectileRNum
 scoreboard objectives remove push_levitation_timer
 scoreboard objectives remove raucherdmg
+scoreboard objectives remove raucherdmg_num
 scoreboard objectives remove respawn
 scoreboard objectives remove slime_despawn_timer
 scoreboard objectives remove stats_g_damage_d
 scoreboard objectives remove stats_g_damage_t
 scoreboard objectives remove stats_g_deaths
 scoreboard objectives remove stats_g_kills
+scoreboard objectives remove stats_g_points_scored
+scoreboard objectives remove spectate_stop
 scoreboard objectives remove stun
 scoreboard objectives remove tank
 scoreboard objectives remove tank_damage_dealt
 scoreboard objectives remove tank_resistance
+scoreboard objectives remove tank_resistance_num
 scoreboard objectives remove tele2
 scoreboard objectives remove teleweak
 scoreboard objectives remove walk
@@ -83,6 +88,7 @@ scoreboard objectives remove wark_f
 scoreboard objectives remove xPos
 scoreboard objectives remove yPos
 scoreboard objectives remove zarzahn_f
+scoreboard objectives remove zarzahn_hooking
 scoreboard objectives remove zPos
 #king of the hill
 scoreboard objectives remove capture_info
@@ -111,6 +117,8 @@ scoreboard objectives setdisplay list
 team remove Red
 team remove Blue
 team remove Lobby
+team remove Random
+team remove Spectator
 team remove red_display
 team remove blue_display
 

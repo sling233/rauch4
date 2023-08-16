@@ -4,11 +4,14 @@ effect give @s minecraft:glowing infinite 0 true
 #effect give @s minecraft:jump_boost 1000000 128 true
 
 title @a[tag=game] title ""
+title @a[tag=spectator] title ""
 
 execute as @s[team=Red] run title @a[tag=game,team=Red] subtitle {"text":"Teammate Picked up Flag","color":"lime"}
 execute as @s[team=Red] run title @a[tag=game,team=Blue] subtitle {"text":"Enemy Picked up Flag","color":"dark_red"}
+execute as @s[team=Red] run title @a[tag=spectator] subtitle {"text":"Red Picked up the Flag","color":"dark_red"}
 execute as @s[team=Blue] run title @a[tag=game,team=Blue] subtitle {"text":"Teammate Picked up Flag","color":"lime"}
 execute as @s[team=Blue] run title @a[tag=game,team=Red] subtitle {"text":"Enemy Picked up Flag","color":"dark_red"}
+execute as @s[team=Blue] run title @a[tag=spectator] subtitle {"text":"Blue Picked up the Flag","color":"dark_red"}
 
 title @s title "Picked up Flag"
 title @s[team=Red] subtitle {"text":"Bring it to Blue base!","color":"gray"}
