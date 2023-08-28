@@ -21,6 +21,12 @@ execute store result storage temp damage int 0.001 run scoreboard players get @s
 
 function rauch:game/ability/flyer/q/damage_macro with storage temp
 
+# add to damage dealt stats because /damage doesn't do that automatically
+scoreboard objectives add 500 dummy
+scoreboard players set @s 500 500
+scoreboard players operation @s calc_damage /= @s 500
+scoreboard players operation @s stats_g_damage_d += @s calc_damage
+scoreboard objectives remove 500
 
 scoreboard objectives remove calc_damage
 scoreboard objectives remove 11
