@@ -72,7 +72,7 @@ scoreboard objectives remove stats_g_kills
 scoreboard objectives remove stats_g_points_scored
 scoreboard objectives remove spectate_stop
 scoreboard objectives remove stun
-scoreboard objectives remove tank_damage_dealt
+scoreboard objectives remove tank_damage_taken
 scoreboard objectives remove tank_resistance
 scoreboard objectives remove tank_resistance_num
 scoreboard objectives remove tele2
@@ -108,7 +108,7 @@ scoreboard objectives remove flag_points_red
 scoreboard objectives remove flag_points_blue
 scoreboard objectives remove flagDisplay
 
-scoreboard objectives setdisplay belowName
+scoreboard objectives setdisplay below_name
 scoreboard objectives setdisplay list
 
 #teams
