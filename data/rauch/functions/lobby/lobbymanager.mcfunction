@@ -6,13 +6,13 @@ execute as @s[tag=!queue,nbt={SelectedItemSlot:6}] run tag @s add spectate
 execute as @s[tag=queue,nbt={SelectedItemSlot:8}] run tag @s add leave
 execute as @s[tag=queue,nbt=!{SelectedItemSlot:8}] run tag @s add color
 # ^ could also be an admin starting the game but it doesn't interfere ^
+execute as @s[tag=admin] as @s[nbt={SelectedItemSlot:1}] run tag @s add start
 
 #falls queue adding nicht successful war
 execute as @s[tag=!kit] run tellraw @s {"text":"You have to select a kit first","color":"red"}
-execute as @s[tag=!map] run tellraw @s {"text":"An Admin has to select a Map first","color":"red"}
 
 #wenn nicht in queue wird in queue gemoved, aber nur wenn map und kit valid sind und kein game läuft
-execute as @s[tag=join,tag=map,tag=kit] unless score Global game_running matches 1 run tag @s add valid
+execute as @s[tag=join,tag=kit] unless score Global game_running matches 1 run tag @s add valid
 execute as @s[tag=valid] run tag @s add queue
 execute as @s[tag=valid] run team join Random @s
 execute as @s[tag=valid] run clear @s
@@ -34,7 +34,8 @@ execute as @s[tag=spectate,tag=!valid] run tellraw @s {"text":"There is no game 
 tag @s remove valid
 
 # admin starts game
-execute as @s[tag=admin] as @s[nbt={SelectedItemSlot:1}] run function rauch:game/framework/gameinit/customteams_start
+execute as @s[tag=start,tag=map] run function rauch:game/framework/gameinit/customteams_start
+execute as @s[tag=start,tag=!map] run tellraw @s {"text":"A Map has to be selected first","color":"red"}
 #execute as @s[tag=queuetemp,tag=admin] as @s[nbt={SelectedItemSlot:1}] run function rauch:game/framework/gameinit/randomteams_start
 
 tag @s remove kit
@@ -43,3 +44,4 @@ tag @s remove join
 tag @s remove leave
 tag @s remove color
 tag @s remove spectate
+tag @s remove start
