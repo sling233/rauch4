@@ -1,13 +1,8 @@
-# start / stop the game
-execute unless entity @a[tag=game] run function rauch:game/framework/end_game
+execute as @a[tag=game,scores={leave=1..}] run function rauch:game/framework/move_player
 execute if score Global gamestart matches 0.. run function rauch:game/framework/gameinit/countdown
 execute if score Global gameend matches 0.. run function rauch:game/framework/end_delay
 
-# players / spectators
 execute as @a[tag=game,tag=!dead] run function rauch:game/player
-execute as @a[tag=spectator] run function rauch:game/framework/spectator
-
-# ambient particles
 function rauch:game/ui/particle
 
 #projektile
