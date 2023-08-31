@@ -77,6 +77,7 @@ scoreboard objectives remove tank_resistance
 scoreboard objectives remove tank_resistance_num
 scoreboard objectives remove tele2
 scoreboard objectives remove teleweak
+scoreboard objectives remove version
 scoreboard objectives remove walk
 scoreboard objectives remove wark_buff
 scoreboard objectives remove wark_charge

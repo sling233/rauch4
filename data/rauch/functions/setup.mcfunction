@@ -77,6 +77,7 @@ scoreboard objectives add tank_resistance dummy
 scoreboard objectives add tank_resistance_num dummy
 scoreboard objectives add tele2 dummy
 scoreboard objectives add teleweak dummy
+scoreboard objectives add version dummy
 scoreboard objectives add walk minecraft.custom:minecraft.walk_one_cm
 scoreboard objectives add wark_buff dummy
 scoreboard objectives add wark_charge dummy
@@ -112,16 +113,17 @@ scoreboard objectives add flagDisplay dummy {"text":"Points","color":"yellow"}
 # setup stuff
 execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:'{"text":"Lobby Spawn","color":"blue","italic":false}'},EntityTag:{Tags:["main"]}} 1
 execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run tellraw @a[nbt={Inventory:[{id:"minecraft:squid_spawn_egg"}]}] {"text":"Please set the Lobby position.","bold":true,"color":"blue"}
-execute unless entity @a[tag=admin] unless score Global click matches 0..1 run tellraw @a [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:settings/disable_message"}}]
+execute unless entity @a[tag=admin] unless score Global click matches 0.. run tellraw @a [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:settings/disable_message"}}]
 execute as @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:'{"text":"Lobby Spawn","color":"blue","italic":false}'},EntityTag:{Tags:["main"]}} 1
 execute as @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run tellraw @s[nbt={Inventory:[{id:"minecraft:squid_spawn_egg"}]}] {"text":"Please set the Lobby Spawnpoint.","bold":true,"color":"blue"}
-execute as @a[tag=admin] unless score Global click matches 1 run tellraw @s [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:settings/disable_message"}}]
+execute as @a[tag=admin] unless score Global click matches 1.. run tellraw @s [{"text":"The Rauchergames datapack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:settings/disable_message"}}]
 
-execute as @a[tag=!lobby,tag=!game,tag=!addmap] run tag @s add lobby
+execute as @a[tag=!lobby,tag=!game,tag=!addmap,tag=!spectator] run tag @s add lobby
+
+function rauch:settings/versions/version_check
 
 # set scores
 execute unless score Global click matches 0.. run scoreboard players set Global click 0
-
 scoreboard players set Global 0 0
 scoreboard players set Global 2 2
 scoreboard players set Global 3 3
@@ -174,7 +176,7 @@ team join blue_display Blue:
 gamerule doMobLoot false
 gamerule doMobSpawning false
 #gamerule doTileDrops false
-gamerule sendCommandFeedback false
+gamerule sendCommandFeedback true
 gamerule keepInventory true
 gamerule doImmediateRespawn true
 gamerule naturalRegeneration false
@@ -190,281 +192,416 @@ gamerule randomTickSpeed 0
 
 
 #bossbars
-bossbar add center_control [{"text":"Neutral","color":"yellow"}]
+bossbar add center_control ""
+bossbar set center_control name [{"text":"Neutral","color":"yellow"}]
 bossbar set minecraft:center_control color white
 bossbar set minecraft:center_control max 200
 bossbar set minecraft:center_control style notched_10
 
-bossbar add bolt1 {"text":"Thunder","color":"blue"}
+bossbar add bolt1 ""
+bossbar set bolt1 name {"text":"Thunder","color":"blue"}
 bossbar set minecraft:bolt1 color blue
 bossbar set minecraft:bolt1 max 80
-bossbar add bolt2 {"text":"Thunder","color":"blue"}
+bossbar add bolt2 ""
+bossbar set bolt2 name {"text":"Thunder","color":"blue"}
 bossbar set minecraft:bolt2 color blue
 bossbar set minecraft:bolt2 max 80
-bossbar add bolt3 {"text":"Thunder","color":"blue"}
+bossbar add bolt3 ""
+bossbar set bolt3 name {"text":"Thunder","color":"blue"}
 bossbar set minecraft:bolt3 color blue
 bossbar set minecraft:bolt3 max 80
-bossbar add bolt4 {"text":"Thunder","color":"blue"}
+bossbar add bolt4 ""
+bossbar set bolt4 name {"text":"Thunder","color":"blue"}
 bossbar set minecraft:bolt4 color blue
 bossbar set minecraft:bolt4 max 80
-bossbar add bolt5 {"text":"Thunder","color":"blue"}
+bossbar add bolt5 ""
+bossbar set bolt5 name {"text":"Thunder","color":"blue"}
 bossbar set minecraft:bolt5 color blue
 bossbar set minecraft:bolt5 max 80
-bossbar add bolt6 {"text":"Thunder","color":"blue"}
+bossbar add bolt6 ""
+bossbar set bolt6 name {"text":"Thunder","color":"blue"}
 bossbar set minecraft:bolt6 color blue
 bossbar set minecraft:bolt6 max 80
-bossbar add bolt7 {"text":"Thunder","color":"blue"}
+bossbar add bolt7 ""
+bossbar set bolt7 name {"text":"Thunder","color":"blue"}
 bossbar set minecraft:bolt7 color blue
 bossbar set minecraft:bolt7 max 80
-bossbar add bolt8 {"text":"Thunder","color":"blue"}
+bossbar add bolt8 ""
+bossbar set bolt8 name {"text":"Thunder","color":"blue"}
 bossbar set minecraft:bolt8 color blue
 bossbar set minecraft:bolt8 max 80
-bossbar add bolt9 {"text":"Thunder","color":"blue"}
+bossbar add bolt9 ""
+bossbar set bolt9 name {"text":"Thunder","color":"blue"}
 bossbar set minecraft:bolt9 color blue
 bossbar set minecraft:bolt9 max 80
-bossbar add bolt10 {"text":"Thunder","color":"blue"}
+bossbar add bolt10 ""
+bossbar set bolt10 name {"text":"Thunder","color":"blue"}
 bossbar set minecraft:bolt10 color blue
 bossbar set minecraft:bolt10 max 80
-bossbar add bolt11 {"text":"Thunder","color":"blue"}
+bossbar add bolt11 ""
+bossbar set bolt11 name {"text":"Thunder","color":"blue"}
 bossbar set minecraft:bolt11 color blue
 bossbar set minecraft:bolt11 max 80
-bossbar add bolt12 {"text":"Thunder","color":"blue"}
+bossbar add bolt12 ""
+bossbar set bolt12 name {"text":"Thunder","color":"blue"}
 bossbar set minecraft:bolt12 color blue
 bossbar set minecraft:bolt12 max 80
 
 
-bossbar add elytra1 {"text":"Elytra","color":"yellow"}
+bossbar add elytra1 ""
+bossbar set elytra1 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra1 color yellow
 bossbar set minecraft:elytra1 max 80
-bossbar add elytra2 {"text":"Elytra","color":"yellow"}
+bossbar add elytra2 ""
+bossbar set elytra2 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra2 color yellow
 bossbar set minecraft:elytra2 max 80
-bossbar add elytra3 {"text":"Elytra","color":"yellow"}
+bossbar add elytra3 ""
+bossbar set elytra3 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra3 color yellow
 bossbar set minecraft:elytra3 max 80
-bossbar add elytra4 {"text":"Elytra","color":"yellow"}
+bossbar add elytra4 ""
+bossbar set elytra4 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra4 color yellow
 bossbar set minecraft:elytra4 max 80
-bossbar add elytra5 {"text":"Elytra","color":"yellow"}
+bossbar add elytra5 ""
+bossbar set elytra5 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra5 color yellow
 bossbar set minecraft:elytra5 max 80
-bossbar add elytra6 {"text":"Elytra","color":"yellow"}
+bossbar add elytra6 ""
+bossbar set elytra6 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra6 color yellow
 bossbar set minecraft:elytra6 max 80
-bossbar add elytra7 {"text":"Elytra","color":"yellow"}
+bossbar add elytra7 ""
+bossbar set elytra7 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra7 color yellow
 bossbar set minecraft:elytra7 max 80
-bossbar add elytra8 {"text":"Elytra","color":"yellow"}
+bossbar add elytra8 ""
+bossbar set elytra8 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra8 color yellow
 bossbar set minecraft:elytra8 max 80
-bossbar add elytra9 {"text":"Elytra","color":"yellow"}
+bossbar add elytra9 ""
+bossbar set elytra9 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra9 color yellow
 bossbar set minecraft:elytra9 max 80
-bossbar add elytra10 {"text":"Elytra","color":"yellow"}
+bossbar add elytra10 ""
+bossbar set elytra10 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra10 color yellow
 bossbar set minecraft:elytra10 max 80
-bossbar add elytra11 {"text":"Elytra","color":"yellow"}
+bossbar add elytra11 ""
+bossbar set elytra11 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra11 color yellow
 bossbar set minecraft:elytra11 max 80
-bossbar add elytra12 {"text":"Elytra","color":"yellow"}
+bossbar add elytra12 ""
+bossbar set elytra12 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra12 color yellow
 bossbar set minecraft:elytra12 max 80
 
 
-bossbar add hack1 {"text":"Hack","color":"dark_purple"}
+bossbar add hack1 ""
+bossbar set hack1 name {"text":"Hack","color":"dark_purple"}
 bossbar set minecraft:hack1 color purple
 bossbar set minecraft:hack1 max 200
-bossbar add hack2 {"text":"Hack","color":"dark_purple"}
+bossbar add hack2 ""
+bossbar set hack2 name {"text":"Hack","color":"dark_purple"}
 bossbar set minecraft:hack2 color purple
 bossbar set minecraft:hack2 max 200
-bossbar add hack3 {"text":"Hack","color":"dark_purple"}
+bossbar add hack3 ""
+bossbar set hack3 name {"text":"Hack","color":"dark_purple"}
 bossbar set minecraft:hack3 color purple
 bossbar set minecraft:hack3 max 200
-bossbar add hack4 {"text":"Hack","color":"dark_purple"}
+bossbar add hack4 ""
+bossbar set hack4 name {"text":"Hack","color":"dark_purple"}
 bossbar set minecraft:hack4 color purple
 bossbar set minecraft:hack4 max 200
-bossbar add hack5 {"text":"Hack","color":"dark_purple"}
+bossbar add hack5 ""
+bossbar set hack5 name {"text":"Hack","color":"dark_purple"}
 bossbar set minecraft:hack5 color purple
 bossbar set minecraft:hack5 max 200
-bossbar add hack6 {"text":"Hack","color":"dark_purple"}
+bossbar add hack6 ""
+bossbar set hack6 name {"text":"Hack","color":"dark_purple"}
 bossbar set minecraft:hack6 color purple
 bossbar set minecraft:hack6 max 200
-bossbar add hack7 {"text":"Hack","color":"dark_purple"}
+bossbar add hack7 ""
+bossbar set hack7 name {"text":"Hack","color":"dark_purple"}
 bossbar set minecraft:hack7 color purple
 bossbar set minecraft:hack7 max 200
-bossbar add hack8 {"text":"Hack","color":"dark_purple"}
+bossbar add hack8 ""
+bossbar set hack8 name {"text":"Hack","color":"dark_purple"}
 bossbar set minecraft:hack8 color purple
 bossbar set minecraft:hack8 max 200
-bossbar add hack9 {"text":"Hack","color":"dark_purple"}
+bossbar add hack9 ""
+bossbar set hack9 name {"text":"Hack","color":"dark_purple"}
 bossbar set minecraft:hack9 color purple
 bossbar set minecraft:hack9 max 200
-bossbar add hack10 {"text":"Hack","color":"dark_purple"}
+bossbar add hack10 ""
+bossbar set hack10 name {"text":"Hack","color":"dark_purple"}
 bossbar set minecraft:hack10 color purple
 bossbar set minecraft:hack10 max 200
-bossbar add hack11 {"text":"Hack","color":"dark_purple"}
+bossbar add hack11 ""
+bossbar set hack11 name {"text":"Hack","color":"dark_purple"}
 bossbar set minecraft:hack11 color purple
 bossbar set minecraft:hack11 max 200
-bossbar add hack12 {"text":"Hack","color":"dark_purple"}
+bossbar add hack12 ""
+bossbar set hack12 name {"text":"Hack","color":"dark_purple"}
 bossbar set minecraft:hack12 color purple
 bossbar set minecraft:hack12 max 200
 
 
-bossbar add stun1 {"text":"Stunned","color":"red"}
+bossbar add stun1 ""
+bossbar set stun1 name {"text":"Stunned","color":"red"}
 bossbar set minecraft:stun1 color red
 bossbar set minecraft:stun1 max 40
-bossbar add stun2 {"text":"Stunned","color":"red"}
+bossbar add stun2 ""
+bossbar set stun2 name {"text":"Stunned","color":"red"}
 bossbar set minecraft:stun2 color red
 bossbar set minecraft:stun2 max 40
-bossbar add stun3 {"text":"Stunned","color":"red"}
+bossbar add stun3 ""
+bossbar set stun3 name {"text":"Stunned","color":"red"}
 bossbar set minecraft:stun3 color red
 bossbar set minecraft:stun3 max 40
-bossbar add stun4 {"text":"Stunned","color":"red"}
+bossbar add stun4 ""
+bossbar set stun4 name {"text":"Stunned","color":"red"}
 bossbar set minecraft:stun4 color red
 bossbar set minecraft:stun4 max 40
-bossbar add stun5 {"text":"Stunned","color":"red"}
+bossbar add stun5 ""
+bossbar set stun5 name {"text":"Stunned","color":"red"}
 bossbar set minecraft:stun5 color red
 bossbar set minecraft:stun5 max 40
-bossbar add stun6 {"text":"Stunned","color":"red"}
+bossbar add stun6 ""
+bossbar set stun6 name {"text":"Stunned","color":"red"}
 bossbar set minecraft:stun6 color red
 bossbar set minecraft:stun6 max 40
-bossbar add stun7 {"text":"Stunned","color":"red"}
+bossbar add stun7 ""
+bossbar set stun7 name {"text":"Stunned","color":"red"}
 bossbar set minecraft:stun7 color red
 bossbar set minecraft:stun7 max 40
-bossbar add stun8 {"text":"Stunned","color":"red"}
+bossbar add stun8 ""
+bossbar set stun8 name {"text":"Stunned","color":"red"}
 bossbar set minecraft:stun8 color red
 bossbar set minecraft:stun8 max 40
-bossbar add stun9 {"text":"Stunned","color":"red"}
+bossbar add stun9 ""
+bossbar set stun9 name {"text":"Stunned","color":"red"}
 bossbar set minecraft:stun9 color red
 bossbar set minecraft:stun9 max 40
-bossbar add stun10 {"text":"Stunned","color":"red"}
+bossbar add stun10 ""
+bossbar set stun10 name {"text":"Stunned","color":"red"}
 bossbar set minecraft:stun10 color red
 bossbar set minecraft:stun10 max 40
-bossbar add stun11 {"text":"Stunned","color":"red"}
+bossbar add stun11 ""
+bossbar set stun11 name {"text":"Stunned","color":"red"}
 bossbar set minecraft:stun11 color red
 bossbar set minecraft:stun11 max 40
-bossbar add stun12 {"text":"Stunned","color":"red"}
+bossbar add stun12 ""
+bossbar set stun12 name {"text":"Stunned","color":"red"}
 bossbar set minecraft:stun12 color red
 bossbar set minecraft:stun12 max 40
 
-bossbar add speed1 {"text":"Speed","color":"green"}
+bossbar add respawn1 ""
+bossbar set respawn1 name {"text":"Respawn","color":"yellow"}
+bossbar set minecraft:respawn1 color yellow
+bossbar set minecraft:respawn1 max 120
+bossbar add respawn2 ""
+bossbar set respawn2 name {"text":"Respawn","color":"yellow"}
+bossbar set minecraft:respawn2 color yellow
+bossbar set minecraft:respawn2 max 120
+bossbar add respawn3 ""
+bossbar set respawn3 name {"text":"Respawn","color":"yellow"}
+bossbar set minecraft:respawn3 color yellow
+bossbar set minecraft:respawn3 max 120
+bossbar add respawn4 ""
+bossbar set respawn4 name {"text":"Respawn","color":"yellow"}
+bossbar set minecraft:respawn4 color yellow
+bossbar set minecraft:respawn4 max 120
+bossbar add respawn5 ""
+bossbar set respawn5 name {"text":"Respawn","color":"yellow"}
+bossbar set minecraft:respawn5 color yellow
+bossbar set minecraft:respawn5 max 120
+bossbar add respawn6 ""
+bossbar set respawn6 name {"text":"Respawn","color":"yellow"}
+bossbar set minecraft:respawn6 color yellow
+bossbar set minecraft:respawn6 max 120
+bossbar add respawn7 ""
+bossbar set respawn7 name {"text":"Respawn","color":"yellow"}
+bossbar set minecraft:respawn7 color yellow
+bossbar set minecraft:respawn7 max 120
+bossbar add respawn8 ""
+bossbar set respawn8 name {"text":"Respawn","color":"yellow"}
+bossbar set minecraft:respawn8 color yellow
+bossbar set minecraft:respawn8 max 120
+bossbar add respawn9 ""
+bossbar set respawn9 name {"text":"Respawn","color":"yellow"}
+bossbar set minecraft:respawn9 color yellow
+bossbar set minecraft:respawn9 max 120
+bossbar add respawn10 ""
+bossbar set respawn10 name {"text":"Respawn","color":"yellow"}
+bossbar set minecraft:respawn10 color yellow
+bossbar set minecraft:respawn10 max 120
+bossbar add respawn11 ""
+bossbar set respawn11 name {"text":"Respawn","color":"yellow"}
+bossbar set minecraft:respawn11 color yellow
+bossbar set minecraft:respawn11 max 120
+bossbar add respawn12 ""
+bossbar set respawn12 name {"text":"Respawn","color":"yellow"}
+bossbar set minecraft:respawn12 color yellow
+bossbar set minecraft:respawn12 max 120
+
+
+bossbar add speed1 ""
+bossbar set speed1 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed1 color green
 bossbar set minecraft:speed1 max 170
 bossbar set minecraft:speed1 style notched_6
-bossbar add speed2 {"text":"Speed","color":"green"}
+bossbar add speed2 ""
+bossbar set speed2 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed2 color green
 bossbar set minecraft:speed2 max 170
 bossbar set minecraft:speed2 style notched_6
-bossbar add speed3 {"text":"Speed","color":"green"}
+bossbar add speed3 ""
+bossbar set speed3 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed3 color green
 bossbar set minecraft:speed3 max 170
 bossbar set minecraft:speed3 style notched_6
-bossbar add speed4 {"text":"Speed","color":"green"}
+bossbar add speed4 ""
+bossbar set speed4 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed4 color green
 bossbar set minecraft:speed4 max 170
 bossbar set minecraft:speed4 style notched_6
-bossbar add speed5 {"text":"Speed","color":"green"}
+bossbar add speed5 ""
+bossbar set speed5 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed5 color green
 bossbar set minecraft:speed5 max 170
 bossbar set minecraft:speed5 style notched_6
-bossbar add speed6 {"text":"Speed","color":"green"}
+bossbar add speed6 ""
+bossbar set speed6 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed6 color green
 bossbar set minecraft:speed6 max 170
 bossbar set minecraft:speed6 style notched_6
-bossbar add speed7 {"text":"Speed","color":"green"}
+bossbar add speed7 ""
+bossbar set speed7 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed7 color green
 bossbar set minecraft:speed7 max 170
 bossbar set minecraft:speed7 style notched_6
-bossbar add speed8 {"text":"Speed","color":"green"}
+bossbar add speed8 ""
+bossbar set speed8 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed8 color green
 bossbar set minecraft:speed8 max 170
 bossbar set minecraft:speed8 style notched_6
-bossbar add speed9 {"text":"Speed","color":"green"}
+bossbar add speed9 ""
+bossbar set speed9 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed9 color green
 bossbar set minecraft:speed9 max 170
 bossbar set minecraft:speed9 style notched_6
-bossbar add speed10 {"text":"Speed","color":"green"}
+bossbar add speed10 ""
+bossbar set speed10 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed10 color green
 bossbar set minecraft:speed10 max 170
 bossbar set minecraft:speed10 style notched_6
-bossbar add speed11 {"text":"Speed","color":"green"}
+bossbar add speed11 ""
+bossbar set speed11 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed11 color green
 bossbar set minecraft:speed11 max 170
 bossbar set minecraft:speed11 style notched_6
-bossbar add speed12 {"text":"Speed","color":"green"}
+bossbar add speed12 ""
+bossbar set speed12 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed12 color green
 bossbar set minecraft:speed12 max 170
 bossbar set minecraft:speed12 style notched_6
 
-bossbar add zarzahn_f1 {"text":"Warp","color":"dark_purple"}
+bossbar add zarzahn_f1 ""
+bossbar set zarzahn_f1 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f1 color purple
 bossbar set minecraft:zarzahn_f1 max 300
-bossbar add zarzahn_f2 {"text":"Warp","color":"dark_purple"}
+bossbar add zarzahn_f2 ""
+bossbar set zarzahn_f2 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f2 color purple
 bossbar set minecraft:zarzahn_f2 max 300
-bossbar add zarzahn_f3 {"text":"Warp","color":"dark_purple"}
+bossbar add zarzahn_f3 ""
+bossbar set zarzahn_f3 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f3 color purple
 bossbar set minecraft:zarzahn_f3 max 300
-bossbar add zarzahn_f4 {"text":"Warp","color":"dark_purple"}
+bossbar add zarzahn_f4 ""
+bossbar set zarzahn_f4 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f4 color purple
 bossbar set minecraft:zarzahn_f4 max 300
-bossbar add zarzahn_f5 {"text":"Warp","color":"dark_purple"}
+bossbar add zarzahn_f5 ""
+bossbar set zarzahn_f5 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f5 color purple
 bossbar set minecraft:zarzahn_f5 max 300
-bossbar add zarzahn_f6 {"text":"Warp","color":"dark_purple"}
+bossbar add zarzahn_f6 ""
+bossbar set zarzahn_f6 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f6 color purple
 bossbar set minecraft:zarzahn_f6 max 300
-bossbar add zarzahn_f7 {"text":"Warp","color":"dark_purple"}
+bossbar add zarzahn_f7 ""
+bossbar set zarzahn_f7 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f7 color purple
 bossbar set minecraft:zarzahn_f7 max 300
-bossbar add zarzahn_f8 {"text":"Warp","color":"dark_purple"}
+bossbar add zarzahn_f8 ""
+bossbar set zarzahn_f8 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f8 color purple
 bossbar set minecraft:zarzahn_f8 max 300
-bossbar add zarzahn_f9 {"text":"Warp","color":"dark_purple"}
+bossbar add zarzahn_f9 ""
+bossbar set zarzahn_f9 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f9 color purple
 bossbar set minecraft:zarzahn_f9 max 300
-bossbar add zarzahn_f10 {"text":"Warp","color":"dark_purple"}
+bossbar add zarzahn_f10 ""
+bossbar set zarzahn_f10 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f10 color purple
 bossbar set minecraft:zarzahn_f10 max 300
-bossbar add zarzahn_f11 {"text":"Warp","color":"dark_purple"}
+bossbar add zarzahn_f11 ""
+bossbar set zarzahn_f11 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f11 color purple
 bossbar set minecraft:zarzahn_f11 max 300
-bossbar add zarzahn_f12 {"text":"Warp","color":"dark_purple"}
+bossbar add zarzahn_f12 ""
+bossbar set zarzahn_f12 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f12 color purple
 bossbar set minecraft:zarzahn_f12 max 300
 
-bossbar add wark1 {"text":"Wark Focus","color":"dark_purple"}
+bossbar add wark1 ""
+bossbar set wark1 name {"text":"Wark Focus","color":"dark_purple"}
 bossbar set minecraft:wark1 color purple
 bossbar set minecraft:wark1 max 80
-bossbar add wark2 {"text":"Wark Focus","color":"dark_purple"}
+bossbar add wark2 ""
+bossbar set wark2 name {"text":"Wark Focus","color":"dark_purple"}
 bossbar set minecraft:wark2 color purple
 bossbar set minecraft:wark2 max 80
-bossbar add wark3 {"text":"Wark Focus","color":"dark_purple"}
+bossbar add wark3 ""
+bossbar set wark3 name {"text":"Wark Focus","color":"dark_purple"}
 bossbar set minecraft:wark3 color purple
 bossbar set minecraft:wark3 max 80
-bossbar add wark4 {"text":"Wark Focus","color":"dark_purple"}
+bossbar add wark4 ""
+bossbar set wark4 name {"text":"Wark Focus","color":"dark_purple"}
 bossbar set minecraft:wark4 color purple
 bossbar set minecraft:wark4 max 80
-bossbar add wark5 {"text":"Wark Focus","color":"dark_purple"}
+bossbar add wark5 ""
+bossbar set wark5 name {"text":"Wark Focus","color":"dark_purple"}
 bossbar set minecraft:wark5 color purple
 bossbar set minecraft:wark5 max 80
-bossbar add wark6 {"text":"Wark Focus","color":"dark_purple"}
+bossbar add wark6 ""
+bossbar set wark6 name {"text":"Wark Focus","color":"dark_purple"}
 bossbar set minecraft:wark6 color purple
 bossbar set minecraft:wark6 max 80
-bossbar add wark7 {"text":"Wark Focus","color":"dark_purple"}
+bossbar add wark7 ""
+bossbar set wark7 name {"text":"Wark Focus","color":"dark_purple"}
 bossbar set minecraft:wark7 color purple
 bossbar set minecraft:wark7 max 80
-bossbar add wark8 {"text":"Wark Focus","color":"dark_purple"}
+bossbar add wark8 ""
+bossbar set wark8 name {"text":"Wark Focus","color":"dark_purple"}
 bossbar set minecraft:wark8 color purple
 bossbar set minecraft:wark8 max 80
-bossbar add wark9 {"text":"Wark Focus","color":"dark_purple"}
+bossbar add wark9 ""
+bossbar set wark9 name {"text":"Wark Focus","color":"dark_purple"}
 bossbar set minecraft:wark9 color purple
 bossbar set minecraft:wark9 max 80
-bossbar add wark10 {"text":"Wark Focus","color":"dark_purple"}
+bossbar add wark10 ""
+bossbar set wark10 name {"text":"Wark Focus","color":"dark_purple"}
 bossbar set minecraft:wark10 color purple
 bossbar set minecraft:wark10 max 80
-bossbar add wark11 {"text":"Wark Focus","color":"dark_purple"}
+bossbar add wark11 ""
+bossbar set wark11 name {"text":"Wark Focus","color":"dark_purple"}
 bossbar set minecraft:wark11 color purple
 bossbar set minecraft:wark11 max 80
-bossbar add wark12 {"text":"Wark Focus","color":"dark_purple"}
+bossbar add wark12 ""
+bossbar set wark12 name {"text":"Wark Focus","color":"dark_purple"}
 bossbar set minecraft:wark12 color purple
 bossbar set minecraft:wark12 max 80
