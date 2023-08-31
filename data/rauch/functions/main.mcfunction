@@ -5,4 +5,3 @@ execute as @a[tag=lobby] run function rauch:lobby/lobby
 execute as @a[tag=addmap] run function rauch:settings/add_map/tick
 #game
 execute if score Global game_running matches 1 run function rauch:game/game
-execute if score Global game_running matches 1 as @a[tag=spectator] run function rauch:game/framework/spectator

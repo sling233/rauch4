@@ -15,7 +15,6 @@ execute store result storage dmg_numbers dmg2 int 0.5 run scoreboard players get
 
 scoreboard objectives remove t_damage_calc
 
-summon item ~ ~1.6 ~ {Tags:["setup"],CustomNameVisible:1b,Age:5980,PickupDelay:32767,Motion:[0.1,0.3,0.005],CustomName:'{"text":"f"}',Item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{CustomModelData:0}}}
 function rauch:game/ui/set_damage_name with storage minecraft:dmg_numbers
 
 tag @e[type=item,tag=setup,limit=1] remove setup

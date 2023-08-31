@@ -3,6 +3,8 @@ execute if score Global gamestart matches 0.. run function rauch:game/framework/
 execute if score Global gameend matches 0.. run function rauch:game/framework/end_delay
 
 execute as @a[tag=game,tag=!dead] run function rauch:game/player
+execute as @a[tag=spectator] run function rauch:game/framework/spectator
+
 function rauch:game/ui/particle
 
 #projektile
