@@ -23,8 +23,10 @@ scoreboard players reset Global killNumRed
 scoreboard players reset Global killNumBlue
 scoreboard players reset Global killsDisplay
 scoreboard players reset Global gameend
+
 scoreboard objectives setdisplay sidebar
 bossbar set minecraft:center_control visible false
+bossbar set minecraft:flag_location visible false
 function rauch:game/ui/bossbar/allinvisible
 execute as @a[tag=game] run function rauch:game/framework/move_player
 execute as @a[tag=spectator] run function rauch:game/framework/spectate_stop

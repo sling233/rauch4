@@ -14,7 +14,7 @@ execute as @a[team=Red] run tellraw @s [{"text":"---------------- ","color":"yel
 execute as @a[team=Blue] run tellraw @s [{"text":"---------------- ","color":"yellow"},{"text":"Defeat","color":"red"},{"text":" -----------------","color":"yellow"}]
 execute as @a[tag=!game] run tellraw @s [{"text":"--------------- ","color":"yellow"},{"text":"Game Ended","color":"yellow"},{"text":" --------------","color":"yellow"}]
 execute if score Global mode matches 0 run tellraw @a [{"text":"Survivors: ","color":"yellow"},{"selector":"@a[tag=game,tag=!dead]"}]
-execute as @a run tellraw @s [{"text":"Winner: ","color":"yellow"},{"text":"Team Blue","color":"blue"}]
+execute as @a run tellraw @s [{"text":"Winner: ","color":"yellow"},{"text":"Team Red","color":"red"}]
 execute as @a[tag=game] run tellraw @s [{"text":"Kills: ","color":"yellow"},{"score":{"name":"@s","objective":"stats_g_kills"}}]
 execute as @a[tag=game] run tellraw @s [{"text":"Deaths: ","color":"yellow"},{"score":{"name":"@s","objective":"stats_g_deaths"}}]
 execute if score Global mode matches 1 as @a[tag=game] run tellraw @s [{"text":"Points Scored: ","color":"yellow"},{"score":{"name":"@s","objective":"stats_g_points_scored"}}]

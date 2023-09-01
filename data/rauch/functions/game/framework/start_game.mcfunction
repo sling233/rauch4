@@ -42,7 +42,7 @@ execute if score Global mode matches 2 run function rauch:game/mode/respawn_deat
 execute if score Global mode matches 3 run function rauch:game/mode/practice/conditions
 execute if score Global mode matches 4 run function rauch:game/mode/capture_the_flag/conditions
 
-# elytra bossbar after setup so ma is properly set
+# elytra bossbar after setup so max is properly set
 function rauch:game/ui/bossbar/elytra/set_max
 
 scoreboard players set Global game_running 1

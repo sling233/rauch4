@@ -104,11 +104,19 @@ scoreboard objectives add killsDisplay dummy {"text":"Kills","color":"yellow"}
 scoreboard objectives add rd_kills_to_win dummy
 execute unless score Global rd_kills_to_win matches 1.. run scoreboard players set Global rd_kills_to_win 20
 #capture the flag
+scoreboard objectives add ctf_points_to_win dummy
+scoreboard objectives add ctf_time dummy
 scoreboard objectives add flagDistanceBlue dummy
 scoreboard objectives add flagDistanceRed dummy
-scoreboard objectives add flag_points_red dummy
+# scoreboard objectives add flag_max_distance_to_own_base dummy
+scoreboard objectives add flag_min_distance_red dummy
+scoreboard objectives add flag_min_distance_blue dummy
 scoreboard objectives add flag_points_blue dummy
-scoreboard objectives add flagDisplay dummy {"text":"Points","color":"yellow"}
+scoreboard objectives add flag_points_red dummy
+# scoreboard objectives add flag_reset_time dummy
+# scoreboard objectives add flag_spawn_time dummy
+scoreboard objectives add spawn_to_center_distance dummy
+execute unless score Global ctf_points_to_win matches 1.. run scoreboard players set Global ctf_points_to_win 5
 
 # setup stuff
 execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:'{"text":"Lobby Spawn","color":"blue","italic":false}'},EntityTag:{Tags:["main"]}} 1
@@ -192,6 +200,11 @@ gamerule randomTickSpeed 0
 
 
 #bossbars
+bossbar add flag_location ""
+bossbar set flag_location name [{"text":"Flag Test","color":"yellow"}]
+bossbar set flag_location color white
+bossbar set flag_location style notched_10
+
 bossbar add center_control ""
 bossbar set center_control name [{"text":"Neutral","color":"yellow"}]
 bossbar set minecraft:center_control color white

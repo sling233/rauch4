@@ -29,6 +29,7 @@ execute if score Global gamestart matches 0 run scoreboard players reset Global 
 
 execute if score Global mode matches 1 run scoreboard players set Global time_red 400200
 execute if score Global mode matches 1 run scoreboard players set Global time_blue 400200
+execute if score Global mode matches 4 run scoreboard players set Global ctf_time 3600
 scoreboard players set @a[tag=game] cool1 2
 scoreboard players set @a[tag=game] cool2 2
 scoreboard players set @a[tag=game] cool3 2

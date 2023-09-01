@@ -2,12 +2,38 @@ execute as @a[tag=flagPickedUp] run function rauch:game/mode/capture_the_flag/fl
 execute at @e[type=minecraft:armor_stand,tag=flag,limit=1] positioned ~-1 ~ ~-1 as @a[tag=game,tag=!dead,dx=1,dy=2,dz=1,limit=1] run function rauch:game/mode/capture_the_flag/flag_pickup
 
 function rauch:game/mechanics/respawn/respawn_main
-scoreboard players operation Red: flagDisplay = Global flag_points_red
-scoreboard players operation Blue: flagDisplay = Global flag_points_blue
 
-execute if score Global flagDistanceRed matches ..9 as @a[tag=flagPickedUp] run function rauch:game/mode/capture_the_flag/red_score
-execute if score Global flagDistanceBlue matches ..9 as @a[tag=flagPickedUp] run function rauch:game/mode/capture_the_flag/blue_score
+# flag at enemy base
+execute if score Global flagDistanceRed matches ..900 as @a[tag=flagPickedUp,team=Blue] run function rauch:game/mode/capture_the_flag/blue_score
+execute if score Global flagDistanceBlue matches ..900 as @a[tag=flagPickedUp,team=Red] run function rauch:game/mode/capture_the_flag/red_score
 
-execute unless score Global gameend matches 1.. if score Global flag_points_red matches 5.. if score Global flag_points_blue matches 5.. run function rauch:game/framework/stats/tie
-execute unless score Global gameend matches 1.. if score Global flag_points_red matches 5.. unless score Global flag_points_blue matches 5.. run function rauch:game/framework/stats/win_red
-execute unless score Global gameend matches 1.. if score Global flag_points_blue matches 5.. unless score Global flag_points_red matches 5.. run function rauch:game/framework/stats/win_blue
+# flag too far in own base (drop flag)
+scoreboard objectives add dis_diff dummy
+scoreboard players operation Global dis_diff = Global flagDistanceBlue
+scoreboard players operation Global dis_diff -= Global flagDistanceRed
+
+execute if entity @a[tag=flagPickedUp,team=Red] if score Global dis_diff matches 14000.. run function rauch:game/mode/capture_the_flag/flag_reset
+execute if entity @a[tag=flagPickedUp,team=Blue] if score Global dis_diff matches ..-14000 run function rauch:game/mode/capture_the_flag/flag_reset
+
+# draw lines and handle bossbar
+execute as @e[type=minecraft:marker,tag=ce] run function rauch:game/mode/capture_the_flag/visual/draw_max_lines
+function rauch:game/mode/capture_the_flag/visual/bossbar
+function rauch:game/mode/capture_the_flag/visual/update_bossbar_title
+#^ i don't have to run this every tick, but it's not that expensive ^
+
+scoreboard objectives remove dis_diff
+
+execute if score Global ctf_time matches 1.. run scoreboard players remove Global ctf_time 1
+
+########## game end ##########
+# time
+execute if score Global gameend matches 1.. run return 1
+execute if score Global ctf_time matches ..0 if score Global flag_points_red > Global flag_points_blue run function rauch:game/framework/stats/win_red
+execute if score Global ctf_time matches ..0 if score Global flag_points_red < Global flag_points_blue run function rauch:game/framework/stats/win_blue
+execute if score Global ctf_time matches ..0 if score Global flag_points_red = Global flag_points_blue if score Global flag_min_distance_red > Global flag_min_distance_blue run function rauch:game/framework/stats/win_red
+execute if score Global ctf_time matches ..0 if score Global flag_points_red = Global flag_points_blue if score Global flag_min_distance_red < Global flag_min_distance_blue run function rauch:game/framework/stats/win_blue
+execute if score Global ctf_time matches ..0 if score Global flag_points_red = Global flag_points_blue if score Global flag_min_distance_red = Global flag_min_distance_blue run function rauch:game/framework/stats/tie
+
+# knockout
+execute if score Global flag_points_red >= Global ctf_points_to_win run function rauch:game/framework/stats/tie
+execute if score Global flag_points_red >= Global ctf_points_to_win run function rauch:game/framework/stats/win_red

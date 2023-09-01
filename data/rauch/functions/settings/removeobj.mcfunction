@@ -103,11 +103,15 @@ scoreboard objectives remove killNumBlue
 scoreboard objectives remove killsDisplay
 scoreboard objectives remove rd_kills_to_win
 #capturethefalg
+scoreboard objectives remove ctf_points_to_win
+scoreboard objectives remove ctf_time
 scoreboard objectives remove flagDistanceBlue
 scoreboard objectives remove flagDistanceRed
-scoreboard objectives remove flag_points_red
+scoreboard objectives remove flag_min_distance_blue
+scoreboard objectives remove flag_min_distance_red
 scoreboard objectives remove flag_points_blue
-scoreboard objectives remove flagDisplay
+scoreboard objectives remove flag_points_red
+scoreboard objectives remove spawn_to_center_distance
 
 scoreboard objectives setdisplay below_name
 scoreboard objectives setdisplay list

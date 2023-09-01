@@ -1,7 +1,9 @@
 kill @e[type=armor_stand,tag=flag]
 tag @s add flagPickedUp
 effect give @s minecraft:glowing infinite 0 true
-#effect give @s minecraft:jump_boost 1000000 128 true
+
+#scoreboard players set Global flag_min_distance_red 9999999
+#scoreboard players set Global flag_min_distance_blue 9999999
 
 title @a[tag=game] title ""
 title @a[tag=spectator] title ""

@@ -48,6 +48,7 @@ scoreboard objectives remove 2048
 scoreboard objectives remove bolt_hitby
 scoreboard objectives remove bolt_hit
 scoreboard objectives remove elytracool
+scoreboard objectives remove flagDisplay
 
 # changed types
 scoreboard objectives remove mapParticle
