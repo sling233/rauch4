@@ -18,7 +18,7 @@ execute if score Global game_running matches 1 run tellraw @a [{"text":"Stopped 
 execute if score Global game_running matches 1 run function rauch:game/framework/end_game
 
 # update from old pack
-execute unless score Global version matches 600.. run function rauch:settings/versions/600
+execute unless score Global version matches 600.. run function rauch:settings/versions/v600
 #execute unless score Global version matches 521.. run function rauch:settings/versions/521
 
 # downpatch
