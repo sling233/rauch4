@@ -104,7 +104,7 @@ scoreboard objectives remove flag_points_red
 scoreboard objectives remove flag_points_blue
 scoreboard objectives remove flagDisplay
 
-scoreboard objectives setdisplay below_name
+scoreboard objectives setdisplay belowName
 scoreboard objectives setdisplay list
 
 #teams
