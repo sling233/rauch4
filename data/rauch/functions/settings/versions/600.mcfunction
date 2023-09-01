@@ -1,5 +1,5 @@
 # Update from old version where the version wasnt tracked yet
-tellraw @a [{"text":"Unknown (5.1.1 or earlier)","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"5.2.0","color":"light_purple"}]
+tellraw @a [{"text":"Unknown (5.1.1 or earlier)","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"6.0.0","color":"light_purple"}]
 tellraw @a [{"text":"- If you updated from version 4.0.2 or earlier, all map data will be removed. You can delete the old map armor stands (tag=map).","color":"yellow"}]
 
 scoreboard objectives remove heal

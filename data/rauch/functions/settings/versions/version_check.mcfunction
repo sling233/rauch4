@@ -1,6 +1,6 @@
 # easy way to change version
 scoreboard objectives add this_version dummy
-scoreboard players set Global this_version 520
+scoreboard players set Global this_version 600
 
 # if downpatching (this function gets called again as a side effect, click is set to 10 temporarily)
 execute if score Global click matches 10 run return 0
@@ -18,7 +18,7 @@ execute if score Global game_running matches 1 run tellraw @a [{"text":"Stopped 
 execute if score Global game_running matches 1 run function rauch:game/framework/end_game
 
 # update from old pack
-execute unless score Global version matches 520.. run function rauch:settings/versions/520
+execute unless score Global version matches 600.. run function rauch:settings/versions/600
 #execute unless score Global version matches 521.. run function rauch:settings/versions/521
 
 # downpatch
