@@ -129,6 +129,7 @@ execute as @a[tag=admin] unless score Global click matches 1.. run tellraw @s [{
 execute as @a[tag=!lobby,tag=!game,tag=!addmap,tag=!spectator] run tag @s add lobby
 
 function rauch:settings/versions/version_check
+function rauch:settings/versions/maps/map_check
 
 # set scores
 execute unless score Global click matches 0.. run scoreboard players set Global click 0
