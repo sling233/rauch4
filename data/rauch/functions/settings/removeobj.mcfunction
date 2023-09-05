@@ -34,6 +34,7 @@ scoreboard objectives remove elytra_cooldown
 scoreboard objectives remove fly
 scoreboard objectives remove flyerFSchedule
 scoreboard objectives remove flyerQSchedule
+scoreboard objectives remove game_id
 scoreboard objectives remove game_running
 scoreboard objectives remove gameend
 scoreboard objectives remove gamestart

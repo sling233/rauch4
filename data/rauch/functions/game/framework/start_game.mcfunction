@@ -2,6 +2,10 @@
 execute unless entity @a[tag=queue] run tellraw @s [{"text":"Game can\'t be started because there are no players in queue!","color":"red"}]
 execute unless entity @a[tag=queue] run return 0
 
+# game id etc
+scoreboard players set Global game_running 1
+scoreboard players add Global game_id 1
+
 # create game data storage
 data remove storage game_data bolt_hit
 data remove storage game_data hacker_r_tag
@@ -44,5 +48,3 @@ execute if score Global mode matches 4 run function rauch:game/mode/capture_the_
 
 # elytra bossbar after setup so max is properly set
 function rauch:game/ui/bossbar/elytra/set_max
-
-scoreboard players set Global game_running 1
