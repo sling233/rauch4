@@ -1,7 +1,9 @@
 # Update from old version where the version wasnt tracked yet
 tellraw @a [{"text":"Unknown (5.2.0 or earlier)","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"6.0.0","color":"light_purple"}]
-tellraw @a [{"text":"- If you updated from version 4.0.2 or earlier, all map data will be removed. You can delete the old map armor stands (tag=map).","color":"yellow"}]
+tellraw @a [{"text":"- If you updated from version 4.0.2 or earlier, all map data is unfortunately going to be removed, as it is stored differently now.","color":"yellow"}]
+tellraw @a [{"text":"- Re-add all currently spawned in prebuilt maps (remove and spawn again). Doing this allows you to easily update the maps if they change in the future (you will receive a promt in chat).","color":"yellow"}]
 
+kill @e[type=armor_stand,tag=map]
 scoreboard objectives remove heal
 scoreboard objectives remove tank
 scoreboard objectives remove tank_damage_dealt

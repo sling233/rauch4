@@ -127,6 +127,7 @@ team remove blue_display
 
 #bossbars
 bossbar remove center_control
+bossbar remove flag_location
 
 bossbar remove bolt1
 bossbar remove bolt2
