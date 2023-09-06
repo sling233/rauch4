@@ -14,3 +14,6 @@ scoreboard players operation Global flag_min_distance_red *= Global 50
 scoreboard players operation Global flag_min_distance_blue = Global spawn_to_center_distance
 scoreboard players operation Global flag_min_distance_blue *= Global 50
 scoreboard objectives remove 50
+
+# cancel potential overtime, as the team will have scored and thus won
+scoreboard players set Global ctf_overtime 0
