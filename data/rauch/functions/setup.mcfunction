@@ -97,7 +97,6 @@ scoreboard objectives add time_blue dummy
 scoreboard objectives add time_red dummy
 scoreboard objectives add blu_calc dummy
 scoreboard objectives add red_calc dummy
-scoreboard objectives add time_times dummy {"text":"Points left:","color":"yellow"}
 #respawnDeathmatch
 scoreboard objectives add killNumRed dummy
 scoreboard objectives add killNumBlue dummy

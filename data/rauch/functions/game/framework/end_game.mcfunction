@@ -19,7 +19,6 @@ scoreboard players reset Global center_blue
 scoreboard players reset Global capture_info
 scoreboard players reset Global time_blue
 scoreboard players reset Global time_red
-scoreboard players reset Global time_times
 scoreboard players reset Global ctf_overtime
 scoreboard players reset Global killNumRed
 scoreboard players reset Global killNumBlue

@@ -51,6 +51,7 @@ scoreboard objectives remove bolt_hitby
 scoreboard objectives remove bolt_hit
 scoreboard objectives remove elytracool
 scoreboard objectives remove flagDisplay
+scoreboard objectives remove time_times
 
 # changed types
 scoreboard objectives remove mapParticle

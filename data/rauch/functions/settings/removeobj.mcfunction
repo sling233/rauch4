@@ -97,7 +97,6 @@ scoreboard objectives remove time_blue
 scoreboard objectives remove time_red
 scoreboard objectives remove blu_calc
 scoreboard objectives remove red_calc
-scoreboard objectives remove time_times
 #respawnDeathmatch
 scoreboard objectives remove killNumRed
 scoreboard objectives remove killNumBlue
