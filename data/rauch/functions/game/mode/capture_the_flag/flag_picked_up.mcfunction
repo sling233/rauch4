@@ -1,4 +1,4 @@
-# calculate distance
+############ calculate distance ##############
 scoreboard objectives add xPos2 dummy
 scoreboard objectives add zPos2 dummy
 # x
@@ -33,6 +33,7 @@ execute store result score Global flagDistanceBlue run data get entity 0-0-0-0-0
 kill 0-0-0-0-0
 scoreboard objectives remove xPos2
 scoreboard objectives remove zPos2
+##############################################
 
 # save min distance
 execute as @s[team=Blue] run scoreboard players operation Global flag_min_distance_red < Global flagDistanceRed
@@ -40,3 +41,6 @@ execute as @s[team=Red] run scoreboard players operation Global flag_min_distanc
 
 # hack player
 scoreboard players set @s hack 200
+
+# update flag position
+execute at @s as @e[type=marker,tag=flag_pos] run tp @s ~ ~ ~

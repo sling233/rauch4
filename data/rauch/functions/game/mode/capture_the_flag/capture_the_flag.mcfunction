@@ -23,11 +23,24 @@ function rauch:game/mode/capture_the_flag/visual/update_bossbar_title
 
 scoreboard objectives remove dis_diff
 
+
+########## count down ##########
 execute if score Global ctf_time matches 1.. run scoreboard players remove Global ctf_time 1
+execute if score Global ctf_time matches 20..200 run function rauch:game/mode/capture_the_flag/visual/countdown
+
+# overtime?
+execute if score Global ctf_overtime matches 1..2 run function rauch:game/mode/capture_the_flag/overtime
 
 ########## game end ##########
-# time
+execute if score Global ctf_time matches 1.. run return 1
 execute if score Global gameend matches 1.. run return 1
+
+# initialize potential overtime
+execute unless score Global ctf_overtime matches 1.. if score Global ctf_time matches 0 if entity @a[tag=flagPickedUp] run function rauch:game/mode/capture_the_flag/initialize_overtime
+# if overtime (1 or 2), don't end game here
+execute if score Global ctf_overtime matches 1..2 run return 1
+
+# end game
 execute if score Global ctf_time matches ..0 if score Global flag_points_red > Global flag_points_blue run function rauch:game/framework/stats/win_red
 execute if score Global ctf_time matches ..0 if score Global flag_points_red < Global flag_points_blue run function rauch:game/framework/stats/win_blue
 execute if score Global ctf_time matches ..0 if score Global flag_points_red = Global flag_points_blue if score Global flag_min_distance_red > Global flag_min_distance_blue run function rauch:game/framework/stats/win_red

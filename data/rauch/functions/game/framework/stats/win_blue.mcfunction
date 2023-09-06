@@ -1,3 +1,4 @@
+title @a subtitle ""
 execute as @a[team=Red] run title @s title {"text":"Defeat","color":"red"}
 execute as @a[team=Blue] run title @s title {"text":"Victory","color":"gold"}
 

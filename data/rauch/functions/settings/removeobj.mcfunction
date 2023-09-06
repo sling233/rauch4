@@ -105,6 +105,7 @@ scoreboard objectives remove killsDisplay
 scoreboard objectives remove rd_kills_to_win
 #capturethefalg
 scoreboard objectives remove ctf_points_to_win
+scoreboard objectives remove ctf_overtime
 scoreboard objectives remove ctf_time
 scoreboard objectives remove flagDistanceBlue
 scoreboard objectives remove flagDistanceRed

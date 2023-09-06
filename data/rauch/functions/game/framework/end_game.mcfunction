@@ -2,6 +2,7 @@ time set day
 kill @e[type=marker,tag=map]
 kill @e[type=armor_stand,tag=stun]
 kill @e[type=armor_stand,tag=flag]
+kill @e[type=marker,tag=flag_pos]
 kill @e[type=armor_stand,tag=projectile]
 kill @e[type=marker,tag=shield]
 kill @e[type=marker,tag=indicator]
@@ -19,6 +20,7 @@ scoreboard players reset Global capture_info
 scoreboard players reset Global time_blue
 scoreboard players reset Global time_red
 scoreboard players reset Global time_times
+scoreboard players reset Global ctf_overtime
 scoreboard players reset Global killNumRed
 scoreboard players reset Global killNumBlue
 scoreboard players reset Global killsDisplay

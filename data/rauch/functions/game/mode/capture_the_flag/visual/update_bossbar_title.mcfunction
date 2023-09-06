@@ -16,7 +16,8 @@ scoreboard objectives add 1200 dummy
 scoreboard players set Global 1200 1200
 
 scoreboard players operation Global t_min = Global ctf_time
-scoreboard players operation Global t_sec = Global ctf_time
+scoreboard players operation Global t_min += Global 20
+scoreboard players operation Global t_sec = Global t_min
 scoreboard players operation Global t_min /= Global 1200
 scoreboard players operation Global t_sec %= Global 1200
 scoreboard players operation Global t_sec /= Global 20

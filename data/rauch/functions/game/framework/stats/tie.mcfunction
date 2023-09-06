@@ -1,3 +1,4 @@
+title @a subtitle ""
 execute as @a run title @s title {"text":"Tie","color":"yellow"}
 
 execute as @a run scoreboard players operation @s stats_g_damage_d += Global 20

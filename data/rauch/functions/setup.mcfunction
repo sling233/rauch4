@@ -106,6 +106,7 @@ scoreboard objectives add rd_kills_to_win dummy
 execute unless score Global rd_kills_to_win matches 1.. run scoreboard players set Global rd_kills_to_win 20
 #capture the flag
 scoreboard objectives add ctf_points_to_win dummy
+scoreboard objectives add ctf_overtime dummy
 scoreboard objectives add ctf_time dummy
 scoreboard objectives add flagDistanceBlue dummy
 scoreboard objectives add flagDistanceRed dummy
