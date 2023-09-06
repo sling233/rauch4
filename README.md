@@ -6,4 +6,4 @@ To use, go to the latest release and download wokkagames.zip into .minecraft/sav
 
 In Minecraft, go to your world and type `/reload`. From here an in-game guide is available.
 
-To play the game properly you also need the Resource Pack, you can get it [here](https://github.com/flaviusmus/rauch_texturepack).
+To play the game properly you also need the Resource Pack, you can get it [here](https://github.com/flaviusmus/wokkagames_texturepack).
