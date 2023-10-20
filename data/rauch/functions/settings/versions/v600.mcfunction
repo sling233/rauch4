@@ -1,7 +1,7 @@
 # Update from old version where the version wasnt tracked yet
 tellraw @a [{"text":"Unknown (5.2.0 or earlier)","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"6.0.0","color":"light_purple"}]
 tellraw @a [{"text":"- If you updated from version 4.0.2 or earlier, all map data is unfortunately going to be removed, as it is stored differently now.","color":"yellow"}]
-tellraw @a [{"text":"- Re-add all currently spawned in prebuilt maps (remove and spawn again). Doing this allows you to easily update the maps if they change in the future (you will receive a promt in chat).","color":"yellow"}]
+tellraw @a [{"text":"- Please re-add all currently spawned in prebuilt maps (remove and spawn again). Doing this allows you to easily update the maps if they change in the future (you will receive a prompt in chat).","color":"yellow"}]
 
 # set version
 scoreboard players set Global version 600
