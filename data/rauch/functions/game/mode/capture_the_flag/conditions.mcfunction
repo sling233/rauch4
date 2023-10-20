@@ -10,6 +10,7 @@ scoreboard players set Global gamestart 120
 scoreboard players set @a stats_g_points_scored 0
 
 function rauch:game/mode/capture_the_flag/visual/bossbar_setup
+team modify Flag color white
 
 scoreboard objectives add 50 dummy
 scoreboard players set Global 50 50

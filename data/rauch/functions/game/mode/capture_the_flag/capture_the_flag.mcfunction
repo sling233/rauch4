@@ -2,7 +2,7 @@ execute if score Global gamestart matches 1.. run return 0
 function rauch:game/mechanics/respawn/respawn_main
 
 execute as @a[tag=flagPickedUp] run function rauch:game/mode/capture_the_flag/flag_picked_up
-execute at @e[type=minecraft:armor_stand,tag=flag,limit=1] positioned ~-1 ~ ~-1 as @a[tag=game,tag=!dead,dx=1,dy=2,dz=1,limit=1] run function rauch:game/mode/capture_the_flag/flag_pickup
+execute as @e[type=minecraft:armor_stand,tag=flag,limit=1] run function rauch:game/mode/capture_the_flag/flag
 
 # flag at enemy base
 execute if score Global flagDistanceRed matches ..900 as @a[tag=flagPickedUp,team=Blue] run function rauch:game/mode/capture_the_flag/blue_score

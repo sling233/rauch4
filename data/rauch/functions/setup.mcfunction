@@ -114,10 +114,12 @@ scoreboard objectives add flag_min_distance_red dummy
 scoreboard objectives add flag_min_distance_blue dummy
 scoreboard objectives add flag_points_blue dummy
 scoreboard objectives add flag_points_red dummy
+scoreboard objectives add flag_spawn_delay dummy
 # scoreboard objectives add flag_reset_time dummy
 # scoreboard objectives add flag_spawn_time dummy
 scoreboard objectives add spawn_to_center_distance dummy
 execute unless score Global ctf_points_to_win matches 1.. run scoreboard players set Global ctf_points_to_win 5
+execute unless score Global flag_spawn_delay matches 1.. run scoreboard players set Global flag_spawn_delay 40
 
 # setup stuff
 execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:'{"text":"Lobby Spawn","color":"blue","italic":false}'},EntityTag:{Tags:["main"]}} 1
@@ -172,6 +174,10 @@ team modify Random friendlyFire false
 team add Spectator
 team modify Spectator color dark_green
 team modify Spectator friendlyFire false
+#team modify Spectator prefix [{"text":"[","color":"dark_gray"},{"text":"Spectator","color":"dark_green"},{"text":"] ","color":"dark_gray"}]
+
+team add Flag
+team modify Flag color white
 #team modify Spectator prefix [{"text":"[","color":"dark_gray"},{"text":"Spectator","color":"dark_green"},{"text":"] ","color":"dark_gray"}]
 
 team add red_display

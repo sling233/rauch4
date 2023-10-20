@@ -112,6 +112,7 @@ scoreboard objectives remove flag_min_distance_blue
 scoreboard objectives remove flag_min_distance_red
 scoreboard objectives remove flag_points_blue
 scoreboard objectives remove flag_points_red
+scoreboard objectives remove flag_spawn_delay
 scoreboard objectives remove spawn_to_center_distance
 
 scoreboard objectives setdisplay below_name
@@ -123,6 +124,7 @@ team remove Blue
 team remove Lobby
 team remove Random
 team remove Spectator
+team remove Flag
 team remove red_display
 team remove blue_display
 

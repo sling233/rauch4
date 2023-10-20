@@ -3,6 +3,9 @@ tellraw @a [{"text":"Unknown (5.2.0 or earlier)","color":"#FF7912"},{"text":" ->
 tellraw @a [{"text":"- If you updated from version 4.0.2 or earlier, all map data is unfortunately going to be removed, as it is stored differently now.","color":"yellow"}]
 tellraw @a [{"text":"- Re-add all currently spawned in prebuilt maps (remove and spawn again). Doing this allows you to easily update the maps if they change in the future (you will receive a promt in chat).","color":"yellow"}]
 
+# set version
+scoreboard players set Global version 600
+
 kill @e[type=armor_stand,tag=map]
 scoreboard objectives remove heal
 scoreboard objectives remove tank
@@ -125,6 +128,3 @@ bossbar remove wark_r9
 bossbar remove wark_r10
 bossbar remove wark_r11
 bossbar remove wark_r12
-
-# set version
-scoreboard players set Global version 600
