@@ -38,9 +38,9 @@ $item replace entity @s hotbar.8 with written_book{title:"Kit Selector / Setting
 {"text":"Tank","color":"$(tank)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 7"},"hoverEvent":{"action":"show_text","contents":\
 [{"text":"Name: ","color":"gray"},{"text":"Tank\\n","color":"gold"},{"text":"Type: ","color":"gray"},{"text":"Tank\\n","color":"blue"},\
 {"text":"Stats:  "},{"text":"❤22  ","color":"light_purple"},{"text":"⚔0.9\\n\\n","color":"blue"},{"text":"R: ","color":"gold"},\
-{"text":"Creates a Projectile Shield that lasts 7.5 seconds\\n\\n"},{"text":"Q: ","color":"gold"},\
+{"text":"Damage taken passively accumulates, up to 10 hearts. When it\'s over 2 hearts, you can use R on a teammate to heal them by the amount of damage taken.\\n\\n"},{"text":"Q: ","color":"gold"},\
 {"text":"Buffs resistance and knockback resistance for a teammate by 40% for 6 seconds (look at them and press Q). Additionally, team members in a 4.5 block radius around the buffed player recieve 20% less damage.\\n\\n"},{"text":"F: ","color":"gold"},\
-{"text":"Heals teammates in a 5 block range by the amount of damage dealt in the next 4 seconds"}]}},{"text":"]\\n[","color":"dark_gray"},\
+{"text":"Creates a Projectile Shield that lasts 7.5 seconds"}]}},{"text":"]\\n[","color":"dark_gray"},\
 {"text":"Pikka","color":"$(pikka)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 8"},"hoverEvent":{"action":"show_text","contents":\
 [{"text":"Name: ","color":"gray"},{"text":"Pikka\\n","color":"gold"},{"text":"Type: ","color":"gray"},{"text":"Asassin\\n","color":"dark_purple"},{"text":"Stats:  "},\
 {"text":"❤13  ","color":"light_purple"},{"text":"⚔1.1\\n\\n","color":"blue"},{"text":"R: ","color":"gold"},\
