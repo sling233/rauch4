@@ -8,6 +8,7 @@ execute store result score Global t_list_count run data get storage game_data bo
 # call functuion for every tagged player
 function rauch:game/ability/bolt/q/array/for_tagged
 
+#scoreboard players set Global t_list_count 3
 execute if score Global t_list_count matches 0 at @s run playsound minecraft:block.beacon.deactivate master @a
 execute if score Global t_list_count matches 1 run attribute @s minecraft:generic.attack_damage modifier add 0-0-0-0-4 "boltdmg1" 2.4 add
 execute if score Global t_list_count matches 2 run attribute @s minecraft:generic.attack_damage modifier add 0-0-0-0-5 "boltdmg2" 4.8 add

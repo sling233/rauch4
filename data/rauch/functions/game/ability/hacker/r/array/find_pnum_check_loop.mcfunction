@@ -10,7 +10,6 @@ execute if score @s pnum = Global comparer run scoreboard players set Global fou
 execute if score @s pnum = Global comparer run scoreboard players operation Global i = Global end_value
 
 scoreboard objectives remove comparer
-say hitpnumcheckloop
 # loop logic --------------------------------------
 scoreboard players add Global i 1
 execute if score Global i < Global end_value run function rauch:game/ability/hacker/r/array/find_pnum_check_loop

@@ -37,10 +37,11 @@ execute as @s[scores={cool1=1..}] run function rauch:game/ui/counter1
 execute as @s[scores={cool2=1..}] run function rauch:game/ui/counter2
 execute as @s[scores={cool3=1..}] run function rauch:game/ui/counter3
 
-execute unless score @s kit matches 3..5 run function rauch:game/ui/actionbar/cooldisnor
+execute unless score @s kit matches 3..5 unless score @s kit matches 7 run function rauch:game/ui/actionbar/cooldisnor
 execute if score @s kit matches 3 run function rauch:game/ui/actionbar/cooldisrp
 execute if score @s kit matches 4 run function rauch:game/ui/actionbar/cooldis_hacker
 execute if score @s kit matches 5 run function rauch:game/ui/actionbar/cooldis_wark
+execute if score @s kit matches 7 run function rauch:game/ui/actionbar/cooldis_tank
 
 #stuff
 #execute as @s[tag=spawn] run function rauch:game/shop/shop
@@ -55,4 +56,6 @@ scoreboard players reset @s fly
 #tag @s remove spawn
 tag @s remove raucher_debuff
 
-effect give @s[scores={hunger=..7},tag=!raucher_control] minecraft:saturation 1 0 true
+effect give @s minecraft:hunger 1 255 true
+effect give @s[scores={hunger=..7},tag=!raucher_control,tag=!flagPickedUp] minecraft:saturation 1 0 true
+effect give @s[scores={hunger=..2}] minecraft:saturation 1 0 true

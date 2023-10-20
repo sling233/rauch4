@@ -16,6 +16,9 @@ scoreboard players reset @s death
 scoreboard players reset @s dropcoas
 scoreboard players reset @s raucherdmg
 scoreboard players reset @s tank_resistance
+scoreboard players set @s tank_damage_taken 0
+
+scoreboard players operation @s game_id = Global game_id
 
 scoreboard players set @s armor_target 20
 function rauch:game/mechanics/weapon

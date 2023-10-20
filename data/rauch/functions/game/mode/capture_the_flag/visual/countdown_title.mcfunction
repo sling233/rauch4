@@ -1,0 +1,12 @@
+title @a[tag=game] title ""
+execute if score Global ctf_time matches 200 run execute as @a[tag=game] run title @s subtitle {"text":"10","color":"yellow"}
+execute if score Global ctf_time matches 180 run execute as @a[tag=game] run title @s subtitle {"text":"9","color":"yellow"}
+execute if score Global ctf_time matches 160 run execute as @a[tag=game] run title @s subtitle {"text":"8","color":"yellow"}
+execute if score Global ctf_time matches 140 run execute as @a[tag=game] run title @s subtitle {"text":"7","color":"yellow"}
+execute if score Global ctf_time matches 120 run execute as @a[tag=game] run title @s subtitle {"text":"6","color":"yellow"}
+execute if score Global ctf_time matches 100 run execute as @a[tag=game] run title @s subtitle {"text":"5","color":"gold"}
+execute if score Global ctf_time matches 80 run execute as @a[tag=game] run title @s subtitle {"text":"4","color":"gold"}
+execute if score Global ctf_time matches 60 run execute as @a[tag=game] run title @s subtitle {"text":"3","color":"red"}
+execute if score Global ctf_time matches 40 run execute as @a[tag=game] run title @s subtitle {"text":"2","color":"red"}
+execute if score Global ctf_time matches 20 run execute as @a[tag=game] run title @s subtitle {"text":"1","color":"red"}
+execute as @a[tag=game] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.4 1.4
