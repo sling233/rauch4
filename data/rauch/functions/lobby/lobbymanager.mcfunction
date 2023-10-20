@@ -9,7 +9,7 @@ execute as @s[tag=queue,nbt=!{SelectedItemSlot:8}] run tag @s add color
 execute as @s[tag=admin] as @s[nbt={SelectedItemSlot:1}] run tag @s add start
 
 #falls queue adding nicht successful war
-execute as @s[tag=!kit] run tellraw @s {"text":"You have to select a kit first","color":"red"}
+execute as @s[tag=!kit,tag=join] run tellraw @s {"text":"You have to select a kit first","color":"red"}
 
 #wenn nicht in queue wird in queue gemoved, aber nur wenn map und kit valid sind und kein game läuft
 execute as @s[tag=join,tag=kit] unless score Global game_running matches 1 run tag @s add valid
