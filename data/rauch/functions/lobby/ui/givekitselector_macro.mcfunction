@@ -24,7 +24,7 @@ $item replace entity @s hotbar.8 with written_book{title:"Kit Selector / Setting
 {"text":"Throws a Hacking-Bomb. After landing, it hacks enemies in range for 10 seconds. Hacked players cannot use their abilities.\\n\\n"},{"text":"F: ","color":"gold"},\
 {"text":"Reduces all ability cooldowns for teammates in range (cone-shape in front of you) by 15 seconds. Instead of having a cooldown, this ability is charge-based. You get a charge if a player debuffed (R) or hacked (Q) by you dies. You spawn with 1 charge at the start of the game, but dying doesn\'t affect your charges."}]}},{"text":"]\\n[","color":"dark_gray"},\
 {"text":"Wark","color":"$(wark)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 5"},"hoverEvent":{"action":"show_text","contents":\
-[{"text":"Name: ","color":"gray"},{"text":"Wark\\n","color":"gold"},{"text":"Type: ","color":"gray"},{"text":"Finisher\\n","color":"#FF8000"},\
+[{"text":"Name: ","color":"gray"},{"text":"Wark\\n","color":"gold"},{"text":"Type: ","color":"gray"},{"text":"Fighter\\n","color":"red"},\
 {"text":"Stats:  "},{"text":"❤16  ","color":"light_purple"},{"text":"⚔1.2\\n\\n","color":"blue"},{"text":"R: ","color":"gold"},\
 {"text":"Selects an enemy up to 20 blocks away. Creates a circle around that player. If the player leaves the circle, you get 60% Q charge.\\n\\n"},{"text":"Q: ","color":"gold"},\
 {"text":"Instead of having a cooldown, this ability is a percentage-based charge. You get 1% charge every second passively and with R. Using R, you can get overcharge (above 100% charge), that will deplete back to 100% at a moderate speed. Activating Q with 100% charge, you gain Speed III, Jump Boost II and +50% damage for 10 seconds. Alternatively, you can activate Shift-Q that will only consume 50% charge, giving you Speed III, Jumpboost II and +30% damage for 5 seconds.\\n\\n"},{"text":"F: ","color":"gold"},\
@@ -38,7 +38,7 @@ $item replace entity @s hotbar.8 with written_book{title:"Kit Selector / Setting
 {"text":"Tank","color":"$(tank)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 7"},"hoverEvent":{"action":"show_text","contents":\
 [{"text":"Name: ","color":"gray"},{"text":"Tank\\n","color":"gold"},{"text":"Type: ","color":"gray"},{"text":"Tank\\n","color":"blue"},\
 {"text":"Stats:  "},{"text":"❤22  ","color":"light_purple"},{"text":"⚔0.9\\n\\n","color":"blue"},{"text":"R: ","color":"gold"},\
-{"text":"Damage taken passively accumulates, up to 10 hearts. When it\'s over 2 hearts, you can use R on a teammate to heal them by the amount of damage taken.\\n\\n"},{"text":"Q: ","color":"gold"},\
+{"text":"Damage taken passively accumulates, up to 10 hearts. When it\'s over 4 hearts, you can use R on a teammate to heal them by the amount of damage taken.\\n\\n"},{"text":"Q: ","color":"gold"},\
 {"text":"Buffs resistance and knockback resistance for a teammate by 40% for 6 seconds (look at them and press Q). Additionally, team members in a 4.5 block radius around the buffed player recieve 20% less damage.\\n\\n"},{"text":"F: ","color":"gold"},\
 {"text":"Creates a Projectile Shield that lasts 7.5 seconds"}]}},{"text":"]\\n[","color":"dark_gray"},\
 {"text":"Pikka","color":"$(pikka)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 8"},"hoverEvent":{"action":"show_text","contents":\
