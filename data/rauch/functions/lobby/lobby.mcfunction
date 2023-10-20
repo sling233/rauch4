@@ -1,6 +1,7 @@
 execute as @s[tag=lobby,tag=!queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:7b}]}] run function rauch:lobby/ui/giveready
 execute as @s[tag=lobby,tag=!queue] as @s[nbt=!{Inventory:[{id:"minecraft:written_book",Slot:8b}]}] run function rauch:lobby/ui/givekitselector
 execute as @s[tag=lobby,tag=!queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:6b}]}] run function rauch:lobby/ui/givespectate
+execute as @s[tag=lobby,tag=!queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:5b}]}] run function rauch:lobby/ui/givetospawn
 
 execute as @s[tag=lobby,tag=admin] as @s[nbt=!{Inventory:[{id:"minecraft:written_book",Slot:0b}]}] run function rauch:lobby/ui/giveadminbook
 execute as @s[tag=lobby,tag=admin] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:1b}]}] run function rauch:lobby/ui/givestart1
@@ -10,6 +11,7 @@ execute as @s[tag=lobby,tag=queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_
 execute as @s[tag=lobby,tag=queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:7b}]}] run function rauch:lobby/ui/giveselectblue
 execute as @s[tag=lobby,tag=queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:6b}]}] run function rauch:lobby/ui/giveselectred
 execute as @s[tag=lobby,tag=queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:5b}]}] run function rauch:lobby/ui/giveselectrandom
+execute as @s[tag=lobby,tag=queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:4b}]}] run function rauch:lobby/ui/givetospawn2
 
 
 execute as @s[tag=lobby,scores={click=1..}] run function rauch:lobby/lobbymanager
