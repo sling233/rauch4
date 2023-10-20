@@ -33,8 +33,11 @@ execute if score Global ctf_time matches 20..200 run function rauch:game/mode/ca
 execute if score Global ctf_overtime matches 1..2 run function rauch:game/mode/capture_the_flag/overtime
 
 ########## game end ##########
-execute if score Global ctf_time matches 1.. run return 1
 execute if score Global gameend matches 1.. run return 1
+# knockout
+execute if score Global flag_points_red >= Global ctf_points_to_win run function rauch:game/framework/stats/win_red
+execute if score Global flag_points_blue >= Global ctf_points_to_win run function rauch:game/framework/stats/win_blue
+execute if score Global ctf_time matches 1.. run return 1
 
 # initialize potential overtime
 execute unless score Global ctf_overtime matches 1.. if score Global ctf_time matches 0 if entity @a[tag=flagPickedUp] run function rauch:game/mode/capture_the_flag/initialize_overtime
@@ -47,7 +50,3 @@ execute if score Global ctf_time matches ..0 if score Global flag_points_red < G
 execute if score Global ctf_time matches ..0 if score Global flag_points_red = Global flag_points_blue if score Global flag_min_distance_red > Global flag_min_distance_blue run function rauch:game/framework/stats/win_red
 execute if score Global ctf_time matches ..0 if score Global flag_points_red = Global flag_points_blue if score Global flag_min_distance_red < Global flag_min_distance_blue run function rauch:game/framework/stats/win_blue
 execute if score Global ctf_time matches ..0 if score Global flag_points_red = Global flag_points_blue if score Global flag_min_distance_red = Global flag_min_distance_blue run function rauch:game/framework/stats/tie
-
-# knockout
-execute if score Global flag_points_red >= Global ctf_points_to_win run function rauch:game/framework/stats/tie
-execute if score Global flag_points_red >= Global ctf_points_to_win run function rauch:game/framework/stats/win_red

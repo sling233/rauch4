@@ -1,4 +1,5 @@
 scoreboard objectives add 0 dummy
+scoreboard objectives add 1 dummy
 scoreboard objectives add 2 dummy
 scoreboard objectives add 3 dummy
 scoreboard objectives add 9 dummy
@@ -104,6 +105,7 @@ scoreboard objectives add killsDisplay dummy {"text":"Kills","color":"yellow"}
 scoreboard objectives add rd_kills_to_win dummy
 execute unless score Global rd_kills_to_win matches 1.. run scoreboard players set Global rd_kills_to_win 20
 #capture the flag
+scoreboard objectives add ctf_game_duration dummy
 scoreboard objectives add ctf_points_to_win dummy
 scoreboard objectives add ctf_overtime dummy
 scoreboard objectives add ctf_time dummy
@@ -120,6 +122,7 @@ scoreboard objectives add flag_spawn_delay dummy
 scoreboard objectives add spawn_to_center_distance dummy
 execute unless score Global ctf_points_to_win matches 1.. run scoreboard players set Global ctf_points_to_win 5
 execute unless score Global flag_spawn_delay matches 1.. run scoreboard players set Global flag_spawn_delay 40
+execute unless score Global ctf_game_duration matches 1.. run scoreboard players set Global ctf_game_duration 3600
 
 # setup stuff
 execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:'{"text":"Lobby Spawn","color":"blue","italic":false}'},EntityTag:{Tags:["main"]}} 1
@@ -137,6 +140,7 @@ function rauch:settings/versions/maps/map_check
 # set scores
 execute unless score Global click matches 0.. run scoreboard players set Global click 0
 scoreboard players set Global 0 0
+scoreboard players set Global 1 1
 scoreboard players set Global 2 2
 scoreboard players set Global 3 3
 scoreboard players set Global 9 9

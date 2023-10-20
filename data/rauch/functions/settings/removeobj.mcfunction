@@ -1,4 +1,5 @@
 scoreboard objectives remove 0
+scoreboard objectives remove 1
 scoreboard objectives remove 2
 scoreboard objectives remove 3
 scoreboard objectives remove 9
@@ -103,6 +104,7 @@ scoreboard objectives remove killNumBlue
 scoreboard objectives remove killsDisplay
 scoreboard objectives remove rd_kills_to_win
 #capturethefalg
+scoreboard objectives remove ctf_game_duration
 scoreboard objectives remove ctf_points_to_win
 scoreboard objectives remove ctf_overtime
 scoreboard objectives remove ctf_time

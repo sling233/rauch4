@@ -4,7 +4,8 @@ scoreboard players set Global flagDistanceBlue 1000000
 scoreboard players set Global flag_points_red 0
 scoreboard players set Global flag_points_blue 0
 
-scoreboard players set Global ctf_time 3599
+scoreboard players operation Global ctf_time = Global ctf_game_duration
+scoreboard players operation Global ctf_time -= Global 1
 scoreboard players set Global gamestart 120
 
 scoreboard players set @a stats_g_points_scored 0
