@@ -31,6 +31,7 @@ title @s[scores={kit=5},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text"
 title @s[scores={kit=6},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Teleporter","color":"yellow"}]
 title @s[scores={kit=7},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Tank","color":"yellow"}]
 title @s[scores={kit=8},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Pikka","color":"yellow"}]
+title @s[scores={kit=9},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Wokkaman... how?","color":"yellow"}]
 
 #title @s[tag=queue] actionbar [{"text":"Waiting for players... ","color":"yellow"}]
 #execute unless entity @a[tag=queue,team=Red] run title @s[tag=queue] actionbar [{"text":"Queue: ","color":"yellow"},{"selector":"@a[tag=queue,team=Red]"},{"text":", ","color":"gray"},{"selector":"@a[tag=queue,team=Blue]"},{"text":", ","color":"gray"},{"selector":"@a[tag=queue,team=Random]"}]

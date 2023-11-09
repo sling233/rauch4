@@ -116,6 +116,10 @@ scoreboard objectives remove flag_points_blue
 scoreboard objectives remove flag_points_red
 scoreboard objectives remove flag_spawn_delay
 scoreboard objectives remove spawn_to_center_distance
+#wokkaman
+scoreboard objectives remove wok_kills_end
+scoreboard objectives remove wok_kills
+scoreboard objectives remove wok_time
 
 scoreboard objectives setdisplay below_name
 scoreboard objectives setdisplay list
@@ -250,6 +254,8 @@ bossbar remove wark9
 bossbar remove wark10
 bossbar remove wark11
 bossbar remove wark12
+
+bossbar remove wokkaman_health
 
 team remove Red
 team remove Blue

@@ -8,6 +8,8 @@ execute as @s[scores={cool3=0,kit=5},predicate=rauch:skill,predicate=!rauch:snea
 execute as @s[scores={cool3=0,kit=6},predicate=rauch:skill] run function rauch:game/ability/teleporter/f
 execute as @s[scores={cool3=0,kit=7},predicate=rauch:skill] run function rauch:game/ability/tank/f
 execute as @s[scores={cool3=0,kit=8},predicate=rauch:skill] run function rauch:game/ability/flyer/f
+execute as @s[scores={cool3=0,kit=9},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wokkaman/f
+execute as @s[scores={cool3=0,kit=9},predicate=rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wokkaman/sf
 
 
 execute as @s[predicate=rauch:hack] run tellraw @s {"text":"You are hacked and cannot use your abilities!","color":"red"}

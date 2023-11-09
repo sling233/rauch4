@@ -101,3 +101,5 @@ bossbar set minecraft:wark9 visible false
 bossbar set minecraft:wark10 visible false
 bossbar set minecraft:wark11 visible false
 bossbar set minecraft:wark12 visible false
+
+bossbar set minecraft:wokkaman_health visible false

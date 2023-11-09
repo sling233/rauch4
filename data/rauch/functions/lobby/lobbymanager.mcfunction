@@ -1,5 +1,5 @@
 #ausgangsbedingungen werden gelesen
-execute as @s[scores={kit=1..8}] run tag @s add kit
+execute as @s[scores={kit=1..9}] run tag @s add kit
 execute if data storage map_data active run tag @s add map
 execute as @s[tag=!queue,nbt={SelectedItemSlot:7}] run tag @s add join
 execute as @s[tag=!queue,nbt={SelectedItemSlot:6}] run tag @s add spectate

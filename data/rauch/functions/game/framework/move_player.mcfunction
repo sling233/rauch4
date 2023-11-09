@@ -48,6 +48,7 @@ scoreboard players reset @s zarzahn_hooking
 scoreboard players reset @s wark_detect
 scoreboard players reset @s wark_startup
 scoreboard players reset @s wark_buff
+execute as @s[scores={kit=9}] run scoreboard players set @s kit 1
 tag @s remove game
 tag @s remove dead
 tag @s remove zarzahn_hook
@@ -56,6 +57,7 @@ tag @s remove fast
 tag @s remove allow_cancel
 tag @s remove flyer_q_ground
 tag @s remove flagPickedUp
+tag @s remove wokkaman
 effect clear @s
 team leave @s
 #clear @s

@@ -101,3 +101,5 @@ bossbar set minecraft:wark9 players @a[tag=game,scores={pnum=9}]
 bossbar set minecraft:wark10 players @a[tag=game,scores={pnum=10}]
 bossbar set minecraft:wark11 players @a[tag=game,scores={pnum=11}]
 bossbar set minecraft:wark12 players @a[tag=game,scores={pnum=12}]
+
+bossbar set minecraft:wokkaman_health players @a[tag=game]

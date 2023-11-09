@@ -12,6 +12,7 @@ execute as @s[scores={kit=5}] run function rauch:game/ability/wark/wark
 execute as @s[scores={kit=6}] run function rauch:game/ability/teleporter/teleporter
 execute as @s[scores={kit=7}] run function rauch:game/ability/tank/tank
 execute as @s[scores={kit=8}] run function rauch:game/ability/flyer/flyer
+execute as @s[scores={kit=9}] run function rauch:game/ability/wokkaman/wokkaman
 
 #general
 execute as @s[scores={push_levitation_timer=-1}] run effect clear @s minecraft:levitation

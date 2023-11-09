@@ -3,8 +3,8 @@ tag @s add dead
 
 scoreboard players set @s respawn 0
 function rauch:game/ui/bossbar/allinvisible
-# respawn visible wenn mode nicht deathmatch oder testing mode ist
-execute unless score Global mode matches 0 unless score Global mode matches 3 run function rauch:game/ui/bossbar/respawn/visible
+# respawn visible wenn mode nicht deathmatch oder testing mode ist und man nicht wokkaman ist
+execute unless score Global mode matches 0 unless score Global mode matches 3 unless entity @s[tag=wokkaman] run function rauch:game/ui/bossbar/respawn/visible
 
 scoreboard players reset @s stun
 scoreboard players reset @s hack
