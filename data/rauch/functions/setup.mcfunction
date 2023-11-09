@@ -147,7 +147,7 @@ scoreboard players set Global 9 9
 scoreboard players set Global 10 10
 scoreboard players set Global 12 12
 scoreboard players set Global 20 20
-execute unless score Global mode matches 0..4 run scoreboard players set Global mode 0
+execute unless score Global mode matches 0..5 run scoreboard players set Global mode 0
 
 scoreboard objectives setdisplay below_name health
 scoreboard objectives setdisplay list health_display

@@ -3,6 +3,7 @@ execute as @s[scores={adminsetting=2}] run scoreboard players set Global mode 1
 execute as @s[scores={adminsetting=3}] run scoreboard players set Global mode 2
 execute as @s[scores={adminsetting=4}] run scoreboard players set Global mode 3
 execute as @s[scores={adminsetting=5}] run scoreboard players set Global mode 4
+execute as @s[scores={adminsetting=6}] run scoreboard players set Global mode 5
 execute as @s[scores={adminsetting=100}] run data modify storage map_data active set from storage map_data maps[0]
 execute as @s[scores={adminsetting=101}] run data modify storage map_data active set from storage map_data maps[1]
 execute as @s[scores={adminsetting=102}] run data modify storage map_data active set from storage map_data maps[2]

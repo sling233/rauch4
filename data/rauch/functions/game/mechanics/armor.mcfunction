@@ -28,6 +28,8 @@ item replace entity @s[scores={kit=7}] armor.feet with minecraft:diamond_boots{d
 #pikka
 item replace entity @s[scores={kit=8}] armor.chest with elytra{Damage:432,display:{Name:'{"text":"Cool Elytra","color":"aqua"}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
 execute as @s[scores={kit=8}] unless score @s elytra matches 1.. unless score @s hack matches 1.. run item replace entity @s armor.chest with elytra{display:{Name:'{"text":"Cool Elytra","color":"aqua"}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
+#wokkaman
+item replace entity @s[scores={kit=9}] armor.legs with golden_leggings{display:{Name:'{"text":"Ninjahose","color":"light_purple"}'},HideFlags:255,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s},{id:"minecraft:swift_sneak",lvl:5s}]} 1
 
 # head
 execute as @s[scores={armor_target=20},tag=!flagPickedUp] run item replace entity @s armor.head with warped_fungus_on_a_stick{display:{Name:'{"text":"Pssssst","color":"aqua","italic":false}'},HideFlags:1,CustomModelData:0,Enchantments:[{id:"minecraft:protection",lvl:20s},{id:"minecraft:binding_curse",lvl:1s}]} 1
@@ -43,3 +45,9 @@ execute as @s[scores={armor_target=17},tag=flagPickedUp,team=Red] run item repla
 execute as @s[scores={armor_target=17},tag=flagPickedUp,team=Blue] run item replace entity @s armor.head with blue_banner{display:{Name:'{"text":"Flag","color":"aqua","italic":false}'},HideFlags:1,CustomModelData:0,Enchantments:[{id:"minecraft:protection",lvl:17s},{id:"minecraft:binding_curse",lvl:1s}]} 1
 execute as @s[scores={armor_target=16},tag=flagPickedUp,team=Red] run item replace entity @s armor.head with red_banner{display:{Name:'{"text":"Flag","color":"aqua","italic":false}'},HideFlags:1,CustomModelData:0,Enchantments:[{id:"minecraft:protection",lvl:16s},{id:"minecraft:binding_curse",lvl:1s}]} 1
 execute as @s[scores={armor_target=16},tag=flagPickedUp,team=Blue] run item replace entity @s armor.head with blue_banner{display:{Name:'{"text":"Flag","color":"aqua","italic":false}'},HideFlags:1,CustomModelData:0,Enchantments:[{id:"minecraft:protection",lvl:16s},{id:"minecraft:binding_curse",lvl:1s}]} 1
+
+# wokkaman (dont need to check flags etc bc wokkaman only exists in ctf)
+execute as @s[scores={kit=9,armor_target=20}] run item replace entity @s armor.head with turtle_helmet{display:{Name:'{"text":"The Wokkaman doesn\'t need armor","color":"aqua","italic":false}'},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:20s,id:"minecraft:swift_sneak",lvl:5s},{id:"minecraft:binding_curse",lvl:1s}]} 1
+execute as @s[scores={kit=9,armor_target=19}] run item replace entity @s armor.head with turtle_helmet{display:{Name:'{"text":"The Wokkaman doesn\'t need armor","color":"aqua","italic":false}'},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:19s,id:"minecraft:swift_sneak",lvl:5s},{id:"minecraft:binding_curse",lvl:1s}]} 1
+execute as @s[scores={kit=9,armor_target=18}] run item replace entity @s armor.head with turtle_helmet{display:{Name:'{"text":"The Wokkaman doesn\'t need armor","color":"aqua","italic":false}'},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:18s,id:"minecraft:swift_sneak",lvl:5s},{id:"minecraft:binding_curse",lvl:1s}]} 1
+execute as @s[scores={kit=9,armor_target=17}] run item replace entity @s armor.head with turtle_helmet{display:{Name:'{"text":"The Wokkaman doesn\'t need armor","color":"aqua","italic":false}'},HideFlags:1,Enchantments:[{id:"minecraft:protection",lvl:17s,id:"minecraft:swift_sneak",lvl:5s},{id:"minecraft:binding_curse",lvl:1s}]} 1

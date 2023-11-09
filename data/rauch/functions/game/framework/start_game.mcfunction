@@ -11,6 +11,8 @@ data remove storage game_data bolt_hit
 data remove storage game_data hacker_r_tag
 data remove storage game_data hacker_q_tag
 
+# set wokkaman kit
+execute as @a[tag=queue,team=Red] run scoreboard players set @s kit 9
 # player ids und setup und so
 scoreboard players reset Global pnum
 execute as @a[tag=queue,limit=12] run function rauch:game/framework/teamsetup
@@ -45,6 +47,7 @@ execute if score Global mode matches 1 run function rauch:game/mode/king_of_the_
 execute if score Global mode matches 2 run function rauch:game/mode/respawn_deathmatch/conditions
 execute if score Global mode matches 3 run function rauch:game/mode/practice/conditions
 execute if score Global mode matches 4 run function rauch:game/mode/capture_the_flag/conditions
+execute if score Global mode matches 5 run function rauch:game/mode/wokkaman/conditions
 
 # elytra bossbar after setup so max is properly set
 function rauch:game/ui/bossbar/elytra/set_max
