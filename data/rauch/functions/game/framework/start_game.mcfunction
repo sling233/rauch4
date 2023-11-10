@@ -10,6 +10,7 @@ scoreboard players add Global game_id 1
 data remove storage game_data bolt_hit
 data remove storage game_data hacker_r_tag
 data remove storage game_data hacker_q_tag
+data remove storage game_data wok_bow_tag
 
 # set wokkaman kit
 execute as @a[tag=queue,team=Red] run scoreboard players set @s kit 9

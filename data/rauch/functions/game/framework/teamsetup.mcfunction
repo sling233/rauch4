@@ -17,6 +17,8 @@ data modify storage game_data hacker_r_tag prepend value {id:-1}
 execute store result storage game_data hacker_r_tag[0].id int 1 run scoreboard players get @s pnum
 data modify storage game_data hacker_q_tag prepend value {id:-1}
 execute store result storage game_data hacker_q_tag[0].id int 1 run scoreboard players get @s pnum
+data modify storage game_data wok_bow_tag prepend value {id:-1}
+execute store result storage game_data wok_bow_tag[0].id int 1 run scoreboard players get @s pnum
 
 tag @s remove queue
 tag @s remove lobby
