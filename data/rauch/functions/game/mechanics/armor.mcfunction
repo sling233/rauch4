@@ -30,6 +30,7 @@ item replace entity @s[scores={kit=8}] armor.chest with elytra{Damage:432,displa
 execute as @s[scores={kit=8}] unless score @s elytra matches 1.. unless score @s hack matches 1.. run item replace entity @s armor.chest with elytra{display:{Name:'{"text":"Cool Elytra","color":"aqua"}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
 #wokkaman
 item replace entity @s[scores={kit=9}] armor.legs with golden_leggings{display:{Name:'{"text":"Ninjahose","color":"light_purple"}'},HideFlags:255,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s},{id:"minecraft:swift_sneak",lvl:5s}]} 1
+item replace entity @s[scores={kit=9}] armor.chest with elytra{display:{Name:'{"text":"Cooler Elytra","color":"light_purple"}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
 
 # head
 execute as @s[scores={armor_target=20},tag=!flagPickedUp] run item replace entity @s armor.head with warped_fungus_on_a_stick{display:{Name:'{"text":"Pssssst","color":"aqua","italic":false}'},HideFlags:1,CustomModelData:0,Enchantments:[{id:"minecraft:protection",lvl:20s},{id:"minecraft:binding_curse",lvl:1s}]} 1

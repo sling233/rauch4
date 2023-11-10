@@ -2,7 +2,15 @@ gamemode spectator @s
 tag @s add dead
 
 scoreboard players set @s respawn 0
-function rauch:game/ui/bossbar/allinvisible
+# bossbars
+function rauch:game/ui/bossbar/bolt/invisible
+function rauch:game/ui/bossbar/elytra/invisible
+function rauch:game/ui/bossbar/hack/invisible
+#function rauch:game/ui/bossbar/respawn/invisible
+function rauch:game/ui/bossbar/speed/invisible
+function rauch:game/ui/bossbar/stun/invisible
+function rauch:game/ui/bossbar/wark/invisible
+function rauch:game/ui/bossbar/zarzahn/invisible
 # respawn visible wenn mode nicht deathmatch oder testing mode ist und man nicht wokkaman ist
 execute unless score Global mode matches 0 unless score Global mode matches 3 unless entity @s[tag=wokkaman] run function rauch:game/ui/bossbar/respawn/visible
 

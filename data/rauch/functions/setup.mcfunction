@@ -127,6 +127,7 @@ execute unless score Global ctf_game_duration matches 1.. run scoreboard players
 scoreboard objectives add wok_kills_end dummy
 scoreboard objectives add wok_kills dummy
 scoreboard objectives add wok_time dummy
+scoreboard objectives add wok_hover_schedule minecraft.custom:minecraft.time_since_rest
 
 # setup stuff
 execute unless entity @a[tag=admin] unless entity @e[type=armor_stand,tag=main] run give @p minecraft:squid_spawn_egg{display:{Name:'{"text":"Lobby Spawn","color":"blue","italic":false}'},EntityTag:{Tags:["main"]}} 1
@@ -636,6 +637,4 @@ bossbar set minecraft:wark12 color purple
 bossbar set minecraft:wark12 max 80
 
 bossbar add wokkaman_health ""
-bossbar set wokkaman_health name {"text":"Wokkaman","color":"red"}
 bossbar set wokkaman_health color red
-bossbar set wokkaman_health max 100

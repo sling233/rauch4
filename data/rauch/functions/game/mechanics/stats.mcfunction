@@ -9,6 +9,7 @@ attribute @s[scores={kit=5}] minecraft:generic.armor modifier add 0-0-0-1-0 "arm
 attribute @s[scores={kit=6}] minecraft:generic.armor modifier add 0-0-0-1-0 "armorfix" -6 add
 attribute @s[scores={kit=7}] minecraft:generic.armor modifier add 0-0-0-1-0 "armorfix" -17 add
 attribute @s[scores={kit=8}] minecraft:generic.armor modifier add 0-0-0-1-0 "armorfix" 0 add
+attribute @s[scores={kit=9}] minecraft:generic.armor modifier add 0-0-0-1-0 "armorfix" -5 add
 
 attribute @s[scores={kit=5}] minecraft:generic.knockback_resistance modifier add 0-0-0-2-0 "kbfix" -0.30000000447034836 add
 

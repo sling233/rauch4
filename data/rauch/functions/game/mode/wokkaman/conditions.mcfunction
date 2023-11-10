@@ -13,7 +13,7 @@ execute as @a[tag=game,tag=wokkaman] run tellraw @s [{"score":{"name":"Global","
 execute store result bossbar minecraft:wokkaman_health max run scoreboard players get Global calc
 scoreboard objectives remove calc
 scoreboard objectives remove t_health
-function rauch:game/ui/bossbar/wokkaman_health/visible
+function rauch:game/mode/wokkaman/bossbar/visible
 
 
 tellraw @a[tag=game] [{"text":"[Wokkaman]: try kill me nubs","color":"yellow"}]
