@@ -16,6 +16,7 @@ execute as @s[scores={kit=9}] run function rauch:game/ability/wokkaman/wokkaman
 
 #general
 execute as @s[scores={push_levitation_timer=-1}] run effect clear @s minecraft:levitation
+execute as @s[scores={wok_push_timer=..-1}] run function rauch:game/ability/wokkaman/r/push_particle
 execute as @s[tag=raucher_control,tag=!raucher_debuff] run function rauch:game/ability/raucher/f/slow/leave
 execute as @s[scores={hack=0..}] run function rauch:game/mechanics/hack
 execute as @s[scores={hacker_damage_timer=0..}] run function rauch:game/ability/hacker/r/debuff

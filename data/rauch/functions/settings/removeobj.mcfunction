@@ -121,6 +121,7 @@ scoreboard objectives remove wok_kills_end
 scoreboard objectives remove wok_kills
 scoreboard objectives remove wok_time
 scoreboard objectives remove wok_hover_schedule
+scoreboard objectives remove wok_push_timer
 
 scoreboard objectives setdisplay below_name
 scoreboard objectives setdisplay list

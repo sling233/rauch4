@@ -18,6 +18,10 @@ execute as @s[team=Blue] run function rauch:game/ability/wokkaman/r/spawn_slime_
 
 execute as @a[tag=t_stunned] run function rauch:game/mechanics/unstun
 execute as @a[tag=t_stunned] run scoreboard players set @s push_levitation_timer -4
+execute as @a[tag=t_stunned] run scoreboard players set @s wok_push_timer -20
 execute as @a[tag=t_stunned] run effect give @s minecraft:levitation 1 40 true
+#execute at @a[tag=t_stunned] run particle minecraft:dust_plume ~ ~1 ~ 0.1 0.2 0.1 0.3 300 force
+execute at @a[tag=t_stunned] run particle minecraft:end_rod ~ ~1 ~ 0.1 0.2 0.1 0.3 150 force
+execute at @a[tag=t_stunned] run particle minecraft:dust_color_transition 0.9 0.3 0.1 1 0.1 0 0 ~ ~1 ~ 1 1 1 1 400 force
 damage @a[tag=t_stunned,limit=1] 20 minecraft:falling_anvil
 tag @a[tag=t_stunned] remove wok_hook
