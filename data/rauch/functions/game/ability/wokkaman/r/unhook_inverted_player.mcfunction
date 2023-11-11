@@ -11,6 +11,7 @@ execute at @s unless block ~ ~1 ~ #minecraft:nonsolid facing entity @a[tag=t_stu
 scoreboard players reset @s zarzahn_hooking
 tag @s remove inverted_hook
 execute at @s run playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~
+execute at @s run playsound minecraft:item.trident.return master @a ~ ~ ~
 scoreboard players set @s slime_despawn_timer -5
 execute as @s[team=Red] run function rauch:game/ability/wokkaman/r/spawn_slime_red
 execute as @s[team=Blue] run function rauch:game/ability/wokkaman/r/spawn_slime_blue

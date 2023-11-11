@@ -1,6 +1,15 @@
 # storage macros data has tag list. players in that list are tagged with wok_bow_tagged
 # $(gravity) has gravity value
 # wokka owner has tag t_wokka
+
+# look towards target if existent
+scoreboard objectives add t_target_pnum dummy
+scoreboard players operation Global t_target_pnum = @s zarzahn_hooking
+tag @s add t_proj
+execute at @s as @a if score @s pnum = Global t_target_pnum facing entity @s eyes run tp @e[type=marker,tag=wok_bow,tag=t_proj] ~ ~ ~ ~ ~
+tag @s remove t_proj
+scoreboard objectives remove t_target_pnum
+
 ###### move ###########
 execute at @s run tp @s ^ ^ ^0.3
 $execute at @s[tag=searching] run tp @s ~ ~-$(gravity) ~
