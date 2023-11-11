@@ -13,6 +13,8 @@ execute as @e[type=marker,tag=teleporter] run function rauch:game/ability/telepo
 execute as @e[type=marker,tag=hacker] run function rauch:game/ability/hacker/r/projectile
 execute as @e[type=marker,tag=zarzahn] run function rauch:game/ability/zarzahn/r/projectile
 execute as @e[type=marker,tag=bolt_blast] run function rauch:game/ability/bolt/r/projectile
+execute as @e[type=marker,tag=wok_bow] at @s run function rauch:game/ability/wokkaman/sr/projectile
+execute as @e[type=marker,tag=wok_hook] at @s run function rauch:game/ability/wokkaman/r/projectile
 
 #armorstand projektile
 execute as @e[type=armor_stand,tag=r_h] run function rauch:game/ability/raucher/f/heal/heal
@@ -20,6 +22,7 @@ execute as @e[type=armor_stand,tag=r_s] run function rauch:game/ability/raucher/
 execute as @e[type=armor_stand,tag=hacker_bomb,tag=!onground] run function rauch:game/ability/hacker/q/projectile
 
 execute as @e[type=block_display,tag=zarzahn_vehicle] run function rauch:game/ability/zarzahn/r/hook
+execute as @e[type=block_display,tag=wok_vehicle] run function rauch:game/ability/wokkaman/r/vehicle
 #stationäres
 execute as @e[type=marker,tag=r_h,tag=indicator] run function rauch:game/ability/raucher/f/heal/indicator
 execute as @e[type=marker,tag=r_s,tag=indicator] run function rauch:game/ability/raucher/f/slow/indicator
@@ -30,7 +33,6 @@ execute as @e[type=marker,tag=hacker_bomb,tag=indicator] run function rauch:game
 execute as @e[type=marker,tag=zar_point] run function rauch:game/ability/zarzahn/f/point
 execute as @e[type=marker,tag=shield] at @s run function rauch:game/ability/tank/f/shield
 execute as @e[type=marker,tag=wark_detect,tag=active] at @s run function rauch:game/ability/wark/r/circle
-execute as @e[type=marker,tag=wok_bow] at @s run function rauch:game/ability/wokkaman/sr/projectile
 
 execute if entity @a[tag=game] if score Global mode matches 0 run function rauch:game/mode/deathmatch/deathmatch
 execute if entity @a[tag=game] if score Global mode matches 1 run function rauch:game/mode/king_of_the_hill/king_of_the_hill

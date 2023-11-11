@@ -1,3 +1,4 @@
+execute as @s[scores={slime_despawn_timer=-1}] run function rauch:game/ability/wokkaman/r/despawn
 execute at @s unless block ~ ~-0.2 ~ #nonsolid run tag @s add t_grounded
 execute as @s[scores={flyerFSchedule=-1}] run effect clear @s minecraft:levitation
 execute as @s[scores={wok_hover_schedule=-1}] run effect clear @s minecraft:levitation

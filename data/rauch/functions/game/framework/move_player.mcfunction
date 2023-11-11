@@ -52,6 +52,7 @@ execute as @s[scores={kit=9}] run scoreboard players set @s kit 1
 tag @s remove game
 tag @s remove dead
 tag @s remove zarzahn_hook
+tag @s remove wok_hook
 tag @s remove flying
 tag @s remove fast
 tag @s remove allow_cancel

@@ -7,7 +7,9 @@ execute as @s[scores={kit=5,cool1=0},predicate=rauch:sneak,predicate=rauch:skill
 execute as @s[scores={kit=6,cool1=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/teleporter/r
 execute as @s[scores={kit=7,tank_damage_taken=80..},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/tank/r
 execute as @s[scores={kit=8,cool1=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/flyer/r
-execute as @s[scores={kit=9,cool1=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wokkaman/r
+#wokkaman
+execute as @s[scores={kit=9,cool1=0},predicate=!rauch:sneak,predicate=rauch:skill] unless score @s zarzahn_hooking matches 1.. run function rauch:game/ability/wokkaman/r
+execute as @s[scores={kit=9,zarzahn_hooking=1..},tag=!inverted_hook,predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wokkaman/hr
 execute as @s[scores={kit=9,cool1=0},predicate=rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wokkaman/sr
 
 execute as @s[predicate=rauch:hack] run tellraw @s {"text":"You are hacked and cannot use your abilities!","color":"red"}
