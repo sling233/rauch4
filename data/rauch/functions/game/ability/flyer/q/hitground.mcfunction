@@ -9,5 +9,5 @@ execute at @s[team=Red] as @a[team=Blue,tag=game,tag=!dead,distance=..3.5] run f
 execute at @s[team=Blue] as @a[team=Red,tag=game,tag=!dead,distance=..3.5] run function rauch:game/ability/flyer/q/hit
 
 #execute at @s run summon minecraft:firework_rocket ~ ~2 ~ {Motion:[0d,-1d,0d],Owner:[I;0,0,0,0],LifeTime:0,Silent:1b,Tags:["flyer","setup"],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:4,Colors:[I;5526612]},{Type:4,Colors:[I;5526612]},{Type:4,Colors:[I;5526612]},{Type:4,Colors:[I;5526612]},{Type:4,Colors:[I;5526612]},{Type:4,Colors:[I;5526612]},{Type:4,Colors:[I;5526612]}]}}}}
-data modify entity @e[type=minecraft:firework_rocket,tag=flyer,tag=setup,limit=1] Owner set from entity @s UUID
-tag @e[type=minecraft:firework_rocket,tag=flyer,tag=setup,limit=1] remove setup
+#data modify entity @e[type=minecraft:firework_rocket,tag=flyer,tag=setup,limit=1] Owner set from entity @s UUID
+#tag @e[type=minecraft:firework_rocket,tag=flyer,tag=setup,limit=1] remove setup

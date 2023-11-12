@@ -1,2 +1,3 @@
-say sq
-scoreboard players operation @s cool2 = @s cool2_target
+tag @s add wok_stomp
+#effect clear @s minecraft:levitation
+#effect give @s minecraft:levitation 1 190 true
