@@ -15,5 +15,4 @@ execute if score @s particleDensity matches 1 run data modify storage temp kitse
 execute if score @s particleDensity matches 1 run data modify storage temp kitselector.not_density set value "gray"
 
 function rauch:lobby/ui/givekitselector_macro with storage temp kitselector
-
 #item replace entity @s hotbar.8 from entity @e[type=item_frame,tag=kitselector,limit=1] container.0
