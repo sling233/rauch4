@@ -3,7 +3,8 @@ clear @s
 tag @s add lobby
 tag @s remove spectator
 
-execute at @e[type=armor_stand,tag=main] run tp @s ~ ~-20 ~
+function rauch:lobby/tp_to_lobby
+
 tellraw @s {"text":"Stopped spectating the game","color":"yellow"}
 tag @a[tag=spectator] add game
 execute if score Global mode matches 4 run bossbar set flag_location players @a[tag=game]

@@ -71,5 +71,3 @@ schedule function rauch:game/framework/clear 10t
 #title @s clear
 #tag @s add lobby
 #gamemode adventure @s
-#execute at @e[type=armor_stand,tag=main,limit=1] run tp @s ~ ~-20 ~
-#execute at @e[type=armor_stand,tag=main,limit=1] run spawnpoint @s ~ ~-20 ~

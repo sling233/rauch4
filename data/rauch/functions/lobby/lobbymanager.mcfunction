@@ -23,8 +23,8 @@ execute as @s[tag=leave] run tag @s remove queue
 execute as @s[tag=leave] run clear @s
 
 # teleport to spawn when not queue
-execute as @s[tag=queue] as @s[nbt={SelectedItemSlot:4}] at @e[type=armor_stand,tag=main] run tp @s ~ ~-20 ~
-execute as @s[tag=!queue] as @s[nbt={SelectedItemSlot:5}] at @e[type=armor_stand,tag=main] run tp @s ~ ~-20 ~
+execute as @s[tag=queue] as @s[nbt={SelectedItemSlot:4}] run function rauch:lobby/tp_to_lobby
+execute as @s[tag=!queue] as @s[nbt={SelectedItemSlot:5}] run function rauch:lobby/tp_to_lobby
 
 # change team
 execute as @s[tag=color] as @s[nbt={SelectedItemSlot:7}] run team join Blue @s

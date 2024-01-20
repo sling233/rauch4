@@ -3,7 +3,7 @@ data modify storage map_data maps[0].particle set value -1
 data modify storage map_data maps[0].time set value -1
 data modify storage map_data maps[0].spawn_location set from entity @s Pos
 
-# remember to change the offsets in update as well
+# remember to change the offsets in spawn as well
 execute at @s align xyz run summon marker ~3.5 ~24 ~20.5 {Tags:["mapsetup","red"]}
 execute at @s align xyz run summon marker ~32.5 ~23 ~20.5 {Tags:["mapsetup","cen"]}
 execute at @s align xyz run summon marker ~60.5 ~24 ~20.5 {Tags:["mapsetup","blu"]}

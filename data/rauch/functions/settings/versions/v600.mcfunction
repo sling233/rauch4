@@ -6,7 +6,10 @@ tellraw @a [{"text":"- Please re-add all currently spawned in prebuilt maps (rem
 # set version
 scoreboard players set Global version 600
 
+# old map data save method, outdated
 kill @e[type=armor_stand,tag=map]
+
+# every scoreboard that was ever removed
 scoreboard objectives remove heal
 scoreboard objectives remove tank
 scoreboard objectives remove tank_damage_dealt
@@ -56,7 +59,7 @@ scoreboard objectives remove elytracool
 scoreboard objectives remove flagDisplay
 scoreboard objectives remove time_times
 
-# changed types
+# every scoreboard that ever changed type
 scoreboard objectives remove mapParticle
 scoreboard objectives add mapParticle dummy
 scoreboard objectives remove map_setting
@@ -74,6 +77,7 @@ scoreboard objectives add stats_g_deaths minecraft.custom:minecraft.deaths
 scoreboard objectives remove stats_g_kills
 scoreboard objectives add stats_g_kills playerKillCount
 
+# every bossbar that was ever removed
 bossbar remove minecraft:tank1
 bossbar remove minecraft:tank2
 bossbar remove minecraft:tank3
