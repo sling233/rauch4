@@ -1,6 +1,6 @@
 # Update from old version where the version wasnt tracked yet
 tellraw @a [{"text":"v6.0.0","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"dev6.0.1","color":"light_purple"}]
-tellraw @a [{"text":"- The Lobby data format changed, so downpatching to earlier versions will lead the lobby position being lost (you can re-add it)","color":"yellow"}]
+tellraw @a [{"text":"- The Lobby data format changed, so downpatching to earlier versions will lead the lobby position being lost (you can re-add it).","color":"yellow"}]
 
 # set version
 scoreboard players set Global version 601

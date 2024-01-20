@@ -59,6 +59,7 @@ tag @s remove allow_cancel
 tag @s remove flyer_q_ground
 tag @s remove flagPickedUp
 tag @s remove wokkaman
+tag @s remove wok_f_air
 effect clear @s
 team leave @s
 #clear @s

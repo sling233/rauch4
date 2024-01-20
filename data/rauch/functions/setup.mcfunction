@@ -129,6 +129,7 @@ scoreboard objectives add wok_kills dummy
 scoreboard objectives add wok_time dummy
 scoreboard objectives add wok_hover_schedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add wok_push_timer minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add wokkaman_debuff dummy
 
 # setup stuff
 execute unless entity @a[tag=admin] unless data storage lobby_data position run give @p minecraft:squid_spawn_egg{display:{Name:'{"text":"Lobby Spawn","color":"blue","italic":false}'},EntityTag:{Tags:["main"]}} 1

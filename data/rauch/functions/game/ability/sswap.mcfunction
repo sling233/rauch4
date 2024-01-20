@@ -9,10 +9,9 @@ execute as @s[scores={cool3=0,kit=6},predicate=rauch:skill] run function rauch:g
 execute as @s[scores={cool3=0,kit=7},predicate=rauch:skill] run function rauch:game/ability/tank/f
 execute as @s[scores={cool3=0,kit=8},predicate=rauch:skill] run function rauch:game/ability/flyer/f
 # wokkaman
-execute as @s[scores={cool3=0,kit=9},predicate=!rauch:sneak,predicate=rauch:skill] unless score @s fly matches 1.. run function rauch:game/ability/wokkaman/f
+execute as @s[scores={kit=9},predicate=!rauch:sneak,predicate=rauch:skill] unless score @s fly matches 1.. run function rauch:game/ability/wokkaman/f
 execute as @s[scores={cool3=0,kit=9},predicate=rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wokkaman/sf
 execute as @s[scores={kit=9,fly=1..},predicate=rauch:skill] run function rauch:game/ability/wokkaman/ff
-execute as @s[scores={kit=9,wok_hover_schedule=-29..-2},predicate=rauch:skill] run function rauch:game/ability/wokkaman/hf
 
 
 execute as @s[predicate=rauch:hack] run tellraw @s {"text":"You are hacked and cannot use your abilities!","color":"red"}
