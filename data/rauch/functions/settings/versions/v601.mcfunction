@@ -6,6 +6,7 @@ tellraw @a [{"text":"- The Lobby data format changed, so downpatching to earlier
 scoreboard players set Global version 601
 
 # old lobby data save method, outdated
+execute as @e[type=armor_stand,tag=main,limit=1] at @s run tp @s ~ ~-20 ~
 data modify storage lobby_data position set from entity @e[type=armor_stand,tag=main,limit=1] Pos
 kill @e[type=armor_stand,tag=main]
 
