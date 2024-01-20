@@ -2,12 +2,12 @@ $item replace entity @s hotbar.8 with written_book{title:"Kit Selector / Setting
 [{"text":"           "},{"text":"Kits\\n\\n","bold":true},{"text":"[","color":"dark_gray"},\
 {"text":"Bolt","color":"$(bolt)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 1"},"hoverEvent":{"action":"show_text","contents":\
 [{"text":"Name: ","color":"gray"},{"text":"Bolt\\n","color":"gold"},{"text":"Type: ","color":"gray"},{"text":"Fighter\\n","color":"red"},\
-{"text":"Stats:  "},{"text":"❤16  ","color":"light_purple"},{"text":"⚔1.4\\n\\n","color":"blue"},{"text":"R: ","color":"gold"},\
+{"text":"Stats:  "},{"text":"❤16  ","color":"light_purple"},{"text":"⚔1.4  ","color":"blue"},{"text":"Range: 3.5\\n\\n","color":"aqua"},{"text":"R: ","color":"gold"},\
 {"text":"You shoot a slow projectile that explodes after a short travel time or on contact with the ground, dealing 1.5❤ Damage. If your Q is active, you are able to use this to get extra hits.\\n\\n"},{"text":"Q: ","color":"gold"},\
 {"text":"You have 4 seconds to hit as many distinct players as possible. After the timer ends, you recieve a +20% damage buff for every unique player hit (stacks additively). You can press Q again to end the timer immediately, to get the damage boost early.\\n\\n"},{"text":"F: ","color":"gold"},\
 {"text":"+40% Speed for 5 seconds"}]}},{"text":"]\\n[","color":"dark_gray"},\
 {"text":"Zarzahn","color":"$(zarzahn)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 2"},"hoverEvent":{"action":"show_text","contents":\
-[{"text":"Name: ","color":"gray"},{"text":"Zarzahn\\n","color":"gold"},{"text":"Type: ","color":"gray"},{"text":"Control\\n","color":"aqua"},\
+[{"text":"Name: ","color":"gray"},{"text":"Zarzahn\\n","color":"gold"},{"text":"Type: ","color":"gray"},{"text":"Fighter","color":"red"},{"text":" / ","color":"gray"},{"text":"Support\\n","color":"dark_green"},\
 {"text":"Stats:  "},{"text":"❤16  ","color":"light_purple"},{"text":"⚔1.2\\n\\n","color":"blue"},{"text":"R: ","color":"gold"},\
 {"text":"You shoot out a hook that pulls enemies towards you. Once they arrive, they are stunned for 0.75 seconds, however some classes can escape by dashing out as they are pulled\\n\\n"},{"text":"Q: ","color":"gold"},\
 {"text":"Enemies around you get pushed away\\n\\n"},{"text":"F: ","color":"gold"},\
@@ -32,12 +32,12 @@ $item replace entity @s hotbar.8 with written_book{title:"Kit Selector / Setting
 {"text":"An upwards boost for mobility."}]}},{"text":"]\\n[","color":"dark_gray"},\
 {"text":"Teleporter","color":"$(teleporter)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 6"},"hoverEvent":{"action":"show_text","contents":\
 [{"text":"Name: ","color":"gray"},{"text":"Teleporter\\n","color":"gold"},{"text":"Type: ","color":"gray"},{"text":"Asassin\\n","color":"dark_purple"},\
-{"text":"Stats:  "},{"text":"❤12  ","color":"light_purple"},{"text":"⚔1.4\\n\\n","color":"blue"},{"text":"R: ","color":"gold"},\
+{"text":"Stats:  "},{"text":"❤12  ","color":"light_purple"},{"text":"⚔2.8  ","color":"blue"},{"text":"Range: 1.5\\n\\n","color":"aqua"},{"text":"R: ","color":"gold"},\
 {"text":"Shoots a projetile. You teleport behind the player you hit. The player gets debuffed with -40% speed and -40% attack damage for 3 seconds\\n\\n"},{"text":"Q: ","color":"gold"},\
 {"text":"You become invisible for 6 seconds. Sprinting particles are visible though\\n\\n"},{"text":"F: ","color":"gold"},\
 {"text":"You instantly teleport to where you are looking, with a max range of 14 blocks"}]}},{"text":"]\\n[","color":"dark_gray"},\
 {"text":"Tank","color":"$(tank)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 7"},"hoverEvent":{"action":"show_text","contents":\
-[{"text":"Name: ","color":"gray"},{"text":"Tank\\n","color":"gold"},{"text":"Type: ","color":"gray"},{"text":"Tank\\n","color":"blue"},\
+[{"text":"Name: ","color":"gray"},{"text":"Tank\\n","color":"gold"},{"text":"Type: ","color":"gray"},{"text":"Tank","color":"blue"},{"text":" / ","color":"gray"},{"text":"Support\\n","color":"dark_green"},\
 {"text":"Stats:  "},{"text":"❤22  ","color":"light_purple"},{"text":"⚔0.9\\n\\n","color":"blue"},{"text":"R: ","color":"gold"},\
 {"text":"Damage taken passively accumulates, up to 10 hearts. When it\'s over 4 hearts, you can use R on a teammate to heal them by the amount of damage taken.\\n\\n"},{"text":"Q: ","color":"gold"},\
 {"text":"Buffs resistance and knockback resistance for a teammate by 40% for 6 seconds (look at them and press Q). Additionally, team members in a 4.5 block radius around the buffed player recieve 20% less damage.\\n\\n"},{"text":"F: ","color":"gold"},\

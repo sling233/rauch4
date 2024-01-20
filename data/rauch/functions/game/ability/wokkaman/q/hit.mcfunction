@@ -1,7 +1,7 @@
 # at wokkaman, as player hit
 execute at @s run summon minecraft:lightning_bolt ~ ~5 ~
 attribute @s minecraft:generic.scale base set 0.5
-attribute @s minecraft:player.entity_interaction_range base set 1.5
+attribute @s minecraft:player.entity_interaction_range modifier add 3-0-0-0-0 "wokkaman_range_debuff" -0.5 multiply
 #attribute @s minecraft:generic.movement_speed modifier add 89-0-0-0-0 "wokkaman_debuff" -0.5 multiply
 
 effect give @s minecraft:hero_of_the_village 6 0 false
