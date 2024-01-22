@@ -8,11 +8,14 @@
     "#minecraft:rails",
     "#minecraft:flowers",
 	"#minecraft:replaceable",
+	"#minecraft:wall_post_override",
     "minecraft:fern",
     "minecraft:dead_bush",
     "minecraft:brown_mushroom",
     "minecraft:red_mushroom",
-    "minecraft:torch",
+	"minecraft:wall_torch",
+	"minecraft:soul_wall_torch",
+	"minecraft:redstone_wall_torch",
     "minecraft:end_rod",
     "minecraft:lantern",
     "minecraft:repeater",
@@ -26,6 +29,8 @@
 	"minecraft:twisting_vines",
 	"minecraft:twisting_vines_plant",
 	"minecraft:weeping_vines",
-	"minecraft:weeping_vines_plant"
+	"minecraft:big_dripleaf_stem",
+	"minecraft:big_dripleaf",
+	"minecraft:moss_carpet"
    ]
  }
