@@ -12,6 +12,7 @@ execute as @e[type=marker,tag=raucher_rocket] run function rauch:game/ability/ra
 execute as @e[type=marker,tag=teleporter] run function rauch:game/ability/teleporter/r/projectile
 execute as @e[type=marker,tag=hacker] run function rauch:game/ability/hacker/r/projectile
 execute as @e[type=marker,tag=zarzahn] run function rauch:game/ability/zarzahn/r/projectile
+execute as @e[type=marker,tag=zarzahn_rocket] run function rauch:game/ability/zarzahn/q/projectile
 execute as @e[type=marker,tag=bolt_blast] run function rauch:game/ability/bolt/r/projectile
 execute as @e[type=marker,tag=wok_bow] at @s run function rauch:game/ability/wokkaman/sr/projectile
 execute as @e[type=marker,tag=wok_hook] at @s run function rauch:game/ability/wokkaman/r/projectile
