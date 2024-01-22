@@ -65,6 +65,7 @@ scoreboard objectives remove projectileRNum
 scoreboard objectives remove push_levitation_timer
 scoreboard objectives remove raucherdmg
 scoreboard objectives remove raucherdmg_num
+scoreboard objectives remove raucher_spider_despawn_timer
 scoreboard objectives remove respawn
 scoreboard objectives remove slime_despawn_timer
 scoreboard objectives remove stats_g_damage_d

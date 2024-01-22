@@ -65,6 +65,7 @@ scoreboard objectives add projectileRNum dummy
 scoreboard objectives add push_levitation_timer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add raucherdmg dummy
 scoreboard objectives add raucherdmg_num dummy
+scoreboard objectives add raucher_spider_despawn_timer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add respawn dummy
 scoreboard objectives add slime_despawn_timer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add stats_g_damage_d minecraft.custom:minecraft.damage_dealt

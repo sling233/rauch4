@@ -6,7 +6,8 @@ playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 1 1
 tag @s add temp
 execute at @s[tag=blu] as @a[team=Red,tag=game,tag=!dead,distance=..3.1] run function rauch:game/ability/bolt/r/hit
 execute at @s[tag=red] as @a[team=Blue,tag=game,tag=!dead,distance=..3.1] run function rauch:game/ability/bolt/r/hit
-execute as @a[tag=temp] run effect give @s minecraft:instant_damage 1 2 true
+execute at @s[tag=red] as @e[team=Blue,tag=rauch_damagable,distance=..3.1] run damage @s 4
+execute at @s[tag=blu] as @e[team=Red,tag=rauch_damagable,distance=..3.1] run damage @s 4
 #particle minecraft:cloud ~ ~ ~ 0.1 0.1 0.1 0.4 700 force
 tag @s remove temp
 tag @s add hit

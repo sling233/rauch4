@@ -1,9 +1,29 @@
-scoreboard players operation @s cool1 = @s cool1_target
-execute at @s[team=Red] run summon marker ~ ~ ~ {Tags:["projectile","raucher_rocket","setup","red"]}
-execute at @s[team=Blue] run summon marker ~ ~ ~ {Tags:["projectile","raucher_rocket","setup","blu"]}
-execute at @s rotated as @s run tp @e[type=marker,tag=setup,tag=raucher_rocket] ~ ~1.6 ~ ~ ~
-scoreboard players operation @e[type=marker,tag=setup,tag=raucher_rocket,limit=1] pnum = @s pnum
-tag @e[type=marker,tag=setup,tag=raucher_rocket] remove setup
+execute at @s[team=Red] run summon spider ~ ~0 ~1 {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Red",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+execute at @s[team=Red] run summon spider ~0.707 ~0 ~0.707 {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Red",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+execute at @s[team=Red] run summon spider ~1 ~0 ~ {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Red",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+execute at @s[team=Red] run summon spider ~0.707 ~0 ~-0.707 {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Red",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+execute at @s[team=Red] run summon spider ~ ~0 ~-1 {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Red",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+execute at @s[team=Red] run summon spider ~-0.707 ~0 ~-0.707 {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Red",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+execute at @s[team=Red] run summon spider ~-1 ~0 ~ {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Red",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+execute at @s[team=Red] run summon spider ~-0.707 ~0 ~0.707 {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Red",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+
+execute at @s[team=Blue] run summon spider ~ ~0 ~1 {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Blue",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+execute at @s[team=Blue] run summon spider ~0.707 ~0 ~0.707 {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Blue",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+execute at @s[team=Blue] run summon spider ~1 ~0 ~ {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Blue",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+execute at @s[team=Blue] run summon spider ~0.707 ~0 ~-0.707 {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Blue",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+execute at @s[team=Blue] run summon spider ~ ~0 ~-1 {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Blue",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+execute at @s[team=Blue] run summon spider ~-0.707 ~0 ~-0.707 {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Blue",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+execute at @s[team=Blue] run summon spider ~-1 ~0 ~ {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Blue",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+execute at @s[team=Blue] run summon spider ~-0.707 ~0 ~0.707 {Tags:["setup","raucher_spider","rauch_damagable"],Team:"Blue",NoGravity:1b,CustomNameVisible:1b,Health:4f,Attributes:[{Name:generic.follow_range,Base:30},{Name:generic.attack_damage,Base:5},{Name:generic.scale,Base:0.35},{Name:generic.movement_speed,Base:0.3},{Name:generic.knockback_resistance,Base:1}]}
+
+scoreboard players set @s raucher_spider_despawn_timer -180
+scoreboard players operation @e[type=spider,tag=setup,tag=raucher_spider] pnum = @s pnum
+
+function rauch:game/ability/raucher/r/spider_aggro
+
+# should not be necessary
+tag @e[type=spider,tag=setup,tag=raucher_spider] remove setup
+
 execute at @s run playsound minecraft:item.crossbow.shoot master @a
 
 scoreboard players operation @s cool1 = @s cool1_target
