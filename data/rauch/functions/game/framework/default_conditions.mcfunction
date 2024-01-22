@@ -1,6 +1,3 @@
-execute as @a[scores={kit=3}] run scoreboard players set @s projectileRNum 2
-execute as @a[scores={kit=3}] run scoreboard players set @s projectileRMax 2
-
 execute as @a[scores={kit=1}] run scoreboard players set @s cool1_target 200
 execute as @a[scores={kit=1}] run scoreboard players set @s cool2_target 500
 execute as @a[scores={kit=1}] run scoreboard players set @s cool3_target 320
@@ -11,7 +8,9 @@ execute as @a[scores={kit=2}] run scoreboard players set @s cool3_target 600
 
 execute as @a[scores={kit=3}] run scoreboard players set @s cool1_target 300
 execute as @a[scores={kit=3}] run scoreboard players set @s cool2_target 400
-execute as @a[scores={kit=3}] run scoreboard players set @s cool3_target 200
+execute as @a[scores={kit=3}] run scoreboard players set @s cool3_target 140
+execute as @a[scores={kit=3}] run scoreboard players set @s projectileRNum 3
+execute as @a[scores={kit=3}] run scoreboard players set @s projectileRMax 3
 
 execute as @a[scores={kit=4}] run scoreboard players set @s cool1_target 460
 execute as @a[scores={kit=4}] run scoreboard players set @s cool2_target 380
@@ -36,5 +35,5 @@ execute as @a[scores={kit=8}] run scoreboard players set @s cool3_target 280
 execute as @a[scores={kit=8}] run scoreboard players set @s elytra_cooldown 80
 
 execute as @a[scores={kit=9}] run scoreboard players set @s cool1_target 10
-execute as @a[scores={kit=9}] run scoreboard players set @s cool2_target 10
+execute as @a[scores={kit=9}] run scoreboard players set @s cool2_target 200
 execute as @a[scores={kit=9}] run scoreboard players set @s cool3_target 10
