@@ -41,4 +41,5 @@ attribute @s[scores={kit=3}] minecraft:player.entity_interaction_range base set 
 attribute @s[scores={kit=6}] minecraft:player.entity_interaction_range base set 2
 attribute @s[scores={kit=7}] minecraft:player.entity_interaction_range base set 2.5
 #attribute @s[scores={kit=8}] minecraft:player.entity_interaction_range base set 3
-attribute @s[scores={kit=9}] minecraft:player.entity_interaction_range base set 3.5
+attribute @s[scores={kit=9}] minecraft:player.entity_interaction_range base set 3.6
+attribute @s[scores={kit=9}] minecraft:generic.scale base set 1.1
