@@ -19,10 +19,10 @@ $item replace entity @s hotbar.8 with written_book{title:"Kit Selector / Setting
 {"text":"Buffs damage for a teammate by 50% for 5 seconds (look at them and press Q)\\n\\n"},{"text":"F: ","color":"gold"},\
 {"text":"Spawns 8 spiders, that attack enemies in a 30 block radius. The Spiders select targets evenly. They die in one hit or after 9 seconds."}]}},{"text":"]\\n[","color":"dark_gray"},\
 {"text":"Hacker","color":"$(hacker)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 4"},"hoverEvent":{"action":"show_text","contents":\
-[{"text":"Name: ","color":"gray"},{"text":"Hacker\\n","color":"#00FF00"},{"text":"Type: ","color":"gray"},{"text":"Support\\n","color":"#29CC29"},\
-{"text":"Stats:  "},{"text":"❤15  ","color":"#3D993D"},{"text":"⚔1.1  ","color":"gray"},{"text":"Range: 3\\n\\n","color":"#F99E4C"},{"text":"R: ","color":"gold"},\
-{"text":"Shoots a projectile that increases received damage by 20% for enemies for 12 seconds.\\n\\n"},{"text":"Q: ","color":"gold"},\
-{"text":"Throws a Hacking-Bomb. After landing, it hacks enemies in range for 10 seconds. Hacked players cannot use their abilities.\\n\\n"},{"text":"F: ","color":"gold"},\
+[{"text":"Name: ","color":"gray"},{"text":"Hacker\\n","color":"#FF0000"},{"text":"Type: ","color":"gray"},{"text":"Support\\n","color":"#FFBF00"},\
+{"text":"Stats:  "},{"text":"❤15  ","color":"#7FFF00"},{"text":"⚔1.1  ","color":"#00FF3F"},{"text":"Range: 3\\n\\n","color":"#00FFFF"},{"text":"R: ","color":"#003FFF"},\
+{"text":"Shoots a projectile that increases received damage by 20% for enemies for 12 seconds.\\n\\n"},{"text":"Q: ","color":"#7F00FF"},\
+{"text":"Throws a Hacking-Bomb. After landing, it hacks enemies in range for 10 seconds. Hacked players cannot use their abilities.\\n\\n"},{"text":"F: ","color":"#FF00BF"},\
 {"text":"Reduces all ability cooldowns for teammates in range (cone-shape in front of you) by 15 seconds. Instead of having a cooldown, this ability is charge-based. You get a charge if a player debuffed (R) or hacked (Q) by you dies. You spawn with 1 charge at the start of the game, but dying doesn\'t affect your charges."}]}},{"text":"]\\n[","color":"dark_gray"},\
 {"text":"Wark","color":"$(wark)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 5"},"hoverEvent":{"action":"show_text","contents":\
 [{"text":"Name: ","color":"gray"},{"text":"Wark\\n","color":"gold"},{"text":"Type: ","color":"gray"},{"text":"Fighter\\n","color":"red"},\
