@@ -1,6 +1,7 @@
 execute as @s[scores={kit=1,cool1=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/bolt/r
 execute as @s[scores={kit=2,cool1=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/zarzahn/r
-execute as @s[scores={kit=3,cool1=0},predicate=rauch:skill] run function rauch:game/ability/raucher/r
+execute as @s[scores={kit=3,projectileRNum=1..},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/raucher/r
+execute as @s[scores={kit=3,projectileRNum=1..},predicate=rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/raucher/sr
 execute as @s[scores={kit=4,cool1=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/hacker/r
 execute as @s[scores={kit=5,cool1=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wark/r
 execute as @s[scores={kit=5,cool1=0},predicate=rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wark/sr

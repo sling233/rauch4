@@ -6,9 +6,9 @@ execute as @a[scores={kit=2}] run scoreboard players set @s cool1_target 300
 execute as @a[scores={kit=2}] run scoreboard players set @s cool2_target 380
 execute as @a[scores={kit=2}] run scoreboard players set @s cool3_target 600
 
-execute as @a[scores={kit=3}] run scoreboard players set @s cool1_target 300
+execute as @a[scores={kit=3}] run scoreboard players set @s cool1_target 160
 execute as @a[scores={kit=3}] run scoreboard players set @s cool2_target 400
-execute as @a[scores={kit=3}] run scoreboard players set @s cool3_target 140
+execute as @a[scores={kit=3}] run scoreboard players set @s cool3_target 300
 execute as @a[scores={kit=3}] run scoreboard players set @s projectileRNum 3
 execute as @a[scores={kit=3}] run scoreboard players set @s projectileRMax 3
 
