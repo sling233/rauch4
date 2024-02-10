@@ -1,5 +1,5 @@
 # set lobby data
-data merge storage lobby_data {version:1,spawn_location:[],position:[]}
+data merge storage lobby_data {version:2,spawn_location:[],position:[]}
 # remember to change the versiob in lobby_check as well
 
 execute at @s align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["lobbysetup","spawn"]}
