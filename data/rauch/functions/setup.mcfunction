@@ -17,14 +17,17 @@ scoreboard objectives add cool1 dummy
 scoreboard objectives add cool1_s dummy
 scoreboard objectives add cool1_ds dummy
 scoreboard objectives add cool1_target dummy
+scoreboard objectives add cool1_respawn dummy
 scoreboard objectives add cool2 dummy
 scoreboard objectives add cool2_s dummy
 scoreboard objectives add cool2_ds dummy
 scoreboard objectives add cool2_target dummy
+scoreboard objectives add cool2_respawn dummy
 scoreboard objectives add cool3 dummy
 scoreboard objectives add cool3_s dummy
 scoreboard objectives add cool3_ds dummy
 scoreboard objectives add cool3_target dummy
+scoreboard objectives add cool3_respawn dummy
 scoreboard objectives add damage_dealt minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add death minecraft.custom:minecraft.deaths
@@ -62,6 +65,7 @@ scoreboard objectives add plcount dummy
 scoreboard objectives add pnum dummy
 scoreboard objectives add projectileRMax dummy
 scoreboard objectives add projectileRNum dummy
+scoreboard objectives add projectileRNumRespawn dummy
 scoreboard objectives add push_levitation_timer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add raucherdmg dummy
 scoreboard objectives add raucherdmg_num dummy

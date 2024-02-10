@@ -17,14 +17,17 @@ scoreboard objectives remove cool1
 scoreboard objectives remove cool1_s
 scoreboard objectives remove cool1_ds
 scoreboard objectives remove cool1_target
+scoreboard objectives remove cool1_respawn
 scoreboard objectives remove cool2
 scoreboard objectives remove cool2_s
 scoreboard objectives remove cool2_ds
 scoreboard objectives remove cool2_target
+scoreboard objectives remove cool2_respawn
 scoreboard objectives remove cool3
 scoreboard objectives remove cool3_s
 scoreboard objectives remove cool3_ds
 scoreboard objectives remove cool3_target
+scoreboard objectives remove cool3_respawn
 scoreboard objectives remove damage_dealt
 scoreboard objectives remove damage_taken
 scoreboard objectives remove death
@@ -62,6 +65,7 @@ scoreboard objectives remove plcount
 scoreboard objectives remove pnum
 scoreboard objectives remove projectileRMax
 scoreboard objectives remove projectileRNum
+scoreboard objectives remove projectileRNumRespawn
 scoreboard objectives remove push_levitation_timer
 scoreboard objectives remove raucherdmg
 scoreboard objectives remove raucherdmg_num

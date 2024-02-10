@@ -26,11 +26,11 @@ scoreboard players reset @s tank_resistance_num
 scoreboard players reset @s tele2
 scoreboard players reset @s teleweak
 scoreboard players reset @s zarzahn_f
-scoreboard players set @s cool1 1
-scoreboard players set @s cool2 1
-scoreboard players set @s cool3 1
+# scoreboard players set @s cool1 1
+# scoreboard players set @s cool2 1
+# scoreboard players set @s cool3 1
 scoreboard players set @s armor_target 20
-execute as @s[scores={kit=3}] run scoreboard players operation @s projectileRNum = @s projectileRMax
+# execute as @s[scores={kit=3}] run scoreboard players operation @s projectileRNum = @s projectileRMax
 execute as @s[scores={kit=1}] run function rauch:game/ability/bolt/q/clear_hit_list
 #execute as @s[scores={kit=4}] run function rauch:game/ability/hacker/r/clear_my_tag_list
 #execute as @s[scores={kit=4}] run function rauch:game/ability/hacker/q/clear_my_tag_list
