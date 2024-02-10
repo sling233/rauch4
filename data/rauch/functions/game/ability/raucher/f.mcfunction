@@ -21,7 +21,6 @@ scoreboard players operation @e[type=spider,tag=setup,tag=raucher_spider] pnum =
 
 function rauch:game/ability/raucher/f/spider_aggro
 
-# should not be necessary
 tag @e[type=spider,tag=setup,tag=raucher_spider] remove setup
 
 execute at @s run playsound minecraft:item.crossbow.shoot master @a
