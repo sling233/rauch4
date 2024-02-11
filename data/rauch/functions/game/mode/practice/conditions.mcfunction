@@ -31,8 +31,11 @@ execute as @a[scores={kit=7}] run scoreboard players set @s cool1_target 10
 execute as @a[scores={kit=7}] run scoreboard players set @s cool2_target 10
 execute as @a[scores={kit=7}] run scoreboard players set @s cool3_target 10
 
-
 execute as @a[scores={kit=8}] run scoreboard players set @s cool1_target 10
 execute as @a[scores={kit=8}] run scoreboard players set @s cool2_target 10
 execute as @a[scores={kit=8}] run scoreboard players set @s cool3_target 10
 execute as @a[scores={kit=8}] run scoreboard players set @s elytra_cooldown 10
+
+execute as @a[scores={kit=9}] run scoreboard players set @s cool1_target 10
+execute as @a[scores={kit=9}] run scoreboard players set @s cool2_target 10
+execute as @a[scores={kit=9}] run scoreboard players set @s cool3_target 10
