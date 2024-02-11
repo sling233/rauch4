@@ -30,7 +30,7 @@ item replace entity @s[scores={kit=8}] armor.chest with elytra{Damage:432,displa
 execute as @s[scores={kit=8}] unless score @s elytra matches 1.. unless score @s hack matches 1.. run item replace entity @s armor.chest with elytra{display:{Name:'{"text":"Cool Elytra","color":"aqua"}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
 #wokkaman
 item replace entity @s[scores={kit=9}] armor.legs with golden_leggings{display:{Name:'{"text":"Ninjahose","color":"light_purple","italic":false}'},HideFlags:255,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s},{id:"minecraft:swift_sneak",lvl:5s}]} 1
-item replace entity @s[scores={kit=9}] armor.chest with elytra{display:{Name:'{"text":"Cooler Elytra","color":"light_purple","italic":false}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
+item replace entity @s[scores={kit=9}] armor.chest with elytra{display:{Name:'{"text":"Fliegflügel","color":"light_purple","italic":false}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
 item replace entity @s[scores={kit=9}] armor.feet with leather_boots{display:{Name:'{"text":"Schnellschuhe","color":"light_purple","italic":false}',color:3678989},HideFlags:197,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]} 1
 
 # head
