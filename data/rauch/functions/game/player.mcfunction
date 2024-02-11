@@ -27,6 +27,7 @@ execute as @s[scores={tank_resistance=0..}] run function rauch:game/ability/tank
 execute as @s[scores={wark_startup=0..}] run function rauch:game/ability/wark/r/startup
 execute as @s[scores={wark_detect=0..}] run function rauch:game/ability/wark/r/trapped_player
 execute as @s[scores={wokkaman_debuff=0..}] run function rauch:game/ability/wokkaman/q/scale_debuff
+execute as @s[tag=wok_stepped_on] run function rauch:game/ability/wokkaman/sq/stepped_on
 
 execute as @s[scores={stun=0..}] run function rauch:game/mechanics/stun
 execute at @s[scores={damage_taken=0..}] run function rauch:game/ui/damage_taken

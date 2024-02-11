@@ -42,6 +42,7 @@ scoreboard objectives add game_id dummy
 scoreboard objectives add game_running dummy
 scoreboard objectives add gameend dummy
 scoreboard objectives add gamestart dummy
+scoreboard objectives add global dummy
 scoreboard objectives add hack dummy
 scoreboard objectives add hack_tag_timer dummy
 scoreboard objectives add hacker_ability dummy
@@ -84,6 +85,7 @@ scoreboard objectives add tank_resistance dummy
 scoreboard objectives add tank_resistance_num dummy
 scoreboard objectives add tele2 dummy
 scoreboard objectives add teleweak dummy
+scoreboard objectives add temp dummy
 scoreboard objectives add version dummy
 scoreboard objectives add walk minecraft.custom:minecraft.walk_one_cm
 scoreboard objectives add wark_buff dummy
@@ -135,6 +137,20 @@ scoreboard objectives add wok_time dummy
 scoreboard objectives add wok_hover_schedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add wok_push_timer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add wokkaman_debuff dummy
+#constants
+scoreboard players set 0 global 0
+scoreboard players set 1 global 1
+scoreboard players set 2 global 2
+scoreboard players set 3 global 3
+scoreboard players set 9 global 9
+scoreboard players set 10 global 10
+scoreboard players set 11 global 11
+scoreboard players set 12 global 12
+scoreboard players set 14 global 14
+scoreboard players set 15 global 15
+scoreboard players set 20 global 20
+scoreboard players set 28 global 28
+scoreboard players set 500 global 500
 
 # setup stuff
 execute unless entity @a[tag=admin] unless data storage lobby_data position run give @p minecraft:squid_spawn_egg{display:{Name:'{"text":"Lobby Spawn","color":"blue","italic":false}'},EntityTag:{Tags:["main"]}} 1

@@ -42,6 +42,7 @@ scoreboard objectives remove game_id
 scoreboard objectives remove game_running
 scoreboard objectives remove gameend
 scoreboard objectives remove gamestart
+scoreboard objectives remove global
 scoreboard objectives remove hack
 scoreboard objectives remove hack_tag_timer
 scoreboard objectives remove hacker_ability
@@ -84,6 +85,7 @@ scoreboard objectives remove tank_resistance
 scoreboard objectives remove tank_resistance_num
 scoreboard objectives remove tele2
 scoreboard objectives remove teleweak
+scoreboard objectives remove temp
 scoreboard objectives remove version
 scoreboard objectives remove walk
 scoreboard objectives remove wark_buff

@@ -60,6 +60,7 @@ tag @s remove flyer_q_ground
 tag @s remove flagPickedUp
 tag @s remove wokkaman
 tag @s remove wok_f_air
+tag @s remove wok_stomp_search
 effect clear @s
 team leave @s
 #clear @s
