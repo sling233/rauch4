@@ -1,3 +1,3 @@
-effect give @s minecraft:levitation 1 5 true
+effect give @s minecraft:levitation 1 0 true
 #execute at @s run playsound minecraft:item.trident.riptide_3 master @s ~ ~ ~
-scoreboard players set @s flyerFSchedule -5
+scoreboard players set @s flyerFSchedule -10

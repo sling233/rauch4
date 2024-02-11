@@ -1,4 +1,5 @@
-effect give @s minecraft:levitation 2 255 true
+attribute @s minecraft:generic.gravity base set 0
+effect give @s minecraft:levitation 3 0 true
 scoreboard players set @s wok_hover_schedule -30
 execute at @s run playsound minecraft:block.enchantment_table.use master @a
 tag @s remove wok_f_air
