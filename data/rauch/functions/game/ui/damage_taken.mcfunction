@@ -1,5 +1,5 @@
-execute as @s[scores={damage_taken=..7}] run data merge storage temp {color:"aqua"}
-execute as @s[scores={damage_taken=8..16}] run data merge storage temp {color:"white"}
+execute as @s[scores={damage_taken=..7}] run data merge storage temp {color:"white"}
+execute as @s[scores={damage_taken=8..16}] run data merge storage temp {color:"aqua"}
 execute as @s[scores={damage_taken=17..29}] run data merge storage temp {color:"yellow"}
 execute as @s[scores={damage_taken=30..39}] run data merge storage temp {color:"gold"}
 execute as @s[scores={damage_taken=40..49}] run data merge storage temp {color:"red"}
