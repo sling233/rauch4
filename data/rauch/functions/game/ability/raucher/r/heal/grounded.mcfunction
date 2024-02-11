@@ -3,8 +3,9 @@ scoreboard players add @s click 1
 scoreboard objectives add 15 dummy
 scoreboard players set Global 15 15
 scoreboard objectives add mod15 dummy
-scoreboard players operation Global mod15 = @s click
+execute store result score Global mod15 run time query gametime
 scoreboard players operation Global mod15 %= Global 15
+
 execute if score Global mod15 matches 0 at @s[tag=red] as @a[team=Red,tag=game,tag=!dead,distance=..3.1] unless score @s kit matches 3 run execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0,Duration:6,Age:4,effects:[{id:"minecraft:regeneration",amplifier:127b,duration:1,show_particles:0b}]}
 execute if score Global mod15 matches 0 at @s[tag=blu] as @a[team=Blue,tag=game,tag=!dead,distance=..3.1] unless score @s kit matches 3 run execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0,Duration:6,Age:4,effects:[{id:"minecraft:regeneration",amplifier:127b,duration:1,show_particles:0b}]}
 scoreboard objectives remove mod15
