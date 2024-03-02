@@ -1,4 +1,4 @@
-data modify storage map_data maps[0].name set from entity @s Inventory[{Slot:0b}].tag.pages[0]
+data modify storage map_data maps[0].name set from entity @s Inventory[{Slot:0b}].components."minecraft:written_book_content".pages[0]
 
 scoreboard objectives add t_map_particle dummy
 scoreboard objectives add t_map_time dummy

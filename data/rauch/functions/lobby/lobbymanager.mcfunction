@@ -1,3 +1,4 @@
+# ugly code
 #ausgangsbedingungen werden gelesen
 execute as @s[scores={kit=1..9}] run tag @s add kit
 execute if data storage map_data active run tag @s add map

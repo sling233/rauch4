@@ -1,4 +1,4 @@
-$item replace entity @s hotbar.8 with written_book{title:"Kit Selector / Settings",author:"The Pog Man",pages:['\
+$item replace entity @s hotbar.8 with written_book[written_book_content={title:"Kit Selector/Settings",author:"The Pog Man",pages:[{text:'\
 [{"text":"           "},{"text":"Kits\\n\\n","bold":true},{"text":"[","color":"dark_gray"},\
 {"text":"Bolt","color":"$(bolt)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 1"},"hoverEvent":{"action":"show_text","contents":\
 [{"text":"Name: ","color":"gray"},{"text":"Bolt\\n","color":"#4AF6F0"},{"text":"Type: ","color":"gray"},{"text":"Fighter\\n","color":"#247774"},\
@@ -47,10 +47,10 @@ $item replace entity @s hotbar.8 with written_book{title:"Kit Selector / Setting
 {"text":"❤13  ","color":"#F20089"},{"text":"⚔1.1  ","color":"#EB8842"},{"text":"Range: 3\\n\\n","color":"#FFBF47"},{"text":"R: ","color":"#FFBF47"},\
 {"text":"A Boost in momentum forwards. Way more useful in the air\\n\\n"},{"text":"Q: ","color":"#FFBF47"},\
 {"text":"When grounded, you rise in the air. If you already are in the air you simply stall for a bit. After a short while you slam into the ground, dealing 4.8❤ and stunning everyone in range for 3 seconds.\\n\\n"},{"text":"F: ","color":"#FFBF47"},\
-{"text":"A Boost upwards. In general, you have an elytra. When exceeding a certain speed while flying, your melee attacks get buffed to 4.6❤ (with a crit, that would be 6.9❤) until you touch the ground"}]}},{"text":"]","color":"dark_gray"}]','\
+{"text":"A Boost upwards. In general, you have an elytra. When exceeding a certain speed while flying, your melee attacks get buffed to 4.6❤ (with a crit, that would be 6.9❤) until you touch the ground"}]}},{"text":"]","color":"dark_gray"}]'},{text:'\
 [{"text":"   "},{"text":"Other Settings\\n\\n\\n","bold":true},\
 {"text":"Ambient Particles:\\n","hoverEvent":{"action":"show_text","contents":[{"text":"Turns Ambient Particles On/Off. Some Maps may not have Ambient Particles. This can help a bit with performance problems.","color":"white"}]}},\
 {"text":" [","color":"dark_gray"},{"text":"Off","color":"$(not_ambient)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 100"}},{"text":"]      [","color":"dark_gray"},{"text":"On","color":"$(ambient)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 101"}},{"text":"]\\n\\n","color":"dark_gray"},\
 {"text":"Particle Density:\\n","hoverEvent":{"action":"show_text","contents":[{"text":"Changes how many particles are rendered for certain effects. Setting this to \\"Low\\" can help a bit with performance.","color":"white"}]}},\
-{"text":" [","color":"dark_gray"},{"text":"Low","color":"$(not_density)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 103"}},{"text":"]     [","color":"dark_gray"},{"text":"High","color":"$(density)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 104"}},{"text":"]\\n\\n","color":"dark_gray"}]'],\
-display:{Name:'{"text":"Kit Selector/Settings","color":"yellow","italic":false}'}} 1
+{"text":" [","color":"dark_gray"},{"text":"Low","color":"$(not_density)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 103"}},{"text":"]     [","color":"dark_gray"},{"text":"High","color":"$(density)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 104"}},{"text":"]\\n\\n","color":"dark_gray"}]'}]},\
+custom_name='{"text":"Kit Selector/Settings","color":"yellow","italic":false}'] 1

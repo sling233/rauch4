@@ -25,6 +25,6 @@ execute as @s[scores={adminsetting=1..5}] if score Global mode matches 4 run tel
 
 
 scoreboard players reset @s adminsetting
-function rauch:lobby/ui/giveadminbook
+clear @a minecraft:written_book[custom_name='{"color":"yellow","italic":false,"text":"Settings"}']
 
 execute at @s run playsound minecraft:block.tripwire.click_off master @s ~ ~ ~ 1

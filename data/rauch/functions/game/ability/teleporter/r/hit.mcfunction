@@ -14,7 +14,7 @@ tag @a[tag=tele] remove tele
 
 execute at @s positioned ^ ^ ^-2 run playsound minecraft:entity.enderman.teleport master @a
 
-attribute @s minecraft:generic.attack_damage modifier add 0-0-0-0-1 "teleweak" -0.4 multiply_base
+attribute @s minecraft:generic.attack_damage modifier add 0-0-0-0-1 "teleweak" -0.4 add_multiplied_total
 scoreboard players set @s teleweak 60
 effect give @s slowness 3 1 true
 effect give @s unluck 3 1
