@@ -13,7 +13,7 @@ data remove storage game_data hacker_q_tag
 data remove storage game_data wok_bow_tag
 
 # set wokkaman kit
-execute as @a[tag=queue,team=Red] run scoreboard players set @s kit 9
+execute if score Global mode matches 5 as @a[tag=queue,team=Red] run scoreboard players set @s kit 9
 # player ids und setup und so
 scoreboard players reset Global pnum
 execute as @a[tag=queue,limit=12] run function rauch:game/framework/teamsetup
