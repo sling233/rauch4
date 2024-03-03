@@ -10,5 +10,5 @@ data remove storage temp number
 
 execute at @s run playsound minecraft:entity.evoker.prepare_attack master @a
 execute at @s run playsound minecraft:entity.blaze.hurt master @s
-effect give @s minecraft:water_breathing 5 0 false
+effect give @s minecraft:dolphins_grace 5 0 false
 scoreboard players set @s raucherdmg 100
