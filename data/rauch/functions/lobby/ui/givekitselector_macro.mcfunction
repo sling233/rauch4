@@ -10,7 +10,7 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 [{"text":"Name: ","color":"gray"},{"text":"Zarzahn\\n","color":"#00EE00"},{"text":"Type: ","color":"gray"},{"text":"Fighter","color":"#3D773D"},{"text":" / ","color":"gray"},{"text":"Support\\n","color":"#3D773D"},\
 {"text":"Stats:  "},{"text":"❤16  ","color":"#3D993D"},{"text":"⚔1.2  ","color":"#29CC29"},{"text":"Range: 3\\n\\n","color":"#00EE00"},{"text":"R: ","color":"#00EE00"},\
 {"text":"You shoot out a hook that pulls enemies towards you. Once they arrive, they are stunned for 0.75 seconds, however some classes can escape by dashing out as they are pulled\\n\\n"},{"text":"Q: ","color":"#00EE00"},\
-{"text":"Enemies around you get pushed away\\n\\n"},{"text":"F: ","color":"#00EE00"},\
+{"text":"Shoots a rocket that knocks players away on explosion.\\n\\n"},{"text":"F: ","color":"#00EE00"},\
 {"text":"When sneaking, you create a Warp Point. The next 10 seconds you have the ability to teleport to that point by pressing F again (without sneaking)"}]}},{"text":"]\\n[","color":"dark_gray"},\
 {"text":"Raucher","color":"$(raucher)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 3"},"hoverEvent":{"action":"show_text","contents":\
 [{"text":"Name: ","color":"gray"},{"text":"Raucher\\n","color":"#FFA54C"},{"text":"Type: ","color":"gray"},{"text":"Support\\n","color":"#C7290A"},\
