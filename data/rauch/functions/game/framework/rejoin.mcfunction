@@ -1,5 +1,6 @@
 scoreboard players reset @s leave
 # check if game has stopped
+
 execute unless score Global game_running matches 1 as @s[tag=game] run function rauch:game/framework/move_player
 execute unless score Global game_running matches 1 as @s[tag=spectator] run function rauch:game/framework/spectate_stop
 

@@ -1,3 +1,4 @@
+# as hooked player
 execute at @s run tp @s ~ ~0 ~
 # if player's feet are in ground
 execute at @s unless block ~ ~ ~ #minecraft:nonsolid if block ~ ~1 ~ #minecraft:nonsolid align y positioned ~ ~1 ~ run tp @s ~ ~ ~
