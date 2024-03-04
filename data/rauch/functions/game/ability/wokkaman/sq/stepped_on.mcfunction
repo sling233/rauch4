@@ -13,6 +13,9 @@ execute store result score .t_mod temp run time query gametime
 scoreboard players operation .t_mod temp %= 3 global
 scoreboard players set .damage temp 3
 execute if score .t_mod temp matches 0 as @a[tag=t_damager] run function rauch:game/mechanics/damage_target_by_self
+execute if score .t_mod temp matches 0 at @s run particle minecraft:firework ~ ~ ~ 0.2 0.2 0.2 0.3 20 force
+execute if score .t_mod temp matches 0 at @s run particle minecraft:cherry_leaves ~ ~1 ~ 0.3 0.3 0.3 1 20 force
+execute if score .t_mod temp matches 0 at @s run particle minecraft:flash ~ ~ ~ 0 0 0 1 1 force
 tag @s remove t_damage_target
 tag @a remove t_damager
 scoreboard players reset .t_mod temp
