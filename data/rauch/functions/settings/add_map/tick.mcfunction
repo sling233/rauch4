@@ -1,4 +1,4 @@
-execute as @s[nbt=!{Inventory:[{id:"minecraft:writable_book",Slot:0b}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:written_book",Slot:0b}]}] run function rauch:settings/add_map/givemapnamer
+execute as @s[nbt=!{Inventory:[{id:"minecraft:writable_book",Slot:0b}]}] run function rauch:settings/add_map/givemapnamer
 execute as @s[nbt=!{Inventory:[{id:"minecraft:writable_book",Slot:1b}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:written_book",Slot:1b}]}] run function rauch:settings/add_map/givevisual
 execute as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:2b}]}] run function rauch:settings/add_map/giveredspawn
 execute as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:3b}]}] run function rauch:settings/add_map/givebluespawn
