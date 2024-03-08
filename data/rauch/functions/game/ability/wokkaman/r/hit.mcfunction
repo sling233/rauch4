@@ -1,5 +1,6 @@
 # as player hit. Global t_pnum has pnum of shooter, marker has tag temp
 # give zarzahn_hooking score to zarzahn
+function rauch:debug/debug {name:"hit"}
 execute at @s as @a if score @s pnum = Global t_pnum run scoreboard players operation @s zarzahn_hooking = @p pnum
 
 execute at @s run playsound minecraft:block.chain.place master @a
