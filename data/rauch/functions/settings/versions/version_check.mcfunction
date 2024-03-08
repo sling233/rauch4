@@ -2,10 +2,11 @@
 scoreboard objectives add this_version dummy
 scoreboard players set Global this_version 601
 
-# if downpatching (this function gets called again as a side effect, click is set to 10 temporarily)
-execute if score Global click matches 10 run return 0
+## if downpatching (this function gets called again as a side effect, click is set to 10 temporarily)
+#execute if score Global click matches 10 run return 0
 
 # if version didn't change, return
+execute if score Global version = Global this_version run tellraw @s [{"text":"Version not changed","color":"yellow"}]
 execute if score Global version = Global this_version run return 0
 
 # if the pack is installed for the first time, return

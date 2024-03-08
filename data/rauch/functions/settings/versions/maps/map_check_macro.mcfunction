@@ -11,9 +11,13 @@ execute store result score Global map_id run data get storage map_data temp.id
 
 # (change version when updating map) -------------------------------------- here
 $execute if score Global map_id matches 1 unless score Global map_ver matches 1 run tellraw @a [{"text":"An Update is available for map Splat. Click ","color":"yellow"},{"text":"here","clickEvent":{"action":"run_command","value":"/function rauch:settings/spawn_map/splat/update {index:$(index)}"},"italic":true},{"text":" to update."}]
+$execute if score Global map_id matches 1 unless score Global map_ver matches 1 run scoreboard players set #t_map_update_found global 1
 $execute if score Global map_id matches 2 unless score Global map_ver matches 1 run tellraw @a [{"text":"An Update is available for map Ancient. Click ","color":"yellow"},{"text":"here","clickEvent":{"action":"run_command","value":"/function rauch:settings/spawn_map/ancient/update {index:$(index)}"},"italic":true},{"text":" to update."}]
+$execute if score Global map_id matches 2 unless score Global map_ver matches 1 run scoreboard players set #t_map_update_found global 1
 $execute if score Global map_id matches 3 unless score Global map_ver matches 1 run tellraw @a [{"text":"An Update is available for map Greck. Click ","color":"yellow"},{"text":"here","clickEvent":{"action":"run_command","value":"/function rauch:settings/spawn_map/greck/update {index:$(index)}"},"italic":true},{"text":" to update."}]
+$execute if score Global map_id matches 3 unless score Global map_ver matches 1 run scoreboard players set #t_map_update_found global 1
 $execute if score Global map_id matches 4 unless score Global map_ver matches 2 run tellraw @a [{"text":"An Update is available for map Mork. Click ","color":"yellow"},{"text":"here","clickEvent":{"action":"run_command","value":"/function rauch:settings/spawn_map/mork/update {index:$(index)}"},"italic":true},{"text":" to update."}]
+$execute if score Global map_id matches 4 unless score Global map_ver matches 2 run scoreboard players set #t_map_update_found global 1
 
 
 scoreboard objectives remove map_ver

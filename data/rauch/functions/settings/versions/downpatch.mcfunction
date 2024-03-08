@@ -9,7 +9,7 @@ tellraw @a [{"text":"- Downpatching may lead to the existance of unnecessary sco
 scoreboard objectives add click_temp dummy
 scoreboard players operation Global click_temp = Global click
 
-# remove scores (avoids bugs due to objectives chaning type over version)
+# remove scores (avoids bugs due to objectives changing type over version)
 function rauch:settings/removeobj
 # avoid reload message from showing a second time
 scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
