@@ -36,4 +36,5 @@ scoreboard objectives remove t_map_time
 tag @s remove addmap
 clear @s
 scoreboard players reset @s click
+scoreboard players reset Global mapParticle
 tag @s add lobby

@@ -35,6 +35,7 @@ execute at @s[scores={damage_taken=0..}] run function rauch:game/ui/damage_taken
 #function rauch:game/mechanics/dmg_queue/try_damage
 
 #stuff
+execute unless score @s hide_ambient_particles matches 1 run function rauch:game/ui/particle
 #execute as @s[tag=spawn] run function rauch:game/shop/shop
 
 #scores & effects

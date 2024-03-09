@@ -60,7 +60,7 @@ scoreboard objectives remove mapParticle
 scoreboard objectives remove map_setting
 scoreboard objectives remove maxClouds
 scoreboard objectives remove mode
-scoreboard objectives remove particle_ambient
+scoreboard objectives remove hide_ambient_particles
 scoreboard objectives remove particleDensity
 scoreboard objectives remove plcount
 scoreboard objectives remove pnum

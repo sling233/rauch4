@@ -7,7 +7,6 @@ execute as @a[tag=game] run function rauch:game/mechanics/cooldowns
 execute as @a[tag=game] run function rauch:game/ui/actionbar/cool_display
 execute as @a[tag=spectator] run function rauch:game/framework/spectator
 
-function rauch:game/ui/particle
 
 #projektile
 execute as @e[type=marker,tag=raucher_rocket] run function rauch:game/ability/raucher/f/projectile

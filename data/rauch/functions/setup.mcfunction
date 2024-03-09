@@ -60,7 +60,7 @@ scoreboard objectives add mapParticle dummy
 scoreboard objectives add map_setting trigger
 scoreboard objectives add maxClouds dummy
 scoreboard objectives add mode dummy
-scoreboard objectives add particle_ambient dummy
+scoreboard objectives add hide_ambient_particles dummy
 scoreboard objectives add particleDensity dummy
 scoreboard objectives add plcount dummy
 scoreboard objectives add pnum dummy

@@ -1,5 +1,5 @@
 # downpatch
-tellraw @a [{"text":"dev6.0.1","color":"light_purple"},{"text":" <- ","color":"red"},{"text":"Future Version (Id: ","color":"aqua"},{"score":{"name":"Global","objective":"version"}},{"text":")","color":"aqua"}]
+tellraw @a [{"text":"dev602","color":"light_purple"},{"text":" <- ","color":"red"},{"text":"Future Version (Id: ","color":"aqua"},{"score":{"name":"Global","objective":"version"}},{"text":")","color":"aqua"}]
 tellraw @a [{"text":"- Downpatching may lead to the existance of unnecessary scoreboard objectives, teams and bossbars.\n","color":"yellow"},\
 {"text":"- It is not guaranteed that downpatching will work without bugs, even for version 6.0.0 and higher. Most things should be fine, but if e.g the map data format changes, things would break.\n\
 Know Issues as of this version:\n\

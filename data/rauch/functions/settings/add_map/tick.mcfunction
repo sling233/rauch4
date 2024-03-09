@@ -6,6 +6,7 @@ execute as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:4b}]}] run
 execute as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:7b}]}] run function rauch:settings/add_map/givecanceladdmap
 execute as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:8b}]}] run function rauch:settings/add_map/givefinish
 
+function rauch:game/ui/particle
 
 execute as @s[scores={map_setting=1..}] run function rauch:settings/add_map/setting
 execute as @s[scores={click=1..}] as @s[nbt={SelectedItemSlot:2}] run function rauch:settings/add_map/setred
