@@ -130,6 +130,8 @@ scoreboard objectives remove wok_time
 scoreboard objectives remove wok_hover_schedule
 scoreboard objectives remove wok_push_timer
 scoreboard objectives remove wokkaman_debuff
+scoreboard objectives remove wokkaman_weapon
+scoreboard objectives remove wokkaman_helmet
 
 scoreboard objectives setdisplay below_name
 scoreboard objectives setdisplay list

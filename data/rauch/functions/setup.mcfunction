@@ -137,6 +137,8 @@ scoreboard objectives add wok_time dummy
 scoreboard objectives add wok_hover_schedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add wok_push_timer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add wokkaman_debuff dummy
+scoreboard objectives add wokkaman_weapon dummy
+scoreboard objectives add wokkaman_helmet dummy
 #constants
 scoreboard players set 0 global 0
 scoreboard players set 1 global 1
