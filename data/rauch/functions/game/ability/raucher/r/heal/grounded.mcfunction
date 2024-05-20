@@ -15,23 +15,23 @@ execute at @s[tag=red] as @a[team=Red,tag=game,tag=!dead,distance=..3.1] unless 
 execute at @s[tag=blu] as @a[team=Blue,tag=game,tag=!dead,distance=..3.1] unless score @s kit matches 3 at @s run particle minecraft:happy_villager ~ ~1 ~ 0.2 0.4 0.2 1 1
 
 
-execute at @s[tag=red] run particle minecraft:dust 0.7 0.2 0.2 1 ^ ^0.2 ^3 0.05 0.05 0.05 1 1 force
-execute at @s[tag=blu] run particle minecraft:dust 0.2 0.2 0.7 1 ^ ^0.2 ^3 0.05 0.05 0.05 1 1 force
-execute at @s[tag=red] run particle minecraft:dust 0.7 0.2 0.2 1 ^ ^0.2 ^-3 0.05 0.05 0.05 1 1 force
-execute at @s[tag=blu] run particle minecraft:dust 0.2 0.2 0.7 1 ^ ^0.2 ^-3 0.05 0.05 0.05 1 1 force
-execute at @s[tag=red] run particle minecraft:dust 0.7 0.2 0.2 1 ^3 ^0.2 ^ 0.05 0.05 0.05 1 1 force
-execute at @s[tag=blu] run particle minecraft:dust 0.2 0.2 0.7 1 ^3 ^0.2 ^ 0.05 0.05 0.05 1 1 force
-execute at @s[tag=red] run particle minecraft:dust 0.7 0.2 0.2 1 ^-3 ^0.2 ^ 0.05 0.05 0.05 1 1 force
-execute at @s[tag=blu] run particle minecraft:dust 0.2 0.2 0.7 1 ^-3 ^0.2 ^ 0.05 0.05 0.05 1 1 force
+execute at @s[tag=red] run particle minecraft:dust{color:[0.7,0.2,0.2],scale:1} ^ ^0.2 ^3 0.05 0.05 0.05 1 1 force
+execute at @s[tag=blu] run particle minecraft:dust{color:[0.2,0.2,0.7],scale:1} ^ ^0.2 ^3 0.05 0.05 0.05 1 1 force
+execute at @s[tag=red] run particle minecraft:dust{color:[0.7,0.2,0.2],scale:1} ^ ^0.2 ^-3 0.05 0.05 0.05 1 1 force
+execute at @s[tag=blu] run particle minecraft:dust{color:[0.2,0.2,0.7],scale:1} ^ ^0.2 ^-3 0.05 0.05 0.05 1 1 force
+execute at @s[tag=red] run particle minecraft:dust{color:[0.7,0.2,0.2],scale:1} ^3 ^0.2 ^ 0.05 0.05 0.05 1 1 force
+execute at @s[tag=blu] run particle minecraft:dust{color:[0.2,0.2,0.7],scale:1} ^3 ^0.2 ^ 0.05 0.05 0.05 1 1 force
+execute at @s[tag=red] run particle minecraft:dust{color:[0.7,0.2,0.2],scale:1} ^-3 ^0.2 ^ 0.05 0.05 0.05 1 1 force
+execute at @s[tag=blu] run particle minecraft:dust{color:[0.2,0.2,0.7],scale:1} ^-3 ^0.2 ^ 0.05 0.05 0.05 1 1 force
 
-execute at @s[tag=red] run particle minecraft:dust 0.7 0.2 0.2 1 ^2.12 ^0.2 ^2.12 0.05 0.05 0.05 1 1 force
-execute at @s[tag=blu] run particle minecraft:dust 0.2 0.2 0.7 1 ^2.12 ^0.2 ^2.12 0.05 0.05 0.05 1 1 force
-execute at @s[tag=red] run particle minecraft:dust 0.7 0.2 0.2 1 ^-2.12 ^0.2 ^-2.12 0.05 0.05 0.05 1 1 force
-execute at @s[tag=blu] run particle minecraft:dust 0.2 0.2 0.7 1 ^-2.12 ^0.2 ^-2.12 0.05 0.05 0.05 1 1 force
-execute at @s[tag=red] run particle minecraft:dust 0.7 0.2 0.2 1 ^2.12 ^0.2 ^-2.12 0.05 0.05 0.05 1 1 force
-execute at @s[tag=blu] run particle minecraft:dust 0.2 0.2 0.7 1 ^2.12 ^0.2 ^-2.12 0.05 0.05 0.05 1 1 force
-execute at @s[tag=red] run particle minecraft:dust 0.7 0.2 0.2 1 ^-2.12 ^0.2 ^2.12 0.05 0.05 0.05 1 1 force
-execute at @s[tag=blu] run particle minecraft:dust 0.2 0.2 0.7 1 ^-2.12 ^0.2 ^2.12 0.05 0.05 0.05 1 1 force
+execute at @s[tag=red] run particle minecraft:dust{color:[0.7,0.2,0.2],scale:1} ^2.12 ^0.2 ^2.12 0.05 0.05 0.05 1 1 force
+execute at @s[tag=blu] run particle minecraft:dust{color:[0.2,0.2,0.7],scale:1} ^2.12 ^0.2 ^2.12 0.05 0.05 0.05 1 1 force
+execute at @s[tag=red] run particle minecraft:dust{color:[0.7,0.2,0.2],scale:1} ^-2.12 ^0.2 ^-2.12 0.05 0.05 0.05 1 1 force
+execute at @s[tag=blu] run particle minecraft:dust{color:[0.2,0.2,0.7],scale:1} ^-2.12 ^0.2 ^-2.12 0.05 0.05 0.05 1 1 force
+execute at @s[tag=red] run particle minecraft:dust{color:[0.7,0.2,0.2],scale:1} ^2.12 ^0.2 ^-2.12 0.05 0.05 0.05 1 1 force
+execute at @s[tag=blu] run particle minecraft:dust{color:[0.2,0.2,0.7],scale:1} ^2.12 ^0.2 ^-2.12 0.05 0.05 0.05 1 1 force
+execute at @s[tag=red] run particle minecraft:dust{color:[0.7,0.2,0.2],scale:1} ^-2.12 ^0.2 ^2.12 0.05 0.05 0.05 1 1 force
+execute at @s[tag=blu] run particle minecraft:dust{color:[0.2,0.2,0.7],scale:1} ^-2.12 ^0.2 ^2.12 0.05 0.05 0.05 1 1 force
 
 execute at @s run tp @s ~ ~ ~ ~5 0
 execute as @s[scores={click=160..}] run kill @s
