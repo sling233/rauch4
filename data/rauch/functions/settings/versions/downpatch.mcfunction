@@ -10,20 +10,20 @@ Know Issues as of this version:\n\
 
 
 # save global click (saves if reload message is shown)
-scoreboard objectives add click_temp dummy
-scoreboard players operation Global click_temp = Global click
+#scoreboard objectives add reload_message_disabled_temp dummy
+#scoreboard players operation Global reload_message_disabled_temp = %reload_message_disabled global
 
 # remove scores (avoids bugs due to objectives changing type over version)
 function rauch:settings/removeobj
 # avoid reload message from showing a second time
-scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
-scoreboard players set Global click 10
+#scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
+#scoreboard players set Global click 10
 # re-add scores
 function rauch:setup
 tellraw @a {"text":"Automatically reloaded, re-added everything","color":"green"}
 # set saved values
-scoreboard players operation Global click = Global click_temp
-scoreboard objectives remove click_temp
+#scoreboard players operation %reload_message_disabled global = Global reload_message_disabled_temp
+#scoreboard objectives remove reload_message_disabled_temp
 
 # set new version
 scoreboard players operation Global version = Global this_version
