@@ -66,4 +66,4 @@ execute as @a[scores={kit=9}] run scoreboard players set @s cool1_respawn 10
 execute as @a[scores={kit=9}] run scoreboard players set @s cool2_respawn 10
 execute as @a[scores={kit=9}] run scoreboard players set @s cool3_respawn 10
 
-execute as @a[scores={kit=9}] run give @s firework_rocket{Fireworks:{Flight:0}} 10
+execute as @a[scores={kit=9}] run give @s minecraft:firework_rocket[minecraft:fireworks={flight_duration:0}] 10
