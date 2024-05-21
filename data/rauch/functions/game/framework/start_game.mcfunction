@@ -50,5 +50,9 @@ execute if score Global mode matches 3 run function rauch:game/mode/practice/con
 execute if score Global mode matches 4 run function rauch:game/mode/capture_the_flag/conditions
 execute if score Global mode matches 5 run function rauch:game/mode/wokkaman/conditions
 
+function rauch:game_settings_override
+# respawn deathmatch message, because it needs to react to potential override
+execute if score Global mode matches 2 run tellraw @a[tag=game] [{"text":"[Respawn Deathmatch]: First Team to reach ","color":"yellow"},{"score":{"name":"Global","objective":"rd_kills_to_win"}},{"text":" kills wins!"}]
+
 # elytra bossbar after setup so max is properly set
 function rauch:game/ui/bossbar/elytra/set_max
