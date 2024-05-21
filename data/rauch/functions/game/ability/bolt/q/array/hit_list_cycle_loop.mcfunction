@@ -5,7 +5,7 @@ execute store result score Global comparer run data get storage game_data bolt_h
 
 # don't cancel for loops, so the list is un-altered (one cycle)
 execute if score @s pnum = Global comparer run scoreboard players set Global found 1
-execute if score @s pnum = Global comparer run say found
+# execute if score @s pnum = Global comparer run say found
 
 # cycle list
 data modify storage game_data bolt_hit[0].list append from storage game_data bolt_hit[0].list[0]
