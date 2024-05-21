@@ -1,11 +1,10 @@
-scoreboard objectives add 1000 dummy
-scoreboard players set Global 1000 1000
+scoreboard players set .2000 global 2000
 scoreboard players operation #calc time_red = Global time_red
 scoreboard players operation #calc time_blue = Global time_blue
 
-scoreboard players operation #calc time_red /= Global 1000
-scoreboard players operation #calc time_blue /= Global 1000
-scoreboard objectives remove 1000
+scoreboard players operation #calc time_red /= .2000 global
+scoreboard players operation #calc time_blue /= .2000 global
+scoreboard players reset .2000 global
 
 execute if score Global capture_info matches 1 run bossbar set center_control name [{"score":{"name":"#calc","objective":"time_blue"},"color":"blue"},{"text":"        ","color":"yellow"},{"text":"Red Advantage","color":"red"},{"text":"        "},{"score":{"name":"#calc","objective":"time_red"},"color":"red"}]
 execute if score Global capture_info matches 2 run bossbar set center_control name [{"score":{"name":"#calc","objective":"time_blue"},"color":"blue"},{"text":"             ","color":"yellow"},{"text":"Neutral","color":"yellow"},{"text":"             "},{"score":{"name":"#calc","objective":"time_red"},"color":"red"}]
