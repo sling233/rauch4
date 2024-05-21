@@ -6,6 +6,10 @@ execute at @s run playsound minecraft:block.chain.place master @a
 execute as @a if score @s pnum = Global t_pnum at @s run playsound minecraft:entity.arrow.hit_player master @s
 
 tag @s add wok_hook
+
+# check for invert buffer
+execute if entity @e[type=marker,tag=wok_hook,tag=temp,tag=buffer_invert] run function rauch:game/ability/wokkaman/r/hit_buffered_invert
+
 execute as @e[type=marker,tag=wok_hook,tag=temp] run kill @s
 
 # if vehicle already exists, cancel

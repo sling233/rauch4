@@ -9,6 +9,7 @@ execute as @s[scores={kit=6,cool1=0},predicate=!rauch:sneak,predicate=rauch:skil
 execute as @s[scores={kit=7,tank_damage_taken=80..},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/tank/r
 execute as @s[scores={kit=8,cool1=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/flyer/r
 #wokkaman
+execute at @s[scores={kit=9},predicate=!rauch:sneak,predicate=rauch:skill] as @e[type=marker,tag=wok_hook] if score @s pnum = @p pnum run function rauch:game/ability/wokkaman/r/buffer_hook_invert
 execute as @s[scores={kit=9,cool1=0},predicate=!rauch:sneak,predicate=rauch:skill] unless score @s zarzahn_hooking matches 1.. run function rauch:game/ability/wokkaman/r
 execute as @s[scores={kit=9,zarzahn_hooking=1..},tag=!inverted_hook,predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wokkaman/hr
 execute as @s[scores={kit=9,cool1=0},predicate=rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wokkaman/sr
