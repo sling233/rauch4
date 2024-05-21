@@ -11,7 +11,7 @@ execute at @s as @e[type=boat,tag=wok_boat] if score @s pnum = @p pnum run tp @s
 tag @s add t_damage_target
 execute store result score .t_mod temp run time query gametime
 scoreboard players operation .t_mod temp %= 3 global
-scoreboard players set .damage temp 3
+scoreboard players set .damage temp 4
 execute if score .t_mod temp matches 0 as @a[tag=t_damager] run function rauch:game/mechanics/damage_target_by_self
 execute if score .t_mod temp matches 0 at @s run particle minecraft:firework ~ ~ ~ 0.2 0.2 0.2 0.3 20 force
 execute if score .t_mod temp matches 0 at @s run particle minecraft:cherry_leaves ~ ~1 ~ 0.3 0.3 0.3 1 20 force
