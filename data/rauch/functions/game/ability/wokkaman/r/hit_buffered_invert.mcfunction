@@ -8,5 +8,5 @@ tag @e[type=block_display,tag=wok_vehicle,tag=setup] remove setup
 
 execute as @a if score @s pnum = Global t_pnum run function rauch:game/ability/wokkaman/hr
 # need to do this because in the first frame the player hit is not riding the vehicle yet
-#scoreboard players set @s stun 30
-#function rauch:game/mechanics/stuninit
+scoreboard players set @s stun 30
+function rauch:game/mechanics/stuninit
