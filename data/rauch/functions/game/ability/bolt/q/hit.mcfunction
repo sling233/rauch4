@@ -2,7 +2,7 @@
 
 execute at @s run particle minecraft:bubble_pop ~ ~1 ~ 0.2 0.4 0.1 0 40 force
 execute at @s run particle minecraft:flash ~ ~2 ~ 0 0 0 1 3 force
-execute at @s run summon lightning_bolt ~ ~6 ~
+execute at @s run summon lightning_bolt ~ ~ ~
 
 #damage @s 20 minecraft:falling_anvil by @p
 # check if still targeted by someone
