@@ -1,5 +1,5 @@
 # set lobby data
-data merge storage lobby_data {version:2,spawn_location:[],position:[]}
+data merge storage lobby_data {version:3,spawn_location:[],position:[]}
 # remember to change the versiob in lobby_check as well
 
 execute at @s align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["lobbysetup","spawn"]}
@@ -19,3 +19,7 @@ execute at @s positioned ~48 ~ ~ run place template rauch:lobby100
 execute at @s positioned ~48 ~ ~48 run place template rauch:lobby101
 execute at @s positioned ~48 ~48 ~ run place template rauch:lobby110
 execute at @s positioned ~48 ~48 ~48 run place template rauch:lobby111
+
+# add water and lava for afk pool to stop bugness from happening
+setblock ~2 ~45 ~42 water 
+setblock ~4 ~45 ~44 lava 
