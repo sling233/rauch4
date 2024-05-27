@@ -1,4 +1,4 @@
-execute at @s run summon marker ~ ~ ~ {Tags:["setup","zar_point"]}
+execute at @s run summon marker ~ ~ ~ {Tags:["setup","zar_point","remove_on_death"]}
 #nur zur sicherheit:
 execute at @s as @e[type=marker,tag=zar_point] if score @s pnum = @p pnum run kill @s
 

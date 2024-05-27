@@ -1,15 +1,15 @@
 execute at @s run playsound minecraft:block.conduit.deactivate master @a
-execute at @s[tag=red] run summon marker ~ ~ ~ {Tags:["hacker_bomb","center","setup","red"]}
-execute at @s[tag=blu] run summon marker ~ ~ ~ {Tags:["hacker_bomb","center","setup","blu"]}
+execute at @s[tag=red] run summon marker ~ ~ ~ {Tags:["hacker_bomb","center","setup","red","remove_on_death"]}
+execute at @s[tag=blu] run summon marker ~ ~ ~ {Tags:["hacker_bomb","center","setup","blu","remove_on_death"]}
 scoreboard players operation @e[type=marker,tag=hacker_bomb,tag=setup,limit=1] pnum = @s pnum
-summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind0","setup"]}
-summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind1","setup"]}
-summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind2","setup"]}
-summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind3","setup"]}
-summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind4","setup"]}
-summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind5","setup"]}
-summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind6","setup"]}
-summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind7","setup"]}
+summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind0","setup","remove_on_death"]}
+summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind1","setup","remove_on_death"]}
+summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind2","setup","remove_on_death"]}
+summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind3","setup","remove_on_death"]}
+summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind4","setup","remove_on_death"]}
+summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind5","setup","remove_on_death"]}
+summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind6","setup","remove_on_death"]}
+summon marker ~ ~ ~ {Tags:["hacker_bomb","indicator","ind7","setup","remove_on_death"]}
 
 execute at @s rotated 0 0 run tp @e[type=marker,tag=setup,tag=hacker_bomb,tag=ind0] ~ ~ ~ ~ ~
 execute at @s rotated 45 0 run tp @e[type=marker,tag=setup,tag=hacker_bomb,tag=ind1] ~ ~ ~ ~ ~
