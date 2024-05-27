@@ -3,4 +3,4 @@ tellraw @s [{"text":"-> ","color":"dark_green"},{"nbt":"maps[2].name","storage":
 data remove storage map_data maps[2]
 data remove storage map_data active
 tellraw @s {"text":"----------------------------------","color":"yellow"}
-clear @a minecraft:written_book{title:"Settings"}
+clear @s minecraft:written_book[item_name='{"color":"yellow","text":"Settings"}']

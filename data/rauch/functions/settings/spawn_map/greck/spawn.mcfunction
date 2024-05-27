@@ -8,4 +8,5 @@ execute as @s[tag=temp] run tellraw @s {"text":"Could not automatically setup ma
 execute as @s[tag=!temp] run function rauch:settings/spawn_map/greck/setup
 
 scoreboard objectives remove t_map_count
+clear @s minecraft:written_book[item_name='{"color":"yellow","text":"Settings"}']
 tag @s remove temp

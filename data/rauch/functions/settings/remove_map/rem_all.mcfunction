@@ -5,4 +5,4 @@ tellraw @s [{"text":"-> Removed ","color":"dark_green"},{"score":{"name":"Global
 data remove storage map_data maps
 data remove storage map_data active
 tellraw @s {"text":"----------------------------------","color":"yellow"}
-clear @a minecraft:written_book{title:"Settings"}
+clear @s minecraft:written_book[item_name='{"color":"yellow","text":"Settings"}']
