@@ -1,3 +1,6 @@
+# cancel if not enough damage absorbed
+execute if score @s tank_damage_taken matches ..79 run return run function rauch:game/ability/tank/r/not_enough_damage
+
 execute as @s[scores={tank_damage_taken=201..}] run scoreboard players set @s tank_damage_taken 200
 
 execute at @s[team=Red] positioned ^ ^ ^3.5 as @a[team=Red,tag=game,tag=!dead,distance=..3,limit=1] run tag @s add temp
