@@ -1,4 +1,4 @@
-execute as @s[nbt={Inventory:[{id:"minecraft:writable_book",Slot:0b}]}] if data entity @s Inventory[{Slot:0b}].components."minecraft:writable_book_content".pages run tag @s add name
+execute if data entity @s Inventory[{Slot:0b}].components."minecraft:writable_book_content".pages run tag @s add name
 execute if data storage map_data maps[0].red[0] run tag @s add sr
 execute if data storage map_data maps[0].blue[0] run tag @s add sb
 execute if data storage map_data maps[0].center[0] run tag @s add ce
