@@ -36,7 +36,6 @@ scoreboard players reset @s stats_g_deaths
 scoreboard players reset @s stats_g_kills
 scoreboard players reset @s hack
 scoreboard players reset @s respawn
-scoreboard players reset @s raucher_debuff
 scoreboard players reset @s stun
 scoreboard players reset @s pnum
 scoreboard players reset @s tele2

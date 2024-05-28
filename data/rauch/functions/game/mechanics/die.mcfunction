@@ -47,7 +47,6 @@ function rauch:game/ability/hacker/r/array/check_me
 function rauch:game/ability/hacker/q/array/check_me
 scoreboard objectives remove got_reward
 
-scoreboard players reset @s raucher_debuff
 tag @s remove raucher_control
 tag @s remove wok_stomp_search
 tag @s remove wok_stepped_on
