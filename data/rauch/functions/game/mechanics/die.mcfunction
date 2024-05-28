@@ -6,7 +6,7 @@ tag @s add dead
 scoreboard players set @s respawn 0
 execute if score @s kit matches 1 run function rauch:game/ability/bolt/bolt_die
 execute if score @s kit matches 2 run function rauch:game/ability/zarzahn/zarzahn_die
-#execute if score @s kit matches 3 run function rauch:game/ability/raucher/raucher_die
+execute if score @s kit matches 3 run function rauch:game/ability/raucher/raucher_die
 #execute if score @s kit matches 4 run function rauch:game/ability/hacker/hacker_die
 execute if score @s kit matches 5 run function rauch:game/ability/wark/wark_die
 execute if score @s kit matches 6 run function rauch:game/ability/teleporter/teleporter_die
