@@ -1,6 +1,6 @@
 # $x,$y,$z have the spawn coordinates for the map, $(index) the index
 # map values
-$data modify storage map_data maps[$(index)].version set value 1
+$data modify storage map_data maps[$(index)].version set value 2
 $data modify storage map_data maps[$(index)].particle set value -1
 $data modify storage map_data maps[$(index)].time set value -1
 

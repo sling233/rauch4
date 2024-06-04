@@ -1,7 +1,7 @@
 # $x,$y,$z have the spawn coordinates for the map, $(index) the index
 # map values
-$data modify storage map_data maps[$(index)].version set value 1
-$data modify storage map_data maps[$(index)].particle set value -1
+$data modify storage map_data maps[$(index)].version set value 2
+$data modify storage map_data maps[$(index)].particle set value 2
 $data modify storage map_data maps[$(index)].time set value -1
 
 $execute positioned $(x) $(y) $(z) align xyz run summon marker ~3.5 ~29 ~11.5 {Tags:["mapsetup","red"]}
