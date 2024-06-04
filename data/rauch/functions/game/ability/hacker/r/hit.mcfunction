@@ -7,15 +7,15 @@ effect give @s minecraft:conduit_power 12 0 false
 execute at @s run playsound minecraft:entity.allay.death master @s
 execute as @p at @s run playsound minecraft:entity.arrow.hit_player master @s
 
-# cycles through hacker_r_tag until @s data is in front
-execute as @p run function rauch:game/ability/hacker/r/array/find_me
-
-# check if player was already tagged (if yes found is set to 1)
+tag @s add temp
 scoreboard objectives add found dummy
-function rauch:game/ability/hacker/r/array/find_pnum_check
-execute unless score Global found matches 1 run data modify storage game_data hacker_r_tag[0].list prepend value -1
-execute unless score Global found matches 1 run execute store result storage game_data hacker_r_tag[0].list[0] int 1 run scoreboard players get @s pnum
+execute as @p run function rauch:macros/data_get {storage:"hacker_r_tag"}
+# check if player was already tagged (if yes found is set to 1)
+execute as @p run function rauch:macros/foreach {for_path:"macros data.list",for_function:"rauch:game/ability/hacker/r/tag/check_new"}
+execute unless score Global found matches 1 run function rauch:game/ability/hacker/r/tag/check_not_found
+execute as @p run function rauch:macros/data_write {storage:"hacker_r_tag"}
+
 scoreboard objectives remove found
+tag @s remove temp
 
 execute as @e[type=marker,tag=hacker,tag=temp] run function rauch:game/ability/hacker/r/kill
-

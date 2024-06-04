@@ -1,14 +1,16 @@
 # hacker has tag t_hacker
 scoreboard players set @s hack 160
 scoreboard players set @a[tag=t_hacker] hack_tag_timer 160
-function rauch:game/mechanics/hackinit
-
-# cycles through hacker_q_tag until hackers data is in front
-execute as @a[tag=t_hacker] run function rauch:game/ability/hacker/q/array/find_me
+function rauch:game/ability/hacker/q/hack_init
 
 # check if player was already tagged (if yes found is set to 1)
+tag @s add temp
 scoreboard objectives add found dummy
-function rauch:game/ability/hacker/q/array/find_pnum_check
-execute unless score Global found matches 1 run data modify storage game_data hacker_q_tag[0].list prepend value -1
-execute unless score Global found matches 1 run execute store result storage game_data hacker_q_tag[0].list[0] int 1 run scoreboard players get @s pnum
+execute as @a[tag=t_hacker] run function rauch:macros/data_get {storage:"hacker_q_tag"}
+# check if player was already tagged (if yes found is set to 1)
+execute as @a[tag=t_hacker] run function rauch:macros/foreach {for_path:"macros data.list",for_function:"rauch:game/ability/hacker/q/tag/check_new"}
+execute unless score Global found matches 1 run function rauch:game/ability/hacker/q/tag/check_not_found
+execute as @a[tag=t_hacker] run function rauch:macros/data_write {storage:"hacker_q_tag"}
+
 scoreboard objectives remove found
+tag @s remove temp

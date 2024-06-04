@@ -20,6 +20,6 @@ title @s[team=Red] subtitle {"text":"Bring it to Blue base!","color":"gray"}
 title @s[team=Blue] subtitle {"text":"Bring it to Red base!","color":"gray"}
 
 scoreboard players set @s hack 200
-function rauch:game/mechanics/hackinit
+function rauch:game/ability/hacker/q/hack_init
 
 function rauch:game/mechanics/armor
