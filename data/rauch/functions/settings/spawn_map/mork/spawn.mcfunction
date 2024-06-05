@@ -1,7 +1,7 @@
 execute at @s run place template rauch:mork1 ~ ~ ~
 execute at @s run place template rauch:mork2 ~48 ~ ~
-execute at @s align xyz run fill ~33.5 ~8 ~16.5 ~29.5 ~8 ~21.5 big_dripleaf
-execute at @s align xyz run fill ~43.5 ~8 ~8.5 ~47.5 ~8 ~3.5 big_dripleaf[facing=south]
+execute at @s align xyz run fill ~34.5 ~8 ~17.5 ~30.5 ~8 ~22.5 big_dripleaf
+execute at @s align xyz run fill ~44.5 ~8 ~9.5 ~48.5 ~8 ~4.5 big_dripleaf[facing=south]
 
 scoreboard objectives add t_map_count dummy
 execute store result score Global t_map_count run data get storage map_data maps

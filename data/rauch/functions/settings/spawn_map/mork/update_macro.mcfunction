@@ -1,16 +1,16 @@
 # $x,$y,$z have the spawn coordinates for the map, $(index) the index
 # map values
-$data modify storage map_data maps[$(index)].version set value 2
+$data modify storage map_data maps[$(index)].version set value 3
 $data modify storage map_data maps[$(index)].particle set value 11
 $data modify storage map_data maps[$(index)].time set value -1
 
-$execute positioned $(x) $(y) $(z) align xyz run summon marker ~3.5 ~30 ~12.5 {Tags:["mapsetup","red"]}
-$execute positioned $(x) $(y) $(z) align xyz run summon marker ~38.5 ~29 ~12.5 {Tags:["mapsetup","cen"]}
-$execute positioned $(x) $(y) $(z) align xyz run summon marker ~73.5 ~30 ~12.5 {Tags:["mapsetup","blu"]}
+$execute positioned $(x) $(y) $(z) align xyz run summon marker ~4.5 ~30 ~13.5 {Tags:["mapsetup","red"]}
+$execute positioned $(x) $(y) $(z) align xyz run summon marker ~39.5 ~29 ~13.5 {Tags:["mapsetup","cen"]}
+$execute positioned $(x) $(y) $(z) align xyz run summon marker ~74.5 ~30 ~13.5 {Tags:["mapsetup","blu"]}
 $execute positioned $(x) $(y) $(z) align xyz run place template rauch:mork1 ~ ~ ~
 $execute positioned $(x) $(y) $(z) align xyz run place template rauch:mork2 ~48 ~ ~
-$execute positioned $(x) $(y) $(z) align xyz run fill ~33.5 ~8 ~16.5 ~29.5 ~8 ~21.5 big_dripleaf
-$execute positioned $(x) $(y) $(z) align xyz run fill ~43.5 ~8 ~8.5 ~47.5 ~8 ~3.5 big_dripleaf[facing=south]
+$execute positioned $(x) $(y) $(z) align xyz run fill ~34.5 ~8 ~17.5 ~30.5 ~8 ~22.5 big_dripleaf
+$execute positioned $(x) $(y) $(z) align xyz run fill ~44.5 ~8 ~9.5 ~48.5 ~8 ~4.5 big_dripleaf[facing=south]
 
 $data modify storage map_data maps[$(index)].red set from entity @e[type=marker,tag=mapsetup,tag=red,limit=1] Pos
 $data modify storage map_data maps[$(index)].blue set from entity @e[type=marker,tag=mapsetup,tag=blu,limit=1] Pos
