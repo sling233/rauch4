@@ -70,7 +70,7 @@
 
 
 # Delay before game starts (countdown) in ticks (so 120 ticks = 5 seconds)
-# scoreboard players set Global gamestart 20
+# scoreboard players set Global gamestart 120
 
 
 # Number of "points" each team has in King of the Hill. First team at 0 loses.
