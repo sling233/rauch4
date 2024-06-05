@@ -1,12 +1,12 @@
 # $x,$y,$z have the spawn coordinates for the map, $(index) the index
 # map values
-$data modify storage map_data maps[$(index)].version set value 2
+$data modify storage map_data maps[$(index)].version set value 3
 $data modify storage map_data maps[$(index)].particle set value -1
 $data modify storage map_data maps[$(index)].time set value -1
 
-$execute positioned $(x) $(y) $(z) align xyz run summon marker ~3.5 ~29 ~10.5 {Tags:["mapsetup","red"]}
-$execute positioned $(x) $(y) $(z) align xyz run summon marker ~36.5 ~27 ~10.5 {Tags:["mapsetup","cen"]}
-$execute positioned $(x) $(y) $(z) align xyz run summon marker ~68.5 ~29 ~10.5 {Tags:["mapsetup","blu"]}
+$execute positioned $(x) $(y) $(z) align xyz run summon marker ~4.5 ~29 ~11.5 {Tags:["mapsetup","red"]}
+$execute positioned $(x) $(y) $(z) align xyz run summon marker ~37.5 ~27 ~11.5 {Tags:["mapsetup","cen"]}
+$execute positioned $(x) $(y) $(z) align xyz run summon marker ~69.5 ~29 ~11.5 {Tags:["mapsetup","blu"]}
 $execute positioned $(x) $(y) $(z) align xyz run place template rauch:splat1 ~ ~ ~
 $execute positioned $(x) $(y) $(z) align xyz run place template rauch:splat2 ~47 ~ ~
 
