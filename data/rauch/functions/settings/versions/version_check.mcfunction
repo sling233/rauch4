@@ -7,9 +7,11 @@ scoreboard players set Global this_version 602
 
 # if version didn't change, return
 execute if score Global version = Global this_version run tellraw @s [{"text":"Version not changed","color":"yellow"}]
+execute if score Global version = Global this_version run scoreboard objectives remove this_version
 execute if score Global version = Global this_version run return 0
 
 # if the pack is installed for the first time, return
+execute unless score Global click matches 0.. run scoreboard objectives remove this_version
 execute unless score Global click matches 0.. run return 0
 
 # version changed:
