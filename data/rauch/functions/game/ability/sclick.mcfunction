@@ -12,7 +12,7 @@ execute as @s[scores={kit=8,cool1=0},predicate=!rauch:sneak,predicate=rauch:skil
 execute at @s[scores={kit=9},predicate=!rauch:sneak,predicate=rauch:skill] as @e[type=marker,tag=wok_hook] if score @s pnum = @p pnum run function rauch:game/ability/wokkaman/r/buffer_hook_invert
 execute as @s[scores={kit=9,cool1=0},predicate=!rauch:sneak,predicate=rauch:skill] unless score @s zarzahn_hooking matches 1.. run function rauch:game/ability/wokkaman/r
 execute as @s[scores={kit=9,zarzahn_hooking=1..},tag=!inverted_hook,predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wokkaman/hr
-execute as @s[scores={kit=9,cool1=0},predicate=rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wokkaman/sr
+execute as @s[scores={kit=9,cool4=0},predicate=rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wokkaman/sr
 
 execute as @s[predicate=rauch:hack] run tellraw @s {"text":"You are hacked and cannot use your abilities!","color":"red"}
 execute as @s[predicate=rauch:hack] run playsound minecraft:block.chain.break master @s

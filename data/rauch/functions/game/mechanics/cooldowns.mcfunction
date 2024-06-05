@@ -6,3 +6,5 @@ execute as @s[scores={cool2=1..}] run scoreboard players remove @s cool2 1
 execute unless score @s cool2 matches 0.. run scoreboard players set @s cool2 0
 execute as @s[scores={cool3=1..}] run scoreboard players remove @s cool3 1
 execute unless score @s cool3 matches 0.. run scoreboard players set @s cool3 0
+
+execute as @s[scores={kit=9}] run function rauch:game/ability/wokkaman/wokkaman_cooldowns

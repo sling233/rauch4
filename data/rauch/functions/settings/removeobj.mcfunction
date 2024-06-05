@@ -118,6 +118,15 @@ scoreboard objectives remove flag_points_red
 scoreboard objectives remove flag_spawn_delay
 scoreboard objectives remove spawn_to_center_distance
 #wokkaman
+scoreboard objectives remove cool4
+scoreboard objectives remove cool4_target
+scoreboard objectives remove cool4_respawn
+scoreboard objectives remove cool5
+scoreboard objectives remove cool5_target
+scoreboard objectives remove cool5_respawn
+scoreboard objectives remove cool6
+scoreboard objectives remove cool6_target
+scoreboard objectives remove cool6_respawn
 scoreboard objectives remove wok_kills_end
 scoreboard objectives remove wok_kills
 scoreboard objectives remove wok_time

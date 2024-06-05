@@ -8,7 +8,7 @@ execute as @s[scores={kit=6,cool2=0},predicate=!rauch:sneak,predicate=rauch:skil
 execute as @s[scores={kit=7,cool2=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/tank/q
 execute as @s[scores={kit=8,cool2=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/flyer/q
 execute as @s[scores={kit=9,cool2=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wokkaman/q
-execute as @s[scores={kit=9,cool2=0},predicate=rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wokkaman/sq
+execute as @s[scores={kit=9,cool5=0},predicate=rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wokkaman/sq
 
 execute as @s[predicate=rauch:hack] run tellraw @s {"text":"You are hacked and cannot use your abilities!","color":"red"}
 execute as @s[predicate=rauch:hack] run playsound minecraft:block.chain.break master @s

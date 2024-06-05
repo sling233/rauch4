@@ -121,6 +121,15 @@ scoreboard objectives add flag_spawn_delay dummy
 # scoreboard objectives add flag_spawn_time dummy
 scoreboard objectives add spawn_to_center_distance dummy
 #wokkaman
+scoreboard objectives add cool4 dummy
+scoreboard objectives add cool4_target dummy
+scoreboard objectives add cool4_respawn dummy
+scoreboard objectives add cool5 dummy
+scoreboard objectives add cool5_target dummy
+scoreboard objectives add cool5_respawn dummy
+scoreboard objectives add cool6 dummy
+scoreboard objectives add cool6_target dummy
+scoreboard objectives add cool6_respawn dummy
 scoreboard objectives add wok_kills_end dummy
 scoreboard objectives add wok_kills dummy
 scoreboard objectives add wok_time dummy

@@ -5,6 +5,9 @@ recipe take @s *
 scoreboard players set @s cool1 0
 scoreboard players set @s cool2 0
 scoreboard players set @s cool3 0
+scoreboard players set @s[scores={kit=9}] cool4 0
+scoreboard players set @s[scores={kit=9}] cool5 0
+scoreboard players set @s[scores={kit=9}] cool6 0
 scoreboard players set @s[scores={kit=4}] hacker_charges 1
 scoreboard players set @s[scores={kit=5}] wark_charge 0
 scoreboard players set @s stats_g_kills 0

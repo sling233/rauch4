@@ -7,6 +7,7 @@ tag @s add wok_bow_tagged
 
 tag @e[type=marker,tag=temp,tag=wok_bow] remove searching
 execute at @e[type=marker,tag=temp,tag=wok_bow] run particle minecraft:spit ~ ~ ~ 0.1 0.1 0.1 0.3 50 force
+execute at @e[type=marker,tag=temp,tag=wok_bow] at @s run playsound minecraft:entity.breeze.jump master @a
 scoreboard players operation @e[type=marker,tag=temp,tag=wok_bow,limit=1] zarzahn_hooking = @s pnum
 scoreboard players operation Global t_target_pnum = @s pnum
 

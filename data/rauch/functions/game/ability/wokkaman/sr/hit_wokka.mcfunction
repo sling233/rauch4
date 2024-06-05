@@ -1,3 +1,4 @@
+execute at @s run playsound minecraft:entity.arrow.hit_player master @s ~ ~ ~
 # damage calculation (scale with buffs)
 scoreboard objectives add calc_damage dummy
 # read current damage from attributes (includes buffs)

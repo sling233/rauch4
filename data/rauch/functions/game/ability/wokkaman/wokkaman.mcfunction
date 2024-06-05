@@ -10,5 +10,5 @@ execute as @s[scores={wok_hover_schedule=-1}] run attribute @s minecraft:generic
 execute as @s[tag=t_grounded] run tag @s add wok_f_air
 execute as @s[tag=t_grounded] unless score @s flyerFSchedule matches ..0 unless score @s push_levitation_timer matches ..0 run attribute @s minecraft:generic.gravity base set 0.08
 execute as @s[tag=wok_stomp_search] run function rauch:game/ability/wokkaman/sq/search_player
-execute as @s[tag=t_grounded,tag=wok_stomp_search] run tag @s remove wok_stomp_search
+execute as @s[tag=t_grounded,tag=wok_stomp_search] run function rauch:game/ability/wokkaman/sq/searching_on_ground
 tag @s remove t_grounded
