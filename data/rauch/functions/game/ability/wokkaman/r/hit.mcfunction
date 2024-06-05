@@ -10,6 +10,7 @@ tag @s add wok_hook
 # check for invert buffer
 execute if entity @e[type=marker,tag=wok_hook,tag=temp,tag=buffer_invert] run function rauch:game/ability/wokkaman/r/hit_buffered_invert
 
+execute as @e[type=marker,tag=wok_hook,tag=temp] run tag @s add hit
 execute as @e[type=marker,tag=wok_hook,tag=temp] run kill @s
 
 # if vehicle already exists, cancel
