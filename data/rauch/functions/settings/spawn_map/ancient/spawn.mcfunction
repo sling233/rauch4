@@ -1,5 +1,5 @@
 execute at @s run place template rauch:ancient1 ~ ~ ~
-execute at @s run place template rauch:ancient2 ~47 ~ ~
+execute at @s run place template rauch:ancient2 ~48 ~ ~
 
 scoreboard objectives add t_map_count dummy
 execute store result score Global t_map_count run data get storage map_data maps
