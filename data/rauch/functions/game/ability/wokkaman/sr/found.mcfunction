@@ -6,9 +6,9 @@ data modify storage macros data.list append from storage temp pnum
 tag @s add wok_bow_tagged
 
 tag @e[type=marker,tag=temp,tag=wok_bow] remove searching
-tag @e[type=marker,tag=temp,tag=wok_bow] add test
 execute at @e[type=marker,tag=temp,tag=wok_bow] run particle minecraft:spit ~ ~ ~ 0.1 0.1 0.1 0.3 50 force
 scoreboard players operation @e[type=marker,tag=temp,tag=wok_bow,limit=1] zarzahn_hooking = @s pnum
+scoreboard players operation Global t_target_pnum = @s pnum
 
 tag @s add temp2
 execute as @e[type=marker,tag=temp,tag=wok_bow] at @s facing entity @a[tag=temp2] eyes run tp @s ~ ~ ~ ~ ~
