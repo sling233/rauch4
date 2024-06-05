@@ -6,13 +6,10 @@ scoreboard players set Global this_version 603
 #execute if score Global click matches 10 run return 0
 
 # if version didn't change, return
-execute if score Global version = Global this_version run tellraw @s [{"text":"Version not changed","color":"yellow"}]
-execute if score Global version = Global this_version run scoreboard objectives remove this_version
-execute if score Global version = Global this_version run return 0
+execute if score Global version = Global this_version run return run function rauch:settings/versions/version_not_changed
 
 # if the pack is installed for the first time, return
-execute unless score Global click matches 0.. run scoreboard objectives remove this_version
-execute unless score Global click matches 0.. run return 0
+execute unless score Global click matches 0.. run return run function rauch:settings/versions/version_first_time
 
 # version changed:
 tellraw @a [{"text":"------ Data Pack Version Changed ------","color":"green","hoverEvent":{"action":"show_text","contents":"This removes scoreboard objectives, teams and bossbars that are now obsolete and re-adds scoreboard objectives types if they changed (eg. dummy to trigger. This would actually break things if not re-added). Only works when updating to newer versions."}}]
