@@ -110,7 +110,6 @@ scoreboard objectives add killNumRed dummy
 scoreboard objectives add killNumBlue dummy
 scoreboard objectives add killsDisplay dummy {"text":"Kills","color":"yellow"}
 scoreboard objectives add rd_kills_to_win dummy
-execute unless score Global rd_kills_to_win matches 1.. run scoreboard players set Global rd_kills_to_win 20
 #capture the flag
 scoreboard objectives add ctf_game_duration dummy
 scoreboard objectives add ctf_points_to_win dummy
@@ -127,9 +126,6 @@ scoreboard objectives add flag_spawn_delay dummy
 # scoreboard objectives add flag_reset_time dummy
 # scoreboard objectives add flag_spawn_time dummy
 scoreboard objectives add spawn_to_center_distance dummy
-execute unless score Global ctf_points_to_win matches 1.. run scoreboard players set Global ctf_points_to_win 5
-execute unless score Global flag_spawn_delay matches 1.. run scoreboard players set Global flag_spawn_delay 40
-execute unless score Global ctf_game_duration matches 1.. run scoreboard players set Global ctf_game_duration 3600
 #wokkaman
 scoreboard objectives add wok_kills_end dummy
 scoreboard objectives add wok_kills dummy

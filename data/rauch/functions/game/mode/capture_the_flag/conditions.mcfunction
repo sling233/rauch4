@@ -4,6 +4,10 @@ scoreboard players set Global flagDistanceBlue 1000000
 scoreboard players set Global flag_points_red 0
 scoreboard players set Global flag_points_blue 0
 
+scoreboard players set Global ctf_points_to_win 5
+scoreboard players set Global flag_spawn_delay 40
+scoreboard players set Global ctf_game_duration 3600
+
 scoreboard players operation Global ctf_time = Global ctf_game_duration
 scoreboard players operation Global ctf_time -= Global 1
 scoreboard players set Global gamestart 120
