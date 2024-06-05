@@ -1,4 +1,9 @@
 # In this file, you can override game settings (for every mode). Just uncomment the lines you want.
+
+# If you want some some changes to only apply to certain game modes, use: execute if|unless score Global mode matches <mode_id> run <your_command>
+# mode ids: deathmatch is 0, king of the hill is 1, respawn deathmatch is 2, testing mode is 3, capture the flag is 4, wokkaman is 5
+# example: execute unless score Global mode matches 3 run scoreboard players set Global gamestart 20
+# makes countdown for each mode only 1 second, except testing mode, that has an instant cooldown, so making it 1 second would be annoying
 ###################################################################################################
 # ability cooldowns
 # The _target scores are the cooldown. cool1 is the R ability, cool2 is Q and cool3 is F. The value is in ticks. 20 ticks = 1 second, so eg. 200 ticks = 10 seconds

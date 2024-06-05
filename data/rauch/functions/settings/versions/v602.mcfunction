@@ -1,4 +1,3 @@
-# Update from old version where the version wasnt tracked yet
 tellraw @a [{"text":"dev601","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"dev602","color":"light_purple"}]
 tellraw @a [{"text":"- Ambient particle preferences reset due to a change to how it works.","color":"yellow"}]
 
