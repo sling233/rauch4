@@ -212,13 +212,6 @@ team add Flag
 team modify Flag color white
 #team modify Spectator prefix [{"text":"[","color":"dark_gray"},{"text":"Spectator","color":"dark_green"},{"text":"] ","color":"dark_gray"}]
 
-team add red_display
-team modify red_display color red
-team join red_display Red:
-
-team add blue_display
-team modify blue_display color blue
-team join blue_display Blue:
 
 #gamerules
 gamerule doMobLoot false

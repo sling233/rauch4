@@ -80,7 +80,7 @@ scoreboard objectives remove tank_resistance_num
 scoreboard objectives remove tele2
 scoreboard objectives remove teleweak
 scoreboard objectives remove temp
-scoreboard objectives remove version
+# scoreboard objectives remove version
 scoreboard objectives remove walk
 scoreboard objectives remove wark_buff
 scoreboard objectives remove wark_charge
@@ -146,8 +146,6 @@ team remove Lobby
 team remove Random
 team remove Spectator
 team remove Flag
-team remove red_display
-team remove blue_display
 
 #bossbars
 bossbar remove center_control
@@ -275,9 +273,7 @@ bossbar remove wokkaman_health
 team remove Red
 team remove Blue
 team remove Lobby
-team remove red_display
-team remove blue_display
 
-tellraw @s [{"text":"Removed all scoreboard objectives, bossbars and teams relevant to the Wokkagames data pack. Everything left over has no infuence over the functionality of this pack. Type ","color":"yellow"},{"text":"/reload","color":"light_purple","hoverEvent":{"action":"show_text","contents":[{"text":"Click to suggest command"}]},"clickEvent":{"action":"suggest_command","value":"/reload"}},{"text":" to re-add everything.","color":"yellow"}]
+tellraw @s [{"text":"Removed all scoreboard objectives, bossbars and teams relevant to the Wokkagames data pack, EXCEPT for objective \"version\". Everything left over has no infuence over the functionality of this pack (again, except for objective \"version\". Don\'t touch that one pls). Type ","color":"yellow"},{"text":"/reload","color":"light_purple","hoverEvent":{"action":"show_text","contents":[{"text":"Click to suggest command"}]},"clickEvent":{"action":"suggest_command","value":"/reload"}},{"text":" to re-add everything.","color":"yellow"}]
 clear @a minecraft:written_book
 #function rauch:setup

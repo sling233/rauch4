@@ -1,6 +1,6 @@
 # easy way to change version (downpatch has to be updated as well)
 scoreboard objectives add this_version dummy
-scoreboard players set Global this_version 603
+scoreboard players set Global this_version 604
 
 ## if downpatching (this function gets called again as a side effect, click is set to 10 temporarily)
 #execute if score Global click matches 10 run return 0
@@ -22,6 +22,7 @@ execute unless score Global version matches 600.. run function rauch:settings/ve
 execute unless score Global version matches 601.. run function rauch:settings/versions/v601
 execute unless score Global version matches 602.. run function rauch:settings/versions/v602
 execute unless score Global version matches 603.. run function rauch:settings/versions/v603
+execute unless score Global version matches 604.. run function rauch:settings/versions/v604
 
 # downpatch
 execute if score Global version > Global this_version run function rauch:settings/versions/downpatch
