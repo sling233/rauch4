@@ -38,7 +38,7 @@ scoreboard players operation %cool6_ds global /= %2 global
 scoreboard players reset %20
 scoreboard players reset %2
 
-data modify storage temp wokkaman_actionbar set value {q:"dark_purple",f:"#2194a5",r:"gold",sq:"#2a2afc",sf:"#008800",sr:"#aa2222"}
+data modify storage temp wokkaman_actionbar set value {q:"dark_purple",f:"#2194a5",r:"gold",sq:"#2a2afc",sf:"#009900",sr:"#aa2222"}
 execute if score @s cool1 matches 1.. run data modify storage temp wokkaman_actionbar.r set value "yellow"
 execute if score @s cool2 matches 1.. run data modify storage temp wokkaman_actionbar.q set value "light_purple"
 execute if score @s cool3 matches 1.. run data modify storage temp wokkaman_actionbar.f set value "aqua"
