@@ -1,5 +1,5 @@
 #executed at hacker, as hit player
-scoreboard players remove @s armor_target 1
+execute unless score @s hacker_damage_timer matches 1.. run scoreboard players remove @s armor_target 1
 function rauch:game/mechanics/armor
 scoreboard players set @s hacker_damage_timer 240
 scoreboard players set @p hacker_damage_timer_control 240
