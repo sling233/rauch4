@@ -23,7 +23,7 @@ scoreboard players set @s tank_damage_taken 0
 
 scoreboard players operation @s game_id = Global game_id
 
-scoreboard players set @s armor_target 20
+scoreboard players set @s armor_target 80
 execute if score @s kit matches 9 store result score @s wokkaman_weapon run random value 0..4
 execute if score @s kit matches 9 store result score @s wokkaman_helmet run random value 0..20
 function rauch:game/mechanics/weapon

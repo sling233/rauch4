@@ -32,7 +32,7 @@ scoreboard players reset @s raucherdmg_num
 scoreboard players reset @s tank_resistance
 scoreboard players reset @s tank_resistance_num
 scoreboard players reset @s teleweak
-scoreboard players set @s armor_target 20
+scoreboard players set @s armor_target 80
 
 execute as @s[tag=wok_stepped_on] run function rauch:game/ability/wokkaman/sq/kill_my_boat
 execute as @s[tag=zarzahn_hook] run function rauch:game/ability/zarzahn/r/cancel_hook
