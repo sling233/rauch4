@@ -59,17 +59,17 @@ execute as @a[scores={kit=8}] run scoreboard players set @s cool2_respawn 180
 execute as @a[scores={kit=8}] run scoreboard players set @s cool3_respawn 0
 execute as @a[scores={kit=8}] run scoreboard players set @s elytra_cooldown 80
 
-execute as @a[scores={kit=9}] run scoreboard players set @s cool1_target 200
+execute as @a[scores={kit=9}] run scoreboard players set @s cool1_target 160
 execute as @a[scores={kit=9}] run scoreboard players set @s cool2_target 200
 execute as @a[scores={kit=9}] run scoreboard players set @s cool3_target 240
 execute as @a[scores={kit=9}] run scoreboard players set @s cool4_target 200
 execute as @a[scores={kit=9}] run scoreboard players set @s cool5_target 200
-execute as @a[scores={kit=9}] run scoreboard players set @s cool6_target 200
-execute as @a[scores={kit=9}] run scoreboard players set @s cool1_respawn 100
+execute as @a[scores={kit=9}] run scoreboard players set @s cool6_target 60
+execute as @a[scores={kit=9}] run scoreboard players set @s cool1_respawn 80
 execute as @a[scores={kit=9}] run scoreboard players set @s cool2_respawn 100
 execute as @a[scores={kit=9}] run scoreboard players set @s cool3_respawn 120
 execute as @a[scores={kit=9}] run scoreboard players set @s cool4_respawn 100
 execute as @a[scores={kit=9}] run scoreboard players set @s cool5_respawn 100
-execute as @a[scores={kit=9}] run scoreboard players set @s cool6_respawn 100
+execute as @a[scores={kit=9}] run scoreboard players set @s cool6_respawn 30
 
 execute as @a[scores={kit=9}] run give @s minecraft:firework_rocket[minecraft:fireworks={flight_duration:0}] 10
