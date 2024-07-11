@@ -1,5 +1,10 @@
 function rauch:game/ui/bossbar/hack/set_max
 function rauch:game/ui/bossbar/hack/visible
+scoreboard players operation @s hack > Global 1
+
+
+execute as @s[scores={kit=1,boltspeed=..-1}] run scoreboard players set @s boltspeed -1
+execute as @s[scores={kit=5,wark_buff=1..}] run scoreboard players set @s wark_buff 0
 
 execute as @s[scores={kit=8}] unless score @s elytra matches 1.. run function rauch:game/ui/bossbar/elytra/visible
 execute as @s[scores={kit=8}] unless score @s elytra matches 1.. run scoreboard players set @s elytra 1
