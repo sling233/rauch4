@@ -21,6 +21,8 @@ scoreboard players reset @s raucherdmg
 scoreboard players reset @s tank_resistance
 scoreboard players set @s tank_damage_taken 0
 
+execute unless score @s actionbar_design matches 0.. run scoreboard players set @s actionbar_design 3
+
 scoreboard players operation @s game_id = Global game_id
 
 scoreboard players set @s armor_target 80

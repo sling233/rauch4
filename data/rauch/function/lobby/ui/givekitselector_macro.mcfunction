@@ -50,5 +50,42 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"A Boost upwards. In general, you have an elytra. When exceeding a certain speed while flying, your melee attacks get buffed to 4.6❤ (with a crit, that would be 6.9❤) until you touch the ground."}]}},{"text":"]","color":"dark_gray"}]'},{raw:'\
 [{"text":"   "},{"text":"Other Settings\\n\\n\\n","bold":true},\
 {"text":"Ambient Particles:\\n","hoverEvent":{"action":"show_text","contents":[{"text":"Turns Ambient Particles On/Off. Some Maps may not have Ambient Particles. This can help a bit with performance problems.","color":"white"}]}},\
-{"text":" [","color":"dark_gray"},{"text":"Off","color":"$(ambient)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 100"}},{"text":"]      [","color":"dark_gray"},{"text":"On","color":"$(not_ambient)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 101"}},{"text":"]\\n\\n","color":"dark_gray"}]'}]},\
+{"text":" [","color":"dark_gray"},{"text":"Off","color":"$(ambient)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 100"}},{"text":"]      [","color":"dark_gray"},{"text":"On","color":"$(not_ambient)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 101"}},{"text":"]\\n\\n","color":"dark_gray"},\
+{"text":"Actionbar Design:\\n"},\
+{"text":"[","color":"dark_gray"},\
+{"text":"Design 1",color:"$(design_0)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},\
+{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},\
+{"text":"\\nOn cooldown: "},\
+{"text":"Q [6.8] ","color":"light_purple"},{"text":"F [4.1] ","color":"green"},{"text":"R [3.2]","color":"yellow"}]},\
+"clickEvent":{"action":"run_command","value":"/trigger kitselect set 110"}},\
+{"text":"]\\n","color":"dark_gray"},\
+{"text":"[","color":"dark_gray"},\
+{"text":"Design 2",color:"$(design_1)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},\
+{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},\
+{"text":"\\nOn cooldown: "},\
+{"text":"Q [6.8] F [4.1] R [3.2]","color":"gray"}]},\
+"clickEvent":{"action":"run_command","value":"/trigger kitselect set 111"}},\
+{"text":"]\\n","color":"dark_gray"},\
+{"text":"[","color":"dark_gray"},\
+{"text":"Design 3",color:"$(design_2)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},\
+{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},\
+{"text":"\\nOn cooldown: "},\
+{"text":"Q [","color":"dark_gray"},{"text":"6.8","color":"gray"},{"text":"] F [","color":"dark_gray"},{"text":"4.1","color":"gray"},{"text":"] R [","color":"dark_gray"},{"text":"3.2","color":"gray"},{"text":"]","color":"dark_gray"}]},\
+"clickEvent":{"action":"run_command","value":"/trigger kitselect set 112"}},\
+{"text":"]\\n","color":"dark_gray"},\
+{"text":"[","color":"dark_gray"},\
+{"text":"Design 4","color":"$(design_3)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},\
+{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},\
+{"text":"\\nOn cooldown: "},\
+{"text":"Q ","color":"dark_purple"},{"text":"[","color":"dark_gray"},{"text":"6.8","color":"gray"},{"text":"]","color":"dark_gray"},{"text":" F ","color":"dark_green"},{"text":"[","color":"dark_gray"},{"text":"4.1","color":"gray"},{"text":"]","color":"dark_gray"},{"text":" R ","color":"gold"},{"text":"[","color":"dark_gray"},{"text":"3.2","color":"gray"},{"text":"]","color":"dark_gray"}]},\
+"clickEvent":{"action":"run_command","value":"/trigger kitselect set 113"}},\
+{"text":"]\\n","color":"dark_gray"},\
+{"text":"[","color":"dark_gray"},\
+{"text":"Design 5","color":"$(design_4)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},\
+{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},\
+{"text":"\\nOn cooldown: "},\
+{"text":"Q [","color":"dark_purple"},{"text":"6.8","color":"gray"},{"text":"] ","color":"dark_purple"},{"text":"F [","color":"dark_green"},{"text":"4.1","color":"gray"},{"text":"] ","color":"dark_green"},{"text":"R [","color":"gold"},{"text":"3.2","color":"gray"},{"text":"]","color":"gold"}]},\
+"clickEvent":{"action":"run_command","value":"/trigger kitselect set 114"}},\
+{"text":"]","color":"dark_gray"}\
+]'}]},\
 item_name='{"text":"Kit Selector/Settings","color":"yellow"}'] 1

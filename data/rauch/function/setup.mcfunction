@@ -6,6 +6,7 @@ scoreboard objectives add 9 dummy
 scoreboard objectives add 10 dummy
 scoreboard objectives add 12 dummy
 scoreboard objectives add 20 dummy
+scoreboard objectives add actionbar_design dummy
 scoreboard objectives add adminsetting trigger
 scoreboard objectives add armor_target dummy
 scoreboard objectives add bolt dummy
