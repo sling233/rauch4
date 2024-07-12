@@ -30,8 +30,9 @@ item replace entity @s[scores={kit=8}] armor.chest with elytra[damage=432,item_n
 execute as @s[scores={kit=8}] unless score @s elytra matches 1.. unless score @s hack matches 1.. run item replace entity @s armor.chest with elytra[item_name='{"text":"Cool Elytra"}',rarity=uncommon,unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:false}] 1
 #wokkaman
 item replace entity @s[scores={kit=9}] armor.legs with golden_leggings[item_name='{"text":"Ninjahose"}',rarity=epic,unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:binding_curse":1,"minecraft:swift_sneak":5},show_in_tooltip:false}] 1
-item replace entity @s[scores={kit=9}] armor.chest with elytra[item_name='{"text":"Fliegflügel"}',rarity=epic,unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:false}] 1
 item replace entity @s[scores={kit=9}] armor.feet with leather_boots[item_name='{"text":"Schnellschuhe"}',rarity=epic,dyed_color={rgb:3678989,show_in_tooltip:false},unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:false}] 1
+item replace entity @s[scores={kit=9}] armor.chest with elytra[damage=432,item_name='{"text":"Fliegflügel"}',rarity=epic,unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:false}] 1
+execute as @s[scores={kit=9}] unless score @s elytra matches 1.. unless score @s hack matches 1.. run item replace entity @s armor.chest with elytra[item_name='{"text":"Fliegflügel"}',rarity=epic,unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:false}] 1
 
 # head
 execute store result storage temp armor_target int 1 run scoreboard players get @s armor_target

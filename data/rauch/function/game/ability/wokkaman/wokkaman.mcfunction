@@ -11,4 +11,9 @@ execute as @s[tag=t_grounded] run tag @s add wok_f_air
 execute as @s[tag=t_grounded] unless score @s flyerFSchedule matches ..0 unless score @s push_levitation_timer matches ..0 run attribute @s minecraft:generic.gravity base set 0.08
 execute as @s[tag=wok_stomp_search] run function rauch:game/ability/wokkaman/sq/search_player
 execute as @s[tag=t_grounded,tag=wok_stomp_search] run function rauch:game/ability/wokkaman/sq/searching_on_ground
+
+execute as @s[scores={fly=1..},tag=!flying] run tag @s add flying
+execute as @s[tag=flying,tag=t_grounded] run function rauch:game/ability/wokkaman/f/land
+execute as @s[scores={elytra=0..}] run function rauch:game/ability/wokkaman/f/elytra_cooldown
+
 tag @s remove t_grounded

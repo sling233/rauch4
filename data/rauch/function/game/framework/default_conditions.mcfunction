@@ -71,5 +71,6 @@ execute as @a[scores={kit=9}] run scoreboard players set @s cool3_respawn 120
 execute as @a[scores={kit=9}] run scoreboard players set @s cool4_respawn 100
 execute as @a[scores={kit=9}] run scoreboard players set @s cool5_respawn 100
 execute as @a[scores={kit=9}] run scoreboard players set @s cool6_respawn 30
+execute as @a[scores={kit=9}] run scoreboard players set @s elytra_cooldown 40
 
 execute as @a[scores={kit=9}] run give @s minecraft:firework_rocket[minecraft:fireworks={flight_duration:0}] 10

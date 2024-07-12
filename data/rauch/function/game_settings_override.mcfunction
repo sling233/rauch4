@@ -57,7 +57,7 @@
 # execute as @a[scores={kit=7}] run scoreboard players set @s cool3_target 520
 # execute as @a[scores={kit=7}] run scoreboard players set @s cool2_respawn 210
 # execute as @a[scores={kit=7}] run scoreboard players set @s cool3_respawn 200
-# pikka (elytra_cooldown specifies how many ticks a pikka cant use their elytra after using it and landing)
+# pikka (elytra_cooldown specifies how many ticks pikka cant use their elytra after using it and landing)
 # execute as @a[scores={kit=8}] run scoreboard players set @s cool1_target 500
 # execute as @a[scores={kit=8}] run scoreboard players set @s cool2_target 450
 # execute as @a[scores={kit=8}] run scoreboard players set @s cool3_target 280
@@ -72,7 +72,7 @@
 # execute as @a[scores={kit=9}] run scoreboard players set @s cool1_respawn 10
 # execute as @a[scores={kit=9}] run scoreboard players set @s cool2_respawn 10
 # execute as @a[scores={kit=9}] run scoreboard players set @s cool3_respawn 10
-
+# execute as @a[scores={kit=9}] run scoreboard players set @s elytra_cooldown 40
 
 # Delay before game starts (countdown) in ticks (so 120 ticks = 5 seconds)
 # scoreboard players set Global gamestart 120
