@@ -84,7 +84,7 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"Design 5","color":"$(design_4)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},\
 {"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},\
 {"text":"\\nOn cooldown: "},\
-{"text":"Q [","color":"dark_purple"},{"text":"6.8","color":"gray"},{"text":"] ","color":"dark_purple"},{"text":"F [","color":"dark_green"},{"text":"4.1","color":"gray"},{"text":"] ","color":"dark_green"},{"text":"R [","color":"gold"},{"text":"3.2","color":"gray"},{"text":"]","color":"gold"}]},\
+{"text":"Q ","color":"dark_purple"},{"text":"[6.8] ","color":"gray"},{"text":"F ","color":"dark_green"},{"text":"[4.1] ","color":"gray"},{"text":"R ","color":"gold"},{"text":"[3.2]","color":"gray"}]},\
 "clickEvent":{"action":"run_command","value":"/trigger kitselect set 114"}},\
 {"text":"]","color":"dark_gray"}\
 ]'}]},\
