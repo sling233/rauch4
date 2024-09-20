@@ -1,3 +1,4 @@
+# design 0
 $title @s actionbar [\
 {"text":"Q[","color":"$(q)"},{"score":{"name":"%cool2_s","objective":"global"},"color":"$(q)"},{"text":".","color":"$(q)"},{"score":{"name":"%cool2_ds","objective":"global"},"color":"$(q)"},{"text":"]  ","color":"$(q)"},\
 {"text":"sQ[","color":"$(sq)"},{"score":{"name":"%cool5_s","objective":"global"},"color":"$(sq)"},{"text":".","color":"$(sq)"},{"score":{"name":"%cool5_ds","objective":"global"},"color":"$(sq)"},{"text":"]  ","color":"$(sq)"},\
