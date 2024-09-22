@@ -8,8 +8,8 @@ execute at @s run playsound minecraft:entity.firework_rocket.blast master @a ~ ~
 
 
 scoreboard players operation t_pnum global = @s pnum
-execute as @s[tag=red] at @s as @a[team=Blue,distance=..4] run function rauch:game/ability/wokkaman/q/hit
-execute as @s[tag=blu] at @s as @a[team=Red,distance=..4] run function rauch:game/ability/wokkaman/q/hit
+execute as @s[tag=red] at @s as @a[team=Blue,distance=..5] run function rauch:game/ability/wokkaman/q/hit
+execute as @s[tag=blu] at @s as @a[team=Red,distance=..5] run function rauch:game/ability/wokkaman/q/hit
 scoreboard players reset t_pnum global
 
 tag @s add hit
