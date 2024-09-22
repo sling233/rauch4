@@ -1,17 +1,11 @@
-tag @s add temp
-execute unless entity @a[tag=t_hit] at @s[team=Red] as @a[team=Blue,tag=!dead,tag=game] facing entity @s feet positioned ^ ^ ^15 rotated as @a[tag=temp,limit=1] positioned ^ ^ ^-15 if entity @a[tag=temp,limit=1,distance=..1] run tag @s add t_hit
-execute unless entity @a[tag=t_hit] at @s[team=Red] as @a[team=Blue,tag=!dead,tag=game] facing entity @s feet positioned ^ ^ ^7 rotated as @a[tag=temp,limit=1] positioned ^ ^ ^-7 if entity @a[tag=temp,limit=1,distance=..1] run tag @s add t_hit
-execute unless entity @a[tag=t_hit] at @s[team=Red] as @a[team=Blue,tag=!dead,tag=game,distance=..7] facing entity @s feet positioned ^ ^ ^4 rotated as @a[tag=temp,limit=1] positioned ^ ^ ^-4 if entity @a[tag=temp,limit=1,distance=..1] run tag @s add t_hit
-execute unless entity @a[tag=t_hit] at @s[team=Red] as @a[team=Blue,tag=!dead,tag=game,distance=..3.5] facing entity @s feet positioned ^ ^ ^2 rotated as @a[tag=temp,limit=1] positioned ^ ^ ^-2 if entity @a[tag=temp,limit=1,distance=..1] run tag @s add t_hit
-execute unless entity @a[tag=t_hit] at @s[team=Blue] as @a[team=Red,tag=!dead,tag=game] facing entity @s feet positioned ^ ^ ^15 rotated as @a[tag=temp,limit=1] positioned ^ ^ ^-15 if entity @a[tag=temp,limit=1,distance=..1] run tag @s add t_hit
-execute unless entity @a[tag=t_hit] at @s[team=Blue] as @a[team=Red,tag=!dead,tag=game] facing entity @s feet positioned ^ ^ ^7 rotated as @a[tag=temp,limit=1] positioned ^ ^ ^-7 if entity @a[tag=temp,limit=1,distance=..1] run tag @s add t_hit
-execute unless entity @a[tag=t_hit] at @s[team=Blue] as @a[team=Red,tag=!dead,tag=game,distance=..7] facing entity @s feet positioned ^ ^ ^4 rotated as @a[tag=temp,limit=1] positioned ^ ^ ^-4 if entity @a[tag=temp,limit=1,distance=..1] run tag @s add t_hit
-execute unless entity @a[tag=t_hit] at @s[team=Blue] as @a[team=Red,tag=!dead,tag=game,distance=..3.5] facing entity @s feet positioned ^ ^ ^2 rotated as @a[tag=temp,limit=1] positioned ^ ^ ^-2 if entity @a[tag=temp,limit=1,distance=..1] run tag @s add t_hit
+tag @s add wokkaman_q_shooting
+scoreboard players reset @s wokkaman_shoot_cooldown
+scoreboard players set t_wokkaman_rocket_shooting_count temp 0
 
-execute at @s as @a[tag=t_hit,sort=nearest,limit=1] run function rauch:game/ability/wokkaman/q/hit
-execute if entity @a[tag=t_hit] run scoreboard players operation @s cool2 = @s cool2_target
-execute unless entity @a[tag=t_hit] at @s run playsound minecraft:entity.puffer_fish.blow_out master @s
-execute unless entity @a[tag=t_hit] run tellraw @s {"text":"No enemy found!","color":"red"}
+scoreboard players operation t_pnum global = @s pnum
+# prevents new rockets from shooting when the wokkaman gets a kill for example
+execute as @e[type=item_display,tag=wok_rocket,tag=rotating] if score @s pnum = t_pnum global run function rauch:game/ability/wokkaman/q/tag_rocket_for_shooting
+scoreboard players reset t_pnum global
 
-tag @a remove t_hit
-tag @s remove temp
+scoreboard players operation @s wokkaman_rocket_shooting_count = t_wokkaman_rocket_shooting_count temp
+scoreboard players reset t_wokkaman_rocket_shooting_count temp

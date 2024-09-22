@@ -16,4 +16,19 @@ execute as @s[scores={fly=1..},tag=!flying] run tag @s add flying
 execute as @s[tag=flying,tag=t_grounded] run function rauch:game/ability/wokkaman/f/land
 execute as @s[scores={elytra=0..}] run function rauch:game/ability/wokkaman/f/elytra_cooldown
 
+scoreboard players add @s wokkaman_rocket_phase 1
+scoreboard players operation t_angle global = @s wokkaman_rocket_phase
+execute store result score t_player_angle global run data get entity @s Rotation[0]
+execute as @s[tag=t_grounded] run scoreboard players set t_is_grounded global 1
+
+scoreboard players operation t_pnum global = @s pnum
+tag @s add temp
+execute as @e[type=item_display,tag=wok_rocket,tag=rotating] if score @s pnum = t_pnum global at @s run function rauch:game/ability/wokkaman/q/rocket_rotate
+tag @s remove temp
+scoreboard players reset t_pnum global
+
+scoreboard players reset t_angle global
+scoreboard players reset t_is_grounded global
+scoreboard players reset t_player_angle global
+
 tag @s remove t_grounded

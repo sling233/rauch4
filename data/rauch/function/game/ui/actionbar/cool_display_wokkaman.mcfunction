@@ -6,12 +6,6 @@ scoreboard players operation %cool1_s global /= %20 global
 scoreboard players operation %cool1_ds global %= %20 global
 scoreboard players operation %cool1_ds global /= %2 global
 
-scoreboard players operation %cool2_s global = @s cool2
-scoreboard players operation %cool2_ds global = @s cool2
-scoreboard players operation %cool2_s global /= %20 global
-scoreboard players operation %cool2_ds global %= %20 global
-scoreboard players operation %cool2_ds global /= %2 global
-
 scoreboard players operation %cool3_s global = @s cool3
 scoreboard players operation %cool3_ds global = @s cool3
 scoreboard players operation %cool3_s global /= %20 global
@@ -49,8 +43,6 @@ execute if predicate rauch:skill as @s[scores={actionbar_design=4}] run function
 
 scoreboard players reset %cool1_s
 scoreboard players reset %cool1_ds
-scoreboard players reset %cool2_s
-scoreboard players reset %cool2_ds
 scoreboard players reset %cool3_s
 scoreboard players reset %cool3_ds
 scoreboard players reset %cool4_s

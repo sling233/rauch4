@@ -136,22 +136,35 @@ scoreboard objectives add wok_kills dummy
 scoreboard objectives add wok_time dummy
 scoreboard objectives add wok_hover_schedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add wok_push_timer minecraft.custom:minecraft.time_since_rest
-scoreboard objectives add wokkaman_debuff dummy
 scoreboard objectives add wokkaman_weapon dummy
 scoreboard objectives add wokkaman_helmet dummy
+scoreboard objectives add wokkaman_rocket_phase dummy
+scoreboard objectives add wokkaman_rocket_rotating_tilt dummy
+scoreboard objectives add wokkaman_rocket_count dummy
+scoreboard objectives add wokkaman_rocket_shooting_count dummy
+scoreboard objectives add wokkaman_shoot_cooldown dummy
 #constants
 scoreboard players set 0 global 0
 scoreboard players set 1 global 1
+scoreboard players set -1 global -1
 scoreboard players set 2 global 2
 scoreboard players set 3 global 3
+scoreboard players set 4 global 4
 scoreboard players set 9 global 9
 scoreboard players set 10 global 10
 scoreboard players set 11 global 11
 scoreboard players set 12 global 12
 scoreboard players set 14 global 14
 scoreboard players set 15 global 15
+scoreboard players set 16 global 16
 scoreboard players set 20 global 20
+scoreboard players set -20 global -20
+scoreboard players set 23 global 23
 scoreboard players set 28 global 28
+scoreboard players set 35 global 35
+scoreboard players set 45 global 45
+scoreboard players set 90 global 90
+scoreboard players set 180 global 180
 scoreboard players set 500 global 500
 
 # setup stuff

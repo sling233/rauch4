@@ -26,8 +26,8 @@ execute as @s[scores={raucherdmg=0..}] run function rauch:game/ability/raucher/q
 execute as @s[scores={tank_resistance=0..}] run function rauch:game/ability/tank/q/resistance
 execute as @s[scores={wark_startup=0..}] run function rauch:game/ability/wark/r/startup
 execute as @s[scores={wark_detect=0..}] run function rauch:game/ability/wark/r/trapped_player
-execute as @s[scores={wokkaman_debuff=0..}] run function rauch:game/ability/wokkaman/q/scale_debuff
 execute as @s[tag=wok_stepped_on] run function rauch:game/ability/wokkaman/sq/stepped_on
+execute as @s[tag=wokkaman_q_shooting] run function rauch:game/ability/wokkaman/q/shooting
 
 execute as @s[scores={stun=0..}] run function rauch:game/mechanics/stun
 execute at @s[scores={damage_taken=0..}] run function rauch:game/ui/damage_taken
@@ -49,5 +49,5 @@ scoreboard players reset @s fly
 tag @s remove raucher_debuff
 
 effect give @s minecraft:hunger 1 255 true
-execute unless score @s wokkaman_debuff matches 1.. run effect give @s[scores={hunger=..7},tag=!raucher_control,tag=!flagPickedUp] minecraft:saturation 1 0 true
+effect give @s[scores={hunger=..7},tag=!raucher_control,tag=!flagPickedUp] minecraft:saturation 1 0 true
 effect give @s[scores={hunger=..2}] minecraft:saturation 1 0 true

@@ -1,6 +1,6 @@
 # design 3
 $title @s actionbar [\
-{"text":"Q","color":"dark_purple"},{"text":"[","color":"$(bracketq)"},{"score":{"name":"%cool2_s","objective":"global"},"color":"$(q)"},{"text":".","color":"$(q)"},{"score":{"name":"%cool2_ds","objective":"global"},"color":"$(q)"},{"text":"]  ","color":"$(bracketq)"},\
+{"text":"Q","color":"dark_purple"},{"text":"[","color":"$(bracketq)"},{"score":{"name":"@s","objective":"wokkaman_rocket_count"},"color":"$(q)"},{"text":"]  ","color":"$(bracketq)"},\
 {"text":"sQ","color":"#2a2afc"},{"text":"[","color":"$(bracketsq)"},{"score":{"name":"%cool5_s","objective":"global"},"color":"$(sq)"},{"text":".","color":"$(sq)"},{"score":{"name":"%cool5_ds","objective":"global"},"color":"$(sq)"},{"text":"]  ","color":"$(bracketsq)"},\
 {"text":"F","color":"#2194a5"},{"text":"[","color":"$(bracketf)"},{"score":{"name":"%cool3_s","objective":"global"},"color":"$(f)"},{"text":".","color":"$(f)"},{"score":{"name":"%cool3_ds","objective":"global"},"color":"$(f)"},{"text":"]  ","color":"$(bracketf)"},\
 {"text":"sF","color":"#009900"},{"text":"[","color":"$(bracketsf)"},{"score":{"name":"%cool6_s","objective":"global"},"color":"$(sf)"},{"text":".","color":"$(sf)"},{"score":{"name":"%cool6_ds","objective":"global"},"color":"$(sf)"},{"text":"]  ","color":"$(bracketsf)"},\
