@@ -1,5 +1,4 @@
 # t_pnum global has pnum of wokkaman, as player hit
-say hit
 tag @s add t_damage_target
 scoreboard players set .damage temp 30
 execute as @a if score @s pnum = t_pnum global run function rauch:game/mechanics/damage_target_by_self
