@@ -1,8 +1,8 @@
 # design 0
 $title @s actionbar [\
 {"text":"Q[","color":"$(q)"},{"score":{"name":"@s","objective":"wokkaman_rocket_count"},"color":"$(q)"},"color":"$(q)"},{"text":"]  ","color":"$(q)"},\
-{"text":"sQ[","color":"$(sq)"},{"score":{"name":"%cool5_s","objective":"global"},"color":"$(sq)"},{"text":".","color":"$(sq)"},{"score":{"name":"%cool5_ds","objective":"global"},"color":"$(sq)"},{"text":"]  ","color":"$(sq)"},\
-{"text":"F[","color":"$(f)"},{"score":{"name":"%cool3_s","objective":"global"},"color":"$(f)"},{"text":".","color":"$(f)"},{"score":{"name":"%cool3_ds","objective":"global"},"color":"$(f)"},{"text":"]  ","color":"$(f)"},\
-{"text":"sF[","color":"$(sf)"},{"score":{"name":"%cool6_s","objective":"global"},"color":"$(sf)"},{"text":".","color":"$(sf)"},{"score":{"name":"%cool6_ds","objective":"global"},"color":"$(sf)"},{"text":"]  ","color":"$(sf)"},\
-{"text":"R[","color":"$(r)"},{"score":{"name":"%cool1_s","objective":"global"},"color":"$(r)"},{"text":".","color":"$(r)"},{"score":{"name":"%cool1_ds","objective":"global"},"color":"$(r)"},{"text":"]  ","color":"$(r)"},\
-{"text":"sR[","color":"$(sr)"},{"score":{"name":"%cool4_s","objective":"global"},"color":"$(sr)"},{"text":".","color":"$(sr)"},{"score":{"name":"%cool4_ds","objective":"global"},"color":"$(sr)"},{"text":"]","color":"$(sr)"}]
+{"text":"sQ[","color":"$(sq)"},{"score":{"name":"t_cool5_s","objective":"temp"},"color":"$(sq)"},{"text":".","color":"$(sq)"},{"score":{"name":"t_cool5_ds","objective":"temp"},"color":"$(sq)"},{"text":"]  ","color":"$(sq)"},\
+{"text":"F[","color":"$(f)"},{"score":{"name":"t_cool3_s","objective":"temp"},"color":"$(f)"},{"text":".","color":"$(f)"},{"score":{"name":"t_cool3_ds","objective":"temp"},"color":"$(f)"},{"text":"]  ","color":"$(f)"},\
+{"text":"sF[","color":"$(sf)"},{"score":{"name":"t_cool6_s","objective":"temp"},"color":"$(sf)"},{"text":".","color":"$(sf)"},{"score":{"name":"t_cool6_ds","objective":"temp"},"color":"$(sf)"},{"text":"]  ","color":"$(sf)"},\
+{"text":"R[","color":"$(r)"},{"score":{"name":"t_cool1_s","objective":"temp"},"color":"$(r)"},{"text":".","color":"$(r)"},{"score":{"name":"t_cool1_ds","objective":"temp"},"color":"$(r)"},{"text":"]  ","color":"$(r)"},\
+{"text":"sR[","color":"$(sr)"},{"score":{"name":"t_cool4_s","objective":"temp"},"color":"$(sr)"},{"text":".","color":"$(sr)"},{"score":{"name":"t_cool4_ds","objective":"temp"},"color":"$(sr)"},{"text":"]","color":"$(sr)"}]

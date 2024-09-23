@@ -1,5 +1,5 @@
-execute if score t_shot_rocket global matches 1 run return 0
-scoreboard players set t_shot_rocket global 1
+execute if score t_shot_rocket temp matches 1 run return 0
+scoreboard players set t_shot_rocket temp 1
 tag @s remove rotating
 tag @s remove to_be_shot
 tag @s add active

@@ -1,3 +1,3 @@
 tag @a remove least
 tag @s add least
-scoreboard players operation Global t_min_health = @s health
+scoreboard players operation t_min_health temp = @s health

@@ -7,13 +7,11 @@ execute at @e[type=marker,tag=t2,tag=map] run tp @a[team=Blue,tag=!dead] ~ ~-20 
 
 scoreboard players add @s stats_g_points_scored 1
 
-scoreboard objectives add 50 dummy
-scoreboard players set Global 50 50
+scoreboard players set 50 const 50
 scoreboard players operation Global flag_min_distance_red = Global spawn_to_center_distance
-scoreboard players operation Global flag_min_distance_red *= Global 50
+scoreboard players operation Global flag_min_distance_red *= 50 const
 scoreboard players operation Global flag_min_distance_blue = Global spawn_to_center_distance
-scoreboard players operation Global flag_min_distance_blue *= Global 50
-scoreboard objectives remove 50
+scoreboard players operation Global flag_min_distance_blue *= 50 const
 
 # cancel potential overtime, as the team will have scored and thus won
 scoreboard players set Global ctf_overtime 0

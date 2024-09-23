@@ -33,9 +33,10 @@ scoreboard players set @a[tag=game] cool3 2
 scoreboard players set @a[tag=game,scores={kit=5}] wark_charge 0
 
 # tp players every 10 ticks because tp-ing every tick leads to problems for minecraft on servers
-scoreboard objectives add mod10 dummy
-scoreboard players operation Global mod10 = Global gamestart
-scoreboard players operation Global mod10 %= Global 10
-execute if score Global mod10 matches 0 at @e[type=marker,tag=t1,tag=map] run tp @a[team=Red] ~ ~-20 ~
-execute if score Global mod10 matches 0 at @e[type=marker,tag=t2,tag=map] run tp @a[team=Blue] ~ ~-20 ~
-scoreboard objectives remove mod10
+scoreboard players set 10 const 10
+
+scoreboard players operation t_mod10 temp = Global gamestart
+scoreboard players operation t_mod10 temp %= 10 const
+execute if score t_mod10 temp matches 0 at @e[type=marker,tag=t1,tag=map] run tp @a[team=Red] ~ ~-20 ~
+execute if score t_mod10 temp matches 0 at @e[type=marker,tag=t2,tag=map] run tp @a[team=Blue] ~ ~-20 ~
+scoreboard players reset t_mod10 temp

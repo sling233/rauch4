@@ -6,14 +6,14 @@ execute as @s[scores={damage_taken=40..49}] run data merge storage temp {color:"
 execute as @s[scores={damage_taken=50..69}] run data merge storage temp {color:"dark_red"}
 execute as @s[scores={damage_taken=70..}] run data merge storage temp {color:"black"}
 
-scoreboard objectives add t_damage_calc dummy
-scoreboard players operation @s t_damage_calc = @s damage_taken
-scoreboard players operation @s t_damage_calc %= Global 20
+scoreboard players set 20 const 20
+scoreboard players operation t_damage_calc temp = @s damage_taken
+scoreboard players operation t_damage_calc temp %= 20 const
 
 execute store result storage temp dmg1 int 0.05 run scoreboard players get @s damage_taken
-execute store result storage temp dmg2 int 0.5 run scoreboard players get @s t_damage_calc
+execute store result storage temp dmg2 int 0.5 run scoreboard players get t_damage_calc temp
 
-scoreboard objectives remove t_damage_calc
+scoreboard players reset t_damage_calc temp
 
 function rauch:game/ui/set_damage_name with storage temp
 

@@ -4,4 +4,4 @@ data modify entity @e[type=snowball,tag=setup,limit=1] Owner set from entity @s 
 
 tag @e[type=snowball,tag=setup] remove setup
 
-scoreboard players set Global t_success 1
+scoreboard players set t_success global 1

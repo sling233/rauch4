@@ -1,9 +1,9 @@
 #$(name) has function name
 # call like this: function rauch:debug/debug {name:"my_function"}
 $tellraw @a [{"text":"Debug function Info for function","color":"green"},{"text":" $(name)","color":"light_purple"}]
-execute store result score #t_game_tick global run time query gametime
-tellraw @a [{"text":"  Tick: ","color":"yellow"},{"score":{"name":"#t_game_tick","objective":"global"},"color":"light_purple"}]
-scoreboard players reset #t_game_tick global
+execute store result score t_game_tick temp run time query gametime
+tellraw @a [{"text":"  Tick: ","color":"yellow"},{"score":{"name":"t_game_tick","objective":"temp"},"color":"light_purple"}]
+scoreboard players reset t_game_tick temp
 
 execute if entity @s run tellraw @a [{"text":"  @s: ","color":"yellow"},{"selector":"@s"}]
 execute unless entity @s run tellraw @a [{"text":"  @s: ","color":"green"},{"text":"None"}]

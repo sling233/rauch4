@@ -2,10 +2,12 @@ title @a subtitle ""
 execute as @a[team=Red] run title @s title {"text":"Defeat","color":"red"}
 execute as @a[team=Blue] run title @s title {"text":"Victory","color":"gold"}
 
-execute as @a run scoreboard players operation @s stats_g_damage_d += Global 20
-execute as @a run scoreboard players operation @s stats_g_damage_d -= Global 2
-execute as @a run scoreboard players operation @s stats_g_damage_d /= Global 20
-execute as @a run scoreboard players operation @s stats_g_damage_t /= Global 20
+scoreboard players set 2 const 2
+scoreboard players set 20 const 20
+execute as @a run scoreboard players operation @s stats_g_damage_d += 20 const
+execute as @a run scoreboard players operation @s stats_g_damage_d -= 2 const
+execute as @a run scoreboard players operation @s stats_g_damage_d /= 20 const
+execute as @a run scoreboard players operation @s stats_g_damage_t /= 20 const
 
 #execute as @a[team=Red] at @s run playsound minecraft:music_disc.13 record @s
 #execute as @a[team=Blue] at @s run playsound minecraft:music_disc.11 record @s

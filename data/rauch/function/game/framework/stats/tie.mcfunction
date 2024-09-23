@@ -1,10 +1,12 @@
 title @a subtitle ""
 execute as @a run title @s title {"text":"Tie","color":"yellow"}
 
-execute as @a run scoreboard players operation @s stats_g_damage_d += Global 20
-execute as @a run scoreboard players operation @s stats_g_damage_d -= Global 2
-execute as @a run scoreboard players operation @s stats_g_damage_d /= Global 20
-execute as @a run scoreboard players operation @s stats_g_damage_t /= Global 20
+scoreboard players set 2 const 2
+scoreboard players set 20 const 20
+execute as @a run scoreboard players operation @s stats_g_damage_d += 20 const
+execute as @a run scoreboard players operation @s stats_g_damage_d -= 2 const
+execute as @a run scoreboard players operation @s stats_g_damage_d /= 20 const
+execute as @a run scoreboard players operation @s stats_g_damage_t /= 20 const
 
 execute as @a run tellraw @s ""
 execute as @a run tellraw @s [{"text":"---------------- ","color":"yellow"},{"text":"Tie","color":"yellow"},{"text":" -----------------","color":"yellow"}]

@@ -37,5 +37,3 @@ particle minecraft:soul_fire_flame ~-1.139 ~-6.156 ~3.131 0 0 0 0 1 force
 particle minecraft:soul_fire_flame ~0.0 ~-5.524 ~4.299 0 0 0 0 1 force
 particle minecraft:soul_fire_flame ~1.113 ~-5.524 ~4.153 0 0 0 0 1 force
 particle minecraft:soul_fire_flame ~2.15 ~-5.524 ~3.723 0 0 0 0 1 force
-
-scoreboard players reset @s 2

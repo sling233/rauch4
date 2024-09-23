@@ -1,6 +1,7 @@
 function rauch:game/ui/bossbar/hack/set_max
 function rauch:game/ui/bossbar/hack/visible
-scoreboard players operation @s hack > Global 1
+scoreboard players set 1 const 1
+scoreboard players operation @s hack > 1 const
 
 
 execute as @s[scores={kit=1,boltspeed=..-1}] run scoreboard players set @s boltspeed -1

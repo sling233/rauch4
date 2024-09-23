@@ -1,11 +1,3 @@
-scoreboard objectives add 0 dummy
-scoreboard objectives add 1 dummy
-scoreboard objectives add 2 dummy
-scoreboard objectives add 3 dummy
-scoreboard objectives add 9 dummy
-scoreboard objectives add 10 dummy
-scoreboard objectives add 12 dummy
-scoreboard objectives add 20 dummy
 scoreboard objectives add actionbar_design dummy
 scoreboard objectives add adminsetting trigger
 scoreboard objectives add armor_target dummy
@@ -14,6 +6,7 @@ scoreboard objectives add boltdmg dummy
 scoreboard objectives add boltspeed minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add clouds dummy
+scoreboard objectives add const dummy
 scoreboard objectives add cool1 dummy
 scoreboard objectives add cool1_target dummy
 scoreboard objectives add cool1_respawn dummy
@@ -88,18 +81,13 @@ scoreboard objectives add wark_charge dummy
 scoreboard objectives add wark_detect dummy
 scoreboard objectives add wark_startup dummy
 scoreboard objectives add wark_f minecraft.custom:minecraft.time_since_rest
-scoreboard objectives add xPos dummy
-scoreboard objectives add yPos dummy
 scoreboard objectives add zarzahn_f dummy
 scoreboard objectives add zarzahn_hooking dummy
-scoreboard objectives add zPos dummy
 #king of the hill
 scoreboard objectives add capture_info dummy
 scoreboard objectives add control dummy
 scoreboard objectives add time_blue dummy
 scoreboard objectives add time_red dummy
-scoreboard objectives add blu_calc dummy
-scoreboard objectives add red_calc dummy
 #respawnDeathmatch
 scoreboard objectives add killNumRed dummy
 scoreboard objectives add killNumBlue dummy
@@ -143,29 +131,6 @@ scoreboard objectives add wokkaman_rocket_rotating_tilt dummy
 scoreboard objectives add wokkaman_rocket_count dummy
 scoreboard objectives add wokkaman_rocket_shooting_count dummy
 scoreboard objectives add wokkaman_shoot_cooldown dummy
-#constants
-scoreboard players set 0 global 0
-scoreboard players set 1 global 1
-scoreboard players set -1 global -1
-scoreboard players set 2 global 2
-scoreboard players set 3 global 3
-scoreboard players set 4 global 4
-scoreboard players set 9 global 9
-scoreboard players set 10 global 10
-scoreboard players set 11 global 11
-scoreboard players set 12 global 12
-scoreboard players set 14 global 14
-scoreboard players set 15 global 15
-scoreboard players set 16 global 16
-scoreboard players set 20 global 20
-scoreboard players set -20 global -20
-scoreboard players set 23 global 23
-scoreboard players set 28 global 28
-scoreboard players set 35 global 35
-scoreboard players set 45 global 45
-scoreboard players set 90 global 90
-scoreboard players set 180 global 180
-scoreboard players set 500 global 500
 
 # setup stuff
 execute unless entity @a[tag=admin] unless data storage lobby_data position run tellraw @a [{"text":"Please set the Lobby position by moving to the desired location and clicking ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:settings/changelobbypos"}}]
@@ -181,14 +146,6 @@ execute as @a[tag=!lobby,tag=!game,tag=!addmap,tag=!spectator] run tag @s add lo
 
 # set scores
 execute unless score Global click matches 0.. run scoreboard players set Global click 0
-scoreboard players set Global 0 0
-scoreboard players set Global 1 1
-scoreboard players set Global 2 2
-scoreboard players set Global 3 3
-scoreboard players set Global 9 9
-scoreboard players set Global 10 10
-scoreboard players set Global 12 12
-scoreboard players set Global 20 20
 execute unless score Global mode matches 0..5 run scoreboard players set Global mode 0
 
 scoreboard objectives setdisplay below_name health

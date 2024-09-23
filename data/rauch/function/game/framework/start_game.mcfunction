@@ -29,13 +29,12 @@ execute as @e[type=marker,tag=map] run function rauch:game/framework/mapsetup
 
 execute store result score Global mapParticle run data get storage map_data active.particle
 #scoreboard players operation Global mapParticle = @e[type=armor_stand,tag=map,tag=root,tag=active] mapParticle
-scoreboard objectives add t_map_time dummy
-execute store result score Global t_map_time run data get storage map_data active.time
-execute if score Global t_map_time matches 1 run time set day
-execute if score Global t_map_time matches 2 run time set noon
-execute if score Global t_map_time matches 3 run time set night
-execute if score Global t_map_time matches 4 run time set midnight
-scoreboard objectives remove t_map_time
+execute store result score t_map_time temp run data get storage map_data active.time
+execute if score t_map_time temp matches 1 run time set day
+execute if score t_map_time temp matches 2 run time set noon
+execute if score t_map_time temp matches 3 run time set night
+execute if score t_map_time temp matches 4 run time set midnight
+scoreboard players reset t_map_time temp
 
 # bossbars
 function rauch:game/ui/bossbar/setplayers

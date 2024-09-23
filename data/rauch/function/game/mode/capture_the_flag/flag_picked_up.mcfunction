@@ -1,38 +1,42 @@
 ############ calculate distance ##############
-scoreboard objectives add xPos2 dummy
-scoreboard objectives add zPos2 dummy
 # x
-execute store result score @s xPos run data get entity @s Pos[0] 1000
-scoreboard players operation @s xPos2 = @s xPos
-execute store result score Global xPos run data get entity @e[type=marker,tag=map,tag=t1,limit=1] Pos[0] 1000
-execute store result score Global xPos2 run data get entity @e[type=marker,tag=map,tag=t2,limit=1] Pos[0] 1000
-scoreboard players operation @s xPos -= Global xPos
-scoreboard players operation @s xPos2 -= Global xPos2
+execute store result score t_delta_x_red temp run data get entity @s Pos[0] 1000
+scoreboard players operation t_delta_x_blu temp = t_delta_x_red temp
+execute store result score t_spawn_red_x temp run data get entity @e[type=marker,tag=map,tag=t1,limit=1] Pos[0] 1000
+execute store result score t_spawn_blue_x temp run data get entity @e[type=marker,tag=map,tag=t2,limit=1] Pos[0] 1000
+scoreboard players operation t_delta_x_red temp -= t_spawn_red_x temp
+scoreboard players operation t_delta_x_blu temp -= t_spawn_blue_x temp
 # z
-execute store result score @s zPos run data get entity @s Pos[2] 1000
-scoreboard players operation @s zPos2 = @s zPos
-execute store result score Global zPos run data get entity @e[type=marker,tag=map,tag=t1,limit=1] Pos[2] 1000
-execute store result score Global zPos2 run data get entity @e[type=marker,tag=map,tag=t2,limit=1] Pos[2] 1000
-scoreboard players operation @s zPos -= Global zPos
-scoreboard players operation @s zPos2 -= Global zPos2
+execute store result score t_delta_z_red temp run data get entity @s Pos[2] 1000
+scoreboard players operation t_delta_z_blu temp = t_delta_z_red temp
+execute store result score t_spawn_red_z temp run data get entity @e[type=marker,tag=map,tag=t1,limit=1] Pos[2] 1000
+execute store result score t_spawn_blue_z temp run data get entity @e[type=marker,tag=map,tag=t2,limit=1] Pos[2] 1000
+scoreboard players operation t_delta_z_red temp -= t_spawn_red_z temp
+scoreboard players operation t_delta_z_blu temp -= t_spawn_blue_z temp
 
 execute at @s run summon item_display ~ ~ ~ {UUID:[I;0,0,0,0]}
 
 # calculate distance 1
-execute store result storage temp distance.x float 0.001 run scoreboard players get @s xPos
-execute store result storage temp distance.z float 0.001 run scoreboard players get @s zPos
+execute store result storage temp distance.x float 0.001 run scoreboard players get t_delta_x_red temp
+execute store result storage temp distance.z float 0.001 run scoreboard players get t_delta_z_red temp
 function rauch:game/mode/capture_the_flag/get_distance_macro with storage temp distance
 execute store result score Global flagDistanceRed run data get entity 0-0-0-0-0 transformation.scale[0] 1000
 
 # calculate distance 2
-execute store result storage temp distance.x float 0.001 run scoreboard players get @s xPos2
-execute store result storage temp distance.z float 0.001 run scoreboard players get @s zPos2
+execute store result storage temp distance.x float 0.001 run scoreboard players get t_delta_x_blu temp
+execute store result storage temp distance.z float 0.001 run scoreboard players get t_delta_z_blu temp
 function rauch:game/mode/capture_the_flag/get_distance_macro with storage temp distance
 execute store result score Global flagDistanceBlue run data get entity 0-0-0-0-0 transformation.scale[0] 1000
 
 kill 0-0-0-0-0
-scoreboard objectives remove xPos2
-scoreboard objectives remove zPos2
+scoreboard players reset t_delta_x_red temp
+scoreboard players reset t_spawn_red_x temp
+scoreboard players reset t_delta_z_red temp
+scoreboard players reset t_spawn_red_z temp
+scoreboard players reset t_delta_x_blue temp
+scoreboard players reset t_spawn_blue_x temp
+scoreboard players reset t_delta_z_blue temp
+scoreboard players reset t_spawn_blue_z temp
 ##############################################
 
 # save min distance

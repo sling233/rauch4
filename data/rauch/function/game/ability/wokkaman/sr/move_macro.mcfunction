@@ -3,10 +3,9 @@
 # wokka owner has tag t_wokka
 
 # look towards target if existent
-scoreboard objectives add t_target_pnum dummy
-scoreboard players operation Global t_target_pnum = @s zarzahn_hooking
+scoreboard players operation t_target_pnum global = @s zarzahn_hooking
 tag @s add t_proj
-execute at @s as @a if score @s pnum = Global t_target_pnum facing entity @s eyes run tp @e[type=marker,tag=wok_bow,tag=t_proj] ~ ~ ~ ~ ~
+execute at @s as @a if score @s pnum = t_target_pnum global facing entity @s eyes run tp @e[type=marker,tag=wok_bow,tag=t_proj] ~ ~ ~ ~ ~
 tag @s remove t_proj
 
 ###### move ###########
@@ -23,8 +22,8 @@ tag @s add temp
 execute at @s[tag=searching,tag=red] positioned ~ ~-1.6 ~ as @a[team=Blue,tag=game,tag=!wok_bow_tagged,tag=!dead,distance=..6,sort=nearest,limit=1] run function rauch:game/ability/wokkaman/sr/found
 execute at @s[tag=searching,tag=blu] positioned ~ ~-1.6 ~ as @a[team=Red,tag=game,tag=!wok_bow_tagged,tag=!dead,distance=..6,sort=nearest,limit=1] run function rauch:game/ability/wokkaman/sr/found
 
-execute at @s[tag=!searching,tag=red] positioned ~-0.5 ~-0.5 ~-0.5 as @a[team=Blue,tag=game,tag=!dead,dx=0,dy=0,dz=0] if score @s pnum = Global t_target_pnum run function rauch:game/ability/wokkaman/sr/hit
-execute at @s[tag=!searching,tag=blu] positioned ~-0.5 ~-0.5 ~-0.5 as @a[team=Red,tag=game,tag=!dead,dx=0,dy=0,dz=0] if score @s pnum = Global t_target_pnum run function rauch:game/ability/wokkaman/sr/hit
+execute at @s[tag=!searching,tag=red] positioned ~-0.5 ~-0.5 ~-0.5 as @a[team=Blue,tag=game,tag=!dead,dx=0,dy=0,dz=0] if score @s pnum = t_target_pnum global run function rauch:game/ability/wokkaman/sr/hit
+execute at @s[tag=!searching,tag=blu] positioned ~-0.5 ~-0.5 ~-0.5 as @a[team=Red,tag=game,tag=!dead,dx=0,dy=0,dz=0] if score @s pnum = t_target_pnum global run function rauch:game/ability/wokkaman/sr/hit
 tag @s remove temp
 
 #destroy
@@ -45,8 +44,8 @@ tag @s add temp
 execute at @s[tag=searching,tag=red] positioned ~ ~-1.6 ~ as @a[team=Blue,tag=game,tag=!wok_bow_tagged,tag=!dead,distance=..6,sort=nearest,limit=1] run function rauch:game/ability/wokkaman/sr/found
 execute at @s[tag=searching,tag=blu] positioned ~ ~-1.6 ~ as @a[team=Red,tag=game,tag=!wok_bow_tagged,tag=!dead,distance=..6,sort=nearest,limit=1] run function rauch:game/ability/wokkaman/sr/found
 
-execute at @s[tag=!searching,tag=red] positioned ~-0.5 ~-0.5 ~-0.5 as @a[team=Blue,tag=game,tag=!dead,dx=0,dy=0,dz=0] if score @s pnum = Global t_target_pnum run function rauch:game/ability/wokkaman/sr/hit
-execute at @s[tag=!searching,tag=blu] positioned ~-0.5 ~-0.5 ~-0.5 as @a[team=Red,tag=game,tag=!dead,dx=0,dy=0,dz=0] if score @s pnum = Global t_target_pnum run function rauch:game/ability/wokkaman/sr/hit
+execute at @s[tag=!searching,tag=red] positioned ~-0.5 ~-0.5 ~-0.5 as @a[team=Blue,tag=game,tag=!dead,dx=0,dy=0,dz=0] if score @s pnum = t_target_pnum global run function rauch:game/ability/wokkaman/sr/hit
+execute at @s[tag=!searching,tag=blu] positioned ~-0.5 ~-0.5 ~-0.5 as @a[team=Red,tag=game,tag=!dead,dx=0,dy=0,dz=0] if score @s pnum = t_target_pnum global run function rauch:game/ability/wokkaman/sr/hit
 tag @s remove temp
 
 #destroy
@@ -67,11 +66,11 @@ tag @s add temp
 execute at @s[tag=searching,tag=red] positioned ~ ~-1.6 ~ as @a[team=Blue,tag=game,tag=!wok_bow_tagged,tag=!dead,distance=..6,sort=nearest,limit=1] run function rauch:game/ability/wokkaman/sr/found
 execute at @s[tag=searching,tag=blu] positioned ~ ~-1.6 ~ as @a[team=Red,tag=game,tag=!wok_bow_tagged,tag=!dead,distance=..6,sort=nearest,limit=1] run function rauch:game/ability/wokkaman/sr/found
 
-execute at @s[tag=!searching,tag=red] positioned ~-0.5 ~-0.5 ~-0.5 as @a[team=Blue,tag=game,tag=!dead,dx=0,dy=0,dz=0] if score @s pnum = Global t_target_pnum run function rauch:game/ability/wokkaman/sr/hit
-execute at @s[tag=!searching,tag=blu] positioned ~-0.5 ~-0.5 ~-0.5 as @a[team=Red,tag=game,tag=!dead,dx=0,dy=0,dz=0] if score @s pnum = Global t_target_pnum run function rauch:game/ability/wokkaman/sr/hit
+execute at @s[tag=!searching,tag=red] positioned ~-0.5 ~-0.5 ~-0.5 as @a[team=Blue,tag=game,tag=!dead,dx=0,dy=0,dz=0] if score @s pnum = t_target_pnum global run function rauch:game/ability/wokkaman/sr/hit
+execute at @s[tag=!searching,tag=blu] positioned ~-0.5 ~-0.5 ~-0.5 as @a[team=Red,tag=game,tag=!dead,dx=0,dy=0,dz=0] if score @s pnum = t_target_pnum global run function rauch:game/ability/wokkaman/sr/hit
 tag @s remove temp
 
 #destroy
 execute at @s[tag=searching] unless block ^ ^ ^0.3 #nonsolid run function rauch:game/ability/wokkaman/sr/destroy
 
-scoreboard objectives remove t_target_pnum
+scoreboard players reset t_target_pnum global

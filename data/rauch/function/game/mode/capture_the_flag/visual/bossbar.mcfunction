@@ -1,15 +1,13 @@
 #tellraw @a [{"score":{"name":"Global","objective":"dis_diff"}}]
-scoreboard objectives add t_calc dummy
-scoreboard objectives add 100 dummy
-scoreboard players set Global 100 100
-scoreboard players operation Global t_calc = Global dis_diff
-scoreboard players operation Global t_calc /= Global 100
-#tellraw @a [{"score":{"name":"Global","objective":"t_calc"}}]
+scoreboard players set 100 const 100
+scoreboard players operation t_calc temp = Global dis_diff
+scoreboard players operation t_calc temp /= 100 const
+#tellraw @a [{"score":{"name":"t_calc","objective":"temp"}}]
 
-scoreboard players operation Global t_calc += Global spawn_to_center_distance
+scoreboard players operation t_calc temp += Global spawn_to_center_distance
 
-execute store result bossbar flag_location value run scoreboard players get Global t_calc
-#tellraw @a [{"score":{"name":"Global","objective":"t_calc"}}]
+execute store result bossbar flag_location value run scoreboard players get t_calc temp
+#tellraw @a [{"score":{"name":"t_calc","objective":"temp"}}]
 
-scoreboard objectives remove 100
-scoreboard objectives remove t_calc
+
+scoreboard players reset t_calc temp

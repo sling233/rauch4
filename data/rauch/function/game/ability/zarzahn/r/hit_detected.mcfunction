@@ -1,6 +1,6 @@
-# executed as player hit (marker has tag temp) global t_pnum has zarzahns (shooters) pnum
+# executed as player hit (marker has tag temp) t_pnum global has zarzahns (shooters) pnum
 # give zarzahn_hooking score to zarzahn
-execute at @s as @a if score @s pnum = Global t_pnum run scoreboard players operation @s zarzahn_hooking = @p pnum
+execute at @s as @a if score @s pnum = t_pnum global run scoreboard players operation @s zarzahn_hooking = @p pnum
 
 execute at @s run playsound minecraft:block.chain.place master @a
 
