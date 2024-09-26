@@ -1,3 +1,3 @@
 tellraw @s [{"text":"Version not changed","color":"yellow"}]
-scoreboard objectives remove this_version
+scoreboard players reset this_version temp
 return 0

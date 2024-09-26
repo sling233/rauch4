@@ -1,5 +1,5 @@
 # downpatch
-tellraw @a [{"text":"dev605","color":"light_purple"},{"text":" <- ","color":"red"},{"text":"Future Version (Id: ","color":"aqua"},{"score":{"name":"Global","objective":"version"}},{"text":")","color":"aqua"}]
+tellraw @a [{"text":"dev606","color":"light_purple"},{"text":" <- ","color":"red"},{"text":"Future Version (Id: ","color":"aqua"},{"score":{"name":"Global","objective":"version"}},{"text":")","color":"aqua"}]
 tellraw @a [{"text":"- Downpatching may lead to the existance of unnecessary scoreboard objectives, teams and bossbars.\n","color":"yellow"},\
 {"text":"- It is not guaranteed that downpatching will work without bugs, even for version 6.0.0 and higher. Most things should be fine, but if e.g the map data format changes, things would break.\n\
 Know Issues as of this version:\n\
@@ -26,4 +26,4 @@ tellraw @a {"text":"Automatically reloaded, re-added everything","color":"green"
 #scoreboard objectives remove reload_message_disabled_temp
 
 # set new version
-scoreboard players operation Global version = Global this_version
+scoreboard players set Global version 606

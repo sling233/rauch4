@@ -140,7 +140,7 @@ execute as @a[tag=admin] unless score %reload_message_disabled global matches 1 
 
 execute as @a[tag=!lobby,tag=!game,tag=!addmap,tag=!spectator] run tag @s add lobby
 
-#function rauch:settings/versions/version_check
+function rauch:settings/versions/version_check
 #function rauch:settings/versions/maps/map_check
 #function rauch:settings/versions/lobby_check
 
