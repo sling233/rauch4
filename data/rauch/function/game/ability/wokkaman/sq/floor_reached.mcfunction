@@ -10,7 +10,7 @@ execute at @s run particle minecraft:campfire_cosy_smoke ~ ~1 ~ 2 1 2 0.03 300 f
 execute at @s run particle minecraft:explosion ~ ~1 ~ 2 1 2 0.1 10 force
 
 tag @s add t_damage_target
-scoreboard players set .damage temp 30
+scoreboard players set t_damage temp 30
 execute as @a[tag=t_damager] run function rauch:game/mechanics/damage_target_by_self
 tag @s remove t_damage_target
 tag @a remove t_damager
