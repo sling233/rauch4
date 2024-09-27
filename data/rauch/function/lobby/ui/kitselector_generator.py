@@ -48,6 +48,7 @@ hacker = Kit("Hacker","Support")
 hacker.r_ability = "Shoots a projectile that increases received damage by 20% for enemies for 12 seconds."
 hacker.q_ability = "Throws a Hacking-Bomb. After landing, it hacks enemies in range for 10 seconds. Hacked players cannot use their abilities."
 hacker.f_ability = "Reduces all ability cooldowns for teammates in range (cone-shape in front of you) by 15 seconds. Instead of having a cooldown, this ability is charge-based. You get a charge if a player debuffed (R) or hacked (Q) by you dies. You spawn with 1 charge at the start of the game, but dying doesn\\'t affect your charges."
+hacker.f_cool = "-"
 hacker.colors = ["#FF0000","#FFBF00","#7FFF00","#00FF3F","#00FFFF","#003FFF","#7F00FF","#FF00BF"]
 
 wark = Kit("Wark","Fighter")
@@ -192,7 +193,7 @@ text.append('{"text":"[","color":"dark_gray"},{"text":"Design 2",color:"$(design
 text.append('{"text":"[","color":"dark_gray"},{"text":"Design 3",color:"$(design_2)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\\\nOn cooldown: "},{"text":"Q [","color":"dark_gray"},{"text":"6.8","color":"gray"},{"text":"] F [","color":"dark_gray"},{"text":"4.1","color":"gray"},{"text":"] R [","color":"dark_gray"},{"text":"3.2","color":"gray"},{"text":"]","color":"dark_gray"}]},"clickEvent":{"action":"run_command","value":"/trigger kitselect set 112"}},{"text":"]\\\\n","color":"dark_gray"},\\')
 text.append('{"text":"[","color":"dark_gray"},{"text":"Design 4","color":"$(design_3)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\\\nOn cooldown: "},{"text":"Q ","color":"dark_purple"},{"text":"[","color":"dark_gray"},{"text":"6.8","color":"gray"},{"text":"]","color":"dark_gray"},{"text":" F ","color":"dark_green"},{"text":"[","color":"dark_gray"},{"text":"4.1","color":"gray"},{"text":"]","color":"dark_gray"},{"text":" R ","color":"gold"},{"text":"[","color":"dark_gray"},{"text":"3.2","color":"gray"},{"text":"]","color":"dark_gray"}]},"clickEvent":{"action":"run_command","value":"/trigger kitselect set 113"}},{"text":"]\\\\n","color":"dark_gray"},\\')
 text.append('{"text":"[","color":"dark_gray"},{"text":"Design 5","color":"$(design_4)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\\\nOn cooldown: "},{"text":"Q ","color":"dark_purple"},{"text":"[6.8] ","color":"gray"},{"text":"F ","color":"dark_green"},{"text":"[4.1] ","color":"gray"},{"text":"R ","color":"gold"},{"text":"[3.2]","color":"gray"}]},"clickEvent":{"action":"run_command","value":"/trigger kitselect set 114"}},{"text":"]","color":"dark_gray"}\\')
-text.append("]'}]},\")
+text.append("]'}]},\\")
 text.append("item_name='{\"text\":\"Kit Selector/Settings\",\"color\":\"yellow\"}'] 1")
 
 

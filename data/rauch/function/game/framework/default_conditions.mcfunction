@@ -24,10 +24,10 @@ execute as @a[scores={kit=3}] run scoreboard players set @s projectileRNumRespaw
 
 execute as @a[scores={kit=4}] run scoreboard players set @s cool1_target 380
 execute as @a[scores={kit=4}] run scoreboard players set @s cool2_target 460
-execute as @a[scores={kit=4}] run scoreboard players set @s cool3_target 460
+#execute as @a[scores={kit=4}] run scoreboard players set @s cool3_target 460
 execute as @a[scores={kit=4}] run scoreboard players set @s cool1_respawn 150
 execute as @a[scores={kit=4}] run scoreboard players set @s cool2_respawn 230
-execute as @a[scores={kit=4}] run scoreboard players set @s cool3_respawn 460
+#execute as @a[scores={kit=4}] run scoreboard players set @s cool3_respawn 460
 
 execute as @a[scores={kit=5}] run scoreboard players set @s cool1_target 480
 #execute as @a[scores={kit=5}] run scoreboard players set @s cool2_target 340

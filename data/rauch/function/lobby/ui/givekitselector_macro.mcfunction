@@ -22,7 +22,7 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 [{"text":"Name: ","color":"gray"},{"text":"Hacker\\n","color":"#FF0000"},{"text":"Type: ","color":"gray"},{"text":"Support\\n","color":"#FFBF00"},\
 {"text":"Stats:  "},{"text":"❤15  ","color":"#7FFF00"},{"text":"⚔1.1  ","color":"#00FF3F"},{"text":"Range: 3\\n\\n","color":"#00FFFF"},{"text":"R (19s): ","color":"#003FFF"},\
 {"text":"Shoots a projectile that increases received damage by 20% for enemies for 12 seconds.\\n\\n"},{"text":"Q (23s): ","color":"#7F00FF"},\
-{"text":"Throws a Hacking-Bomb. After landing, it hacks enemies in range for 10 seconds. Hacked players cannot use their abilities.\\n\\n"},{"text":"F (23s): ","color":"#FF00BF"},\
+{"text":"Throws a Hacking-Bomb. After landing, it hacks enemies in range for 10 seconds. Hacked players cannot use their abilities.\\n\\n"},{"text":"F (-): ","color":"#FF00BF"},\
 {"text":"Reduces all ability cooldowns for teammates in range (cone-shape in front of you) by 15 seconds. Instead of having a cooldown, this ability is charge-based. You get a charge if a player debuffed (R) or hacked (Q) by you dies. You spawn with 1 charge at the start of the game, but dying doesn\'t affect your charges."}]}},{"text":"]\\n[","color":"dark_gray"},\
 {"text":"Wark","color":"$(wark)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 5"},"hoverEvent":{"action":"show_text","contents":\
 [{"text":"Name: ","color":"gray"},{"text":"Wark\\n","color":"#07E6BD"},{"text":"Type: ","color":"gray"},{"text":"Fighter\\n","color":"#036654"},\
@@ -49,7 +49,7 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"When grounded, you rise in the air. If you already are in the air you simply stall for a bit. After a short while you slam into the ground, dealing 4.8❤ and stunning everyone in range for 3 seconds.\\n\\n"},{"text":"F (14s): ","color":"#FFBF47"},\
 {"text":"A Boost upwards. In general, you have an elytra. When exceeding a certain speed while flying, your melee attacks get buffed to 4.6❤ (with a crit, that would be 6.9❤) until you touch the ground."}]}},{"text":"]","color":"dark_gray"},\
 {"text":"\\n\\n[","color":"dark_gray"},{"text":"Wokkaman","color":"gray","hoverEvent":{"action":"show_text","contents":\
-[{"text":"This kit cannot be selected, it gets assigned only to players in team red in the Wokkaman game mode.\\n\\n","color":"gray"},\
+[{"text":"This kit cannot be selected, it gets assigned to players in team red in the Wokkaman game mode.\\n\\n","color":"gray"},\
 {"text":"Name: ","color":"gray"},{"text":"Wokkaman\\n","color":"red"},{"text":"Type: ","color":"gray"},{"text":"Everything\\n","color":"red"},\
 {"text":"Stats:  "},{"text":"❤40  ","color":"red"},{"text":"⚔2.0  ","color":"red"},{"text":"Range: 3.6\\n\\n","color":"red"},{"text":"R (8s): ","color":"red"},\
 {"text":"Wok R\\n\\n"},{"text":"sR (10s): ","color":"red"},\
@@ -62,40 +62,10 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"Ambient Particles:\\n","hoverEvent":{"action":"show_text","contents":[{"text":"Turns Ambient Particles On/Off. Some Maps may not have Ambient Particles. This can help a bit with performance problems.","color":"white"}]}},\
 {"text":" [","color":"dark_gray"},{"text":"Off","color":"$(ambient)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 100"}},{"text":"]      [","color":"dark_gray"},{"text":"On","color":"$(not_ambient)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 101"}},{"text":"]\\n\\n","color":"dark_gray"},\
 {"text":"Actionbar Design:\\n"},\
-{"text":"[","color":"dark_gray"},\
-{"text":"Design 1",color:"$(design_0)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},\
-{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},\
-{"text":"\\nOn cooldown: "},\
-{"text":"Q [6.8] ","color":"light_purple"},{"text":"F [4.1] ","color":"green"},{"text":"R [3.2]","color":"yellow"}]},\
-"clickEvent":{"action":"run_command","value":"/trigger kitselect set 110"}},\
-{"text":"]\\n","color":"dark_gray"},\
-{"text":"[","color":"dark_gray"},\
-{"text":"Design 2",color:"$(design_1)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},\
-{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},\
-{"text":"\\nOn cooldown: "},\
-{"text":"Q [6.8] F [4.1] R [3.2]","color":"gray"}]},\
-"clickEvent":{"action":"run_command","value":"/trigger kitselect set 111"}},\
-{"text":"]\\n","color":"dark_gray"},\
-{"text":"[","color":"dark_gray"},\
-{"text":"Design 3",color:"$(design_2)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},\
-{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},\
-{"text":"\\nOn cooldown: "},\
-{"text":"Q [","color":"dark_gray"},{"text":"6.8","color":"gray"},{"text":"] F [","color":"dark_gray"},{"text":"4.1","color":"gray"},{"text":"] R [","color":"dark_gray"},{"text":"3.2","color":"gray"},{"text":"]","color":"dark_gray"}]},\
-"clickEvent":{"action":"run_command","value":"/trigger kitselect set 112"}},\
-{"text":"]\\n","color":"dark_gray"},\
-{"text":"[","color":"dark_gray"},\
-{"text":"Design 4","color":"$(design_3)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},\
-{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},\
-{"text":"\\nOn cooldown: "},\
-{"text":"Q ","color":"dark_purple"},{"text":"[","color":"dark_gray"},{"text":"6.8","color":"gray"},{"text":"]","color":"dark_gray"},{"text":" F ","color":"dark_green"},{"text":"[","color":"dark_gray"},{"text":"4.1","color":"gray"},{"text":"]","color":"dark_gray"},{"text":" R ","color":"gold"},{"text":"[","color":"dark_gray"},{"text":"3.2","color":"gray"},{"text":"]","color":"dark_gray"}]},\
-"clickEvent":{"action":"run_command","value":"/trigger kitselect set 113"}},\
-{"text":"]\\n","color":"dark_gray"},\
-{"text":"[","color":"dark_gray"},\
-{"text":"Design 5","color":"$(design_4)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},\
-{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},\
-{"text":"\\nOn cooldown: "},\
-{"text":"Q ","color":"dark_purple"},{"text":"[6.8] ","color":"gray"},{"text":"F ","color":"dark_green"},{"text":"[4.1] ","color":"gray"},{"text":"R ","color":"gold"},{"text":"[3.2]","color":"gray"}]},\
-"clickEvent":{"action":"run_command","value":"/trigger kitselect set 114"}},\
-{"text":"]","color":"dark_gray"}\
+{"text":"[","color":"dark_gray"},{"text":"Design 1",color:"$(design_0)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\nOn cooldown: "},{"text":"Q [6.8] ","color":"light_purple"},{"text":"F [4.1] ","color":"green"},{"text":"R [3.2]","color":"yellow"}]},"clickEvent":{"action":"run_command","value":"/trigger kitselect set 110"}},{"text":"]\\n","color":"dark_gray"},\
+{"text":"[","color":"dark_gray"},{"text":"Design 2",color:"$(design_1)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\nOn cooldown: "},{"text":"Q [6.8] F [4.1] R [3.2]","color":"gray"}]},"clickEvent":{"action":"run_command","value":"/trigger kitselect set 111"}},{"text":"]\\n","color":"dark_gray"},\
+{"text":"[","color":"dark_gray"},{"text":"Design 3",color:"$(design_2)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\nOn cooldown: "},{"text":"Q [","color":"dark_gray"},{"text":"6.8","color":"gray"},{"text":"] F [","color":"dark_gray"},{"text":"4.1","color":"gray"},{"text":"] R [","color":"dark_gray"},{"text":"3.2","color":"gray"},{"text":"]","color":"dark_gray"}]},"clickEvent":{"action":"run_command","value":"/trigger kitselect set 112"}},{"text":"]\\n","color":"dark_gray"},\
+{"text":"[","color":"dark_gray"},{"text":"Design 4","color":"$(design_3)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\nOn cooldown: "},{"text":"Q ","color":"dark_purple"},{"text":"[","color":"dark_gray"},{"text":"6.8","color":"gray"},{"text":"]","color":"dark_gray"},{"text":" F ","color":"dark_green"},{"text":"[","color":"dark_gray"},{"text":"4.1","color":"gray"},{"text":"]","color":"dark_gray"},{"text":" R ","color":"gold"},{"text":"[","color":"dark_gray"},{"text":"3.2","color":"gray"},{"text":"]","color":"dark_gray"}]},"clickEvent":{"action":"run_command","value":"/trigger kitselect set 113"}},{"text":"]\\n","color":"dark_gray"},\
+{"text":"[","color":"dark_gray"},{"text":"Design 5","color":"$(design_4)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\nOn cooldown: "},{"text":"Q ","color":"dark_purple"},{"text":"[6.8] ","color":"gray"},{"text":"F ","color":"dark_green"},{"text":"[4.1] ","color":"gray"},{"text":"R ","color":"gold"},{"text":"[3.2]","color":"gray"}]},"clickEvent":{"action":"run_command","value":"/trigger kitselect set 114"}},{"text":"]","color":"dark_gray"}\
 ]'}]},\
 item_name='{"text":"Kit Selector/Settings","color":"yellow"}'] 1
