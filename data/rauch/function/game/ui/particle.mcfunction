@@ -1,0 +1,13 @@
+execute if score Global mapParticle matches 1 at @s run particle minecraft:ash ~ ~3 ~ 10 4 10 1 40 normal @s
+execute if score Global mapParticle matches 2 at @s run particle minecraft:crimson_spore ~ ~3 ~ 10 4 10 1 40 normal @s
+execute if score Global mapParticle matches 3 at @s run particle minecraft:enchanted_hit ~ ~3 ~ 10 4 10 0.05 40 normal @s
+execute if score Global mapParticle matches 4 at @s run particle minecraft:glow ~ ~3 ~ 10 4 10 1 40 normal @s
+execute if score Global mapParticle matches 5 at @s run particle minecraft:nautilus ~ ~3 ~ 10 4 10 1 40 normal @s
+execute if score Global mapParticle matches 6 at @s run particle minecraft:snowflake ~ ~3 ~ 10 4 10 0.04 40 normal @s
+execute if score Global mapParticle matches 7 at @s run particle minecraft:small_flame ~ ~3 ~ 10 4 10 0.04 40 normal @s
+execute if score Global mapParticle matches 8 at @s run particle minecraft:warped_spore ~ ~3 ~ 10 4 10 1 40 normal @s
+execute if score Global mapParticle matches 9 at @s run particle minecraft:white_ash ~ ~3 ~ 10 4 10 1 40 normal @s
+execute if score Global mapParticle matches 10 at @s run particle minecraft:witch ~ ~3 ~ 10 4 10 1 40 normal @s
+#execute if score Global mapParticle matches 11 at @s run particle minecraft:spore_blossom_air ~ ~3 ~ 15 4 15 1 4 normal @s
+execute if score Global mapParticle matches 11 at @s run particle minecraft:falling_spore_blossom ~ ~5 ~ 15 4 15 1 4 normal @s
+execute if score Global mapParticle matches 12 at @s run particle minecraft:cherry_leaves ~ ~3 ~ 10 4 10 1 4 normal @s

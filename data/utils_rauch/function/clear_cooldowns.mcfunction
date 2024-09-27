@@ -1,0 +1,1 @@
+execute as @a[tag=game] run function utils_rauch:clear_my_cooldowns

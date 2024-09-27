@@ -1,1 +1,0 @@
-$summon item ~ ~1.6 ~ {CustomNameVisible:1b,Age:5980,PickupDelay:32767,Motion:[0.1,0.3,0.005],CustomName:'{"text":"$(dmg1).$(dmg2)","color":"$(color)"}',Item:{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{CustomModelData:0}}}
