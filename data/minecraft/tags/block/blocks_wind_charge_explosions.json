@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:barrier",
+    "minecraft:bedrock",
+	"#minecraft:nonsolid",
+	"#minecraft:trapdoors",
+	"#minecraft:doors",
+	"minecraft:bell"
+  ]
+}

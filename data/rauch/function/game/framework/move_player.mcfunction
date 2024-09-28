@@ -61,6 +61,7 @@ tag @s remove flagPickedUp
 tag @s remove wokkaman
 tag @s remove wok_f_air
 tag @s remove wok_stomp_search
+tag @s remove can_be_launched
 effect clear @s
 team leave @s
 #clear @s
