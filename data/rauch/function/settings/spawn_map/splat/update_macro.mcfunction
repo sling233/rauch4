@@ -5,6 +5,7 @@ $data modify storage map_data maps[$(index)].particle set value -1
 $data modify storage map_data maps[$(index)].time set value -1
 $data modify storage map_data maps[$(index)].weather set value 1
 $data modify storage map_data maps[$(index)].has_launchpads set value 0
+$data modify storage map_data maps[$(index)].disable_block_interaction set value 0
 $data modify storage map_data maps[$(index)].name set value "Splat"
 
 $execute positioned $(x) $(y) $(z) align xyz run summon marker ~4.5 ~29 ~11.5 {Tags:["mapsetup","red"]}

@@ -17,8 +17,8 @@ $execute if score t_map_id temp matches 4 unless score t_map_ver temp matches 4 
 execute if score t_map_id temp matches 4 unless score t_map_ver temp matches 4 run scoreboard players set #t_map_update_found global 1
 $execute if score t_map_id temp matches 5 unless score t_map_ver temp matches 3 run tellraw @a[tag=admin] [{"text":"An Update is available for map Klotz 2.0. Click ","color":"yellow"},{"text":"here","clickEvent":{"action":"run_command","value":"/function rauch:settings/spawn_map/klotz/update {index:$(index)}"},"italic":true},{"text":" to update."}]
 execute if score t_map_id temp matches 5 unless score t_map_ver temp matches 3 run scoreboard players set #t_map_update_found global 1
-$execute if score t_map_id temp matches 6 unless score t_map_ver temp matches 2 run tellraw @a[tag=admin] [{"text":"An Update is available for map Arena. Click ","color":"yellow"},{"text":"here","clickEvent":{"action":"run_command","value":"/function rauch:settings/spawn_map/arena/update {index:$(index)}"},"italic":true},{"text":" to update."}]
-execute if score t_map_id temp matches 6 unless score t_map_ver temp matches 2 run scoreboard players set #t_map_update_found global 1
+$execute if score t_map_id temp matches 6 unless score t_map_ver temp matches 3 run tellraw @a[tag=admin] [{"text":"An Update is available for map Arena. Click ","color":"yellow"},{"text":"here","clickEvent":{"action":"run_command","value":"/function rauch:settings/spawn_map/arena/update {index:$(index)}"},"italic":true},{"text":" to update."}]
+execute if score t_map_id temp matches 6 unless score t_map_ver temp matches 3 run scoreboard players set #t_map_update_found global 1
 
 
 scoreboard players reset t_map_ver temp
