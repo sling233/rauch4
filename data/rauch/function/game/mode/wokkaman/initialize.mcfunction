@@ -10,6 +10,8 @@ execute as @a[tag=game,tag=wokkaman] store result score @s t_health run attribut
 execute as @a[tag=game,tag=wokkaman] run scoreboard players operation Global calc += @s t_health
 execute as @a[tag=game,tag=wokkaman] run tellraw @s [{"score":{"name":"Global","objective":"calc"}}]
 execute store result bossbar minecraft:wokkaman_health max run scoreboard players get Global calc
+bossbar set minecraft:wokkaman_health players @a[tag=game]
+
 scoreboard objectives remove calc
 scoreboard objectives remove t_health
 bossbar set wokkaman_health visible true
