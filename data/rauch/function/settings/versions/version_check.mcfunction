@@ -8,7 +8,7 @@ execute if score Global version = this_version temp run return run function rauc
 execute unless score Global click matches 0.. run return run function rauch:settings/versions/version_first_time
 
 # version changed:
-tellraw @a [{"text":"Installed Datapack changed, click","color":"yellow"},\
+tellraw @a[tag=admin] [{"text":"Installed Datapack changed, click","color":"yellow"},\
 {"text":" HERE ","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:settings/versions/version_change"}},\
 {"text":"to update."}]
 scoreboard players reset this_version temp
