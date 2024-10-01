@@ -33,12 +33,7 @@ execute as @s[scores={stun=0..}] run function rauch:game/mechanics/stun
 execute at @s[scores={damage_taken=0..}] run function rauch:game/ui/damage_taken
 
 # launch
-execute at @s if block ~ ~-0.1 ~ ochre_froglight run function rauch:game/mechanics/launch/launch1
-execute at @s if block ~ ~-0.1 ~ verdant_froglight run function rauch:game/mechanics/launch/launch2
-execute at @s if block ~ ~-0.1 ~ pearlescent_froglight run function rauch:game/mechanics/launch/launch3
-execute unless score t_was_launched_this_tick temp matches 1 run tag @s add can_be_launched
-scoreboard players reset t_was_launched_this_tick temp
-
+function rauch:game/mechanics/launchpads/check_for_launchpads
 #particles
 execute unless score @s hide_ambient_particles matches 1 run function rauch:game/ui/particle
 #execute as @s[tag=spawn] run function rauch:game/shop/shop

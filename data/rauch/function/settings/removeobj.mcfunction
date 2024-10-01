@@ -60,6 +60,7 @@ scoreboard objectives remove raucherdmg
 scoreboard objectives remove raucherdmg_num
 scoreboard objectives remove raucher_spider_despawn_timer
 scoreboard objectives remove respawn
+scoreboard objectives remove setting_always_enable_launchpads
 scoreboard objectives remove slime_despawn_timer
 scoreboard objectives remove stats_g_damage_d
 scoreboard objectives remove stats_g_damage_t

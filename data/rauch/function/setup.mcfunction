@@ -60,6 +60,7 @@ scoreboard objectives add raucherdmg dummy
 scoreboard objectives add raucherdmg_num dummy
 scoreboard objectives add raucher_spider_despawn_timer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add respawn dummy
+scoreboard objectives add setting_always_enable_launchpads dummy
 scoreboard objectives add slime_despawn_timer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add stats_g_damage_d minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add stats_g_damage_t minecraft.custom:minecraft.damage_taken
