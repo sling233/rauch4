@@ -21,6 +21,7 @@ scoreboard objectives add damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add death minecraft.custom:minecraft.deaths
 scoreboard objectives add drop minecraft.custom:minecraft.drop
 scoreboard objectives add dropcoas minecraft.dropped:minecraft.carrot_on_a_stick
+scoreboard objectives add enable_launchpads dummy
 scoreboard objectives add elytra dummy
 scoreboard objectives add elytra_cooldown dummy
 scoreboard objectives add fly minecraft.custom:minecraft.aviate_one_cm
@@ -139,11 +140,11 @@ execute unless entity @a[tag=admin] unless score %reload_message_disabled global
 execute as @a[tag=admin] unless data storage lobby_data position run tellraw @s [{"text":"Please set the Lobby position by moving to the desired location and clicking ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:settings/changelobbypos"}}]
 execute as @a[tag=admin] unless score %reload_message_disabled global matches 1 run tellraw @s [{"text":"The Wokkagames Data Pack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","italic":true,"clickEvent":{"action":"run_command","value":"/function rauch:settings/disable_message"}}]
 
-execute as @a[tag=!lobby,tag=!game,tag=!addmap,tag=!spectator] run tag @s add lobby
+execute as @a[tag=!lobby,tag=!game,tag=!edit_map,tag=!spectator] run tag @s add lobby
 
 function rauch:settings/versions/version_check
-#function rauch:settings/versions/maps/map_check
-#function rauch:settings/versions/lobby_check
+function rauch:settings/versions/maps/map_check
+function rauch:settings/versions/lobby_check
 
 # set scores
 execute unless score Global click matches 0.. run scoreboard players set Global click 0
@@ -189,7 +190,7 @@ team modify Flag color white
 gamerule doMobLoot false
 gamerule doMobSpawning false
 #gamerule doTileDrops false
-gamerule sendCommandFeedback false
+gamerule sendCommandFeedback true
 gamerule keepInventory true
 gamerule doImmediateRespawn true
 gamerule naturalRegeneration false

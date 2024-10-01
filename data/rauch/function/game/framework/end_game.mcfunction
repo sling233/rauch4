@@ -1,4 +1,5 @@
 time set day
+weather clear
 kill @e[type=marker,tag=map]
 kill @e[type=armor_stand,tag=stun]
 kill @e[type=armor_stand,tag=flag]

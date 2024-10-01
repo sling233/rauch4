@@ -21,6 +21,7 @@ scoreboard objectives remove damage_taken
 scoreboard objectives remove death
 scoreboard objectives remove drop
 scoreboard objectives remove dropcoas
+scoreboard objectives remove enable_launchpads
 scoreboard objectives remove elytra
 scoreboard objectives remove elytra_cooldown
 scoreboard objectives remove fly

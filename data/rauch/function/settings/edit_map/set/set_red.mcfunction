@@ -9,16 +9,16 @@ scoreboard players add t_posx temp 5
 scoreboard players add t_posy temp 200
 scoreboard players add t_posz temp 5
 
-data modify storage map_data maps[0].blue set value [0d,0d,0d]
-execute store result storage map_data maps[0].blue[0] double 0.1 run scoreboard players get t_posx temp
-execute store result storage map_data maps[0].blue[1] double 0.1 run scoreboard players get t_posy temp
-execute store result storage map_data maps[0].blue[2] double 0.1 run scoreboard players get t_posz temp
+data modify storage map_data edit_buffer.red set value [0d,0d,0d]
+execute store result storage map_data edit_buffer.red[0] double 0.1 run scoreboard players get t_posx temp
+execute store result storage map_data edit_buffer.red[1] double 0.1 run scoreboard players get t_posy temp
+execute store result storage map_data edit_buffer.red[2] double 0.1 run scoreboard players get t_posz temp
 
 #tellraw @s {"text":"----------------------------------------------------", "color":"yellow"}
-tellraw @s [{"text":"Blue Spawn set to: ", "color":"yellow"},{"nbt":"maps[0].blue[0]","storage":"map_data","color":"light_purple"},{"text":", "},{"nbt":"maps[0].blue[1]","storage":"map_data","color":"light_purple"},{"text":", "},{"nbt":"maps[0].blue[2]","storage":"map_data","color":"light_purple"}]
+tellraw @s [{"text":"Red Spawn set to: ", "color":"yellow"},{"nbt":"edit_buffer.red[0]","storage":"map_data","color":"light_purple"},{"text":", "},{"nbt":"edit_buffer.red[1]","storage":"map_data","color":"light_purple"},{"text":", "},{"nbt":"edit_buffer.red[2]","storage":"map_data","color":"light_purple"}]
 #tellraw @s {"text":"----------------------------------------------------", "color":"yellow"}
 execute at @s run playsound minecraft:block.tripwire.click_off master @s ~ ~ ~ 1
-function rauch:settings/add_map/givebluespawn
+function rauch:settings/edit_map/give/give_red_spawn
 
 
 scoreboard players reset t_posx temp

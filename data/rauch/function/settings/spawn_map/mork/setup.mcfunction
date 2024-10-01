@@ -1,8 +1,10 @@
-data modify storage map_data maps prepend value {name:"{\"text\":\"Mork\"}",id:4,red:[],blue:[],center:[],particle:11,time:-1,version:-1,spawn_location:[]}
+data modify storage map_data maps prepend value {name:"Mork",id:4,red:[],blue:[],center:[],particle:11,time:-1,version:-1,weather:-1,has_launchpads:-1,spawn_location:[]}
 # remember to change the these values in update_macro as well
-data modify storage map_data maps[0].version set value 3
+data modify storage map_data maps[0].version set value 4
 data modify storage map_data maps[0].particle set value 11
 data modify storage map_data maps[0].time set value -1
+data modify storage map_data maps[0].weather set value 1
+data modify storage map_data maps[0].has_launchpads set value 0
 data modify storage map_data maps[0].spawn_location set from entity @s Pos
 
 # remember to change the offsets in update as well

@@ -27,14 +27,8 @@ summon marker ~ ~ ~ {Tags:["map","t2"]}
 summon marker ~ ~ ~ {Tags:["map","ce"]}
 execute as @e[type=marker,tag=map] run function rauch:game/framework/mapsetup
 
-execute store result score Global mapParticle run data get storage map_data active.particle
-#scoreboard players operation Global mapParticle = @e[type=armor_stand,tag=map,tag=root,tag=active] mapParticle
-execute store result score t_map_time temp run data get storage map_data active.time
-execute if score t_map_time temp matches 1 run time set day
-execute if score t_map_time temp matches 2 run time set noon
-execute if score t_map_time temp matches 3 run time set night
-execute if score t_map_time temp matches 4 run time set midnight
-scoreboard players reset t_map_time temp
+# sorry for bad name but i cant think of anything better rn. it sets the time, weather and particles
+function rauch:game/framework/map_setup_2
 
 # bossbars
 function rauch:game/ui/bossbar/setplayers
