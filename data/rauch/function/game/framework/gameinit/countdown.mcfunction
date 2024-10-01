@@ -27,9 +27,9 @@ execute if score Global gamestart matches 0 as @a[tag=game] run title @s times 1
 #execute if score Global gamestart matches 0 as @a[tag=game] run title @s subtitle {"text":""}
 execute if score Global gamestart matches 0 run scoreboard players reset Global gamestart
 
-scoreboard players set @a[tag=game] cool1 2
-scoreboard players set @a[tag=game] cool2 2
-scoreboard players set @a[tag=game] cool3 2
+#scoreboard players set @a[tag=game] cool1 2
+#scoreboard players set @a[tag=game] cool2 2
+#scoreboard players set @a[tag=game] cool3 2
 scoreboard players set @a[tag=game,scores={kit=5}] wark_charge 0
 
 # tp players every 10 ticks because tp-ing every tick leads to problems for minecraft on servers
