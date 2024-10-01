@@ -58,4 +58,5 @@ scoreboard players reset @s click
 scoreboard players reset Global mapParticle
 weather clear
 time set day
+clear @a[tag=lobby] minecraft:written_book[item_name='{"color":"yellow","text":"Settings"}']
 tag @s add lobby

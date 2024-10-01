@@ -1,4 +1,4 @@
-$item replace entity @s hotbar.1 with written_book[item_name='{"text":"Visual Settings","color":"yellow"}',written_book_content={title:"Visual Settings",author:"",pages:[{raw:'[\
+$item replace entity @s hotbar.1 with written_book[item_name='{"text":"Map Settings","color":"yellow"}',written_book_content={title:"Map Settings",author:"",pages:[{raw:'[\
 {"text":"      "},{"text":"Particle\\n","bold":true},\
 {"text":"[","color":"dark_gray"},{"text":"None","color":"$(p0)","clickEvent":{"action":"run_command","value":"/trigger map_setting set 1000"}},{"text":"]\\n","color":"dark_gray"},\
 {"text":"[","color":"dark_gray"},{"text":"Ash","color":"$(p1)","clickEvent":{"action":"run_command","value":"/trigger map_setting set 1"}},{"text":"]\\n","color":"dark_gray"},\
