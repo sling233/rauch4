@@ -23,5 +23,5 @@ execute as @a[tag=t_stunned] run effect give @s minecraft:levitation 1 40 true
 #execute at @a[tag=t_stunned] run particle minecraft:dust_plume ~ ~1 ~ 0.1 0.2 0.1 0.3 300 force
 execute at @a[tag=t_stunned] run particle minecraft:end_rod ~ ~1 ~ 0.1 0.2 0.1 0.3 150 force
 execute at @a[tag=t_stunned] run particle minecraft:dust_color_transition{from_color:[0.9,0.3,0.1],scale:1,to_color:[0.1,0.0,0.0]} ~ ~1 ~ 1 1 1 1 400 force
-damage @a[tag=t_stunned,limit=1] 20 minecraft:falling_anvil
+damage @a[tag=t_stunned,limit=1] 20 rauch:no_hit_cooldown
 tag @a[tag=t_stunned] remove wok_hook

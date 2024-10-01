@@ -10,9 +10,10 @@ execute unless entity @a[tag=t_found] run return 0
 
 execute as @a[tag=t_found,sort=nearest,limit=1] run tag @s add wok_stepped_on
 
-execute at @a[tag=wok_stepped_on] run summon boat ~ ~1 ~ {Invisible:1b,NoGravity:1b,Invulnerable:1b,Type:"oak",Tags:["wok_boat","setup"],Passengers:[{id:"minecraft:marker",Tags:["wok_boat_rider"]},{id:"minecraft:marker",Tags:["wok_boat_rider"]}]}
-scoreboard players operation @e[type=boat,tag=wok_boat,tag=setup,limit=1] pnum = @a[tag=wok_stepped_on,limit=1] pnum
-tag @e[type=boat,tag=wok_boat] remove setup
+execute at @a[tag=wok_stepped_on] run summon block_display ~ ~1 ~ {Tags:["wok_sq_vehicle","setup"]}
+scoreboard players operation @e[type=block_display,tag=wok_sq_vehicle,tag=setup,limit=1] wokkaman_weapon = @s pnum
+scoreboard players operation @e[type=block_display,tag=wok_sq_vehicle,tag=setup,limit=1] pnum = @a[tag=wok_stepped_on,limit=1] pnum
+tag @e[type=block_display,tag=wok_sq_vehicle] remove setup
 execute at @a[tag=wok_stepped_on] run tp @s ~ ~3.5 ~
 execute as @a[tag=wok_stepped_on] run scoreboard players set @s stun 10
 execute as @a[tag=wok_stepped_on] run function rauch:game/mechanics/stuninit

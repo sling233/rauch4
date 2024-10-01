@@ -1,1 +1,1 @@
-$damage @p $(damage) minecraft:falling_anvil by @s
+$damage @p $(damage) rauch:no_hit_cooldown by @s

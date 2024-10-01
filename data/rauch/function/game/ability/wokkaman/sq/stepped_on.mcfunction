@@ -6,7 +6,11 @@ execute at @s unless block ~ ~-0.4 ~ #minecraft:nonsolid run return run function
 execute unless entity @a[tag=t_damager] run return run function rauch:game/ability/wokkaman/sq/un_step_on
 
 execute at @s as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum at @s run tp @s ~ ~-0.2 ~
-execute at @s as @e[type=boat,tag=wok_boat] if score @s pnum = @p pnum run tp @s ~ ~ ~
+execute at @s as @e[type=block_display,tag=wok_sq_vehicle] if score @s pnum = @p pnum run tag @s add t_vehicle
+execute at @s run tp @e[type=block_display,tag=wok_sq_vehicle,tag=t_vehicle] ~ ~2.4 ~
+execute as @e[type=block_display,tag=wok_sq_vehicle,tag=t_vehicle] at @a[tag=game] if score @s wokkaman_weapon = @p pnum run ride @p mount @s
+tag @e[type=block_display,tag=wok_sq_vehicle,tag=t_vehicle] remove t_vehicle
+
 
 scoreboard players set 3 const 3
 tag @s add t_damage_target

@@ -1,1 +1,1 @@
-$damage @a[tag=t_damage_target,limit=1] $(damage) minecraft:falling_anvil by @s
+$damage @a[tag=t_damage_target,limit=1] $(damage) rauch:no_hit_cooldown by @s

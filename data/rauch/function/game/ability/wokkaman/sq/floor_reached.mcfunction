@@ -9,9 +9,8 @@ execute at @s run particle minecraft:dust_color_transition{from_color:[1.0,0.5,1
 execute at @s run particle minecraft:campfire_cosy_smoke ~ ~1 ~ 2 1 2 0.03 300 force
 execute at @s run particle minecraft:explosion ~ ~1 ~ 2 1 2 0.1 10 force
 
-tag @s add t_damage_target
-scoreboard players set t_damage temp 30
-execute as @a[tag=t_damager] run function rauch:game/mechanics/damage_target_by_self
-tag @s remove t_damage_target
-tag @a remove t_damager
+execute at @s[team=Blue] as @a[team=Blue,tag=game,distance=..4] run say in range: @s
+execute at @s[team=Red] as @a[team=Red,tag=game,distance=..4] run function rauch:game/ability/wokkaman/sq/floor_reached_damage
+execute at @s[team=Blue] as @a[team=Blue,tag=game,distance=..4] run function rauch:game/ability/wokkaman/sq/floor_reached_damage
+#tag @a remove t_damager
 function rauch:game/ability/wokkaman/sq/un_step_on
