@@ -15,9 +15,17 @@ data remove storage game_data wok_bow_tag
 # set wokkaman kit
 execute if score Global mode matches 5 as @a[tag=queue,team=Red] run scoreboard players set @s kit 9
 
-# player ids und setup und so
+# removes all offline palyers from the teams while keeping the online players
+tag @a[team=Red] add t_red
+tag @a[team=Blue] add t_blu
 team empty Red
 team empty Blue
+team join Red @a[tag=t_red]
+team join Blue @a[tag=t_blu]
+tag @a remove t_red
+tag @a remove t_blu
+
+# player ids und setup und so
 scoreboard players reset Global pnum
 execute as @a[tag=queue,limit=12] run function rauch:game/framework/teamsetup
 scoreboard players reset Global pnum
