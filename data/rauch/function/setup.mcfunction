@@ -45,10 +45,12 @@ scoreboard objectives add hunger food
 scoreboard objectives add kit dummy
 scoreboard objectives add kitselect trigger
 scoreboard objectives add leave minecraft.custom:minecraft.leave_game
+scoreboard objectives add map_is_dark dummy
 scoreboard objectives add mapParticle dummy
 scoreboard objectives add map_setting trigger
 scoreboard objectives add maxClouds dummy
 scoreboard objectives add mode dummy
+scoreboard objectives add night_vision_accessibility dummy
 scoreboard objectives add hide_ambient_particles dummy
 scoreboard objectives add particleDensity dummy
 scoreboard objectives add plcount dummy

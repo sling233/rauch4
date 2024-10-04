@@ -1,11 +1,12 @@
 # $x,$y,$z have the spawn coordinates for the map, $(index) the index
 # map values
-$data modify storage map_data maps[$(index)].version set value 0
+$data modify storage map_data maps[$(index)].version set value 1
 $data modify storage map_data maps[$(index)].particle set value 12
 $data modify storage map_data maps[$(index)].time set value 4
 $data modify storage map_data maps[$(index)].weather set value 1
 $data modify storage map_data maps[$(index)].has_launchpads set value 0
 $data modify storage map_data maps[$(index)].disable_block_interaction set value 0
+$data modify storage map_data maps[$(index)].is_dark set value 1
 $data modify storage map_data maps[$(index)].name set value "Trommlacherry"
 
 $execute positioned $(x) $(y) $(z) align xyz run summon marker ~13.5 ~67 ~23.5 {Tags:["mapsetup","red"]}

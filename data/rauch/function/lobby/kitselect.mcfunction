@@ -8,6 +8,9 @@ execute as @s[scores={kitselect=113}] run scoreboard players set @s actionbar_de
 execute as @s[scores={kitselect=114}] run scoreboard players set @s actionbar_design 4
 #execute as @s[scores={kitselect=103}] run scoreboard players set @s particleDensity 0
 #execute as @s[scores={kitselect=104}] run scoreboard players set @s particleDensity 1
+execute as @s[scores={kitselect=120}] run scoreboard players set @s night_vision_accessibility 0
+execute as @s[scores={kitselect=121}] run scoreboard players set @s night_vision_accessibility 1
+execute as @s[scores={kitselect=122}] run scoreboard players set @s night_vision_accessibility 2
 
 clear @s minecraft:written_book[item_name='{"text":"Kit Selector/Settings","color":"yellow"}']
 scoreboard players reset @s kitselect

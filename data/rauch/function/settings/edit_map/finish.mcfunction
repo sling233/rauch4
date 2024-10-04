@@ -5,6 +5,7 @@ execute store result score t_map_time temp run data get storage map_data edit_bu
 execute store result score t_map_weather temp run data get storage map_data edit_buffer.weather
 execute store result score t_map_launchpads temp run data get storage map_data edit_buffer.has_launchpads
 execute store result score t_map_disable_block_interaction temp run data get storage map_data edit_buffer.disable_block_interaction
+execute store result score t_map_is_dark temp run data get storage map_data edit_buffer.is_dark
 
 execute if score t_map_particle temp matches -1..0 run tellraw @s [{"text":"Ambient Particle: ","color":"green"},{"text":"None","color":"light_purple"}]
 execute if score t_map_particle temp matches 1 run tellraw @s [{"text":"Ambient Particle: ","color":"green"},{"text":"Ash","color":"light_purple"}]
@@ -36,13 +37,17 @@ execute if score t_map_launchpads temp matches 1 run tellraw @s [{"text":"Map ha
 execute if score t_map_disable_block_interaction temp matches -1..0 run tellraw @s [{"text":"Disable Block Interaction: ","color":"green"},{"text":"No","color":"light_purple"}]
 execute if score t_map_disable_block_interaction temp matches 1 run tellraw @s [{"text":"Disable Block Interaction: ","color":"green"},{"text":"Yes","color":"light_purple"}]
 
+execute if score t_map_is_dark temp matches -1..0 run tellraw @s [{"text":"Is Dark: ","color":"green"},{"text":"No","color":"light_purple"}]
+execute if score t_map_is_dark temp matches 1 run tellraw @s [{"text":"Is Dark: ","color":"green"},{"text":"Yes","color":"light_purple"}]
+
 scoreboard players reset t_map_particle temp
 scoreboard players reset t_map_time temp
 scoreboard players reset t_map_weather temp
 scoreboard players reset t_map_launchpads temp
 scoreboard players reset t_map_disable_block_interaction temp
+scoreboard players reset t_map_is_dark temp
 
-tellraw @s[tag=add_map] [{"text":"Added Map ","color":"green"},{"nbt":"edit_buffer.name","storage":"map_data","interpret":true,"color":"light_purple"}]
+tellraw @s[tag=add_map] [{"text":"Added Map ","color":"green"},{"nbt":"edit_buffer.name","storage":"map_data","color":"light_purple"}]
 tellraw @s[tag=add_map] {"text":"------------- Added Map -------------","color":"yellow"}
 tellraw @s[tag=!add_map] {"text":"------------- Edited Map -------------","color":"yellow"}
 

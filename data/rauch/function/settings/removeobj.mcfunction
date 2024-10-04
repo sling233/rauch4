@@ -45,10 +45,12 @@ scoreboard objectives remove hunger
 scoreboard objectives remove kit
 scoreboard objectives remove kitselect
 scoreboard objectives remove leave
+scoreboard objectives remove map_is_dark
 scoreboard objectives remove mapParticle
 scoreboard objectives remove map_setting
 scoreboard objectives remove maxClouds
 scoreboard objectives remove mode
+scoreboard objectives remove night_vision_accessibility 
 scoreboard objectives remove hide_ambient_particles
 scoreboard objectives remove particleDensity
 scoreboard objectives remove plcount

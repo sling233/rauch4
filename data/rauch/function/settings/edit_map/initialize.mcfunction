@@ -4,7 +4,11 @@ tag @s remove lobby
 clear @s
 execute at @s run playsound minecraft:block.tripwire.click_off master @s ~ ~ ~ 1
 
-data modify storage map_data edit_buffer set value {name:"",red:[],blue:[],center:[],particle:-1,time:-1,weather:-1,has_launchpads:-1}
+data modify storage map_data edit_buffer set value {name:"",red:[],blue:[],center:[],particle:-1,time:-1,weather:-1,has_launchpads:-1,disable_block_interaction:-1,is_dark:-1}
+scoreboard players reset Global mapParticle
+scoreboard players reset Global enable_launchpads
+time set day
+weather clear
 
 scoreboard players add Global number_of_maps 1
 tellraw @s {"text":"----------- Adding a Map -----------","color":"yellow"}

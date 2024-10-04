@@ -3,12 +3,14 @@ execute store result score t_map_time temp run data get storage map_data edit_bu
 execute store result score t_map_weather temp run data get storage map_data edit_buffer.weather
 execute store result score t_map_launchpads temp run data get storage map_data edit_buffer.has_launchpads
 execute store result score t_map_disable_block_interaction temp run data get storage map_data edit_buffer.disable_block_interaction
+execute store result score t_map_is_dark temp run data get storage map_data edit_buffer.is_dark
 data modify storage temp map_stuff set value {"p0":"gray","p1":"gray","p2":"gray","p3":"gray","p4":"gray","p5":"gray","p6":"gray",\
 "p7":"gray","p8":"gray","p9":"gray","p10":"gray","p11":"gray","p12":"gray",\
 "t0":"gray","t1":"gray","t2":"gray","t3":"gray","t4":"gray",\
 "w0":"gray","w1":"gray","w2":"gray","w3":"gray",\
 "launchpads_yes":"gray","launchpads_no":"dark_green",\
-"disable_yes":"gray","disable_no":"dark_green"}
+"disable_yes":"gray","disable_no":"dark_green",\
+"dark_yes":"gray","dark_no":"dark_green"}
 
 execute if score t_map_particle temp matches -1..0 run data merge storage temp {map_stuff:{"p0":"dark_green"}}
 execute if score t_map_particle temp matches 1 run data merge storage temp {map_stuff:{"p1":"dark_green"}}
@@ -41,6 +43,9 @@ execute if score t_map_launchpads temp matches 1 run data merge storage temp {ma
 execute if score t_map_disable_block_interaction temp matches 1 run data merge storage temp {map_stuff:{"disable_yes":"dark_green"}}
 execute if score t_map_disable_block_interaction temp matches 1 run data merge storage temp {map_stuff:{"disable_no":"gray"}}
 
+execute if score t_map_is_dark temp matches 1 run data merge storage temp {map_stuff:{"dark_yes":"dark_green"}}
+execute if score t_map_is_dark temp matches 1 run data merge storage temp {map_stuff:{"dark_no":"gray"}}
+
 function rauch:settings/edit_map/give/give_settings_macro with storage temp map_stuff
 
 scoreboard players reset t_map_particle temp
@@ -48,3 +53,4 @@ scoreboard players reset t_map_time temp
 scoreboard players reset t_map_weather temp
 scoreboard players reset t_map_launchpads temp
 scoreboard players reset t_map_disable_block_interaction temp
+scoreboard players reset t_map_is_dark temp

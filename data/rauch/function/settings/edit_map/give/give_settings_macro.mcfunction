@@ -31,4 +31,7 @@ $item replace entity @s hotbar.1 with written_book[item_name='{"text":"Map Setti
 {"text":"[","color":"dark_gray"},{"text":"No","color":"$(launchpads_no)","clickEvent":{"action":"run_command","value":"/trigger map_setting set 300"}},{"text":"]\\n","color":"dark_gray"},\
 {"text":""},{"text":"\\nDisable Block Interaction\\n","bold":true},\
 {"text":"[","color":"dark_gray"},{"text":"Yes","color":"$(disable_yes)","clickEvent":{"action":"run_command","value":"/trigger map_setting set 401"}},{"text":"]\\n","color":"dark_gray"},\
-{"text":"[","color":"dark_gray"},{"text":"No","color":"$(disable_no)","clickEvent":{"action":"run_command","value":"/trigger map_setting set 400"}},{"text":"]\\n","color":"dark_gray"}]'}]}] 1
+{"text":"[","color":"dark_gray"},{"text":"No","color":"$(disable_no)","clickEvent":{"action":"run_command","value":"/trigger map_setting set 400"}},{"text":"]\\n","color":"dark_gray"},\
+{"text":""},{"text":"\\nIs Dark\\n","bold":true},\
+{"text":"[","color":"dark_gray"},{"text":"Yes","color":"$(dark_yes)","clickEvent":{"action":"run_command","value":"/trigger map_setting set 501"}},{"text":"]\\n","color":"dark_gray"},\
+{"text":"[","color":"dark_gray"},{"text":"No","color":"$(dark_no)","clickEvent":{"action":"run_command","value":"/trigger map_setting set 500"}},{"text":"]\\n","color":"dark_gray"}]'}]}] 1

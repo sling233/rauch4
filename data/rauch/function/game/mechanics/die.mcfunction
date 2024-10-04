@@ -59,3 +59,7 @@ execute if score Global mode matches 2 as @s[team=Blue] run scoreboard players a
 function rauch:game/mechanics/weapon
 function rauch:game/mechanics/armor
 attribute @s minecraft:generic.gravity base set 0.08
+
+# set night vision
+execute as @s[scores={night_vision_accessibility=2}] run effect give @s minecraft:night_vision infinite 0 true
+execute if score Global map_is_dark matches 1 as @a[tag=game,scores={night_vision_accessibility=1}] run effect give @s minecraft:night_vision infinite 0 true

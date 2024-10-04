@@ -1,11 +1,12 @@
 # $x,$y,$z have the spawn coordinates for the map, $(index) the index
 # map values
-$data modify storage map_data maps[$(index)].version set value 3
+$data modify storage map_data maps[$(index)].version set value 4
 $data modify storage map_data maps[$(index)].particle set value -1
 $data modify storage map_data maps[$(index)].time set value -1
 $data modify storage map_data maps[$(index)].weather set value 1
 $data modify storage map_data maps[$(index)].has_launchpads set value 0
 $data modify storage map_data maps[$(index)].disable_block_interaction set value 0
+$data modify storage map_data maps[$(index)].is_dark set value 1
 $data modify storage map_data maps[$(index)].name set value "Klotz 2.0"
 
 $execute positioned $(x) $(y) $(z) align xyz run summon marker ~9.5 ~39 ~2.5 {Tags:["mapsetup","red"]}
