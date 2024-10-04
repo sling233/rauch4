@@ -9,5 +9,6 @@ $data modify storage temp map.index set value $(index)
 function rauch:settings/spawn_map/ancient/update_macro with storage temp map
 
 data remove storage temp map
+data remove storage map_data active
 tellraw @s [{"text":"Updated Map Ancient","color":"green"}]
 execute at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.6
