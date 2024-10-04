@@ -4,7 +4,7 @@ tellraw @s [{"text":"Important Locations: ","color":"light_purple"},{"text":"Set
 tellraw @s [{"text":"Settings: ","color":"light_purple"},{"text":"You can change settings with the book called \"Map Settings\".\n\
 - Particles are ambient particles that spawn when playing on that map (players can turn them off for themselves).\n\
 - Time and Weather should be self explanatory.\n\
-- Has Launchpads sets wether the game turns froglights into Launchpads on that map (Ochre ~6 blocks, Verdant ~22 blocks, Pearlescent ~44 blocks).\n\
+- Has Launchpads sets wether the game turns certain wool blocks into Launchpads of varying strength on that map (lime: 6 blocks, yellow: 22 blocks, orange: 44 blocks, red: 71 blocks).\n\
 - Disable Block Interaction sets wether players can interact with blocks such as trapdoors, chests and buttons.\n\
 You are not required to change anything here, leaving everything as is will default to no particles with clear weather and daytime, no launchpads and not disabling block interaction.","color":"yellow"}]
 tellraw @s [{"text":"Finishing: ","color":"light_purple"},{"text":"If you set a name, red spawn, blue spawn, center location and you are happy with the map settings, right click with the item called \"Finish\". You can also cancel at anytime using the item \"Cancel\".","color":"yellow"}]
