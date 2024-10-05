@@ -1,5 +1,5 @@
-scoreboard players operation @s 2 = @e[type=marker,tag=teleporter,tag=temp,limit=1] pnum
-execute at @s as @a if score @s pnum = @p 2 run tag @s add tele
+scoreboard players operation t_pnum temp = @e[type=marker,tag=teleporter,tag=temp,limit=1] pnum
+execute at @s as @a if score @s pnum = t_pnum temp run tag @s add tele
 
 tp @a[tag=tele] @s
 execute as @a[tag=tele] at @s run tp @s ~ ~ ~ ~ 0
@@ -19,3 +19,4 @@ scoreboard players set @s teleweak 60
 effect give @s slowness 3 1 true
 effect give @s unluck 3 1
 execute as @e[type=marker,tag=teleporter,tag=temp] run function rauch:game/ability/teleporter/r/kill
+scoreboard players reset t_pnum temp
