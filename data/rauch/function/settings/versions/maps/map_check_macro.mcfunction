@@ -21,6 +21,8 @@ $execute if score t_map_id temp matches 6 unless score t_map_ver temp matches 3 
 execute if score t_map_id temp matches 6 unless score t_map_ver temp matches 3 run scoreboard players set #t_map_update_found global 1
 $execute if score t_map_id temp matches 7 unless score t_map_ver temp matches 1 run tellraw @a[tag=admin] [{"text":"An Update is available for map Trommlacherry. Click ","color":"yellow"},{"text":"here","clickEvent":{"action":"run_command","value":"/function rauch:settings/spawn_map/cherry/update {index:$(index)}"},"italic":true},{"text":" to update."}]
 execute if score t_map_id temp matches 7 unless score t_map_ver temp matches 1 run scoreboard players set #t_map_update_found global 1
+$execute if score t_map_id temp matches 8 unless score t_map_ver temp matches 3 run tellraw @a[tag=admin] [{"text":"An Update is available for map Wokkacity. Click ","color":"yellow"},{"text":"here","clickEvent":{"action":"run_command","value":"/function rauch:settings/spawn_map/wcity/update {index:$(index)}"},"italic":true},{"text":" to update."}]
+execute if score t_map_id temp matches 8 unless score t_map_ver temp matches 3 run scoreboard players set #t_map_update_found global 1
 
 
 scoreboard players reset t_map_ver temp
