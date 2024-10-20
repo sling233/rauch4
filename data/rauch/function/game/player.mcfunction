@@ -50,5 +50,8 @@ scoreboard players reset @s fly
 tag @s remove raucher_debuff
 
 effect give @s minecraft:hunger 1 255 true
-effect give @s[scores={hunger=..7},tag=!raucher_control,tag=!flagPickedUp] minecraft:saturation 1 0 true
+#sprint off in raucher debuff cloud
+#effect give @s[scores={hunger=..7},tag=!raucher_control,tag=!flagPickedUp] minecraft:saturation 1 0 true
+#sprint on in raucher debuff cloud
+effect give @s[scores={hunger=..7},tag=!flagPickedUp] minecraft:saturation 1 0 true
 effect give @s[scores={hunger=..2}] minecraft:saturation 1 0 true

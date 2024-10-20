@@ -1,6 +1,6 @@
 scoreboard players add @s click 1
-execute at @s[tag=red] as @a[team=Blue,tag=game,tag=!dead,distance=..3.6] run effect give @s minecraft:slowness 1 4 true
-execute at @s[tag=blu] as @a[team=Red,tag=game,tag=!dead,distance=..3.6] run effect give @s minecraft:slowness 1 4 true
+#execute at @s[tag=red] as @a[team=Blue,tag=game,tag=!dead,distance=..3.6] run effect give @s minecraft:slowness 1 4 true
+#execute at @s[tag=blu] as @a[team=Red,tag=game,tag=!dead,distance=..3.6] run effect give @s minecraft:slowness 1 4 true
 
 execute at @s[tag=red] as @a[team=Blue,tag=game,tag=!dead,distance=..3.6] run function rauch:game/ability/raucher/r/slow/debuff
 execute at @s[tag=blu] as @a[team=Red,tag=game,tag=!dead,distance=..3.6] run function rauch:game/ability/raucher/r/slow/debuff
