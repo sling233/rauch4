@@ -7,7 +7,7 @@ execute at @s[team=Red] run tag @e[type=marker,tag=setup,tag=zar_point,limit=1,s
 execute at @s[team=Blue] run tag @e[type=marker,tag=setup,tag=zar_point,limit=1,sort=nearest] add blu
 execute at @s run tag @e[type=marker,tag=setup,tag=zar_point,limit=1,sort=nearest] remove setup
 
-scoreboard players set @s zarzahn_f 300
+scoreboard players set @s zarzahn_f 360
 function rauch:game/ui/bossbar/zarzahn/visible
 
 scoreboard players operation @s cool3 = @s cool3_target

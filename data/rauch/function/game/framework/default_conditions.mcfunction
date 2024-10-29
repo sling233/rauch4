@@ -5,9 +5,9 @@ execute as @a[scores={kit=1}] run scoreboard players set @s cool1_respawn 0
 execute as @a[scores={kit=1}] run scoreboard players set @s cool2_respawn 0
 execute as @a[scores={kit=1}] run scoreboard players set @s cool3_respawn 0
 
-execute as @a[scores={kit=2}] run scoreboard players set @s cool1_target 300
-execute as @a[scores={kit=2}] run scoreboard players set @s cool2_target 380
-execute as @a[scores={kit=2}] run scoreboard players set @s cool3_target 600
+execute as @a[scores={kit=2}] run scoreboard players set @s cool1_target 260
+execute as @a[scores={kit=2}] run scoreboard players set @s cool2_target 190
+execute as @a[scores={kit=2}] run scoreboard players set @s cool3_target 560
 execute as @a[scores={kit=2}] run scoreboard players set @s cool1_respawn 0
 execute as @a[scores={kit=2}] run scoreboard players set @s cool2_respawn 0
 execute as @a[scores={kit=2}] run scoreboard players set @s cool3_respawn 0

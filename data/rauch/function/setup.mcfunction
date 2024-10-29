@@ -532,51 +532,51 @@ bossbar set minecraft:speed12 style notched_6
 bossbar add zarzahn_f1 ""
 bossbar set zarzahn_f1 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f1 color purple
-bossbar set minecraft:zarzahn_f1 max 300
+bossbar set minecraft:zarzahn_f1 max 360
 bossbar add zarzahn_f2 ""
 bossbar set zarzahn_f2 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f2 color purple
-bossbar set minecraft:zarzahn_f2 max 300
+bossbar set minecraft:zarzahn_f2 max 360
 bossbar add zarzahn_f3 ""
 bossbar set zarzahn_f3 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f3 color purple
-bossbar set minecraft:zarzahn_f3 max 300
+bossbar set minecraft:zarzahn_f3 max 360
 bossbar add zarzahn_f4 ""
 bossbar set zarzahn_f4 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f4 color purple
-bossbar set minecraft:zarzahn_f4 max 300
+bossbar set minecraft:zarzahn_f4 max 360
 bossbar add zarzahn_f5 ""
 bossbar set zarzahn_f5 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f5 color purple
-bossbar set minecraft:zarzahn_f5 max 300
+bossbar set minecraft:zarzahn_f5 max 360
 bossbar add zarzahn_f6 ""
 bossbar set zarzahn_f6 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f6 color purple
-bossbar set minecraft:zarzahn_f6 max 300
+bossbar set minecraft:zarzahn_f6 max 360
 bossbar add zarzahn_f7 ""
 bossbar set zarzahn_f7 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f7 color purple
-bossbar set minecraft:zarzahn_f7 max 300
+bossbar set minecraft:zarzahn_f7 max 360
 bossbar add zarzahn_f8 ""
 bossbar set zarzahn_f8 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f8 color purple
-bossbar set minecraft:zarzahn_f8 max 300
+bossbar set minecraft:zarzahn_f8 max 360
 bossbar add zarzahn_f9 ""
 bossbar set zarzahn_f9 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f9 color purple
-bossbar set minecraft:zarzahn_f9 max 300
+bossbar set minecraft:zarzahn_f9 max 360
 bossbar add zarzahn_f10 ""
 bossbar set zarzahn_f10 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f10 color purple
-bossbar set minecraft:zarzahn_f10 max 300
+bossbar set minecraft:zarzahn_f10 max 360
 bossbar add zarzahn_f11 ""
 bossbar set zarzahn_f11 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f11 color purple
-bossbar set minecraft:zarzahn_f11 max 300
+bossbar set minecraft:zarzahn_f11 max 360
 bossbar add zarzahn_f12 ""
 bossbar set zarzahn_f12 name {"text":"Warp","color":"dark_purple"}
 bossbar set minecraft:zarzahn_f12 color purple
-bossbar set minecraft:zarzahn_f12 max 300
+bossbar set minecraft:zarzahn_f12 max 360
 
 bossbar add wark1 ""
 bossbar set wark1 name {"text":"Wark Focus","color":"dark_purple"}
