@@ -4,7 +4,7 @@ execute if score Global gameend matches 0.. run function rauch:game/framework/en
 
 execute as @a[tag=game,tag=!dead] run function rauch:game/player
 execute as @a[tag=game] run function rauch:game/mechanics/cooldowns
-execute as @a[tag=game] run function rauch:game/ui/actionbar/cool_display
+execute as @a[tag=game,tag=!dead] run function rauch:game/ui/actionbar/cool_display
 execute as @a[tag=spectator] run function rauch:game/framework/spectator
 
 
