@@ -1,6 +1,6 @@
 execute as @a[scores={kit=1}] run scoreboard players set @s cool1_target 200
-execute as @a[scores={kit=1}] run scoreboard players set @s cool2_target 500
-execute as @a[scores={kit=1}] run scoreboard players set @s cool3_target 320
+execute as @a[scores={kit=1}] run scoreboard players set @s cool2_target 400
+execute as @a[scores={kit=1}] run scoreboard players set @s cool3_target 260
 execute as @a[scores={kit=1}] run scoreboard players set @s cool1_respawn 0
 execute as @a[scores={kit=1}] run scoreboard players set @s cool2_respawn 0
 execute as @a[scores={kit=1}] run scoreboard players set @s cool3_respawn 0
