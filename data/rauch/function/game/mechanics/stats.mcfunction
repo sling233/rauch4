@@ -16,7 +16,7 @@ attribute @s[scores={kit=5}] minecraft:generic.knockback_resistance modifier add
 attribute @s[scores={kit=1}] minecraft:generic.max_health base set 32
 attribute @s[scores={kit=2}] minecraft:generic.max_health base set 32
 attribute @s[scores={kit=3}] minecraft:generic.max_health base set 24
-attribute @s[scores={kit=4}] minecraft:generic.max_health base set 30
+attribute @s[scores={kit=4}] minecraft:generic.max_health base set 26
 attribute @s[scores={kit=5}] minecraft:generic.max_health base set 32
 attribute @s[scores={kit=6}] minecraft:generic.max_health base set 24
 attribute @s[scores={kit=7}] minecraft:generic.max_health base set 44
