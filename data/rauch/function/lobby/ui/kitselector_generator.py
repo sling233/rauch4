@@ -73,7 +73,7 @@ tank.colors = ["#6E69FF","#373580","#4946AA","#5C58D4","#6E69FF","#6E69FF","#6E6
 
 pikka = Kit("Pikka","Assassin")
 pikka.r_ability = "A Boost in momentum forwards. Way more useful in the air."
-pikka.q_ability = "When grounded, you rise in the air. If you already are in the air you simply stall for a bit. After a short while you slam into the ground, dealing 4.8❤ and stunning everyone in range for 3 seconds."
+pikka.q_ability = "When grounded, you rise in the air. If you already are in the air you simply stall for a bit. After a short while you slam into the ground, dealing 4.8❤ and stunning everyone in range for 1 second."
 pikka.f_ability = "A Boost upwards. In general, you have an elytra. When exceeding a certain speed while flying, your melee attacks get buffed to 4.6❤ (with a crit, that would be 6.9❤) until you touch the ground."
 pikka.colors = ["#FFBF47","#DB00B6","#F20089","#EB8842","#FFBF47","#FFBF47","#FFBF47","#FFBF47"]
 

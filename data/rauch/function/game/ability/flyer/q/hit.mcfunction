@@ -1,6 +1,6 @@
 #executed at Pikka as hit player
 
-scoreboard players add @s stun 30
+scoreboard players add @s stun 20
 function rauch:game/mechanics/stuninit
 
 # damage calculation (scale with buffs)

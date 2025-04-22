@@ -273,51 +273,51 @@ bossbar set minecraft:bolt12 max 80
 bossbar add elytra1 ""
 bossbar set elytra1 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra1 color yellow
-bossbar set minecraft:elytra1 max 80
+bossbar set minecraft:elytra1 max 60
 bossbar add elytra2 ""
 bossbar set elytra2 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra2 color yellow
-bossbar set minecraft:elytra2 max 80
+bossbar set minecraft:elytra2 max 60
 bossbar add elytra3 ""
 bossbar set elytra3 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra3 color yellow
-bossbar set minecraft:elytra3 max 80
+bossbar set minecraft:elytra3 max 60
 bossbar add elytra4 ""
 bossbar set elytra4 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra4 color yellow
-bossbar set minecraft:elytra4 max 80
+bossbar set minecraft:elytra4 max 60
 bossbar add elytra5 ""
 bossbar set elytra5 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra5 color yellow
-bossbar set minecraft:elytra5 max 80
+bossbar set minecraft:elytra5 max 60
 bossbar add elytra6 ""
 bossbar set elytra6 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra6 color yellow
-bossbar set minecraft:elytra6 max 80
+bossbar set minecraft:elytra6 max 60
 bossbar add elytra7 ""
 bossbar set elytra7 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra7 color yellow
-bossbar set minecraft:elytra7 max 80
+bossbar set minecraft:elytra7 max 60
 bossbar add elytra8 ""
 bossbar set elytra8 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra8 color yellow
-bossbar set minecraft:elytra8 max 80
+bossbar set minecraft:elytra8 max 60
 bossbar add elytra9 ""
 bossbar set elytra9 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra9 color yellow
-bossbar set minecraft:elytra9 max 80
+bossbar set minecraft:elytra9 max 60
 bossbar add elytra10 ""
 bossbar set elytra10 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra10 color yellow
-bossbar set minecraft:elytra10 max 80
+bossbar set minecraft:elytra10 max 60
 bossbar add elytra11 ""
 bossbar set elytra11 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra11 color yellow
-bossbar set minecraft:elytra11 max 80
+bossbar set minecraft:elytra11 max 60
 bossbar add elytra12 ""
 bossbar set elytra12 name {"text":"Elytra","color":"yellow"}
 bossbar set minecraft:elytra12 color yellow
-bossbar set minecraft:elytra12 max 80
+bossbar set minecraft:elytra12 max 60
 
 
 bossbar add hack1 ""
@@ -472,62 +472,62 @@ bossbar set minecraft:respawn12 max 120
 bossbar add speed1 ""
 bossbar set speed1 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed1 color green
-bossbar set minecraft:speed1 max 170
+bossbar set minecraft:speed1 max 120
 bossbar set minecraft:speed1 style notched_6
 bossbar add speed2 ""
 bossbar set speed2 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed2 color green
-bossbar set minecraft:speed2 max 170
+bossbar set minecraft:speed2 max 120
 bossbar set minecraft:speed2 style notched_6
 bossbar add speed3 ""
 bossbar set speed3 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed3 color green
-bossbar set minecraft:speed3 max 170
+bossbar set minecraft:speed3 max 120
 bossbar set minecraft:speed3 style notched_6
 bossbar add speed4 ""
 bossbar set speed4 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed4 color green
-bossbar set minecraft:speed4 max 170
+bossbar set minecraft:speed4 max 120
 bossbar set minecraft:speed4 style notched_6
 bossbar add speed5 ""
 bossbar set speed5 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed5 color green
-bossbar set minecraft:speed5 max 170
+bossbar set minecraft:speed5 max 120
 bossbar set minecraft:speed5 style notched_6
 bossbar add speed6 ""
 bossbar set speed6 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed6 color green
-bossbar set minecraft:speed6 max 170
+bossbar set minecraft:speed6 max 120
 bossbar set minecraft:speed6 style notched_6
 bossbar add speed7 ""
 bossbar set speed7 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed7 color green
-bossbar set minecraft:speed7 max 170
+bossbar set minecraft:speed7 max 120
 bossbar set minecraft:speed7 style notched_6
 bossbar add speed8 ""
 bossbar set speed8 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed8 color green
-bossbar set minecraft:speed8 max 170
+bossbar set minecraft:speed8 max 120
 bossbar set minecraft:speed8 style notched_6
 bossbar add speed9 ""
 bossbar set speed9 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed9 color green
-bossbar set minecraft:speed9 max 170
+bossbar set minecraft:speed9 max 120
 bossbar set minecraft:speed9 style notched_6
 bossbar add speed10 ""
 bossbar set speed10 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed10 color green
-bossbar set minecraft:speed10 max 170
+bossbar set minecraft:speed10 max 120
 bossbar set minecraft:speed10 style notched_6
 bossbar add speed11 ""
 bossbar set speed11 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed11 color green
-bossbar set minecraft:speed11 max 170
+bossbar set minecraft:speed11 max 120
 bossbar set minecraft:speed11 style notched_6
 bossbar add speed12 ""
 bossbar set speed12 name {"text":"Speed","color":"green"}
 bossbar set minecraft:speed12 color green
-bossbar set minecraft:speed12 max 170
+bossbar set minecraft:speed12 max 120
 bossbar set minecraft:speed12 style notched_6
 
 bossbar add zarzahn_f1 ""

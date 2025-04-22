@@ -44,9 +44,9 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"Creates a Projectile Shield that lasts 7.5 seconds."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Pikka","color":"$(pikka)","click_event":{"action":"run_command","command":"/trigger kitselect set 8"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Pikka\n","color":"#FFBF47"},{"text":"Type: ","color":"gray"},{"text":"Assassin\n","color":"#DB00B6"},\
-{"text":"Stats:  "},{"text":"❤13  ","color":"#F20089"},{"text":"⚔1.1  ","color":"#EB8842"},{"text":"Range: 3\n\n","color":"#FFBF47"},{"text":"R (25s): ","color":"#FFBF47"},\
-{"text":"A Boost in momentum forwards. Way more useful in the air.\n\n"},{"text":"Q (22.5s): ","color":"#FFBF47"},\
-{"text":"When grounded, you rise in the air. If you already are in the air you simply stall for a bit. After a short while you slam into the ground, dealing 4.8❤ and stunning everyone in range for 3 seconds.\n\n"},{"text":"F (14s): ","color":"#FFBF47"},\
+{"text":"Stats:  "},{"text":"❤13  ","color":"#F20089"},{"text":"⚔1.1  ","color":"#EB8842"},{"text":"Range: 3\n\n","color":"#FFBF47"},{"text":"R (20s): ","color":"#FFBF47"},\
+{"text":"A Boost in momentum forwards. Way more useful in the air.\n\n"},{"text":"Q (18s): ","color":"#FFBF47"},\
+{"text":"When grounded, you rise in the air. If you already are in the air you simply stall for a bit. After a short while you slam into the ground, dealing 4.8❤ and stunning everyone in range for 1 second.\n\n"},{"text":"F (14s): ","color":"#FFBF47"},\
 {"text":"A Boost upwards. In general, you have an elytra. When exceeding a certain speed while flying, your melee attacks get buffed to 4.6❤ (with a crit, that would be 6.9❤) until you touch the ground."}]}},{"text":"]","color":"dark_gray"},\
 {"text":"\n\n[","color":"dark_gray"},{"text":"Wokkaman","color":"gray","hover_event":{"action":"show_text","value":\
 [{"text":"This kit cannot be selected, it gets assigned to players in team red in the Wokkaman game mode.\n\n","color":"gray"},\

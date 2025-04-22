@@ -26,7 +26,7 @@ item replace entity @s[scores={kit=7}] armor.chest with minecraft:diamond_chestp
 item replace entity @s[scores={kit=7}] armor.legs with minecraft:diamond_leggings[item_name={"text":"Tank's Leggings"},rarity=uncommon,unbreakable={},enchantments={"minecraft:binding_curse":1},!minecraft:attribute_modifiers,trim={material:"minecraft:diamond",pattern:"minecraft:coast"}] 1
 item replace entity @s[scores={kit=7}] armor.feet with minecraft:diamond_boots[item_name={"text":"Tank's Boots"},rarity=uncommon,unbreakable={},enchantments={"minecraft:binding_curse":1},!minecraft:attribute_modifiers,trim={material:"minecraft:diamond",pattern:"minecraft:coast"}] 1
 #pikka
-item replace entity @s[scores={kit=8}] armor.chest with elytra[damage=432,item_name={"text":"Cool Elytra"},rarity=uncommon,unbreakable={},enchantments={"minecraft:binding_curse":1},!minecraft:attribute_modifiers] 1
+item replace entity @s[scores={kit=8}] armor.chest with elytra[damage=432,item_name={"text":"Cool Elytra"},rarity=uncommon,enchantments={"minecraft:binding_curse":1},!minecraft:attribute_modifiers] 1
 execute as @s[scores={kit=8}] unless score @s elytra matches 1.. unless score @s hack matches 1.. run item replace entity @s armor.chest with elytra[item_name={"text":"Cool Elytra"},rarity=uncommon,unbreakable={},enchantments={"minecraft:binding_curse":1},!minecraft:attribute_modifiers] 1
 #wokkaman
 item replace entity @s[scores={kit=9}] armor.legs with golden_leggings[item_name={"text":"Ninjahose"},rarity=epic,unbreakable={},enchantments={"minecraft:binding_curse":1,"minecraft:swift_sneak":5},!minecraft:attribute_modifiers] 1
