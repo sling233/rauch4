@@ -1,3 +1,4 @@
+#executed once when wark_startup reaches 20
 scoreboard players reset @s wark_startup
 #execute as @s[scores={health=20..}] run scoreboard players set @s wark_detect 20
 #execute as @s[scores={health=11..19}] run scoreboard players set @s wark_detect 60

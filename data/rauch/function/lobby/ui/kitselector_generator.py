@@ -39,7 +39,7 @@ zarzahn.colors = ["#00EE00","#3D773D","#3D993D","#29CC29","#00EE00","#00EE00","#
 
 raucher = Kit("Raucher","Support")
 raucher.r_ability = "You throw a Damage Cloud that slows enemies and increases their received damage by 40%. Hold Sneak to throw a Health Cloud that gives your teammates regeneration. You can store 3 clouds."
-raucher.r_cool = "8s per cloud"
+#raucher.r_cool = "7s per cloud"
 raucher.q_ability = "Buffs damage for a teammate by 50% for 5 seconds (look at them and press Q)."
 raucher.f_ability = "Spawns 8 spiders, that attack enemies in a 30 block radius. The Spiders select targets evenly. They die in one hit or after 9 seconds."
 raucher.colors = ["#FFA54C","#C7290A","#DD4D1D","#F27130","#FFA54C","#FFA54C","#FFA54C","#FFA54C"]
@@ -52,7 +52,7 @@ hacker.f_cool = "-"
 hacker.colors = ["#FF0000","#FFBF00","#7FFF00","#00FF3F","#00FFFF","#003FFF","#7F00FF","#FF00BF"]
 
 wark = Kit("Wark","Fighter")
-wark.r_ability = "Selects an enemy up to 20 blocks away. Creates a circle around that player. If the player leaves the circle, you get 60% Q charge."
+wark.r_ability = "Selects an enemy up to 20 blocks away. Creates a circle around that player. If the player leaves the circle, you get 40% Q charge."
 wark.q_ability = "Instead of having a cooldown, this ability is a percentage-based charge. You get 1% charge every second passively and with R. Using R, you can get overcharge (above 100% charge), that will deplete back to 100% at a moderate speed. Activating Q with 100% charge, you gain Speed III, Jump Boost II and +50% damage for 10 seconds. Alternatively, you can activate Shift-Q that will only consume 50% charge, giving you Speed III, Jumpboost II and +30% damage for 5 seconds."
 wark.q_cool = "-"
 wark.f_ability = "An upwards boost for mobility."
@@ -144,6 +144,9 @@ with open(r"..\..\game\framework\default_conditions.mcfunction","r") as f:
 
             #if line[:70] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:attack_damage base set ": kits[i].damage = int(line[70:-1]) / 10
             #if line[:80] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:entity_interaction_range base set ": kits[i].range = line[80:-1]
+
+# raucher custom r cool text
+raucher.r_cool += " per cloud"
 
 # generate kit text
 text = ["$item replace entity @s hotbar.8 with written_book[written_book_content={title:\"Kit Selector/Settings\",author:\"The Pog Man\",pages:[[\\",

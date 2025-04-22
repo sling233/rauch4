@@ -12,8 +12,8 @@ execute as @a[scores={kit=2}] run scoreboard players set @s cool1_respawn 0
 execute as @a[scores={kit=2}] run scoreboard players set @s cool2_respawn 0
 execute as @a[scores={kit=2}] run scoreboard players set @s cool3_respawn 0
 
-execute as @a[scores={kit=3}] run scoreboard players set @s cool1_target 160
-execute as @a[scores={kit=3}] run scoreboard players set @s cool2_target 400
+execute as @a[scores={kit=3}] run scoreboard players set @s cool1_target 140
+execute as @a[scores={kit=3}] run scoreboard players set @s cool2_target 360
 execute as @a[scores={kit=3}] run scoreboard players set @s cool3_target 300
 execute as @a[scores={kit=3}] run scoreboard players set @s cool1_respawn 160
 execute as @a[scores={kit=3}] run scoreboard players set @s cool2_respawn 0
@@ -29,7 +29,7 @@ execute as @a[scores={kit=4}] run scoreboard players set @s cool1_respawn 0
 execute as @a[scores={kit=4}] run scoreboard players set @s cool2_respawn 0
 #execute as @a[scores={kit=4}] run scoreboard players set @s cool3_respawn 460
 
-execute as @a[scores={kit=5}] run scoreboard players set @s cool1_target 390
+execute as @a[scores={kit=5}] run scoreboard players set @s cool1_target 200
 #execute as @a[scores={kit=5}] run scoreboard players set @s cool2_target 340
 execute as @a[scores={kit=5}] run scoreboard players set @s cool3_target 200
 execute as @a[scores={kit=5}] run scoreboard players set @s cool1_respawn 0

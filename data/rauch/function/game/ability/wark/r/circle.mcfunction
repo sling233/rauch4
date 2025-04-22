@@ -1,4 +1,6 @@
-execute at @s at @a if score @p pnum = @s wark_charge if entity @s[distance=1.7..] run function rauch:game/ability/wark/r/detect_out
+#scoreboard players operation t_pnum temp = @s pnum
+execute at @s at @a[distance=1.7..] if score @p pnum = @s wark_charge run function rauch:game/ability/wark/r/detect_out
+#scoreboard players reset t_pnum temp
 
 particle minecraft:sculk_charge_pop ~0.000 ~0.100 ~1.500 0.1 0.1 0.1 0.05 1 force
 particle minecraft:sculk_charge_pop ~0.312 ~0.100 ~1.467 0.1 0.1 0.1 0.05 1 force

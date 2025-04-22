@@ -1,3 +1,4 @@
+# as player hit, at wark
 scoreboard players set @s wark_startup 0
 execute as @s[scores={pnum=1}] run bossbar set minecraft:wark1 max 20
 execute as @s[scores={pnum=2}] run bossbar set minecraft:wark2 max 20
