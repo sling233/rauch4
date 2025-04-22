@@ -29,6 +29,8 @@ execute as @s[scores={wark_detect=0..}] run function rauch:game/ability/wark/r/t
 execute as @s[tag=wok_stepped_on] run function rauch:game/ability/wokkaman/sq/stepped_on
 execute as @s[tag=wokkaman_q_shooting] run function rauch:game/ability/wokkaman/q/shooting
 
+execute as @s[scores={heal=0..}] run function rauch:game/mechanics/heal
+
 execute as @s[scores={stun=0..}] run function rauch:game/mechanics/stun
 execute at @s[scores={damage_taken=0..}] run function rauch:game/ui/damage_taken
 

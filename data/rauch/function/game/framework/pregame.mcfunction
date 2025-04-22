@@ -21,6 +21,7 @@ scoreboard players reset @s dropcoas
 scoreboard players reset @s raucherdmg
 scoreboard players reset @s tank_resistance
 scoreboard players set @s tank_damage_taken 0
+scoreboard players set @s heal 40
 
 
 scoreboard players operation @s game_id = Global game_id
@@ -35,7 +36,7 @@ function rauch:game/mechanics/armor
 
 effect give @s minecraft:hunger 6 255 true
 effect give @s minecraft:resistance 4 255 true
-effect give @s minecraft:regeneration 3 255 true
+#effect give @s minecraft:regeneration 3 255 true
 
 # set night vision
 execute unless score @s actionbar_design matches 0.. run scoreboard players set @s actionbar_design 3

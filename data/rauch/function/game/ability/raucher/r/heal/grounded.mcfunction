@@ -4,11 +4,11 @@ scoreboard players set 10 const 10
 execute store result score t_mod10 temp run time query gametime
 scoreboard players operation t_mod10 temp %= 10 const
 # rauchers cant heal themselves
-execute if score t_mod10 temp matches 0 at @s[tag=red] as @a[team=Red,tag=game,tag=!dead,distance=..3.1] unless score @s kit matches 3 run execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0,Duration:6,Age:4,potion_contents:{custom_effects:[{id:"minecraft:regeneration",amplifier:127,duration:1,show_particles:0b}]}}
-execute if score t_mod10 temp matches 0 at @s[tag=blu] as @a[team=Blue,tag=game,tag=!dead,distance=..3.1] unless score @s kit matches 3 run execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0,Duration:6,Age:4,potion_contents:{custom_effects:[{id:"minecraft:regeneration",amplifier:127,duration:1,show_particles:0b}]}}
+execute if score t_mod10 temp matches 0 at @s[tag=red] as @a[team=Red,tag=game,tag=!dead,distance=..3.1] unless score @s kit matches 3 run scoreboard players add @s heal 1
+execute if score t_mod10 temp matches 0 at @s[tag=blu] as @a[team=Blue,tag=game,tag=!dead,distance=..3.1] unless score @s kit matches 3 run scoreboard players add @s heal 1
 # rauchers can heal themselves
-#execute if score t_mod10 temp matches 0 at @s[tag=red] as @a[team=Red,tag=game,tag=!dead,distance=..3.1] run execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0,Duration:6,Age:4,potion_contents:{custom_effects:[{id:"minecraft:regeneration",amplifier:127,duration:1,show_particles:0b}]}}
-#execute if score t_mod10 temp matches 0 at @s[tag=blu] as @a[team=Blue,tag=game,tag=!dead,distance=..3.1] run execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0,Duration:6,Age:4,potion_contents:{custom_effects:[{id:"minecraft:regeneration",amplifier:127,duration:1,show_particles:0b}]}}
+execute if score t_mod10 temp matches 0 at @s[tag=red] as @a[team=Red,tag=game,tag=!dead,distance=..3.1] run scoreboard players add @s heal 1
+execute if score t_mod10 temp matches 0 at @s[tag=blu] as @a[team=Blue,tag=game,tag=!dead,distance=..3.1] run scoreboard players add @s heal 1
 scoreboard players reset t_mod10 temp
 execute at @s[tag=red] as @a[team=Red,tag=game,tag=!dead,distance=..3.1] unless score @s kit matches 3 at @s run particle minecraft:happy_villager ~ ~1 ~ 0.2 0.4 0.2 1 1
 execute at @s[tag=blu] as @a[team=Blue,tag=game,tag=!dead,distance=..3.1] unless score @s kit matches 3 at @s run particle minecraft:happy_villager ~ ~1 ~ 0.2 0.4 0.2 1 1

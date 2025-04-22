@@ -38,6 +38,7 @@ scoreboard objectives remove hacker_ability
 scoreboard objectives remove hacker_charges
 scoreboard objectives remove hacker_damage_timer
 scoreboard objectives remove hacker_damage_timer_control
+scoreboard objectives remove heal
 scoreboard objectives remove health
 scoreboard objectives remove health_display
 scoreboard objectives remove hitPnum
@@ -50,7 +51,7 @@ scoreboard objectives remove mapParticle
 scoreboard objectives remove map_setting
 scoreboard objectives remove maxClouds
 scoreboard objectives remove mode
-scoreboard objectives remove night_vision_accessibility 
+scoreboard objectives remove night_vision_accessibility
 scoreboard objectives remove hide_ambient_particles
 scoreboard objectives remove particleDensity
 scoreboard objectives remove plcount
@@ -212,19 +213,6 @@ bossbar remove speed9
 bossbar remove speed10
 bossbar remove speed11
 bossbar remove speed12
-
-bossbar remove arrow1
-bossbar remove arrow2
-bossbar remove arrow3
-bossbar remove arrow4
-bossbar remove arrow5
-bossbar remove arrow6
-bossbar remove arrow7
-bossbar remove arrow8
-bossbar remove arrow9
-bossbar remove arrow10
-bossbar remove arrow11
-bossbar remove arrow12
 
 bossbar remove respawn1
 bossbar remove respawn2
