@@ -38,9 +38,9 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"You instantly teleport to where you are looking, with a max range of 14 blocks."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Tank","color":"$(tank)","click_event":{"action":"run_command","command":"/trigger kitselect set 7"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Tank\n","color":"#6E69FF"},{"text":"Type: ","color":"gray"},{"text":"Tank","color":"#373580"},{"text":" / ","color":"gray"},{"text":"Support\n","color":"#373580"},\
-{"text":"Stats:  "},{"text":"❤22  ","color":"#4946AA"},{"text":"⚔0.9  ","color":"#5C58D4"},{"text":"Range: 2.5\n\n","color":"#6E69FF"},{"text":"R (-): ","color":"#6E69FF"},\
-{"text":"Damage taken passively accumulates, up to 10 hearts. When it\'s over 4 hearts, you can use R on a teammate to heal them by the amount of damage taken.\n\n"},{"text":"Q (21s): ","color":"#6E69FF"},\
-{"text":"Buffs resistance and knockback resistance for a teammate by 40% for 6 seconds (look at them and press Q). Additionally, team members in a 4.5 block radius around the buffed player recieve 20% less damage.\n\n"},{"text":"F (26s): ","color":"#6E69FF"},\
+{"text":"Stats:  "},{"text":"❤22  ","color":"#4946AA"},{"text":"⚔0.7  ","color":"#5C58D4"},{"text":"Range: 2.5\n\n","color":"#6E69FF"},{"text":"R (-): ","color":"#6E69FF"},\
+{"text":"Damage taken passively accumulates, up to 10 hearts. When it\'s over 4 hearts, you can use R on a teammate to heal them by the amount of damage taken.\n\n"},{"text":"Q (18s): ","color":"#6E69FF"},\
+{"text":"Buffs resistance and knockback resistance for a teammate by 40% for 6 seconds (look at them and press Q). Additionally, team members in a 4.5 block radius around the buffed player recieve 20% less damage.\n\n"},{"text":"F (16s): ","color":"#6E69FF"},\
 {"text":"Creates a Projectile Shield that lasts 7.5 seconds."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Pikka","color":"$(pikka)","click_event":{"action":"run_command","command":"/trigger kitselect set 8"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Pikka\n","color":"#FFBF47"},{"text":"Type: ","color":"gray"},{"text":"Assassin\n","color":"#DB00B6"},\

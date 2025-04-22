@@ -29,7 +29,7 @@ attribute @s[scores={kit=3}] minecraft:attack_damage base set 9
 attribute @s[scores={kit=4}] minecraft:attack_damage base set 11
 attribute @s[scores={kit=5}] minecraft:attack_damage base set 12
 attribute @s[scores={kit=6}] minecraft:attack_damage base set 28
-attribute @s[scores={kit=7}] minecraft:attack_damage base set 9
+attribute @s[scores={kit=7}] minecraft:attack_damage base set 7
 attribute @s[scores={kit=8}] minecraft:attack_damage base set 11
 attribute @s[scores={kit=9}] minecraft:attack_damage base set 20
 
