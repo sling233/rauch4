@@ -27,7 +27,7 @@ scoreboard players operation @s game_id = Global game_id
 
 scoreboard players set @s armor_target 80
 # change this if more wokkaman texture are added
-execute if score @s kit matches 9 store result score @s wokkaman_weapon run random value 0..1
+execute if score @s kit matches 9 store result score @s wokkaman_weapon run random value 0..4
 execute if score @s kit matches 9 store result score @s wokkaman_helmet run random value 0..50
 function rauch:game/mechanics/weapon
 function rauch:game/mechanics/stats
