@@ -1,6 +1,14 @@
 scoreboard players operation t_pnum temp = @e[type=marker,tag=teleporter,tag=temp,limit=1] pnum
 execute at @s as @a if score @s pnum = t_pnum temp run tag @s add tele
 
+scoreboard players set 2 const 2
+scoreboard players set 3 const 3
+scoreboard players operation t_two_thirds_tele_cool temp = @a[tag=tele,limit=1] cool1_target
+scoreboard players operation t_two_thirds_tele_cool temp *= 2 const
+scoreboard players operation t_two_thirds_tele_cool temp /= 3 const
+scoreboard players operation @a[tag=tele,limit=1] cool1 += t_two_thirds_tele_cool temp
+scoreboard players reset t_two_thirds_tele_cool temp
+
 tp @a[tag=tele] @s
 execute as @a[tag=tele] at @s run tp @s ~ ~ ~ ~ 0
 execute as @a[tag=tele] at @s run tp @s ^ ^ ^-1

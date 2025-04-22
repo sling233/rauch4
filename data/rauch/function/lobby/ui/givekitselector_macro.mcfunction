@@ -32,9 +32,9 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"An upwards boost for mobility."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Teleporter","color":"$(teleporter)","click_event":{"action":"run_command","command":"/trigger kitselect set 6"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Teleporter\n","color":"#FF88FF"},{"text":"Type: ","color":"gray"},{"text":"Assassin\n","color":"#804480"},\
-{"text":"Stats:  "},{"text":"❤12  ","color":"#AA5BAA"},{"text":"⚔2.8  ","color":"#D471D4"},{"text":"Range: 2\n\n","color":"#FF88FF"},{"text":"R (17s): ","color":"#FF88FF"},\
-{"text":"Shoots a projetile. You teleport behind the player you hit. The player gets debuffed with -40% speed and -40% attack damage for 3 seconds.\n\n"},{"text":"Q (26s): ","color":"#FF88FF"},\
-{"text":"You become invisible for 6 seconds. Sprinting particles are visible though.\n\n"},{"text":"F (25s): ","color":"#FF88FF"},\
+{"text":"Stats:  "},{"text":"❤10  ","color":"#AA5BAA"},{"text":"⚔2.8  ","color":"#D471D4"},{"text":"Range: 2\n\n","color":"#FF88FF"},{"text":"R (14s): ","color":"#FF88FF"},\
+{"text":"Shoots a projetile. You teleport behind the player you hit. The player gets debuffed with -40% speed and -40% attack damage for 3 seconds. Missing only causes 1/3 of the cooldown.\n\n"},{"text":"Q (22s): ","color":"#FF88FF"},\
+{"text":"You become invisible for 6 seconds. Sprinting particles are visible though.\n\n"},{"text":"F (17s): ","color":"#FF88FF"},\
 {"text":"You instantly teleport to where you are looking, with a max range of 14 blocks."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Tank","color":"$(tank)","click_event":{"action":"run_command","command":"/trigger kitselect set 7"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Tank\n","color":"#6E69FF"},{"text":"Type: ","color":"gray"},{"text":"Tank","color":"#373580"},{"text":" / ","color":"gray"},{"text":"Support\n","color":"#373580"},\

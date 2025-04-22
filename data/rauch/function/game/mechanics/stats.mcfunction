@@ -18,7 +18,7 @@ attribute @s[scores={kit=2}] minecraft:max_health base set 32
 attribute @s[scores={kit=3}] minecraft:max_health base set 24
 attribute @s[scores={kit=4}] minecraft:max_health base set 26
 attribute @s[scores={kit=5}] minecraft:max_health base set 32
-attribute @s[scores={kit=6}] minecraft:max_health base set 24
+attribute @s[scores={kit=6}] minecraft:max_health base set 20
 attribute @s[scores={kit=7}] minecraft:max_health base set 44
 attribute @s[scores={kit=8}] minecraft:max_health base set 26
 attribute @s[scores={kit=9}] minecraft:max_health base set 80

@@ -59,7 +59,7 @@ wark.f_ability = "An upwards boost for mobility."
 wark.colors = ["#07E6BD","#036654","#049177","#06BB9A","#07E6BD","#07E6BD","#07E6BD","#07E6BD"]
 
 teleporter = Kit("Teleporter","Assassin")
-teleporter.r_ability = "Shoots a projetile. You teleport behind the player you hit. The player gets debuffed with -40% speed and -40% attack damage for 3 seconds."
+teleporter.r_ability = "Shoots a projetile. You teleport behind the player you hit. The player gets debuffed with -40% speed and -40% attack damage for 3 seconds. Missing only causes 1/3 of the cooldown."
 teleporter.q_ability = "You become invisible for 6 seconds. Sprinting particles are visible though."
 teleporter.f_ability = "You instantly teleport to where you are looking, with a max range of 14 blocks."
 teleporter.colors = ["#FF88FF","#804480","#AA5BAA","#D471D4","#FF88FF","#FF88FF","#FF88FF","#FF88FF"]
