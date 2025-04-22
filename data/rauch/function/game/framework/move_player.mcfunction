@@ -16,12 +16,12 @@ attribute @s minecraft:knockback_resistance modifier remove kbfix
 #armorfix
 attribute @s minecraft:armor modifier remove armorfix
 
-attribute @s minecraft:max_health base set 20
-attribute @s minecraft:attack_damage base set 1
-attribute @s minecraft:scale base set 1
-attribute @s minecraft:movement_speed base set 0.10000000149011612
-attribute @s minecraft:entity_interaction_range base set 3
-attribute @s minecraft:block_interaction_range base set 4.5
+attribute @s minecraft:max_health base reset
+attribute @s minecraft:attack_damage base reset
+attribute @s minecraft:scale base reset
+attribute @s minecraft:movement_speed base reset
+attribute @s minecraft:entity_interaction_range base reset
+attribute @s minecraft:block_interaction_range base reset
 
 clear @s minecraft:elytra
 #kill @s

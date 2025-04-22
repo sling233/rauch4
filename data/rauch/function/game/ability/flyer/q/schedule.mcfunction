@@ -9,6 +9,6 @@ execute if score @s flyerQSchedule matches -28 run attribute @s minecraft:gravit
 #execute if score @s flyerFSchedule matches -2 run tag @s add allow_cancel
 execute if score @s flyerQSchedule matches -28.. as @s[nbt={OnGround:1b}] run function rauch:game/ability/flyer/q/hitground
 execute if score @s flyerQSchedule matches -57..-29 as @s[tag=allow_cancel] as @s[nbt={OnGround:1b}] run function rauch:game/ability/flyer/q/hitground
-execute if score @s flyerQSchedule matches -1.. run attribute @s minecraft:gravity base set 0.08
+execute if score @s flyerQSchedule matches -1.. run attribute @s minecraft:gravity base reset
 
 execute at @s as @e[type=area_effect_cloud,tag=flyerq] if score @s pnum = @p pnum run function rauch:game/ability/flyer/q/particle
