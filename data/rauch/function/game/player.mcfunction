@@ -1,6 +1,6 @@
 execute as @s[scores={dropcoas=1..}] run function rauch:game/ability/sdrop
 execute as @s[scores={click=1..}] run function rauch:game/ability/sclick
-execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:carrot_on_a_stick"}]}] run function rauch:game/ability/sswap
+execute if items entity @s weapon.offhand minecraft:carrot_on_a_stick run function rauch:game/ability/sswap
 execute as @s[scores={death=1..}] run function rauch:game/mechanics/die
 
 #class specific

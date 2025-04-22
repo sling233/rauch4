@@ -8,7 +8,7 @@ scoreboard players set 11 const 11
 scoreboard players set 48 const 48
 
 # read current damage from attributes (includes buffs)
-execute store result score t_calc_damage temp run attribute @p minecraft:generic.attack_damage get 1000
+execute store result score t_calc_damage temp run attribute @p minecraft:attack_damage get 1000
 # 48 is the damage of the ground slam
 scoreboard players operation t_calc_damage temp *= 48 const
 # 11 is normal damage of a pikka

@@ -58,7 +58,7 @@ execute if score Global mode matches 2 as @s[team=Red] run scoreboard players ad
 execute if score Global mode matches 2 as @s[team=Blue] run scoreboard players add Global killNumRed 1
 function rauch:game/mechanics/weapon
 function rauch:game/mechanics/armor
-attribute @s minecraft:generic.gravity base set 0.08
+attribute @s minecraft:gravity base set 0.08
 
 # set night vision
 execute as @s[scores={night_vision_accessibility=2}] run effect give @s minecraft:night_vision infinite 0 true

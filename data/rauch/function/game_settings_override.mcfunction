@@ -77,7 +77,7 @@
 # Delay before game starts (countdown) in ticks (so 120 ticks = 5 seconds)
 # scoreboard players set Global gamestart 120
 
-
+execute unless score Global mode matches 3 run scoreboard players set Global gamestart 20
 # Number of "points" each team has in King of the Hill. First team at 0 loses.
 # At neutral control, each team loses 100 per tick, at full control one team loses 200 the other 0
 # For neutral control 2000 points = 1 second (so 300000 points = 150 seconds = 2:30 min)

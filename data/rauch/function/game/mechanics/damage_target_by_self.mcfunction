@@ -1,6 +1,6 @@
 # as player damaging, target has tag t_damage_target, t_damage temp score is damage
 # read current damage from attributes (includes buffs)
-execute store result score t_calc_damage temp run attribute @s minecraft:generic.attack_damage get 1000
+execute store result score t_calc_damage temp run attribute @s minecraft:attack_damage get 1000
 # t_damage is damage
 scoreboard players operation t_calc_damage temp *= t_damage temp
 # divide by base damage

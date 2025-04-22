@@ -98,9 +98,9 @@ with open(r"..\..\game\mechanics\stats.mcfunction","r") as f:
     lines = f.readlines()
     for line in lines:
         for i, kit in enumerate(kits):
-            if line[:67] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:generic.max_health base set ": kit.health = int(int(line[67:-1]) / 2)
-            if line[:70] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:generic.attack_damage base set ": kit.damage = int(line[70:-1]) / 10
-            if line[:80] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:player.entity_interaction_range base set ": kit.range = line[80:-1]
+            if line[:59] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:max_health base set ": kit.health = int(int(line[59:-1]) / 2)
+            if line[:62] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:attack_damage base set ": kit.damage = int(line[62:-1]) / 10
+            if line[:73] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:entity_interaction_range base set ": kit.range = line[73:-1]
 
 # read cooldowns
 with open(r"..\..\game\framework\default_conditions.mcfunction","r") as f:
@@ -142,59 +142,65 @@ with open(r"..\..\game\framework\default_conditions.mcfunction","r") as f:
                     if cool.is_integer(): cool = int(cool)
                     kit.sf_cool = f"{cool}s"
 
-            #if line[:70] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:generic.attack_damage base set ": kits[i].damage = int(line[70:-1]) / 10
-            #if line[:80] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:player.entity_interaction_range base set ": kits[i].range = line[80:-1]
+            #if line[:70] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:attack_damage base set ": kits[i].damage = int(line[70:-1]) / 10
+            #if line[:80] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:entity_interaction_range base set ": kits[i].range = line[80:-1]
 
 # generate kit text
-text = ["$item replace entity @s hotbar.8 with written_book[written_book_content={title:\"Kit Selector/Settings\",author:\"The Pog Man\",pages:[{raw:'\\",
-        "[{\"text\":\"           \"},{\"text\":\"Kits\\\\n\\\\n\",\"bold\":true},{\"text\":\"[\",\"color\":\"dark_gray\"},\\"]
+text = ["$item replace entity @s hotbar.8 with written_book[written_book_content={title:\"Kit Selector/Settings\",author:\"The Pog Man\",pages:[[\\",
+        "{\"text\":\"           \"},{\"text\":\"Kits\\n\\n\",\"bold\":true},{\"text\":\"[\",\"color\":\"dark_gray\"},\\"]
 # add kit descriptions (not wokkaman, too much difference. wokkaman gets done seperately later)
 for i, kit in enumerate(kits[:-1]):
     if type(kit.typ) is list:
         type_lol = ""
         for typ in kit.typ[:-1]:
             type_lol += ',{"text":"' + typ + '","color":"' + kit.colors[1] + '"},{"text":" / ","color":"gray"}'
-        type_lol += ',{"text":"' + kit.typ[-1] + '\\\\n","color":"' + kit.colors[1] + '"},\\'
+        type_lol += ',{"text":"' + kit.typ[-1] + '\\n","color":"' + kit.colors[1] + '"},\\'
     else:
-        type_lol = ',{"text":"' + kit.typ + '\\\\n","color":"' + kit.colors[1] + '"},\\'
+        type_lol = ',{"text":"' + kit.typ + '\\n","color":"' + kit.colors[1] + '"},\\'
 
-    text.append('{"text":"' + kit.name + '","color":"$(' + kit.name.lower() + ')","clickEvent":{"action":"run_command","value":"/trigger kitselect set ' + str(i+1) + '"},"hoverEvent":{"action":"show_text","contents":\\')
-    text.append('[{"text":"Name: ","color":"gray"},{"text":"' + kit.name + '\\\\n","color":"' + kit.colors[0] + '"},{"text":"Type: ","color":"gray"}' + type_lol)
-    text.append('{"text":"Stats:  "},{"text":"❤' + str(kit.health) + '  ","color":"' + kit.colors[2] + '"},{"text":"⚔' + str(kit.damage) + '  ","color":"' + kit.colors[3] + '"},{"text":"Range: ' + str(kit.range) + '\\\\n\\\\n","color":"' + kit.colors[4] + '"},{"text":"R (' + str(kit.r_cool) + '): ","color":"' + kit.colors[5] + '"},\\')
-    text.append('{"text":"' + kit.r_ability + '\\\\n\\\\n"},{"text":"Q (' + str(kit.q_cool) + '): ","color":"' + kit.colors[6] + '"},\\')
-    text.append('{"text":"' + kit.q_ability + '\\\\n\\\\n"},{"text":"F (' + str(kit.f_cool) + '): ","color":"' + kit.colors[7] + '"},\\')
+    text.append('{"text":"' + kit.name + '","color":"$(' + kit.name.lower() + ')","click_event":{"action":"run_command","command":"/trigger kitselect set ' + str(i+1) + '"},"hover_event":{"action":"show_text","value":\\')
+    text.append('[{"text":"Name: ","color":"gray"},{"text":"' + kit.name + '\\n","color":"' + kit.colors[0] + '"},{"text":"Type: ","color":"gray"}' + type_lol)
+    text.append('{"text":"Stats:  "},{"text":"❤' + str(kit.health) + '  ","color":"' + kit.colors[2] + '"},{"text":"⚔' + str(kit.damage) + '  ","color":"' + kit.colors[3] + '"},{"text":"Range: ' + str(kit.range) + '\\n\\n","color":"' + kit.colors[4] + '"},{"text":"R (' + str(kit.r_cool) + '): ","color":"' + kit.colors[5] + '"},\\')
+    text.append('{"text":"' + kit.r_ability + '\\n\\n"},{"text":"Q (' + str(kit.q_cool) + '): ","color":"' + kit.colors[6] + '"},\\')
+    text.append('{"text":"' + kit.q_ability + '\\n\\n"},{"text":"F (' + str(kit.f_cool) + '): ","color":"' + kit.colors[7] + '"},\\')
     if i == len(kits) - 2: # last kit (make one line more for wokkaman)
         text.append('{"text":"' + kit.f_ability + '"}]}},{"text":"]","color":"dark_gray"},\\')
     else: # for every other kit
-        text.append('{"text":"' + kit.f_ability + '"}]}},{"text":"]\\\\n[","color":"dark_gray"},\\')
+        text.append('{"text":"' + kit.f_ability + '"}]}},{"text":"]\\n[","color":"dark_gray"},\\')
 
 
 # add wokkaman description
-type_lol = ',{"text":"' + wokkaman.typ + '\\\\n","color":"' + wokkaman.colors[1] + '"},\\'
-text.append('{"text":"\\\\n\\\\n[","color":"dark_gray"},{"text":"' + wokkaman.name + '","color":"gray","hoverEvent":{"action":"show_text","contents":\\')
-text.append('[{"text":"This kit cannot be selected, it gets assigned to players in team red in the Wokkaman game mode.\\\\n\\\\n","color":"gray"},\\')
-text.append('{"text":"Name: ","color":"gray"},{"text":"' + wokkaman.name + '\\\\n","color":"' + wokkaman.colors[0] + '"},{"text":"Type: ","color":"gray"}' + type_lol)
-text.append('{"text":"Stats:  "},{"text":"❤' + str(wokkaman.health) + '  ","color":"' + wokkaman.colors[2] + '"},{"text":"⚔' + str(wokkaman.damage) + '  ","color":"' + wokkaman.colors[3] + '"},{"text":"Range: ' + str(wokkaman.range) + '\\\\n\\\\n","color":"' + wokkaman.colors[4] + '"},{"text":"R (' + str(wokkaman.r_cool) + '): ","color":"' + wokkaman.colors[5] + '"},\\')
-text.append('{"text":"' + wokkaman.r_ability + '\\\\n\\\\n"},{"text":"sR (' + str(wokkaman.sr_cool) + '): ","color":"' + wokkaman.colors[8] + '"},\\')
-text.append('{"text":"' + wokkaman.sr_ability + '\\\\n\\\\n"},{"text":"Q (' + str(wokkaman.q_cool) + '): ","color":"' + wokkaman.colors[6] + '"},\\')
-text.append('{"text":"' + wokkaman.q_ability + '\\\\n\\\\n"},{"text":"sQ (' + str(wokkaman.sq_cool) + '): ","color":"' + wokkaman.colors[9] + '"},\\')
-text.append('{"text":"' + wokkaman.sq_ability + '\\\\n\\\\n"},{"text":"F (' + str(wokkaman.f_cool) + '): ","color":"' + wokkaman.colors[7] + '"},\\')
-text.append('{"text":"' + wokkaman.f_ability + '\\\\n\\\\n"},{"text":"sF (' + str(wokkaman.sf_cool) + '): ","color":"' + wokkaman.colors[10] + '"},\\')
-text.append('{"text":"' + wokkaman.sf_ability + "\"}]}},{\"text\":\"]\",\"color\":\"dark_gray\"}]'},{raw:'\\")
+type_lol = ',{"text":"' + wokkaman.typ + '\\n","color":"' + wokkaman.colors[1] + '"},\\'
+text.append('{"text":"\\n\\n[","color":"dark_gray"},{"text":"' + wokkaman.name + '","color":"gray","hover_event":{"action":"show_text","value":\\')
+text.append('[{"text":"This kit cannot be selected, it gets assigned to players in team red in the Wokkaman game mode.\\n\\n","color":"gray"},\\')
+text.append('{"text":"Name: ","color":"gray"},{"text":"' + wokkaman.name + '\\n","color":"' + wokkaman.colors[0] + '"},{"text":"Type: ","color":"gray"}' + type_lol)
+text.append('{"text":"Stats:  "},{"text":"❤' + str(wokkaman.health) + '  ","color":"' + wokkaman.colors[2] + '"},{"text":"⚔' + str(wokkaman.damage) + '  ","color":"' + wokkaman.colors[3] + '"},{"text":"Range: ' + str(wokkaman.range) + '\\n\\n","color":"' + wokkaman.colors[4] + '"},{"text":"R (' + str(wokkaman.r_cool) + '): ","color":"' + wokkaman.colors[5] + '"},\\')
+text.append('{"text":"' + wokkaman.r_ability + '\\n\\n"},{"text":"sR (' + str(wokkaman.sr_cool) + '): ","color":"' + wokkaman.colors[8] + '"},\\')
+text.append('{"text":"' + wokkaman.sr_ability + '\\n\\n"},{"text":"Q (' + str(wokkaman.q_cool) + '): ","color":"' + wokkaman.colors[6] + '"},\\')
+text.append('{"text":"' + wokkaman.q_ability + '\\n\\n"},{"text":"sQ (' + str(wokkaman.sq_cool) + '): ","color":"' + wokkaman.colors[9] + '"},\\')
+text.append('{"text":"' + wokkaman.sq_ability + '\\n\\n"},{"text":"F (' + str(wokkaman.f_cool) + '): ","color":"' + wokkaman.colors[7] + '"},\\')
+text.append('{"text":"' + wokkaman.f_ability + '\\n\\n"},{"text":"sF (' + str(wokkaman.sf_cool) + '): ","color":"' + wokkaman.colors[10] + '"},\\')
+text.append('{"text":"' + wokkaman.sf_ability + "\"}]}},{\"text\":\"]\",\"color\":\"dark_gray\"}],[\\")
 
 
 # add settings (new page)
-text.append('[{"text":"   "},{"text":"Other Settings\\\\n\\\\n\\\\n","bold":true},\\')
-text.append('{"text":"Ambient Particles:\\\\n","hoverEvent":{"action":"show_text","contents":[{"text":"Turns Ambient Particles On/Off. Some Maps may not have Ambient Particles. This can help a bit with performance problems.","color":"white"}]}},\\')
-text.append('{"text":" [","color":"dark_gray"},{"text":"Off","color":"$(ambient)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 100"}},{"text":"]      [","color":"dark_gray"},{"text":"On","color":"$(not_ambient)","clickEvent":{"action":"run_command","value":"/trigger kitselect set 101"}},{"text":"]\\\\n\\\\n","color":"dark_gray"},\\')
-text.append('{"text":"Actionbar Design:\\\\n"},\\')
-text.append('{"text":"[","color":"dark_gray"},{"text":"Design 1",color:"$(design_0)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\\\nOn cooldown: "},{"text":"Q [6.8] ","color":"light_purple"},{"text":"F [4.1] ","color":"green"},{"text":"R [3.2]","color":"yellow"}]},"clickEvent":{"action":"run_command","value":"/trigger kitselect set 110"}},{"text":"]\\\\n","color":"dark_gray"},\\')
-text.append('{"text":"[","color":"dark_gray"},{"text":"Design 2",color:"$(design_1)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\\\nOn cooldown: "},{"text":"Q [6.8] F [4.1] R [3.2]","color":"gray"}]},"clickEvent":{"action":"run_command","value":"/trigger kitselect set 111"}},{"text":"]\\\\n","color":"dark_gray"},\\')
-text.append('{"text":"[","color":"dark_gray"},{"text":"Design 3",color:"$(design_2)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\\\nOn cooldown: "},{"text":"Q [","color":"dark_gray"},{"text":"6.8","color":"gray"},{"text":"] F [","color":"dark_gray"},{"text":"4.1","color":"gray"},{"text":"] R [","color":"dark_gray"},{"text":"3.2","color":"gray"},{"text":"]","color":"dark_gray"}]},"clickEvent":{"action":"run_command","value":"/trigger kitselect set 112"}},{"text":"]\\\\n","color":"dark_gray"},\\')
-text.append('{"text":"[","color":"dark_gray"},{"text":"Design 4","color":"$(design_3)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\\\nOn cooldown: "},{"text":"Q ","color":"dark_purple"},{"text":"[","color":"dark_gray"},{"text":"6.8","color":"gray"},{"text":"]","color":"dark_gray"},{"text":" F ","color":"dark_green"},{"text":"[","color":"dark_gray"},{"text":"4.1","color":"gray"},{"text":"]","color":"dark_gray"},{"text":" R ","color":"gold"},{"text":"[","color":"dark_gray"},{"text":"3.2","color":"gray"},{"text":"]","color":"dark_gray"}]},"clickEvent":{"action":"run_command","value":"/trigger kitselect set 113"}},{"text":"]\\\\n","color":"dark_gray"},\\')
-text.append('{"text":"[","color":"dark_gray"},{"text":"Design 5","color":"$(design_4)","hoverEvent":{"action":"show_text","contents":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\\\nOn cooldown: "},{"text":"Q ","color":"dark_purple"},{"text":"[6.8] ","color":"gray"},{"text":"F ","color":"dark_green"},{"text":"[4.1] ","color":"gray"},{"text":"R ","color":"gold"},{"text":"[3.2]","color":"gray"}]},"clickEvent":{"action":"run_command","value":"/trigger kitselect set 114"}},{"text":"]","color":"dark_gray"}\\')
-text.append("]'}]},\\")
-text.append("item_name='{\"text\":\"Kit Selector/Settings\",\"color\":\"yellow\"}'] 1")
+text.append('{"text":"   "},{"text":"Other Settings\\n\\n","bold":true},\\')
+text.append('{"text":"Ambient Particles:\\n","hover_event":{"action":"show_text","value":[{"text":"Turns Ambient Particles On/Off. Some Maps may not have Ambient Particles. This may help a little with fps problems (probably not much though).","color":"white"}]}},\\')
+text.append('{"text":" [","color":"dark_gray"},{"text":"Off","color":"$(ambient)","click_event":{"action":"run_command","command":"/trigger kitselect set 100"}},{"text":"]      [","color":"dark_gray"},{"text":"On","color":"$(not_ambient)","click_event":{"action":"run_command","command":"/trigger kitselect set 101"}},{"text":"]\\n\\n","color":"dark_gray"},\\')
+
+text.append('{"text":"Night Vision:\\n","hover_event":{"action":"show_text","value":[{"text":"Accessibility Setting controlling wether to apply night vision on no/dark/all maps. But i recommend trying turning up the brightness setting first as maps may look a lot worse with night vision.","color":"white"}]}},\\')
+text.append('{"text":"[","color":"dark_gray"},{"text":"Off","color":"$(night_never)","click_event":{"action":"run_command","command":"/trigger kitselect set 120"}},\\')
+text.append('{"text":"] [","color":"dark_gray"},{"text":"Dark","color":"$(night_dark)","click_event":{"action":"run_command","command":"/trigger kitselect set 121"},"hover_event":{"action":"show_text","value":[{"text":"Give Night Vision on dark maps"}]}},\\')
+text.append('{"text":"] [","color":"dark_gray"},{"text":"Always","color":"$(night_always)","click_event":{"action":"run_command","command":"/trigger kitselect set 122"},"hover_event":{"action":"show_text","value":[{"text":"Give Night Vision on all maps"}]}},{"text":"]\\n\\n","color":"dark_gray"},\\')
+
+text.append('{"text":"Actionbar Design:\\n"},\\')
+text.append('{"text":"[","color":"dark_gray"},{"text":"Design 1",color:"$(design_0)","hover_event":{"action":"show_text","value":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\nOn cooldown: "},{"text":"Q [6.8] ","color":"light_purple"},{"text":"F [4.1] ","color":"green"},{"text":"R [3.2]","color":"yellow"}]},"click_event":{"action":"run_command","command":"/trigger kitselect set 110"}},{"text":"]\\n","color":"dark_gray"},\\')
+text.append('{"text":"[","color":"dark_gray"},{"text":"Design 2",color:"$(design_1)","hover_event":{"action":"show_text","value":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\nOn cooldown: "},{"text":"Q [6.8] F [4.1] R [3.2]","color":"gray"}]},"click_event":{"action":"run_command","command":"/trigger kitselect set 111"}},{"text":"]\\n","color":"dark_gray"},\\')
+text.append('{"text":"[","color":"dark_gray"},{"text":"Design 3",color:"$(design_2)","hover_event":{"action":"show_text","value":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\nOn cooldown: "},{"text":"Q [","color":"dark_gray"},{"text":"6.8","color":"gray"},{"text":"] F [","color":"dark_gray"},{"text":"4.1","color":"gray"},{"text":"] R [","color":"dark_gray"},{"text":"3.2","color":"gray"},{"text":"]","color":"dark_gray"}]},"click_event":{"action":"run_command","command":"/trigger kitselect set 112"}},{"text":"]\\n","color":"dark_gray"},\\')
+text.append('{"text":"[","color":"dark_gray"},{"text":"Design 4","color":"$(design_3)","hover_event":{"action":"show_text","value":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\nOn cooldown: "},{"text":"Q ","color":"dark_purple"},{"text":"[","color":"dark_gray"},{"text":"6.8","color":"gray"},{"text":"]","color":"dark_gray"},{"text":" F ","color":"dark_green"},{"text":"[","color":"dark_gray"},{"text":"4.1","color":"gray"},{"text":"]","color":"dark_gray"},{"text":" R ","color":"gold"},{"text":"[","color":"dark_gray"},{"text":"3.2","color":"gray"},{"text":"]","color":"dark_gray"}]},"click_event":{"action":"run_command","command":"/trigger kitselect set 113"}},{"text":"]\\n","color":"dark_gray"},\\')
+text.append('{"text":"[","color":"dark_gray"},{"text":"Design 5","color":"$(design_4)","hover_event":{"action":"show_text","value":[{"text":"No cooldown: "},{"text":"Q [0.0] ","color":"dark_purple"},{"text":"F [0.0] ","color":"dark_green"},{"text":"R [0.0]","color":"gold"},{"text":"\\nOn cooldown: "},{"text":"Q ","color":"dark_purple"},{"text":"[6.8] ","color":"gray"},{"text":"F ","color":"dark_green"},{"text":"[4.1] ","color":"gray"},{"text":"R ","color":"gold"},{"text":"[3.2]","color":"gray"}]},"click_event":{"action":"run_command","command":"/trigger kitselect set 114"}},{"text":"]","color":"dark_gray"}\\')
+text.append(']]},\\')
+text.append('item_name={"text":"Kit Selector/Settings","color":"yellow"}] 1')
 
 
 # write file

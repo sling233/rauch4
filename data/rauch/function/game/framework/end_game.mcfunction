@@ -14,7 +14,7 @@ kill @e[type=marker,tag=hacker_bomb]
 kill @e[type=marker,tag=wark_detect]
 kill @e[type=block_display,tag=zarzahn_vehicle]
 kill @e[type=block_display,tag=wok_vehicle]
-kill @e[type=boat,tag=wok_boat]
+#kill @e[type=boat,tag=wok_boat]
 kill @e[type=marker,tag=wok_boat_rider]
 kill @e[type=item_display,tag=wok_rocket]
 tp @e[type=slime,tag=push] ~ ~-1000 ~

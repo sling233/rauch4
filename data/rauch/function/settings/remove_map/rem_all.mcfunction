@@ -4,5 +4,5 @@ tellraw @s [{"text":"-> Removed ","color":"dark_green"},{"score":{"name":"t_map_
 data remove storage map_data maps
 data remove storage map_data active
 tellraw @s {"text":"----------------------------------","color":"yellow"}
-clear @s minecraft:written_book[item_name='{"color":"yellow","text":"Settings"}']
+clear @s minecraft:written_book[item_name={"color":"yellow","text":"Settings"}]
 scoreboard players reset t_map_count temp

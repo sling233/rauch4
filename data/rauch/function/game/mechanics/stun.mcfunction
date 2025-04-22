@@ -1,24 +1,24 @@
 scoreboard players remove @s stun 1
 function rauch:game/ui/bossbar/stun/update
 
-execute at @s[scores={stun=89}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"}'
-execute at @s[scores={stun=84}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"}'
-execute at @s[scores={stun=79}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"}'
-execute at @s[scores={stun=74}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"}'
-execute at @s[scores={stun=69}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉▉"}'
-execute at @s[scores={stun=64}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉"}'
-execute at @s[scores={stun=59}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉"}'
-execute at @s[scores={stun=54}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉"}'
-execute at @s[scores={stun=49}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉▉"}'
-execute at @s[scores={stun=44}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉▉"}'
-execute at @s[scores={stun=39}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉▉"}'
-execute at @s[scores={stun=34}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉▉"}'
-execute at @s[scores={stun=29}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉▉"}'
-execute at @s[scores={stun=24}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉▉"}'
-execute at @s[scores={stun=19}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉▉"}'
-execute at @s[scores={stun=14}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉▉"}'
-execute at @s[scores={stun=9}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉▉"}'
-execute at @s[scores={stun=4}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value '{"color":"red","text":"▉"}'
+execute at @s[scores={stun=89}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"}
+execute at @s[scores={stun=84}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"}
+execute at @s[scores={stun=79}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"}
+execute at @s[scores={stun=74}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"}
+execute at @s[scores={stun=69}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉▉"}
+execute at @s[scores={stun=64}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉▉"}
+execute at @s[scores={stun=59}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉▉"}
+execute at @s[scores={stun=54}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉▉▉▉▉▉▉▉▉"}
+execute at @s[scores={stun=49}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉▉▉▉▉▉▉▉"}
+execute at @s[scores={stun=44}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉▉▉▉▉▉▉"}
+execute at @s[scores={stun=39}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉▉▉▉▉▉"}
+execute at @s[scores={stun=34}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉▉▉▉▉"}
+execute at @s[scores={stun=29}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉▉▉▉"}
+execute at @s[scores={stun=24}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉▉▉"}
+execute at @s[scores={stun=19}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉▉"}
+execute at @s[scores={stun=14}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉▉"}
+execute at @s[scores={stun=9}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉▉"}
+execute at @s[scores={stun=4}] as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum run data modify entity @s CustomName set value {"color":"red","text":"▉"}
 
 
 

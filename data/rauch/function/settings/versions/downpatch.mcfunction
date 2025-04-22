@@ -3,7 +3,7 @@ tellraw @a [{"text":"dev606","color":"light_purple"},{"text":" <- ","color":"red
 tellraw @a [{"text":"- Downpatching may lead to the existance of unnecessary scoreboard objectives, teams and bossbars.\n","color":"yellow"},\
 {"text":"- It is not guaranteed that downpatching will work without bugs, even for version 6.0.0 and higher. Most things should be fine, but if e.g the map data format changes, things would break.\n\
 Know Issues as of this version:\n\
-- Downpatching to 5.2.0 or lower in general may lead to unexpected behaviour since the version tracker wasn\'t implemented at that time, and no warning will be shown.\n\
+- Downpatching to 5.2.0 or lower in general may lead to unexpected behaviour since the version tracker wasn't implemented at that time, and no warning will be shown.\n\
 - Downpatching from 6.0.0 or higher to previous versions will remove map data. You can re-add it in that version.\n\
 - Downpatching from 6.0.1 or higher to previous versions will remove the lobby position. You can re-add it in that version.\
 ","color":"red"}]

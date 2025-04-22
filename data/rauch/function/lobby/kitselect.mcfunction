@@ -12,7 +12,7 @@ execute as @s[scores={kitselect=120}] run scoreboard players set @s night_vision
 execute as @s[scores={kitselect=121}] run scoreboard players set @s night_vision_accessibility 1
 execute as @s[scores={kitselect=122}] run scoreboard players set @s night_vision_accessibility 2
 
-clear @s minecraft:written_book[item_name='{"text":"Kit Selector/Settings","color":"yellow"}']
+clear @s minecraft:written_book[item_name={"text":"Kit Selector/Settings","color":"yellow"}]
 scoreboard players reset @s kitselect
 
 execute at @s run playsound minecraft:block.tripwire.click_off master @s ~ ~ ~ 1

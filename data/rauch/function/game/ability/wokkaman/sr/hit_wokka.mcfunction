@@ -2,7 +2,7 @@ scoreboard players set 20 const 20
 execute at @s run playsound minecraft:entity.arrow.hit_player master @s ~ ~ ~
 # damage calculation (scale with buffs)
 # read current damage from attributes (includes buffs)
-execute store result score t_calc_damage temp run attribute @s minecraft:generic.attack_damage get 1000
+execute store result score t_calc_damage temp run attribute @s minecraft:attack_damage get 1000
 # 20 is the damage of the bow
 scoreboard players operation t_calc_damage temp *= 20 const
 # 20 is normal damage of a wokkaman

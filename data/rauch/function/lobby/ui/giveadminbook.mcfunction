@@ -1,4 +1,4 @@
-clear @s minecraft:written_book[item_name='{"color":"yellow","text":"Settings"}']
+clear @s minecraft:written_book[item_name={"color":"yellow","text":"Settings"}]
 
 data modify storage temp adminbook set value {"deathmatch":"gray","koth":"gray","respawn":"gray","testing":"gray","ctf":"gray","wokkaman":"gray"}
 execute if score Global mode matches 0 run data modify storage temp adminbook.deathmatch set value "dark_green"

@@ -1,27 +1,27 @@
 #teleweak
-attribute @s minecraft:generic.attack_damage modifier remove teleweak
+attribute @s minecraft:attack_damage modifier remove teleweak
 #pikkafast
-attribute @s minecraft:generic.attack_damage modifier remove flyer_fast
-attribute @s minecraft:player.entity_interaction_range modifier remove flyer_fast_range
+attribute @s minecraft:attack_damage modifier remove flyer_fast
+attribute @s minecraft:entity_interaction_range modifier remove flyer_fast_range
 #boltbuff
-attribute @s minecraft:generic.attack_damage modifier remove boltdmg
+attribute @s minecraft:attack_damage modifier remove boltdmg
 #raucherdmg
 function rauch:game/ability/raucher/q/remove_buff
 #wark buff
-attribute @s minecraft:generic.attack_damage modifier remove warkbuff
+attribute @s minecraft:attack_damage modifier remove warkbuff
 #tankkb
 function rauch:game/ability/tank/q/remove_buff
 #kbfix
-attribute @s minecraft:generic.knockback_resistance modifier remove kbfix
+attribute @s minecraft:knockback_resistance modifier remove kbfix
 #armorfix
-attribute @s minecraft:generic.armor modifier remove armorfix
+attribute @s minecraft:armor modifier remove armorfix
 
-attribute @s minecraft:generic.max_health base set 20
-attribute @s minecraft:generic.attack_damage base set 1
-attribute @s minecraft:generic.scale base set 1
-attribute @s minecraft:generic.movement_speed base set 0.10000000149011612
-attribute @s minecraft:player.entity_interaction_range base set 3
-attribute @s minecraft:player.block_interaction_range base set 4.5
+attribute @s minecraft:max_health base set 20
+attribute @s minecraft:attack_damage base set 1
+attribute @s minecraft:scale base set 1
+attribute @s minecraft:movement_speed base set 0.10000000149011612
+attribute @s minecraft:entity_interaction_range base set 3
+attribute @s minecraft:block_interaction_range base set 4.5
 
 clear @s minecraft:elytra
 #kill @s

@@ -1,4 +1,4 @@
-clear @s minecraft:written_book[item_name='{"text":"Kit Selector/Settings","color":"yellow"}']
+clear @s minecraft:written_book[item_name={"text":"Kit Selector/Settings","color":"yellow"}]
 
 data modify storage temp kitselector set value {"bolt":"gray","zarzahn":"gray","raucher":"gray","hacker":"gray","wark":"gray","teleporter":"gray","tank":"gray","pikka":"gray",\
 "ambient":"gray","density":"gray","not_ambient":"dark_green","not_density":"dark_green",\

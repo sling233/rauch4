@@ -25,6 +25,6 @@ execute as @s[scores={adminsetting=1..5}] if score Global mode matches 4 run tel
 
 
 scoreboard players reset @s adminsetting
-clear @a minecraft:written_book[item_name='{"color":"yellow","text":"Settings"}']
+clear @a minecraft:written_book[item_name={"color":"yellow","text":"Settings"}]
 
 execute at @s run playsound minecraft:block.tripwire.click_off master @s ~ ~ ~ 1

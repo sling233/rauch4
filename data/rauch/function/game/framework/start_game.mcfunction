@@ -1,5 +1,5 @@
 # check if there are players in queue
-execute unless entity @a[tag=queue] run tellraw @s [{"text":"Game can\'t be started because there are no players in queue!","color":"red"}]
+execute unless entity @a[tag=queue] run tellraw @s [{"text":"Game can't be started because there are no players in queue!","color":"red"}]
 execute unless entity @a[tag=queue] run return 0
 
 # game id etc

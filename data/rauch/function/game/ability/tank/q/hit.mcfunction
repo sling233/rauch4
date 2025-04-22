@@ -1,4 +1,4 @@
-#attribute @s minecraft:generic.knockback_resistance modifier add 0-0-0-2-1 "tank_kb" 0.3 add_value
+#attribute @s minecraft:knockback_resistance modifier add 0-0-0-2-1 "tank_kb" 0.3 add_value
 #effect give @s minecraft:resistance 6 1 true
 scoreboard players add @s tank_resistance_num 1
 #data merge storage temp {number:-1}

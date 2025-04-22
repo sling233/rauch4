@@ -1,1 +1,2 @@
 python kitselector_generator.py
+PAUSE

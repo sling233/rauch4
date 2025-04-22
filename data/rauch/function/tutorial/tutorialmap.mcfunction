@@ -1,5 +1,5 @@
 tellraw @s {"text":"\n------------ Adding a Map Guide ------------","color":"green"}
-tellraw @s [{"text":"Map Name: ","color":"light_purple"},{"text":"Give the map a name by entering your name of choice in the book called \"Enter Name\". (Don\'t sign it, just click \"Done\")","color":"yellow"}]
+tellraw @s [{"text":"Map Name: ","color":"light_purple"},{"text":"Give the map a name by entering your name of choice in the book called \"Enter Name\". (Don't sign it, just click \"Done\")","color":"yellow"}]
 tellraw @s [{"text":"Important Locations: ","color":"light_purple"},{"text":"Set the Spawnpoints and Center location by moving to the desired location and right clicking with the according item","color":"yellow"}]
 tellraw @s [{"text":"Settings: ","color":"light_purple"},{"text":"You can change settings with the book called \"Map Settings\".\n\
 - Particles are ambient particles that spawn when playing on that map (players can turn them off for themselves).\n\

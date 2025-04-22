@@ -271,6 +271,6 @@ team remove Red
 team remove Blue
 team remove Lobby
 
-tellraw @s [{"text":"Removed all scoreboard objectives, bossbars and teams relevant to the Wokkagames data pack, EXCEPT for objective \"version\". Everything left over has no infuence over the functionality of this pack (again, except for objective \"version\". Don\'t touch that one pls). Type ","color":"yellow"},{"text":"/reload","color":"light_purple","hoverEvent":{"action":"show_text","contents":[{"text":"Click to suggest command"}]},"clickEvent":{"action":"suggest_command","value":"/reload"}},{"text":" to re-add everything.","color":"yellow"}]
+tellraw @s [{"text":"Removed all scoreboard objectives, bossbars and teams relevant to the Wokkagames data pack, EXCEPT for objective \"version\". Everything left over has no infuence over the functionality of this pack (again, except for objective \"version\". Don't touch that one pls). Type ","color":"yellow"},{"text":"/reload","color":"light_purple","hover_event":{"action":"show_text","value":[{"text":"Click to suggest command"}]},"click_event":{"action":"suggest_command","command":"/reload"}},{"text":" to re-add everything.","color":"yellow"}]
 clear @a minecraft:written_book
 #function rauch:setup

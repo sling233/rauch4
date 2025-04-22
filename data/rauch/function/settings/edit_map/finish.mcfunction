@@ -64,5 +64,5 @@ scoreboard players reset Global mapParticle
 weather clear
 time set day
 data remove storage map_data active
-clear @a[tag=lobby] minecraft:written_book[item_name='{"color":"yellow","text":"Settings"}']
+clear @a[tag=lobby] minecraft:written_book[item_name={"color":"yellow","text":"Settings"}]
 tag @s add lobby

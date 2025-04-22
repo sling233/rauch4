@@ -6,7 +6,7 @@ scoreboard players set 14 const 14
 scoreboard players set 15 const 15
 
 # read current damage from attributes (includes buffs)
-execute store result score t_calc_damage temp run attribute @s minecraft:generic.attack_damage get 1000
+execute store result score t_calc_damage temp run attribute @s minecraft:attack_damage get 1000
 # 15 is the damage of the projectile
 scoreboard players operation t_calc_damage temp *= @s 15
 # 14 is normal damage of a bolt
