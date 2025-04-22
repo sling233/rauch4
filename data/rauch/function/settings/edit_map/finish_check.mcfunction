@@ -7,7 +7,7 @@ execute as @s[tag=!sr] run tellraw @s {"text":"The Spawn of team Red is missing.
 execute as @s[tag=!sb] run tellraw @s {"text":"The Spawn of team Blue is missing. Move to the desired location and right click with the according item","color":"red"}
 execute as @s[tag=!ce] run tellraw @s {"text":"Center Location is missing. Move to the desired location and right click with the according item","color":"red"}
 
-execute as @s[tag=name,tag=sr,tag=sb] run function rauch:settings/edit_map/finish
+execute as @s[tag=name,tag=sr,tag=sb,tag=ce] run function rauch:settings/edit_map/finish
 scoreboard players reset @s click
 tag @s remove name
 tag @s remove sr
