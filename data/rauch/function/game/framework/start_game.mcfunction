@@ -25,7 +25,7 @@ team join Blue @a[tag=t_blu]
 tag @a remove t_red
 tag @a remove t_blu
 
-# player ids und setup und so
+# player ids und setup und so. also calls pregame for each player
 scoreboard players reset Global pnum
 execute as @a[tag=queue,limit=12] run function rauch:game/framework/teamsetup
 scoreboard players reset Global pnum
@@ -64,3 +64,5 @@ execute if score Global mode matches 5 run function rauch:game/mode/wokkaman/ini
 
 # elytra bossbar after setup so max is properly set
 function rauch:game/ui/bossbar/elytra/set_max
+# wokkaman give starting rockets
+execute as @a[tag=game,scores={kit=9}] run function rauch:game/framework/wokkaman_set_starting_rockets

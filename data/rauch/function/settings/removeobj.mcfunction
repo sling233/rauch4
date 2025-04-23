@@ -133,6 +133,7 @@ scoreboard objectives remove wokkaman_rocket_phase
 scoreboard objectives remove wokkaman_rocket_rotating_tilt
 scoreboard objectives remove wokkaman_rocket_shooting_count
 scoreboard objectives remove wokkaman_shoot_cooldown
+scoreboard objectives remove wokkaman_starting_rocket_count
 
 scoreboard objectives setdisplay below_name
 scoreboard objectives setdisplay list
