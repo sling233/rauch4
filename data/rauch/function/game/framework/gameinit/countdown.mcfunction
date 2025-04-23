@@ -30,7 +30,10 @@ execute if score Global gamestart matches 0 run scoreboard players reset Global 
 #scoreboard players set @a[tag=game] cool1 2
 #scoreboard players set @a[tag=game] cool2 2
 #scoreboard players set @a[tag=game] cool3 2
-scoreboard players set @a[tag=game,scores={kit=5}] wark_charge 0
+
+# counteract wark q charge changes during countdown
+scoreboard players remove @a[scores={wark_charge=..99999}] wark_charge 75
+scoreboard players add @a[scores={wark_charge=100150..}] wark_charge 150
 
 # tp players every 10 ticks because tp-ing every tick leads to problems for minecraft on servers
 scoreboard players set 10 const 10
