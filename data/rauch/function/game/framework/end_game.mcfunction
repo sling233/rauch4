@@ -20,8 +20,8 @@ kill @e[type=item_display,tag=wok_rocket]
 tp @e[type=slime,tag=push] ~ ~-1000 ~
 tp @e[type=slime,tag=pik_push] ~ ~-1000 ~
 #global times und so
-scoreboard players reset Global center_red
-scoreboard players reset Global center_blue
+#scoreboard players reset Global center_red
+#scoreboard players reset Global center_blue
 scoreboard players reset Global capture_info
 scoreboard players reset Global time_blue
 scoreboard players reset Global time_red

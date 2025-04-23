@@ -9,7 +9,7 @@ execute as @a[tag=spectator] run function rauch:game/framework/spectator
 
 
 #projektile
-execute as @e[type=marker,tag=raucher_rocket] run function rauch:game/ability/raucher/f/projectile
+#execute as @e[type=marker,tag=raucher_rocket] run function rauch:game/ability/raucher/f/projectile
 execute as @e[type=marker,tag=teleporter] run function rauch:game/ability/teleporter/r/projectile
 execute as @e[type=marker,tag=hacker] run function rauch:game/ability/hacker/r/projectile
 execute as @e[type=marker,tag=zarzahn] run function rauch:game/ability/zarzahn/r/projectile

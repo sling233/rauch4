@@ -12,7 +12,7 @@ execute as @s[scores={kit=3,projectileRNum=1..},predicate=!rauch:sneak,predicate
 execute as @s[scores={kit=3,projectileRNum=1..},predicate=rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/raucher/sr
 execute as @s[scores={kit=4,cool1=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/hacker/r
 execute as @s[scores={kit=5,cool1=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wark/r
-execute as @s[scores={kit=5,cool1=0},predicate=rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wark/sr
+#execute as @s[scores={kit=5,cool1=0},predicate=rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/wark/sr
 execute as @s[scores={kit=6,cool1=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/teleporter/r
 execute as @s[scores={kit=7},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/tank/r
 execute as @s[scores={kit=8,cool1=0},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/flyer/r
