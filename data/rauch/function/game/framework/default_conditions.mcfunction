@@ -12,11 +12,10 @@ execute as @a[scores={kit=2}] run scoreboard players set @s cool3_target 560
 execute as @a[scores={kit=2}] run scoreboard players set @s cool1_respawn 0
 execute as @a[scores={kit=2}] run scoreboard players set @s cool2_respawn 0
 execute as @a[scores={kit=2}] run scoreboard players set @s cool3_respawn 0
-#raucher
+#raucher (no r respawn cooldown, its always just set to cool1_target)
 execute as @a[scores={kit=3}] run scoreboard players set @s cool1_target 140
 execute as @a[scores={kit=3}] run scoreboard players set @s cool2_target 360
 execute as @a[scores={kit=3}] run scoreboard players set @s cool3_target 300
-execute as @a[scores={kit=3}] run scoreboard players set @s cool1_respawn 160
 execute as @a[scores={kit=3}] run scoreboard players set @s cool2_respawn 0
 execute as @a[scores={kit=3}] run scoreboard players set @s cool3_respawn 0
 execute as @a[scores={kit=3}] run scoreboard players set @s projectileRNum 3
@@ -77,3 +76,5 @@ execute as @a[scores={kit=9}] run scoreboard players set @s elytra_cooldown 40
 execute as @a[scores={kit=9}] run scoreboard players set @s wokkaman_starting_rocket_count 0
 
 execute as @a[scores={kit=9}] run give @s minecraft:firework_rocket[minecraft:fireworks={flight_duration:0}] 10
+
+scoreboard players set Global gamestart 120

@@ -17,6 +17,7 @@
 # execute as @a[scores={kit=1}] run scoreboard players set @s cool1_respawn 0
 # execute as @a[scores={kit=1}] run scoreboard players set @s cool2_respawn 0
 # execute as @a[scores={kit=1}] run scoreboard players set @s cool3_respawn 0
+
 # zarzahn
 # execute as @a[scores={kit=2}] run scoreboard players set @s cool1_target 260
 # execute as @a[scores={kit=2}] run scoreboard players set @s cool2_target 190
@@ -24,28 +25,35 @@
 # execute as @a[scores={kit=2}] run scoreboard players set @s cool1_respawn 0
 # execute as @a[scores={kit=2}] run scoreboard players set @s cool2_respawn 0
 # execute as @a[scores={kit=2}] run scoreboard players set @s cool3_respawn 0
-# raucher (cool1 is how long it takes for 1 cloud to regenerate. projectileRMax is how many clouds a raucher can have and projectileRNum is how many they spawn with)
+
+# raucher (cool1 is how long it takes for 1 cloud to regenerate
+# projectileRMax is how many clouds a raucher can have and projectileRNum is how many they spawn with
+# no r respawn cooldown, its always just set to cool1_target)
 # execute as @a[scores={kit=3}] run scoreboard players set @s cool1_target 140
 # execute as @a[scores={kit=3}] run scoreboard players set @s cool2_target 360
 # execute as @a[scores={kit=3}] run scoreboard players set @s cool3_target 300
-# execute as @a[scores={kit=3}] run scoreboard players set @s cool1_respawn 160
 # execute as @a[scores={kit=3}] run scoreboard players set @s cool2_respawn 0
 # execute as @a[scores={kit=3}] run scoreboard players set @s cool3_respawn 0
 # execute as @a[scores={kit=3}] run scoreboard players set @s projectileRNum 3
 # execute as @a[scores={kit=3}] run scoreboard players set @s projectileRMax 3
 # execute as @a[scores={kit=3}] run scoreboard players set @s projectileRNumRespawn 1
-# hacker (has no normal f cooldown. hacker_charges is how many charges a hacker has at the start of the game)
+
+# hacker (has no normal f cooldown.
+# hacker_charges is how many charges a hacker has at the start of the game)
 # execute as @a[scores={kit=4}] run scoreboard players set @s cool1_target 380
 # execute as @a[scores={kit=4}] run scoreboard players set @s cool2_target 460
 # execute as @a[scores={kit=4}] run scoreboard players set @s cool1_respawn 0
 # execute as @a[scores={kit=4}] run scoreboard players set @s cool2_respawn 0
 # execute as @a[scores={kit=4}] run scoreboard players set @s hacker_charges 1
-# wark (has no normal Q cooldown. Q cannot be customized, at least not yet. wark_charge is how much charge a wark has at the start of the game (1000 = 1% charge))
+
+# wark (has no normal Q cooldown. Q cannot be customized, at least not yet.
+# wark_charge is how much charge a wark has at the start of the game (1000 = 1% charge))
 # execute as @a[scores={kit=5}] run scoreboard players set @s cool1_target 200
 # execute as @a[scores={kit=5}] run scoreboard players set @s cool3_target 200
 # execute as @a[scores={kit=5}] run scoreboard players set @s cool1_respawn 0
 # execute as @a[scores={kit=5}] run scoreboard players set @s cool3_respawn 0
 # execute as @a[scores={kit=5}] run scoreboard players set @s wark_charge 0
+
 # teleporter
 # execute as @a[scores={kit=6}] run scoreboard players set @s cool1_target 280
 # execute as @a[scores={kit=6}] run scoreboard players set @s cool2_target 440
@@ -53,11 +61,13 @@
 # execute as @a[scores={kit=6}] run scoreboard players set @s cool1_respawn 0
 # execute as @a[scores={kit=6}] run scoreboard players set @s cool2_respawn 0
 # execute as @a[scores={kit=6}] run scoreboard players set @s cool3_respawn 0
+
 # tank (has no normal R cooldown)
 # execute as @a[scores={kit=7}] run scoreboard players set @s cool2_target 360
 # execute as @a[scores={kit=7}] run scoreboard players set @s cool3_target 320
 # execute as @a[scores={kit=7}] run scoreboard players set @s cool2_respawn 0
 # execute as @a[scores={kit=7}] run scoreboard players set @s cool3_respawn 0
+
 # pikka (elytra_cooldown specifies how many ticks pikka cant use their elytra after using it and landing)
 # execute as @a[scores={kit=8}] run scoreboard players set @s cool1_target 400
 # execute as @a[scores={kit=8}] run scoreboard players set @s cool2_target 360
@@ -66,7 +76,11 @@
 # execute as @a[scores={kit=8}] run scoreboard players set @s cool2_respawn 0
 # execute as @a[scores={kit=8}] run scoreboard players set @s cool3_respawn 0
 # execute as @a[scores={kit=8}] run scoreboard players set @s elytra_cooldown 60
-# wokkaman (cool4 is shift-R, cool5 is shift-Q, cool6 is shift-F. has no q cooldown. elytra_cooldown works the same as pikkas. wokkaman_starting_rocket_count is what its name says)
+
+# wokkaman (cool4 is shift-R, cool5 is shift-Q, cool6 is shift-F
+# Has no q cooldown.
+# elytra_cooldown works the same as pikkas
+# wokkaman_starting_rocket_count is what its name says
 # execute as @a[scores={kit=9}] run scoreboard players set @s cool1_target 160
 # execute as @a[scores={kit=9}] run scoreboard players set @s cool3_target 240
 # execute as @a[scores={kit=9}] run scoreboard players set @s cool4_target 200
@@ -79,6 +93,7 @@
 # execute as @a[scores={kit=9}] run scoreboard players set @s cool6_respawn 0
 # execute as @a[scores={kit=9}] run scoreboard players set @s elytra_cooldown 40
 # execute as @a[scores={kit=9}] run scoreboard players set @s wokkaman_starting_rocket_count 0
+
 
 # Delay before game starts (countdown) in ticks (so 120 ticks = 5 seconds)
 # scoreboard players set Global gamestart 120
