@@ -31,7 +31,7 @@ execute as @s[scores={kit=8}] unless score @s elytra matches 1.. unless score @s
 #wokkaman
 item replace entity @s[scores={kit=9}] armor.legs with golden_leggings[item_name={"text":"Ninjahose"},rarity=epic,unbreakable={},enchantments={"minecraft:binding_curse":1,"minecraft:swift_sneak":5},!minecraft:attribute_modifiers] 1
 item replace entity @s[scores={kit=9}] armor.feet with leather_boots[item_name={"text":"Schnellschuhe"},rarity=epic,dyed_color=3678989,unbreakable={},enchantments={"minecraft:binding_curse":1},!minecraft:attribute_modifiers] 1
-item replace entity @s[scores={kit=9}] armor.chest with elytra[damage=432,item_name={"text":"Fliegflügel"},rarity=epic,unbreakable={},enchantments={"minecraft:binding_curse":1},!minecraft:attribute_modifiers] 1
+item replace entity @s[scores={kit=9}] armor.chest with elytra[damage=432,item_name={"text":"Fliegflügel"},rarity=epic,enchantments={"minecraft:binding_curse":1},!minecraft:attribute_modifiers] 1
 execute as @s[scores={kit=9}] unless score @s elytra matches 1.. unless score @s hack matches 1.. run item replace entity @s armor.chest with elytra[item_name={"text":"Fliegflügel"},rarity=epic,unbreakable={},enchantments={"minecraft:binding_curse":1},!minecraft:attribute_modifiers] 1
 
 # head
