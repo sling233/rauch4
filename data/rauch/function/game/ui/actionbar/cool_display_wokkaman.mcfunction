@@ -36,7 +36,14 @@ execute if predicate rauch:skill as @s[scores={actionbar_design=2}] run function
 execute if predicate rauch:skill as @s[scores={actionbar_design=3}] run function rauch:game/ui/actionbar/wokkaman/wokkaman_3
 execute if predicate rauch:skill as @s[scores={actionbar_design=4}] run function rauch:game/ui/actionbar/wokkaman/wokkaman_4
 
-#execute if predicate rauch:skill run function rauch:game/ui/actionbar/cool_display_wokkaman_macro with storage temp wokkaman_actionbar
+execute unless predicate rauch:skill run title @s actionbar [\
+{"text":"Q[","color":"red"},{"score":{"name":"@s","objective":"wokkaman_rocket_count"},"color":"red"},\
+{"text":"]  sQ[","color":"red"},{"score":{"name":"t_cool5_s","objective":"temp"},"color":"red"},{"text":".","color":"red"},{"score":{"name":"t_cool5_ds","objective":"temp"},"color":"red"},\
+{"text":"]  F[","color":"red"},{"score":{"name":"t_cool3_s","objective":"temp"},"color":"red"},{"text":".","color":"red"},{"score":{"name":"t_cool3_ds","objective":"temp"},"color":"red"},\
+{"text":"]  sF[","color":"red"},{"score":{"name":"t_cool6_s","objective":"temp"},"color":"red"},{"text":".","color":"red"},{"score":{"name":"t_cool6_ds","objective":"temp"},"color":"red"},\
+{"text":"]  R[","color":"red"},{"score":{"name":"t_cool1_s","objective":"temp"},"color":"red"},{"text":".","color":"red"},{"score":{"name":"t_cool1_ds","objective":"temp"},"color":"red"},\
+{"text":"]  sR[","color":"red"},{"score":{"name":"t_cool4_s","objective":"temp"},"color":"red"},{"text":".","color":"red"},{"score":{"name":"t_cool4_ds","objective":"temp"},"color":"red"},\
+{"text":"]","color":"red"}]
 
 
 scoreboard players reset t_cool1_s temp
