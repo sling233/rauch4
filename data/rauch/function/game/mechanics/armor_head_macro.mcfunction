@@ -9,12 +9,14 @@ $execute as @s[tag=!flagPickedUp] unless score @s kit matches 9 run item replace
 ] 1
 
 # wokkaman helmet
-$execute as @s[tag=!flagPickedUp,scores={kit=9,wokkaman_helmet=1..}] run item replace entity @s armor.head with turtle_helmet[\
+$execute as @s[tag=!flagPickedUp,scores={kit=9,wokkaman_helmet=1..}] run item replace entity @s armor.head with iron_helmet[\
   item_name={"text":"Schlauhut"},\
+  item_model="minecraft:turtle_helmet",\
   rarity=epic,\
   unbreakable={},\
   enchantments={"rauch:cool_protection":$(armor_target),"minecraft:binding_curse":1},\
   tooltip_display={hidden_components:["unbreakable","dyed_color","enchantments","trim"]},\
+  minecraft:equippable={slot:"head",asset_id:"minecraft:turtle_scute"},\
   !minecraft:attribute_modifiers\
 ] 1
 
