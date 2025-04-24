@@ -129,14 +129,17 @@ scoreboard objectives add wok_kills dummy
 scoreboard objectives add wok_time dummy
 scoreboard objectives add wok_hover_schedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add wok_push_timer minecraft.custom:minecraft.time_since_rest
-scoreboard objectives add wokkaman_weapon dummy
 scoreboard objectives add wokkaman_helmet dummy
+scoreboard objectives add wokkaman_max_mace_count dummy
 scoreboard objectives add wokkaman_rocket_phase dummy
 scoreboard objectives add wokkaman_rocket_rotating_tilt dummy
 scoreboard objectives add wokkaman_rocket_count dummy
 scoreboard objectives add wokkaman_rocket_shooting_count dummy
 scoreboard objectives add wokkaman_shoot_cooldown dummy
+scoreboard objectives add wokkaman_starting_firework_rocket_count dummy
 scoreboard objectives add wokkaman_starting_rocket_count dummy
+scoreboard objectives add wokkaman_starting_mace_count dummy
+scoreboard objectives add wokkaman_weapon dummy
 
 # setup stuff
 execute unless entity @a[tag=admin] unless data storage lobby_data position run tellraw @a [{"text":"Please set the Lobby position by moving to the desired location and clicking ","color":"yellow"},{"text":"here.","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/changelobbypos"}}]

@@ -126,14 +126,17 @@ scoreboard objectives remove wok_kills
 scoreboard objectives remove wok_time
 scoreboard objectives remove wok_hover_schedule
 scoreboard objectives remove wok_push_timer
-scoreboard objectives remove wokkaman_weapon
 scoreboard objectives remove wokkaman_helmet
+scoreboard objectives remove wokkaman_max_mace_count
 scoreboard objectives remove wokkaman_rocket_count
 scoreboard objectives remove wokkaman_rocket_phase
 scoreboard objectives remove wokkaman_rocket_rotating_tilt
 scoreboard objectives remove wokkaman_rocket_shooting_count
 scoreboard objectives remove wokkaman_shoot_cooldown
+scoreboard objectives remove wokkaman_starting_firework_rocket_count
 scoreboard objectives remove wokkaman_starting_rocket_count
+scoreboard objectives remove wokkaman_starting_mace_count
+scoreboard objectives remove wokkaman_weapon
 
 scoreboard objectives setdisplay below_name
 scoreboard objectives setdisplay list

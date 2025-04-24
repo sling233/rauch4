@@ -73,8 +73,9 @@ execute as @a[scores={kit=9}] run scoreboard players set @s cool4_respawn 0
 execute as @a[scores={kit=9}] run scoreboard players set @s cool5_respawn 0
 execute as @a[scores={kit=9}] run scoreboard players set @s cool6_respawn 0
 execute as @a[scores={kit=9}] run scoreboard players set @s elytra_cooldown 40
+execute as @a[scores={kit=9}] run scoreboard players set @s wokkaman_starting_firework_rocket_count 10
 execute as @a[scores={kit=9}] run scoreboard players set @s wokkaman_starting_rocket_count 0
-
-execute as @a[scores={kit=9}] run give @s minecraft:firework_rocket[minecraft:fireworks={flight_duration:0}] 10
+execute as @a[scores={kit=9}] run scoreboard players set @s wokkaman_starting_mace_count 2
+execute as @a[scores={kit=9}] run scoreboard players set @s wokkaman_max_mace_count 4
 
 scoreboard players set Global gamestart 120

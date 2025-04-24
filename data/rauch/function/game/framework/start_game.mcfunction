@@ -66,3 +66,5 @@ execute if score Global mode matches 5 run function rauch:game/mode/wokkaman/ini
 function rauch:game/ui/bossbar/elytra/set_max
 # wokkaman give starting rockets
 execute as @a[tag=game,scores={kit=9}] run function rauch:game/framework/wokkaman_set_starting_rockets
+execute as @a[tag=game,scores={kit=9}] run function rauch:game/framework/wokkaman_give_starting_firework_rockets
+execute as @a[tag=game,scores={kit=9}] run function rauch:game/framework/wokkaman_give_starting_maces

@@ -80,7 +80,10 @@
 # wokkaman (cool4 is shift-R, cool5 is shift-Q, cool6 is shift-F
 # Has no q cooldown.
 # elytra_cooldown works the same as pikkas
-# wokkaman_starting_rocket_count is what its name says
+# wokkaman_starting_rocket_count is the starting number of rockets (the rotating ones)
+# wokkaman_starting_firework_rocket_count is the starting number of firework rockets
+# wokkaman_starting_mace_count is the starting number of maces
+# wokkaman_max_mace_count is the maximum number of maces
 # execute as @a[scores={kit=9}] run scoreboard players set @s cool1_target 160
 # execute as @a[scores={kit=9}] run scoreboard players set @s cool3_target 240
 # execute as @a[scores={kit=9}] run scoreboard players set @s cool4_target 200
@@ -93,6 +96,9 @@
 # execute as @a[scores={kit=9}] run scoreboard players set @s cool6_respawn 0
 # execute as @a[scores={kit=9}] run scoreboard players set @s elytra_cooldown 40
 # execute as @a[scores={kit=9}] run scoreboard players set @s wokkaman_starting_rocket_count 0
+# execute as @a[scores={kit=9}] run scoreboard players set @s wokkaman_starting_firework_rocket_count 10
+# execute as @a[scores={kit=9}] run scoreboard players set @s wokkaman_starting_mace_count 2
+# execute as @a[scores={kit=9}] run scoreboard players set @s wokkaman_max_mace_count 4
 
 
 # Delay before game starts (countdown) in ticks (so 120 ticks = 5 seconds)
