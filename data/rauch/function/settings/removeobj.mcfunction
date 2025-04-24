@@ -59,7 +59,6 @@ scoreboard objectives remove pnum
 scoreboard objectives remove projectileRMax
 scoreboard objectives remove projectileRNum
 scoreboard objectives remove projectileRNumRespawn
-scoreboard objectives remove push_levitation_timer
 scoreboard objectives remove raucherdmg
 scoreboard objectives remove raucherdmg_num
 scoreboard objectives remove raucher_spider_despawn_timer
@@ -85,7 +84,6 @@ scoreboard objectives remove wark_buff
 scoreboard objectives remove wark_charge
 scoreboard objectives remove wark_detect
 scoreboard objectives remove wark_startup
-scoreboard objectives remove wark_f
 scoreboard objectives remove zarzahn_f
 scoreboard objectives remove zarzahn_hooking
 #king of the hill

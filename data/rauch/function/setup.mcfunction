@@ -59,7 +59,6 @@ scoreboard objectives add pnum dummy
 scoreboard objectives add projectileRMax dummy
 scoreboard objectives add projectileRNum dummy
 scoreboard objectives add projectileRNumRespawn dummy
-scoreboard objectives add push_levitation_timer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add raucherdmg dummy
 scoreboard objectives add raucherdmg_num dummy
 scoreboard objectives add raucher_spider_despawn_timer minecraft.custom:minecraft.time_since_rest
@@ -85,7 +84,6 @@ scoreboard objectives add wark_buff dummy
 scoreboard objectives add wark_charge dummy
 scoreboard objectives add wark_detect dummy
 scoreboard objectives add wark_startup dummy
-scoreboard objectives add wark_f minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add zarzahn_f dummy
 scoreboard objectives add zarzahn_hooking dummy
 #king of the hill

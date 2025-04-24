@@ -1,3 +1,4 @@
+# as projectile new
 #particle minecraft:dust_color_transition 0.7 0 0.3 1 0 0 0 ~ ~ ~ 2 2 2 0.1 700 force
 execute at @s run particle minecraft:firework ~ ~ ~ 0.1 0.1 0.1 0.7 100 force
 execute at @s run particle minecraft:firework ~ ~ ~ 0.1 0.1 0.1 0.25 200 force
@@ -6,11 +7,9 @@ execute at @s run particle minecraft:explosion ~ ~ ~ 1 1 1 1 20 force
 execute at @s run particle minecraft:flash ~ ~ ~ 0.1 0.1 0.1 1 1 force
 execute at @s run playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 1 1
 
-tag @s add temp
-execute as @a if score @s pnum = @e[type=marker,tag=zarzahn_rocket,tag=temp,limit=1] pnum run scoreboard players set @s slime_despawn_timer -5
-tag @s remove temp
-
-function rauch:game/ability/zarzahn/q/spawn
+scoreboard players set $strength player_motion.api.launch 14000
+# add a bit of a vertical component
+execute at @s as @a[tag=game,tag=!dead,distance=..2.5] positioned ~ ~-1 ~ facing entity @s feet run function player_motion:api/launch_looking
 
 tag @s add hit
 kill @s

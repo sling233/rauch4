@@ -1,5 +1,6 @@
 {
   "values":[
-	"rauch:setup"
+	"rauch:setup",
+	"player_motion:internal/technical/load"
   ]
 }

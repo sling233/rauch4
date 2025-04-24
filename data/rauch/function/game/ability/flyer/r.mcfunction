@@ -1,6 +1,5 @@
-execute as @s[team=Red] run function rauch:game/ability/flyer/r/spawn_red
-execute as @s[team=Blue] run function rauch:game/ability/flyer/r/spawn_blue
-scoreboard players set @s slime_despawn_timer -5
+scoreboard players set $strength player_motion.api.launch 15000
+execute rotated as @s run function player_motion:api/launch_looking
 
 execute at @s run playsound minecraft:entity.ender_dragon.flap master @a
 execute at @s run particle minecraft:cloud ~ ~0.3 ~ 0.2 0.2 0.2 0.3 60 force
