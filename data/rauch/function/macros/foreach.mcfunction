@@ -3,6 +3,11 @@
 # calls function once for every element in path (has to be a list). provides $(index) as current index
 # you can use function rauch:macros/break_foreach to break out at any time (call in for_function)
 #########################################
+# copy this comment to functions called by this:
+#######################################################################
+# called from foreach on storage xxxx. $(index) provides current index
+#######################################################################
+
 
 # in case the user provided latter:
 $data merge storage macros {for_path:"$(for_path)",for_function:"$(for_function)"}
