@@ -1,8 +1,5 @@
 scoreboard players set 20 temp 20
 scoreboard players set 1200 const 1200
-scoreboard objectives add t_min dummy
-scoreboard objectives add t_sec dummy
-scoreboard objectives add extra_0 dummy
 
 scoreboard players operation t_min temp = Global wok_time
 scoreboard players operation t_sec temp = t_min temp

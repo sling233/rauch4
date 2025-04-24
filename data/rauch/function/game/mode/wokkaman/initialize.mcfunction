@@ -8,7 +8,7 @@ scoreboard objectives add calc dummy
 scoreboard objectives add t_health dummy
 execute as @a[tag=game,tag=wokkaman] store result score @s t_health run attribute @s minecraft:max_health get
 execute as @a[tag=game,tag=wokkaman] run scoreboard players operation Global calc += @s t_health
-execute as @a[tag=game,tag=wokkaman] run tellraw @s [{"score":{"name":"Global","objective":"calc"}}]
+# execute as @a[tag=game,tag=wokkaman] run tellraw @s [{"score":{"name":"Global","objective":"calc"}}]
 execute store result bossbar minecraft:wokkaman_health max run scoreboard players get Global calc
 bossbar set minecraft:wokkaman_health players @a[tag=game]
 
@@ -17,4 +17,4 @@ scoreboard objectives remove t_health
 bossbar set wokkaman_health visible true
 
 
-tellraw @a[tag=game] [{"text":"[Wokkaman]: try kill me nubs","color":"yellow"}]
+execute as @a[tag=wokkaman] run tellraw @a[tag=game] [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> ","color":"white"},{"text":"try kill me nubs","color":"white"}]
