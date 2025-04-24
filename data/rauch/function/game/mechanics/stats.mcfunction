@@ -44,4 +44,4 @@ attribute @s[scores={kit=7}] minecraft:entity_interaction_range base set 2.5
 attribute @s[scores={kit=9}] minecraft:entity_interaction_range base set 3.6
 
 attribute @s[scores={kit=9}] minecraft:scale base set 1.1
-attribute @s[scores={kit=9}] minecraft:movement_speed base set 0.11
+attribute @s[scores={kit=9}] minecraft:movement_speed base set 0.14
