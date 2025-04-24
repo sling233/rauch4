@@ -2,12 +2,39 @@ summon item_frame ~ ~ ~ {Tags:["adminbook"],Silent:1b,Invulnerable:1b,Invisible:
 $item replace entity @e[type=item_frame,tag=adminbook,limit=1] contents with written_book[item_name={"text":"Settings","color":"yellow"},written_book_content={title:"Settings",author:"",pages:[\
 [\
 "",{"text":"     Gamemodes\n\n","bold":true},{"text":"Mode:\n","color":"gold"},\
-{"text":"[","color":"dark_gray"},{"text":"Deathmatch","color":"$(deathmatch)","hover_event":{"action":"show_text","value":[{"text":"Eliminate the other team. Simple as that.","color":"white"}]},"click_event":{"action":"run_command","command":"/trigger adminsetting set 1"}},{"text":"]\n","color":"dark_gray"},\
-{"text":"[","color":"dark_gray"},{"text":"King of the Hill","color":"$(koth)","hover_event":{"action":"show_text","value":[{"text":"Control the center to lose less points than the enemy team. First team with no points left loses.","color":"white"}]},"click_event":{"action":"run_command","command":"/trigger adminsetting set 2"}},{"text":"]\n","color":"dark_gray"},\
-{"text":"[","color":"dark_gray"},{"text":"Respawn Deathmatch","color":"$(respawn)","hover_event":{"action":"show_text","value":[{"text":"The first team to 20 kills wins.\nTo customise the amount needed, use the command /scoreboard players set Global rd_kills_to_win <amount>, because I can\'t be bothered to add a UI for this.","color":"white"}]},"click_event":{"action":"run_command","command":"/trigger adminsetting set 3"}},{"text":"]\n","color":"dark_gray"},\
-{"text":"[","color":"dark_gray"},{"text":"Testing Mode","color":"$(testing)","hover_event":{"action":"show_text","value":[{"text":"Mode for development and testing. No ability cooldown, instant respawn and game start. To end, run this command: /function utils_rauch:abort_game","color":"white"}]},"click_event":{"action":"run_command","command":"/trigger adminsetting set 4"}},{"text":"]\n","color":"dark_gray"},\
-{"text":"[","color":"dark_gray"},{"text":"Capture The Flag","color":"$(ctf)","hover_event":{"action":"show_text","value":[{"text":"Transport the Flag to the Enemy Base to get points. The team with the most points after 3:00 or that reaches 5 points first wins.\nIn case of a tie, the team that has transported the flag the closest to the enemy base wins. If the losing team holds the flag, they are given a chance to score a point to win (overtime), otherwise they lose.\n\nCertain values can be customized by an admin via these scoreboards: Global ctf_game_duration (in ticks), Global ctf_points_to_win, Global flag_spawn_delay.","color":"white"}]},"click_event":{"action":"run_command","command":"/trigger adminsetting set 5"}},{"text":"]\n","color":"dark_gray"},\
-{"text":"[","color":"dark_gray"},{"text":"Wokkaman","color":"$(wokkaman)","hover_event":{"action":"show_text","value":[{"text":"WIP","color":"white"}]},"click_event":{"action":"run_command","command":"/trigger adminsetting set 6"}},{"text":"]\n","color":"dark_gray"}\
+\
+{"text":"[","color":"dark_gray"},{"text":"Deathmatch","color":"$(deathmatch)","hover_event":{"action":"show_text","value":[\
+{"text":"Eliminate the other team. Simple as that.","color":"white"}]},\
+"click_event":{"action":"run_command","command":"/trigger adminsetting set 1"}},{"text":"]\n","color":"dark_gray"},\
+\
+{"text":"[","color":"dark_gray"},{"text":"King of the Hill","color":"$(koth)","hover_event":{"action":"show_text","value":[\
+{"text":"Control the center to lose less points than the enemy team. First team with no points left loses.\n\nThe amount of \
+points each team has at the beginning of the game can be customized by an admin in the rauch:game_settings_override function.","color":"white"}]},\
+"click_event":{"action":"run_command","command":"/trigger adminsetting set 2"}},{"text":"]\n","color":"dark_gray"},\
+\
+{"text":"[","color":"dark_gray"},{"text":"Respawn Deathmatch","color":"$(respawn)","hover_event":{"action":"show_text","value":[\
+{"text":"The first team to 20 kills wins.\nThe amount of kills needed to win can be customized by an admin in the \
+rauch:game_settings_override function.","color":"white"}]},\
+"click_event":{"action":"run_command","command":"/trigger adminsetting set 3"}},{"text":"]\n","color":"dark_gray"},\
+\
+{"text":"[","color":"dark_gray"},{"text":"Testing Mode","color":"$(testing)","hover_event":{"action":"show_text","value":[\
+{"text":"Mode for development and testing. No ability cooldown, instant respawn and game start. To end, run this command: \
+/function utils_rauch:abort_game","color":"white"}]},\
+"click_event":{"action":"run_command","command":"/trigger adminsetting set 4"}},{"text":"]\n","color":"dark_gray"},\
+\
+{"text":"[","color":"dark_gray"},{"text":"Capture The Flag","color":"$(ctf)","hover_event":{"action":"show_text","value":[\
+{"text":"Transport the Flag to the Enemy Base to get points. The team with the most points after 3:00 or that reaches 5 points first wins.\n\
+In case of a tie, the team that has transported the flag the closest to the enemy base wins. If the losing team holds the flag, they are given \
+a chance to score a point to win (overtime), otherwise they lose.\n\nCertain values can be customized by an admin in the \
+rauch:game_settings_override function. Global ctf_game_duration (in ticks), Global ctf_points_to_win, Global flag_spawn_delay (in ticks).","color":"white"}]},\
+"click_event":{"action":"run_command","command":"/trigger adminsetting set 5"}},{"text":"]\n","color":"dark_gray"},\
+\
+{"text":"[","color":"dark_gray"},{"text":"Wokkaman","color":"$(wokkaman)","hover_event":{"action":"show_text","value":[\
+{"text":"Work In Progress, for fun mode\n As of now, the player who manually selects team red will become the Wokkaman, an intentionally \
+overpowered class. The goal of the blue team is to kill the Wokkaman, the Wokkaman player just tries to get as many kills as they can, \
+they cannot \"win\". The game ends when the Wokkaman is killed. Multiple players can be a Wokkaman, as of now about 3 blue players \
+per wokkaman seems fun.","color":"white"}]},\
+"click_event":{"action":"run_command","command":"/trigger adminsetting set 6"}},{"text":"]\n","color":"dark_gray"}\
 ]]}] 1
 
 
