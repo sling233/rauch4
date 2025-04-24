@@ -26,4 +26,4 @@ scoreboard players reset t_map_weather temp
 # the command messes up, and the player gets nothing
 function rauch:settings/edit_map/give_map_namer_with_name with storage map_data edit_buffer
 
-tellraw @s [{"text":"----------- Editing ","color":"yellow"},{"nbt":"edit_buffer.name","storage":"map_data"},{"text":" -----------","color":"yellow"}]
+tellraw @s [{"text":"Editing ","color":"yellow"},{"nbt":"edit_buffer.name","storage":"map_data"},{"text":"...","color":"yellow"}]

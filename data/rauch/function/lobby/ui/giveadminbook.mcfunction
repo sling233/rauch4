@@ -9,7 +9,7 @@ execute if score Global mode matches 4 run data modify storage rauch temp.ctf se
 execute if score Global mode matches 5 run data modify storage rauch temp.wokkaman set value "dark_green"
 
 # sets up storage rauch temp.pages
-function rauch:lobby/ui/giveadminbook_macro with storage rauch temp
+function rauch:lobby/ui/adminbook/giveadminbook_macro with storage rauch temp
 
 summon item_frame ~ ~ ~ {Tags:["adminbook"],Silent:1b,Invulnerable:1b,Invisible:1b,Fixed:1b}
 item replace entity @e[type=item_frame,tag=adminbook,limit=1] contents with written_book[item_name={"text":"Settings","color":"yellow"},written_book_content={title:"Settings",author:""}]

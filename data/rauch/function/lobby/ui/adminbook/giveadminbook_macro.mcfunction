@@ -37,58 +37,59 @@ $data modify storage rauch temp.pages set value [\
     ],\
     [\
         {"text":"    "},{"text":"Map Selector\n","bold":true}\
-    ],\
-    [\
-        "",{"text":"      Settings","bold":true},\
-        {"text":"\nSpawn prebuilt Map","color":"dark_blue","hover_event":{"action":"show_text","value":[\
-            {"text":"Spawns a prebuilt map. Click for further options"}]},"click_event":\
-            {"action":"run_command","command":"/function rauch:settings/spawn_map/spawn_map"}},\
-        {"text":"\nEveryone to Lobby","color":"dark_blue","hover_event":{"action":"show_text","value":[\
-            {"text":"Moves every online player to the lobby"}]},"click_event":\
-            {"action":"run_command","command":"/function rauch:settings/movetolobby/movetolobby"}},\
-        {"text":"\nChange Lobby Pos","color":"dark_blue","hover_event":{"action":"show_text","value":[\
-            {"text":"Click to change the Position of the Lobby to where you are standing right now"}]},"click_event":\
-            {"action":"run_command","command":"/function rauch:settings/changelobbypos"}},\
-        {"text":"\nSpawn prebuilt Lobby","color":"dark_blue","hover_event":{"action":"show_text","value":[\
-            {"text":"Click if you want to spawn the prebuilt lobby"}]},"click_event":\
-            {"action":"run_command","command":"/function rauch:settings/spawn_lobby/spawn_lobby"}},\
-        {"text":"\n\nCheck for Updates","color":"black","bold":true},\
-        {"text":"\n[Pack] ","color":"dark_blue","hover_event":{"action":"show_text","value":[\
-            {"text":"Click if you have a new version of the datapack in the world folder"}]},"click_event":\
-            {"action":"run_command","command":"/function rauch:settings/versions/version_check"}},\
-        {"text":"[Maps] ","color":"dark_blue","hover_event":{"action":"show_text","value":[\
-            {"text":"Click to check for new map versions"}]},"click_event":\
-            {"action":"run_command","command":"/function rauch:settings/versions/maps/map_check"}},\
-        {"text":"[Lobby]","color":"dark_blue","hover_event":{"action":"show_text","value":[\
-            {"text":"Click to check for new lobby version"}]},"click_event":\
-            {"action":"run_command","command":"/function rauch:settings/versions/lobby_check"}},\
-        {"text":"\n\nPrint Guide","color":"dark_blue","hover_event":{"action":"show_text","value":[\
-            {"text":"Shows the Setup Guide"}]},"click_event":\
-            {"action":"run_command","command":"/function rauch:tutorial/tutorial"}},\
-        {"text":"\nRemove objectives","color":"dark_blue","click_event":\
-        {"action":"run_command","command":"/function rauch:settings/removeobj"},\
-        "hover_event":{"action":"show_text","value":"This will remove every scoreboard objective, bossbar and team relevant \
-            to the data pack. The gamemode and your selected kit will be reset. If the pack updates and something looks weird, \
-            a bossbar for example, this can fix it."}}\
     ]\
 ]
 
+# mapselector
 execute store result score t_map_count temp run data get storage map_data maps
-
+execute if data storage map_data active.index store result score t_active_map_idx temp run data get storage map_data active.index
 # no maps
 execute if score t_map_count temp matches 0 run data modify storage rauch temp.pages[1] append value [\
     {"text":"\nNo Maps","color":"dark_gray"}\
 ]
-# some maps
-execute if score t_map_count temp matches 1..8 run function rauch:macros/foreach {for_path:"map_data maps",for_function:"rauch:lobby/ui/mapselector_macro"}
-# not max number of maps
-execute if score t_map_count temp matches ..7 run data modify storage rauch temp.pages[1] append value [\
-  {"text":"\n\n[","color":"dark_gray"},{"text":"Add Map","color":"dark_green",\
-  "click_event":{"action":"run_command","command":"/function rauch:settings/edit_map/add_map"}},{"text":"] ","color":"dark_gray"}\
-]
-# max number of maps
-execute if score t_map_count temp matches 8 run data modify storage rauch temp.pages[1] append value [\
-  {"text":"\n\nMaximum number of maps reached","color":"gray"}\
-]
+# else generate map entries
+execute if score t_map_count temp matches 1.. run function rauch:macros/foreach {for_path:"map_data maps",for_function:"rauch:lobby/ui/adminbook/mapselector_macro"}
 
 scoreboard players reset t_map_count temp
+scoreboard players reset t_active_map_idx temp
+
+# finish mapselector
+execute store result score t_page_count temp run data get storage rauch temp.pages
+scoreboard players remove t_page_count temp 1
+execute store result storage rauch temp.last_page_idx int 1 run scoreboard players get t_page_count temp
+function rauch:lobby/ui/adminbook/mapselector_finish with storage rauch temp
+
+# append settings page
+data modify storage rauch temp.pages append value [\
+  "",{"text":"      Settings","bold":true},\
+  {"text":"\nSpawn prebuilt Map","color":"dark_blue","hover_event":{"action":"show_text","value":[\
+    {"text":"Spawns a prebuilt map. Click for further options"}]},"click_event":\
+    {"action":"run_command","command":"/function rauch:settings/spawn_map/spawn_map"}},\
+  {"text":"\nEveryone to Lobby","color":"dark_blue","hover_event":{"action":"show_text","value":[\
+    {"text":"Moves every online player to the lobby"}]},"click_event":\
+    {"action":"run_command","command":"/function rauch:settings/movetolobby/movetolobby"}},\
+  {"text":"\nChange Lobby Pos","color":"dark_blue","hover_event":{"action":"show_text","value":[\
+    {"text":"Click to change the Position of the Lobby to where you are standing right now"}]},"click_event":\
+    {"action":"run_command","command":"/function rauch:settings/changelobbypos"}},\
+  {"text":"\nSpawn prebuilt Lobby","color":"dark_blue","hover_event":{"action":"show_text","value":[\
+    {"text":"Click if you want to spawn the prebuilt lobby"}]},"click_event":\
+    {"action":"run_command","command":"/function rauch:settings/spawn_lobby/spawn_lobby"}},\
+  {"text":"\n\nCheck for Updates","color":"black","bold":true},\
+  {"text":"\n[Pack] ","color":"dark_blue","hover_event":{"action":"show_text","value":[\
+    {"text":"Click if you have a new version of the datapack in the world folder"}]},"click_event":\
+    {"action":"run_command","command":"/function rauch:settings/versions/version_check"}},\
+  {"text":"[Maps] ","color":"dark_blue","hover_event":{"action":"show_text","value":[\
+    {"text":"Click to check for new map versions"}]},"click_event":\
+    {"action":"run_command","command":"/function rauch:settings/versions/maps/map_check"}},\
+  {"text":"[Lobby]","color":"dark_blue","hover_event":{"action":"show_text","value":[\
+    {"text":"Click to check for new lobby version"}]},"click_event":\
+    {"action":"run_command","command":"/function rauch:settings/versions/lobby_check"}},\
+  {"text":"\n\nPrint Guide","color":"dark_blue","hover_event":{"action":"show_text","value":[\
+    {"text":"Shows the Setup Guide"}]},"click_event":\
+    {"action":"run_command","command":"/function rauch:tutorial/tutorial"}},\
+  {"text":"\nRemove objectives","color":"dark_blue","click_event":\
+  {"action":"run_command","command":"/function rauch:settings/removeobj"},\
+  "hover_event":{"action":"show_text","value":"This will remove every scoreboard objective, bossbar and team relevant \
+  to the data pack. The gamemode and your selected kit will be reset. If the pack updates and something looks weird, \
+  a bossbar for example, this can fix it."}}\
+]

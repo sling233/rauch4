@@ -7,4 +7,4 @@ scoreboard players reset Global mapParticle
 tag @s add lobby
 weather clear
 time set day
-tellraw @s {"text":"Cancelled","color":"yellow"}
+tellraw @s {"text":"...cancelled","color":"yellow"}
