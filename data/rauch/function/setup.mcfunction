@@ -158,7 +158,7 @@ execute as @a[tag=admin] unless data storage lobby_data position run tellraw @s 
 {"text":"here.","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_lobby/spawn_lobby"}}\
 ]
 
-execute as @a[tag=!lobby,tag=!game,tag=!edit_map,tag=!spectator] run tag @s add lobby
+#execute as @a[tag=!lobby,tag=!game,tag=!edit_map,tag=!spectator] run tag @s add lobby
 
 # check for updates
 function rauch:settings/versions/version_check
