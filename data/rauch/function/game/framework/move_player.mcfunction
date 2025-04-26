@@ -68,7 +68,11 @@ effect clear @s
 team leave @s
 #clear @s
 # this will remove the firstjoin advancement, which will automatically moves the player to the lobby the next tick
-advancement revoke @s only rauch:firstjoin
+tag @s add lobby
+gamemode adventure @s
+function rauch:lobby/tp_to_lobby
+
+#advancement revoke @s only rauch:firstjoin
 
 tag @s add clear
 schedule function rauch:game/framework/clear 10t
