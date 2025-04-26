@@ -1,5 +1,5 @@
 # check if lobby is prebuilt, else return
-execute unless data storage lobby_data version run return 0
+execute unless data storage lobby_data version run return run tellraw @s {"text":"Lobby is not the prebuilt lobby","color":"red"}
 execute store result score t_lobby_id temp run data get storage lobby_data version
 
 # REMINDER: remember to change the version in spawn_lobby/spawn as well

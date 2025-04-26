@@ -20,12 +20,12 @@ scoreboard objectives remove 10
 scoreboard objectives remove 12
 scoreboard objectives remove 20
 
-# every team that was removed
-#team remove red_display
-
 # every scoreboard that changed type
 #scoreboard objectives remove changed_type
 #scoreboard objectives add changed_type new_type
+
+# every team that was removed
+#team remove red_display
 
 # every bossbar that was removed
 #bossbar remove minecraft:removed_bossbar

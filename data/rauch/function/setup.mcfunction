@@ -149,14 +149,15 @@ execute as @a[tag=admin] unless score %reload_message_disabled global matches 1 
 
 execute as @a[tag=!lobby,tag=!game,tag=!edit_map,tag=!spectator] run tag @s add lobby
 
+# check for updates
 function rauch:settings/versions/version_check
 function rauch:settings/versions/maps/map_check
 function rauch:settings/versions/lobby_check
 
 # set scores
-execute unless score Global click matches 0.. run scoreboard players set Global click 0
 execute unless score Global mode matches 0..5 run scoreboard players set Global mode 0
 
+# setdisplay
 scoreboard objectives setdisplay below_name health
 scoreboard objectives setdisplay list health_display
 
