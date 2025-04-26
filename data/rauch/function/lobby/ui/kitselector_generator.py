@@ -149,8 +149,8 @@ with open(r"..\..\game\framework\default_conditions.mcfunction","r") as f:
 raucher.r_cool += " per cloud"
 
 # generate kit text
-text = ["$item replace entity @s hotbar.8 with written_book[written_book_content={title:\"Kit Selector/Settings\",author:\"The Pog Man\",pages:[[\\",
-        "{\"text\":\"           \"},{\"text\":\"Kits\\n\\n\",\"bold\":true},{\"text\":\"[\",\"color\":\"dark_gray\"},\\"]
+text = ['$item replace entity @s hotbar.8 with written_book[written_book_content={title:"Kit Selector/Settings",author:"The Pog Man",pages:[[\\',
+        '{"text":"           "},{"text":"Kits\\n\\n","bold":true},{"text":"[","color":"dark_gray"},\\']
 # add kit descriptions (not wokkaman, too much difference. wokkaman gets done seperately later)
 for i, kit in enumerate(kits[:-1]):
     if type(kit.typ) is list:
@@ -183,7 +183,7 @@ text.append('{"text":"' + wokkaman.sr_ability + '\\n\\n"},{"text":"Q (' + str(wo
 text.append('{"text":"' + wokkaman.q_ability + '\\n\\n"},{"text":"sQ (' + str(wokkaman.sq_cool) + '): ","color":"' + wokkaman.colors[9] + '"},\\')
 text.append('{"text":"' + wokkaman.sq_ability + '\\n\\n"},{"text":"F (' + str(wokkaman.f_cool) + '): ","color":"' + wokkaman.colors[7] + '"},\\')
 text.append('{"text":"' + wokkaman.f_ability + '\\n\\n"},{"text":"sF (' + str(wokkaman.sf_cool) + '): ","color":"' + wokkaman.colors[10] + '"},\\')
-text.append('{"text":"' + wokkaman.sf_ability + "\"}]}},{\"text\":\"]\",\"color\":\"dark_gray\"}],[\\")
+text.append('{"text":"' + wokkaman.sf_ability + '"}]}},{"text":"]","color":"dark_gray"}],[\\')
 
 
 # add settings (new page)
