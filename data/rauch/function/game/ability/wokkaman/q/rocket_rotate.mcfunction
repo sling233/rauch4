@@ -1,4 +1,4 @@
-# as rocket, wokkaman has tag temp, t_pnum global has pnum
+# as rocket, wokkaman has tag temp, t_pnum temp has pnum
 scoreboard players set 16 const 16
 scoreboard players set -1 const -1
 scoreboard players operation t_angle_with_offset temp = t_angle temp

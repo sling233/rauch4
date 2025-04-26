@@ -1,4 +1,4 @@
-# as rocket, wokkaman has tag temp, t_pnum global has pnum
+# as rocket, wokkaman has tag temp, t_pnum temp has pnum
 #$execute at @a[tag=temp,limit=1] run tp @s ~ ~1.6 ~ $(angle) 0
 #execute at @s run tp @s ^ ^ ^1
 

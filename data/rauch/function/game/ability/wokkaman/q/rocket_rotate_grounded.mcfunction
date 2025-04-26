@@ -1,4 +1,4 @@
-# as rocket, wokkaman has tag temp, t_pnum global has pnum
+# as rocket, wokkaman has tag temp, t_pnum temp has pnum
 $execute at @s run tp @s ~ ~ ~ $(angle) 0
 
 #calculate height

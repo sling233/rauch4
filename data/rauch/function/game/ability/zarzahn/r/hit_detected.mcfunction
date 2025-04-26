@@ -1,4 +1,4 @@
-# executed as player hit (marker has tag temp) t_pnum global has zarzahns (shooters) pnum
+# executed as player hit (marker has tag temp) t_pnum temp has zarzahns (shooters) pnum
 # give zarzahn_hooking score to zarzahn
 execute at @s as @a if score @s pnum = t_pnum global run scoreboard players operation @s zarzahn_hooking = @p pnum
 

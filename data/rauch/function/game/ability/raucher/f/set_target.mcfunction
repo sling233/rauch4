@@ -2,4 +2,4 @@
 data modify entity @s data.target set from entity @a[tag=temp,limit=1] UUID
 
 tag @s remove setup
-scoreboard players set t_success global 1
+scoreboard players set t_success temp 1

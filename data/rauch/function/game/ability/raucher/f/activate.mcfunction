@@ -1,6 +1,6 @@
-scoreboard players operation t_pnum global = @s pnum
-execute at @s as @e[type=spider,tag=raucher_spider] if score @s pnum = t_pnum global run tag @s add t_activate
-scoreboard players reset t_pnum global
+scoreboard players operation t_pnum temp = @s pnum
+execute at @s as @e[type=spider,tag=raucher_spider] if score @s pnum = t_pnum temp run tag @s add t_activate
+scoreboard players reset t_pnum temp
 
 #execute at @s run tp @e[type=spider,tag=t_teleport] ~ ~1 ~
 execute as @e[type=spider,tag=t_activate] run data modify entity @s last_hurt_by_mob set from entity @s data.target
