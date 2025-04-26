@@ -4,8 +4,8 @@ scoreboard players set 10 const 10
 execute store result score t_mod10 temp run time query gametime
 scoreboard players operation t_mod10 temp %= 10 const
 # rauchers cant heal themselves
-execute if score t_mod10 temp matches 0 at @s[tag=red] as @a[team=Red,tag=game,tag=!dead,distance=..3.1] unless score @s kit matches 3 run scoreboard players add @s heal 1
-execute if score t_mod10 temp matches 0 at @s[tag=blu] as @a[team=Blue,tag=game,tag=!dead,distance=..3.1] unless score @s kit matches 3 run scoreboard players add @s heal 1
+#execute if score t_mod10 temp matches 0 at @s[tag=red] as @a[team=Red,tag=game,tag=!dead,distance=..3.1] unless score @s kit matches 3 run scoreboard players add @s heal 1
+#execute if score t_mod10 temp matches 0 at @s[tag=blu] as @a[team=Blue,tag=game,tag=!dead,distance=..3.1] unless score @s kit matches 3 run scoreboard players add @s heal 1
 # rauchers can heal themselves
 execute if score t_mod10 temp matches 0 at @s[tag=red] as @a[team=Red,tag=game,tag=!dead,distance=..3.1] run scoreboard players add @s heal 1
 execute if score t_mod10 temp matches 0 at @s[tag=blu] as @a[team=Blue,tag=game,tag=!dead,distance=..3.1] run scoreboard players add @s heal 1
