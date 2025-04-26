@@ -1,18 +1,6 @@
 attribute @s minecraft:attack_speed base set 100000
 #attribute @s minecraft:armor_toughness base set 20
 
-#attribute @s[scores={kit=1}] minecraft:armor modifier add armorfix -13 add_value
-#attribute @s[scores={kit=2}] minecraft:armor modifier add armorfix -4 add_value
-#attribute @s[scores={kit=3}] minecraft:armor modifier add armorfix -9 add_value
-#attribute @s[scores={kit=4}] minecraft:armor modifier add armorfix -6 add_value
-#attribute @s[scores={kit=5}] minecraft:armor modifier add armorfix -17 add_value
-#attribute @s[scores={kit=6}] minecraft:armor modifier add armorfix -6 add_value
-#attribute @s[scores={kit=7}] minecraft:armor modifier add armorfix -17 add_value
-#attribute @s[scores={kit=8}] minecraft:armor modifier add armorfix 0 add_value
-#attribute @s[scores={kit=9}] minecraft:armor modifier add armorfix -6 add_value
-
-#attribute @s[scores={kit=5}] minecraft:knockback_resistance modifier add kbfix -0.30000000447034836 add_value
-
 attribute @s[scores={kit=1}] minecraft:max_health base set 32
 attribute @s[scores={kit=2}] minecraft:max_health base set 32
 attribute @s[scores={kit=3}] minecraft:max_health base set 24
