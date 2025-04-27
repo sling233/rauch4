@@ -1,4 +1,4 @@
-execute unless entity @a[tag=game] run function rauch:game/framework/end_game
+execute unless entity @a[tag=game] run function rauch:game/framework/no_players
 execute if score Global gamestart matches 0.. run function rauch:game/framework/gameinit/countdown
 execute if score Global gameend matches 0.. run function rauch:game/framework/end_delay
 

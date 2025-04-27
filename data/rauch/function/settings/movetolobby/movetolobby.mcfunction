@@ -1,6 +1,5 @@
-execute as @a[tag=game] run function rauch:game/framework/move_player
-tag @a add lobby
-clear @a
+function rauch:game/framework/end_game
+execute as @a[tag=!lobby] run function rauch:lobby/join_lobby
 execute as @a run function rauch:lobby/tp_to_lobby
 
 execute at @s run playsound minecraft:block.tripwire.click_off master @s ~ ~ ~ 1
