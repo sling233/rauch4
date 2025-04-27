@@ -1,7 +1,7 @@
 #bolt
 item replace entity @s[scores={kit=1}] hotbar.0 with minecraft:carrot_on_a_stick[\
     item_name={"text":"Bolt's Trident"},\
-    item_model="rauch:bolt_trident",\
+    item_model="minecraft:trident",\
     rarity=rare,\
     unbreakable={},\
     tooltip_display={hidden_components:["unbreakable"]}\
