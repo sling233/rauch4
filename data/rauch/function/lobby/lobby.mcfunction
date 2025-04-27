@@ -1,28 +1,23 @@
-execute as @s[tag=lobby,tag=!queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:7b}]}] run function rauch:lobby/ui/giveready
-execute as @s[tag=lobby,tag=!queue] as @s[nbt=!{Inventory:[{id:"minecraft:written_book",Slot:8b}]}] run function rauch:lobby/ui/givekitselector
-execute as @s[tag=lobby,tag=!queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:6b}]}] run function rauch:lobby/ui/givespectate
-execute as @s[tag=lobby,tag=!queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:5b}]}] run function rauch:lobby/ui/givetospawn
+#team join Lobby @s[team=!Lobby,tag=!queue,tag=lobby]
 
-execute as @s[tag=lobby,tag=admin] as @s[nbt=!{Inventory:[{id:"minecraft:written_book",Slot:0b}]}] run function rauch:lobby/ui/giveadminbook
-execute as @s[tag=lobby,tag=admin] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:1b}]}] run function rauch:lobby/ui/givestart1
-#execute as @s[tag=lobby,tag=admin] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:2b}]}] run function rauch:lobby/ui/givestart2
+# give items
+execute as @s[tag=!queue] run function rauch:lobby/ui/item_lobby_check
+execute as @s[tag=queue] run function rauch:lobby/ui/item_queue_check
+execute as @s[tag=admin] run function rauch:lobby/ui/item_admin_check
 
-execute as @s[tag=lobby,tag=queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:8b}]}] run function rauch:lobby/ui/givecancel
-execute as @s[tag=lobby,tag=queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:7b}]}] run function rauch:lobby/ui/giveselectblue
-execute as @s[tag=lobby,tag=queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:6b}]}] run function rauch:lobby/ui/giveselectred
-execute as @s[tag=lobby,tag=queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:5b}]}] run function rauch:lobby/ui/giveselectrandom
-execute as @s[tag=lobby,tag=queue] as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:4b}]}] run function rauch:lobby/ui/givetospawn2
+# player did some stuff
+execute as @s[scores={click=1..}] run function rauch:lobby/lobby_click
+execute as @s[scores={kitselect=1..}] run function rauch:lobby/kitselect
+execute as @s[scores={adminsetting=1..}] run function rauch:lobby/settings
+scoreboard players enable @s[tag=admin] adminsetting
+scoreboard players enable @s kitselect
 
-
-execute as @s[tag=lobby,scores={click=1..}] run function rauch:lobby/lobbymanager
-execute as @s[tag=lobby,scores={kitselect=1..}] run function rauch:lobby/kitselect
-execute as @s[tag=lobby,scores={adminsetting=1..}] run function rauch:lobby/settings
-
-team join Lobby @s[team=!Lobby,tag=!queue,tag=lobby]
+# no damage, no hunger
 effect give @s minecraft:saturation 1 1 true
 effect give @s minecraft:resistance 1 4 true
 effect give @s[scores={health=..20}] minecraft:instant_health 1 10 true
 
+# when not in queue display selected kit
 title @s[scores={kit=1},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Bolt","color":"yellow"}]
 title @s[scores={kit=2},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Zarzahn","color":"yellow"}]
 title @s[scores={kit=3},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Raucher","color":"yellow"}]
@@ -33,10 +28,7 @@ title @s[scores={kit=7},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text"
 title @s[scores={kit=8},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Pikka","color":"yellow"}]
 title @s[scores={kit=9},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Wokkaman... how?","color":"yellow"}]
 
+# when in queue display other players in queue
+title @s[tag=queue] actionbar [{"text":"Queue: ","color":"yellow"},{"selector":"@a[tag=queue]"}]
 #title @s[tag=queue] actionbar [{"text":"Waiting for players... ","color":"yellow"}]
 #execute unless entity @a[tag=queue,team=Red] run title @s[tag=queue] actionbar [{"text":"Queue: ","color":"yellow"},{"selector":"@a[tag=queue,team=Red]"},{"text":", ","color":"gray"},{"selector":"@a[tag=queue,team=Blue]"},{"text":", ","color":"gray"},{"selector":"@a[tag=queue,team=Random]"}]
-title @s[tag=queue] actionbar [{"text":"Queue: ","color":"yellow"},{"selector":"@a[tag=queue]"}]
-
-scoreboard players enable @s[tag=admin] adminsetting
-scoreboard players enable @s kitselect
-scoreboard players reset @s click

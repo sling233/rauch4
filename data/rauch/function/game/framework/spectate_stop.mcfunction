@@ -1,8 +1,5 @@
-gamemode adventure
-clear @s
-tag @s add lobby
 tag @s remove spectator
-
+function rauch:lobby/join_lobby
 function rauch:lobby/tp_to_lobby
 
 tellraw @s {"text":"Stopped spectating the game","color":"yellow"}

@@ -67,9 +67,9 @@ tag @s remove can_be_launched
 effect clear @s
 team leave @s
 #clear @s
-# this will remove the firstjoin advancement, which will automatically moves the player to the lobby the next tick
-tag @s add lobby
-gamemode adventure @s
+
+# join_lobby also clears items. clearing in this tick led to minecraft not liking me in the past, let's see what happens this time
+function rauch:lobby/join_lobby
 function rauch:lobby/tp_to_lobby
 
 #advancement revoke @s only rauch:firstjoin
