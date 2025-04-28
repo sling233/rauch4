@@ -32,9 +32,9 @@ bolt.f_ability = "+40% Speed for 5 seconds."
 bolt.colors = ["#4AF6F0","#247774","#30A19E","#3DCCC7","#4AF6F0","#4AF6F0","#4AF6F0","#4AF6F0"]
 
 zarzahn = Kit("Zarzahn",["Fighter","Support"])
-zarzahn.r_ability = "You shoot out a hook that pulls enemies towards you. Once they arrive, they are stunned for 0.75 seconds, however some classes can escape by dashing out as they are pulled."
+zarzahn.r_ability = "You shoot out a hook that pulls enemies towards you. Once they arrive, they are stunned for 0.75 seconds."
 zarzahn.q_ability = "Shoots a rocket that knocks players away on explosion."
-zarzahn.f_ability = "When sneaking, you create a Warp Point. The next 10 seconds you have the ability to teleport to that point by pressing F again (without sneaking)."
+zarzahn.f_ability = "Use Shift-F to create a Warp Point. The next 18 seconds you have the ability to teleport to that point by pressing F again (without sneaking)."
 zarzahn.colors = ["#00EE00","#3D773D","#3D993D","#29CC29","#00EE00","#00EE00","#00EE00","#00EE00"]
 
 raucher = Kit("Raucher","Support")
@@ -44,9 +44,9 @@ raucher.q_ability = "Buffs damage for a teammate by 50% for 5 seconds (look at t
 raucher.f_ability = "Spawns 8 spiders, that attack enemies in a 30 block radius. The Spiders select targets evenly. They die in one hit or after 9 seconds."
 raucher.colors = ["#FFA54C","#C7290A","#DD4D1D","#F27130","#FFA54C","#FFA54C","#FFA54C","#FFA54C"]
 
-hacker = Kit("Hacker","Support")
-hacker.r_ability = "Shoots a projectile that increases received damage by 20% for enemies for 12 seconds."
-hacker.q_ability = "Throws a Hacking-Bomb. After landing, it hacks enemies in range for 10 seconds. Hacked players cannot use their abilities."
+hacker = Kit("Hacker","Support (rework planned)")
+hacker.r_ability = "Shoots a projectile that hacks enemies for 10 seconds. Hacked players cannot use their abilities."
+hacker.q_ability = "Throws a projectile that increases received damage by 20% for 12 seconds for all enemies in a radius after landing."
 hacker.f_ability = "Reduces all ability cooldowns for teammates in range (cone-shape in front of you) by 15 seconds. Instead of having a cooldown, this ability is charge-based. You get a charge if a player debuffed (R) or hacked (Q) by you dies. You spawn with 1 charge at the start of the game, but dying doesn\\'t affect your charges."
 hacker.f_cool = "-"
 hacker.colors = ["#FF0000","#FFBF00","#7FFF00","#00FF3F","#00FFFF","#003FFF","#7F00FF","#FF00BF"]
@@ -64,7 +64,7 @@ teleporter.q_ability = "You become invisible for 6 seconds. Sprinting particles 
 teleporter.f_ability = "You instantly teleport to where you are looking, with a max range of 14 blocks."
 teleporter.colors = ["#FF88FF","#804480","#AA5BAA","#D471D4","#FF88FF","#FF88FF","#FF88FF","#FF88FF"]
 
-tank = Kit("Tank",["Tank","Support"])
+tank = Kit("Tank",["Tank","Support","old kit, will get a rework someday"])
 tank.r_ability = "Damage taken passively accumulates, up to 10 hearts. When it\\'s over 4 hearts, you can use R on a teammate to heal them by the amount of damage taken."
 tank.r_cool = "-"
 tank.q_ability = "Buffs resistance and knockback resistance for a teammate by 40% for 6 seconds (look at them and press Q). Additionally, team members in a 4.5 block radius around the buffed player recieve 20% less damage."
