@@ -1,9 +1,12 @@
 # hacker has tag t_hacker
-scoreboard players set @s hack 160
-scoreboard players set @a[tag=t_hacker] hack_tag_timer 160
-function rauch:game/ability/hacker/q/hack_init
+execute unless score @s hacker_damage_timer matches 1.. run scoreboard players remove @s armor_target 5
+function rauch:game/mechanics/armor
+scoreboard players set @s hacker_damage_timer 240
+scoreboard players set @a[tag=t_hacker] hacker_damage_timer_control 240
+effect give @s minecraft:conduit_power 12 0 false
+execute at @s run playsound minecraft:entity.allay.death master @s
 
-# check if player was already tagged (if yes found is set to 1)
+
 tag @s add temp
 scoreboard objectives add found dummy
 execute as @a[tag=t_hacker] run function rauch:macros/data_get {storage:"hacker_q_tag"}

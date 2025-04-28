@@ -18,8 +18,8 @@ execute as @s[scores={kit=9}] run function rauch:game/ability/wokkaman/wokkaman
 execute as @s[scores={push_levitation_timer=-1}] run effect clear @s minecraft:levitation
 execute as @s[scores={wok_push_timer=..-1}] run function rauch:game/ability/wokkaman/r/push_particle
 execute as @s[tag=raucher_control,tag=!raucher_debuff] run function rauch:game/ability/raucher/r/slow/leave
-execute as @s[scores={hack=0..}] run function rauch:game/ability/hacker/q/hacked_player
-execute as @s[scores={hacker_damage_timer=0..}] run function rauch:game/ability/hacker/r/debuff
+execute as @s[scores={hack=0..}] run function rauch:game/ability/hacker/r/hacked_player
+execute as @s[scores={hacker_damage_timer=0..}] run function rauch:game/ability/hacker/q/debuff
 execute as @s[scores={teleweak=0..}] run function rauch:game/ability/teleporter/r/debuff
 execute as @s[scores={hacker_ability=0..}] run function rauch:game/ability/hacker/f/ability_boost
 execute as @s[scores={raucherdmg=0..}] run function rauch:game/ability/raucher/q/buff

@@ -47,7 +47,7 @@ function rauch:game/ability/hacker/r/tagged_player_died
 function rauch:game/ability/hacker/q/tagged_player_died
 scoreboard objectives remove got_reward
 
-function rauch:game/ability/hacker/q/hack_end
+function rauch:game/ability/hacker/r/hack_end
 
 tag @s remove raucher_control
 tag @s remove wok_stomp_search
