@@ -1,3 +1,4 @@
+execute unless score @s zarzahn_f matches 1.. run return run tellraw @s {"color":"red","text":"Place a warp point with shift-f first."}
 tag @s add temp
 scoreboard players reset @s zarzahn_f
 function rauch:game/ui/bossbar/zarzahn/invisible

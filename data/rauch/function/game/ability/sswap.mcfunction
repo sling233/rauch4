@@ -10,7 +10,7 @@ execute if score Global gamestart matches 0.. run return 0
 
 
 execute as @s[scores={cool3=0,kit=1},predicate=rauch:skill] run function rauch:game/ability/bolt/f
-execute as @s[scores={kit=2,zarzahn_f=1..},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/zarzahn/f
+execute as @s[scores={kit=2},predicate=!rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/zarzahn/f
 execute as @s[scores={cool3=0,kit=2},predicate=rauch:sneak,predicate=rauch:skill] run function rauch:game/ability/zarzahn/sf
 execute as @s[scores={kit=3,cool3=0},predicate=rauch:skill] run function rauch:game/ability/raucher/f
 execute as @s[scores={hacker_charges=1..,kit=4},predicate=rauch:skill] run function rauch:game/ability/hacker/f
