@@ -55,7 +55,7 @@
 # execute as @a[scores={kit=5}] run scoreboard players set @s wark_charge 0
 
 # teleporter
-# execute as @a[scores={kit=6}] run scoreboard players set @s cool1_target 280
+# execute as @a[scores={kit=6}] run scoreboard players set @s cool1_target 340
 # execute as @a[scores={kit=6}] run scoreboard players set @s cool2_target 440
 # execute as @a[scores={kit=6}] run scoreboard players set @s cool3_target 340
 # execute as @a[scores={kit=6}] run scoreboard players set @s cool1_respawn 0
