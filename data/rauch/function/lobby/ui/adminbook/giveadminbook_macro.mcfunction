@@ -64,7 +64,7 @@ data modify storage rauch temp.pages append value [\
   "",{"text":"      Settings","bold":true},\
   {"text":"\nSpawn prebuilt Map","color":"dark_blue","hover_event":{"action":"show_text","value":[\
     {"text":"Spawns a prebuilt map. Click for further options"}]},"click_event":\
-    {"action":"run_command","command":"/function rauch:settings/spawn_map/spawn_map"}},\
+    {"action":"run_command","command":"/function rauch:settings/spawn_map/prompt"}},\
   {"text":"\nEveryone to Lobby","color":"dark_blue","hover_event":{"action":"show_text","value":[\
     {"text":"Moves every online player to the lobby"}]},"click_event":\
     {"action":"run_command","command":"/function rauch:settings/movetolobby/movetolobby"}},\

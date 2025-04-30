@@ -58,13 +58,7 @@ execute as @s[tag=add_map] run data modify storage map_data maps append from sto
 execute as @s[tag=!add_map] run function rauch:settings/edit_map/finish_macro with storage map_data edit_buffer
 
 execute at @s run playsound minecraft:block.tripwire.click_off master @s ~ ~ ~ 1
-tag @s remove add_map
-tag @s remove edit_map
-clear @s
-scoreboard players reset @s click
-scoreboard players reset Global mapParticle
-weather clear
-time set day
-data remove storage map_data active
+
+function rauch:settings/edit_map/return_to_lobby
+
 clear @a[tag=lobby] minecraft:written_book[item_name={"color":"yellow","text":"Settings"}]
-tag @s add lobby

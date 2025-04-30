@@ -164,7 +164,18 @@ execute as @a[tag=admin] unless data storage lobby_data position run tellraw @s 
 
 #execute as @a[tag=!lobby,tag=!game,tag=!edit_map,tag=!spectator] run tag @s add lobby
 
-# check for updates
+# map values
+data modify storage map_data versions set value [\
+  {id:"splat",version:6},\
+  {id:"ancient",version:5},\
+  {id:"greck",version:4},\
+  {id:"mork",version:4},\
+  {id:"klotz",version:4},\
+  {id:"arena",version:3},\
+  {id:"cherry",version:1},\
+  {id:"wcity",version:3}\
+]
+
 function rauch:settings/versions/version_check
 function rauch:settings/versions/maps/map_check
 function rauch:settings/versions/lobby_check

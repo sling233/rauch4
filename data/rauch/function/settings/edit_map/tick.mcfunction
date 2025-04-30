@@ -3,6 +3,7 @@ execute as @s[nbt=!{Inventory:[{id:"minecraft:writable_book",Slot:1b}]}] unless 
 execute as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:2b}]}] run function rauch:settings/edit_map/give/give_red_spawn
 execute as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:3b}]}] run function rauch:settings/edit_map/give/give_blue_spawn
 execute as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:4b}]}] run function rauch:settings/edit_map/give/give_center
+execute as @s[tag=editing_official_map,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:6b}]}] run function rauch:settings/edit_map/give/give_repair
 execute as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:7b}]}] run function rauch:settings/edit_map/give/give_cancel
 execute as @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:8b}]}] run function rauch:settings/edit_map/give/give_finish
 
@@ -13,6 +14,7 @@ execute as @s[scores={map_setting=1..}] run function rauch:settings/edit_map/set
 execute as @s[scores={click=1..}] as @s[nbt={SelectedItemSlot:2}] run function rauch:settings/edit_map/set/set_red
 execute as @s[scores={click=1..}] as @s[nbt={SelectedItemSlot:3}] run function rauch:settings/edit_map/set/set_blue
 execute as @s[scores={click=1..}] as @s[nbt={SelectedItemSlot:4}] run function rauch:settings/edit_map/set/set_center
+execute as @s[scores={click=1..}] as @s[nbt={SelectedItemSlot:6}] run function rauch:settings/edit_map/repair_map
 execute as @s[scores={click=1..}] as @s[nbt={SelectedItemSlot:7}] run function rauch:settings/edit_map/cancel
 execute as @s[scores={click=1..}] as @s[nbt={SelectedItemSlot:8}] run function rauch:settings/edit_map/finish_check
 

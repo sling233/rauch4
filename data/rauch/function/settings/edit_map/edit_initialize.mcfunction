@@ -5,6 +5,8 @@ execute at @s run playsound minecraft:block.tripwire.click_off master @s ~ ~ ~ 1
 
 $data modify storage map_data edit_buffer set from storage map_data maps[$(map_id)]
 $data modify storage map_data edit_buffer merge value {"edit_id":$(map_id)}
+execute if data storage map_data edit_buffer.version run tag @s add editing_official_map
+
 
 execute store result score Global mapParticle run data get storage map_data edit_buffer.particle
 execute store result score Global enable_launchpads run data get storage map_data edit_buffer.has_launchpads
