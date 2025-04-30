@@ -37,6 +37,8 @@ scoreboard players set @s armor_target 80
 execute as @s[tag=wok_stepped_on] run function rauch:game/ability/wokkaman/sq/kill_my_boat
 execute as @s[tag=zarzahn_hook] run function rauch:game/ability/zarzahn/r/cancel_hook
 execute as @s[tag=wok_hook] run function rauch:game/ability/wokkaman/r/cancel_hook
+# remove from wokkaman sr tag lists
+function rauch:game/ability/wokkaman/sr/remove_tag
 
 function rauch:game/mechanics/unstun
 
