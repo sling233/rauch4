@@ -236,6 +236,7 @@ gamerule showDeathMessages false
 gamerule announceAdvancements false
 gamerule doDaylightCycle false
 gamerule doFireTick false
+gamerule fireDamage false
 gamerule doWeatherCycle false
 gamerule randomTickSpeed 0
 #gamerule mobGriefing false
