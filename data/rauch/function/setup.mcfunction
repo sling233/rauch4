@@ -173,7 +173,7 @@ data modify storage map_data versions set value [\
   {id:"klotz",version:4},\
   {id:"arena",version:3},\
   {id:"cherry",version:1},\
-  {id:"wcity",version:3}\
+  {id:"wcity",version:4}\
 ]
 
 function rauch:settings/versions/version_check

@@ -43,3 +43,25 @@ $execute positioned $(x) $(y) $(z) align xyz run setblock ~45 ~13 ~46 minecraft:
 $execute positioned $(x) $(y) $(z) align xyz run setblock ~45 ~14 ~46 minecraft:big_dripleaf[facing=west]
 $execute positioned $(x) $(y) $(z) align xyz run setblock ~49 ~13 ~46 minecraft:air
 $execute positioned $(x) $(y) $(z) align xyz run setblock ~49 ~14 ~46 minecraft:big_dripleaf[facing=south]
+
+# set biome
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~ ~ ~66 ~5 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~6 ~ ~66 ~10 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~11 ~ ~66 ~15 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~16 ~ ~66 ~20 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~21 ~ ~66 ~25 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~26 ~ ~66 ~30 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~31 ~ ~66 ~35 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~36 ~ ~66 ~40 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~41 ~ ~66 ~45 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~46 ~ ~66 ~50 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~51 ~ ~66 ~55 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~56 ~ ~66 ~60 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~61 ~ ~66 ~65 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~66 ~ ~66 ~70 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~71 ~ ~66 ~75 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~76 ~ ~66 ~80 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~81 ~ ~66 ~85 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~86 ~ ~66 ~90 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~91 ~ ~66 ~95 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~96 ~ ~66 ~98 ~66 minecraft:dark_forest 
