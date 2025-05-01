@@ -174,7 +174,7 @@ data modify storage map_data versions set value [\
   {id:"klotz",version:4},\
   {id:"arena",version:3},\
   {id:"cherry",version:1},\
-  {id:"wcity",version:4}\
+  {id:"wcity",version:5}\
 ]
 # lobby version
 data modify storage lobby_data latest_version set value 3
