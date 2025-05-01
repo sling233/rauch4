@@ -41,7 +41,6 @@ scoreboard objectives add hacker_damage_timer_control dummy
 scoreboard objectives add heal dummy
 scoreboard objectives add health health {"text":"❤","color":"red"}
 scoreboard objectives add health_display dummy
-scoreboard objectives add hitPnum dummy
 scoreboard objectives add hunger food
 scoreboard objectives add kit dummy
 scoreboard objectives add kitselect trigger

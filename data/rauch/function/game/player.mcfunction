@@ -46,7 +46,6 @@ scoreboard players operation @s health_display = @s health
 scoreboard players reset @s click
 scoreboard players reset @s dropcoas
 #scoreboard players reset @s deaths
-scoreboard players reset @s hitPnum
 scoreboard players reset @s fly
 #tag @s remove spawn
 tag @s remove raucher_debuff

@@ -41,7 +41,6 @@ scoreboard objectives remove hacker_damage_timer_control
 scoreboard objectives remove heal
 scoreboard objectives remove health
 scoreboard objectives remove health_display
-scoreboard objectives remove hitPnum
 scoreboard objectives remove hunger
 scoreboard objectives remove kit
 scoreboard objectives remove kitselect

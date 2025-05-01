@@ -39,6 +39,7 @@ execute as @s[tag=zarzahn_hook] run function rauch:game/ability/zarzahn/r/cancel
 execute as @s[tag=wok_hook] run function rauch:game/ability/wokkaman/r/cancel_hook
 # remove from wokkaman sr tag lists
 function rauch:game/ability/wokkaman/sr/remove_tag
+function rauch:game/ability/bolt/q/remove_me
 
 function rauch:game/mechanics/unstun
 

@@ -4,6 +4,7 @@ item replace entity @s[scores={kit=1}] hotbar.0 with minecraft:carrot_on_a_stick
     item_model="minecraft:trident",\
     rarity=rare,\
     unbreakable={},\
+    enchantments={"rauch:hit_detect":1},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 
@@ -13,6 +14,7 @@ item replace entity @s[scores={kit=2}] hotbar.0 with minecraft:carrot_on_a_stick
     item_model="rauch:zarzahn_sword",\
     rarity=rare,\
     unbreakable={},\
+    enchantments={"rauch:hit_detect":1},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 
@@ -22,6 +24,7 @@ item replace entity @s[scores={kit=3}] hotbar.0 with minecraft:carrot_on_a_stick
     item_model="rauch:raucher_staff",\
     rarity=rare,\
     unbreakable={},\
+    enchantments={"rauch:hit_detect":1},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 
@@ -31,6 +34,7 @@ item replace entity @s[scores={kit=4}] hotbar.0 with minecraft:carrot_on_a_stick
     item_model="rauch:hacker_sword",\
     rarity=rare,\
     unbreakable={},\
+    enchantments={"rauch:hit_detect":1},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 
@@ -40,6 +44,7 @@ item replace entity @s[scores={kit=5}] hotbar.0 with minecraft:carrot_on_a_stick
     item_model="rauch:wark_sword",\
     rarity=rare,\
     unbreakable={},\
+    enchantments={"rauch:hit_detect":1},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 
@@ -49,6 +54,7 @@ item replace entity @s[scores={kit=6}] hotbar.0 with minecraft:carrot_on_a_stick
     item_model="rauch:teleporter_sword",\
     rarity=rare,\
     unbreakable={},\
+    enchantments={"rauch:hit_detect":1},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 item replace entity @s[scores={kit=6,tele2=1..}] hotbar.0 with minecraft:carrot_on_a_stick[\
@@ -56,6 +62,7 @@ item replace entity @s[scores={kit=6,tele2=1..}] hotbar.0 with minecraft:carrot_
     item_model="rauch:teleporter_sword_invisible",\
     rarity=rare,\
     unbreakable={},\
+    enchantments={"rauch:hit_detect":1},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 
@@ -65,6 +72,7 @@ item replace entity @s[scores={kit=7}] hotbar.0 with minecraft:carrot_on_a_stick
     minecraft:item_model="rauch:tank_axe",\
     rarity=rare,\
     unbreakable={},\
+    enchantments={"rauch:hit_detect":1},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 
@@ -74,6 +82,7 @@ item replace entity @s[scores={kit=8}] hotbar.0 with minecraft:carrot_on_a_stick
     minecraft:item_model="rauch:pikka_spear",\
     rarity=rare,\
     unbreakable={},\
+    enchantments={"rauch:hit_detect":1},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 
@@ -83,6 +92,7 @@ execute unless score @s wokkaman_weapon matches 1.. run item replace entity @s[s
     item_name={"text":"Attackeschwert"},\
     rarity=epic,\
     unbreakable={},\
+    enchantments={"rauch:hit_detect":1},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 execute if score @s wokkaman_weapon matches 1 run item replace entity @s[scores={kit=9}] hotbar.0 with minecraft:carrot_on_a_stick[\
@@ -90,6 +100,7 @@ execute if score @s wokkaman_weapon matches 1 run item replace entity @s[scores=
     item_name={"text":"Plastikschwert"},\
     rarity=epic,\
     unbreakable={},\
+    enchantments={"rauch:hit_detect":1},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 execute if score @s wokkaman_weapon matches 2 run item replace entity @s[scores={kit=9}] hotbar.0 with minecraft:carrot_on_a_stick[\
@@ -97,6 +108,7 @@ execute if score @s wokkaman_weapon matches 2 run item replace entity @s[scores=
     item_name={"text":"Angriffsaxt"},\
     rarity=epic,\
     unbreakable={},\
+    enchantments={"rauch:hit_detect":1},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 execute if score @s wokkaman_weapon matches 3 run item replace entity @s[scores={kit=9}] hotbar.0 with minecraft:carrot_on_a_stick[\
@@ -104,6 +116,7 @@ execute if score @s wokkaman_weapon matches 3 run item replace entity @s[scores=
     item_name={"text":"Kloppstock"},\
     rarity=epic,\
     unbreakable={},\
+    enchantments={"rauch:hit_detect":1},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 execute if score @s wokkaman_weapon matches 4 run item replace entity @s[scores={kit=9}] hotbar.0 with minecraft:carrot_on_a_stick[\
@@ -111,5 +124,6 @@ execute if score @s wokkaman_weapon matches 4 run item replace entity @s[scores=
     item_name={"text":"Piksspeer"},\
     rarity=epic,\
     unbreakable={},\
+    enchantments={"rauch:hit_detect":1},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1

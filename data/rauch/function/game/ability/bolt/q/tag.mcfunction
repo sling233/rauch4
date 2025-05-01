@@ -1,12 +1,17 @@
-# executed as bolt (tagged person is whatever bolts hitPnum is)
-# set @s's data to front of bolt_hit
-function rauch:game/ability/bolt/q/array/find_me
+# called by hit (bolt is attacker and @s, tagged person is victim)
+scoreboard players operation t_victim_pnum temp = @a[tag=victim,limit=1] pnum
 
-scoreboard objectives add found dummy
-# test if hit player was hit before (sets found to 1 if yes)
-function rauch:game/ability/bolt/q/array/hit_pnum_check
+function rauch:macros/data_get {storage:"bolt_hit"}
 
-execute unless score Global found matches 1 run data modify storage game_data bolt_hit[0].list prepend value -1
-execute unless score Global found matches 1 store result storage game_data bolt_hit[0].list[0] int 1 run scoreboard players get @s hitPnum
-execute unless score Global found matches 1 at @s as @a if score @s pnum = @p hitPnum run function rauch:game/ability/bolt/q/tag_action
-scoreboard objectives remove found
+scoreboard players set t_is_in_list temp 0
+function rauch:macros/foreach {for_path:"macros data.list",for_function:"rauch:game/ability/bolt/q/is_in_list_check"}
+
+execute if score t_is_in_list temp matches 0 run data modify storage macros data.list prepend value -1
+execute if score t_is_in_list temp matches 0 run execute store result storage macros data.list[0] int 1 run scoreboard players get t_victim_pnum temp
+execute if score t_is_in_list temp matches 0 at @s run playsound minecraft:entity.arrow.hit_player master @s
+execute if score t_is_in_list temp matches 0 as @a[tag=victim,limit=1] run effect give @s minecraft:glowing 400 1 true
+
+scoreboard players reset t_is_in_list temp
+scoreboard players reset t_victim_pnum temp
+
+function rauch:macros/data_write {storage:"bolt_hit"}
