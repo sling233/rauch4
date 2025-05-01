@@ -29,39 +29,74 @@ $execute positioned $(x) $(y) $(z) align xyz run fill ~ ~84 ~ ~66 ~90 ~67 minecr
 $execute positioned $(x) $(y) $(z) align xyz run fill ~ ~91 ~ ~66 ~96 ~67 minecraft:structure_void
 
 #spawn map
-$execute positioned $(x) $(y) $(z) align xyz run place template rauch:wcity111 ~48 ~48 ~48
-$execute positioned $(x) $(y) $(z) align xyz run place template rauch:wcity110 ~48 ~48 ~
-$execute positioned $(x) $(y) $(z) align xyz run place template rauch:wcity101 ~48 ~ ~48
-$execute positioned $(x) $(y) $(z) align xyz run place template rauch:wcity100 ~48 ~ ~
-$execute positioned $(x) $(y) $(z) align xyz run place template rauch:wcity011 ~ ~48 ~48
-$execute positioned $(x) $(y) $(z) align xyz run place template rauch:wcity010 ~ ~48 ~
-$execute positioned $(x) $(y) $(z) align xyz run place template rauch:wcity001 ~ ~ ~48
-$execute positioned $(x) $(y) $(z) align xyz run place template rauch:wcity000 ~ ~ ~
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_1 temp run place template rauch:wcity111 ~48 ~48 ~48
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_2 temp run place template rauch:wcity110 ~48 ~48 ~
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_3 temp run place template rauch:wcity101 ~48 ~ ~48
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_4 temp run place template rauch:wcity100 ~48 ~ ~
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_5 temp run place template rauch:wcity011 ~ ~48 ~48
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_6 temp run place template rauch:wcity010 ~ ~48 ~
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_7 temp run place template rauch:wcity001 ~ ~ ~48
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_8 temp run place template rauch:wcity000 ~ ~ ~
 
 #set some dripleaves
-$execute positioned $(x) $(y) $(z) align xyz run setblock ~45 ~13 ~46 minecraft:air
-$execute positioned $(x) $(y) $(z) align xyz run setblock ~45 ~14 ~46 minecraft:big_dripleaf[facing=west]
-$execute positioned $(x) $(y) $(z) align xyz run setblock ~49 ~13 ~46 minecraft:air
-$execute positioned $(x) $(y) $(z) align xyz run setblock ~49 ~14 ~46 minecraft:big_dripleaf[facing=south]
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_9 temp run setblock ~45 ~13 ~46 minecraft:air
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_10 temp run setblock ~45 ~14 ~46 minecraft:big_dripleaf[facing=west]
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_11 temp run setblock ~49 ~13 ~46 minecraft:air
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_12 temp run setblock ~49 ~14 ~46 minecraft:big_dripleaf[facing=south]
 
 # set biome
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~ ~ ~66 ~5 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~6 ~ ~66 ~10 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~11 ~ ~66 ~15 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~16 ~ ~66 ~20 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~21 ~ ~66 ~25 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~26 ~ ~66 ~30 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~31 ~ ~66 ~35 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~36 ~ ~66 ~40 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~41 ~ ~66 ~45 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~46 ~ ~66 ~50 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~51 ~ ~66 ~55 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~56 ~ ~66 ~60 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~61 ~ ~66 ~65 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~66 ~ ~66 ~70 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~71 ~ ~66 ~75 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~76 ~ ~66 ~80 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~81 ~ ~66 ~85 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~86 ~ ~66 ~90 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~91 ~ ~66 ~95 ~66 minecraft:dark_forest
-$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~96 ~ ~66 ~98 ~66 minecraft:dark_forest 
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_13 temp run fillbiome ~ ~ ~ ~66 ~5 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_14 temp run fillbiome ~ ~6 ~ ~66 ~10 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_15 temp run fillbiome ~ ~11 ~ ~66 ~15 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_16 temp run fillbiome ~ ~16 ~ ~66 ~20 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_17 temp run fillbiome ~ ~21 ~ ~66 ~25 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_18 temp run fillbiome ~ ~26 ~ ~66 ~30 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_19 temp run fillbiome ~ ~31 ~ ~66 ~35 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_20 temp run fillbiome ~ ~36 ~ ~66 ~40 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_21 temp run fillbiome ~ ~41 ~ ~66 ~45 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_22 temp run fillbiome ~ ~46 ~ ~66 ~50 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_23 temp run fillbiome ~ ~51 ~ ~66 ~55 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_24 temp run fillbiome ~ ~56 ~ ~66 ~60 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_25 temp run fillbiome ~ ~61 ~ ~66 ~65 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_26 temp run fillbiome ~ ~66 ~ ~66 ~70 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_27 temp run fillbiome ~ ~71 ~ ~66 ~75 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_28 temp run fillbiome ~ ~76 ~ ~66 ~80 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_29 temp run fillbiome ~ ~81 ~ ~66 ~85 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_30 temp run fillbiome ~ ~86 ~ ~66 ~90 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_31 temp run fillbiome ~ ~91 ~ ~66 ~95 ~66 minecraft:dark_forest
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_32 temp run fillbiome ~ ~96 ~ ~66 ~98 ~66 minecraft:dark_forest
+
+scoreboard players operation t_success_1 temp *= t_success_2 temp
+scoreboard players operation t_success_1 temp *= t_success_3 temp
+scoreboard players operation t_success_1 temp *= t_success_4 temp
+scoreboard players operation t_success_1 temp *= t_success_5 temp
+scoreboard players operation t_success_1 temp *= t_success_6 temp
+scoreboard players operation t_success_1 temp *= t_success_7 temp
+scoreboard players operation t_success_1 temp *= t_success_8 temp
+scoreboard players operation t_success_1 temp *= t_success_9 temp
+scoreboard players operation t_success_1 temp *= t_success_10 temp
+scoreboard players operation t_success_1 temp *= t_success_11 temp
+scoreboard players operation t_success_1 temp *= t_success_12 temp
+scoreboard players operation t_success_1 temp *= t_success_13 temp
+scoreboard players operation t_success_1 temp *= t_success_14 temp
+scoreboard players operation t_success_1 temp *= t_success_15 temp
+scoreboard players operation t_success_1 temp *= t_success_16 temp
+scoreboard players operation t_success_1 temp *= t_success_17 temp
+scoreboard players operation t_success_1 temp *= t_success_18 temp
+scoreboard players operation t_success_1 temp *= t_success_19 temp
+scoreboard players operation t_success_1 temp *= t_success_20 temp
+scoreboard players operation t_success_1 temp *= t_success_21 temp
+scoreboard players operation t_success_1 temp *= t_success_22 temp
+scoreboard players operation t_success_1 temp *= t_success_23 temp
+scoreboard players operation t_success_1 temp *= t_success_24 temp
+scoreboard players operation t_success_1 temp *= t_success_25 temp
+scoreboard players operation t_success_1 temp *= t_success_26 temp
+scoreboard players operation t_success_1 temp *= t_success_27 temp
+scoreboard players operation t_success_1 temp *= t_success_28 temp
+scoreboard players operation t_success_1 temp *= t_success_29 temp
+scoreboard players operation t_success_1 temp *= t_success_30 temp
+scoreboard players operation t_success_1 temp *= t_success_31 temp
+scoreboard players operation t_success_1 temp *= t_success_32 temp
+execute if score t_success_1 temp matches 0 run tellraw @s {"text":"Map could not spawn correctly as the area was not fully loaded.","color":"red"}
+
+scoreboard players reset * temp

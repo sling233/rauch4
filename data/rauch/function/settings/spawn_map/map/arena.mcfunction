@@ -14,3 +14,8 @@ $execute positioned $(x) $(y) $(z) align xyz positioned ~58.5 ~22 ~15.5 summon m
 
 $execute positioned $(x) $(y) $(z) align xyz run place template rauch:arena1 ~ ~ ~
 $execute positioned $(x) $(y) $(z) align xyz run place template rauch:arena2 ~48 ~ ~
+
+scoreboard players operation t_success_1 temp *= t_success_2 temp
+execute if score t_success_1 temp matches 0 run tellraw @s {"text":"Map could not spawn correctly as the area was not fully loaded.","color":"red"}
+
+scoreboard players reset * temp

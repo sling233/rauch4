@@ -12,4 +12,8 @@ $execute positioned $(x) $(y) $(z) align xyz positioned ~9.5 ~39 ~2.5 summon mar
 $execute positioned $(x) $(y) $(z) align xyz positioned ~23.5 ~34.5 ~23.5 summon marker run function rauch:settings/spawn_map/spawn_set_center {index:$(index)}
 $execute positioned $(x) $(y) $(z) align xyz positioned ~37.5 ~39 ~44.5 summon marker run function rauch:settings/spawn_map/spawn_set_blue {index:$(index)}
 
-$execute positioned $(x) $(y) $(z) align xyz run place template rauch:klotz ~ ~ ~
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_1 temp run place template rauch:klotz ~ ~ ~
+
+execute if score t_success_1 temp matches 0 run tellraw @s {"text":"Map could not spawn correctly as the area was not fully loaded.","color":"red"}
+
+scoreboard players reset * temp
