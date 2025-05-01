@@ -52,11 +52,11 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 [{"text":"This kit cannot be selected, it gets assigned to players in team red in the Wokkaman game mode.\n\n","color":"gray"},\
 {"text":"Name: ","color":"gray"},{"text":"Wokkaman\n","color":"red"},{"text":"Type: ","color":"gray"},{"text":"Everything\n","color":"red"},\
 {"text":"Stats:  "},{"text":"❤40  ","color":"red"},{"text":"⚔2.0  ","color":"red"},{"text":"Range: 3.6\n\n","color":"red"},{"text":"R (8s): ","color":"red"},\
-{"text":"Wok R\n\n"},{"text":"sR (10s): ","color":"red"},\
+{"text":"Wok R\n\n"},{"text":"sR (8s): ","color":"red"},\
 {"text":"Wok sR\n\n"},{"text":"Q (-): ","color":"red"},\
-{"text":"Wok Q\n\n"},{"text":"sQ (10s): ","color":"red"},\
-{"text":"Wok sQ\n\n"},{"text":"F (12s): ","color":"red"},\
-{"text":"Wok F\n\n"},{"text":"sF (3s): ","color":"red"},\
+{"text":"Wok Q\n\n"},{"text":"sQ (9s): ","color":"red"},\
+{"text":"Wok sQ\n\n"},{"text":"F (7s): ","color":"red"},\
+{"text":"Wok F\n\n"},{"text":"sF (5s): ","color":"red"},\
 {"text":"Wok sF"}]}},{"text":"]","color":"dark_gray"}],[\
 {"text":"   "},{"text":"Other Settings\n\n","bold":true},\
 {"text":"Ambient Particles:\n","hover_event":{"action":"show_text","value":[{"text":"Turns Ambient Particles On/Off. Some Maps may not have Ambient Particles. This may help a little with fps problems (probably not much though).","color":"white"}]}},\
