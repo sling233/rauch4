@@ -1,5 +1,5 @@
 scoreboard players set Global control 100
-scoreboard players set Global capture_info 2
+scoreboard players set Global capture_info 3
 
 scoreboard players set @a stats_g_points_scored 0
 
