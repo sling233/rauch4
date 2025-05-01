@@ -146,20 +146,20 @@ execute unless score %reload_message_disabled global matches 0.. run scoreboard 
 execute unless score %enable_flag_sprint global matches 0.. run scoreboard players set %reload_message_disabled global 0
 
 # setup stuff
-execute unless entity @a[tag=admin] unless score %reload_message_disabled global matches 1 run tellraw @a [{"text":"The Wokkagames Data Pack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"click_event":{"action":"run_command","command":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/disable_message"}}]
-execute as @a[tag=admin] unless score %reload_message_disabled global matches 1 run tellraw @s [{"text":"The Wokkagames Data Pack is active. For a setup guide click ","color":"yellow"},{"text":"here.","italic":true,"click_event":{"action":"run_command","command":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/disable_message"}}]
+execute unless entity @a[tag=admin] unless score %reload_message_disabled global matches 1 run tellraw @a [{"text":"The Wokkagames Data Pack is active. For a setup guide click ","color":"yellow"},{"text":"here.","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/disable_message"}}]
+execute as @a[tag=admin] unless score %reload_message_disabled global matches 1 run tellraw @s [{"text":"The Wokkagames Data Pack is active. For a setup guide click ","color":"yellow"},{"text":"here.","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/disable_message"}}]
 
 execute unless entity @a[tag=admin] unless data storage lobby_data position run tellraw @a [\
 {"text":"Please set the Lobby position by moving to the desired location and clicking ","color":"yellow"},\
-{"text":"here","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/changelobbypos"}},\
+{"text":"here","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/changelobbypos"}},\
 {"text":" OR spawn the prebuilt lobby by clicking ","color":"yellow"},\
-{"text":"here.","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_lobby/spawn_lobby"}}\
+{"text":"here.","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_lobby/prompt"}}\
 ]
 execute as @a[tag=admin] unless data storage lobby_data position run tellraw @s [\
 {"text":"Please set the Lobby position by moving to the desired location and clicking ","color":"yellow"},\
-{"text":"here","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/changelobbypos"}},\
+{"text":"here","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/changelobbypos"}},\
 {"text":" OR spawn the prebuilt lobby by clicking ","color":"yellow"},\
-{"text":"here.","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_lobby/spawn_lobby"}}\
+{"text":"here.","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_lobby/prompt"}}\
 ]
 
 #execute as @a[tag=!lobby,tag=!game,tag=!edit_map,tag=!spectator] run tag @s add lobby
@@ -175,6 +175,8 @@ data modify storage map_data versions set value [\
   {id:"cherry",version:1},\
   {id:"wcity",version:4}\
 ]
+# lobby version
+data modify storage lobby_data latest_version set value 3
 
 function rauch:settings/versions/version_check
 function rauch:settings/versions/maps/map_check

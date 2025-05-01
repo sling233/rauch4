@@ -73,7 +73,7 @@ data modify storage rauch temp.pages append value [\
     {"action":"run_command","command":"/function rauch:settings/changelobbypos"}},\
   {"text":"\nSpawn prebuilt Lobby","color":"dark_blue","hover_event":{"action":"show_text","value":[\
     {"text":"Click if you want to spawn the prebuilt lobby"}]},"click_event":\
-    {"action":"run_command","command":"/function rauch:settings/spawn_lobby/spawn_lobby"}},\
+    {"action":"run_command","command":"/function rauch:settings/spawn_lobby/prompt"}},\
   {"text":"\n\nCheck for Updates","color":"black","bold":true},\
   {"text":"\n[Pack] ","color":"dark_blue","hover_event":{"action":"show_text","value":[\
     {"text":"Click if you have a new version of the datapack in the world folder"}]},"click_event":\

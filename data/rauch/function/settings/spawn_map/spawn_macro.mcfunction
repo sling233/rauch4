@@ -1,3 +1,4 @@
+tellraw @s {"text":"Spawning map, this might take a few seconds... ","color":"yellow"}
 # $(id) has id of map eg. Wokkacity has path wcity
 data modify storage map_data maps prepend value {}
 
