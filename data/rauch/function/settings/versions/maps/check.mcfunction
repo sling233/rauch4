@@ -9,11 +9,11 @@ $execute store result score t_current_version temp run data get storage map_data
 
 
 $execute unless score t_current_version temp = t_latest_version temp run tellraw @a[tag=admin] [\
-  {"text":"An Update is available for map "},\
-  {"storage":"map_data",nbt:"maps[$(index)].name"},\
-  {"text":". Click ","color":"yellow"},{"text":"here","click_event":{"action":"run_command",\
-    "command":"/function rauch:settings/spawn_map/update_macro {id:$(id),index:$(index)}"},"italic":true},\
-  {"text":" to update."}\
+  {"text":"An Update is available for map ","color":"yellow"},\
+  {"storage":"map_data",nbt:"maps[$(index)].name","color":"light_purple"},\
+  {"text":". Click ","color":"yellow"},{"text":"HERE","click_event":{"action":"run_command",\
+    "command":"/function rauch:settings/spawn_map/update_macro {id:$(id),index:$(index)}"},"italic":true,"color":"gold"},\
+  {"text":" to update.","color":"yellow"}\
 ]
 
 execute unless score t_current_version temp = t_latest_version temp run scoreboard players set #t_map_update_found temp 1
