@@ -38,4 +38,6 @@ bossbar set minecraft:wokkaman_health visible false
 function rauch:game/ui/bossbar/allinvisible
 execute as @a[tag=game] run function rauch:game/framework/move_player
 execute as @a[tag=spectator] run function rauch:game/framework/spectate_stop
+execute if score %enable_delayed_clear global matches 1 run schedule function rauch:game/framework/clear 10t
+
 scoreboard players reset Global game_running

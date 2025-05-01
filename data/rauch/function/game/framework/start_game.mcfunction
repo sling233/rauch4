@@ -31,7 +31,7 @@ execute as @a[tag=queue,limit=12] run function rauch:game/framework/teamsetup
 scoreboard players reset Global pnum
 # potentially left over players
 execute as @a[tag=queue] run function rauch:game/framework/leftover
-
+execute if score %enable_delayed_clear global matches 1 run schedule function rauch:game/framework/start_schedule_clear 10t
 #mapgedöns
 summon marker ~ ~ ~ {Tags:["map","t1"]}
 summon marker ~ ~ ~ {Tags:["map","t2"]}

@@ -74,8 +74,8 @@ function rauch:lobby/tp_to_lobby
 
 #advancement revoke @s only rauch:firstjoin
 
-tag @s add clear
-schedule function rauch:game/framework/clear 10t
+
+execute if score %enable_delayed_clear global matches 1 run tag @s add clear
 #title @s subtitle {"text":""}
 #title @s clear
 #tag @s add lobby
