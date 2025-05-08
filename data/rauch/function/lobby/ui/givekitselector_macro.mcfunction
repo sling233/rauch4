@@ -48,7 +48,9 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"A Boost in momentum forwards. Way more useful in the air.\n\n"},{"text":"Q (18s): ","color":"#FFBF47"},\
 {"text":"When grounded, you rise in the air. If you already are in the air you simply stall for a bit. After a short while you slam into the ground, dealing 4.8❤ and stunning everyone in range for 1 second.\n\n"},{"text":"F (14s): ","color":"#FFBF47"},\
 {"text":"A Boost upwards. In general, you have an elytra. When exceeding a certain speed while flying, your melee attacks get buffed to 4.6❤ (with a crit, that would be 6.9❤) until you touch the ground."}]}},{"text":"]","color":"dark_gray"},\
-{"text":"\n\n[","color":"dark_gray"},{"text":"Wokkaman","color":"gray","hover_event":{"action":"show_text","value":\
+{"text":"\n\n[","color":"dark_gray"},{"text":"Wokkaman","color":"$(wokkaman)",\
+"click_event":{"action":"run_command","command":"/trigger kitselect set 9"},\
+"hover_event":{"action":"show_text","value":\
 [{"text":"This kit cannot be selected, it gets assigned to players in team red in the Wokkaman game mode.\n\n","color":"gray"},\
 {"text":"Name: ","color":"gray"},{"text":"Wokkaman\n","color":"red"},{"text":"Type: ","color":"gray"},{"text":"Everything\n","color":"red"},\
 {"text":"Stats:  "},{"text":"❤40  ","color":"red"},{"text":"⚔2.0  ","color":"red"},{"text":"Range: 3.6\n\n","color":"red"},{"text":"R (8s): ","color":"red"},\

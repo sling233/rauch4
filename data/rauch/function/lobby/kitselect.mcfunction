@@ -1,4 +1,6 @@
 execute as @s[scores={kitselect=1..8}] run scoreboard players operation @s kit = @s kitselect
+execute as @s[scores={kitselect=9}] if score %enable_wokkaman_selectability global matches 1 run scoreboard players operation @s kit = @s kitselect
+execute as @s[scores={kitselect=9}] unless score %enable_wokkaman_selectability global matches 1 run tellraw @s {text:"Wokkaman selectability is turned off",color:"red"}
 execute as @s[scores={kitselect=100}] run scoreboard players set @s hide_ambient_particles 1
 execute as @s[scores={kitselect=101}] run scoreboard players set @s hide_ambient_particles 0
 execute as @s[scores={kitselect=110}] run scoreboard players set @s actionbar_design 0

@@ -88,8 +88,54 @@ data modify storage rauch temp.pages append value [\
     {"text":"Shows the Setup Guide"}]},"click_event":\
     {"action":"run_command","command":"/function rauch:tutorial/tutorial"}},\
   {"text":"\nRemove objectives","color":"dark_blue","click_event":\
-  {"action":"run_command","command":"/function rauch:settings/removeobj"},\
-  "hover_event":{"action":"show_text","value":"This will remove every scoreboard objective, bossbar and team relevant \
-  to the data pack. The gamemode and your selected kit will be reset. If the pack updates and something looks weird, \
-  a bossbar for example, this can fix it."}}\
+    {"action":"run_command","command":"/function rauch:settings/removeobj"},\
+    "hover_event":{"action":"show_text","value":"This will remove every scoreboard objective, bossbar and team relevant \
+      to the data pack. The gamemode and your selected kit will be reset. Only do this if you know what you are doing"\
+  }}\
 ]
+
+# append second settings page
+$data modify storage rauch temp.pages append value [\
+  "",{"text":"  More Settings","bold":true},\
+  {"text":"\nShow Reload Message:\n","hover_event":{"action":"show_text","value":[\
+    {"text":"bla bla bal"}]}},\
+    {text:"[",color:"dark_gray"},\
+    {text:"Yes",color:"$(not_reload_message_disabled)","click_event":\
+      {"action":"run_command","command":"/function rauch:settings/global_settings/enable_reload_message"}},\
+    {text:"]   ",color:"dark_gray"},\
+    {text:"[",color:"dark_gray"},\
+    {text:"No",color:"$(reload_message_disabled)","click_event":\
+      {"action":"run_command","command":"/function rauch:settings/global_settings/disable_reload_message"}},\
+    {text:"]\n",color:"dark_gray"},\
+  {"text":"\nEnable Flag Sprint:\n","hover_event":{"action":"show_text","value":[\
+    {"text":"bla bla bal"}]}},\
+    {text:"[",color:"dark_gray"},\
+    {text:"Yes",color:"$(flag_sprint)","click_event":\
+      {"action":"run_command","command":"/function rauch:settings/global_settings/enable_flag_sprint"}},\
+    {text:"]   ",color:"dark_gray"},\
+    {text:"[",color:"dark_gray"},\
+    {text:"No",color:"$(not_flag_sprint)","click_event":\
+      {"action":"run_command","command":"/function rauch:settings/global_settings/disable_flag_sprint"}},\
+    {text:"]\n",color:"dark_gray"},\
+  {"text":"\nEnable Delayed Clear:\n","hover_event":{"action":"show_text","value":[\
+    {"text":"bla bla bal"}]}},\
+    {text:"[",color:"dark_gray"},\
+    {text:"Yes",color:"$(delayed_clear)","click_event":\
+      {"action":"run_command","command":"/function rauch:settings/global_settings/enable_delayed_clear"}},\
+    {text:"]   ",color:"dark_gray"},\
+    {text:"[",color:"dark_gray"},\
+    {text:"No",color:"$(not_delayed_clear)","click_event":\
+      {"action":"run_command","command":"/function rauch:settings/global_settings/disable_delayed_clear"}},\
+    {text:"]\n",color:"dark_gray"},\
+  {"text":"\nWokkaman Selectable:\n","hover_event":{"action":"show_text","value":[\
+    {"text":"bla bla bal"}]}},\
+    {text:"[",color:"dark_gray"},\
+    {text:"Yes",color:"$(wokkaman_selectability)","click_event":\
+      {"action":"run_command","command":"/function rauch:settings/global_settings/enable_wokkaman_selectability"}},\
+    {text:"]   ",color:"dark_gray"},\
+    {text:"[",color:"dark_gray"},\
+    {text:"No",color:"$(not_wokkaman_selectability)","click_event":\
+      {"action":"run_command","command":"/function rauch:settings/global_settings/disable_wokkaman_selectability"}},\
+    {text:"]\n",color:"dark_gray"}\
+]
+

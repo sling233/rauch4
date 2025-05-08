@@ -174,7 +174,9 @@ for i, kit in enumerate(kits[:-1]):
 
 # add wokkaman description
 type_lol = ',{"text":"' + wokkaman.typ + '\\n","color":"' + wokkaman.colors[1] + '"},\\'
-text.append('{"text":"\\n\\n[","color":"dark_gray"},{"text":"' + wokkaman.name + '","color":"gray","hover_event":{"action":"show_text","value":\\')
+text.append('{"text":"\\n\\n[","color":"dark_gray"},{"text":"' + wokkaman.name + '","color":"$(wokkaman)",\\')
+text.append('"click_event":{"action":"run_command","command":"/trigger kitselect set ' + str(len(kits)) + '"},\\')
+text.append('"hover_event":{"action":"show_text","value":\\')
 text.append('[{"text":"This kit cannot be selected, it gets assigned to players in team red in the Wokkaman game mode.\\n\\n","color":"gray"},\\')
 text.append('{"text":"Name: ","color":"gray"},{"text":"' + wokkaman.name + '\\n","color":"' + wokkaman.colors[0] + '"},{"text":"Type: ","color":"gray"}' + type_lol)
 text.append('{"text":"Stats:  "},{"text":"❤' + str(wokkaman.health) + '  ","color":"' + wokkaman.colors[2] + '"},{"text":"⚔' + str(wokkaman.damage) + '  ","color":"' + wokkaman.colors[3] + '"},{"text":"Range: ' + str(wokkaman.range) + '\\n\\n","color":"' + wokkaman.colors[4] + '"},{"text":"R (' + str(wokkaman.r_cool) + '): ","color":"' + wokkaman.colors[5] + '"},\\')
