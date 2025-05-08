@@ -1,5 +1,5 @@
 # change version (downpatch and version_change has to be updated as well)
-scoreboard players set this_version temp 608
+scoreboard players set this_version temp 609
 
 # if version didn't change, return
 execute if score Global version = this_version temp run return run function rauch:settings/versions/version_not_changed

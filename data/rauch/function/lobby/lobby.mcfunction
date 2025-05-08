@@ -32,3 +32,5 @@ title @s[scores={kit=9},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text"
 title @s[tag=queue] actionbar [{"text":"Queue: ","color":"yellow"},{"selector":"@a[tag=queue]"}]
 #title @s[tag=queue] actionbar [{"text":"Waiting for players... ","color":"yellow"}]
 #execute unless entity @a[tag=queue,team=Red] run title @s[tag=queue] actionbar [{"text":"Queue: ","color":"yellow"},{"selector":"@a[tag=queue,team=Red]"},{"text":", ","color":"gray"},{"selector":"@a[tag=queue,team=Blue]"},{"text":", ","color":"gray"},{"selector":"@a[tag=queue,team=Random]"}]
+
+execute if score %enable_launchpads_in_lobby global matches 1 run function rauch:game/mechanics/launchpads/check_for_launchpads

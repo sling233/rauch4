@@ -96,8 +96,7 @@ data modify storage rauch temp.pages append value [\
 
 # append second settings page
 $data modify storage rauch temp.pages append value [\
-  "",{"text":"  More Settings","bold":true},\
-  {"text":"\nShow Reload Message:\n","hover_event":{"action":"show_text","value":[\
+  {"text":"Show Reload Message:\n","hover_event":{"action":"show_text","value":[\
     {"text":"bla bla bal"}]}},\
     {text:"[",color:"dark_gray"},\
     {text:"Yes",color:"$(not_reload_message_disabled)","click_event":\
@@ -136,6 +135,16 @@ $data modify storage rauch temp.pages append value [\
     {text:"[",color:"dark_gray"},\
     {text:"No",color:"$(not_wokkaman_selectability)","click_event":\
       {"action":"run_command","command":"/function rauch:settings/global_settings/disable_wokkaman_selectability"}},\
+    {text:"]\n",color:"dark_gray"},\
+  {"text":"\nLaunchpads in Lobby:\n","hover_event":{"action":"show_text","value":[\
+    {"text":"bla bla bal"}]}},\
+    {text:"[",color:"dark_gray"},\
+    {text:"Yes",color:"$(launchpads_in_lobby)","click_event":\
+      {"action":"run_command","command":"/function rauch:settings/global_settings/enable_launchpads_in_lobby"}},\
+    {text:"]   ",color:"dark_gray"},\
+    {text:"[",color:"dark_gray"},\
+    {text:"No",color:"$(not_launchpads_in_lobby)","click_event":\
+      {"action":"run_command","command":"/function rauch:settings/global_settings/disable_launchpads_in_lobby"}},\
     {text:"]\n",color:"dark_gray"}\
 ]
 
