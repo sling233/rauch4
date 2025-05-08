@@ -15,18 +15,27 @@ $execute unless score t_is_int temp matches 1 run return run tellraw @s [\
 execute unless score t_is_int temp matches 1 run return run scoreboard players reset t_is_int temp
 scoreboard players reset t_is_int temp
 
+$data modify storage temp old_map_name set from storage map_data maps[$(index)].name
 $execute store result score t_map_id temp run data get storage map_data maps[$(index)].id
 
 $execute if score t_map_id temp matches 1 run data modify storage map_data maps[$(index)].id set value "splat"
+$execute if score t_map_id temp matches 1 run data modify storage map_data maps[$(index)].name set value "Splat"
 $execute if score t_map_id temp matches 2 run data modify storage map_data maps[$(index)].id set value "ancient"
+$execute if score t_map_id temp matches 2 run data modify storage map_data maps[$(index)].name set value "Ancient"
 $execute if score t_map_id temp matches 3 run data modify storage map_data maps[$(index)].id set value "greck"
+$execute if score t_map_id temp matches 3 run data modify storage map_data maps[$(index)].name set value "Greck"
 $execute if score t_map_id temp matches 4 run data modify storage map_data maps[$(index)].id set value "mork"
+$execute if score t_map_id temp matches 4 run data modify storage map_data maps[$(index)].name set value "Mork"
 $execute if score t_map_id temp matches 5 run data modify storage map_data maps[$(index)].id set value "klotz"
+$execute if score t_map_id temp matches 5 run data modify storage map_data maps[$(index)].name set value "Klotz 2.0"
 $execute if score t_map_id temp matches 6 run data modify storage map_data maps[$(index)].id set value "arena"
+$execute if score t_map_id temp matches 6 run data modify storage map_data maps[$(index)].name set value "Arena"
 $execute if score t_map_id temp matches 7 run data modify storage map_data maps[$(index)].id set value "cherry"
+$execute if score t_map_id temp matches 7 run data modify storage map_data maps[$(index)].name set value "Cherry"
 $execute if score t_map_id temp matches 8 run data modify storage map_data maps[$(index)].id set value "wcity"
+$execute if score t_map_id temp matches 8 run data modify storage map_data maps[$(index)].name set value "Wokkacity"
 
-$tellraw @s [{"text":"Map \"","color":"yellow"},{"storage":"map_data","nbt":"maps[$(index)].name","color":"light_purple"},{"text":"\" id is now \"","color":"yellow"},{"storage":"map_data","nbt":"maps[$(index)].id","color":"light_purple"},{"text":"\". (if this seems off, something went wrong)","color":"yellow"}]
-
+$tellraw @s [{"text":"Map \"","color":"yellow"},{"storage":"temp","nbt":"old_map_name","color":"light_purple"},{"text":"\" id is now \"","color":"yellow"},{"storage":"map_data","nbt":"maps[$(index)].id","color":"light_purple"},{"text":"\". (if this seems off, something went wrong)","color":"yellow"}]
+data remove storage temp old_map_name
 
 scoreboard players reset t_map_id temp

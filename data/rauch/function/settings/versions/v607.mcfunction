@@ -7,6 +7,11 @@ scoreboard players set Global version 607
 # map data for spawned in maps: id:1 -> id:"splat", id:2 -> id:"ancient"
 function rauch:macros/foreach {for_path:"map_data maps",for_function:"rauch:settings/versions/v607/convert"}
 tellraw @a [{"text":"Converted all maps","color":"green"}]
+
+# a lot of items changed
+clear @a[tag=lobby]
+
+
 # every scoreboard that was removed
 #scoreboard objectives remove blu_calc
 

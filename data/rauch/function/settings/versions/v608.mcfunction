@@ -4,7 +4,6 @@ tellraw @a [{"text":"- Removed obsolete scoreboard objective","color":"yellow"}]
 # set version
 scoreboard players set Global version 608
 
-
 # every scoreboard that was removed
 scoreboard objectives remove hitPnum
 
