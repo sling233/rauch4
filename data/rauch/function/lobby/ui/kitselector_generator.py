@@ -177,7 +177,7 @@ type_lol = ',{"text":"' + wokkaman.typ + '\\n","color":"' + wokkaman.colors[1] +
 text.append('{"text":"\\n\\n[","color":"dark_gray"},{"text":"' + wokkaman.name + '","color":"$(wokkaman)",\\')
 text.append('"click_event":{"action":"run_command","command":"/trigger kitselect set ' + str(len(kits)) + '"},\\')
 text.append('"hover_event":{"action":"show_text","value":\\')
-text.append('[{"text":"This kit cannot be selected, it gets assigned to players in team red in the Wokkaman game mode.\\n\\n","color":"gray"},\\')
+text.append('[{text:"",color:"gray"},{"text":"This kit automatically gets assigned to players in team red in the Wokkaman game mode. You can\'t select it otherwise, unlesss an admin enables it.\\n\\n","color":"#C87878"},\\')
 text.append('{"text":"Name: ","color":"gray"},{"text":"' + wokkaman.name + '\\n","color":"' + wokkaman.colors[0] + '"},{"text":"Type: ","color":"gray"}' + type_lol)
 text.append('{"text":"Stats:  "},{"text":"❤' + str(wokkaman.health) + '  ","color":"' + wokkaman.colors[2] + '"},{"text":"⚔' + str(wokkaman.damage) + '  ","color":"' + wokkaman.colors[3] + '"},{"text":"Range: ' + str(wokkaman.range) + '\\n\\n","color":"' + wokkaman.colors[4] + '"},{"text":"R (' + str(wokkaman.r_cool) + '): ","color":"' + wokkaman.colors[5] + '"},\\')
 text.append('{"text":"' + wokkaman.r_ability + '\\n\\n"},{"text":"sR (' + str(wokkaman.sr_cool) + '): ","color":"' + wokkaman.colors[8] + '"},\\')
@@ -190,10 +190,10 @@ text.append('{"text":"' + wokkaman.sf_ability + '"}]}},{"text":"]","color":"dark
 
 # add settings (new page)
 text.append('{"text":"   "},{"text":"Other Settings\\n\\n","bold":true},\\')
-text.append('{"text":"Ambient Particles:\\n","hover_event":{"action":"show_text","value":[{"text":"Turns Ambient Particles On/Off. Some Maps may not have Ambient Particles. This may help a little with fps problems (probably not much though).","color":"white"}]}},\\')
+text.append('{"text":"Ambient Particles:\\n","hover_event":{"action":"show_text","value":[{"text":"Turns Ambient Particles On/Off in case you don\'t like them. Some Maps may not have Ambient Particles.","color":"white"}]}},\\')
 text.append('{"text":" [","color":"dark_gray"},{"text":"Off","color":"$(ambient)","click_event":{"action":"run_command","command":"/trigger kitselect set 100"}},{"text":"]      [","color":"dark_gray"},{"text":"On","color":"$(not_ambient)","click_event":{"action":"run_command","command":"/trigger kitselect set 101"}},{"text":"]\\n\\n","color":"dark_gray"},\\')
 
-text.append('{"text":"Night Vision:\\n","hover_event":{"action":"show_text","value":[{"text":"Accessibility Setting controlling wether to apply night vision on no/dark/all maps. But i recommend trying turning up the brightness setting first as maps may look a lot worse with night vision.","color":"white"}]}},\\')
+text.append('{"text":"Night Vision:\\n","hover_event":{"action":"show_text","value":[{"text":"Accessibility Setting controlling wether to apply night vision on no/dark/all maps. We recommend trying turning up the brightness setting first as maps may look a lot worse with night vision.","color":"white"}]}},\\')
 text.append('{"text":"[","color":"dark_gray"},{"text":"Off","color":"$(night_never)","click_event":{"action":"run_command","command":"/trigger kitselect set 120"}},\\')
 text.append('{"text":"] [","color":"dark_gray"},{"text":"Dark","color":"$(night_dark)","click_event":{"action":"run_command","command":"/trigger kitselect set 121"},"hover_event":{"action":"show_text","value":[{"text":"Give Night Vision on dark maps"}]}},\\')
 text.append('{"text":"] [","color":"dark_gray"},{"text":"Always","color":"$(night_always)","click_event":{"action":"run_command","command":"/trigger kitselect set 122"},"hover_event":{"action":"show_text","value":[{"text":"Give Night Vision on all maps"}]}},{"text":"]\\n\\n","color":"dark_gray"},\\')

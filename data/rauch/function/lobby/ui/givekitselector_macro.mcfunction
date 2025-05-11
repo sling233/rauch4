@@ -51,7 +51,7 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"\n\n[","color":"dark_gray"},{"text":"Wokkaman","color":"$(wokkaman)",\
 "click_event":{"action":"run_command","command":"/trigger kitselect set 9"},\
 "hover_event":{"action":"show_text","value":\
-[{"text":"This kit cannot be selected, it gets assigned to players in team red in the Wokkaman game mode.\n\n","color":"gray"},\
+[{text:"",color:"gray"},{"text":"This kit automatically gets assigned to players in team red in the Wokkaman game mode. You can't select it otherwise, unlesss an admin enables it.\n\n","color":"#C87878"},\
 {"text":"Name: ","color":"gray"},{"text":"Wokkaman\n","color":"red"},{"text":"Type: ","color":"gray"},{"text":"Everything\n","color":"red"},\
 {"text":"Stats:  "},{"text":"❤40  ","color":"red"},{"text":"⚔2.0  ","color":"red"},{"text":"Range: 3.6\n\n","color":"red"},{"text":"R (8s): ","color":"red"},\
 {"text":"Wok R\n\n"},{"text":"sR (8s): ","color":"red"},\
@@ -61,9 +61,9 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"Wok F\n\n"},{"text":"sF (5s): ","color":"red"},\
 {"text":"Wok sF"}]}},{"text":"]","color":"dark_gray"}],[\
 {"text":"   "},{"text":"Other Settings\n\n","bold":true},\
-{"text":"Ambient Particles:\n","hover_event":{"action":"show_text","value":[{"text":"Turns Ambient Particles On/Off. Some Maps may not have Ambient Particles. This may help a little with fps problems (probably not much though).","color":"white"}]}},\
+{"text":"Ambient Particles:\n","hover_event":{"action":"show_text","value":[{"text":"Turns Ambient Particles On/Off in case you don't like them. Some Maps may not have Ambient Particles.","color":"white"}]}},\
 {"text":" [","color":"dark_gray"},{"text":"Off","color":"$(ambient)","click_event":{"action":"run_command","command":"/trigger kitselect set 100"}},{"text":"]      [","color":"dark_gray"},{"text":"On","color":"$(not_ambient)","click_event":{"action":"run_command","command":"/trigger kitselect set 101"}},{"text":"]\n\n","color":"dark_gray"},\
-{"text":"Night Vision:\n","hover_event":{"action":"show_text","value":[{"text":"Accessibility Setting controlling wether to apply night vision on no/dark/all maps. But i recommend trying turning up the brightness setting first as maps may look a lot worse with night vision.","color":"white"}]}},\
+{"text":"Night Vision:\n","hover_event":{"action":"show_text","value":[{"text":"Accessibility Setting controlling wether to apply night vision on no/dark/all maps. We recommend trying turning up the brightness setting first as maps may look a lot worse with night vision.","color":"white"}]}},\
 {"text":"[","color":"dark_gray"},{"text":"Off","color":"$(night_never)","click_event":{"action":"run_command","command":"/trigger kitselect set 120"}},\
 {"text":"] [","color":"dark_gray"},{"text":"Dark","color":"$(night_dark)","click_event":{"action":"run_command","command":"/trigger kitselect set 121"},"hover_event":{"action":"show_text","value":[{"text":"Give Night Vision on dark maps"}]}},\
 {"text":"] [","color":"dark_gray"},{"text":"Always","color":"$(night_always)","click_event":{"action":"run_command","command":"/trigger kitselect set 122"},"hover_event":{"action":"show_text","value":[{"text":"Give Night Vision on all maps"}]}},{"text":"]\n\n","color":"dark_gray"},\
