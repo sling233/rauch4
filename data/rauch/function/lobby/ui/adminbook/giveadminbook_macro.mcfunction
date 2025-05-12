@@ -96,55 +96,30 @@ data modify storage rauch temp.pages append value [\
 
 # append second settings page
 $data modify storage rauch temp.pages append value [\
-  {"text":"Show Reload Message:\n","hover_event":{"action":"show_text","value":[\
-    {"text":"Send the reload message every time the world gets reloaded. Default on."}]}},\
-    {text:"[",color:"dark_gray"},\
-    {text:"Yes",color:"$(not_reload_message_disabled)","click_event":\
-      {"action":"run_command","command":"/function rauch:settings/global_settings/enable_reload_message"}},\
-    {text:"]   ",color:"dark_gray"},\
-    {text:"[",color:"dark_gray"},\
-    {text:"No",color:"$(reload_message_disabled)","click_event":\
-      {"action":"run_command","command":"/function rauch:settings/global_settings/disable_reload_message"}},\
-    {text:"]\n",color:"dark_gray"},\
-  {"text":"\nEnable Flag Sprint:\n","hover_event":{"action":"show_text","value":[\
-    {"text":"Experimental gameplay balancing setting. Sets wether players that carry the flag in the capture the flag mode can sprint. Default off."}]}},\
-    {text:"[",color:"dark_gray"},\
-    {text:"Yes",color:"$(flag_sprint)","click_event":\
-      {"action":"run_command","command":"/function rauch:settings/global_settings/enable_flag_sprint"}},\
-    {text:"]   ",color:"dark_gray"},\
-    {text:"[",color:"dark_gray"},\
-    {text:"No",color:"$(not_flag_sprint)","click_event":\
-      {"action":"run_command","command":"/function rauch:settings/global_settings/disable_flag_sprint"}},\
-    {text:"]\n",color:"dark_gray"},\
-  {"text":"\nEnable Delayed Clear:\n","hover_event":{"action":"show_text","value":[\
-    {"text":"Clears players 10 ticks after a game stars and ends. Sometimes on servers the inventory glitches out and this setting fixes that. Default on."}]}},\
-    {text:"[",color:"dark_gray"},\
-    {text:"Yes",color:"$(delayed_clear)","click_event":\
-      {"action":"run_command","command":"/function rauch:settings/global_settings/enable_delayed_clear"}},\
-    {text:"]   ",color:"dark_gray"},\
-    {text:"[",color:"dark_gray"},\
-    {text:"No",color:"$(not_delayed_clear)","click_event":\
-      {"action":"run_command","command":"/function rauch:settings/global_settings/disable_delayed_clear"}},\
-    {text:"]\n",color:"dark_gray"},\
-  {"text":"\nWokkaman Selectable:\n","hover_event":{"action":"show_text","value":[\
-    {"text":"Sets wether the wokkaman kit can be selected in the kit selector by anyone, in any mode. Default off."}]}},\
-    {text:"[",color:"dark_gray"},\
-    {text:"Yes",color:"$(wokkaman_selectability)","click_event":\
-      {"action":"run_command","command":"/function rauch:settings/global_settings/enable_wokkaman_selectability"}},\
-    {text:"]   ",color:"dark_gray"},\
-    {text:"[",color:"dark_gray"},\
-    {text:"No",color:"$(not_wokkaman_selectability)","click_event":\
-      {"action":"run_command","command":"/function rauch:settings/global_settings/disable_wokkaman_selectability"}},\
-    {text:"]\n",color:"dark_gray"},\
-  {"text":"\nLaunchpads in Lobby:\n","hover_event":{"action":"show_text","value":[\
-    {"text":"Turns wool blocks in the lobby into launchpads, just like in a game. Default off."}]}},\
-    {text:"[",color:"dark_gray"},\
-    {text:"Yes",color:"$(launchpads_in_lobby)","click_event":\
-      {"action":"run_command","command":"/function rauch:settings/global_settings/enable_launchpads_in_lobby"}},\
-    {text:"]   ",color:"dark_gray"},\
-    {text:"[",color:"dark_gray"},\
-    {text:"No",color:"$(not_launchpads_in_lobby)","click_event":\
-      {"action":"run_command","command":"/function rauch:settings/global_settings/disable_launchpads_in_lobby"}},\
-    {text:"]\n",color:"dark_gray"}\
+  "",{"text":"      Toggles\n\n","bold":true},\
+  {"text":"[",color:"dark_gray"},\
+    {text:"Reload Message",color:"$(reload_message)","hover_event":{"action":"show_text","value":[\
+      {"text":"Send the reload message every time the world gets reloaded. Default on."}]},"click_event":\
+        {"action":"run_command","command":"/function rauch:settings/toggles/toggle_reload_message"}},\
+  {text:"]\n",color:"dark_gray"},\
+  {text:"[",color:"dark_gray"},\
+    {"text":"Enable Flag Sprint",color:"$(flag_sprint)","hover_event":{"action":"show_text","value":[\
+      {"text":"Experimental gameplay balancing setting. Sets wether players that carry the flag in the capture the flag mode can sprint. Default off."}]},"click_event":\
+        {"action":"run_command","command":"/function rauch:settings/toggles/toggle_flag_sprint"}},\
+  {text:"]\n",color:"dark_gray"},\
+  {text:"[",color:"dark_gray"},\
+    {"text":"Delayed Clear",color:"$(delayed_clear)","hover_event":{"action":"show_text","value":[\
+      {"text":"Clears players 10 ticks after a game stars and ends. Sometimes on servers the inventory glitches out and this setting fixes that. Default on."}]},"click_event":\
+        {"action":"run_command","command":"/function rauch:settings/toggles/toggle_delayed_clear"}},\
+  {text:"]\n",color:"dark_gray"},\
+  {text:"[",color:"dark_gray"},\
+    {"text":"Wokkaman Selectable",color:"$(wokkaman_selectability)","hover_event":{"action":"show_text","value":[\
+      {"text":"Sets wether the wokkaman kit can be selected in the kit selector by anyone, in any mode. Default off."}]},"click_event":\
+        {"action":"run_command","command":"/function rauch:settings/toggles/toggle_wokkaman_selectability"}},\
+  {text:"]\n",color:"dark_gray"},\
+  {text:"[",color:"dark_gray"},\
+    {"text":"Launchpads in Lobby",color:"$(launchpads_in_lobby)","hover_event":{"action":"show_text","value":[\
+      {"text":"Turns wool blocks in the lobby into launchpads, just like in a game. Default off."}]},"click_event":\
+        {"action":"run_command","command":"/function rauch:settings/toggles/toggle_launchpads_in_lobby"}},\
+  {text:"]\n",color:"dark_gray"}\
 ]
-
