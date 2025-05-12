@@ -51,15 +51,15 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"\n\n[","color":"dark_gray"},{"text":"Wokkaman","color":"$(wokkaman)",\
 "click_event":{"action":"run_command","command":"/trigger kitselect set 9"},\
 "hover_event":{"action":"show_text","value":\
-[{text:"",color:"gray"},{"text":"This kit automatically gets assigned to players in team red in the Wokkaman game mode. You can't select it otherwise, unlesss an admin enables it.\n\n","color":"#C87878"},\
+[{text:"",color:"gray"},{"text":"This kit automatically gets assigned to players in team red in the Wokkaman game mode. You can't select it, unlesss an admin enables it.\n\n","color":"#C87878"},\
 {"text":"Name: ","color":"gray"},{"text":"Wokkaman\n","color":"red"},{"text":"Type: ","color":"gray"},{"text":"Everything\n","color":"red"},\
 {"text":"Stats:  "},{"text":"❤40  ","color":"red"},{"text":"⚔2.0  ","color":"red"},{"text":"Range: 3.6\n\n","color":"red"},{"text":"R (8s): ","color":"red"},\
-{"text":"Wok R\n\n"},{"text":"sR (8s): ","color":"red"},\
-{"text":"Wok sR\n\n"},{"text":"Q (-): ","color":"red"},\
-{"text":"Wok Q\n\n"},{"text":"sQ (9s): ","color":"red"},\
-{"text":"Wok sQ\n\n"},{"text":"F (7s): ","color":"red"},\
-{"text":"Wok F\n\n"},{"text":"sF (5s): ","color":"red"},\
-{"text":"Wok sF"}]}},{"text":"]","color":"dark_gray"}],[\
+{"text":"Shoot a hook that pulls enemies towards you. Press right click again to instead fix the enemy in place and pull youself towards them, lauching them away when arriving.\n\n"},{"text":"Shift-R (8s): ","color":"red"},\
+{"text":"Shoot a projectile that looks for enemies closeby, automatically targeting them, and returning to searching once it hits the target. When no more players are found it explodes and stuns all players hit.\n\n"},{"text":"Q (-): ","color":"red"},\
+{"text":"You get 4 rockets per kill (the ones rotating around you). Press Q to fire them.\n\n"},{"text":"Shift-Q (9s): ","color":"red"},\
+{"text":"Hop onto a nearby enemy, stunning them and dragging them downwards. Stops when arriving at the ground (so the higher you use it the more damage it does).\n\n"},{"text":"F (7s): ","color":"red"},\
+{"text":"When on the ground, launches you in the air. This is the only case the cooldown is used for.\nWhen in the air, it makes you hover for a little bit.\nWhen hovering, it launches you downwards.\nWhen flying using the elytra, it cancels the elytra.\n\n"},{"text":"Shift-F (5s): ","color":"red"},\
+{"text":"Teleport behind the player you are looking at."}]}},{"text":"]","color":"dark_gray"}],[\
 {"text":"   "},{"text":"Other Settings\n\n","bold":true},\
 {"text":"Ambient Particles:\n","hover_event":{"action":"show_text","value":[{"text":"Turns Ambient Particles On/Off in case you don't like them. Some Maps may not have Ambient Particles.","color":"white"}]}},\
 {"text":" [","color":"dark_gray"},{"text":"Off","color":"$(ambient)","click_event":{"action":"run_command","command":"/trigger kitselect set 100"}},{"text":"]      [","color":"dark_gray"},{"text":"On","color":"$(not_ambient)","click_event":{"action":"run_command","command":"/trigger kitselect set 101"}},{"text":"]\n\n","color":"dark_gray"},\

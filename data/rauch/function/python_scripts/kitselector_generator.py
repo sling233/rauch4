@@ -79,13 +79,13 @@ pikka.colors = ["#FFBF47","#DB00B6","#F20089","#EB8842","#FFBF47","#FFBF47","#FF
 
 # Wokkaman definition:
 wokkaman = WokkamanKit("Wokkaman","Everything")
-wokkaman.r_ability = "Wok R"
-wokkaman.sr_ability = "Wok sR"
-wokkaman.q_ability = "Wok Q"
+wokkaman.r_ability = "Shoot a hook that pulls enemies towards you. Press right click again to instead fix the enemy in place and pull youself towards them, lauching them away when arriving."
+wokkaman.sr_ability = "Shoot a projectile that looks for enemies closeby, automatically targeting them, and returning to searching once it hits the target. When no more players are found it explodes and stuns all players hit."
+wokkaman.q_ability = "You get 4 rockets per kill (the ones rotating around you). Press Q to fire them."
 wokkaman.q_cool = "-"
-wokkaman.sq_ability = "Wok sQ"
-wokkaman.f_ability = "Wok F"
-wokkaman.sf_ability = "Wok sF"
+wokkaman.sq_ability = "Hop onto a nearby enemy, stunning them and dragging them downwards. Stops when arriving at the ground (so the higher you use it the more damage it does)."
+wokkaman.f_ability = r"When on the ground, launches you in the air. This is the only case the cooldown is used for.\nWhen in the air, it makes you hover for a little bit.\nWhen hovering, it launches you downwards.\nWhen flying using the elytra, it cancels the elytra."
+wokkaman.sf_ability = "Teleport behind the player you are looking at."
 wokkaman.colors = ["red","red","red","red","red","red","red","red","red","red","red"]
 
 # colors go [name,type,health,damage,range,r,q,f,sr,sq,sf]
@@ -94,7 +94,7 @@ wokkaman.colors = ["red","red","red","red","red","red","red","red","red","red","
 kits = [bolt,zarzahn,raucher,hacker,wark,teleporter,tank,pikka,wokkaman]
 
 # read health damage and range stats
-with open(r"..\game\mechanics\stats.mcfunction","r") as f:
+with open("../game/mechanics/stats.mcfunction","r") as f:
     lines = f.readlines()
     for line in lines:
         for i, kit in enumerate(kits):
@@ -103,7 +103,7 @@ with open(r"..\game\mechanics\stats.mcfunction","r") as f:
             if line[:73] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:entity_interaction_range base set ": kit.range = line[73:-1]
 
 # read cooldowns
-with open(r"..\game\framework\default_conditions.mcfunction","r") as f:
+with open("../game/framework/default_conditions.mcfunction","r") as f:
     lines = f.readlines()
     for line in lines:
         for i, kit in enumerate(kits):
@@ -177,14 +177,14 @@ type_lol = ',{"text":"' + wokkaman.typ + '\\n","color":"' + wokkaman.colors[1] +
 text.append('{"text":"\\n\\n[","color":"dark_gray"},{"text":"' + wokkaman.name + '","color":"$(wokkaman)",\\')
 text.append('"click_event":{"action":"run_command","command":"/trigger kitselect set ' + str(len(kits)) + '"},\\')
 text.append('"hover_event":{"action":"show_text","value":\\')
-text.append('[{text:"",color:"gray"},{"text":"This kit automatically gets assigned to players in team red in the Wokkaman game mode. You can\'t select it otherwise, unlesss an admin enables it.\\n\\n","color":"#C87878"},\\')
+text.append('[{text:"",color:"gray"},{"text":"This kit automatically gets assigned to players in team red in the Wokkaman game mode. You can\'t select it, unlesss an admin enables it.\\n\\n","color":"#C87878"},\\')
 text.append('{"text":"Name: ","color":"gray"},{"text":"' + wokkaman.name + '\\n","color":"' + wokkaman.colors[0] + '"},{"text":"Type: ","color":"gray"}' + type_lol)
 text.append('{"text":"Stats:  "},{"text":"❤' + str(wokkaman.health) + '  ","color":"' + wokkaman.colors[2] + '"},{"text":"⚔' + str(wokkaman.damage) + '  ","color":"' + wokkaman.colors[3] + '"},{"text":"Range: ' + str(wokkaman.range) + '\\n\\n","color":"' + wokkaman.colors[4] + '"},{"text":"R (' + str(wokkaman.r_cool) + '): ","color":"' + wokkaman.colors[5] + '"},\\')
-text.append('{"text":"' + wokkaman.r_ability + '\\n\\n"},{"text":"sR (' + str(wokkaman.sr_cool) + '): ","color":"' + wokkaman.colors[8] + '"},\\')
+text.append('{"text":"' + wokkaman.r_ability + '\\n\\n"},{"text":"Shift-R (' + str(wokkaman.sr_cool) + '): ","color":"' + wokkaman.colors[8] + '"},\\')
 text.append('{"text":"' + wokkaman.sr_ability + '\\n\\n"},{"text":"Q (' + str(wokkaman.q_cool) + '): ","color":"' + wokkaman.colors[6] + '"},\\')
-text.append('{"text":"' + wokkaman.q_ability + '\\n\\n"},{"text":"sQ (' + str(wokkaman.sq_cool) + '): ","color":"' + wokkaman.colors[9] + '"},\\')
+text.append('{"text":"' + wokkaman.q_ability + '\\n\\n"},{"text":"Shift-Q (' + str(wokkaman.sq_cool) + '): ","color":"' + wokkaman.colors[9] + '"},\\')
 text.append('{"text":"' + wokkaman.sq_ability + '\\n\\n"},{"text":"F (' + str(wokkaman.f_cool) + '): ","color":"' + wokkaman.colors[7] + '"},\\')
-text.append('{"text":"' + wokkaman.f_ability + '\\n\\n"},{"text":"sF (' + str(wokkaman.sf_cool) + '): ","color":"' + wokkaman.colors[10] + '"},\\')
+text.append('{"text":"' + wokkaman.f_ability + '\\n\\n"},{"text":"Shift-F (' + str(wokkaman.sf_cool) + '): ","color":"' + wokkaman.colors[10] + '"},\\')
 text.append('{"text":"' + wokkaman.sf_ability + '"}]}},{"text":"]","color":"dark_gray"}],[\\')
 
 
