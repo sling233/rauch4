@@ -1,5 +1,5 @@
 execute at @s run playsound minecraft:block.beacon.power_select master @a
-execute as @s[nbt={OnGround:1b}] run tag @s add flyer_q_ground
+execute if predicate rauch:on_ground run tag @s add flyer_q_ground
 execute as @s[tag=!flyer_q_ground] run attribute @s minecraft:gravity base set 0
 execute as @s[tag=!flyer_q_ground] run effect give @s minecraft:levitation 1 0 true
 execute as @s[tag=flyer_q_ground] run attribute @s minecraft:gravity base set -0.4
