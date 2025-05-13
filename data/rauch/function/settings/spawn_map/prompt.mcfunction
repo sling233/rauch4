@@ -1,4 +1,5 @@
-tellraw @s [{"text":"\n------ Spawn a prebuilt map ------","color":"yellow"}]
+tellraw @s [{"text":"\n--------- Add a map ---------","color":"yellow"}]
+tellraw @s [{"text":"Official Maps:","color":"green"}]
 tellraw @s [{"text":"Spawns a prebuilt map and automatically sets up spawn positions etc. The map spawns at your location, expanding into positive x, y and z","color":"yellow"}]
 tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Splat","color":"light_purple","hover_event":{"action":"show_text","value":[{"text":"A medium-sized splatoon themed map balanced for Deathmatch but also usable for other game modes.\nSize: 75x23"}]},"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_map/spawn_macro {id:splat}"}},{"text":"]"}]
 tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Ancient","color":"light_purple","hover_event":{"action":"show_text","value":[{"text":"A larger ancient city themed map good for King of the Hill and Deathmatch. Not recommended for Capture the Flag.\nSize: 65x41"}]},"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_map/spawn_macro {id:ancient}"}},{"text":"]"}]
@@ -8,4 +9,6 @@ tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Klotz 2.0","color":"light_
 tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Arena","color":"light_purple","hover_event":{"action":"show_text","value":[{"text":"A small gladiator arena for Deathmatches or Wokkaman games.\nSize: 61x31"}]},"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_map/spawn_macro {id:arena}"}},{"text":"]"}]
 tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Trommlacherry","color":"light_purple","hover_event":{"action":"show_text","value":[{"text":"A japanese cherry blossom themed map meant for Capture the Flag and King of the Hill.\nSize: 92x47"}]},"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_map/spawn_macro {id:cherry}"}},{"text":"]"}]
 tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Wokkacity","color":"light_purple","hover_event":{"action":"show_text","value":[{"text":"A dark, rainy city map for Wokkaman games.\nSize: 66x67"}]},"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_map/spawn_macro {id:wcity}"}},{"text":"]"}]
+tellraw @s [{"text":"\nCustom Maps:",color:"green"}]
+tellraw @s [{"text":"If you would like to set up a custom map instead, click ","color":"yellow"},{text:"here",color:"light_purple","click_event":{"action":"run_command","command":"/function rauch:settings/edit_map/add_map"}}]
 tellraw @s [{"text":"-------------------------------","color":"yellow"}]

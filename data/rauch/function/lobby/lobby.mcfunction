@@ -26,11 +26,11 @@ title @s[scores={kit=5},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text"
 title @s[scores={kit=6},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Teleporter","color":"yellow"}]
 title @s[scores={kit=7},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Tank","color":"yellow"}]
 title @s[scores={kit=8},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Pikka","color":"yellow"}]
-title @s[scores={kit=9},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Wokkaman... how?","color":"yellow"}]
+title @s[scores={kit=9},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Wokkaman... lol","color":"yellow"}]
 
 # when in queue display other players in queue
 title @s[tag=queue] actionbar [{"text":"Queue: ","color":"yellow"},{"selector":"@a[tag=queue]"}]
 #title @s[tag=queue] actionbar [{"text":"Waiting for players... ","color":"yellow"}]
 #execute unless entity @a[tag=queue,team=Red] run title @s[tag=queue] actionbar [{"text":"Queue: ","color":"yellow"},{"selector":"@a[tag=queue,team=Red]"},{"text":", ","color":"gray"},{"selector":"@a[tag=queue,team=Blue]"},{"text":", ","color":"gray"},{"selector":"@a[tag=queue,team=Random]"}]
 
-execute if score %enable_launchpads_in_lobby global matches 1 run function rauch:game/mechanics/launchpads/check_for_launchpads
+execute if score Global enable_launchpads matches 1 run function rauch:game/mechanics/launchpads/check_for_launchpads

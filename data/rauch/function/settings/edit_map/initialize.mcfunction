@@ -11,7 +11,7 @@ time set day
 weather clear
 
 scoreboard players add Global number_of_maps 1
-tellraw @s {"text":"Adding a Map...","color":"yellow"}
+tellraw @s {"text":"Adding a Custom Map...","color":"yellow"}
 tellraw @s [{"text":"Map #","color":"yellow"},{"score":{"name":"Global","objective":"number_of_maps"},"color":"light_purple"},\
 {"text":"  "},{"text":"[Guide]",color:"gold","click_event":{"action":"run_command","command":"/function rauch:tutorial/tutorialmap"},\
 italic:true,"hover_event":{"action":"show_text","value":[{"text":"Click to print guide"}]}}]

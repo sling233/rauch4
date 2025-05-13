@@ -6,7 +6,6 @@ reload_message:"dark_green",\
 flag_sprint:"gray",\
 delayed_clear:"gray",\
 wokkaman_selectability:"gray",\
-launchpads_in_lobby:"gray",\
 }
 
 execute if score Global mode matches 0 run data modify storage rauch temp.deathmatch set value "dark_green"
@@ -24,8 +23,6 @@ execute if score %enable_delayed_clear global matches 1 run data modify storage 
 {delayed_clear:"dark_green"}
 execute if score %enable_wokkaman_selectability global matches 1 run data modify storage rauch temp merge value \
 {wokkaman_selectability:"dark_green"}
-execute if score %enable_launchpads_in_lobby global matches 1 run data modify storage rauch temp merge value \
-{launchpads_in_lobby:"dark_green"}
 
 # sets up storage rauch temp.pages
 function rauch:lobby/ui/adminbook/giveadminbook_macro with storage rauch temp

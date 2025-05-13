@@ -144,7 +144,6 @@ execute unless score %reload_message_disabled global matches 0.. run scoreboard 
 execute unless score %enable_flag_sprint global matches 0.. run scoreboard players set %reload_message_disabled global 0
 execute unless score %enable_delayed_clear global matches 0.. run scoreboard players set %enable_delayed_clear global 1
 execute unless score %enable_wokkaman_selectability global matches 0.. run scoreboard players set %enable_wokkaman_selectability global 0
-execute unless score %enable_launchpads_in_lobby global matches 0.. run scoreboard players set %enable_launchpads_in_lobby global 0
 
 # setup stuff
 execute unless entity @a[tag=admin] unless score %reload_message_disabled global matches 1 run tellraw @a [{"text":"The Wokkagames Data Pack is active. For a setup guide click ","color":"yellow"},{"text":"here.","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/toggles/toggle_reload_message"}}]

@@ -6,5 +6,4 @@ clear @s
 scoreboard players reset @s click
 scoreboard players reset Global mapParticle
 tag @s add lobby
-weather clear
-time set day
+function rauch:lobby/activate_lobby_settings

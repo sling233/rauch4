@@ -58,22 +58,17 @@ execute store result score t_page_count temp run data get storage rauch temp.pag
 scoreboard players remove t_page_count temp 1
 execute store result storage rauch temp.last_page_idx int 1 run scoreboard players get t_page_count temp
 function rauch:lobby/ui/adminbook/mapselector_finish with storage rauch temp
+scoreboard players reset t_page_count temp
 
 # append settings page
 data modify storage rauch temp.pages append value [\
   "",{"text":"      Settings","bold":true},\
-  {"text":"\nSpawn prebuilt Map","color":"dark_blue","hover_event":{"action":"show_text","value":[\
-    {"text":"Spawns a prebuilt map. Click for further options"}]},"click_event":\
-    {"action":"run_command","command":"/function rauch:settings/spawn_map/prompt"}},\
+  {"text":"\nLobby Settings","color":"dark_blue","hover_event":{"action":"show_text","value":[\
+  {"text":"Click to add or edit lobby data, or to spawn the official lobby"}]},"click_event":\
+  {"action":"run_command","command":"/function rauch:settings/edit_lobby/edit_initialize_check"}},\
   {"text":"\nEveryone to Lobby","color":"dark_blue","hover_event":{"action":"show_text","value":[\
     {"text":"Moves every online player to the lobby"}]},"click_event":\
     {"action":"run_command","command":"/function rauch:settings/movetolobby/movetolobby"}},\
-  {"text":"\nChange Lobby Pos","color":"dark_blue","hover_event":{"action":"show_text","value":[\
-    {"text":"Click to change the Position of the Lobby to where you are standing right now"}]},"click_event":\
-    {"action":"run_command","command":"/function rauch:settings/changelobbypos"}},\
-  {"text":"\nSpawn prebuilt Lobby","color":"dark_blue","hover_event":{"action":"show_text","value":[\
-    {"text":"Click if you want to spawn the prebuilt lobby"}]},"click_event":\
-    {"action":"run_command","command":"/function rauch:settings/spawn_lobby/prompt"}},\
   {"text":"\n\nCheck for Updates","color":"black","bold":true},\
   {"text":"\n[Pack] ","color":"dark_blue","hover_event":{"action":"show_text","value":[\
     {"text":"Click if you have a new version of the datapack in the world folder"}]},"click_event":\
@@ -117,9 +112,4 @@ $data modify storage rauch temp.pages append value [\
       {"text":"Sets wether the wokkaman kit can be selected in the kit selector by anyone, in any mode. Default off."}]},"click_event":\
         {"action":"run_command","command":"/function rauch:settings/toggles/toggle_wokkaman_selectability"}},\
   {text:"]\n",color:"dark_gray"},\
-  {text:"[",color:"dark_gray"},\
-    {"text":"Launchpads in Lobby",color:"$(launchpads_in_lobby)","hover_event":{"action":"show_text","value":[\
-      {"text":"Turns wool blocks in the lobby into launchpads, just like in a game. Default off."}]},"click_event":\
-        {"action":"run_command","command":"/function rauch:settings/toggles/toggle_launchpads_in_lobby"}},\
-  {text:"]\n",color:"dark_gray"}\
 ]

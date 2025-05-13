@@ -1,5 +1,3 @@
-time set day
-weather clear
 kill @e[type=marker,tag=map]
 kill @e[type=armor_stand,tag=stun]
 kill @e[type=armor_stand,tag=flag]
@@ -41,3 +39,5 @@ execute as @a[tag=spectator] run function rauch:game/framework/spectate_stop
 execute if score %enable_delayed_clear global matches 1 run schedule function rauch:game/framework/clear 10t
 
 scoreboard players reset Global game_running
+
+function rauch:lobby/activate_lobby_settings
