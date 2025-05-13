@@ -33,3 +33,5 @@ attribute @s[scores={kit=9}] minecraft:entity_interaction_range base set 3.6
 
 attribute @s[scores={kit=9}] minecraft:scale base set 1.1
 attribute @s[scores={kit=9}] minecraft:movement_speed base set 0.14
+
+function rauch:kit_stats_override
