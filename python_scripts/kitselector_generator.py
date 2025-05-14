@@ -94,7 +94,7 @@ wokkaman.colors = ["red","red","red","red","red","red","red","red","red","red","
 kits = [bolt,zarzahn,raucher,hacker,wark,teleporter,tank,pikka,wokkaman]
 
 # read health damage and range stats
-with open("../game/mechanics/stats.mcfunction","r") as f:
+with open("../data/rauch/function/game/mechanics/stats.mcfunction","r") as f:
     lines = f.readlines()
     for line in lines:
         for i, kit in enumerate(kits):
@@ -103,7 +103,7 @@ with open("../game/mechanics/stats.mcfunction","r") as f:
             if line[:73] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:entity_interaction_range base set ": kit.range = line[73:-1]
 
 # read cooldowns
-with open("../game/framework/default_conditions.mcfunction","r") as f:
+with open("../data/rauch/function/game/framework/default_conditions.mcfunction","r") as f:
     lines = f.readlines()
     for line in lines:
         for i, kit in enumerate(kits):
@@ -209,7 +209,7 @@ text.append('item_name={"text":"Kit Selector/Settings","color":"yellow"}] 1')
 
 
 # write file
-with open("../lobby/ui/givekitselector_macro.mcfunction","w", encoding="utf-8") as f:
+with open("../data/rauch/function/lobby/ui/givekitselector_macro.mcfunction","w", encoding="utf-8") as f:
     result = ""
     for line in text:
         result += "\n" + line
