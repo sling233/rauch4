@@ -1,4 +1,7 @@
 #team join Lobby @s[team=!Lobby,tag=!queue,tag=lobby]
+# if someone starts the game, this function will still execute 
+# for everyone who had the lobby tag before. kind of ugly but simple fix
+execute as @s[tag=!lobby] run return 0
 
 # give items
 execute as @s[tag=!queue] run function rauch:lobby/ui/item_lobby_check

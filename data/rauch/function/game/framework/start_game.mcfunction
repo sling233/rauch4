@@ -72,7 +72,10 @@ execute if score Global mode matches 5 run function rauch:game/mode/wokkaman/ini
 
 # elytra bossbar after setup so max is properly set
 execute as @a[tag=game] run function rauch:game/ui/bossbar/elytra/set_max
-# wokkaman give starting rockets
+
+# wokkaman give starting rockets (return early if delayed clear is active
+# these  items will be given later in that case
+execute if score %enable_delayed_clear global matches 1 run return 0
 execute as @a[tag=game,scores={kit=9}] run function rauch:game/framework/wokkaman_set_starting_rockets
 execute as @a[tag=game,scores={kit=9}] run function rauch:game/framework/wokkaman_give_starting_firework_rockets
 execute as @a[tag=game,scores={kit=9}] run function rauch:game/framework/wokkaman_give_starting_maces
