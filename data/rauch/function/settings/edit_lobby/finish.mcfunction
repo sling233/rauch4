@@ -32,6 +32,8 @@ scoreboard players reset t_lobby_launchpads temp
 # set data from edit buffer to lobby data
 data modify storage lobby_data spawn_location set from storage lobby_data edit_buffer.spawn_location
 data modify storage lobby_data position set from storage lobby_data edit_buffer.position
+# sets word spawn from storage lobby_data edit_buffer.position
+execute summon marker run function rauch:settings/edit_lobby/finish_set_position
 data modify storage lobby_data version set from storage lobby_data edit_buffer.version
 data modify storage lobby_data time set from storage lobby_data edit_buffer.time
 data modify storage lobby_data weather set from storage lobby_data edit_buffer.weather
