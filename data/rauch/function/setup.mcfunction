@@ -141,8 +141,8 @@ scoreboard objectives add wokkaman_weapon dummy
 
 # default global settings
 execute unless score %reload_message_disabled global matches 0.. run scoreboard players set %reload_message_disabled global 0
-execute unless score %enable_flag_sprint global matches 0.. run scoreboard players set %reload_message_disabled global 0
-execute unless score %enable_delayed_clear global matches 0.. run scoreboard players set %enable_delayed_clear global 1
+execute unless score %enable_flag_sprint global matches 0.. run scoreboard players set %reload_message_disabled global 1
+execute unless score %enable_delayed_clear global matches 0.. run scoreboard players set %enable_delayed_clear global 0
 execute unless score %enable_wokkaman_selectability global matches 0.. run scoreboard players set %enable_wokkaman_selectability global 0
 
 # setup stuff

@@ -99,12 +99,12 @@ $data modify storage rauch temp.pages append value [\
   {text:"]\n",color:"dark_gray"},\
   {text:"[",color:"dark_gray"},\
     {"text":"Enable Flag Sprint",color:"$(flag_sprint)","hover_event":{"action":"show_text","value":[\
-      {"text":"Experimental gameplay balancing setting. Sets wether players that carry the flag in the capture the flag mode can sprint. Default off."}]},"click_event":\
+      {"text":"Experimental gameplay balancing setting. Sets wether players that carry the flag in the capture the flag mode can sprint. Default on."}]},"click_event":\
         {"action":"run_command","command":"/function rauch:settings/toggles/toggle_flag_sprint"}},\
   {text:"]\n",color:"dark_gray"},\
   {text:"[",color:"dark_gray"},\
     {"text":"Delayed Clear",color:"$(delayed_clear)","hover_event":{"action":"show_text","value":[\
-      {"text":"Clears players 10 ticks after a game stars and ends. Sometimes on servers the inventory glitches out and this setting fixes that. Default on."}]},"click_event":\
+      {"text":"Clears players 10 ticks after a game stars and ends. Sometimes on servers the inventory glitches out and this setting fixes that. Default off."}]},"click_event":\
         {"action":"run_command","command":"/function rauch:settings/toggles/toggle_delayed_clear"}},\
   {text:"]\n",color:"dark_gray"},\
   {text:"[",color:"dark_gray"},\
