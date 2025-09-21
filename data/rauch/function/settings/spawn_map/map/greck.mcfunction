@@ -16,6 +16,5 @@ $execute positioned $(x) $(y) $(z) align xyz store success score t_success_1 tem
 $execute positioned $(x) $(y) $(z) align xyz store success score t_success_2 temp run place template rauch:greck2 ~48 ~ ~
 
 scoreboard players operation t_success_1 temp *= t_success_2 temp
-execute if score t_success_1 temp matches 0 run tellraw @s {"text":"Map could not spawn correctly as the area was not fully loaded.","color":"red"}
 
-scoreboard players reset * temp
+execute if score t_success_1 temp matches 0 run return fail

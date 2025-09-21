@@ -27,6 +27,5 @@ scoreboard players operation t_success_1 temp *= t_success_7 temp
 scoreboard players operation t_success_1 temp *= t_success_8 temp
 scoreboard players operation t_success_1 temp *= t_success_9 temp
 scoreboard players operation t_success_1 temp *= t_success_10 temp
-execute if score t_success_1 temp matches 0 run tellraw @s {"text":"Lobby could not spawn correctly as the area was not fully loaded.","color":"red"}
 
-scoreboard players reset * temp
+execute if score t_success_1 temp matches 0 run return fail

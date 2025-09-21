@@ -14,6 +14,4 @@ $execute positioned $(x) $(y) $(z) align xyz positioned ~37.5 ~39 ~44.5 summon m
 
 $execute positioned $(x) $(y) $(z) align xyz store success score t_success_1 temp run place template rauch:klotz ~ ~ ~
 
-execute if score t_success_1 temp matches 0 run tellraw @s {"text":"Map could not spawn correctly as the area was not fully loaded.","color":"red"}
-
-scoreboard players reset * temp
+execute if score t_success_1 temp matches 0 run return fail

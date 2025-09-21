@@ -97,6 +97,5 @@ scoreboard players operation t_success_1 temp *= t_success_29 temp
 scoreboard players operation t_success_1 temp *= t_success_30 temp
 scoreboard players operation t_success_1 temp *= t_success_31 temp
 scoreboard players operation t_success_1 temp *= t_success_32 temp
-execute if score t_success_1 temp matches 0 run tellraw @s {"text":"Map could not spawn correctly as the area was not fully loaded.","color":"red"}
 
-scoreboard players reset * temp
+execute if score t_success_1 temp matches 0 run return fail
