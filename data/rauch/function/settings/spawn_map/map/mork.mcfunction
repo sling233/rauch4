@@ -12,14 +12,10 @@ $execute positioned $(x) $(y) $(z) align xyz positioned ~4.5 ~30 ~13.5 summon ma
 $execute positioned $(x) $(y) $(z) align xyz positioned ~39.5 ~29 ~13.5 summon marker run function rauch:settings/spawn_map/spawn_set_center {index:$(index)}
 $execute positioned $(x) $(y) $(z) align xyz positioned ~74.5 ~30 ~13.5 summon marker run function rauch:settings/spawn_map/spawn_set_blue {index:$(index)}
 
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_1 temp run place template rauch:mork1 ~ ~ ~
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_2 temp run place template rauch:mork2 ~48 ~ ~
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_3 temp run fill ~34.5 ~8 ~17.5 ~30.5 ~8 ~22.5 big_dripleaf
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_4 temp run fill ~44.5 ~8 ~9.5 ~48.5 ~8 ~4.5 big_dripleaf[facing=south]
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_1 temp run place template rauch:mork1 ~ ~ ~ none none 1 0 strict
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_2 temp run place template rauch:mork2 ~48 ~ ~ none none 1 0 strict
 
 scoreboard players operation t_success_1 temp *= t_success_2 temp
 scoreboard players operation t_success_1 temp *= t_success_2 temp
-scoreboard players operation t_success_1 temp *= t_success_3 temp
-scoreboard players operation t_success_1 temp *= t_success_4 temp
 
 execute if score t_success_1 temp matches 0 run return fail
