@@ -157,7 +157,7 @@ data modify storage map_data versions set value [\
   {id:"ancient",version:5},\
   {id:"greck",version:4},\
   {id:"mork",version:5},\
-  {id:"klotz",version:4},\
+  {id:"klotz",version:5},\
   {id:"arena",version:3},\
   {id:"cherry",version:1},\
   {id:"wcity",version:5}\
