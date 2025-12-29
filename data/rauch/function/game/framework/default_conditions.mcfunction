@@ -8,12 +8,12 @@ execute as @a[scores={kit=1}] run scoreboard players set @s cool3_respawn 0
 #zarzahn
 execute as @a[scores={kit=2}] run scoreboard players set @s cool1_target 260
 execute as @a[scores={kit=2}] run scoreboard players set @s cool2_target 190
-execute as @a[scores={kit=2}] run scoreboard players set @s cool3_target 560
+execute as @a[scores={kit=2}] run scoreboard players set @s cool3_target 360
 execute as @a[scores={kit=2}] run scoreboard players set @s cool1_respawn 0
 execute as @a[scores={kit=2}] run scoreboard players set @s cool2_respawn 0
 execute as @a[scores={kit=2}] run scoreboard players set @s cool3_respawn 0
 #raucher (no r respawn cooldown, its always just set to cool1_target)
-execute as @a[scores={kit=3}] run scoreboard players set @s cool1_target 140
+execute as @a[scores={kit=3}] run scoreboard players set @s cool1_target 70
 execute as @a[scores={kit=3}] run scoreboard players set @s cool2_target 360
 execute as @a[scores={kit=3}] run scoreboard players set @s cool3_target 300
 execute as @a[scores={kit=3}] run scoreboard players set @s cool2_respawn 0

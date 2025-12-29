@@ -38,7 +38,7 @@ zarzahn.f_ability = "Use Shift-F to create a Warp Point. The next 18 seconds you
 zarzahn.colors = ["#00EE00","#3D773D","#3D993D","#29CC29","#00EE00","#00EE00","#00EE00","#00EE00"]
 
 raucher = Kit("Raucher","Support")
-raucher.r_ability = "You throw a Damage Cloud that slows enemies and increases their received damage by 40%. Hold Sneak to throw a Health Cloud that gives your teammates regeneration. You can store 3 clouds."
+raucher.r_ability = "You throw a Damage Cloud that increases received damage by 40% for all enemies inside. Hold Sneak to throw a Health Cloud that heals teammates instead. You can store 3 clouds."
 #raucher.r_cool = "7s per cloud"
 raucher.q_ability = "Buffs damage for a teammate by 50% for 5 seconds (look at them and press Q)."
 raucher.f_ability = "Spawns 8 spiders, that attack enemies in a 30 block radius. The Spiders select targets evenly. They die in one hit or after 9 seconds."

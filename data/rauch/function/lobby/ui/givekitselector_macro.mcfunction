@@ -10,12 +10,12 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 [{"text":"Name: ","color":"gray"},{"text":"Zarzahn\n","color":"#00EE00"},{"text":"Type: ","color":"gray"},{"text":"Fighter","color":"#3D773D"},{"text":" / ","color":"gray"},{"text":"Support\n","color":"#3D773D"},\
 {"text":"Stats:  "},{"text":"❤16  ","color":"#3D993D"},{"text":"⚔1.2  ","color":"#29CC29"},{"text":"Range: 3\n\n","color":"#00EE00"},{"text":"R (13s): ","color":"#00EE00"},\
 {"text":"You shoot out a hook that pulls enemies towards you. Once they arrive, they are stunned for 0.75 seconds.\n\n"},{"text":"Q (9.5s): ","color":"#00EE00"},\
-{"text":"Shoots a rocket that knocks players away on explosion.\n\n"},{"text":"F (28s): ","color":"#00EE00"},\
+{"text":"Shoots a rocket that knocks players away on explosion.\n\n"},{"text":"F (18s): ","color":"#00EE00"},\
 {"text":"Use Shift-F to create a Warp Point. The next 18 seconds you have the ability to teleport to that point by pressing F again (without sneaking)."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Raucher","color":"$(raucher)","click_event":{"action":"run_command","command":"/trigger kitselect set 3"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Raucher\n","color":"#FFA54C"},{"text":"Type: ","color":"gray"},{"text":"Support\n","color":"#C7290A"},\
-{"text":"Stats:  "},{"text":"❤12  ","color":"#DD4D1D"},{"text":"⚔0.9  ","color":"#F27130"},{"text":"Range: 2.5\n\n","color":"#FFA54C"},{"text":"R (7s per cloud): ","color":"#FFA54C"},\
-{"text":"You throw a Damage Cloud that slows enemies and increases their received damage by 40%. Hold Sneak to throw a Health Cloud that gives your teammates regeneration. You can store 3 clouds.\n\n"},{"text":"Q (18s): ","color":"#FFA54C"},\
+{"text":"Stats:  "},{"text":"❤12  ","color":"#DD4D1D"},{"text":"⚔0.9  ","color":"#F27130"},{"text":"Range: 2.5\n\n","color":"#FFA54C"},{"text":"R (3.5s per cloud): ","color":"#FFA54C"},\
+{"text":"You throw a Damage Cloud that increases received damage by 40% for all enemies inside. Hold Sneak to throw a Health Cloud that heals teammates instead. You can store 3 clouds.\n\n"},{"text":"Q (18s): ","color":"#FFA54C"},\
 {"text":"Buffs damage for a teammate by 50% for 5 seconds (look at them and press Q).\n\n"},{"text":"F (15s): ","color":"#FFA54C"},\
 {"text":"Spawns 8 spiders, that attack enemies in a 30 block radius. The Spiders select targets evenly. They die in one hit or after 9 seconds."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Hacker","color":"$(hacker)","click_event":{"action":"run_command","command":"/trigger kitselect set 4"},"hover_event":{"action":"show_text","value":\
