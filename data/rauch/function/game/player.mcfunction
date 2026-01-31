@@ -4,15 +4,7 @@ execute if items entity @s weapon.offhand minecraft:carrot_on_a_stick run functi
 execute as @s[scores={death=1..}] run function rauch:game/mechanics/die
 
 #class specific
-execute as @s[scores={kit=1}] run function rauch:game/kits/bolt/bolt
-execute as @s[scores={kit=2}] run function rauch:game/kits/zarzahn/zarzahn
-execute as @s[scores={kit=3}] run function rauch:game/kits/raucher/raucher
-execute as @s[scores={kit=4}] run function rauch:game/kits/hacker/hacker
-execute as @s[scores={kit=5}] run function rauch:game/kits/wark/wark
-execute as @s[scores={kit=6}] run function rauch:game/kits/teleporter/teleporter
-execute as @s[scores={kit=7}] run function rauch:game/kits/tank/tank
-execute as @s[scores={kit=8}] run function rauch:game/kits/flyer/flyer
-execute as @s[scores={kit=9}] run function rauch:game/kits/wokkaman/wokkaman
+function rauch:game/kits/tick
 
 #general
 execute as @s[scores={push_levitation_timer=-1}] run effect clear @s minecraft:levitation
