@@ -1,5 +1,5 @@
 clear @s minecraft:carrot_on_a_stick
-function rauch:game/mechanics/weapon
+function rauch:game/kits/set_weapon
 
 execute as @s[predicate=rauch:hack] run tellraw @s {"text":"You are hacked and cannot use your abilities!","color":"red"}
 execute as @s[predicate=rauch:hack] run playsound minecraft:block.chain.break master @s

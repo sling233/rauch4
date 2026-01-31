@@ -52,7 +52,7 @@ clear @s carrot_on_a_stick
 execute if score Global mode matches 4 as @s[tag=flagPickedUp] run function rauch:game/mode/capture_the_flag/flag_drop
 execute if score Global mode matches 2 as @s[team=Red] run scoreboard players add Global killNumBlue 1
 execute if score Global mode matches 2 as @s[team=Blue] run scoreboard players add Global killNumRed 1
-function rauch:game/mechanics/weapon
+function rauch:game/kits/set_weapon
 function rauch:game/kits/set_armor_body
 function rauch:game/kits/set_armor_head
 function rauch:game/kits/set_armor_protection
