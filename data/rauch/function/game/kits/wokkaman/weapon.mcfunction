@@ -39,4 +39,4 @@ execute if score @s wokkaman_weapon matches 4 run return run item replace entity
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 
-tellraw @s ["Error when trying to give wokkaman weapon to ",{"selector":"@s"},": unimplemented weapon id ",{"score":{"name":"@s","objective":"kit"}}]
+tellraw @s [{text:"",color:"red"},"Error when trying to give wokkaman weapon to ",{"selector":"@s"},": unimplemented weapon id ",{"score":{"name":"@s","objective":"wokkaman_weapon"}}]

@@ -9,4 +9,4 @@ execute as @s[scores={kit=8}] run return run function rauch:game/kits/flyer/tick
 execute as @s[scores={kit=9}] run return run function rauch:game/kits/wokkaman/tick
 
 
-tellraw @s ["Error when trying to run tick function for ",{"selector":"@s"},": not implemented for kit id ",{"score":{"name":"@s","objective":"kit"}}]
+tellraw @s [{text:"",color:"red"},"Error when trying to run tick function for ",{"selector":"@s"},": not implemented for kit id ",{"score":{"name":"@s","objective":"kit"}}]
