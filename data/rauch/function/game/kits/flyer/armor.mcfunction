@@ -7,7 +7,7 @@ item replace entity @s armor.chest with elytra[\
   !minecraft:attribute_modifiers\
 ] 1
 
-execute as @s unless score @s elytra matches 1.. unless score @s hack matches 1.. run item replace entity @s armor.chest with elytra[\
+execute unless score @s elytra matches 1.. unless score @s hack matches 1.. run item replace entity @s armor.chest with elytra[\
   item_name={"text":"Cool Elytra"},\
   unbreakable={},\
   rarity=uncommon,\

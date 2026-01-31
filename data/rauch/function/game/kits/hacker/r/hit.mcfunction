@@ -1,15 +1,13 @@
 #executed at hacker, as hit player
 scoreboard players set @s hack 160
 scoreboard players set @p hack_tag_timer 160
-function rauch:game/kits/hacker/r/hack_init
 
+function rauch:game/ui/bossbar/hack/set_max
+function rauch:game/ui/bossbar/hack/visible
 
-#execute unless score @s hacker_damage_timer matches 1.. run scoreboard players remove @s armor_target 5
-#function rauch:game/kits/set_armor_protection
-#scoreboard players set @s hacker_damage_timer 240
-#scoreboard players set @p hacker_damage_timer_control 240
-#effect give @s minecraft:conduit_power 12 0 false
-#execute at @s run playsound minecraft:entity.allay.death master @s
+# additional kit-specific hack_init tasks
+function rauch:game/kits/hack_init
+
 
 # check if player was already tagged (if yes found is set to 1)
 tag @s add temp

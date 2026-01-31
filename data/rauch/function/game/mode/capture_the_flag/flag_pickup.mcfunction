@@ -20,7 +20,11 @@ title @s[team=Red] subtitle {"text":"Bring it to Blue base!","color":"gray"}
 title @s[team=Blue] subtitle {"text":"Bring it to Red base!","color":"gray"}
 
 scoreboard players set @s hack 200
-function rauch:game/kits/hacker/r/hack_init
+function rauch:game/ui/bossbar/hack/set_max
+function rauch:game/ui/bossbar/hack/visible
+# additional kit-specific hack_init tasks
+function rauch:game/kits/hack_init
+
 execute at @s[scores={kit=2}] as @e[type=marker,tag=zarzahn_rocket] if score @s pnum = @p pnum run kill @s
 
 function rauch:game/kits/set_armor_head
