@@ -30,9 +30,9 @@ execute if score @s kit matches 9 store result score @s wokkaman_weapon run rand
 execute if score @s kit matches 9 store result score @s wokkaman_helmet run random value 0..50
 function rauch:game/mechanics/weapon
 function rauch:game/mechanics/stats
-function rauch:game/mechanics/set_armor_body
-function rauch:game/mechanics/set_armor_head
-function rauch:game/mechanics/set_armor_protection
+function rauch:game/kits/set_armor_body
+function rauch:game/kits/set_armor_head
+function rauch:game/kits/set_armor_protection
 
 effect give @s minecraft:hunger 6 255 true
 effect give @s minecraft:resistance 4 255 true

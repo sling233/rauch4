@@ -8,4 +8,4 @@ execute if score @s kit matches 7 run return run function rauch:game/kits/tank/a
 execute if score @s kit matches 8 run return run function rauch:game/kits/flyer/armor
 execute if score @s kit matches 9 run return run function rauch:game/kits/wokkaman/armor
 
-tellraw @p ["Error when trying to set body armor of ",{"selector":"@s"},": not implemented for kit id ",{"score":{"name":"@s","objective":"kit"}}]
+tellraw @s ["Error when trying to set body armor of ",{"selector":"@s"},": not implemented for kit id ",{"score":{"name":"@s","objective":"kit"}}]
