@@ -5,4 +5,4 @@ tellraw @a[tag=!lobby] [{"selector":"@a[tag=t_killed]"},{"text":" was killed by 
 
 # kill rewards
 execute if score Global game_running matches 1.. if score Global mode matches 5 run function rauch:game/mode/wokkaman/kill
-execute as @s[tag=game,scores={kit=9}] run function rauch:game/ability/wokkaman/kill_reward
+execute as @s[tag=game,scores={kit=9}] run function rauch:game/kits/wokkaman/kill_reward

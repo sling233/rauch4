@@ -1,33 +1,33 @@
-execute as @s[scores={dropcoas=1..}] run function rauch:game/ability/sdrop
-execute as @s[scores={click=1..}] run function rauch:game/ability/sclick
-execute if items entity @s weapon.offhand minecraft:carrot_on_a_stick run function rauch:game/ability/sswap
+execute as @s[scores={dropcoas=1..}] run function rauch:game/kits/sdrop
+execute as @s[scores={click=1..}] run function rauch:game/kits/sclick
+execute if items entity @s weapon.offhand minecraft:carrot_on_a_stick run function rauch:game/kits/sswap
 execute as @s[scores={death=1..}] run function rauch:game/mechanics/die
 
 #class specific
-execute as @s[scores={kit=1}] run function rauch:game/ability/bolt/bolt
-execute as @s[scores={kit=2}] run function rauch:game/ability/zarzahn/zarzahn
-execute as @s[scores={kit=3}] run function rauch:game/ability/raucher/raucher
-execute as @s[scores={kit=4}] run function rauch:game/ability/hacker/hacker
-execute as @s[scores={kit=5}] run function rauch:game/ability/wark/wark
-execute as @s[scores={kit=6}] run function rauch:game/ability/teleporter/teleporter
-execute as @s[scores={kit=7}] run function rauch:game/ability/tank/tank
-execute as @s[scores={kit=8}] run function rauch:game/ability/flyer/flyer
-execute as @s[scores={kit=9}] run function rauch:game/ability/wokkaman/wokkaman
+execute as @s[scores={kit=1}] run function rauch:game/kits/bolt/bolt
+execute as @s[scores={kit=2}] run function rauch:game/kits/zarzahn/zarzahn
+execute as @s[scores={kit=3}] run function rauch:game/kits/raucher/raucher
+execute as @s[scores={kit=4}] run function rauch:game/kits/hacker/hacker
+execute as @s[scores={kit=5}] run function rauch:game/kits/wark/wark
+execute as @s[scores={kit=6}] run function rauch:game/kits/teleporter/teleporter
+execute as @s[scores={kit=7}] run function rauch:game/kits/tank/tank
+execute as @s[scores={kit=8}] run function rauch:game/kits/flyer/flyer
+execute as @s[scores={kit=9}] run function rauch:game/kits/wokkaman/wokkaman
 
 #general
 execute as @s[scores={push_levitation_timer=-1}] run effect clear @s minecraft:levitation
-execute as @s[scores={wok_push_timer=..-1}] run function rauch:game/ability/wokkaman/r/push_particle
-execute as @s[tag=raucher_control,tag=!raucher_debuff] run function rauch:game/ability/raucher/r/slow/leave
-execute as @s[scores={hack=0..}] run function rauch:game/ability/hacker/r/hacked_player
-execute as @s[scores={hacker_damage_timer=0..}] run function rauch:game/ability/hacker/q/debuff
-execute as @s[scores={teleweak=0..}] run function rauch:game/ability/teleporter/r/debuff
-execute as @s[scores={hacker_ability=0..}] run function rauch:game/ability/hacker/f/ability_boost
-execute as @s[scores={raucherdmg=0..}] run function rauch:game/ability/raucher/q/buff
-execute as @s[scores={tank_resistance=0..}] run function rauch:game/ability/tank/q/resistance
-execute as @s[scores={wark_startup=0..}] run function rauch:game/ability/wark/r/startup
-execute as @s[scores={wark_detect=0..}] run function rauch:game/ability/wark/r/trapped_player
-execute as @s[tag=wok_stepped_on] run function rauch:game/ability/wokkaman/sq/stepped_on
-execute as @s[tag=wokkaman_q_shooting] run function rauch:game/ability/wokkaman/q/shooting
+execute as @s[scores={wok_push_timer=..-1}] run function rauch:game/kits/wokkaman/r/push_particle
+execute as @s[tag=raucher_control,tag=!raucher_debuff] run function rauch:game/kits/raucher/r/slow/leave
+execute as @s[scores={hack=0..}] run function rauch:game/kits/hacker/r/hacked_player
+execute as @s[scores={hacker_damage_timer=0..}] run function rauch:game/kits/hacker/q/debuff
+execute as @s[scores={teleweak=0..}] run function rauch:game/kits/teleporter/r/debuff
+execute as @s[scores={hacker_ability=0..}] run function rauch:game/kits/hacker/f/ability_boost
+execute as @s[scores={raucherdmg=0..}] run function rauch:game/kits/raucher/q/buff
+execute as @s[scores={tank_resistance=0..}] run function rauch:game/kits/tank/q/resistance
+execute as @s[scores={wark_startup=0..}] run function rauch:game/kits/wark/r/startup
+execute as @s[scores={wark_detect=0..}] run function rauch:game/kits/wark/r/trapped_player
+execute as @s[tag=wok_stepped_on] run function rauch:game/kits/wokkaman/sq/stepped_on
+execute as @s[tag=wokkaman_q_shooting] run function rauch:game/kits/wokkaman/q/shooting
 
 execute as @s[scores={heal=0..}] run function rauch:game/mechanics/heal
 

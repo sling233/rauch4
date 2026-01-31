@@ -4,15 +4,15 @@ gamemode spectator @s
 tag @s add dead
 
 scoreboard players set @s respawn 0
-execute if score @s kit matches 1 run function rauch:game/ability/bolt/bolt_die
-execute if score @s kit matches 2 run function rauch:game/ability/zarzahn/zarzahn_die
-execute if score @s kit matches 3 run function rauch:game/ability/raucher/raucher_die
-#execute if score @s kit matches 4 run function rauch:game/ability/hacker/hacker_die
-execute if score @s kit matches 5 run function rauch:game/ability/wark/wark_die
-execute if score @s kit matches 6 run function rauch:game/ability/teleporter/teleporter_die
-#execute if score @s kit matches 7 run function rauch:game/ability/tank/tank_die
-execute if score @s kit matches 8 run function rauch:game/ability/flyer/flyer_die
-execute if score @s kit matches 9 run function rauch:game/ability/wokkaman/wokkaman_die
+execute if score @s kit matches 1 run function rauch:game/kits/bolt/bolt_die
+execute if score @s kit matches 2 run function rauch:game/kits/zarzahn/zarzahn_die
+execute if score @s kit matches 3 run function rauch:game/kits/raucher/raucher_die
+#execute if score @s kit matches 4 run function rauch:game/kits/hacker/hacker_die
+execute if score @s kit matches 5 run function rauch:game/kits/wark/wark_die
+execute if score @s kit matches 6 run function rauch:game/kits/teleporter/teleporter_die
+#execute if score @s kit matches 7 run function rauch:game/kits/tank/tank_die
+execute if score @s kit matches 8 run function rauch:game/kits/flyer/flyer_die
+execute if score @s kit matches 9 run function rauch:game/kits/wokkaman/wokkaman_die
 
 # kill all entities that belong to the player dying and have the remove_on_death tag
 execute at @s as @e[type=marker,tag=remove_on_death] if score @s pnum = @p pnum run kill @s
@@ -34,23 +34,23 @@ scoreboard players reset @s tank_resistance_num
 scoreboard players reset @s teleweak
 scoreboard players set @s armor_target 80
 
-execute as @s[tag=wok_stepped_on] run function rauch:game/ability/wokkaman/sq/kill_my_boat
-execute as @s[tag=zarzahn_hook] run function rauch:game/ability/zarzahn/r/cancel_hook
-execute as @s[tag=wok_hook] run function rauch:game/ability/wokkaman/r/cancel_hook
+execute as @s[tag=wok_stepped_on] run function rauch:game/kits/wokkaman/sq/kill_my_boat
+execute as @s[tag=zarzahn_hook] run function rauch:game/kits/zarzahn/r/cancel_hook
+execute as @s[tag=wok_hook] run function rauch:game/kits/wokkaman/r/cancel_hook
 # remove from wokkaman sr tag lists
-function rauch:game/ability/wokkaman/sr/remove_tag
-function rauch:game/ability/bolt/q/remove_me
+function rauch:game/kits/wokkaman/sr/remove_tag
+function rauch:game/kits/bolt/q/remove_me
 
 function rauch:game/mechanics/unstun
 
 # check if @s was tagged by a hacker (got_reawrd is so the hacker doesn't get 2 charges if r and q tagged @s when he died)
 scoreboard objectives add got_reward dummy
-#function rauch:game/ability/hacker/r/tag/check_me
-function rauch:game/ability/hacker/r/tagged_player_died
-function rauch:game/ability/hacker/q/tagged_player_died
+#function rauch:game/kits/hacker/r/tag/check_me
+function rauch:game/kits/hacker/r/tagged_player_died
+function rauch:game/kits/hacker/q/tagged_player_died
 scoreboard objectives remove got_reward
 
-function rauch:game/ability/hacker/r/hack_end
+function rauch:game/kits/hacker/r/hack_end
 
 tag @s remove raucher_control
 tag @s remove wok_stomp_search

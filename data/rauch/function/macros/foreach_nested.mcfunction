@@ -1,5 +1,5 @@
 ############## example ##################
-# function rauch:macros/foreach_nested {for_path:"macros data.list",for_function:"rauch:game/ability/wokkaman/sr/tagging",level:1}
+# function rauch:macros/foreach_nested {for_path:"macros data.list",for_function:"rauch:game/kits/wokkaman/sr/tagging",level:1}
 # calls function once for every element in path (has to be a list). provides $(index) as current index
 # you can use function rauch:macros/break_foreach to break out at any time (call in for_function)
 #########################################

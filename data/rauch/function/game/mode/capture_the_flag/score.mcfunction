@@ -1,6 +1,6 @@
 function rauch:game/mode/capture_the_flag/flag_reset
 execute as @a[tag=game,predicate=rauch:stun] run function rauch:game/mechanics/unstun
-execute as @a[tag=game,tag=zarzahn_hook] run function rauch:game/ability/zarzahn/r/cancel_hook
+execute as @a[tag=game,tag=zarzahn_hook] run function rauch:game/kits/zarzahn/r/cancel_hook
 
 execute at @e[type=marker,tag=t1,tag=map] run tp @a[team=Red,tag=!dead] ~ ~-20 ~
 execute at @e[type=marker,tag=t2,tag=map] run tp @a[team=Blue,tag=!dead] ~ ~-20 ~

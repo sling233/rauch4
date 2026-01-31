@@ -6,11 +6,11 @@ attribute @s minecraft:entity_interaction_range modifier remove flyer_fast_range
 #boltbuff
 attribute @s minecraft:attack_damage modifier remove boltdmg
 #raucherdmg
-function rauch:game/ability/raucher/q/remove_buff
+function rauch:game/kits/raucher/q/remove_buff
 #wark buff
 attribute @s minecraft:attack_damage modifier remove warkbuff
 #tankkb
-function rauch:game/ability/tank/q/remove_buff
+function rauch:game/kits/tank/q/remove_buff
 #kbfix
 attribute @s minecraft:knockback_resistance modifier remove kbfix
 #armorfix
