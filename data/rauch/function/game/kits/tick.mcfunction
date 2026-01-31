@@ -1,3 +1,5 @@
+# class specific tasks per tick
+
 execute as @s[scores={kit=1}] run return run function rauch:game/kits/bolt/tick
 execute as @s[scores={kit=2}] run return run function rauch:game/kits/zarzahn/tick
 execute as @s[scores={kit=3}] run return run function rauch:game/kits/raucher/tick

@@ -1,3 +1,5 @@
+execute unless score @s wokkaman_rocket_count matches 4.. run return 1
+
 tag @s add wokkaman_q_shooting
 scoreboard players reset @s wokkaman_shoot_cooldown
 scoreboard players set t_wokkaman_rocket_shooting_count temp 0

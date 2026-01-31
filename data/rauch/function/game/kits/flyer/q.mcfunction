@@ -1,3 +1,5 @@
+execute unless score @s cool2 matches 0 run return 1
+
 execute at @s run playsound minecraft:block.beacon.power_select master @a
 execute if predicate rauch:on_ground run tag @s add flyer_q_ground
 execute as @s[tag=!flyer_q_ground] run attribute @s minecraft:gravity base set 0
