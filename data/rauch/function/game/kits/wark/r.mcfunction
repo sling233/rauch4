@@ -1,3 +1,5 @@
+execute unless score @s cool1 matches 0 run return 1
+
 execute at @s[team=Red] run function rauch:game/kits/wark/r/detectred
 execute at @s[team=Blue] run function rauch:game/kits/wark/r/detectblue
 

@@ -1,3 +1,5 @@
+execute unless score @s cool1 matches 0 run return 1
+
 scoreboard players operation @s cool1 = @s cool1_target
 execute at @s[team=Red] run summon marker ~ ~ ~ {Tags:["projectile","hacker","setup","red","remove_on_death"]}
 execute at @s[team=Blue] run summon marker ~ ~ ~ {Tags:["projectile","hacker","setup","blu","remove_on_death"]}

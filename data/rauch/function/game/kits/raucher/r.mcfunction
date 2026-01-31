@@ -1,3 +1,5 @@
+execute unless score @s projectileRNum matches 1.. run return 1
+
 execute as @s[team=Red] at @s anchored eyes run summon armor_stand ^ ^ ^0.1 {Invulnerable:1b,Marker:0b,Invisible:1b,Tags:["red","r_s","setup","projectile"]}
 execute as @s[team=Blue] at @s anchored eyes run summon armor_stand ^ ^ ^0.1 {Invulnerable:1b,Marker:0b,Invisible:1b,Tags:["blu","r_s","setup","projectile"]}
 
