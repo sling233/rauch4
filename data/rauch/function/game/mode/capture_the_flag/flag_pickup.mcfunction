@@ -23,4 +23,4 @@ scoreboard players set @s hack 200
 function rauch:game/ability/hacker/r/hack_init
 execute at @s[scores={kit=2}] as @e[type=marker,tag=zarzahn_rocket] if score @s pnum = @p pnum run kill @s
 
-function rauch:game/mechanics/armor
+function rauch:game/mechanics/set_armor_head

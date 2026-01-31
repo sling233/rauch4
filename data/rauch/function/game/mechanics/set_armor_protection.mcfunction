@@ -1,0 +1,1 @@
+item modify entity @s armor.head rauch:set_cool_protection_from_armor_target

@@ -60,7 +60,9 @@ execute if score Global mode matches 4 as @s[tag=flagPickedUp] run function rauc
 execute if score Global mode matches 2 as @s[team=Red] run scoreboard players add Global killNumBlue 1
 execute if score Global mode matches 2 as @s[team=Blue] run scoreboard players add Global killNumRed 1
 function rauch:game/mechanics/weapon
-function rauch:game/mechanics/armor
+function rauch:game/mechanics/set_armor_body
+function rauch:game/mechanics/set_armor_head
+function rauch:game/mechanics/set_armor_protection
 attribute @s minecraft:gravity base set 0.08
 
 # set night vision

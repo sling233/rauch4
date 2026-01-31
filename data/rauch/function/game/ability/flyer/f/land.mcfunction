@@ -1,6 +1,6 @@
 tag @s remove flying
 scoreboard players operation @s elytra = @s elytra_cooldown
-function rauch:game/mechanics/armor
+function rauch:game/mechanics/set_armor_body
 execute at @s run playsound minecraft:block.chain.break master @s
 function rauch:game/ui/bossbar/speed/invisible
 function rauch:game/ui/bossbar/elytra/visible
