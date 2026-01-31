@@ -1,3 +1,5 @@
+# gets called by mechanics/die (which gets called once everytime the player died)
+
 execute if score @s kit matches 1 run return run function rauch:game/kits/bolt/die
 execute if score @s kit matches 2 run return run function rauch:game/kits/zarzahn/die
 execute if score @s kit matches 3 run return run function rauch:game/kits/raucher/die
