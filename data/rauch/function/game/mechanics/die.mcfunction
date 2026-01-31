@@ -4,15 +4,8 @@ gamemode spectator @s
 tag @s add dead
 
 scoreboard players set @s respawn 0
-execute if score @s kit matches 1 run function rauch:game/kits/bolt/bolt_die
-execute if score @s kit matches 2 run function rauch:game/kits/zarzahn/zarzahn_die
-execute if score @s kit matches 3 run function rauch:game/kits/raucher/raucher_die
-#execute if score @s kit matches 4 run function rauch:game/kits/hacker/hacker_die
-execute if score @s kit matches 5 run function rauch:game/kits/wark/wark_die
-execute if score @s kit matches 6 run function rauch:game/kits/teleporter/teleporter_die
-#execute if score @s kit matches 7 run function rauch:game/kits/tank/tank_die
-execute if score @s kit matches 8 run function rauch:game/kits/flyer/flyer_die
-execute if score @s kit matches 9 run function rauch:game/kits/wokkaman/wokkaman_die
+# kit specific death functions
+function rauch:game/kits/die
 
 # kill all entities that belong to the player dying and have the remove_on_death tag
 execute at @s as @e[type=marker,tag=remove_on_death] if score @s pnum = @p pnum run kill @s
