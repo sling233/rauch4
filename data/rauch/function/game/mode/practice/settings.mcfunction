@@ -1,4 +1,4 @@
-scoreboard players reset Global gamestart
+scoreboard players set Global gamestart 0
 
 execute as @a[scores={kit=1}] run scoreboard players set @s cool1_target 10
 execute as @a[scores={kit=1}] run scoreboard players set @s cool2_target 10
