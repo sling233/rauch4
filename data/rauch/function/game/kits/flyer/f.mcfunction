@@ -1,3 +1,5 @@
+execute unless score @s cool3 matches 0 run return 1
+
 #effect give @s minecraft:levitation 1 80 true
 execute unless score @s flyerQSchedule matches ..-1 run attribute @s minecraft:gravity base set -0.72
 execute at @s run playsound minecraft:item.trident.riptide_3 master @s ~ ~ ~

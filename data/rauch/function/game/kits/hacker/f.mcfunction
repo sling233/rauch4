@@ -1,3 +1,5 @@
+execute unless score @s hacker_charges matches 1.. run return 1
+
 execute at @s[team=Red] positioned ^ ^ ^3.5 as @a[team=Red,tag=game,tag=!dead,distance=..3] run scoreboard players set @s hacker_ability 20
 execute at @s[team=Red] positioned ^ ^ ^7.5 as @a[team=Red,tag=game,tag=!dead,distance=..3] run scoreboard players set @s hacker_ability 20
 execute at @s[team=Blue] positioned ^ ^ ^3.5 as @a[team=Blue,tag=game,tag=!dead,distance=..3] run scoreboard players set @s hacker_ability 20

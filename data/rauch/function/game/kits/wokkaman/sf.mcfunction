@@ -1,3 +1,5 @@
+execute unless score @s cool6 matches 0 run return 1
+
 tag @s add temp
 execute unless entity @a[tag=t_hit] at @s[team=Red] as @a[team=Blue,tag=!dead,tag=game] facing entity @s feet positioned ^ ^ ^15 rotated as @a[tag=temp,limit=1] positioned ^ ^ ^-15 if entity @a[tag=temp,limit=1,distance=..1] run tag @s add t_hit
 execute unless entity @a[tag=t_hit] at @s[team=Red] as @a[team=Blue,tag=!dead,tag=game] facing entity @s feet positioned ^ ^ ^7 rotated as @a[tag=temp,limit=1] positioned ^ ^ ^-7 if entity @a[tag=temp,limit=1,distance=..1] run tag @s add t_hit

@@ -1,6 +1,6 @@
 execute as @s[scores={dropcoas=1..}] run function rauch:game/mechanics/sdrop
 execute as @s[scores={click=1..}] run function rauch:game/mechanics/sclick
-execute if items entity @s weapon.offhand minecraft:carrot_on_a_stick run function rauch:game/kits/sswap
+execute if items entity @s weapon.offhand minecraft:carrot_on_a_stick run function rauch:game/mechanics/sswap
 execute as @s[scores={death=1..}] run function rauch:game/mechanics/die
 
 # class specific tasks
