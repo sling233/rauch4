@@ -16,7 +16,7 @@ scoreboard players operation t_calc_damage temp /= 11 const
 
 execute store result storage temp damage int 0.001 run scoreboard players get t_calc_damage temp
 
-function rauch:game/kits/flyer/q/damage_macro with storage temp
+function rauch:game/kits/pikka/q/damage_macro with storage temp
 
 # add to damage dealt stats because /damage doesn't do that automatically
 scoreboard players set 500 const 500

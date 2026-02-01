@@ -7,7 +7,7 @@ execute as @s[scores={kit=4}] run return run function rauch:game/kits/hacker/tic
 execute as @s[scores={kit=5}] run return run function rauch:game/kits/wark/tick
 execute as @s[scores={kit=6}] run return run function rauch:game/kits/teleporter/tick
 execute as @s[scores={kit=7}] run return run function rauch:game/kits/tank/tick
-execute as @s[scores={kit=8}] run return run function rauch:game/kits/flyer/tick
+execute as @s[scores={kit=8}] run return run function rauch:game/kits/pikka/tick
 execute as @s[scores={kit=9}] run return run function rauch:game/kits/wokkaman/tick
 
 

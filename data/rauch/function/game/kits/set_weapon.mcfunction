@@ -5,7 +5,7 @@ execute if score @s kit matches 4 run return run function rauch:game/kits/hacker
 execute if score @s kit matches 5 run return run function rauch:game/kits/wark/weapon
 execute if score @s kit matches 6 run return run function rauch:game/kits/teleporter/weapon
 execute if score @s kit matches 7 run return run function rauch:game/kits/tank/weapon
-execute if score @s kit matches 8 run return run function rauch:game/kits/flyer/weapon
+execute if score @s kit matches 8 run return run function rauch:game/kits/pikka/weapon
 execute if score @s kit matches 9 run return run function rauch:game/kits/wokkaman/weapon
 
 tellraw @s [{text:"",color:"red"},"Error when trying to give weapon to ",{"selector":"@s"},": not implemented for kit id ",{"score":{"name":"@s","objective":"kit"}}]

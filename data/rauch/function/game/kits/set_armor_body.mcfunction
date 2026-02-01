@@ -5,7 +5,7 @@ execute if score @s kit matches 4 run return run function rauch:game/kits/hacker
 execute if score @s kit matches 5 run return run function rauch:game/kits/wark/armor
 execute if score @s kit matches 6 run return run function rauch:game/kits/teleporter/armor
 execute if score @s kit matches 7 run return run function rauch:game/kits/tank/armor
-execute if score @s kit matches 8 run return run function rauch:game/kits/flyer/armor
+execute if score @s kit matches 8 run return run function rauch:game/kits/pikka/armor
 execute if score @s kit matches 9 run return run function rauch:game/kits/wokkaman/armor
 
 tellraw @s [{text:"",color:"red"},"Error when trying to set body armor of ",{"selector":"@s"},": not implemented for kit id ",{"score":{"name":"@s","objective":"kit"}}]

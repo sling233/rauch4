@@ -9,5 +9,5 @@ scoreboard players set @s flyerQSchedule -60
 execute at @s[team=Red] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:40,Tags:["red","setup","flyerq"]}
 execute at @s[team=Blue] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:40,Tags:["blu","setup","flyerq"]}
 scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=setup,tag=flyerq,limit=1] pnum = @s pnum
-execute as @e[type=minecraft:area_effect_cloud,tag=setup,tag=flyerq,limit=1] run function rauch:game/kits/flyer/q/floor
+execute as @e[type=minecraft:area_effect_cloud,tag=setup,tag=flyerq,limit=1] run function rauch:game/kits/pikka/q/floor
 scoreboard players operation @s cool2 = @s cool2_target
