@@ -53,17 +53,12 @@ function rauch:game/framework/map_setup_2
 function rauch:game/ui/bossbar/setplayers
 function rauch:game/ui/bossbar/allinvisible
 
-#condition functions
+# game settings
 function rauch:game/mode/default_settings
 function rauch:game/mode/apply_settings
 function rauch:game_settings_override
 
-execute if score Global mode matches 0 run function rauch:game/mode/deathmatch/initialize
-execute if score Global mode matches 1 run function rauch:game/mode/king_of_the_hill/initialize
-execute if score Global mode matches 2 run function rauch:game/mode/respawn_deathmatch/initialize
-execute if score Global mode matches 3 run function rauch:game/mode/practice/initialize
-execute if score Global mode matches 4 run function rauch:game/mode/capture_the_flag/initialize
-execute if score Global mode matches 5 run function rauch:game/mode/wokkaman/initialize
+function rauch:game/mode/initialize
 
 # elytra bossbar after setup so max is properly set
 execute as @a[tag=game] run function rauch:game/ui/bossbar/elytra/set_max
