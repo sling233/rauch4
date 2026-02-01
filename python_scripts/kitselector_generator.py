@@ -90,8 +90,11 @@ wokkaman.colors = ["red","red","red","red","red","red","red","red","red","red","
 
 # colors go [name,type,health,damage,range,r,q,f,sr,sq,sf]
 
-# ------------------------- dont need to touch anything below this ------------------
 kits = [bolt,zarzahn,raucher,hacker,wark,teleporter,tank,pikka,wokkaman]
+
+# ------------------------- dont need to touch anything below this ------------------
+def last_word(s: str) -> str:
+    return s.split()[-1]
 
 # read health damage and range stats
 for kit in kits:
@@ -100,30 +103,31 @@ for kit in kits:
         lines = f.readlines()
         for line in lines:
             if line.startswith("attribute @s minecraft:max_health"):
-                kit.health = int(int(line[43:].strip()) / 2)
+                kit.health = int(int(last_word(line)) / 2)
             if line.startswith("attribute @s minecraft:attack_damage"):
-                kit.damage = int(line[46:].strip()) / 10
+                kit.damage = int(last_word(line)) / 10
             if line.startswith("attribute @s minecraft:entity_interaction_range"):
-                kit.range = line[57:].strip()
+                kit.range = last_word(line)
 
 # read cooldowns
-with open("../data/rauch/function/game/framework/default_conditions.mcfunction","r") as f:
-    lines = f.readlines()
-    for line in lines:
-        for i, kit in enumerate(kits):
+for kit in kits:
+    kit_folder_name = kit.name.lower()
+    with open("../data/rauch/function/game/kits/" + kit_folder_name + "/cooldowns.mcfunction","r") as f:
+        lines = f.readlines()
+        for line in lines:
             if kit.r_cool == -1:
-                if line[:73] == "execute as @a[scores={kit=" + str(i+1) + "}] run scoreboard players set @s cool1_target ":
-                    cool = int(line[73:-1]) / 20
+                if line.startswith("scoreboard players set @s cool1_target"):
+                    cool = int(last_word(line)) / 20
                     if cool.is_integer(): cool = int(cool)
                     kit.r_cool = f"{cool}s"
             if kit.q_cool == -1:
-                if line[:73] == "execute as @a[scores={kit=" + str(i+1) + "}] run scoreboard players set @s cool2_target ":
-                    cool = int(line[73:-1]) / 20
+                if line.startswith("scoreboard players set @s cool2_target"):
+                    cool = int(last_word(line)) / 20
                     if cool.is_integer(): cool = int(cool)
                     kit.q_cool = f"{cool}s"
             if kit.f_cool == -1:
-                if line[:73] == "execute as @a[scores={kit=" + str(i+1) + "}] run scoreboard players set @s cool3_target ":
-                    cool = int(line[73:-1]) / 20
+                if line.startswith("scoreboard players set @s cool3_target"):
+                    cool = int(last_word(line)) / 20
                     if cool.is_integer(): cool = int(cool)
                     kit.f_cool = f"{cool}s"
 
@@ -131,23 +135,20 @@ with open("../data/rauch/function/game/framework/default_conditions.mcfunction",
             if type(kit) is Kit: continue
 
             if kit.sr_cool == -1:
-                if line[:73] == "execute as @a[scores={kit=9}] run scoreboard players set @s cool4_target ":
-                    cool = int(line[73:-1]) / 20
+                if line.startswith("scoreboard players set @s cool4_target"):
+                    cool = int(last_word(line)) / 20
                     if cool.is_integer(): cool = int(cool)
                     kit.sr_cool = f"{cool}s"
             if kit.sq_cool == -1:
-                if line[:73] == "execute as @a[scores={kit=9}] run scoreboard players set @s cool5_target ":
-                    cool = int(line[73:-1]) / 20
+                if line.startswith("scoreboard players set @s cool5_target"):
+                    cool = int(last_word(line)) / 20
                     if cool.is_integer(): cool = int(cool)
                     kit.sq_cool = f"{cool}s"
             if kit.sf_cool == -1:
-                if line[:73] == "execute as @a[scores={kit=9}] run scoreboard players set @s cool6_target ":
-                    cool = int(line[73:-1]) / 20
+                if line.startswith("scoreboard players set @s cool6_target"):
+                    cool = int(last_word(line)) / 20
                     if cool.is_integer(): cool = int(cool)
                     kit.sf_cool = f"{cool}s"
-
-            #if line[:70] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:attack_damage base set ": kits[i].damage = int(line[70:-1]) / 10
-            #if line[:80] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:entity_interaction_range base set ": kits[i].range = line[80:-1]
 
 # raucher custom r cool text
 raucher.r_cool += " per cloud"
