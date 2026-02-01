@@ -1,4 +1,7 @@
 # executed as player hit (marker has tag temp) t_pnum temp has zarzahns (shooters) pnum
+
+# maybe also kill hook in this case?
+execute if entity @s[tag=zarzahn_hook] run return 0
 # give zarzahn_hooking score to zarzahn
 tag @s add temp
 execute as @a if score @s pnum = t_pnum temp run scoreboard players operation @s zarzahn_hooking = @a[tag=temp,limit=1] pnum

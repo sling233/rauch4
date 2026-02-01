@@ -1,4 +1,4 @@
-# hooker as tag t_hooker, @s is hooked the player
+# hooker has tag t_hooker, @s is hooked player
 
 execute at @s run tp @s ~ ~0 ~
 # if player's feet are in ground
