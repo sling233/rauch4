@@ -1,3 +1,7 @@
+# cancel if zarzahn has already a hook out
+execute at @s as @e[type=marker,tag=zarzahn] if score @s pnum = @p pnum run return 1
+# cancel if zarzahn is already hooking
+execute if score @s zarzahn_hooking matches 0.. run return 1
 execute unless score @s cool1 matches 0 run return 1
 
 execute at @s[team=Red] run summon marker ~ ~ ~ {Tags:["projectile","zarzahn","setup","red","remove_on_death"]}
