@@ -10,4 +10,4 @@ execute as @s[scores={kit=8}] run return run function rauch:game/kits/pikka/stat
 execute as @s[scores={kit=9}] run return run function rauch:game/kits/wokkaman/stats
 
 
-tellraw @s [{text:"",color:"red"},"Error when trying to set stats for ",{"selector":"@s"},": not implemented for kit id ",{"score":{"name":"@s","objective":"kit"}}]
+tellraw @a [{text:"",color:"red"},"Error when trying to set stats, not implemented for kit id ",{"score":{"name":"@s","objective":"kit"}}]

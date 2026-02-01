@@ -10,4 +10,4 @@ execute if score @s kit matches 7 run return run return 0
 execute if score @s kit matches 8 run return run function rauch:game/kits/pikka/die
 execute if score @s kit matches 9 run return run function rauch:game/kits/wokkaman/die
 
-tellraw @s [{text:"",color:"red"},"Error when trying to run die function for ",{"selector":"@s"},": not implemented for kit id ",{"score":{"name":"@s","objective":"kit"}}]
+tellraw @a [{text:"",color:"red"},"Error when trying to run die function, not implemented for kit id ",{"score":{"name":"@s","objective":"kit"}}]

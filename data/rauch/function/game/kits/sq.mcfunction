@@ -11,4 +11,4 @@ execute as @s[scores={kit=8}] run return run function rauch:game/kits/pikka/q
 execute as @s[scores={kit=9}] run return run function rauch:game/kits/wokkaman/sq
 
 
-tellraw @s [{text:"",color:"red"},"Error when trying to run sq function for ",{"selector":"@s"},": not implemented for kit id ",{"score":{"name":"@s","objective":"kit"}}]
+tellraw @a [{text:"",color:"red"},"Error when trying to run sq function, not implemented for kit id ",{"score":{"name":"@s","objective":"kit"}}]
