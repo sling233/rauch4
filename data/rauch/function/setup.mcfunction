@@ -223,23 +223,22 @@ team modify Flag color white
 
 
 #gamerules
-gamerule doMobLoot false
-gamerule doMobSpawning false
-#gamerule doTileDrops false
-gamerule sendCommandFeedback true
-gamerule keepInventory true
-gamerule doImmediateRespawn true
-gamerule naturalRegeneration false
-gamerule maxEntityCramming 0
-gamerule fallDamage false
-gamerule showDeathMessages false
-gamerule announceAdvancements false
-gamerule doDaylightCycle false
-gamerule doFireTick false
-gamerule fireDamage false
-gamerule doWeatherCycle false
-gamerule randomTickSpeed 0
-#gamerule mobGriefing false
+gamerule mob_drops false
+gamerule spawn_mobs false
+gamerule send_command_feedback true
+gamerule keep_inventory true
+gamerule immediate_respawn true
+gamerule natural_health_regeneration false
+gamerule max_entity_cramming 0
+gamerule fall_damage false
+gamerule show_death_messages false
+gamerule show_advancement_messages false
+gamerule advance_time false
+gamerule advance_weather false
+gamerule fire_spread_radius_around_player 0
+gamerule fire_damage false
+gamerule random_tick_speed 0
+gamerule mob_griefing false
 
 
 #bossbars

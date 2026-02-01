@@ -1,7 +1,7 @@
 # as damage receiver, bolt has tag t_bolt
 
 execute at @s run particle minecraft:bubble_pop ~ ~1 ~ 0.2 0.4 0.1 0 40 force
-execute at @s run particle minecraft:flash ~ ~2 ~ 0 0 0 1 3 force
+execute at @s run particle minecraft:flash{color:[1,1,1,1]} ~ ~2 ~ 0 0 0 1 3 force
 execute at @s run summon lightning_bolt ~ ~ ~
 
 # check if still targeted by someone

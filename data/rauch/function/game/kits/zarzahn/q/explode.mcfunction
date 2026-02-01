@@ -3,7 +3,7 @@ execute at @s run particle minecraft:firework ~ ~ ~ 0.1 0.1 0.1 0.7 100 force
 execute at @s run particle minecraft:firework ~ ~ ~ 0.1 0.1 0.1 0.25 200 force
 execute at @s run particle minecraft:electric_spark ~ ~ ~ 0.1 0.1 0.1 4 300 force
 execute at @s run particle minecraft:explosion ~ ~ ~ 1 1 1 1 20 force
-execute at @s run particle minecraft:flash ~ ~ ~ 0.1 0.1 0.1 1 1 force
+execute at @s run particle minecraft:flash{color:[1,1,1,1]} ~ ~ ~ 0.1 0.1 0.1 1 1 force
 execute at @s run playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 1 1
 
 tag @s add temp

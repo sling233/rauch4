@@ -1,7 +1,8 @@
 {
   "pack": {
-    "pack_format": 81,
-    "description": "lol"
+    "min_format": 94,
+    "max_format": 94,
+    "description": "Wokkagames"
 	},
 	"filter": {
 	  "block": [
