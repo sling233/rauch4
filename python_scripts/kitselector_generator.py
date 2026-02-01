@@ -94,13 +94,17 @@ wokkaman.colors = ["red","red","red","red","red","red","red","red","red","red","
 kits = [bolt,zarzahn,raucher,hacker,wark,teleporter,tank,pikka,wokkaman]
 
 # read health damage and range stats
-with open("../data/rauch/function/game/mechanics/stats.mcfunction","r") as f:
-    lines = f.readlines()
-    for line in lines:
-        for i, kit in enumerate(kits):
-            if line[:59] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:max_health base set ": kit.health = int(int(line[59:-1]) / 2)
-            if line[:62] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:attack_damage base set ": kit.damage = int(line[62:-1]) / 10
-            if line[:73] == "attribute @s[scores={kit=" + str(i+1) + "}] minecraft:entity_interaction_range base set ": kit.range = line[73:-1]
+for kit in kits:
+    kit_folder_name = kit.name.lower()
+    with open("../data/rauch/function/game/kits/" + kit_folder_name + "/stats.mcfunction","r") as f:
+        lines = f.readlines()
+        for line in lines:
+            if line.startswith("attribute @s minecraft:max_health"):
+                kit.health = int(int(line[43:].strip()) / 2)
+            if line.startswith("attribute @s minecraft:attack_damage"):
+                kit.damage = int(line[46:].strip()) / 10
+            if line.startswith("attribute @s minecraft:entity_interaction_range"):
+                kit.range = line[57:].strip()
 
 # read cooldowns
 with open("../data/rauch/function/game/framework/default_conditions.mcfunction","r") as f:
