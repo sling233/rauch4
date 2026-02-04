@@ -32,8 +32,8 @@ functions = glob.glob(r'../data/rauch/function/**/*.mcfunction', recursive=True)
 advancements = glob.glob(r'../data/rauch/advancement/**/*.json', recursive=True)
 enchantments = glob.glob(r'../data/rauch/enchantment/**/*.json', recursive=True)
 
-command_call = re.compile(r".*function rauch:([\w/$\(\)]+)")
-foreach_call = re.compile(r".*function rauch:macros/.*foreach.*rauch:([\w/$\(\)]+)")
+command_call = re.compile(r".*function rauch:([\w./$\(\)]+)")
+foreach_call = re.compile(r".*function rauch:macros/.*foreach.*rauch:([\w./$\(\)]+)")
 json_call = re.compile(r".*rauch:([\w/]+)")
 
 graph = function_graph()
