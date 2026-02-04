@@ -7,8 +7,8 @@ execute at @s run particle dust{color:[0.1,0.1,0.1],scale:1} ~ ~ ~ 2 2 2 1 200 f
 execute at @s run particle electric_spark ~ ~ ~ 0.1 0.1 0.1 4 300 force
 execute at @s run particle explosion ~ ~ ~ 1.4 1.4 1.4 1 10 force
 execute at @s run particle flash{color:[1,1,1,1]} ~ ~ ~ 0.1 0.1 0.1 1 1 force
-execute at @s run playsound entity.firework_rocket.blast master @a ~ ~ ~ 1 1
-execute at @s run playsound minecraft:entity.firework_rocket.large_blast master @a ~ ~ ~ 1 1
+execute at @s run playsound entity.firework_rocket.blast master @a ~ ~ ~ 2 1
+execute at @s run playsound minecraft:entity.firework_rocket.large_blast master @a ~ ~ ~ 3 1
 
 
 scoreboard players operation t_pnum temp = @s pnum

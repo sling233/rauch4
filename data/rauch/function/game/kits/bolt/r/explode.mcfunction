@@ -1,8 +1,8 @@
 #particle minecraft:dust_color_transition{from_color:[0.7,0.0,0.3],scale:1,to_color:[0,0,0]} ~ ~ ~ 2 2 2 0.1 700 force
 particle minecraft:smoke ~ ~ ~ 0.1 0.1 0.1 0.3 700 force
 particle minecraft:explosion ~ ~ ~ 1 1 1 1 10 force
-particle minecraft:flash{color:[1,1,1,1]} ~ ~ ~ 0.1 0.1 0.1 1 1 force
-playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 1 1
+particle minecraft:flash{color:[0.2,0,0.05,1]} ~ ~ ~ 0.1 0.1 0.1 1 3 force
+playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 2 1 0.02
 tag @s add temp
 execute at @s[tag=blu] as @a[team=Red,tag=game,tag=!dead,distance=..3.7] run function rauch:game/kits/bolt/r/hit
 execute at @s[tag=red] as @a[team=Blue,tag=game,tag=!dead,distance=..3.7] run function rauch:game/kits/bolt/r/hit

@@ -4,7 +4,7 @@ execute at @s run particle minecraft:firework ~ ~ ~ 0.1 0.1 0.1 0.25 200 force
 execute at @s run particle minecraft:electric_spark ~ ~ ~ 0.1 0.1 0.1 4 300 force
 execute at @s run particle minecraft:explosion ~ ~ ~ 1 1 1 1 20 force
 execute at @s run particle minecraft:flash{color:[1,1,1,1]} ~ ~ ~ 0.1 0.1 0.1 1 1 force
-execute at @s run playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 1 1
+execute at @s run playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 2 1 0.02
 
 tag @s add temp
 execute as @a if score @s pnum = @e[type=marker,tag=zarzahn_rocket,tag=temp,limit=1] pnum run scoreboard players set @s slime_despawn_timer -5

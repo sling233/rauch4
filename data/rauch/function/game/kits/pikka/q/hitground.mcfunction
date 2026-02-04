@@ -2,7 +2,7 @@ scoreboard players set @s flyerQSchedule 1
 tag @s remove allow_cancel
 effect clear @s minecraft:levitation
 attribute @s minecraft:gravity base reset
-execute at @s run execute at @s run playsound minecraft:item.totem.use master @a ~ ~ ~ 0.5
+execute at @s run execute at @s run playsound minecraft:item.totem.use master @a ~ ~ ~ 4 1 0.02
 execute at @s run particle minecraft:block{block_state:"minecraft:dirt"} ~ ~1 ~ 2 1.5 2 1 200 force
 execute at @s run particle minecraft:campfire_cosy_smoke ~ ~1 ~ 2 1 2 0.03 300 force
 execute at @s run particle minecraft:explosion ~ ~1 ~ 2 1 2 0.1 10 force

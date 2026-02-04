@@ -1,6 +1,6 @@
 execute unless score @s wark_charge matches 100000.. run return 1
 
-execute at @s run playsound minecraft:entity.warden.roar master @a
+execute at @s run playsound minecraft:entity.warden.roar master @a ~ ~ ~ 3
 execute as @s[team=Red] as @a[team=Blue,tag=!dead,tag=game] run effect give @s darkness 2 0 true
 execute as @s[team=Blue] as @a[team=Red,tag=!dead,tag=game] run effect give @s darkness 2 0 true
 effect give @s minecraft:speed 10 2 false
