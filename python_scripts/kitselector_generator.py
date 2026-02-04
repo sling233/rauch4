@@ -26,46 +26,46 @@ class WokkamanKit(Kit):
 
 
 bolt = Kit("Bolt","Fighter")
-bolt.r_ability = "You shoot a slow projectile that explodes after a short travel time or on contact with the ground, dealing 1.5❤ Damage. If your Q is active, you are able to use this to get extra hits."
+bolt.r_ability = "A short-ranged projectile that explodes after a short travel time, dealing 1.5❤ Damage. If your Q is active this can be used to get extra hits."
 bolt.q_ability = "You have 4 seconds to hit as many distinct players as possible. After the timer ends, you recieve a +20% damage buff for every unique player hit (stacks additively). You can press Q again to end the timer immediately, to get the damage boost early."
 bolt.f_ability = "+40% Speed for 5 seconds."
 bolt.colors = ["#4AF6F0","#247774","#30A19E","#3DCCC7","#4AF6F0","#4AF6F0","#4AF6F0","#4AF6F0"]
 
 zarzahn = Kit("Zarzahn",["Fighter","Support"])
-zarzahn.r_ability = "You shoot out a hook that pulls enemies towards you. Once they arrive, they are stunned for 0.75 seconds."
-zarzahn.q_ability = "Shoots a rocket that knocks players away on explosion."
-zarzahn.f_ability = "Use Shift-F to create a Warp Point. The next 18 seconds you have the ability to teleport to that point by pressing F again (without sneaking)."
+zarzahn.r_ability = "A hook (pulls an enemy towards you if you hit them). Stuns for 0.75 seconds on arrival."
+zarzahn.q_ability = "Shoots a rocket that deals no damage and knocks players away."
+zarzahn.f_ability = "Use F while crouching (Shift-F) to create a Warp Point. The next 18 seconds you have the ability to teleport to that point once by pressing F again (without crouching)."
 zarzahn.colors = ["#00EE00","#3D773D","#3D993D","#29CC29","#00EE00","#00EE00","#00EE00","#00EE00"]
 
 raucher = Kit("Raucher","Support")
-raucher.r_ability = "You throw a Damage Cloud that increases received damage by 40% for all enemies inside. Hold Sneak to throw a Health Cloud that heals teammates instead. You can store 3 clouds."
+raucher.r_ability = "Throws a debuff Cloud that increases received damage by 40% for all enemies inside. Use while crouching to throw a Health Cloud that heals teammates instead. Up to 3 clouds can be stored and used at will."
 #raucher.r_cool = "7s per cloud"
 raucher.q_ability = "Buffs damage for a teammate by 50% for 5 seconds (look at them and press Q)."
 raucher.f_ability = "Spawns 8 spiders, that attack enemies in a 30 block radius. The Spiders select targets evenly. They die in one hit or after 9 seconds."
 raucher.colors = ["#FFA54C","#C7290A","#DD4D1D","#F27130","#FFA54C","#FFA54C","#FFA54C","#FFA54C"]
 
 hacker = Kit("Hacker","Support (rework planned)")
-hacker.r_ability = "Shoots a projectile that hacks enemies for 10 seconds. Hacked players cannot use their abilities."
-hacker.q_ability = "Throws a projectile that increases received damage by 20% for 12 seconds for all enemies in a radius after landing."
-hacker.f_ability = "Reduces all ability cooldowns for teammates in range (cone-shape in front of you) by 15 seconds. Instead of having a cooldown, this ability is charge-based. You get a charge if a player debuffed (R) or hacked (Q) by you dies. You spawn with 1 charge at the start of the game, but dying doesn\\'t affect your charges."
+hacker.r_ability = "Projectile that hacks enemies for 10 seconds. Hacked players cannot use their abilities."
+hacker.q_ability = "Projectile that debuffs all enemies in a ~5 block radius after landing by increasing received damage by 20% for 12 seconds."
+hacker.f_ability = "Reduces all ability cooldowns for teammates in range (cone-shape in front of you) by 15 seconds. Instead of having a cooldown, this ability is charge-based. You get a charge if a player debuffed (R) or hacked (Q) by you dies."
 hacker.f_cool = "-"
 hacker.colors = ["#FF0000","#FFBF00","#7FFF00","#00FF3F","#00FFFF","#003FFF","#7F00FF","#FF00BF"]
 
 wark = Kit("Wark","Fighter")
-wark.r_ability = "Selects an enemy up to 20 blocks away. Creates a circle around that player. If the player leaves the circle, you get 40% Q charge."
-wark.q_ability = "Instead of having a cooldown, this ability is a percentage-based charge. You get 1% charge every second passively and with R. Using R, you can get overcharge (above 100% charge), that will deplete back to 100% at a moderate speed. Activating Q with 100% charge, you gain Speed III, Jump Boost II and +50% damage for 10 seconds. Alternatively, you can activate Shift-Q that will only consume 50% charge, giving you Speed III, Jumpboost II and +30% damage for 5 seconds."
+wark.r_ability = "Selects an enemy up to 20 blocks away. Creates a circle around that player. If the player leaves the circle, you get +40% Q charge."
+wark.q_ability = "Instead of having a cooldown, this ability is a percentage-based charge. You get 1% charge every second passively. Using R, you can get overcharge (above 100% charge), which will deplete back to 100% at a moderate speed. Activating Q grants Speed III, Jump Boost II and +50% damage for 10 seconds."
 wark.q_cool = "-"
 wark.f_ability = "An upwards boost for mobility."
 wark.colors = ["#07E6BD","#036654","#049177","#06BB9A","#07E6BD","#07E6BD","#07E6BD","#07E6BD"]
 
 teleporter = Kit("Teleporter","Assassin")
-teleporter.r_ability = "Shoots a projetile. You teleport behind the player you hit. The player gets debuffed with -40% speed and -40% attack damage for 3 seconds. Missing only causes 1/3 of the cooldown."
+teleporter.r_ability = "Projectile that teleports you behind the player you hit. The player gets debuffed with -40% speed and -40% attack damage for 3 seconds. Missing only causes 1/3 of the cooldown."
 teleporter.q_ability = "You become invisible for 6 seconds. Sprinting particles are visible though."
-teleporter.f_ability = "You instantly teleport to where you are looking, with a max range of 14 blocks."
+teleporter.f_ability = "You instantly teleport up to 14 blocks forwards."
 teleporter.colors = ["#FF88FF","#804480","#AA5BAA","#D471D4","#FF88FF","#FF88FF","#FF88FF","#FF88FF"]
 
 tank = Kit("Tank",["Tank","Support","old kit, will get a rework someday"])
-tank.r_ability = "Damage taken passively accumulates, up to 10 hearts. When it\\'s over 4 hearts, you can use R on a teammate to heal them by the amount of damage taken."
+tank.r_ability = "Damage taken passively accumulates, up to 10 hearts. When it\\'s over 4 hearts, you can use R on a teammate to heal them by the amount of accumulated damage."
 tank.r_cool = "-"
 tank.q_ability = "Buffs resistance and knockback resistance for a teammate by 40% for 6 seconds (look at them and press Q). Additionally, team members in a 4.5 block radius around the buffed player recieve 20% less damage."
 tank.f_ability = "Creates a Projectile Shield that lasts 7.5 seconds."
@@ -79,8 +79,8 @@ pikka.colors = ["#FFBF47","#DB00B6","#F20089","#EB8842","#FFBF47","#FFBF47","#FF
 
 # Wokkaman definition:
 wokkaman = WokkamanKit("Wokkaman","Everything")
-wokkaman.r_ability = "Shoot a hook that pulls enemies towards you. Press right click again to instead fix the enemy in place and pull youself towards them, lauching them away when arriving."
-wokkaman.sr_ability = "Shoot a projectile that looks for enemies closeby, automatically targeting them, and returning to searching once it hits the target. When no more players are found it explodes and stuns all players hit."
+wokkaman.r_ability = "A hook (pulls enemies towards you). Press right click again to instead fix the enemy in place and pull youself towards them, lauching them away when arriving."
+wokkaman.sr_ability = "A projectile that looks for enemies closeby, automatically targeting them, and returning to searching once it hits the target. When no more players are found it explodes and stuns all players hit."
 wokkaman.q_ability = "You get 4 rockets per kill (the ones rotating around you). Press Q to fire them."
 wokkaman.q_cool = "-"
 wokkaman.sq_ability = "Hop onto a nearby enemy, stunning them and dragging them downwards. Stops when arriving at the ground (so the higher you use it the more damage it does)."

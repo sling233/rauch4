@@ -3,43 +3,43 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"Bolt","color":"$(bolt)","click_event":{"action":"run_command","command":"/trigger kitselect set 1"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Bolt\n","color":"#4AF6F0"},{"text":"Type: ","color":"gray"},{"text":"Fighter\n","color":"#247774"},\
 {"text":"Stats:  "},{"text":"❤16  ","color":"#30A19E"},{"text":"⚔1.4  ","color":"#3DCCC7"},{"text":"Range: 3.5\n\n","color":"#4AF6F0"},{"text":"R (10s): ","color":"#4AF6F0"},\
-{"text":"You shoot a slow projectile that explodes after a short travel time or on contact with the ground, dealing 1.5❤ Damage. If your Q is active, you are able to use this to get extra hits.\n\n"},{"text":"Q (20s): ","color":"#4AF6F0"},\
+{"text":"A short-ranged projectile that explodes after a short travel time, dealing 1.5❤ Damage. If your Q is active this can be used to get extra hits.\n\n"},{"text":"Q (20s): ","color":"#4AF6F0"},\
 {"text":"You have 4 seconds to hit as many distinct players as possible. After the timer ends, you recieve a +20% damage buff for every unique player hit (stacks additively). You can press Q again to end the timer immediately, to get the damage boost early.\n\n"},{"text":"F (13s): ","color":"#4AF6F0"},\
 {"text":"+40% Speed for 5 seconds."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Zarzahn","color":"$(zarzahn)","click_event":{"action":"run_command","command":"/trigger kitselect set 2"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Zarzahn\n","color":"#00EE00"},{"text":"Type: ","color":"gray"},{"text":"Fighter","color":"#3D773D"},{"text":" / ","color":"gray"},{"text":"Support\n","color":"#3D773D"},\
 {"text":"Stats:  "},{"text":"❤16  ","color":"#3D993D"},{"text":"⚔1.2  ","color":"#29CC29"},{"text":"Range: 3\n\n","color":"#00EE00"},{"text":"R (13s): ","color":"#00EE00"},\
-{"text":"You shoot out a hook that pulls enemies towards you. Once they arrive, they are stunned for 0.75 seconds.\n\n"},{"text":"Q (9.5s): ","color":"#00EE00"},\
-{"text":"Shoots a rocket that knocks players away on explosion.\n\n"},{"text":"F (18s): ","color":"#00EE00"},\
-{"text":"Use Shift-F to create a Warp Point. The next 18 seconds you have the ability to teleport to that point by pressing F again (without sneaking)."}]}},{"text":"]\n[","color":"dark_gray"},\
+{"text":"A hook (pulls an enemy towards you if you hit them). Stuns for 0.75 seconds on arrival.\n\n"},{"text":"Q (9.5s): ","color":"#00EE00"},\
+{"text":"Shoots a rocket that deals no damage and knocks players away.\n\n"},{"text":"F (18s): ","color":"#00EE00"},\
+{"text":"Use F while crouching (Shift-F) to create a Warp Point. The next 18 seconds you have the ability to teleport to that point once by pressing F again (without crouching)."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Raucher","color":"$(raucher)","click_event":{"action":"run_command","command":"/trigger kitselect set 3"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Raucher\n","color":"#FFA54C"},{"text":"Type: ","color":"gray"},{"text":"Support\n","color":"#C7290A"},\
 {"text":"Stats:  "},{"text":"❤12  ","color":"#DD4D1D"},{"text":"⚔0.9  ","color":"#F27130"},{"text":"Range: 2.5\n\n","color":"#FFA54C"},{"text":"R (3.5s per cloud): ","color":"#FFA54C"},\
-{"text":"You throw a Damage Cloud that increases received damage by 40% for all enemies inside. Hold Sneak to throw a Health Cloud that heals teammates instead. You can store 3 clouds.\n\n"},{"text":"Q (18s): ","color":"#FFA54C"},\
+{"text":"Throws a debuff Cloud that increases received damage by 40% for all enemies inside. Use while crouching to throw a Health Cloud that heals teammates instead. Up to 3 clouds can be stored and used at will.\n\n"},{"text":"Q (18s): ","color":"#FFA54C"},\
 {"text":"Buffs damage for a teammate by 50% for 5 seconds (look at them and press Q).\n\n"},{"text":"F (15s): ","color":"#FFA54C"},\
 {"text":"Spawns 8 spiders, that attack enemies in a 30 block radius. The Spiders select targets evenly. They die in one hit or after 9 seconds."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Hacker","color":"$(hacker)","click_event":{"action":"run_command","command":"/trigger kitselect set 4"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Hacker\n","color":"#FF0000"},{"text":"Type: ","color":"gray"},{"text":"Support (rework planned)\n","color":"#FFBF00"},\
 {"text":"Stats:  "},{"text":"❤13  ","color":"#7FFF00"},{"text":"⚔1.1  ","color":"#00FF3F"},{"text":"Range: 3\n\n","color":"#00FFFF"},{"text":"R (19s): ","color":"#003FFF"},\
-{"text":"Shoots a projectile that hacks enemies for 10 seconds. Hacked players cannot use their abilities.\n\n"},{"text":"Q (23s): ","color":"#7F00FF"},\
-{"text":"Throws a projectile that increases received damage by 20% for 12 seconds for all enemies in a radius after landing.\n\n"},{"text":"F (-): ","color":"#FF00BF"},\
-{"text":"Reduces all ability cooldowns for teammates in range (cone-shape in front of you) by 15 seconds. Instead of having a cooldown, this ability is charge-based. You get a charge if a player debuffed (R) or hacked (Q) by you dies. You spawn with 1 charge at the start of the game, but dying doesn\'t affect your charges."}]}},{"text":"]\n[","color":"dark_gray"},\
+{"text":"Projectile that hacks enemies for 10 seconds. Hacked players cannot use their abilities.\n\n"},{"text":"Q (23s): ","color":"#7F00FF"},\
+{"text":"Projectile that debuffs all enemies in a ~5 block radius after landing by increasing received damage by 20% for 12 seconds.\n\n"},{"text":"F (-): ","color":"#FF00BF"},\
+{"text":"Reduces all ability cooldowns for teammates in range (cone-shape in front of you) by 15 seconds. Instead of having a cooldown, this ability is charge-based. You get a charge if a player debuffed (R) or hacked (Q) by you dies."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Wark","color":"$(wark)","click_event":{"action":"run_command","command":"/trigger kitselect set 5"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Wark\n","color":"#07E6BD"},{"text":"Type: ","color":"gray"},{"text":"Fighter\n","color":"#036654"},\
 {"text":"Stats:  "},{"text":"❤16  ","color":"#049177"},{"text":"⚔1.2  ","color":"#06BB9A"},{"text":"Range: 3\n\n","color":"#07E6BD"},{"text":"R (10s): ","color":"#07E6BD"},\
-{"text":"Selects an enemy up to 20 blocks away. Creates a circle around that player. If the player leaves the circle, you get 40% Q charge.\n\n"},{"text":"Q (-): ","color":"#07E6BD"},\
-{"text":"Instead of having a cooldown, this ability is a percentage-based charge. You get 1% charge every second passively and with R. Using R, you can get overcharge (above 100% charge), that will deplete back to 100% at a moderate speed. Activating Q with 100% charge, you gain Speed III, Jump Boost II and +50% damage for 10 seconds. Alternatively, you can activate Shift-Q that will only consume 50% charge, giving you Speed III, Jumpboost II and +30% damage for 5 seconds.\n\n"},{"text":"F (10s): ","color":"#07E6BD"},\
+{"text":"Selects an enemy up to 20 blocks away. Creates a circle around that player. If the player leaves the circle, you get +40% Q charge.\n\n"},{"text":"Q (-): ","color":"#07E6BD"},\
+{"text":"Instead of having a cooldown, this ability is a percentage-based charge. You get 1% charge every second passively. Using R, you can get overcharge (above 100% charge), which will deplete back to 100% at a moderate speed. Activating Q grants Speed III, Jump Boost II and +50% damage for 10 seconds.\n\n"},{"text":"F (10s): ","color":"#07E6BD"},\
 {"text":"An upwards boost for mobility."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Teleporter","color":"$(teleporter)","click_event":{"action":"run_command","command":"/trigger kitselect set 6"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Teleporter\n","color":"#FF88FF"},{"text":"Type: ","color":"gray"},{"text":"Assassin\n","color":"#804480"},\
 {"text":"Stats:  "},{"text":"❤10  ","color":"#AA5BAA"},{"text":"⚔2.8  ","color":"#D471D4"},{"text":"Range: 2\n\n","color":"#FF88FF"},{"text":"R (17s): ","color":"#FF88FF"},\
-{"text":"Shoots a projetile. You teleport behind the player you hit. The player gets debuffed with -40% speed and -40% attack damage for 3 seconds. Missing only causes 1/3 of the cooldown.\n\n"},{"text":"Q (22s): ","color":"#FF88FF"},\
+{"text":"Projectile that teleports you behind the player you hit. The player gets debuffed with -40% speed and -40% attack damage for 3 seconds. Missing only causes 1/3 of the cooldown.\n\n"},{"text":"Q (22s): ","color":"#FF88FF"},\
 {"text":"You become invisible for 6 seconds. Sprinting particles are visible though.\n\n"},{"text":"F (17s): ","color":"#FF88FF"},\
-{"text":"You instantly teleport to where you are looking, with a max range of 14 blocks."}]}},{"text":"]\n[","color":"dark_gray"},\
+{"text":"You instantly teleport up to 14 blocks forwards."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Tank","color":"$(tank)","click_event":{"action":"run_command","command":"/trigger kitselect set 7"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Tank\n","color":"#6E69FF"},{"text":"Type: ","color":"gray"},{"text":"Tank","color":"#373580"},{"text":" / ","color":"gray"},{"text":"Support","color":"#373580"},{"text":" / ","color":"gray"},{"text":"old kit, will get a rework someday\n","color":"#373580"},\
 {"text":"Stats:  "},{"text":"❤22  ","color":"#4946AA"},{"text":"⚔0.7  ","color":"#5C58D4"},{"text":"Range: 2.5\n\n","color":"#6E69FF"},{"text":"R (-): ","color":"#6E69FF"},\
-{"text":"Damage taken passively accumulates, up to 10 hearts. When it\'s over 4 hearts, you can use R on a teammate to heal them by the amount of damage taken.\n\n"},{"text":"Q (18s): ","color":"#6E69FF"},\
+{"text":"Damage taken passively accumulates, up to 10 hearts. When it\'s over 4 hearts, you can use R on a teammate to heal them by the amount of accumulated damage.\n\n"},{"text":"Q (18s): ","color":"#6E69FF"},\
 {"text":"Buffs resistance and knockback resistance for a teammate by 40% for 6 seconds (look at them and press Q). Additionally, team members in a 4.5 block radius around the buffed player recieve 20% less damage.\n\n"},{"text":"F (16s): ","color":"#6E69FF"},\
 {"text":"Creates a Projectile Shield that lasts 7.5 seconds."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Pikka","color":"$(pikka)","click_event":{"action":"run_command","command":"/trigger kitselect set 8"},"hover_event":{"action":"show_text","value":\
@@ -54,8 +54,8 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 [{text:"",color:"gray"},{"text":"This kit automatically gets assigned to players in team red in the Wokkaman game mode. You can't select it, unlesss an admin enables it.\n\n","color":"#C87878"},\
 {"text":"Name: ","color":"gray"},{"text":"Wokkaman\n","color":"red"},{"text":"Type: ","color":"gray"},{"text":"Everything\n","color":"red"},\
 {"text":"Stats:  "},{"text":"❤40  ","color":"red"},{"text":"⚔2.0  ","color":"red"},{"text":"Range: 3.6\n\n","color":"red"},{"text":"R (8s): ","color":"red"},\
-{"text":"Shoot a hook that pulls enemies towards you. Press right click again to instead fix the enemy in place and pull youself towards them, lauching them away when arriving.\n\n"},{"text":"Shift-R (8s): ","color":"red"},\
-{"text":"Shoot a projectile that looks for enemies closeby, automatically targeting them, and returning to searching once it hits the target. When no more players are found it explodes and stuns all players hit.\n\n"},{"text":"Q (-): ","color":"red"},\
+{"text":"A hook (pulls enemies towards you). Press right click again to instead fix the enemy in place and pull youself towards them, lauching them away when arriving.\n\n"},{"text":"Shift-R (8s): ","color":"red"},\
+{"text":"A projectile that looks for enemies closeby, automatically targeting them, and returning to searching once it hits the target. When no more players are found it explodes and stuns all players hit.\n\n"},{"text":"Q (-): ","color":"red"},\
 {"text":"You get 4 rockets per kill (the ones rotating around you). Press Q to fire them.\n\n"},{"text":"Shift-Q (9s): ","color":"red"},\
 {"text":"Hop onto a nearby enemy, stunning them and dragging them downwards. Stops when arriving at the ground (so the higher you use it the more damage it does).\n\n"},{"text":"F (7s): ","color":"red"},\
 {"text":"When on the ground, launches you in the air. This is the only case the cooldown is used for.\nWhen in the air, it makes you hover for a little bit.\nWhen hovering, it launches you downwards.\nWhen flying using the elytra, it cancels the elytra.\n\n"},{"text":"Shift-F (5s): ","color":"red"},\
