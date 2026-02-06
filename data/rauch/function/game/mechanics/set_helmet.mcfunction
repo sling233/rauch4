@@ -13,4 +13,4 @@ execute as @s[tag=flagPickedUp,team=Blue] run return run item replace entity @s 
   tooltip_display={hidden_components:["unbreakable","enchantments"]}\
 ] 1
 
-function rauch:game/mechanics/set_helmet
+function rauch:game/kits/helmet
