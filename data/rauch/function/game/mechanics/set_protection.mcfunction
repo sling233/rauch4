@@ -1,0 +1,1 @@
+item modify entity @s saddle rauch:set_cool_protection_from_armor_target

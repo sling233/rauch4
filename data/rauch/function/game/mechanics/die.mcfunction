@@ -54,8 +54,8 @@ execute if score Global mode matches 2 as @s[team=Red] run scoreboard players ad
 execute if score Global mode matches 2 as @s[team=Blue] run scoreboard players add Global killNumRed 1
 function rauch:game/kits/set_weapon
 function rauch:game/kits/set_armor_body
-function rauch:game/kits/set_armor_head
-function rauch:game/kits/set_armor_protection
+function rauch:game/mechanics/set_helmet
+function rauch:game/mechanics/set_protection
 attribute @s minecraft:gravity base set 0.08
 
 # set night vision
