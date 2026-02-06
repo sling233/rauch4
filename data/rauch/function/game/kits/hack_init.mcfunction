@@ -11,4 +11,7 @@ execute if score @s kit matches 8 run return run function rauch:game/kits/pikka/
 execute if score @s kit matches 9 run return run function rauch:game/kits/wokkaman/hack_init
 
 
-tellraw @a [{text:"",color:"red"},"Error when trying to run hack_init function, not implemented for kit id ",{"score":{"name":"@s","objective":"kit"}}]
+execute unless score @s kit matches -2147483648..2147483647 run return run tellraw @a [{text:"",color:"red"},"Error when trying to run hack_init function, kit id unset"]
+scoreboard players operation err temp = @s kit
+tellraw @a [{text:"",color:"red"},"Error when trying to run hack_init function, not implemented for kit id ",{"score":{"name":"err","objective":"temp"}}]
+scoreboard players reset err temp

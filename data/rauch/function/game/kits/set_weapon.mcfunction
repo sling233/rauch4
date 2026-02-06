@@ -8,4 +8,7 @@ execute if score @s kit matches 7 run return run function rauch:game/kits/tank/w
 execute if score @s kit matches 8 run return run function rauch:game/kits/pikka/weapon
 execute if score @s kit matches 9 run return run function rauch:game/kits/wokkaman/weapon
 
-tellraw @a [{text:"",color:"red"},"Error when trying to give weapon, not implemented for kit id ",{"score":{"name":"@s","objective":"kit"}}]
+execute unless score @s kit matches -2147483648..2147483647 run return run tellraw @a [{text:"",color:"red"},"Error when trying to give weapon, kit id unset"]
+scoreboard players operation err temp = @s kit
+tellraw @a [{text:"",color:"red"},"Error when trying to give weapon, not implemented for kit id ",{"score":{"name":"err","objective":"temp"}}]
+scoreboard players reset err temp

@@ -11,4 +11,7 @@ execute as @s[scores={kit=8}] run return run function rauch:game/kits/pikka/f
 execute as @s[scores={kit=9}] run return run function rauch:game/kits/wokkaman/f
 
 
-tellraw @a [{text:"",color:"red"},"Error when trying to run f function, not implemented for kit id ",{"score":{"name":"@s","objective":"kit"}}]
+execute unless score @s kit matches -2147483648..2147483647 run return run tellraw @a [{text:"",color:"red"},"Error when trying to run f function, kit id unset"]
+scoreboard players operation err temp = @s kit
+tellraw @a [{text:"",color:"red"},"Error when trying to run f function, not implemented for kit id ",{"score":{"name":"err","objective":"temp"}}]
+scoreboard players reset err temp
