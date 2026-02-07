@@ -1,0 +1,1 @@
+$item replace entity @s hotbar.0 with written_book[item_name={"text":"Settings","color":"yellow"},written_book_content={title:"Settings",author:"",pages:$(pages)}]

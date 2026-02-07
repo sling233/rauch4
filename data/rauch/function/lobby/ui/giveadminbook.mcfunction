@@ -28,11 +28,8 @@ execute if score %emulate_1_8 global matches 1 run data modify storage rauch tem
 {emulate_1_8:"dark_green"}
 
 # sets up storage rauch temp.pages
-function rauch:lobby/ui/adminbook/giveadminbook_macro with storage rauch temp
+function rauch:lobby/ui/adminbook/setup_pages with storage rauch temp
 
-summon item_frame ~ ~ ~ {Tags:["adminbook"],Silent:1b,Invulnerable:1b,Invisible:1b,Fixed:1b}
-item replace entity @e[type=item_frame,tag=adminbook,limit=1] contents with written_book[item_name={"text":"Settings","color":"yellow"},written_book_content={title:"Settings",author:""}]
-data modify entity @e[type=item_frame,tag=adminbook,limit=1] Item.components."minecraft:written_book_content".pages set from storage rauch temp.pages
-item replace entity @s hotbar.0 from entity @e[type=item_frame,tag=adminbook,limit=1] contents
-kill @e[type=item_frame,tag=adminbook]
+function rauch:lobby/ui/adminbook/give with storage rauch temp
+
 data remove storage rauch temp
