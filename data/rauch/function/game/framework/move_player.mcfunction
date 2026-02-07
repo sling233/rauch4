@@ -11,13 +11,10 @@ function rauch:game/kits/raucher/q/remove_buff
 attribute @s minecraft:attack_damage modifier remove warkbuff
 #tankkb
 function rauch:game/kits/tank/q/remove_buff
-#kbfix
-attribute @s minecraft:knockback_resistance modifier remove kbfix
-#armorfix
-attribute @s minecraft:armor modifier remove armorfix
 
 attribute @s minecraft:max_health base reset
 attribute @s minecraft:attack_damage base reset
+attribute @s minecraft:attack_speed base reset
 attribute @s minecraft:scale base reset
 attribute @s minecraft:movement_speed base reset
 attribute @s minecraft:entity_interaction_range base reset

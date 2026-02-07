@@ -112,4 +112,9 @@ $data modify storage rauch temp.pages append value [\
       {"text":"Sets wether the wokkaman kit can be selected in the kit selector by anyone, in any mode. Default off."}]},"click_event":\
         {"action":"run_command","command":"/function rauch:settings/toggles/toggle_wokkaman_selectability"}},\
   {text:"]\n",color:"dark_gray"},\
+  {text:"[",color:"dark_gray"},\
+    {"text":"Emulate 1.8 Combat",color:"$(emulate_1_8)","hover_event":{"action":"show_text","value":[\
+      {"text":"No attack cooldowns. For better emulation, make sure to install the 1.8 combat version of the resource pack. Default off."}]},"click_event":\
+        {"action":"run_command","command":"/function rauch:settings/toggles/toggle_1_8"}},\
+  {text:"]\n",color:"dark_gray"},\
 ]
