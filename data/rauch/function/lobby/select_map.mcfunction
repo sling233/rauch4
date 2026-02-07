@@ -1,4 +1,6 @@
 # $(index) has map index
+execute if score Global game_running matches 1 run return run tellraw @s [{text:"",color:"red"},{"text":"Can't select maps while a game is running."}]
+
 $data modify storage map_data active set from storage map_data maps[$(index)]
 $data modify storage map_data active.index set value $(index)
 

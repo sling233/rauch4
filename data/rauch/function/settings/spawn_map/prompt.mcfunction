@@ -1,3 +1,5 @@
+execute if score Global game_running matches 1 run return run tellraw @s [{text:"",color:"red"},{"text":"Can't add maps while a game is running."}]
+
 tellraw @s [{"text":"\n--------- Add a map ---------","color":"yellow"}]
 tellraw @s [{"text":"Official Maps:","color":"green"}]
 tellraw @s [{"text":"Spawns a prebuilt map and automatically sets up spawn positions etc. The map spawns at your location, expanding into positive x, y and z","color":"yellow"}]
