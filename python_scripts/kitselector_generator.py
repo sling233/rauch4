@@ -230,7 +230,9 @@ for kit in kits:
   "title": "Ability Reminder",
   "can_close_with_escape": true,
   "pause": false,
-  "after_action": "close",
+  "action": {
+    "label": "Close"
+  },
   "body": {
     "type": "minecraft:plain_message",
     "width": 300,
