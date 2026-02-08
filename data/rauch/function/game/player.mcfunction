@@ -3,6 +3,10 @@ execute as @s[scores={click=1..}] run function rauch:game/mechanics/sclick
 execute if items entity @s weapon.offhand minecraft:carrot_on_a_stick run function rauch:game/mechanics/sswap
 execute as @s[scores={death=1..}] run function rauch:game/mechanics/die
 
+# ability reminder stuff
+execute unless items entity @s hotbar.8 warped_fungus_on_a_stick[custom_data~{scroll:1b}] run function rauch:game/ui/give_scroll
+execute if score @s click_warped matches 1.. run function rauch:game/ui/show_ability_reminder
+
 # class specific tasks
 function rauch:game/kits/tick
 

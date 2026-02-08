@@ -1,0 +1,23 @@
+
+{
+  "type": "minecraft:notice",
+  "title": "Ability Reminder",
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "body": {
+    "type": "minecraft:plain_message",
+    "width": 300,
+    "contents": [
+       {"text":"Name: ","color":"white"},{"text":"Teleporter\n","color":"#FF88FF"},
+       {"text":"Type: "},{"text":"Assassin\n","color":"#804480"},
+       {"text":"Stats:  "},{"text":"❤10  ","color":"#AA5BAA"},{"text":"⚔2.8  ","color":"#D471D4"},{"text":"Range: 2\n\n","color":"#FF88FF"},
+       {"text":"R (17s): ","color":"#FF88FF"},
+       {"text":"Projectile that teleports you behind the player you hit. The player gets debuffed with -40% speed and -40% attack damage for 3 seconds. Missing only causes 1/3 of the cooldown.\n\n"},
+       {"text":"Q (22s): ","color":"#FF88FF"},
+       {"text":"You become invisible for 6 seconds. Sprinting particles are visible though.\n\n"},
+       {"text":"F (17s): ","color":"#FF88FF"},
+       {"text":"You instantly teleport up to 14 blocks forwards.\n\n"}
+    ]
+  }
+}

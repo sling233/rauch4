@@ -1,0 +1,23 @@
+
+{
+  "type": "minecraft:notice",
+  "title": "Ability Reminder",
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "body": {
+    "type": "minecraft:plain_message",
+    "width": 300,
+    "contents": [
+       {"text":"Name: ","color":"white"},{"text":"Raucher\n","color":"#FFA54C"},
+       {"text":"Type: "},{"text":"Support\n","color":"#C7290A"},
+       {"text":"Stats:  "},{"text":"❤12  ","color":"#DD4D1D"},{"text":"⚔0.9  ","color":"#F27130"},{"text":"Range: 2.5\n\n","color":"#FFA54C"},
+       {"text":"R (3.5s per cloud): ","color":"#FFA54C"},
+       {"text":"Throws a debuff Cloud that increases received damage by 40% for all enemies inside. Use while crouching to throw a Health Cloud that heals teammates instead. Up to 3 clouds can be stored and used at will.\n\n"},
+       {"text":"Q (18s): ","color":"#FFA54C"},
+       {"text":"Buffs damage for a teammate by 50% for 5 seconds (look at them and press Q).\n\n"},
+       {"text":"F (15s): ","color":"#FFA54C"},
+       {"text":"Spawns 8 spiders, that attack enemies in a 30 block radius. The Spiders select targets evenly. They die in one hit or after 9 seconds.\n\n"}
+    ]
+  }
+}

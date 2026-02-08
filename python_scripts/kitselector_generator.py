@@ -65,7 +65,7 @@ teleporter.f_ability = "You instantly teleport up to 14 blocks forwards."
 teleporter.colors = ["#FF88FF","#804480","#AA5BAA","#D471D4","#FF88FF","#FF88FF","#FF88FF","#FF88FF"]
 
 tank = Kit("Tank",["Tank","Support","old kit, will get a rework someday"])
-tank.r_ability = "Damage taken passively accumulates, up to 10 hearts. When it\\'s over 4 hearts, you can use R on a teammate to heal them by the amount of accumulated damage."
+tank.r_ability = "Damage taken passively accumulates, up to 10 hearts. When it's over 4 hearts, you can use R on a teammate to heal them by the amount of accumulated damage."
 tank.r_cool = "-"
 tank.q_ability = "Buffs resistance and knockback resistance for a teammate by 40% for 6 seconds (look at them and press Q). Additionally, team members in a 4.5 block radius around the buffed player recieve 20% less damage."
 tank.f_ability = "Creates a Projectile Shield that lasts 7.5 seconds."
@@ -219,3 +219,51 @@ with open("../data/rauch/function/lobby/ui/givekitselector_macro.mcfunction","w"
     for line in text:
         result += "\n" + line
     f.write("\n".join(text))
+
+##############
+# dialoges
+for kit in kits:
+    with open("../data/rauch/dialog/kits/" + kit.name.lower() + ".json","w", encoding="utf-8") as f:
+        f.write("""
+{
+  "type": "minecraft:notice",
+  "title": "Ability Reminder",
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "body": {
+    "type": "minecraft:plain_message",
+    "width": 300,
+    "contents": [
+""")
+        f.write('       {"text":"Name: ","color":"white"},{"text":"' + kit.name + '\\n","color":"' + kit.colors[0] + '"},\n')
+        if type(kit.typ) is list:
+            type_lol = ""
+            for typ in kit.typ[:-1]:
+                type_lol += ',{"text":"' + typ + '","color":"' + kit.colors[1] + '"},{"text":" / ","color":"gray"}'
+            type_lol += ',{"text":"' + kit.typ[-1] + '\\n","color":"' + kit.colors[1] + '"},'
+        else:
+            type_lol = ',{"text":"' + kit.typ + '\\n","color":"' + kit.colors[1] + '"},\n'
+        f.write('       {"text":"Type: "}' + type_lol)
+        f.write('       {"text":"Stats:  "},{"text":"❤' + str(kit.health) + '  ","color":"' + kit.colors[2] + '"},{"text":"⚔' + str(kit.damage) + '  ","color":"' + kit.colors[3] + '"},{"text":"Range: ' + str(kit.range) + '\\n\\n","color":"' + kit.colors[4] + '"},\n')
+        f.write('       {"text":"R (' + str(kit.r_cool) + '): ","color":"' + kit.colors[5] + '"},\n')
+        f.write('       {"text":"' + kit.r_ability + '\\n\\n"},\n')
+        f.write('       {"text":"Q (' + str(kit.q_cool) + '): ","color":"' + kit.colors[6] + '"},\n')
+        f.write('       {"text":"' + kit.q_ability + '\\n\\n"},\n')
+        f.write('       {"text":"F (' + str(kit.f_cool) + '): ","color":"' + kit.colors[7] + '"},\n')
+        f.write('       {"text":"' + kit.f_ability + '\\n\\n"}')
+        if type(kit) is WokkamanKit:
+            f.write(",\n")
+            f.write('       {"text":"sR (' + str(kit.sr_cool) + '): ","color":"' + kit.colors[8] + '"},\n')
+            f.write('       {"text":"' + kit.sr_ability + '\\n\\n"},\n')
+            f.write('       {"text":"sQ (' + str(kit.sq_cool) + '): ","color":"' + kit.colors[9] + '"},\n')
+            f.write('       {"text":"' + kit.sq_ability + '\\n\\n"},\n')
+            f.write('       {"text":"sF (' + str(kit.sf_cool) + '): ","color":"' + kit.colors[10] + '"},\n')
+            f.write('       {"text":"' + kit.sf_ability + '\\n\\n"}')
+
+        f.write("""
+    ]
+  }
+}
+""")
+    

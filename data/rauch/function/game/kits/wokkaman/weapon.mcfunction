@@ -4,6 +4,7 @@ execute if score @s wokkaman_weapon matches 0 run return run item replace entity
     rarity=epic,\
     unbreakable={},\
     enchantments={"rauch:hit_detect":1},\
+    custom_data={weapon:1b},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 execute if score @s wokkaman_weapon matches 1 run return run item replace entity @s hotbar.0 with minecraft:carrot_on_a_stick[\
@@ -12,6 +13,7 @@ execute if score @s wokkaman_weapon matches 1 run return run item replace entity
     rarity=epic,\
     unbreakable={},\
     enchantments={"rauch:hit_detect":1},\
+    custom_data={weapon:1b},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 execute if score @s wokkaman_weapon matches 2 run return run item replace entity @s hotbar.0 with minecraft:carrot_on_a_stick[\
@@ -20,6 +22,7 @@ execute if score @s wokkaman_weapon matches 2 run return run item replace entity
     rarity=epic,\
     unbreakable={},\
     enchantments={"rauch:hit_detect":1},\
+    custom_data={weapon:1b},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 execute if score @s wokkaman_weapon matches 3 run return run item replace entity @s hotbar.0 with minecraft:carrot_on_a_stick[\
@@ -28,6 +31,7 @@ execute if score @s wokkaman_weapon matches 3 run return run item replace entity
     rarity=epic,\
     unbreakable={},\
     enchantments={"rauch:hit_detect":1},\
+    custom_data={weapon:1b},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 execute if score @s wokkaman_weapon matches 4 run return run item replace entity @s hotbar.0 with minecraft:carrot_on_a_stick[\
@@ -36,6 +40,7 @@ execute if score @s wokkaman_weapon matches 4 run return run item replace entity
     rarity=epic,\
     unbreakable={},\
     enchantments={"rauch:hit_detect":1},\
+    custom_data={weapon:1b},\
     tooltip_display={hidden_components:["unbreakable"]}\
 ] 1
 

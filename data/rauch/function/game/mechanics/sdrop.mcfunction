@@ -1,4 +1,4 @@
-clear @s minecraft:carrot_on_a_stick
+#clear @s minecraft:carrot_on_a_stick[custom_data~{weapon:1b}]
 function rauch:game/kits/set_weapon
 
 execute as @s[predicate=rauch:hack] run tellraw @s {"text":"You are hacked and cannot use your abilities!","color":"red"}

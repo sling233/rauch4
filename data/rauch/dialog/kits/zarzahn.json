@@ -1,0 +1,22 @@
+
+{
+  "type": "minecraft:notice",
+  "title": "Ability Reminder",
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "body": {
+    "type": "minecraft:plain_message",
+    "width": 300,
+    "contents": [
+       {"text":"Name: ","color":"white"},{"text":"Zarzahn\n","color":"#00EE00"},
+       {"text":"Type: "},{"text":"Fighter","color":"#3D773D"},{"text":" / ","color":"gray"},{"text":"Support\n","color":"#3D773D"},       {"text":"Stats:  "},{"text":"❤16  ","color":"#3D993D"},{"text":"⚔1.2  ","color":"#29CC29"},{"text":"Range: 3\n\n","color":"#00EE00"},
+       {"text":"R (13s): ","color":"#00EE00"},
+       {"text":"A hook (pulls an enemy towards you if you hit them). Stuns for 0.75 seconds on arrival.\n\n"},
+       {"text":"Q (9.5s): ","color":"#00EE00"},
+       {"text":"Shoots a rocket that deals no damage and knocks players away.\n\n"},
+       {"text":"F (18s): ","color":"#00EE00"},
+       {"text":"Use F while crouching (Shift-F) to create a Warp Point. The next 18 seconds you have the ability to teleport to that point once by pressing F again (without crouching).\n\n"}
+    ]
+  }
+}

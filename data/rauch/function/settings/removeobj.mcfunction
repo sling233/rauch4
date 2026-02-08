@@ -5,6 +5,7 @@ scoreboard objectives remove bolt
 scoreboard objectives remove boltdmg
 scoreboard objectives remove boltspeed
 scoreboard objectives remove click
+scoreboard objectives remove click_warped
 scoreboard objectives remove clouds
 scoreboard objectives remove cool1
 scoreboard objectives remove cool1_target
