@@ -141,7 +141,7 @@ scoreboard objectives add wokkaman_weapon dummy
 
 # default global settings
 execute unless score %reload_message_disabled global matches 0.. run scoreboard players set %reload_message_disabled global 0
-execute unless score %enable_flag_sprint global matches 0.. run scoreboard players set %reload_message_disabled global 1
+execute unless score %enable_flag_sprint global matches 0.. run scoreboard players set %enable_flag_sprint global 1
 execute unless score %enable_delayed_clear global matches 0.. run scoreboard players set %enable_delayed_clear global 0
 execute unless score %enable_wokkaman_selectability global matches 0.. run scoreboard players set %enable_wokkaman_selectability global 0
 execute unless score %emulate_1_8 global matches 0.. run scoreboard players set %emulate_1_8 global 0
@@ -170,18 +170,18 @@ function rauch:settings/versions/version_check
 function rauch:settings/versions/maps/map_check
 function rauch:settings/versions/lobby_check
 
-execute unless entity @a[tag=admin] unless data storage lobby_data position run tellraw @a [\
-{"text":"Please set the Lobby position by moving to the desired location and clicking ","color":"yellow"},\
-{"text":"here","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/changelobbypos"}},\
-{"text":" OR spawn the prebuilt lobby by clicking ","color":"yellow"},\
-{"text":"here.","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_lobby/prompt"}}\
-]
-execute as @a[tag=admin] unless data storage lobby_data position run tellraw @s [\
-{"text":"Please set the Lobby position by moving to the desired location and clicking ","color":"yellow"},\
-{"text":"here","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/changelobbypos"}},\
-{"text":" OR spawn the prebuilt lobby by clicking ","color":"yellow"},\
-{"text":"here.","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_lobby/prompt"}}\
-]
+# execute unless entity @a[tag=admin] unless data storage lobby_data position run tellraw @a [\
+# {"text":"Please set the Lobby position by moving to the desired location and clicking ","color":"yellow"},\
+# {"text":"here","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/changelobbypos"}},\
+# {"text":" OR spawn the prebuilt lobby by clicking ","color":"yellow"},\
+# {"text":"here.","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_lobby/prompt"}}\
+# ]
+# execute as @a[tag=admin] unless data storage lobby_data position run tellraw @s [\
+# {"text":"Please set the Lobby position by moving to the desired location and clicking ","color":"yellow"},\
+# {"text":"here","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/changelobbypos"}},\
+# {"text":" OR spawn the prebuilt lobby by clicking ","color":"yellow"},\
+# {"text":"here.","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_lobby/prompt"}}\
+# ]
 
 # set scores
 execute unless score Global mode matches 0..5 run scoreboard players set Global mode 0
