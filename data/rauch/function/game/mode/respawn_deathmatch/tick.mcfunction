@@ -1,6 +1,3 @@
-execute as @a[scores={death=1..},team=Red] run scoreboard players add Global killNumBlue 1
-execute as @a[scores={death=1..},team=Blue] run scoreboard players add Global killNumRed 1
-function rauch:game/mechanics/respawn/respawn_main
 scoreboard players operation Red: killsDisplay = Global killNumRed
 scoreboard players operation Blue: killsDisplay = Global killNumBlue
 

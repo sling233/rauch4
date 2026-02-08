@@ -1,5 +1,4 @@
 execute if score Global gamestart matches 1.. run return 0
-function rauch:game/mechanics/respawn/respawn_main
 
 execute as @a[tag=flagPickedUp] run function rauch:game/mode/capture_the_flag/flag_picked_up
 execute as @e[type=minecraft:armor_stand,tag=flag,limit=1] run function rauch:game/mode/capture_the_flag/flag

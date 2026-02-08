@@ -1,7 +1,3 @@
-#respawn for non wokkaman players
-execute as @a[tag=dead,tag=!wokkaman] run function rauch:game/mechanics/respawn/waiting
-
-
 function rauch:game/mode/wokkaman/bossbar/update
 function rauch:game/mode/wokkaman/bossbar/update_title
 effect give @a[team=Red] minecraft:glowing 10 0 true

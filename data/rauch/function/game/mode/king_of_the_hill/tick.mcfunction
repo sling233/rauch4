@@ -1,5 +1,4 @@
 execute if score Global gamestart matches 1.. run return 0
-function rauch:game/mechanics/respawn/respawn_main
 
 execute as @e[type=marker,tag=map,tag=ce] at @s positioned ~ ~-20 ~ run function rauch:game/mode/king_of_the_hill/point
 # capture_info: 1   2    3    4    5
