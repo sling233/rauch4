@@ -1,4 +1,4 @@
-# as player hit, at wark
+# as player hit, wark has tag t_wark 
 scoreboard players set @s wark_startup 0
 execute as @s[scores={pnum=1}] run bossbar set minecraft:wark1 max 20
 execute as @s[scores={pnum=2}] run bossbar set minecraft:wark2 max 20
@@ -16,6 +16,6 @@ function rauch:game/ui/bossbar/wark/visible
 execute at @s run playsound minecraft:entity.warden.death master @s
 
 execute at @s run summon marker ~ ~ ~ {Tags:["wark_detect","setup"]}
-scoreboard players operation @e[type=marker,tag=wark_detect,tag=setup,limit=1] pnum = @p pnum
+scoreboard players operation @e[type=marker,tag=wark_detect,tag=setup,limit=1] pnum = @a[tag=t_wark,limit=1] pnum
 scoreboard players operation @e[type=marker,tag=wark_detect,tag=setup,limit=1] wark_charge = @s pnum
 tag @e[type=marker,tag=wark_detect,tag=setup] remove setup

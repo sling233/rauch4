@@ -5,7 +5,9 @@ execute if entity @s[team=Blue] at @s run tag @a[team=Red,distance=..20] add t_s
 tag @s remove t_selectable
 function rauch:util/select_players
 
+tag @s add t_wark
 execute as @a[tag=t_selected] run function rauch:game/kits/wark/r/hit
+tag @s remove t_wark
 execute if entity @a[tag=t_selected] at @s run playsound minecraft:entity.warden.listening_angry master @a
 execute if entity @a[tag=t_selected] run scoreboard players operation @s cool1 = @s cool1_target
 execute unless entity @a[tag=t_selected] at @s run playsound minecraft:entity.puffer_fish.blow_out master @s
