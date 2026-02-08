@@ -9,12 +9,12 @@ wokkaman_selectability:"gray",\
 emulate_1_8:"gray",\
 }
 
-execute if score Global mode matches 0 run data modify storage rauch temp.deathmatch set value "dark_green"
-execute if score Global mode matches 1 run data modify storage rauch temp.koth set value "dark_green"
-execute if score Global mode matches 2 run data modify storage rauch temp.respawn set value "dark_green"
-execute if score Global mode matches 3 run data modify storage rauch temp.testing set value "dark_green"
-execute if score Global mode matches 4 run data modify storage rauch temp.ctf set value "dark_green"
-execute if score Global mode matches 5 run data modify storage rauch temp.wokkaman set value "dark_green"
+execute if score selected_mode global matches 0 run data modify storage rauch temp.deathmatch set value "dark_green"
+execute if score selected_mode global matches 1 run data modify storage rauch temp.koth set value "dark_green"
+execute if score selected_mode global matches 2 run data modify storage rauch temp.respawn set value "dark_green"
+execute if score selected_mode global matches 3 run data modify storage rauch temp.testing set value "dark_green"
+execute if score selected_mode global matches 4 run data modify storage rauch temp.ctf set value "dark_green"
+execute if score selected_mode global matches 5 run data modify storage rauch temp.wokkaman set value "dark_green"
 
 execute if score %reload_message_disabled global matches 1 run data modify storage rauch temp merge value \
 {reload_message:"gray"}

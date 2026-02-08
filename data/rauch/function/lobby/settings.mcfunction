@@ -1,11 +1,11 @@
 execute if score Global game_running matches 1 run tellraw @s [{text:"",color:"red"},{"text":"Can't change settings while a game is running."}]
 execute if score Global game_running matches 1 run return run scoreboard players reset @s adminsetting
-execute as @s[scores={adminsetting=1}] run scoreboard players set Global mode 0
-execute as @s[scores={adminsetting=2}] run scoreboard players set Global mode 1
-execute as @s[scores={adminsetting=3}] run scoreboard players set Global mode 2
-execute as @s[scores={adminsetting=4}] run scoreboard players set Global mode 3
-execute as @s[scores={adminsetting=5}] run scoreboard players set Global mode 4
-execute as @s[scores={adminsetting=6}] run scoreboard players set Global mode 5
+execute as @s[scores={adminsetting=1}] run scoreboard players set selected_mode global 0
+execute as @s[scores={adminsetting=2}] run scoreboard players set selected_mode global 1
+execute as @s[scores={adminsetting=3}] run scoreboard players set selected_mode global 2
+execute as @s[scores={adminsetting=4}] run scoreboard players set selected_mode global 3
+execute as @s[scores={adminsetting=5}] run scoreboard players set selected_mode global 4
+execute as @s[scores={adminsetting=6}] run scoreboard players set selected_mode global 5
 
 #wenn es ein mode select war
 execute if score @s adminsetting matches 1 run tellraw @a [{"selector":"@s"},{"text":" set mode to ","color":"green"},\

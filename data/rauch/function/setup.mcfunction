@@ -185,7 +185,7 @@ function rauch:settings/versions/lobby_check
 # ]
 
 # set scores
-execute unless score Global mode matches 0..5 run scoreboard players set Global mode 0
+execute unless score selected_mode global matches 0..5 run scoreboard players set selected_mode global 0
 
 # setdisplay
 scoreboard objectives setdisplay below_name health
