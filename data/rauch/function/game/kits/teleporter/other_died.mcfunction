@@ -1,1 +1,1 @@
-scoreboard players reset @s teleweak
+#scoreboard players reset @s teleweak

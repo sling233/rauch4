@@ -3,20 +3,20 @@ scoreboard players reset @s wark_startup
 #execute as @s[scores={health=20..}] run scoreboard players set @s wark_detect 20
 #execute as @s[scores={health=11..19}] run scoreboard players set @s wark_detect 60
 #execute as @s[scores={health=..10}] run scoreboard players set @s wark_detect 80
-scoreboard players set @s wark_detect 90
+scoreboard players set @s wark_detect 60
 
-bossbar set minecraft:wark1 max 90
-bossbar set minecraft:wark2 max 90
-bossbar set minecraft:wark3 max 90
-bossbar set minecraft:wark4 max 90
-bossbar set minecraft:wark5 max 90
-bossbar set minecraft:wark6 max 90
-bossbar set minecraft:wark7 max 90
-bossbar set minecraft:wark8 max 90
-bossbar set minecraft:wark9 max 90
-bossbar set minecraft:wark10 max 90
-bossbar set minecraft:wark11 max 90
-bossbar set minecraft:wark12 max 90
+bossbar set minecraft:wark1 max 60
+bossbar set minecraft:wark2 max 60
+bossbar set minecraft:wark3 max 60
+bossbar set minecraft:wark4 max 60
+bossbar set minecraft:wark5 max 60
+bossbar set minecraft:wark6 max 60
+bossbar set minecraft:wark7 max 60
+bossbar set minecraft:wark8 max 60
+bossbar set minecraft:wark9 max 60
+bossbar set minecraft:wark10 max 60
+bossbar set minecraft:wark11 max 60
+bossbar set minecraft:wark12 max 60
 
 #execute at @s[scores={pnum=1}] store result bossbar minecraft:wark1 max run scoreboard players get @s wark_detect
 #execute at @s[scores={pnum=2}] store result bossbar minecraft:wark2 max run scoreboard players get @s wark_detect

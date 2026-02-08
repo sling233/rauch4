@@ -1,6 +1,15 @@
 #executed at hacker, as hit player
-scoreboard players set @s hack 160
-scoreboard players set @p hack_tag_timer 160
+scoreboard players set @s hack 120
+scoreboard players set @p hack_tag_timer 120
+
+scoreboard players set 2 const 2
+scoreboard players set 3 const 3
+scoreboard players operation t_two_thirds_hacker_cool temp = @p cool1_target
+scoreboard players operation t_two_thirds_hacker_cool temp *= 2 const
+scoreboard players operation t_two_thirds_hacker_cool temp /= 3 const
+scoreboard players operation @p cool1 += t_two_thirds_hacker_cool temp
+scoreboard players reset t_two_thirds_hacker_cool temp
+
 
 function rauch:game/ui/bossbar/hack/set_max
 function rauch:game/ui/bossbar/hack/visible

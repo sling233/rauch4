@@ -11,10 +11,10 @@
     "contents": [
        {"text":"Name: ","color":"white"},{"text":"Hacker\n","color":"#FF0000"},
        {"text":"Type: "},{"text":"Support (rework planned)\n","color":"#FFBF00"},
-       {"text":"Stats:  "},{"text":"❤13  ","color":"#7FFF00"},{"text":"⚔1.1  ","color":"#00FF3F"},{"text":"Range: 3\n\n","color":"#00FFFF"},
-       {"text":"R (19s): ","color":"#003FFF"},
-       {"text":"Projectile that hacks enemies for 10 seconds. Hacked players cannot use their abilities.\n\n"},
-       {"text":"Q (23s): ","color":"#7F00FF"},
+       {"text":"Stats:  "},{"text":"❤13  ","color":"#7FFF00"},{"text":"⚔1.0  ","color":"#00FF3F"},{"text":"Range: 3\n\n","color":"#00FFFF"},
+       {"text":"R (13s): ","color":"#003FFF"},
+       {"text":"Projectile that hacks enemies for 6 seconds. Hacked players cannot use their abilities. Missing only causes 1/3 of the cooldown.\n\n"},
+       {"text":"Q (17s): ","color":"#7F00FF"},
        {"text":"Projectile that debuffs all enemies in a ~5 block radius after landing by increasing received damage by 20% for 12 seconds.\n\n"},
        {"text":"F (-): ","color":"#FF00BF"},
        {"text":"Reduces all ability cooldowns for teammates in range (cone-shape in front of you) by 15 seconds. Instead of having a cooldown, this ability is charge-based. You get a charge if a player debuffed (R) or hacked (Q) by you dies.\n\n"}

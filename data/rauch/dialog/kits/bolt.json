@@ -14,9 +14,9 @@
        {"text":"Stats:  "},{"text":"❤16  ","color":"#30A19E"},{"text":"⚔1.4  ","color":"#3DCCC7"},{"text":"Range: 3.5\n\n","color":"#4AF6F0"},
        {"text":"R (10s): ","color":"#4AF6F0"},
        {"text":"A short-ranged projectile that explodes after a short travel time, dealing 1.5❤ Damage. If your Q is active this can be used to get extra hits.\n\n"},
-       {"text":"Q (20s): ","color":"#4AF6F0"},
+       {"text":"Q (14s): ","color":"#4AF6F0"},
        {"text":"You have 4 seconds to hit as many distinct players as possible. After the timer ends, you recieve a +20% damage buff for every unique player hit (stacks additively). You can press Q again to end the timer immediately, to get the damage boost early.\n\n"},
-       {"text":"F (13s): ","color":"#4AF6F0"},
+       {"text":"F (11s): ","color":"#4AF6F0"},
        {"text":"+40% Speed for 5 seconds.\n\n"}
     ]
   }

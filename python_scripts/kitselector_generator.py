@@ -45,7 +45,7 @@ raucher.f_ability = "Spawns 8 spiders, that attack enemies in a 30 block radius.
 raucher.colors = ["#FFA54C","#C7290A","#DD4D1D","#F27130","#FFA54C","#FFA54C","#FFA54C","#FFA54C"]
 
 hacker = Kit("Hacker","Support (rework planned)")
-hacker.r_ability = "Projectile that hacks enemies for 10 seconds. Hacked players cannot use their abilities."
+hacker.r_ability = "Projectile that hacks enemies for 6 seconds. Hacked players cannot use their abilities. Missing only causes 1/3 of the cooldown."
 hacker.q_ability = "Projectile that debuffs all enemies in a ~5 block radius after landing by increasing received damage by 20% for 12 seconds."
 hacker.f_ability = "Reduces all ability cooldowns for teammates in range (cone-shape in front of you) by 15 seconds. Instead of having a cooldown, this ability is charge-based. You get a charge if a player debuffed (R) or hacked (Q) by you dies."
 hacker.f_cool = "-"
@@ -59,7 +59,7 @@ wark.f_ability = "An upwards boost for mobility."
 wark.colors = ["#07E6BD","#036654","#049177","#06BB9A","#07E6BD","#07E6BD","#07E6BD","#07E6BD"]
 
 teleporter = Kit("Teleporter","Assassin")
-teleporter.r_ability = "Projectile that teleports you behind the player you hit. The player gets debuffed with -40% speed and -40% attack damage for 3 seconds. Missing only causes 1/3 of the cooldown."
+teleporter.r_ability = "Projectile that teleports you behind the player you hit. Missing only causes 1/3 of the cooldown."
 teleporter.q_ability = "You become invisible for 6 seconds. Sprinting particles are visible though."
 teleporter.f_ability = "You instantly teleport up to 14 blocks forwards."
 teleporter.colors = ["#FF88FF","#804480","#AA5BAA","#D471D4","#FF88FF","#FF88FF","#FF88FF","#FF88FF"]

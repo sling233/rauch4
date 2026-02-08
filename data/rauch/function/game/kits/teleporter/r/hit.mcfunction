@@ -22,9 +22,9 @@ tag @a[tag=tele] remove tele
 
 execute at @s positioned ^ ^ ^-2 run playsound minecraft:entity.enderman.teleport master @a
 
-attribute @s minecraft:attack_damage modifier add teleweak -0.4 add_multiplied_total
-scoreboard players set @s teleweak 60
-effect give @s slowness 3 1 true
-effect give @s unluck 3 1
+# attribute @s minecraft:attack_damage modifier add teleweak -0.4 add_multiplied_total
+# scoreboard players set @s teleweak 60
+#effect give @s slowness 3 1 true
+# #effect give @s unluck 3 1
 execute as @e[type=marker,tag=teleporter,tag=temp] run function rauch:game/kits/teleporter/r/kill
 scoreboard players reset t_pnum temp

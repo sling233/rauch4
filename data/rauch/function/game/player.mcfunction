@@ -17,7 +17,7 @@ execute as @s[scores={wok_push_timer=..-1}] run function rauch:game/kits/wokkama
 execute as @s[tag=raucher_control,tag=!raucher_debuff] run function rauch:game/kits/raucher/r/slow/leave
 execute as @s[scores={hack=0..}] run function rauch:game/kits/hacker/r/hacked_player
 execute as @s[scores={hacker_damage_timer=0..}] run function rauch:game/kits/hacker/q/debuff
-execute as @s[scores={teleweak=0..}] run function rauch:game/kits/teleporter/r/debuff
+# execute as @s[scores={teleweak=0..}] run function rauch:game/kits/teleporter/r/debuff
 execute as @s[scores={hacker_ability=0..}] run function rauch:game/kits/hacker/f/ability_boost
 execute as @s[scores={raucherdmg=0..}] run function rauch:game/kits/raucher/q/buff
 execute as @s[scores={tank_resistance=0..}] run function rauch:game/kits/tank/q/resistance

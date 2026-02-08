@@ -3,8 +3,8 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"Bolt","color":"$(bolt)","click_event":{"action":"run_command","command":"/trigger kitselect set 1"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Bolt\n","color":"#4AF6F0"},{"text":"Type: ","color":"gray"},{"text":"Fighter\n","color":"#247774"},\
 {"text":"Stats:  "},{"text":"❤16  ","color":"#30A19E"},{"text":"⚔1.4  ","color":"#3DCCC7"},{"text":"Range: 3.5\n\n","color":"#4AF6F0"},{"text":"R (10s): ","color":"#4AF6F0"},\
-{"text":"A short-ranged projectile that explodes after a short travel time, dealing 1.5❤ Damage. If your Q is active this can be used to get extra hits.\n\n"},{"text":"Q (20s): ","color":"#4AF6F0"},\
-{"text":"You have 4 seconds to hit as many distinct players as possible. After the timer ends, you recieve a +20% damage buff for every unique player hit (stacks additively). You can press Q again to end the timer immediately, to get the damage boost early.\n\n"},{"text":"F (13s): ","color":"#4AF6F0"},\
+{"text":"A short-ranged projectile that explodes after a short travel time, dealing 1.5❤ Damage. If your Q is active this can be used to get extra hits.\n\n"},{"text":"Q (14s): ","color":"#4AF6F0"},\
+{"text":"You have 4 seconds to hit as many distinct players as possible. After the timer ends, you recieve a +20% damage buff for every unique player hit (stacks additively). You can press Q again to end the timer immediately, to get the damage boost early.\n\n"},{"text":"F (11s): ","color":"#4AF6F0"},\
 {"text":"+40% Speed for 5 seconds."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Zarzahn","color":"$(zarzahn)","click_event":{"action":"run_command","command":"/trigger kitselect set 2"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Zarzahn\n","color":"#00EE00"},{"text":"Type: ","color":"gray"},{"text":"Fighter","color":"#3D773D"},{"text":" / ","color":"gray"},{"text":"Support\n","color":"#3D773D"},\
@@ -14,14 +14,14 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"Use F while crouching (Shift-F) to create a Warp Point. The next 18 seconds you have the ability to teleport to that point once by pressing F again (without crouching)."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Raucher","color":"$(raucher)","click_event":{"action":"run_command","command":"/trigger kitselect set 3"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Raucher\n","color":"#FFA54C"},{"text":"Type: ","color":"gray"},{"text":"Support\n","color":"#C7290A"},\
-{"text":"Stats:  "},{"text":"❤12  ","color":"#DD4D1D"},{"text":"⚔0.9  ","color":"#F27130"},{"text":"Range: 2.5\n\n","color":"#FFA54C"},{"text":"R (3.5s per cloud): ","color":"#FFA54C"},\
-{"text":"Throws a debuff Cloud that increases received damage by 40% for all enemies inside. Use while crouching to throw a Health Cloud that heals teammates instead. Up to 3 clouds can be stored and used at will.\n\n"},{"text":"Q (18s): ","color":"#FFA54C"},\
+{"text":"Stats:  "},{"text":"❤12  ","color":"#DD4D1D"},{"text":"⚔0.9  ","color":"#F27130"},{"text":"Range: 2.5\n\n","color":"#FFA54C"},{"text":"R (4s per cloud): ","color":"#FFA54C"},\
+{"text":"Throws a debuff Cloud that increases received damage by 40% for all enemies inside. Use while crouching to throw a Health Cloud that heals teammates instead. Up to 3 clouds can be stored and used at will.\n\n"},{"text":"Q (16s): ","color":"#FFA54C"},\
 {"text":"Buffs damage for a teammate by 50% for 5 seconds (look at them and press Q).\n\n"},{"text":"F (15s): ","color":"#FFA54C"},\
 {"text":"Spawns 8 spiders, that attack enemies in a 30 block radius. The Spiders select targets evenly. They die in one hit or after 9 seconds."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Hacker","color":"$(hacker)","click_event":{"action":"run_command","command":"/trigger kitselect set 4"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Hacker\n","color":"#FF0000"},{"text":"Type: ","color":"gray"},{"text":"Support (rework planned)\n","color":"#FFBF00"},\
-{"text":"Stats:  "},{"text":"❤13  ","color":"#7FFF00"},{"text":"⚔1.1  ","color":"#00FF3F"},{"text":"Range: 3\n\n","color":"#00FFFF"},{"text":"R (19s): ","color":"#003FFF"},\
-{"text":"Projectile that hacks enemies for 10 seconds. Hacked players cannot use their abilities.\n\n"},{"text":"Q (23s): ","color":"#7F00FF"},\
+{"text":"Stats:  "},{"text":"❤13  ","color":"#7FFF00"},{"text":"⚔1.0  ","color":"#00FF3F"},{"text":"Range: 3\n\n","color":"#00FFFF"},{"text":"R (13s): ","color":"#003FFF"},\
+{"text":"Projectile that hacks enemies for 6 seconds. Hacked players cannot use their abilities. Missing only causes 1/3 of the cooldown.\n\n"},{"text":"Q (17s): ","color":"#7F00FF"},\
 {"text":"Projectile that debuffs all enemies in a ~5 block radius after landing by increasing received damage by 20% for 12 seconds.\n\n"},{"text":"F (-): ","color":"#FF00BF"},\
 {"text":"Reduces all ability cooldowns for teammates in range (cone-shape in front of you) by 15 seconds. Instead of having a cooldown, this ability is charge-based. You get a charge if a player debuffed (R) or hacked (Q) by you dies."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Wark","color":"$(wark)","click_event":{"action":"run_command","command":"/trigger kitselect set 5"},"hover_event":{"action":"show_text","value":\
@@ -32,9 +32,9 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"An upwards boost for mobility."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Teleporter","color":"$(teleporter)","click_event":{"action":"run_command","command":"/trigger kitselect set 6"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Teleporter\n","color":"#FF88FF"},{"text":"Type: ","color":"gray"},{"text":"Assassin\n","color":"#804480"},\
-{"text":"Stats:  "},{"text":"❤10  ","color":"#AA5BAA"},{"text":"⚔2.8  ","color":"#D471D4"},{"text":"Range: 2\n\n","color":"#FF88FF"},{"text":"R (17s): ","color":"#FF88FF"},\
-{"text":"Projectile that teleports you behind the player you hit. The player gets debuffed with -40% speed and -40% attack damage for 3 seconds. Missing only causes 1/3 of the cooldown.\n\n"},{"text":"Q (22s): ","color":"#FF88FF"},\
-{"text":"You become invisible for 6 seconds. Sprinting particles are visible though.\n\n"},{"text":"F (17s): ","color":"#FF88FF"},\
+{"text":"Stats:  "},{"text":"❤10  ","color":"#AA5BAA"},{"text":"⚔2.8  ","color":"#D471D4"},{"text":"Range: 2\n\n","color":"#FF88FF"},{"text":"R (14s): ","color":"#FF88FF"},\
+{"text":"Projectile that teleports you behind the player you hit. Missing only causes 1/3 of the cooldown.\n\n"},{"text":"Q (17s): ","color":"#FF88FF"},\
+{"text":"You become invisible for 6 seconds. Sprinting particles are visible though.\n\n"},{"text":"F (15s): ","color":"#FF88FF"},\
 {"text":"You instantly teleport up to 14 blocks forwards."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Tank","color":"$(tank)","click_event":{"action":"run_command","command":"/trigger kitselect set 7"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Tank\n","color":"#6E69FF"},{"text":"Type: ","color":"gray"},{"text":"Tank","color":"#373580"},{"text":" / ","color":"gray"},{"text":"Support","color":"#373580"},{"text":" / ","color":"gray"},{"text":"old kit, will get a rework someday\n","color":"#373580"},\
@@ -44,8 +44,8 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
 {"text":"Creates a Projectile Shield that lasts 7.5 seconds."}]}},{"text":"]\n[","color":"dark_gray"},\
 {"text":"Pikka","color":"$(pikka)","click_event":{"action":"run_command","command":"/trigger kitselect set 8"},"hover_event":{"action":"show_text","value":\
 [{"text":"Name: ","color":"gray"},{"text":"Pikka\n","color":"#FFBF47"},{"text":"Type: ","color":"gray"},{"text":"Assassin\n","color":"#DB00B6"},\
-{"text":"Stats:  "},{"text":"❤13  ","color":"#F20089"},{"text":"⚔1.1  ","color":"#EB8842"},{"text":"Range: 3\n\n","color":"#FFBF47"},{"text":"R (20s): ","color":"#FFBF47"},\
-{"text":"A Boost in momentum forwards. Way more useful in the air.\n\n"},{"text":"Q (18s): ","color":"#FFBF47"},\
+{"text":"Stats:  "},{"text":"❤12  ","color":"#F20089"},{"text":"⚔1.1  ","color":"#EB8842"},{"text":"Range: 3\n\n","color":"#FFBF47"},{"text":"R (18s): ","color":"#FFBF47"},\
+{"text":"A Boost in momentum forwards. Way more useful in the air.\n\n"},{"text":"Q (17s): ","color":"#FFBF47"},\
 {"text":"When grounded, you rise in the air. If you already are in the air you simply stall for a bit. After a short while you slam into the ground, dealing 4.8❤ and stunning everyone in range for 1 second.\n\n"},{"text":"F (14s): ","color":"#FFBF47"},\
 {"text":"A Boost upwards. In general, you have an elytra. When exceeding a certain speed while flying, your melee attacks get buffed to 4.6❤ (with a crit, that would be 6.9❤) until you touch the ground."}]}},{"text":"]","color":"dark_gray"},\
 {"text":"\n\n[","color":"dark_gray"},{"text":"Wokkaman","color":"$(wokkaman)",\

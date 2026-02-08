@@ -1,5 +1,5 @@
-#teleweak
-attribute @s minecraft:attack_damage modifier remove teleweak
+# #teleweak
+# attribute @s minecraft:attack_damage modifier remove teleweak
 #pikkafast
 attribute @s minecraft:attack_damage modifier remove flyer_fast
 attribute @s minecraft:entity_interaction_range modifier remove flyer_fast_range
@@ -37,7 +37,7 @@ scoreboard players reset @s respawn
 scoreboard players reset @s stun
 scoreboard players reset @s pnum
 scoreboard players reset @s tele2
-scoreboard players reset @s teleweak
+#scoreboard players reset @s teleweak
 scoreboard players reset @s hacker_damage_timer
 scoreboard players reset @s zarzahn_f
 scoreboard players reset @s zarzahn_hooking

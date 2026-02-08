@@ -8,4 +8,8 @@ scoreboard players operation @e[type=marker,tag=setup,tag=hacker,limit=1] pnum =
 tag @e[type=marker,tag=setup,tag=hacker] remove setup
 execute at @s run playsound minecraft:entity.bat.takeoff master @a ~ ~ ~ 0.5
 
-scoreboard players operation @s cool1 = @s cool1_target
+scoreboard players set 3 const 3
+scoreboard players operation t_one_third_hacker_cool temp = @s cool1_target
+scoreboard players operation t_one_third_hacker_cool temp /= 3 const
+scoreboard players operation @s cool1 = t_one_third_hacker_cool temp
+scoreboard players reset t_one_third_hacker_cool temp
