@@ -1,0 +1,9 @@
+function rauch:game/kits/bolt/other_died
+function rauch:game/kits/zarzahn/other_died
+function rauch:game/kits/raucher/other_died
+function rauch:game/kits/hacker/other_died
+#function rauch:game/kits/wark/other_died
+function rauch:game/kits/teleporter/other_died
+function rauch:game/kits/tank/other_died
+#function rauch:game/kits/pikka/other_died
+function rauch:game/kits/wokkaman/other_died

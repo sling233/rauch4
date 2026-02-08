@@ -1,4 +1,5 @@
 # start
+say remove buff
 scoreboard objectives add i dummy
 scoreboard players set Global i 0
 # end
