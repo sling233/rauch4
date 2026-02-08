@@ -14,6 +14,7 @@ execute if entity @a[tag=edit_lobby] run return 0
 scoreboard players set Global game_running 1
 scoreboard players add Global game_id 1
 scoreboard players operation Global mode = selected_mode global
+scoreboard players reset Global gameend
 
 # create game data storage
 data remove storage game_data bolt_hit
