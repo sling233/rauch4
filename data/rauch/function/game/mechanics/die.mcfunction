@@ -8,14 +8,13 @@ scoreboard players set @s respawn 0
 function rauch:game/kits/die
 
 # kill all entities that belong to the player dying and have the remove_on_death tag
-execute at @s as @e[type=marker,tag=remove_on_death] if score @s pnum = @p pnum run kill @s
-execute at @s as @e[type=armor_stand,tag=remove_on_death] if score @s pnum = @p pnum run kill @s
+scoreboard players operation t_pnum temp = @s pnum
+execute at @s as @e[type=marker,tag=remove_on_death] if score @s pnum = t_pnum temp run kill @s
+execute at @s as @e[type=armor_stand,tag=remove_on_death] if score @s pnum = t_pnum temp run kill @s
+scoreboard players reset t_pnum temp
 
-# bossbars
-function rauch:game/ui/bossbar/elytra/invisible
-function rauch:game/ui/bossbar/speed/invisible
-function rauch:game/ui/bossbar/wark/invisible
-function rauch:game/ui/bossbar/zarzahn/invisible
+effect clear @s
+
 # respawn visible wenn mode nicht deathmatch oder testing mode ist und man nicht wokkaman ist
 execute unless score Global mode matches 0 unless score Global mode matches 3 unless entity @s[tag=wokkaman] run function rauch:game/ui/bossbar/respawn/visible
 
@@ -25,9 +24,11 @@ scoreboard players reset @s raucherdmg_num
 scoreboard players reset @s tank_resistance
 scoreboard players reset @s tank_resistance_num
 scoreboard players reset @s teleweak
-scoreboard players set @s armor_target 80
 
-execute as @s[tag=wok_stepped_on] run function rauch:game/kits/wokkaman/sq/kill_my_boat
+scoreboard players set @s armor_target 80
+function rauch:game/mechanics/set_protection
+
+execute as @s[tag=wok_stepped_on] run function rauch:game/kits/wokkaman/sq/kill_wokkamans_boat
 execute as @s[tag=zarzahn_hook] run function rauch:game/kits/zarzahn/r/cancel_hook
 execute as @s[tag=wok_hook] run function rauch:game/kits/wokkaman/r/cancel_hook
 # remove from wokkaman sr tag lists
@@ -53,10 +54,8 @@ execute if score Global mode matches 4 as @s[tag=flagPickedUp] run function rauc
 execute if score Global mode matches 2 as @s[team=Red] run scoreboard players add Global killNumBlue 1
 execute if score Global mode matches 2 as @s[team=Blue] run scoreboard players add Global killNumRed 1
 #function rauch:game/kits/weapon
-function rauch:game/kits/set_armor_body
+#function rauch:game/kits/set_armor_body
 function rauch:game/mechanics/set_helmet
-function rauch:game/mechanics/set_protection
-attribute @s minecraft:gravity base set 0.08
 
 # set night vision
 execute as @s[scores={night_vision_accessibility=2}] run effect give @s minecraft:night_vision infinite 0 true

@@ -5,8 +5,12 @@ execute at @s[team=Blue] positioned ~-1 ~ ~-1 as @a[tag=game,tag=!dead,team=Red,
 execute at @s unless block ~ ~-0.4 ~ #minecraft:nonsolid run return run function rauch:game/kits/wokkaman/sq/floor_reached
 execute unless entity @a[tag=t_damager] run return run function rauch:game/kits/wokkaman/sq/un_step_on
 
-execute at @s as @e[type=armor_stand,tag=stun] if score @s pnum = @p pnum at @s run tp @s ~ ~-0.2 ~
-execute at @s as @e[type=block_display,tag=wok_sq_vehicle] if score @s pnum = @p pnum run tag @s add t_vehicle
+scoreboard players operation t_pnum temp = @s pnum
+execute as @e[type=armor_stand,tag=stun] if score @s pnum = t_pnum temp at @s run tp @s ~ ~-0.2 ~
+execute as @e[type=block_display,tag=wok_sq_vehicle] if score @s pnum = t_pnum temp run tag @s add t_vehicle
+scoreboard players reset t_pnum temp
+execute unless entity @e[type=block_display,tag=t_vehicle] run return run function rauch:game/kits/wokkaman/sq/un_step_on
+
 execute at @s run tp @e[type=block_display,tag=wok_sq_vehicle,tag=t_vehicle] ~ ~2.4 ~
 execute as @e[type=block_display,tag=wok_sq_vehicle,tag=t_vehicle] at @a[tag=game] if score @s wokkaman_weapon = @p pnum run ride @p mount @s
 tag @e[type=block_display,tag=wok_sq_vehicle,tag=t_vehicle] remove t_vehicle
