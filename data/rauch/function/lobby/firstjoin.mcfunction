@@ -9,11 +9,8 @@ execute unless score @s actionbar_design matches 0.. run scoreboard players set 
 execute unless score @s night_vision_accessibility matches 0.. run scoreboard players set @s night_vision_accessibility 0
 execute unless score @s hide_ambient_particles matches 0.. run scoreboard players set @s hide_ambient_particles 0
 
-tellraw @s [{"color":"yellow","text":"This World runs the Wokkagames Datapack."},\
+tellraw @s [{"color":"yellow","text":"Welcome to Wokkagames!"},\
 {"text":"\nHover here for a Player Guide","color":"light_purple","hover_event":{"action":"show_text","value":[\
 {"text":"Placeholder tutorial. the world needs admins to start and manage games. right click to activate r ability, \
-press item drop key to activate q ability, press item swap key to activate f ability."}]}},\
-{"text":"\nClick here for an admin guide","color":"light_purple",\
-"hover_event":{"action":"show_text","value":[{"text":"Click to print admin guide. Admins need permissions (level >= 2) in the world"}]},\
-"click_event":{"action":"run_command","command":"/function rauch:tutorial/tutorial"}}]
+press item drop key to activate q ability, press item swap key to activate f ability."}]}}]
 function rauch:lobby/tp_to_lobby
