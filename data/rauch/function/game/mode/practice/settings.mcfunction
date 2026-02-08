@@ -1,4 +1,5 @@
 scoreboard players set Global gamestart 0
+tag @a[tag=game] add can_respawn
 
 execute as @a[scores={kit=1}] run scoreboard players set @s cool1_target 10
 execute as @a[scores={kit=1}] run scoreboard players set @s cool2_target 10

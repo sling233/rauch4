@@ -1,0 +1,12 @@
+execute as @s[scores={pnum=1}] store result bossbar minecraft:respawn1 max run function rauch:game/mode/get_respawn_time
+execute as @s[scores={pnum=2}] store result bossbar minecraft:respawn2 max run function rauch:game/mode/get_respawn_time
+execute as @s[scores={pnum=3}] store result bossbar minecraft:respawn3 max run function rauch:game/mode/get_respawn_time
+execute as @s[scores={pnum=4}] store result bossbar minecraft:respawn4 max run function rauch:game/mode/get_respawn_time
+execute as @s[scores={pnum=5}] store result bossbar minecraft:respawn5 max run function rauch:game/mode/get_respawn_time
+execute as @s[scores={pnum=6}] store result bossbar minecraft:respawn6 max run function rauch:game/mode/get_respawn_time
+execute as @s[scores={pnum=7}] store result bossbar minecraft:respawn7 max run function rauch:game/mode/get_respawn_time
+execute as @s[scores={pnum=8}] store result bossbar minecraft:respawn8 max run function rauch:game/mode/get_respawn_time
+execute as @s[scores={pnum=9}] store result bossbar minecraft:respawn9 max run function rauch:game/mode/get_respawn_time
+execute as @s[scores={pnum=10}] store result bossbar minecraft:respawn10 max run function rauch:game/mode/get_respawn_time
+execute as @s[scores={pnum=11}] store result bossbar minecraft:respawn11 max run function rauch:game/mode/get_respawn_time
+execute as @s[scores={pnum=12}] store result bossbar minecraft:respawn12 max run function rauch:game/mode/get_respawn_time

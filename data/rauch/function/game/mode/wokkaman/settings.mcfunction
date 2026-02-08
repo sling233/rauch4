@@ -1,0 +1,1 @@
+tag @a[tag=game,team=Blue] add can_respawn

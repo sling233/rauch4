@@ -1,1 +1,1 @@
-execute as @a[tag=dead] run function rauch:game/mechanics/respawn/waiting
+execute as @a[tag=dead,tag=can_respawn] run function rauch:game/mechanics/respawn/waiting

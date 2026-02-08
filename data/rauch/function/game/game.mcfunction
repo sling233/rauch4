@@ -38,9 +38,5 @@ execute as @e[type=marker,tag=wark_detect,tag=active] at @s run function rauch:g
 execute as @e[type=item_display,tag=wok_rocket,tag=active] at @s run function rauch:game/kits/wokkaman/q/projectile
 execute as @e[type=text_display,tag=damage_number] run function rauch:game/ui/damage_number_tick
 
-execute if entity @a[tag=game] if score Global mode matches 0 run function rauch:game/mode/deathmatch/tick
-execute if entity @a[tag=game] if score Global mode matches 1 run function rauch:game/mode/king_of_the_hill/tick
-execute if entity @a[tag=game] if score Global mode matches 2 run function rauch:game/mode/respawn_deathmatch/tick
-execute if entity @a[tag=game] if score Global mode matches 3 run function rauch:game/mode/practice/tick
-execute if entity @a[tag=game] if score Global mode matches 4 run function rauch:game/mode/capture_the_flag/tick
-execute if entity @a[tag=game] if score Global mode matches 5 run function rauch:game/mode/wokkaman/tick
+function rauch:game/mode/tick
+execute if function rauch:game/mode/has_respawning run function rauch:game/mechanics/respawn/respawn_main
