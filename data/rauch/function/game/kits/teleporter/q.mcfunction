@@ -7,6 +7,6 @@ clear @s minecraft:leather_chestplate
 clear @s minecraft:leather_leggings
 effect give @s invisibility 6 1 true
 execute at @s run particle minecraft:smoke ~ ~0.6 ~ 0.8 0.7 0.8 0.02 1000 force
-function rauch:game/kits/set_weapon
+function rauch:game/kits/weapon
 
 scoreboard players operation @s cool2 = @s cool2_target

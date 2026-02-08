@@ -31,7 +31,7 @@ scoreboard players set @s armor_target 80
 execute if score @s kit matches 9 store result score @s wokkaman_weapon run random value 0..4
 execute if score @s kit matches 9 store result score @s wokkaman_helmet run random value 0..50
 execute if score @s wokkaman_helmet matches 1.. run scoreboard players set @s wokkaman_helmet 1
-function rauch:game/kits/set_weapon
+#function rauch:game/kits/weapon
 function rauch:game/mechanics/set_stats
 function rauch:game/kits/set_armor_body
 function rauch:game/mechanics/set_helmet

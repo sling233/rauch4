@@ -1,5 +1,5 @@
 execute as @a[tag=game] run clear @s
-execute as @a[tag=game] run function rauch:game/kits/set_weapon
+#execute as @a[tag=game] run function rauch:game/kits/weapon
 execute as @a[tag=game] run function rauch:game/kits/set_armor_body
 execute as @a[tag=game] run function rauch:game/mechanics/set_helmet
 
