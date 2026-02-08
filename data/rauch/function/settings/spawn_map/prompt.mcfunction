@@ -2,7 +2,7 @@ execute if score Global game_running matches 1 run return run tellraw @s [{text:
 
 tellraw @s [{"text":"\n--------- Add a map ---------","color":"yellow"}]
 tellraw @s [{"text":"Official Maps:","color":"green"}]
-tellraw @s [{"text":"Spawns a prebuilt map and automatically sets up spawn positions etc. The map spawns at your location, expanding into positive x, y and z","color":"yellow"}]
+tellraw @s [{"text":"Spawns a prebuilt map and automatically sets up spawn positions etc. The map spawns at your location, expanding into positive x, y and z.","color":"yellow"}]
 tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Splat","color":"light_purple","hover_event":{"action":"show_text","value":[{"text":"A medium-sized splatoon themed map balanced for Deathmatch but also usable for other game modes.\nSize: 75x23"}]},"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_map/spawn_macro {id:splat}"}},{"text":"]"}]
 tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Ancient","color":"light_purple","hover_event":{"action":"show_text","value":[{"text":"A larger ancient city themed map good for King of the Hill and Deathmatch. Not recommended for Capture the Flag.\nSize: 65x41"}]},"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_map/spawn_macro {id:ancient}"}},{"text":"]"}]
 tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Greck","color":"light_purple","hover_event":{"action":"show_text","value":[{"text":"A large nether themed map good for Capture the Flag. Not recommended for other game modes.\nSize: 89x25"}]},"click_event":{"action":"run_command","command":"/function rauch:settings/spawn_map/spawn_macro {id:greck}"}},{"text":"]"}]
