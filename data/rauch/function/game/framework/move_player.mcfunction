@@ -20,7 +20,6 @@ attribute @s minecraft:movement_speed base reset
 attribute @s minecraft:entity_interaction_range base reset
 attribute @s minecraft:block_interaction_range base reset
 
-clear @s minecraft:elytra
 #kill @s
 title @s times 10 30 10
 scoreboard players reset @s bolt
@@ -47,7 +46,7 @@ scoreboard players reset @s wark_startup
 scoreboard players reset @s wark_buff
 scoreboard players reset @s wokkaman_helmet
 scoreboard players reset @s wokkaman_weapon
-execute as @s[scores={kit=9}] run scoreboard players set @s kit 1
+execute if score %enable_wokkaman_selectability global matches 0 as @s[scores={kit=9}] run scoreboard players set @s kit 1
 tag @s remove game
 tag @s remove dead
 tag @s remove zarzahn_hook
