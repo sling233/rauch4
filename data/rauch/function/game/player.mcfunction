@@ -13,7 +13,7 @@ execute if score @s click_warped matches 1.. if items entity @s weapon.mainhand 
 function rauch:game/kits/tick
 function rauch:game/kits/tick_all
 
-#general
+# general tasks
 execute as @s[scores={push_levitation_timer=-1}] run effect clear @s minecraft:levitation
 execute as @s[scores={heal=0..}] run function rauch:game/mechanics/heal
 execute as @s[scores={stun=0..}] run function rauch:game/mechanics/stun
@@ -28,18 +28,12 @@ execute if score Global enable_launchpads matches 1 run function rauch:game/mech
 #particles
 execute unless score @s hide_ambient_particles matches 1 run function rauch:game/ui/particle
 
-# scores and effects
 scoreboard players operation @s health_display = @s health
+
+# sprint
 effect give @s minecraft:hunger 1 255 true
-#sprint off in raucher debuff cloud
-#effect give @s[scores={hunger=..7},tag=!raucher_control,tag=!flagPickedUp] minecraft:saturation 1 0 true
-#sprint on in raucher debuff cloud
-effect give @s[scores={hunger=..7},tag=!flagPickedUp] minecraft:saturation 1 0 true
-execute if score %enable_flag_sprint global matches 1 run effect give @s[scores={hunger=..7},tag=flagPickedUp] minecraft:saturation 1 0 true
-effect give @s[scores={hunger=..2}] minecraft:saturation 1 0 true
-
-#tag @s remove spawn
-
+execute if score @s hunger matches ..7 if function rauch:game/mechanics/may_sprint run effect give @s minecraft:saturation 1 0 true
+execute if score @s hunger matches ..2 run effect give @s minecraft:saturation 1 0 true
 
 scoreboard players reset @s click
 scoreboard players reset @s click_warped
