@@ -6,7 +6,8 @@ execute as @s[scores={death=1..}] run function rauch:game/mechanics/die
 # ability reminder stuff
 execute unless items entity @s hotbar.0 carrot_on_a_stick[custom_data~{weapon:1b}] run function rauch:game/mechanics/set_weapon
 execute unless items entity @s hotbar.8 warped_fungus_on_a_stick[custom_data~{scroll:1b}] run function rauch:game/ui/give_scroll
-execute if score @s click_warped matches 1.. run function rauch:game/ui/show_ability_reminder
+execute if score @s click_warped matches 1.. if items entity @s weapon.mainhand warped_fungus_on_a_stick[custom_data~{scroll:1b}] run \
+    function rauch:game/ui/show_ability_reminder
 
 # class specific tasks
 function rauch:game/kits/tick
@@ -38,9 +39,12 @@ execute if score Global enable_launchpads matches 1 run function rauch:game/mech
 execute unless score @s hide_ambient_particles matches 1 run function rauch:game/ui/particle
 #execute as @s[tag=spawn] run function rauch:game/shop/shop
 
+function rauch:game/mode/tick_player
+
 #scores & effects
 scoreboard players operation @s health_display = @s health
 scoreboard players reset @s click
+scoreboard players reset @s click_warped
 scoreboard players reset @s dropcoas
 #scoreboard players reset @s deaths
 scoreboard players reset @s fly
