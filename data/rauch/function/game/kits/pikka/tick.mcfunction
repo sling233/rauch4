@@ -4,3 +4,5 @@ execute as @s[scores={flyerFSchedule=-1}] run function rauch:game/kits/pikka/f/s
 execute as @s[tag=!flying] if predicate rauch:flying run function rauch:game/kits/pikka/f/liftoff
 execute as @s[scores={elytra=0..}] run function rauch:game/kits/pikka/f/elytra_cooldown
 execute as @s[tag=flying] run function rauch:game/kits/pikka/f/flying
+
+scoreboard players reset @s fly

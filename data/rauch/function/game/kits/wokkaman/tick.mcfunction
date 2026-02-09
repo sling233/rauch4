@@ -25,3 +25,4 @@ execute as @s[scores={elytra=0..}] run function rauch:game/kits/wokkaman/f/elytr
 execute if score @s wokkaman_rocket_count matches 1.. run function rauch:game/kits/wokkaman/q/rotate_rockets
 
 tag @s remove t_grounded
+scoreboard players reset @s fly
