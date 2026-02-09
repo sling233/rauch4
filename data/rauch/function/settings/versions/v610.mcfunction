@@ -1,5 +1,4 @@
 tellraw @a [{"text":"dev609","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"dev610","color":"light_purple"}]
-tellraw @a [{"text":"- moved %enable_launchpads_in_lobby global score to lobby data storage","color":"yellow"}]
 
 # set version
 scoreboard players set Global version 610

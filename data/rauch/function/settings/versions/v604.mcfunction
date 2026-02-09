@@ -1,6 +1,5 @@
 # Update from old version where the version wasnt tracked yet
 tellraw @a [{"text":"dev603","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"dev604","color":"light_purple"}]
-tellraw @a [{"text":"- Removed two unused teams","color":"yellow"}]
 
 # set version
 scoreboard players set Global version 604

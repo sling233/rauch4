@@ -1,5 +1,4 @@
 tellraw @a [{"text":"dev607","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"dev608","color":"light_purple"}]
-tellraw @a [{"text":"- Removed obsolete scoreboard objective","color":"yellow"}]
 
 # set version
 scoreboard players set Global version 608
