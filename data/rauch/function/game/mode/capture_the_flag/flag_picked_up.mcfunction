@@ -14,21 +14,21 @@ execute store result score t_spawn_blue_z temp run data get entity @e[type=marke
 scoreboard players operation t_delta_z_red temp -= t_spawn_red_z temp
 scoreboard players operation t_delta_z_blu temp -= t_spawn_blue_z temp
 
-execute at @s run summon item_display ~ ~ ~ {UUID:[I;0,0,0,0]}
+execute at @s run summon item_display ~ ~ ~ {UUID:[I;-698710071,-633058886,-1943178672,1016033168]}
 
 # calculate distance 1
 execute store result storage temp distance.x float 0.001 run scoreboard players get t_delta_x_red temp
 execute store result storage temp distance.z float 0.001 run scoreboard players get t_delta_z_red temp
 function rauch:game/mode/capture_the_flag/get_distance_macro with storage temp distance
-execute store result score Global flagDistanceRed run data get entity 0-0-0-0-0 transformation.scale[0] 1000
+execute store result score Global flagDistanceRed run data get entity d65a87c9-da44-49ba-8c2d-72503c8f6f90 transformation.scale[0] 1000
 
 # calculate distance 2
 execute store result storage temp distance.x float 0.001 run scoreboard players get t_delta_x_blu temp
 execute store result storage temp distance.z float 0.001 run scoreboard players get t_delta_z_blu temp
 function rauch:game/mode/capture_the_flag/get_distance_macro with storage temp distance
-execute store result score Global flagDistanceBlue run data get entity 0-0-0-0-0 transformation.scale[0] 1000
+execute store result score Global flagDistanceBlue run data get entity d65a87c9-da44-49ba-8c2d-72503c8f6f90 transformation.scale[0] 1000
 
-kill 0-0-0-0-0
+kill d65a87c9-da44-49ba-8c2d-72503c8f6f90
 scoreboard players reset t_delta_x_red temp
 scoreboard players reset t_spawn_red_x temp
 scoreboard players reset t_delta_z_red temp
