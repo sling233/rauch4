@@ -6,6 +6,7 @@ execute as @s[scores={adminsetting=3}] run scoreboard players set selected_mode 
 execute as @s[scores={adminsetting=4}] run scoreboard players set selected_mode global 3
 execute as @s[scores={adminsetting=5}] run scoreboard players set selected_mode global 4
 execute as @s[scores={adminsetting=6}] run scoreboard players set selected_mode global 5
+execute as @s[scores={adminsetting=8}] run scoreboard players set selected_mode global 7
 
 #wenn es ein mode select war
 execute if score @s adminsetting matches 1 run tellraw @a [{"selector":"@s"},{"text":" set mode to ","color":"green"},\
@@ -41,6 +42,11 @@ execute if score @s adminsetting matches 6 run tellraw @a [{"selector":"@s"},{"t
 overpowered class. The goal of the blue team is to kill the Wokkaman, the Wokkaman player just tries to get as many kills as they can, \
 they cannot \"win\". The game ends when the Wokkaman is killed. Multiple players can be a Wokkaman, as of now about 3 blue players \
 per wokkaman seems fun."}]}},\
+{"text":" < hover for info","color":"gray","italic":true}]
+
+execute if score @s adminsetting matches 8 run tellraw @a [{"selector":"@s"},{"text":" set mode to ","color":"green"},\
+{"text":"Check Spawns","color":"light_purple","hover_event":{"action":"show_text","value":[\
+{"text":"Automatically teleports you to all the spawns."}]}},\
 {"text":" < hover for info","color":"gray","italic":true}]
 
 

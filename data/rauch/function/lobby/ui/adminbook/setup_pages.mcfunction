@@ -16,11 +16,6 @@ $data modify storage rauch temp.pages set value [\
         rauch:game_settings_override function.","color":"white"}]},\
         "click_event":{"action":"run_command","command":"/trigger adminsetting set 3"}},{"text":"]\n","color":"dark_gray"},\
         \
-        {"text":"[","color":"dark_gray"},{"text":"Testing Mode","color":"$(testing)","hover_event":{"action":"show_text","value":[\
-        {"text":"Mode for development and testing. No ability cooldown, instant respawn and game start. To end, run this command: \
-        /function utils_rauch:abort_game","color":"white"}]},\
-        "click_event":{"action":"run_command","command":"/trigger adminsetting set 4"}},{"text":"]\n","color":"dark_gray"},\
-        \
         {"text":"[","color":"dark_gray"},{"text":"Capture The Flag","color":"$(ctf)","hover_event":{"action":"show_text","value":[\
         {"text":"Transport the Flag to the Enemy Base to get points. The team with the most points after 3:00 or that reaches 5 points first wins.\n\
         In case of a tie, the team that has transported the flag the closest to the enemy base wins. If the losing team holds the flag, they are given \
@@ -39,6 +34,8 @@ $data modify storage rauch temp.pages set value [\
         {"text":"    "},{"text":"Map Selector\n","bold":true}\
     ]\
 ]
+
+execute if score %dev_mode global matches 1 run function rauch:lobby/ui/adminbook/add_dev_modes with storage rauch temp
 
 # mapselector
 execute store result score t_map_count temp run data get storage map_data maps
@@ -116,5 +113,10 @@ $data modify storage rauch temp.pages append value [\
     {"text":"Emulate 1.8 Combat",color:"$(emulate_1_8)","hover_event":{"action":"show_text","value":[\
       {"text":"No attack cooldowns. For better emulation, make sure to install the 1.8 combat version of the resource pack. Default off."}]},"click_event":\
         {"action":"run_command","command":"/function rauch:settings/toggles/toggle_1_8"}},\
+  {text:"]\n",color:"dark_gray"},\
+  {text:"[",color:"dark_gray"},\
+    {"text":"Dev Mode",color:"$(dev_mode)","hover_event":{"action":"show_text","value":[\
+      {"text":"Testing game modes, command feedback. Default off."}]},"click_event":\
+        {"action":"run_command","command":"/function rauch:settings/toggles/toggle_dev_mode"}},\
   {text:"]\n",color:"dark_gray"},\
 ]

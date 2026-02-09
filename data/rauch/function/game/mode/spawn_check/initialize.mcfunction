@@ -1,0 +1,1 @@
+scoreboard players set spawn_check_timer global 0

@@ -1,12 +1,13 @@
 clear @s minecraft:written_book[item_name={"color":"yellow","text":"Settings"}]
 
 data modify storage rauch temp set value {"deathmatch":"gray","koth":"gray","respawn":"gray","testing":"gray",\
-"ctf":"gray","wokkaman":"gray",\
+"ctf":"gray","wokkaman":"gray","spawn_check":"gray",\
 reload_message:"dark_green",\
 flag_sprint:"gray",\
 delayed_clear:"gray",\
 wokkaman_selectability:"gray",\
 emulate_1_8:"gray",\
+dev_mode:"gray",\
 }
 
 execute if score selected_mode global matches 0 run data modify storage rauch temp.deathmatch set value "dark_green"
@@ -15,6 +16,7 @@ execute if score selected_mode global matches 2 run data modify storage rauch te
 execute if score selected_mode global matches 3 run data modify storage rauch temp.testing set value "dark_green"
 execute if score selected_mode global matches 4 run data modify storage rauch temp.ctf set value "dark_green"
 execute if score selected_mode global matches 5 run data modify storage rauch temp.wokkaman set value "dark_green"
+execute if score selected_mode global matches 7 run data modify storage rauch temp.spawn_check set value "dark_green"
 
 execute if score %reload_message_disabled global matches 1 run data modify storage rauch temp merge value \
 {reload_message:"gray"}
@@ -26,6 +28,8 @@ execute if score %enable_wokkaman_selectability global matches 1 run data modify
 {wokkaman_selectability:"dark_green"}
 execute if score %emulate_1_8 global matches 1 run data modify storage rauch temp merge value \
 {emulate_1_8:"dark_green"}
+execute if score %dev_mode global matches 1 run data modify storage rauch temp merge value \
+{dev_mode:"dark_green"}
 
 # sets up storage rauch temp.pages
 function rauch:lobby/ui/adminbook/setup_pages with storage rauch temp

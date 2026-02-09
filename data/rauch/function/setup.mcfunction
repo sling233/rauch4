@@ -146,6 +146,7 @@ execute unless score %enable_flag_sprint global matches 0.. run scoreboard playe
 execute unless score %enable_delayed_clear global matches 0.. run scoreboard players set %enable_delayed_clear global 0
 execute unless score %enable_wokkaman_selectability global matches 0.. run scoreboard players set %enable_wokkaman_selectability global 0
 execute unless score %emulate_1_8 global matches 0.. run scoreboard players set %emulate_1_8 global 0
+execute unless score %dev_mode global matches 0.. run scoreboard players set %dev_mode global 0
 
 # setup stuff
 execute unless entity @a[tag=admin] unless score %reload_message_disabled global matches 1 run tellraw @a [{"text":"The Wokkagames Data Pack is active. For a setup guide click ","color":"yellow"},{"text":"here.","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:tutorial/tutorial"}},{"text":" To disable this message, click ","color":"yellow"},{"text":"here.","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/toggles/toggle_reload_message"}}]
@@ -185,11 +186,32 @@ function rauch:settings/versions/lobby_check
 # ]
 
 # set scores
-execute unless score selected_mode global matches 0..5 run scoreboard players set selected_mode global 0
+execute unless score selected_mode global matches 0.. run scoreboard players set selected_mode global 0
 
 # setdisplay
 scoreboard objectives setdisplay below_name health
 scoreboard objectives setdisplay list health_display
+
+
+#gamerules
+gamerule mob_drops false
+gamerule spawn_mobs false
+execute if score %dev_mode global matches 0 run gamerule send_command_feedback false
+execute if score %dev_mode global matches 1 run gamerule send_command_feedback true
+gamerule keep_inventory true
+gamerule immediate_respawn true
+gamerule natural_health_regeneration false
+gamerule max_entity_cramming 0
+gamerule fall_damage false
+gamerule show_death_messages false
+gamerule show_advancement_messages false
+gamerule advance_time false
+gamerule advance_weather false
+gamerule fire_spread_radius_around_player 0
+gamerule fire_damage false
+gamerule random_tick_speed 0
+gamerule mob_griefing false
+
 
 #teams
 team add Red
@@ -223,24 +245,6 @@ team add Flag
 team modify Flag color white
 #team modify Spectator prefix [{"text":"[","color":"dark_gray"},{"text":"Spectator","color":"dark_green"},{"text":"] ","color":"dark_gray"}]
 
-
-#gamerules
-gamerule mob_drops false
-gamerule spawn_mobs false
-gamerule send_command_feedback true
-gamerule keep_inventory true
-gamerule immediate_respawn true
-gamerule natural_health_regeneration false
-gamerule max_entity_cramming 0
-gamerule fall_damage false
-gamerule show_death_messages false
-gamerule show_advancement_messages false
-gamerule advance_time false
-gamerule advance_weather false
-gamerule fire_spread_radius_around_player 0
-gamerule fire_damage false
-gamerule random_tick_speed 0
-gamerule mob_griefing false
 
 
 #bossbars
