@@ -75,7 +75,7 @@ scoreboard objectives add stun dummy
 scoreboard objectives add tank_damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add tank_resistance dummy
 scoreboard objectives add tank_resistance_num dummy
-scoreboard objectives add tele2 dummy
+scoreboard objectives add tele_invis dummy
 scoreboard objectives add teleweak dummy
 scoreboard objectives add temp dummy
 scoreboard objectives add version dummy

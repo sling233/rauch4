@@ -1,4 +1,4 @@
-execute unless score @s tele2 matches 1.. run return run item replace entity @s hotbar.0 with minecraft:carrot_on_a_stick[\
+execute unless score @s tele_invis matches 1.. run return run item replace entity @s hotbar.0 with minecraft:carrot_on_a_stick[\
     item_name={"text":"Teleporter's Sword"},\
     item_model="rauch:teleporter_sword",\
     rarity=rare,\

@@ -35,7 +35,7 @@ scoreboard players reset @s heal
 scoreboard players reset @s respawn
 scoreboard players reset @s stun
 scoreboard players reset @s pnum
-scoreboard players reset @s tele2
+scoreboard players reset @s tele_invis
 #scoreboard players reset @s teleweak
 scoreboard players reset @s hacker_damage_timer
 scoreboard players reset @s zarzahn_f

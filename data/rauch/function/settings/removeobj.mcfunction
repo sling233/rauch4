@@ -75,7 +75,7 @@ scoreboard objectives remove stun
 scoreboard objectives remove tank_damage_taken
 scoreboard objectives remove tank_resistance
 scoreboard objectives remove tank_resistance_num
-scoreboard objectives remove tele2
+scoreboard objectives remove tele_invis
 scoreboard objectives remove teleweak
 scoreboard objectives remove temp
 scoreboard objectives remove version

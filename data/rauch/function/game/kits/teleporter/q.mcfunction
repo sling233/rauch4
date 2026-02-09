@@ -1,6 +1,6 @@
 execute unless score @s cool2 matches 0 run return 1
 
-scoreboard players set @s tele2 120
+scoreboard players set @s tele_invis 120
 scoreboard players reset @s damage_dealt
 clear @s minecraft:leather_boots
 clear @s minecraft:leather_chestplate

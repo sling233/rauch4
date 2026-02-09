@@ -1,7 +1,7 @@
-scoreboard players remove @s tele2 1
-execute as @s[scores={tele2=..0}] run tag @s add temp
+scoreboard players remove @s tele_invis 1
+execute as @s[scores={tele_invis=..0}] run tag @s add temp
 execute as @s[scores={damage_dealt=1..}] run tag @s add temp
-execute as @s[tag=temp] run scoreboard players reset @s tele2
+execute as @s[tag=temp] run scoreboard players reset @s tele_invis
 execute as @s[tag=temp] run effect clear @s invisibility
 execute as @s[tag=temp] run clear @s carrot_on_a_stick
 execute as @s[tag=temp] run function rauch:game/kits/weapon
