@@ -13,6 +13,7 @@ execute as @s[scores={kitselect=114}] run scoreboard players set @s actionbar_de
 execute as @s[scores={kitselect=120}] run scoreboard players set @s night_vision_accessibility 0
 execute as @s[scores={kitselect=121}] run scoreboard players set @s night_vision_accessibility 1
 execute as @s[scores={kitselect=122}] run scoreboard players set @s night_vision_accessibility 2
+execute as @s[scores={kitselect=1000..1009}] run function rauch:lobby/try_kit
 
 clear @s minecraft:written_book[item_name={"text":"Kit Selector/Settings","color":"yellow"}]
 scoreboard players reset @s kitselect
