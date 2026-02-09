@@ -2,15 +2,15 @@
 # x
 execute store result score t_delta_x_red temp run data get entity @s Pos[0] 1000
 scoreboard players operation t_delta_x_blu temp = t_delta_x_red temp
-execute store result score t_spawn_red_x temp run data get entity @e[type=marker,tag=map,tag=t1,limit=1] Pos[0] 1000
-execute store result score t_spawn_blue_x temp run data get entity @e[type=marker,tag=map,tag=t2,limit=1] Pos[0] 1000
+execute store result score t_spawn_red_x temp run data get storage map_data active.red[0] 1000
+execute store result score t_spawn_blue_x temp run data get storage map_data active.blue[0] 1000
 scoreboard players operation t_delta_x_red temp -= t_spawn_red_x temp
 scoreboard players operation t_delta_x_blu temp -= t_spawn_blue_x temp
 # z
 execute store result score t_delta_z_red temp run data get entity @s Pos[2] 1000
 scoreboard players operation t_delta_z_blu temp = t_delta_z_red temp
-execute store result score t_spawn_red_z temp run data get entity @e[type=marker,tag=map,tag=t1,limit=1] Pos[2] 1000
-execute store result score t_spawn_blue_z temp run data get entity @e[type=marker,tag=map,tag=t2,limit=1] Pos[2] 1000
+execute store result score t_spawn_red_z temp run data get storage map_data active.red[2] 1000
+execute store result score t_spawn_blue_z temp run data get storage map_data active.blue[2] 1000
 scoreboard players operation t_delta_z_red temp -= t_spawn_red_z temp
 scoreboard players operation t_delta_z_blu temp -= t_spawn_blue_z temp
 

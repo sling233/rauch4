@@ -1,0 +1,1 @@
+execute summon armor_stand run function rauch:game/mode/capture_the_flag/spawn_flag_setup_center

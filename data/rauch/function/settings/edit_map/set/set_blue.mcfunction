@@ -6,7 +6,7 @@ scoreboard players operation t_posx temp *= 10 const
 scoreboard players operation t_posy temp *= 10 const
 scoreboard players operation t_posz temp *= 10 const
 scoreboard players add t_posx temp 5
-scoreboard players add t_posy temp 200
+#scoreboard players add t_posy temp 200
 scoreboard players add t_posz temp 5
 
 data modify storage map_data edit_buffer.blue set value [0d,0d,0d]

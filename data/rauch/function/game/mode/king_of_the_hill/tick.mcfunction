@@ -1,6 +1,6 @@
 execute if score Global gamestart matches 1.. run return 0
 
-execute as @e[type=marker,tag=map,tag=ce] at @s positioned ~ ~-20 ~ run function rauch:game/mode/king_of_the_hill/point
+execute as @e[type=marker,tag=koth,tag=center] at @s positioned ~ ~ ~ run function rauch:game/mode/king_of_the_hill/point
 # capture_info: 1   2    3    4    5
 #              red      neu       blu
 # capture info2: 6: red overtime, 7: neutral overtime, 8: blue overtime

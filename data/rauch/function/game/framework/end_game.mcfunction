@@ -1,4 +1,5 @@
-kill @e[type=marker,tag=map]
+kill @e[type=marker,tag=maxline]
+kill @e[type=marker,tag=koth]
 kill @e[type=armor_stand,tag=stun]
 kill @e[type=armor_stand,tag=flag]
 kill @e[type=marker,tag=flag_pos]

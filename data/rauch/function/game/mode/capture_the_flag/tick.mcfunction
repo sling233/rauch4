@@ -17,8 +17,10 @@ scoreboard players operation Global dis_diff -= Global flagDistanceRed
 execute if entity @a[tag=flagPickedUp,team=Red] if score Global dis_diff matches 14000.. run function rauch:game/mode/capture_the_flag/flag_reset
 execute if entity @a[tag=flagPickedUp,team=Blue] if score Global dis_diff matches ..-14000 run function rauch:game/mode/capture_the_flag/flag_reset
 
-# draw lines and handle bossbar
-execute as @e[type=minecraft:marker,tag=ce] run function rauch:game/mode/capture_the_flag/visual/draw_max_lines
+# draw lines
+execute as @e[type=marker,tag=maxline,tag=center] run function rauch:game/mode/capture_the_flag/visual/draw_max_lines
+
+# handle bossbar
 function rauch:game/mode/capture_the_flag/visual/bossbar
 function rauch:game/mode/capture_the_flag/visual/update_bossbar_title
 #^ i don't have to run this every tick, but it's not that expensive ^

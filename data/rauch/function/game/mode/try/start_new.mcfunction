@@ -11,12 +11,6 @@ data remove storage game_data hacker_r_tag
 data remove storage game_data hacker_q_tag
 data remove storage game_data wok_bow_tag
 
-#mapgedöns
-execute at @s run summon marker ~ ~ ~ {Tags:["map","t1"]}
-execute at @s run summon marker ~ ~ ~ {Tags:["map","t2"]}
-execute at @s run summon marker ~ ~ ~ {Tags:["map","ce"]}
-execute as @e[type=marker,tag=map] run function rauch:game/framework/mapsetup
-
 # it sets the time, weather and particles
 function rauch:game/framework/map_setup_2
 

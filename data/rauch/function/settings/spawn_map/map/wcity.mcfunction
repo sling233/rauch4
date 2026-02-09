@@ -8,9 +8,9 @@ $data modify storage map_data maps[$(index)].has_launchpads set value 1
 $data modify storage map_data maps[$(index)].disable_block_interaction set value 1
 $data modify storage map_data maps[$(index)].is_dark set value 1
 
-$execute positioned $(x) $(y) $(z) align xyz positioned ~20 ~56 ~24.5 summon marker run function rauch:settings/spawn_map/spawn_set_red {index:$(index)}
-$execute positioned $(x) $(y) $(z) align xyz positioned ~33.5 ~23.5 ~33.5 summon marker run function rauch:settings/spawn_map/spawn_set_center {index:$(index)}
-$execute positioned $(x) $(y) $(z) align xyz positioned ~33.5 ~23.5 ~33.5 summon marker run function rauch:settings/spawn_map/spawn_set_blue {index:$(index)}
+$execute positioned $(x) $(y) $(z) align xyz positioned ~20 ~36 ~24.5 summon marker run function rauch:settings/spawn_map/spawn_set_red {index:$(index)}
+$execute positioned $(x) $(y) $(z) align xyz positioned ~33.5 ~3.5 ~33.5 summon marker run function rauch:settings/spawn_map/spawn_set_center {index:$(index)}
+$execute positioned $(x) $(y) $(z) align xyz positioned ~33.5 ~3.5 ~33.5 summon marker run function rauch:settings/spawn_map/spawn_set_blue {index:$(index)}
 
 #fill structure void
 $execute positioned $(x) $(y) $(z) align xyz run fill ~ ~0 ~ ~66 ~6 ~67 minecraft:structure_void

@@ -40,6 +40,6 @@ scoreboard players set 10 const 10
 
 scoreboard players operation t_mod10 temp = Global gamestart
 scoreboard players operation t_mod10 temp %= 10 const
-execute if score t_mod10 temp matches 0 at @e[type=marker,tag=t1,tag=map] run tp @a[team=Red] ~ ~-20 ~
-execute if score t_mod10 temp matches 0 at @e[type=marker,tag=t2,tag=map] run tp @a[team=Blue] ~ ~-20 ~
+execute if score t_mod10 temp matches 0 as @a[team=Red,tag=game,tag=!dead] run function rauch:game/framework/tp_to_red_spawn
+execute if score t_mod10 temp matches 0 as @a[team=Blue,tag=game,tag=!dead] run function rauch:game/framework/tp_to_blue_spawn
 scoreboard players reset t_mod10 temp

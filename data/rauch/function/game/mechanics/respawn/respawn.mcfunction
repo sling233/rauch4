@@ -1,5 +1,5 @@
-execute as @s[team=Red] at @e[type=marker,tag=map,tag=t1] run tp @s ~ ~-20 ~
-execute as @s[team=Blue] at @e[type=marker,tag=map,tag=t2] run tp @s ~ ~-20 ~
+execute as @s[team=Red] run function rauch:game/framework/tp_to_red_spawn
+execute as @s[team=Blue] run function rauch:game/framework/tp_to_blue_spawn
 gamemode adventure @s
 function rauch:game/ui/bossbar/respawn/invisible
 tag @s remove dead

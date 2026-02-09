@@ -1,5 +1,5 @@
 # change version (downpatch and version_check has to be updated as well)
-scoreboard players set this_version temp 610
+scoreboard players set this_version temp 611
 # version changed:
 tellraw @a [{"text":"------ Data Pack Version Changed ------","color":"green"}]
 # abort game if a game is running
@@ -18,6 +18,7 @@ execute unless score Global version matches 607.. run function rauch:settings/ve
 execute unless score Global version matches 608.. run function rauch:settings/versions/v608
 execute unless score Global version matches 609.. run function rauch:settings/versions/v609
 execute unless score Global version matches 610.. run function rauch:settings/versions/v610
+execute unless score Global version matches 611.. run function rauch:settings/versions/v611
 
 # downpatch
 execute if score Global version > this_version temp run function rauch:settings/versions/downpatch

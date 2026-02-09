@@ -19,10 +19,13 @@ scoreboard players operation Global flag_min_distance_red *= 50 const
 scoreboard players operation Global flag_min_distance_blue = Global spawn_to_center_distance
 scoreboard players operation Global flag_min_distance_blue *= 50 const
 
+# maxlines
+execute summon marker run function rauch:game/mode/capture_the_flag/setup_max_line_center
+execute summon marker run function rauch:game/mode/capture_the_flag/setup_max_line_red
+execute summon marker run function rauch:game/mode/capture_the_flag/setup_max_line_blue
 # update bossbar once at the start, because whilst gamstart id doesn't
 function rauch:game/mode/capture_the_flag/visual/bossbar
 function rauch:game/mode/capture_the_flag/visual/update_bossbar_title
 
 # some problems when map is unloaded
-# function rauch:game/mode/capture_the_flag/spawn_flag
-execute summon armor_stand run function rauch:game/mode/capture_the_flag/spawn_flag_unloaded
+function rauch:game/mode/capture_the_flag/spawn_flag_center

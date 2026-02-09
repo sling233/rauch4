@@ -42,12 +42,10 @@ scoreboard players reset Global pnum
 # potentially left over players
 execute as @a[tag=queue] run function rauch:game/framework/leftover
 execute if score %enable_delayed_clear global matches 1 run schedule function rauch:game/framework/start_schedule_clear 10t
-#mapgedöns
-summon marker ~ ~ ~ {Tags:["map","t1"]}
-summon marker ~ ~ ~ {Tags:["map","t2"]}
-summon marker ~ ~ ~ {Tags:["map","ce"]}
-execute as @e[type=marker,tag=map] run function rauch:game/framework/mapsetup
 
+execute as @a[team=Red,tag=game] run function rauch:game/framework/tp_to_red_spawn
+execute as @a[team=Blue,tag=game] run function rauch:game/framework/tp_to_blue_spawn
+execute at @a[tag=game] run spawnpoint @s ~ ~ ~
 # sorry for bad name but i cant think of anything better rn. it sets the time, weather and particles
 function rauch:game/framework/map_setup_2
 

@@ -1,4 +1,4 @@
-execute at @e[type=marker,tag=map,tag=ce] positioned ~ ~-20 ~ run function rauch:game/mode/capture_the_flag/spawn_flag
+function rauch:game/mode/capture_the_flag/spawn_flag_center
 execute as @a[tag=flagPickedUp] run function rauch:game/mode/capture_the_flag/remove_flag
 title @a[tag=game] title ""
 title @a[tag=game] subtitle "Flag Reset to Center"
