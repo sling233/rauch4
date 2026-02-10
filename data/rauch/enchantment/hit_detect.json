@@ -36,10 +36,18 @@
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "rauch:game/mechanics/hitdetect/detected"
+          "function": "rauch:game/mechanics/hitdetect/attacker_post"
         },
         "enchanted": "attacker",
         "affected": "attacker"
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "rauch:game/mechanics/hitdetect/victim_post"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
       }
     ]
   }

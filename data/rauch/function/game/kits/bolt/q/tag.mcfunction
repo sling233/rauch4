@@ -1,4 +1,4 @@
-# called by hit (bolt is attacker and @s, tagged person is victim)
+# called by hit (bolt is @s, tagged person is victim)
 scoreboard players operation t_victim_pnum temp = @a[tag=victim,limit=1] pnum
 
 function rauch:macros/data_get {storage:"bolt_hit"}
