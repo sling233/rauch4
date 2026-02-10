@@ -1,8 +1,25 @@
 execute unless score @s cool1 matches 0 run return 1
 
-execute as @s[team=Red] run function rauch:game/kits/pikka/r/spawn_red
-execute as @s[team=Blue] run function rauch:game/kits/pikka/r/spawn_blue
-scoreboard players set @s slime_despawn_timer -5
+# # if pikka is using q, impulse is a bit stronger
+# execute if score @s flyerQSchedule matches ..-1 run return run item modify entity @s saddle {\
+#   "function": "minecraft:set_enchantments",\
+#   "enchantments": {\
+#     "rauch:impulse": 20\
+#   }\
+# }
+
+item modify entity @s saddle {\
+  "function": "minecraft:set_enchantments",\
+  "enchantments": {\
+    "rauch:impulse": 10\
+  }\
+}
+
+#item replace entity @s saddle with heavy_core[enchantments={"rauch:impulse":1},equippable={slot:"saddle"}]
+
+# execute as @s[team=Red] run function rauch:game/kits/pikka/r/spawn_red
+# execute as @s[team=Blue] run function rauch:game/kits/pikka/r/spawn_blue
+# scoreboard players set @s slime_despawn_timer -5
 
 execute at @s run playsound minecraft:entity.ender_dragon.flap master @a
 execute at @s run particle minecraft:cloud ~ ~0.3 ~ 0.2 0.2 0.2 0.3 60 force

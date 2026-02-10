@@ -1,0 +1,48 @@
+{
+  "description": "",
+  "supported_items": "minecraft:heavy_core",
+  "weight": 1,
+  "max_level": 255,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "saddle"
+  ],
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "coordinate_scale": [
+            0,
+            1,
+            0
+          ],
+          "magnitude": {
+            "type": "minecraft:linear",
+            "base": 0.1,
+            "per_level_above_first": 0.1
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "rauch:game/mechanics/remove_impulse_vertical_looking_down"
+        }
+      }
+    ]
+  }
+}

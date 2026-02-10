@@ -17,7 +17,6 @@ kill @e[type=block_display,tag=wok_vehicle]
 kill @e[type=marker,tag=wok_boat_rider]
 kill @e[type=item_display,tag=wok_rocket]
 tp @e[type=slime,tag=push] ~ ~-1000 ~
-tp @e[type=slime,tag=pik_push] ~ ~-1000 ~
 #global times und so
 #scoreboard players reset Global center_red
 #scoreboard players reset Global center_blue

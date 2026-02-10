@@ -9,5 +9,5 @@ tag @s remove fast
 
 attribute @s gravity base reset
 
-function rauch:game/kits/pikka/f/elytrarestore
+function rauch:game/kits/pikka/fly/elytrarestore
 function rauch:game/ui/bossbar/speed/invisible
