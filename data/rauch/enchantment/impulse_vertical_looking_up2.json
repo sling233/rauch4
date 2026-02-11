@@ -22,8 +22,8 @@
           "type": "minecraft:apply_impulse",
           "direction": [
             0,
-            1,
-            0
+            0,
+            1
           ],
           "coordinate_scale": [
             0,
@@ -32,15 +32,15 @@
           ],
           "magnitude": {
             "type": "minecraft:linear",
-            "base": 0.1,
-            "per_level_above_first": 0.1
+            "base": 0.01,
+            "per_level_above_first": 0.01
           }
         }
       },
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "rauch:game/mechanics/remove_impulse_vertical"
+          "function": "rauch:game/mechanics/vertical_launch/remove_impulse_vertical_looking_up2"
         }
       }
     ]

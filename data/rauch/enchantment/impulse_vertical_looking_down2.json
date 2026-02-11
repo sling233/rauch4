@@ -23,7 +23,7 @@
           "direction": [
             0,
             0,
-            1
+            -1
           ],
           "coordinate_scale": [
             0,
@@ -40,7 +40,7 @@
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "rauch:game/mechanics/vertical_launch/remove_impulse_vertical_looking_up"
+          "function": "rauch:game/mechanics/vertical_launch/remove_impulse_vertical_looking_down2"
         }
       }
     ]

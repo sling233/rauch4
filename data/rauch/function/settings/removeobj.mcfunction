@@ -6,7 +6,6 @@ scoreboard objectives remove boltdmg
 scoreboard objectives remove boltspeed
 scoreboard objectives remove click
 scoreboard objectives remove click_warped
-scoreboard objectives remove clouds
 scoreboard objectives remove cool1
 scoreboard objectives remove cool1_target
 scoreboard objectives remove cool1_respawn
@@ -84,7 +83,6 @@ scoreboard objectives remove wark_buff
 scoreboard objectives remove wark_charge
 scoreboard objectives remove wark_detect
 scoreboard objectives remove wark_startup
-scoreboard objectives remove wark_f
 scoreboard objectives remove zarzahn_f
 scoreboard objectives remove zarzahn_hooking
 #king of the hill

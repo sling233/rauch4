@@ -2,6 +2,6 @@
 item modify entity @s saddle {\
   "function": "minecraft:set_enchantments",\
   "enchantments": {\
-    "rauch:impulse_vertical": 0\
+    "rauch:impulse_vertical_looking_down2": 0\
   }\
 }

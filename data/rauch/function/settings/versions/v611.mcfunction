@@ -12,6 +12,8 @@ tellraw @a [{"text":"...done. Reset active map.","color":"yellow"}]
 kill @e[type=marker,tag=map]
 # every scoreboard that was removed
 scoreboard objectives remove tele2
+scoreboard objectives remove wark_f
+scoreboard objectives remove clouds
 
 # every scoreboard that changed type
 #scoreboard objectives remove changed_type

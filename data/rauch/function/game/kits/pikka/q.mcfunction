@@ -17,23 +17,4 @@ execute as @e[type=minecraft:area_effect_cloud,tag=setup,tag=flyerq,limit=1] run
 
 execute if entity @s[tag=!flyer_q_ground] run return 0
 
-execute store result score t_rotation_y temp run data get entity @s Rotation[1]
-# rot: 0 = straight, negative = looking up, pos = looking down
-execute if score t_rotation_y temp matches ..-45 run item modify entity @s saddle {\
-  "function": "minecraft:set_enchantments",\
-  "enchantments": {\
-    "rauch:impulse_vertical_looking_up": 15\
-  }\
-}
-execute if score t_rotation_y temp matches -44..44 run item modify entity @s saddle {\
-  "function": "minecraft:set_enchantments",\
-  "enchantments": {\
-    "rauch:impulse_vertical": 15\
-  }\
-}
-execute if score t_rotation_y temp matches 45.. run item modify entity @s saddle {\
-  "function": "minecraft:set_enchantments",\
-  "enchantments": {\
-    "rauch:impulse_vertical_looking_down": 15\
-  }\
-}
+function rauch:game/mechanics/vertical_launch/launch {power:130}

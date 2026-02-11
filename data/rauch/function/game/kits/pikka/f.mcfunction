@@ -10,23 +10,4 @@ execute if score @s flyerQSchedule matches ..-1 run return run function rauch:ga
 #execute if score @s flyerQSchedule matches ..-1 run function rauch:game/kits/pikka/f/interrupt_q
 
 # launch
-execute store result score t_rotation_y temp run data get entity @s Rotation[1]
-# rot: 0 = straight, negative = looking up, pos = looking down
-execute if score t_rotation_y temp matches ..-45 run item modify entity @s saddle {\
-  "function": "minecraft:set_enchantments",\
-  "enchantments": {\
-    "rauch:impulse_vertical_looking_up": 15\
-  }\
-}
-execute if score t_rotation_y temp matches -44..44 run item modify entity @s saddle {\
-  "function": "minecraft:set_enchantments",\
-  "enchantments": {\
-    "rauch:impulse_vertical": 15\
-  }\
-}
-execute if score t_rotation_y temp matches 45.. run item modify entity @s saddle {\
-  "function": "minecraft:set_enchantments",\
-  "enchantments": {\
-    "rauch:impulse_vertical_looking_down": 15\
-  }\
-}
+function rauch:game/mechanics/vertical_launch/launch {power:150}
