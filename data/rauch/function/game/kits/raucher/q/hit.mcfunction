@@ -1,4 +1,4 @@
-#at raucher, as player hit
+# as player hit
 scoreboard players add @s raucherdmg_num 1
 #data merge storage temp {number:-1}
 execute store result storage temp number int 1 run scoreboard players get @s raucherdmg_num
