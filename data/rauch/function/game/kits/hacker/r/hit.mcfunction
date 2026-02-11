@@ -16,6 +16,7 @@ function rauch:game/ui/bossbar/hack/visible
 
 # additional kit-specific hack_init tasks
 function rauch:game/kits/hack_init
+function rauch:game/kits/hack_init_other
 
 
 # check if player was already tagged (if yes found is set to 1)
@@ -27,7 +28,7 @@ execute as @p run function rauch:macros/foreach {for_path:"macros data.list",for
 execute unless score Global found matches 1 run function rauch:game/kits/hacker/r/tag/check_not_found
 execute as @p run function rauch:macros/data_write {storage:"hacker_r_tag"}
 execute as @p at @s run playsound minecraft:entity.arrow.hit_player master @s
-execute at @s run playsound minecraft:entity.allay.ambient_with_item master @s
+execute at @s run playsound minecraft:entity.allay.ambient_with_item master @a
 scoreboard objectives remove found
 tag @s remove temp
 

@@ -6,11 +6,11 @@ attribute @s minecraft:entity_interaction_range modifier remove flyer_fast_range
 #boltbuff
 attribute @s minecraft:attack_damage modifier remove boltdmg
 #raucherdmg
-function rauch:game/kits/raucher/q/remove_buff
+attribute @s minecraft:attack_damage modifier remove raucherdmg
 #wark buff
 attribute @s minecraft:attack_damage modifier remove warkbuff
 #tankkb
-function rauch:game/kits/tank/q/remove_buff
+attribute @s minecraft:knockback_resistance modifier remove tank_kb
 
 attribute @s minecraft:max_health base reset
 attribute @s minecraft:attack_damage base reset
@@ -32,9 +32,13 @@ scoreboard players reset @s stats_g_deaths
 scoreboard players reset @s stats_g_kills
 scoreboard players reset @s hack
 scoreboard players reset @s heal
+scoreboard players reset @s raucherdmg
+scoreboard players reset @s raucherdmg_num
 scoreboard players reset @s respawn
 scoreboard players reset @s stun
 scoreboard players reset @s pnum
+scoreboard players reset @s tank_resistance
+scoreboard players reset @s tank_resistance_num
 scoreboard players reset @s tele_invis
 #scoreboard players reset @s teleweak
 scoreboard players reset @s hacker_damage_timer

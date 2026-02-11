@@ -1,1 +1,1 @@
-$attribute @s minecraft:attack_damage modifier add raucherdmg$(number) 0.5 add_multiplied_total
+$attribute @s minecraft:attack_damage modifier add raucherdmg $(damage) add_multiplied_total

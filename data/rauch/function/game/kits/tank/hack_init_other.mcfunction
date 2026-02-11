@@ -1,0 +1,1 @@
+execute if score @s tank_resistance matches 1.. run function rauch:game/kits/tank/q/remove_buff

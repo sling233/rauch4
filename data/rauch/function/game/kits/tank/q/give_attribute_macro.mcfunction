@@ -1,2 +1,2 @@
-$attribute @s minecraft:knockback_resistance modifier add tank_kb$(number) 0.33334 add_value
-$effect give @s minecraft:resistance 6 $(number)
+$attribute @s minecraft:knockback_resistance modifier add tank_kb $(kb) add_value
+$effect give @s minecraft:resistance 6 $(resistance)

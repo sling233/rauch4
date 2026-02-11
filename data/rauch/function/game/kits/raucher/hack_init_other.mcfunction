@@ -1,0 +1,1 @@
+execute if score @s raucherdmg matches 1.. run function rauch:game/kits/raucher/q/remove_buff
