@@ -54,7 +54,6 @@ scoreboard objectives remove pnum
 scoreboard objectives remove projectileRMax
 scoreboard objectives remove projectileRNum
 scoreboard objectives remove projectileRNumRespawn
-scoreboard objectives remove push_levitation_timer
 scoreboard objectives remove raucherdmg
 scoreboard objectives remove raucherdmg_num
 scoreboard objectives remove raucher_spider_despawn_timer

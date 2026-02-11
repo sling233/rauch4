@@ -19,6 +19,7 @@ scoreboard objectives remove maxClouds
 scoreboard objectives remove plcount
 scoreboard objectives remove walk
 scoreboard objectives remove flyerFSchedule
+scoreboard objectives remove push_levitation_timer
 
 # every scoreboard that changed type
 #scoreboard objectives remove changed_type

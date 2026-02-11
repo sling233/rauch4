@@ -54,7 +54,6 @@ scoreboard objectives add pnum dummy
 scoreboard objectives add projectileRMax dummy
 scoreboard objectives add projectileRNum dummy
 scoreboard objectives add projectileRNumRespawn dummy
-scoreboard objectives add push_levitation_timer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add raucherdmg dummy
 scoreboard objectives add raucherdmg_num dummy
 scoreboard objectives add raucher_spider_despawn_timer minecraft.custom:minecraft.time_since_rest

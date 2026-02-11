@@ -10,7 +10,7 @@ execute as @s[scores={wok_hover_schedule=-1}] run effect clear @s minecraft:levi
 execute as @s[scores={wok_hover_schedule=-1}] run attribute @s minecraft:gravity base reset
 
 execute as @s[tag=t_grounded] run tag @s add wok_f_air
-execute as @s[tag=t_grounded] unless score @s push_levitation_timer matches ..0 run attribute @s minecraft:gravity base reset
+execute as @s[tag=t_grounded] run attribute @s minecraft:gravity base reset
 
 execute as @s[tag=wok_stomp_search] run function rauch:game/kits/wokkaman/sq/search_player
 execute as @s[tag=t_grounded,tag=wok_stomp_search] run function rauch:game/kits/wokkaman/sq/searching_on_ground

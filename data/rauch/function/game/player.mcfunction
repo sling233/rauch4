@@ -18,7 +18,6 @@ function rauch:game/kits/tick
 function rauch:game/kits/tick_all
 
 # general tasks
-execute as @s[scores={push_levitation_timer=-1}] run effect clear @s minecraft:levitation
 execute as @s[scores={heal=0..}] run function rauch:game/mechanics/heal
 execute as @s[scores={stun=0..}] run function rauch:game/mechanics/stun
 
