@@ -116,20 +116,22 @@ scoreboard objectives add cool6 dummy
 scoreboard objectives add cool6_target dummy
 scoreboard objectives add cool6_respawn dummy
 scoreboard objectives add wok_kills_end dummy
+scoreboard objectives add wokkaman_fireworks_per_kill dummy
+scoreboard objectives add wokkaman_fireworks_starting_count dummy
 scoreboard objectives add wok_kills dummy
 scoreboard objectives add wok_time dummy
 scoreboard objectives add wok_hover_schedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add wok_push_timer minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add wokkaman_helmet dummy
-scoreboard objectives add wokkaman_max_mace_count dummy
+scoreboard objectives add wokkaman_mace_max_uses dummy
+scoreboard objectives add wokkaman_mace_starting_uses dummy
+scoreboard objectives add wokkaman_mace_uses_per_kill dummy
 scoreboard objectives add wokkaman_rocket_phase dummy
 scoreboard objectives add wokkaman_rocket_rotating_tilt dummy
 scoreboard objectives add wokkaman_rocket_count dummy
 scoreboard objectives add wokkaman_rocket_shooting_count dummy
 scoreboard objectives add wokkaman_shoot_cooldown dummy
-scoreboard objectives add wokkaman_starting_firework_rocket_count dummy
 scoreboard objectives add wokkaman_starting_rocket_count dummy
-scoreboard objectives add wokkaman_starting_mace_count dummy
 scoreboard objectives add wokkaman_weapon dummy
 
 # default global settings

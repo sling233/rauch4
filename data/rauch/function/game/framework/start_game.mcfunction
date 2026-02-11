@@ -22,9 +22,16 @@ data remove storage game_data hacker_r_tag
 data remove storage game_data hacker_q_tag
 data remove storage game_data wok_bow_tag
 
-# set wokkaman kit
-execute if score Global mode matches 5 as @a[tag=queue,team=Red] run scoreboard players set @s kit 9
 
+# player ids etc.
+scoreboard players reset Global pnum
+execute as @a[tag=queue,limit=12] run function rauch:game/framework/technical_player_setup
+scoreboard players reset Global pnum
+# potentially left over players
+execute as @a[tag=queue] run function rauch:game/framework/leftover
+
+
+# team setup
 # removes all offline palyers from the teams while keeping the online players
 tag @a[team=Red] add t_red
 tag @a[team=Blue] add t_blu
@@ -34,38 +41,25 @@ team join Red @a[tag=t_red]
 team join Blue @a[tag=t_blu]
 tag @a remove t_red
 tag @a remove t_blu
+function rauch:game/mode/team_setup
 
-# player ids und setup und so. also calls pregame for each player
-scoreboard players reset Global pnum
-execute as @a[tag=queue,limit=12] run function rauch:game/framework/teamsetup
-scoreboard players reset Global pnum
-# potentially left over players
-execute as @a[tag=queue] run function rauch:game/framework/leftover
-execute if score %enable_delayed_clear global matches 1 run schedule function rauch:game/framework/start_schedule_clear 10t
 
-execute as @a[team=Red,tag=game] run function rauch:game/framework/tp_to_red_spawn
-execute as @a[team=Blue,tag=game] run function rauch:game/framework/tp_to_blue_spawn
-execute at @a[tag=game] run spawnpoint @s ~ ~ ~
+# map setup
 # sorry for bad name but i cant think of anything better rn. it sets the time, weather and particles
 function rauch:game/framework/map_setup_2
 
-# bossbars
-function rauch:game/ui/bossbar/setplayers
-function rauch:game/ui/bossbar/allinvisible
 
 # game settings
-function rauch:game/mode/default_settings
+# basic player setup (stuff that depends on the kit / mode)
+execute as @a[tag=game] run function rauch:game/framework/basic_player_setup
+# mode specific settings that effect players or are settings initialize has to react to
 function rauch:game/mode/apply_settings
-function rauch:game_settings_override
 
+# kit specific init stuff that has to react to changing settings from the mode. No settings here.
+execute as @a[tag=game] run function rauch:game/kits/post_setup
+
+# initialize the mode, fixed, no settings in here
 function rauch:game/mode/initialize
 
-# elytra bossbar after setup so max is properly set
-execute as @a[tag=game] run function rauch:game/ui/bossbar/elytra/set_max
+execute if score %enable_delayed_clear global matches 1 run schedule function rauch:game/framework/start_schedule_clear 10t
 
-# wokkaman give starting rockets (return early if delayed clear is active
-# these  items will be given later in that case
-execute if score %enable_delayed_clear global matches 1 run return 0
-execute as @a[tag=game,scores={kit=9}] run function rauch:game/framework/wokkaman_set_starting_rockets
-execute as @a[tag=game,scores={kit=9}] run function rauch:game/framework/wokkaman_give_starting_firework_rockets
-execute as @a[tag=game,scores={kit=9}] run function rauch:game/framework/wokkaman_give_starting_maces

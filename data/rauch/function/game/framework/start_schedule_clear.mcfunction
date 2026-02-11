@@ -7,5 +7,5 @@ execute as @a[tag=game] run item replace entity @s saddle with minecraft:heavy_c
 execute as @a[tag=game] run function rauch:game/mechanics/set_protection
 # wokkaman give starting rockets
 execute as @a[tag=game,scores={kit=9}] run function rauch:game/framework/wokkaman_set_starting_rockets
-execute as @a[tag=game,scores={kit=9}] run function rauch:game/framework/wokkaman_give_starting_firework_rockets
+execute as @a[tag=game,scores={kit=9}] run function rauch:game/kits/wokkaman/fireworks/give_starting_firework_rockets
 execute as @a[tag=game,scores={kit=9}] run function rauch:game/framework/wokkaman_give_starting_maces

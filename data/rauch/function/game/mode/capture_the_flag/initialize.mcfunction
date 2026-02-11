@@ -1,3 +1,7 @@
+execute as @a[team=Red,tag=game] run function rauch:game/framework/tp_to_red_spawn
+execute as @a[team=Blue,tag=game] run function rauch:game/framework/tp_to_blue_spawn
+execute at @a[tag=game] run spawnpoint @s ~ ~ ~
+
 scoreboard players set Global flagDistanceRed 1000000
 scoreboard players set Global flagDistanceBlue 1000000
 
@@ -27,5 +31,5 @@ execute summon marker run function rauch:game/mode/capture_the_flag/setup_max_li
 function rauch:game/mode/capture_the_flag/visual/bossbar
 function rauch:game/mode/capture_the_flag/visual/update_bossbar_title
 
-# some problems when map is unloaded
+
 function rauch:game/mode/capture_the_flag/spawn_flag_center

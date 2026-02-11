@@ -1,0 +1,2 @@
+say s
+kill @s

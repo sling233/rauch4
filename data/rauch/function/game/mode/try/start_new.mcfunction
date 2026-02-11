@@ -19,7 +19,6 @@ function rauch:game/framework/map_setup_2
 scoreboard players set Global gamestart 0
 
 #function rauch:game/mode/apply_settings
-#function rauch:game_settings_override
 
 #function rauch:game/mode/initialize
 scoreboard players set t_i temp 0

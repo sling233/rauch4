@@ -3,5 +3,3 @@ execute if score %emulate_1_8 global matches 1 run attribute @s minecraft:attack
 #attribute @s minecraft:armor_toughness base set 20
 
 function rauch:game/kits/stats
-
-function rauch:kit_stats_override
