@@ -67,7 +67,7 @@ teleporter.colors = ["#FF88FF","#804480","#AA5BAA","#D471D4","#FF88FF","#FF88FF"
 tank = Kit("Tank",["Tank","Support","old kit, will get a rework someday"])
 tank.r_ability = "Damage taken passively accumulates, up to 10 hearts. When it's over 4 hearts, you can use R on a teammate to heal them by the amount of accumulated damage."
 tank.r_cool = "-"
-tank.q_ability = "Buffs resistance and knockback resistance for a teammate by 40% for 6 seconds (look at them and press Q). Additionally, team members in a 4.5 block radius around the buffed player recieve 20% less damage."
+tank.q_ability = "Buffs knockback resistance and resistance for a teammate by 40% for 6 seconds (look at them and press Q). Additionally, team members in a 4.5 block radius around the buffed player recieve 20% less damage."
 tank.f_ability = "Creates a Projectile Shield that lasts 7.5 seconds."
 tank.colors = ["#6E69FF","#373580","#4946AA","#5C58D4","#6E69FF","#6E69FF","#6E69FF","#6E69FF"]
 

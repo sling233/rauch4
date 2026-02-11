@@ -16,7 +16,7 @@
        {"text":"R (-): ","color":"#6E69FF"},
        {"text":"Damage taken passively accumulates, up to 10 hearts. When it's over 4 hearts, you can use R on a teammate to heal them by the amount of accumulated damage.\n\n"},
        {"text":"Q (18s): ","color":"#6E69FF"},
-       {"text":"Buffs resistance and knockback resistance for a teammate by 40% for 6 seconds (look at them and press Q). Additionally, team members in a 4.5 block radius around the buffed player recieve 20% less damage.\n\n"},
+       {"text":"Buffs knockback resistance and resistance for a teammate by 40% for 6 seconds (look at them and press Q). Additionally, team members in a 4.5 block radius around the buffed player recieve 20% less damage.\n\n"},
        {"text":"F (16s): ","color":"#6E69FF"},
        {"text":"Creates a Projectile Shield that lasts 7.5 seconds.\n\n"}
     ]
