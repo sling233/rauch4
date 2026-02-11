@@ -32,7 +32,6 @@ execute if score Global enable_launchpads matches 1 run function rauch:game/mech
 execute unless score @s hide_ambient_particles matches 1 run function rauch:game/ui/particle
 execute at @s[scores={damage_taken=0..}] run function rauch:game/ui/damage_taken
 
-scoreboard players operation @s health_display = @s health
 function rauch:game/ui/actionbar/cool_display
 
 # sprint

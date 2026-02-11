@@ -40,7 +40,6 @@ scoreboard objectives remove hacker_damage_timer
 scoreboard objectives remove hacker_damage_timer_control
 scoreboard objectives remove heal
 scoreboard objectives remove health
-scoreboard objectives remove health_display
 scoreboard objectives remove hunger
 scoreboard objectives remove kit
 scoreboard objectives remove kitselect
@@ -48,12 +47,10 @@ scoreboard objectives remove leave
 scoreboard objectives remove map_is_dark
 scoreboard objectives remove mapParticle
 scoreboard objectives remove map_setting
-scoreboard objectives remove maxClouds
 scoreboard objectives remove mode
 scoreboard objectives remove night_vision_accessibility
 scoreboard objectives remove hide_ambient_particles
 scoreboard objectives remove particleDensity
-scoreboard objectives remove plcount
 scoreboard objectives remove pnum
 scoreboard objectives remove projectileRMax
 scoreboard objectives remove projectileRNum
@@ -75,10 +72,9 @@ scoreboard objectives remove tank_damage_taken
 scoreboard objectives remove tank_resistance
 scoreboard objectives remove tank_resistance_num
 scoreboard objectives remove tele_invis
-scoreboard objectives remove teleweak
+# scoreboard objectives remove teleweak
 scoreboard objectives remove temp
 scoreboard objectives remove version
-scoreboard objectives remove walk
 scoreboard objectives remove wark_buff
 scoreboard objectives remove wark_charge
 scoreboard objectives remove wark_detect

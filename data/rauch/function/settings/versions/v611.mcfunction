@@ -14,6 +14,10 @@ kill @e[type=marker,tag=map]
 scoreboard objectives remove tele2
 scoreboard objectives remove wark_f
 scoreboard objectives remove clouds
+scoreboard objectives remove health_display
+scoreboard objectives remove maxClouds
+scoreboard objectives remove plcount
+scoreboard objectives remove walk
 
 # every scoreboard that changed type
 #scoreboard objectives remove changed_type

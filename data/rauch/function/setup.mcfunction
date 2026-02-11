@@ -40,7 +40,6 @@ scoreboard objectives add hacker_damage_timer dummy
 scoreboard objectives add hacker_damage_timer_control dummy
 scoreboard objectives add heal dummy
 scoreboard objectives add health health {"text":"❤","color":"red"}
-scoreboard objectives add health_display dummy
 scoreboard objectives add hunger food
 scoreboard objectives add kit dummy
 scoreboard objectives add kitselect trigger
@@ -48,12 +47,10 @@ scoreboard objectives add leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add map_is_dark dummy
 scoreboard objectives add mapParticle dummy
 scoreboard objectives add map_setting trigger
-scoreboard objectives add maxClouds dummy
 scoreboard objectives add mode dummy
 scoreboard objectives add night_vision_accessibility dummy
 scoreboard objectives add hide_ambient_particles dummy
 scoreboard objectives add particleDensity dummy
-scoreboard objectives add plcount dummy
 scoreboard objectives add pnum dummy
 scoreboard objectives add projectileRMax dummy
 scoreboard objectives add projectileRNum dummy
@@ -75,10 +72,9 @@ scoreboard objectives add tank_damage_taken minecraft.custom:minecraft.damage_ta
 scoreboard objectives add tank_resistance dummy
 scoreboard objectives add tank_resistance_num dummy
 scoreboard objectives add tele_invis dummy
-scoreboard objectives add teleweak dummy
+# scoreboard objectives add teleweak dummy
 scoreboard objectives add temp dummy
 scoreboard objectives add version dummy
-scoreboard objectives add walk minecraft.custom:minecraft.walk_one_cm
 scoreboard objectives add wark_buff dummy
 scoreboard objectives add wark_charge dummy
 scoreboard objectives add wark_detect dummy
@@ -188,7 +184,8 @@ execute unless score selected_mode global matches 0.. run scoreboard players set
 
 # setdisplay
 scoreboard objectives setdisplay below_name health
-scoreboard objectives setdisplay list health_display
+scoreboard objectives setdisplay list health
+scoreboard objectives modify health rendertype hearts
 
 
 #gamerules
