@@ -27,7 +27,7 @@ scoreboard players set @s heal 40
 scoreboard players operation @s game_id = Global game_id
 
 scoreboard players set @s armor_target 80
-item replace entity @s saddle with minecraft:heavy_core[equippable={slot:"saddle"}]
+item replace entity @s saddle with minecraft:heavy_core[equippable={slot:"saddle",equip_sound:"intentionally_empty"}]
 function rauch:game/mechanics/set_protection
 
 # change this if more wokkaman texture are added
