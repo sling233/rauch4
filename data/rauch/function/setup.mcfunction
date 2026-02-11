@@ -25,7 +25,6 @@ scoreboard objectives add enable_launchpads dummy
 scoreboard objectives add elytra dummy
 scoreboard objectives add elytra_cooldown dummy
 scoreboard objectives add fly minecraft.custom:minecraft.aviate_one_cm
-scoreboard objectives add flyerFSchedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add flyerQSchedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add game_id dummy
 scoreboard objectives add game_running dummy

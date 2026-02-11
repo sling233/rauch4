@@ -18,6 +18,7 @@ scoreboard objectives remove health_display
 scoreboard objectives remove maxClouds
 scoreboard objectives remove plcount
 scoreboard objectives remove walk
+scoreboard objectives remove flyerFSchedule
 
 # every scoreboard that changed type
 #scoreboard objectives remove changed_type
