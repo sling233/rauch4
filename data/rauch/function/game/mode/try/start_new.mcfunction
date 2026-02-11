@@ -1,4 +1,3 @@
-say start
 scoreboard players set Global game_running 1
 scoreboard players add Global game_id 1
 scoreboard players set Global mode 6

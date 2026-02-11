@@ -1,2 +1,0 @@
-say s
-kill @s

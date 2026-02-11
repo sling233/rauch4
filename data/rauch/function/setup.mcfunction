@@ -130,8 +130,9 @@ scoreboard objectives add wokkaman_rocket_phase dummy
 scoreboard objectives add wokkaman_rocket_rotating_tilt dummy
 scoreboard objectives add wokkaman_rocket_count dummy
 scoreboard objectives add wokkaman_rocket_shooting_count dummy
+scoreboard objectives add wokkaman_rocket_starting_count dummy
+scoreboard objectives add wokkaman_rockets_per_kill dummy
 scoreboard objectives add wokkaman_shoot_cooldown dummy
-scoreboard objectives add wokkaman_starting_rocket_count dummy
 scoreboard objectives add wokkaman_weapon dummy
 
 # default global settings
