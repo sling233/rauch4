@@ -23,7 +23,6 @@ execute if score t_number_of_players temp matches 12.. run \
 
 # if necessary start new game
 scoreboard players set Global mode 6
-say set mode to 6
 execute unless score Global game_running matches 1 run function rauch:game/framework/start_game
 
 # join game
