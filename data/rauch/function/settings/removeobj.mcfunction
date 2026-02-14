@@ -112,13 +112,13 @@ scoreboard objectives remove cool5_respawn
 scoreboard objectives remove cool6
 scoreboard objectives remove cool6_target
 scoreboard objectives remove cool6_respawn
-scoreboard objectives remove wokkaman_fireworks_per_kill
-scoreboard objectives remove wokkaman_fireworks_starting_count
 scoreboard objectives remove wok_kills_end
 scoreboard objectives remove wok_kills
 scoreboard objectives remove wok_time
 scoreboard objectives remove wok_hover_schedule
 scoreboard objectives remove wok_push_timer
+scoreboard objectives remove wokkaman_fireworks_per_kill
+scoreboard objectives remove wokkaman_fireworks_starting_count
 scoreboard objectives remove wokkaman_helmet
 scoreboard objectives remove wokkaman_mace_max_uses
 scoreboard objectives remove wokkaman_mace_starting_uses
@@ -131,6 +131,8 @@ scoreboard objectives remove wokkaman_rocket_starting_count
 scoreboard objectives remove wokkaman_rockets_per_kill
 scoreboard objectives remove wokkaman_shoot_cooldown
 scoreboard objectives remove wokkaman_weapon
+scoreboard objectives remove wokkaman_wind_charges_per_kill
+scoreboard objectives remove wokkaman_wind_charges_starting_count
 
 scoreboard objectives setdisplay below_name
 scoreboard objectives setdisplay list

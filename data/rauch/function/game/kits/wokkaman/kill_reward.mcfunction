@@ -8,4 +8,7 @@ function rauch:game/kits/wokkaman/mace/give_mace
 scoreboard players operation t_add_firework_count temp = @s wokkaman_fireworks_per_kill
 function rauch:game/kits/wokkaman/fireworks/give_n_fireworks
 
+scoreboard players operation t_add_wind_charges_count temp = @s wokkaman_wind_charges_per_kill
+function rauch:game/kits/wokkaman/wind_charges/give_n
+
 execute at @s run playsound entity.item.pickup

@@ -6,7 +6,6 @@ scoreboard objectives add boltdmg dummy
 scoreboard objectives add boltspeed minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add click_warped minecraft.used:minecraft.warped_fungus_on_a_stick
-scoreboard objectives add const dummy
 scoreboard objectives add cool1 dummy
 scoreboard objectives add cool1_target dummy
 scoreboard objectives add cool1_respawn dummy
@@ -16,6 +15,7 @@ scoreboard objectives add cool2_respawn dummy
 scoreboard objectives add cool3 dummy
 scoreboard objectives add cool3_target dummy
 scoreboard objectives add cool3_respawn dummy
+scoreboard objectives add const dummy
 scoreboard objectives add damage_dealt minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add death minecraft.custom:minecraft.deaths
@@ -97,8 +97,8 @@ scoreboard objectives add ctf_time dummy
 scoreboard objectives add flagDistanceBlue dummy
 scoreboard objectives add flagDistanceRed dummy
 # scoreboard objectives add flag_max_distance_to_own_base dummy
-scoreboard objectives add flag_min_distance_red dummy
 scoreboard objectives add flag_min_distance_blue dummy
+scoreboard objectives add flag_min_distance_red dummy
 scoreboard objectives add flag_points_blue dummy
 scoreboard objectives add flag_points_red dummy
 scoreboard objectives add flag_spawn_delay dummy
@@ -116,12 +116,12 @@ scoreboard objectives add cool6 dummy
 scoreboard objectives add cool6_target dummy
 scoreboard objectives add cool6_respawn dummy
 scoreboard objectives add wok_kills_end dummy
-scoreboard objectives add wokkaman_fireworks_per_kill dummy
-scoreboard objectives add wokkaman_fireworks_starting_count dummy
 scoreboard objectives add wok_kills dummy
 scoreboard objectives add wok_time dummy
 scoreboard objectives add wok_hover_schedule minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add wok_push_timer minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add wokkaman_fireworks_per_kill dummy
+scoreboard objectives add wokkaman_fireworks_starting_count dummy
 scoreboard objectives add wokkaman_helmet dummy
 scoreboard objectives add wokkaman_mace_max_uses dummy
 scoreboard objectives add wokkaman_mace_starting_uses dummy
@@ -134,6 +134,8 @@ scoreboard objectives add wokkaman_rocket_starting_count dummy
 scoreboard objectives add wokkaman_rockets_per_kill dummy
 scoreboard objectives add wokkaman_shoot_cooldown dummy
 scoreboard objectives add wokkaman_weapon dummy
+scoreboard objectives add wokkaman_wind_charges_per_kill dummy
+scoreboard objectives add wokkaman_wind_charges_starting_count dummy
 
 # default global settings
 execute unless score %reload_message_disabled global matches 0.. run scoreboard players set %reload_message_disabled global 0

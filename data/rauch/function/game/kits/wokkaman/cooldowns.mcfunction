@@ -16,7 +16,10 @@ scoreboard players set @s wokkaman_rocket_starting_count 0
 scoreboard players set @s wokkaman_rockets_per_kill 4
 
 scoreboard players set @s wokkaman_fireworks_starting_count 10
-scoreboard players set @s wokkaman_fireworks_per_kill 1
+scoreboard players set @s wokkaman_fireworks_per_kill 0
+
+scoreboard players set @s wokkaman_wind_charges_starting_count 4
+scoreboard players set @s wokkaman_wind_charges_per_kill 2
 
 scoreboard players set @s wokkaman_mace_max_uses 6
 scoreboard players set @s wokkaman_mace_starting_uses 2

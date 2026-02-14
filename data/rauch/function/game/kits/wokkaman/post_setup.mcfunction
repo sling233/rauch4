@@ -9,3 +9,4 @@ execute if score %enable_delayed_clear global matches 1 run return 0
 function rauch:game/framework/wokkaman_set_starting_rockets
 function rauch:game/kits/wokkaman/fireworks/give_starting_firework_rockets
 function rauch:game/kits/wokkaman/mace/give_starting_mace
+function rauch:game/kits/wokkaman/wind_charges/give_starting
