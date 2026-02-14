@@ -56,7 +56,7 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
        {"text":"Type: ","color":"gray"},{"text":"Fighter\n","color":"#036654"},\
        {"text":"Stats:  "},{"text":"❤16  ","color":"#049177"},{"text":"⚔1.2  ","color":"#06BB9A"},{"text":"Range: 3\n\n","color":"#07E6BD"},\
        {"text":"R (10s): ","color":"#07E6BD"},{"text":"Selects an enemy up to 20 blocks away. Creates a circle around that player. If the player leaves the circle, you get +40% Q charge.\n\n"},\
-       {"text":"Q (-): ","color":"#07E6BD"},{"text":"Instead of having a cooldown, this ability is a percentage-based charge. You get 1% charge every second passively. Using R, you can get overcharge (above 100% charge), which will deplete back to 100% at a moderate speed. Activating Q grants Speed III, Jump Boost II and +50% damage for 10 seconds.\n\n"},\
+       {"text":"Q (-): ","color":"#07E6BD"},{"text":"This ability is a percentage-based charge. You get 1% charge every second passively. Using R, you can get overcharge (above 100% charge), which will deplete back to 100% at a moderate speed. Activating Q grants Speed III, Jump Boost II and +50% damage for 10 seconds. Additionally, the cooldown for F gets shortened to 1s.\n\n"},\
        {"text":"F (10s): ","color":"#07E6BD"},{"text":"An upwards boost for mobility."}\
    ]}\
 },\

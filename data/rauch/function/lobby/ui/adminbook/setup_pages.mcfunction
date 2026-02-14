@@ -7,27 +7,32 @@ $data modify storage rauch temp.pages set value [\
         "click_event":{"action":"run_command","command":"/trigger adminsetting set 1"}},{"text":"]\n","color":"dark_gray"},\
         \
         {"text":"[","color":"dark_gray"},{"text":"King of the Hill","color":"$(koth)","hover_event":{"action":"show_text","value":[\
-        {"text":"Control the center to lose less points than the enemy team. First team with no points left loses.\n\nThe amount of \
-        points each team has at the beginning of the game can be customized by an admin in the rauch:game_settings_override function.","color":"white"}]},\
+        {"text":"Control the center to lose less points than the enemy team. First team with no points left loses.\n\n\
+        The amount of points each team has at the beginning of the game can be customized by an admin via the scores Global time_red and \
+        Global time_blue (default is 300000). You need to set these AFTER the game has started.","color":"white"}]},\
         "click_event":{"action":"run_command","command":"/trigger adminsetting set 2"}},{"text":"]\n","color":"dark_gray"},\
         \
         {"text":"[","color":"dark_gray"},{"text":"Respawn Deathmatch","color":"$(respawn)","hover_event":{"action":"show_text","value":[\
-        {"text":"The first team to 20 kills wins.\nThe amount of kills needed to win can be customized by an admin in the \
-        rauch:game_settings_override function.","color":"white"}]},\
+        {"text":"The first team to 20 kills wins.\n\n\
+        The amount of kills needed to win can be customized by an admin with the scoreboard Global rd_kills_to_win. \
+        You need to do this with the game already running. \
+        Maybe i will add a proper system for this in the future but that time is not now.","color":"white"}]},\
         "click_event":{"action":"run_command","command":"/trigger adminsetting set 3"}},{"text":"]\n","color":"dark_gray"},\
         \
         {"text":"[","color":"dark_gray"},{"text":"Capture The Flag","color":"$(ctf)","hover_event":{"action":"show_text","value":[\
         {"text":"Transport the Flag to the Enemy Base to get points. The team with the most points after 3:00 or that reaches 5 points first wins.\n\
         In case of a tie, the team that has transported the flag the closest to the enemy base wins. If the losing team holds the flag, they are given \
-        a chance to score a point to win (overtime), otherwise they lose.\n\nCertain values can be customized by an admin in the \
-        rauch:game_settings_override function. Global ctf_game_duration (in ticks), Global ctf_points_to_win, Global flag_spawn_delay (in ticks).","color":"white"}]},\
+        a chance to score a point to win (overtime), otherwise they lose.\n\nCertain values can be customized by an admin via the scores \
+        Global ctf_game_duration (in ticks), Global ctf_points_to_win, Global flag_spawn_delay (in ticks). You probably guessed it, \
+        set these values after the game has started.","color":"white"}]},\
         "click_event":{"action":"run_command","command":"/trigger adminsetting set 5"}},{"text":"]\n","color":"dark_gray"},\
         \
         {"text":"[","color":"dark_gray"},{"text":"Wokkaman","color":"$(wokkaman)","hover_event":{"action":"show_text","value":[\
-        {"text":"Work In Progress, for fun mode\n As of now, the player who manually selects team red will become the Wokkaman, an intentionally \
+        {"text":"Kind of work in progress, for fun mode.\n\
+        As of now, the player who manually selects team red in the queue will become the Wokkaman, an intentionally \
         overpowered class. The goal of the blue team is to kill the Wokkaman, the Wokkaman player just tries to get as many kills as they can, \
         they cannot \"win\". The game ends when the Wokkaman is killed. Multiple players can be a Wokkaman, as of now about 3 blue players \
-        per wokkaman seems fun.","color":"white"}]},\
+        per Wokkaman seems fun.","color":"white"}]},\
         "click_event":{"action":"run_command","command":"/trigger adminsetting set 6"}},{"text":"]\n","color":"dark_gray"}\
     ],\
     [\

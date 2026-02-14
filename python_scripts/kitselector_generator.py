@@ -53,7 +53,7 @@ hacker.colors = ["#FF0000","#FFBF00","#7FFF00","#00FF3F","#00FFFF","#003FFF","#7
 
 wark = Kit("Wark","Fighter")
 wark.r_ability = "Selects an enemy up to 20 blocks away. Creates a circle around that player. If the player leaves the circle, you get +40% Q charge."
-wark.q_ability = "Instead of having a cooldown, this ability is a percentage-based charge. You get 1% charge every second passively. Using R, you can get overcharge (above 100% charge), which will deplete back to 100% at a moderate speed. Activating Q grants Speed III, Jump Boost II and +50% damage for 10 seconds."
+wark.q_ability = "This ability is a percentage-based charge. You get 1% charge every second passively. Using R, you can get overcharge (above 100% charge), which will deplete back to 100% at a moderate speed. Activating Q grants Speed III, Jump Boost II and +50% damage for 10 seconds. Additionally, the cooldown for F gets shortened to 1s."
 wark.q_cool = "-"
 wark.f_ability = "An upwards boost for mobility."
 wark.colors = ["#07E6BD","#036654","#049177","#06BB9A","#07E6BD","#07E6BD","#07E6BD","#07E6BD"]
