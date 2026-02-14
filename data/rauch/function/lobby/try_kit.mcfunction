@@ -20,14 +20,11 @@ execute as @a[tag=game] run scoreboard players add t_number_of_players temp 1
 execute if score t_number_of_players temp matches 12.. run \
     return run tellraw @s {"text":"Too many players trying their kit right now.","color":"red"}
 
-# set kit
-scoreboard players operation t_kit temp = @s kitselect
-scoreboard players remove t_kit temp 1000
-scoreboard players operation @s kit = t_kit temp
-scoreboard players reset t_kit temp
 
 # if necessary start new game
-execute unless score Global game_running matches 1 run function rauch:game/mode/try/start_new
+scoreboard players set Global mode 6
+say set mode to 6
+execute unless score Global game_running matches 1 run function rauch:game/framework/start_game
 
 # join game
 function rauch:game/mode/try/join

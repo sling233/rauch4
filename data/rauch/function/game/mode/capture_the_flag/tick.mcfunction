@@ -9,11 +9,11 @@ execute as @e[type=minecraft:armor_stand,tag=flag,limit=1] run function rauch:ga
 execute if score Global flagDistanceRed matches ..900 as @a[tag=flagPickedUp,team=Blue] run function rauch:game/mode/capture_the_flag/blue_score
 execute if score Global flagDistanceBlue matches ..900 as @a[tag=flagPickedUp,team=Red] run function rauch:game/mode/capture_the_flag/red_score
 
-# flag too far in own base (drop flag)
 scoreboard objectives add dis_diff dummy
 scoreboard players operation Global dis_diff = Global flagDistanceBlue
 scoreboard players operation Global dis_diff -= Global flagDistanceRed
 
+# flag too far in own base (drop flag)
 execute if entity @a[tag=flagPickedUp,team=Red] if score Global dis_diff matches 14000.. run function rauch:game/mode/capture_the_flag/flag_reset
 execute if entity @a[tag=flagPickedUp,team=Blue] if score Global dis_diff matches ..-14000 run function rauch:game/mode/capture_the_flag/flag_reset
 

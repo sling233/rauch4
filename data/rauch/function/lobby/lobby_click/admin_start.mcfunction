@@ -5,5 +5,7 @@ execute if score Global game_running matches 1 run return run tellraw @s {"text"
 execute if entity @a[tag=edit_map] run return run tellraw @s {"text":"Cannot start game while someone is editing a map.","color":"red"}
 execute if entity @a[tag=edit_lobby] run return run tellraw @s {"text":"Cannot start game while someone is editing the lobby.","color":"red"}
 execute unless entity @a[tag=queue] run return run tellraw @s {"text":"Cannot start game because there are no players in queue.","color":"red"}
+
 # else start game
+scoreboard players operation Global mode = selected_mode global
 function rauch:game/framework/start_game

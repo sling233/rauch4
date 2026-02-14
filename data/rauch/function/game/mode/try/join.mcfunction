@@ -1,3 +1,20 @@
+# set kit
+scoreboard players operation t_kit temp = @s kitselect
+scoreboard players remove t_kit temp 1000
+scoreboard players operation @s kit = t_kit temp
+scoreboard players reset t_kit temp
+
+# set pnum (custom "technical player setup")
+scoreboard players set try_pnum temp 0
+function rauch:game/mode/try/find_pnum_loop
+scoreboard players operation @s pnum = try_pnum temp
+scoreboard players reset try_pnum temp
+tag @s remove queue
+tag @s remove lobby
+tag @s add game
+scoreboard players operation @s game_id = Global game_id
+
+
 # determine team
 # removes all offline palyers from the teams while keeping the online players
 tag @a[team=Red] add t_red
@@ -15,11 +32,6 @@ execute store result score Global time_blue run team list Blue
 execute if score Global time_red <= Global time_blue run team join Red @s
 execute if score Global time_red > Global time_blue run team join Blue @s
 
-# set pnum
-scoreboard players set try_pnum temp 0
-function rauch:game/mode/try/find_pnum_loop
-scoreboard players operation @s pnum = try_pnum temp
-scoreboard players reset try_pnum temp
 
 
 # set game data storage (replace if alread exists)
@@ -50,12 +62,12 @@ data remove storage macros data
 data remove storage temp id
 
 # set weapon, armor, setup scores etc
-tag @s remove queue
-tag @s remove lobby
-tag @s add game
-tag @s add can_respawn
-function rauch:game/framework/pregame
-function rauch:game/kits/set_cooldowns
+function rauch:game/framework/player_setup
+
+# bossbars
+function rauch:game/ui/bossbar/setplayers
+function rauch:game/ui/bossbar/allinvisible
+
 
 # tp
 execute if entity @s[team=Red] run data modify storage temp spawn_loc.x set from storage map_data active.red[0]

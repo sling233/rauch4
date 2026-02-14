@@ -1,10 +1,9 @@
 # game id etc
 scoreboard players set Global game_running 1
 scoreboard players add Global game_id 1
-scoreboard players operation Global mode = selected_mode global
 scoreboard players reset Global gameend
 
-# create game data storage
+# reset game data storage
 data remove storage game_data bolt_hit
 data remove storage game_data hacker_r_tag
 data remove storage game_data hacker_q_tag
@@ -12,12 +11,16 @@ data remove storage game_data wok_bow_tag
 
 
 # player ids etc.
-scoreboard players reset Global pnum
-execute as @a[tag=queue,limit=12] run function rauch:game/framework/technical_player_setup
-scoreboard players reset Global pnum
+# mode id 6 is try out kit mode, start that with no players
+scoreboard players reset t_pnum temp
+execute unless score Global mode matches 6 as @a[tag=queue,limit=12] run function rauch:game/framework/technical_player_setup
+scoreboard players reset t_pnum temp
 # potentially left over players
-execute as @a[tag=queue] run function rauch:game/framework/leftover
+execute unless score Global mode matches 6 as @a[tag=queue] run function rauch:game/framework/leftover
 
+# bossbars
+function rauch:game/ui/bossbar/setplayers
+function rauch:game/ui/bossbar/allinvisible
 
 # team setup
 # removes all offline palyers from the teams while keeping the online players
@@ -31,23 +34,14 @@ tag @a remove t_red
 tag @a remove t_blu
 function rauch:game/mode/team_setup
 
+execute as @a[tag=game] run function rauch:game/framework/player_setup
 
-# map setup
-# sorry for bad name but i cant think of anything better rn. it sets the time, weather and particles
-function rauch:game/framework/map_setup_2
-
-
-# game settings
-# basic player setup (stuff that depends on the kit / mode)
-execute as @a[tag=game] run function rauch:game/framework/basic_player_setup
-# mode specific settings that effect players or are settings initialize has to react to
+# mode "settings" (in the future there could be a way to change these) 
 function rauch:game/mode/apply_settings
-
-# kit specific init stuff that has to react to changing settings from the mode. No settings here.
-execute as @a[tag=game] run function rauch:game/kits/post_setup
-
 # initialize the mode, fixed, no settings in here
 function rauch:game/mode/initialize
 
 execute if score %enable_delayed_clear global matches 1 run schedule function rauch:game/framework/start_schedule_clear 10t
 
+# sets the map time, weather and particles
+function rauch:game/framework/apply_map_options
