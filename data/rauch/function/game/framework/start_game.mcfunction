@@ -1,15 +1,3 @@
-# check if there are players in queue
-execute unless entity @a[tag=queue] run tellraw @s [{"text":"Game can't be started because there are no players in queue!","color":"red"}]
-execute unless entity @a[tag=queue] run return 0
-
-# check if there is someone editing a map
-execute if entity @a[tag=edit_map] run tellraw @s [{"text":"Game can't be started because someone is editing a map","color":"red"}]
-execute if entity @a[tag=edit_map] run return 0
-
-# check if there is someone editing the lobby
-execute if entity @a[tag=edit_lobby] run tellraw @s [{"text":"Game can't be started because someone is editing the lobby","color":"red"}]
-execute if entity @a[tag=edit_lobby] run return 0
-
 # game id etc
 scoreboard players set Global game_running 1
 scoreboard players add Global game_id 1
