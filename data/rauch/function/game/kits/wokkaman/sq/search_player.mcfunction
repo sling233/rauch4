@@ -7,6 +7,7 @@ execute as @s[team=Red] at @s as @a[tag=game,tag=!dead,team=Blue,distance=..4.5]
 execute as @s[team=Blue] at @s as @a[tag=game,tag=!dead,team=Red,distance=..4.5] run tag @s add t_found
 #tag @s add t_found
 execute unless entity @a[tag=t_found] run return 0
+scoreboard players operation @s cool5 = @s cool5_target
 
 execute as @a[tag=t_found,sort=nearest,limit=1] run tag @s add wok_stepped_on
 
