@@ -1,5 +1,5 @@
-tellraw @a [{"text":"dev610","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"dev611","color":"light_purple"}]
-tellraw @a [{"text":"- Finally remove the 20 block offset for map spawns. Automatically converting...","color":"yellow"}]
+#tellraw @a [{"text":"dev610","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"dev611","color":"light_purple"}]
+tellraw @a [{"text":"- Finally remove the 20 block offset for map spawns. Automatically converting.","color":"yellow"}]
 
 # set version
 scoreboard players set Global version 611
@@ -7,7 +7,7 @@ scoreboard players set Global version 611
 # maps
 function rauch:macros/foreach {for_path:"map_data maps",for_function:"rauch:settings/versions/v611/convert"}
 data remove storage map_data active
-tellraw @a [{"text":"...done. Reset active map.","color":"yellow"}]
+tellraw @a [{"text":"Done. Active map reset.","color":"green"}]
 
 kill @e[type=marker,tag=map]
 # every scoreboard that was removed

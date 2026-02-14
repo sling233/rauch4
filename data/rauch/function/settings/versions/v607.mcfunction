@@ -1,4 +1,4 @@
-tellraw @a [{"text":"dev606","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"dev607","color":"light_purple"}]
+#tellraw @a [{"text":"dev606","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"dev607","color":"light_purple"}]
 tellraw @a [{"text":"- Changed map id data. Automatically converting...","color":"yellow"}]
 
 # set version

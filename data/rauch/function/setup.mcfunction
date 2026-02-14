@@ -166,8 +166,8 @@ data modify storage map_data versions set value [\
 data modify storage lobby_data latest_version set value 3
 
 function rauch:settings/versions/version_check
-function rauch:settings/versions/maps/map_check
-function rauch:settings/versions/lobby_check
+#function rauch:settings/versions/maps/map_check
+#function rauch:settings/versions/lobby_check
 
 # execute unless entity @a[tag=admin] unless data storage lobby_data position run tellraw @a [\
 # {"text":"Please set the Lobby position by moving to the desired location and clicking ","color":"yellow"},\

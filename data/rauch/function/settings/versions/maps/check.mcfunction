@@ -8,7 +8,7 @@ $execute store result score t_latest_version temp run data get storage map_data 
 $execute store result score t_current_version temp run data get storage map_data maps[$(index)].version
 
 
-$execute unless score t_current_version temp = t_latest_version temp run tellraw @a[tag=admin] [\
+$execute unless score t_current_version temp = t_latest_version temp run tellraw @a [\
   {"text":"An Update is available for map ","color":"yellow"},\
   {"storage":"map_data",nbt:"maps[$(index)].name","color":"light_purple"},\
   {"text":". Click ","color":"yellow"},{"text":"HERE","click_event":{"action":"run_command",\

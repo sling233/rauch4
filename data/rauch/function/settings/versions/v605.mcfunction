@@ -1,4 +1,4 @@
-tellraw @a [{"text":"dev604","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"dev605","color":"light_purple"}]
+#tellraw @a [{"text":"dev604","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"dev605","color":"light_purple"}]
 
 # set version
 scoreboard players set Global version 605

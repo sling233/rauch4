@@ -1,4 +1,4 @@
-tellraw @a [{"text":"6.0.0","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"dev601","color":"light_purple"}]
+#tellraw @a [{"text":"6.0.0","color":"#FF7912"},{"text":" -> ","color":"green"},{"text":"dev601","color":"light_purple"}]
 tellraw @a [{"text":"- The Lobby data format changed, so downpatching to earlier versions will lead the lobby position being lost (you can re-add it).","color":"yellow"}]
 
 # set version
