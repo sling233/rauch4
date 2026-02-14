@@ -1,5 +1,6 @@
 # as the player that just died
 scoreboard players reset @s death
+scoreboard players reset @s damage_taken
 gamemode spectator @s
 tag @s add dead
 
