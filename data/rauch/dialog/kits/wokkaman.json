@@ -24,7 +24,7 @@
        {"text":"A projectile that looks for enemies closeby, automatically targeting them, and returning to searching once it hits the target. When no more players are found it explodes and stuns all players hit.\n\n"},
        {"text":"sQ (9s): ","color":"red"},
        {"text":"Hop onto a nearby enemy, stunning them and dragging them downwards. Stops when arriving at the ground (so the higher you use it the more damage it does).\n\n"},
-       {"text":"sF (5s): ","color":"red"},
+       {"text":"sF (3.5s): ","color":"red"},
        {"text":"Teleport behind the player you are looking at.\n\n"}
     ]
   }

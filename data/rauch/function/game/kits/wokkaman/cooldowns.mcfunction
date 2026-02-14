@@ -1,9 +1,11 @@
 scoreboard players set @s cool1_target 160
 #scoreboard players set @s cool2_target 200
 scoreboard players set @s cool3_target 140
+# sr - sq - sf
 scoreboard players set @s cool4_target 160
 scoreboard players set @s cool5_target 180
-scoreboard players set @s cool6_target 100
+scoreboard players set @s cool6_target 70
+
 scoreboard players set @s cool1_respawn 0
 #scoreboard players set @s cool2_respawn 0
 scoreboard players set @s cool3_respawn 0

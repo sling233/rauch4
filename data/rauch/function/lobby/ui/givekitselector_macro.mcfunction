@@ -109,7 +109,7 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
        {"text":"F (7s): ","color":"red"},{"text":"When on the ground, launches you in the air. This is the only case the cooldown is used for.\nWhen in the air, it makes you hover for a little bit.\nWhen hovering, it launches you downwards.\nWhen flying using the elytra, it cancels the elytra.\n\n"},\
            {"text":"Shift-R (8s): ","color":"red"},{"text":"A projectile that looks for enemies closeby, automatically targeting them, and returning to searching once it hits the target. When no more players are found it explodes and stuns all players hit.\n\n"},\
            {"text":"Shift-Q (9s): ","color":"red"},{"text":"Hop onto a nearby enemy, stunning them and dragging them downwards. Stops when arriving at the ground (so the higher you use it the more damage it does).\n\n"},\
-           {"text":"Shift-F (5s): ","color":"red"},{"text":"Teleport behind the player you are looking at."}\
+           {"text":"Shift-F (3.5s): ","color":"red"},{"text":"Teleport behind the player you are looking at."}\
    ]}\
 }],\
 [\
