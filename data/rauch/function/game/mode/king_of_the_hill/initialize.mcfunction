@@ -1,6 +1,6 @@
 execute as @a[team=Red,tag=game] run function rauch:game/framework/tp_to_red_spawn
 execute as @a[team=Blue,tag=game] run function rauch:game/framework/tp_to_blue_spawn
-execute at @a[tag=game] run spawnpoint @s ~ ~ ~
+execute as @a[tag=game] at @s run spawnpoint @s ~ ~ ~
 
 scoreboard players set Global control 100
 scoreboard players set Global capture_info 3
