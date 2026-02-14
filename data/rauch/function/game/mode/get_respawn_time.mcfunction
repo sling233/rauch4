@@ -3,7 +3,7 @@ execute if score Global mode matches 1 run return 120
 execute if score Global mode matches 2 run return 120
 execute if score Global mode matches 3 run return 0
 execute if score Global mode matches 4 run return 120
-execute if score Global mode matches 5 run return 120
+execute if score Global mode matches 5 run return 50
 execute if score Global mode matches 6 run return 0
 execute if score Global mode matches 7 run return fail
 
