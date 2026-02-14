@@ -17,4 +17,4 @@ execute as @e[type=minecraft:area_effect_cloud,tag=setup,tag=flyerq,limit=1] run
 
 execute if entity @s[tag=!flyer_q_ground] run return 0
 
-function rauch:game/mechanics/vertical_launch/launch {power:130}
+function rauch:game/mechanics/vertical_launch/launch {power:180}

@@ -1,5 +1,5 @@
 execute if score @s flyerQSchedule matches -58 as @s[tag=flyer_q_ground] run attribute @s minecraft:gravity base set 0.03
-execute if score @s flyerQSchedule matches -56 as @s[tag=flyer_q_ground] run effect give @s minecraft:levitation 3 0 true
+execute if score @s flyerQSchedule matches -55 as @s[tag=flyer_q_ground] run effect give @s minecraft:levitation 3 0 true
 execute if score @s flyerQSchedule matches -48 run effect clear @s minecraft:levitation
 execute if score @s flyerQSchedule matches -45 as @s[tag=flyer_q_ground] at @s run attribute @s minecraft:gravity base set 0.00
 execute if score @s flyerQSchedule matches -28 run tag @s remove flyer_q_ground
