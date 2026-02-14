@@ -1,4 +1,4 @@
-execute at @s run summon minecraft:item_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0.707f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.6f,0.6f,0.6f]},billboard:"fixed",Tags:["wok_rocket","rotating","setup"],item:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{}}},teleport_duration:2}
+execute at @s run summon minecraft:item_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0.707f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.6f,0.6f,0.6f]},billboard:"fixed",Tags:["wok_rocket","rotating","setup"],item:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{}}},teleport_duration:1}
 execute as @s[team=Red] run tag @e[type=item_display,tag=wok_rocket,tag=setup] add red
 execute as @s[team=Blue] run tag @e[type=item_display,tag=wok_rocket,tag=setup] add blu
 

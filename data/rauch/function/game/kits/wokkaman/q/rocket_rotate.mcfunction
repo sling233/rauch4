@@ -15,8 +15,16 @@ execute store result storage temp delta_angle int 1 run scoreboard players get t
 
 
 execute at @a[tag=temp,limit=1] run tp @s ~ ~1 ~ ~ ~
-execute if score t_is_grounded temp matches 1 run function rauch:game/kits/wokkaman/q/rocket_rotate_grounded with storage temp
-execute unless score t_is_grounded temp matches 1 run function rauch:game/kits/wokkaman/q/rocket_rotate_airborne with storage temp
+
+# the following 4 lines do this: t_rotate_airborne = max(t_is_hovering, t_is_flying); t_rotate_normal = !t_rotate_airborne
+scoreboard players operation t_rotate_airborne temp = t_is_flying temp
+scoreboard players operation t_rotate_airborne temp > t_is_hovering temp
+
+scoreboard players set t_rotate_normal temp 1
+scoreboard players operation t_rotate_normal temp -= t_rotate_airborne temp
+
+execute if score t_rotate_normal temp matches 1 run function rauch:game/kits/wokkaman/q/rocket_rotate_normal with storage temp
+execute if score t_rotate_airborne temp matches 1 run function rauch:game/kits/wokkaman/q/rocket_rotate_airborne with storage temp
 
 scoreboard players reset t_angle_with_offset temp
 scoreboard players reset t_delta_angle temp

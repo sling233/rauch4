@@ -4,6 +4,7 @@ execute store result score t_player_angle temp run data get entity @s Rotation[0
 execute as @s[tag=t_grounded] run scoreboard players set t_is_grounded temp 1
 execute as @s[predicate=rauch:sneak] run scoreboard players set t_is_sneaking temp 1
 execute as @s[predicate=rauch:flying] run scoreboard players set t_is_flying temp 1
+execute if score @s wok_hover_schedule matches ..0 run scoreboard players set t_is_hovering temp 1
 
 scoreboard players operation t_pnum temp = @s pnum
 execute store result score t_player_z temp run data get entity @s Pos[2] 1000
@@ -17,6 +18,7 @@ scoreboard players reset t_angle temp
 scoreboard players reset t_is_grounded temp
 scoreboard players reset t_is_sneaking temp
 scoreboard players reset t_is_flying temp
+scoreboard players reset t_is_hovering temp
 scoreboard players reset t_player_angle temp
 scoreboard players reset t_player_z temp
 scoreboard players reset t_player_x temp

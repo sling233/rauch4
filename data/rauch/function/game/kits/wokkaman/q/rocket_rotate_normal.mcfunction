@@ -2,9 +2,9 @@
 $execute at @s run tp @s ~ ~ ~ $(angle) 0
 
 #calculate height
-execute at @a[tag=temp] run summon marker ~ ~ ~ {Tags:["fuck"]}
-$execute as @e[type=marker,tag=fuck] at @s rotated $(delta_angle) 0 rotated ~90 0 positioned ^ ^ ^$(roll_angle) run tp @s ~ ~ ~ ~ ~
-execute store result score t_marker_z temp run data get entity @e[type=marker,tag=fuck,limit=1] Pos[2] 1000
+execute at @a[tag=temp] run summon marker ~ ~ ~ {Tags:["delta"]}
+$execute as @e[type=marker,tag=delta] at @s rotated $(delta_angle) 0 rotated ~90 0 positioned ^ ^ ^$(roll_angle) run tp @s ~ ~ ~ ~ ~
+execute store result score t_marker_z temp run data get entity @e[type=marker,tag=delta,limit=1] Pos[2] 1000
 execute store result score t_old_y temp run data get entity @s Pos[1] 1000
 # calculate delta z (t_marker_z holds delta z after) (this is basically sine or cosine of the angle, not sure, times $(roll_angle))
 scoreboard players operation t_marker_z temp -= t_player_z temp
@@ -19,6 +19,6 @@ execute at @s rotated ~ -90 run tp @s ~ ~ ~ ~ ~
 #execute unless score t_is_grounded temp matches 1 at @s run particle small_flame ^ ^ ^-0.3 0 0 0 0 1 force
 execute at @s run particle minecraft:dust_color_transition{from_color:[1.0,0.8,0.3],scale:0.4,to_color:[0.5,0.0,0.0]} ^ ^ ^-0.3 0 0 0 0.01 1 force
 
-kill @e[type=marker,tag=fuck]
+kill @e[type=marker,tag=delta]
 scoreboard players reset t_marker_z temp
 scoreboard players reset t_old_y temp
