@@ -29,7 +29,7 @@ title @s[scores={kit=5},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text"
 title @s[scores={kit=6},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Teleporter","color":"yellow"}]
 title @s[scores={kit=7},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Tank","color":"yellow"}]
 title @s[scores={kit=8},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Pikka","color":"yellow"}]
-title @s[scores={kit=9},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Wokkaman... lol","color":"yellow"}]
+title @s[scores={kit=9},tag=!queue] actionbar [{"text":"Selected Kit: "},{"text":"Wokkaman","color":"yellow"}]
 
 # when in queue display other players in queue
 title @s[tag=queue] actionbar [{"text":"Queue: ","color":"yellow"},{"selector":"@a[tag=queue]"}]
