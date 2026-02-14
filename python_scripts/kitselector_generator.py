@@ -163,6 +163,8 @@ def get_hover_event(kit: Kit) -> str:
         type_lol = ',{"text":"' + kit.typ + '\\n","color":"' + kit.colors[1] + '"},'
 
     text = '[' + "\\\n"
+    if type(kit) is WokkamanKit:
+        text += '       {text:"",color:"gray"},{"text":"NOTE: This kit cannot be selected normally (unless an admin enables it). It is a boss kit automatically assigned to team red in the Wokkaman game mode.\\n\\n",color:"red"},' + "\\\n"
     text += '       {"text":"Name: ","color":"gray"},{"text":"' + kit.name + '\\n","color":"' + kit.colors[0] + '"},' + "\\\n"
     text += '       {"text":"Type: ","color":"gray"}' + type_lol + "\\\n"
     text += '       {"text":"Stats:  "},{"text":"❤' + str(kit.health) + '  ","color":"' + kit.colors[2] + '"},{"text":"⚔' + str(kit.damage) + '  ","color":"' + kit.colors[3] + '"},{"text":"Range: ' + str(kit.range) + '\\n\\n","color":"' + kit.colors[4] + '"},' + "\\\n"
@@ -171,16 +173,19 @@ def get_hover_event(kit: Kit) -> str:
     text += '       {"text":"F (' + str(kit.f_cool) + '): ","color":"' + kit.colors[7] + '"},{"text":"' + kit.f_ability
     if type(kit) is WokkamanKit:
         text += '\\n\\n"},' + "\\\n"
-        text += '           {"text":"sR (' + str(kit.sr_cool) + '): ","color":"' + kit.colors[8] + '"},{"text":"' + kit.sr_ability + '\\n\\n"},' + "\\\n"
-        text += '           {"text":"sQ (' + str(kit.sq_cool) + '): ","color":"' + kit.colors[9] + '"},{"text":"' + kit.sq_ability + '\\n\\n"},' + "\\\n"
-        text += '           {"text":"sF (' + str(kit.sf_cool) + '): ","color":"' + kit.colors[10] + '"},{"text":"' + kit.sf_ability
+        text += '           {"text":"Shift-R (' + str(kit.sr_cool) + '): ","color":"' + kit.colors[8] + '"},{"text":"' + kit.sr_ability + '\\n\\n"},' + "\\\n"
+        text += '           {"text":"Shift-Q (' + str(kit.sq_cool) + '): ","color":"' + kit.colors[9] + '"},{"text":"' + kit.sq_ability + '\\n\\n"},' + "\\\n"
+        text += '           {"text":"Shift-F (' + str(kit.sf_cool) + '): ","color":"' + kit.colors[10] + '"},{"text":"' + kit.sf_ability
     
     text += '"}' + "\\\n" + '   ]'
     return text
 
 def get_kit_entry(kit: Kit) -> str:
     kit_id = kits.index(kit)
-    text = '{"text":"⦿","color":"blue","click_event":{"action":"run_command","command":"/trigger kitselect set 100' + str(kit_id+1) + '"},"hover_event":{"action":"show_text","value":[{"text":"Try out"}]}},' + "\\\n"
+    text = ""
+    if type(kit) is WokkamanKit:
+        text += '{text:"\\n"},'
+    text += '{"text":"⦿","color":"blue","click_event":{"action":"run_command","command":"/trigger kitselect set 100' + str(kit_id+1) + '"},"hover_event":{"action":"show_text","value":[{"text":"Try out"}]}},' + "\\\n"
     text += '{"text":" ' + kit.name + '\\n","color":"$(' + kit.name.lower() + ')",' + "\\\n"
     text += '   "click_event":{"action":"run_command","command":"/trigger kitselect set ' + str(kit_id+1) + '"},' + "\\\n"
     text += '   "hover_event":{"action":"show_text","value":'
