@@ -21,7 +21,7 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
        {"text":"Stats:  "},{"text":"❤16  ","color":"#3D993D"},{"text":"⚔1.2  ","color":"#29CC29"},{"text":"Range: 3\n\n","color":"#00EE00"},\
        {"text":"R (13s): ","color":"#00EE00"},{"text":"A hook (pulls an enemy towards you if you hit them). Stuns for 0.75 seconds on arrival.\n\n"},\
        {"text":"Q (9.5s): ","color":"#00EE00"},{"text":"Shoots a rocket that deals no damage and knocks players away.\n\n"},\
-       {"text":"F (18s): ","color":"#00EE00"},{"text":"Use F while crouching (Shift-F) to create a Warp Point. The next 18 seconds you have the ability to teleport to that point once by pressing F again (without crouching)."}\
+       {"text":"F (8s): ","color":"#00EE00"},{"text":"Use F while crouching (Shift-F) to place a Warp Point. The next 15 seconds you have the ability to teleport to that point once by pressing F again (without crouching)."}\
    ]}\
 },\
 {"text":"⦿","color":"blue","click_event":{"action":"run_command","command":"/trigger kitselect set 1003"},"hover_event":{"action":"show_text","value":[{"text":"Try out"}]}},\

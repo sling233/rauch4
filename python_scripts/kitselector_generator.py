@@ -34,7 +34,7 @@ bolt.colors = ["#4AF6F0","#247774","#30A19E","#3DCCC7","#4AF6F0","#4AF6F0","#4AF
 zarzahn = Kit("Zarzahn",["Fighter","Support"])
 zarzahn.r_ability = "A hook (pulls an enemy towards you if you hit them). Stuns for 0.75 seconds on arrival."
 zarzahn.q_ability = "Shoots a rocket that deals no damage and knocks players away."
-zarzahn.f_ability = "Use F while crouching (Shift-F) to create a Warp Point. The next 18 seconds you have the ability to teleport to that point once by pressing F again (without crouching)."
+zarzahn.f_ability = "Use F while crouching (Shift-F) to place a Warp Point. The next 15 seconds you have the ability to teleport to that point once by pressing F again (without crouching)."
 zarzahn.colors = ["#00EE00","#3D773D","#3D993D","#29CC29","#00EE00","#00EE00","#00EE00","#00EE00"]
 
 raucher = Kit("Raucher","Support")
