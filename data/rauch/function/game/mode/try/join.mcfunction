@@ -68,6 +68,8 @@ function rauch:game/framework/player_setup
 function rauch:game/ui/bossbar/setplayers
 function rauch:game/ui/bossbar/allinvisible
 
+# block interaction
+execute if score t_disable_block_interaction temp matches 1 as @a[tag=game] run attribute @s minecraft:block_interaction_range base set -1
 
 # tp
 execute if entity @s[team=Red] run data modify storage temp spawn_loc.x set from storage map_data active.red[0]
