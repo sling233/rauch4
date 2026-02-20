@@ -156,11 +156,11 @@ data modify storage map_data versions set value [\
   {id:"splat",version:6},\
   {id:"ancient",version:5},\
   {id:"greck",version:4},\
-  {id:"mork",version:5},\
-  {id:"klotz",version:5},\
+  {id:"mork",version:6},\
+  {id:"klotz",version:6},\
   {id:"arena",version:3},\
   {id:"cherry",version:1},\
-  {id:"wcity",version:5}\
+  {id:"wcity",version:6}\
 ]
 # lobby version
 data modify storage lobby_data latest_version set value 3
