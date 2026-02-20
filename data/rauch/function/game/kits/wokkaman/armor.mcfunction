@@ -12,7 +12,7 @@ item replace entity @s armor.feet with leather_boots[\
   dyed_color=3678989,\
   rarity=epic,\
   unbreakable={},\
-  enchantments={"minecraft:binding_curse":1},\
+  enchantments={"minecraft:binding_curse":1,"minecraft:soul_speed":1},\
   tooltip_display={hidden_components:["unbreakable","dyed_color","enchantments"]},\
   !minecraft:attribute_modifiers\
 ] 1
