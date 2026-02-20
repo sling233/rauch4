@@ -1,8 +1,9 @@
-execute at @s as @e[type=minecraft:armor_stand,tag=stun] if score @s pnum = @p pnum run kill @s
+function rauch:game/mechanics/kill_my_stun_armorstands
+
 execute at @s run summon minecraft:armor_stand ~ ~ ~ {CustomName:{"text":"a long time"},CustomNameVisible:1b,Invisible:1b,Marker:0b,NoGravity:1b,Tags:["setup","stun"]}
-execute at @s run scoreboard players operation @e[type=minecraft:armor_stand,tag=setup,tag=stun,sort=nearest,limit=1] pnum = @s pnum
+scoreboard players operation @e[type=minecraft:armor_stand,tag=setup,tag=stun,sort=nearest,limit=1] pnum = @s pnum
 execute at @s run tp @e[type=minecraft:armor_stand,tag=setup,tag=stun,sort=nearest,limit=1] @s
-execute at @s run tag @e[type=minecraft:armor_stand,tag=setup,tag=stun,sort=nearest,limit=1] remove setup
+tag @e[type=minecraft:armor_stand,tag=setup,tag=stun] remove setup
 
 execute at @s[scores={pnum=1}] store result bossbar minecraft:stun1 max run scoreboard players get @s stun
 execute at @s[scores={pnum=2}] store result bossbar minecraft:stun2 max run scoreboard players get @s stun
