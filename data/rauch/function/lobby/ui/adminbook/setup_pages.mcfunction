@@ -101,7 +101,7 @@ $data modify storage rauch temp.pages append value [\
   {text:"]\n",color:"dark_gray"},\
   {text:"[",color:"dark_gray"},\
     {"text":"Enable Flag Sprint",color:"$(flag_sprint)","hover_event":{"action":"show_text","value":[\
-      {"text":"Experimental gameplay balancing setting. Sets wether players that carry the flag in the capture the flag mode can sprint. Default on."}]},"click_event":\
+      {"text":"Experimental gameplay balancing setting. Sets whether players that carry the flag in the capture the flag mode can sprint. Default on."}]},"click_event":\
         {"action":"run_command","command":"/function rauch:settings/toggles/toggle_flag_sprint"}},\
   {text:"]\n",color:"dark_gray"},\
   {text:"[",color:"dark_gray"},\
@@ -111,7 +111,7 @@ $data modify storage rauch temp.pages append value [\
   {text:"]\n",color:"dark_gray"},\
   {text:"[",color:"dark_gray"},\
     {"text":"Wokkaman Selectable",color:"$(wokkaman_selectability)","hover_event":{"action":"show_text","value":[\
-      {"text":"Sets wether the wokkaman kit can be selected in the kit selector by anyone, in any mode. Default off."}]},"click_event":\
+      {"text":"Sets whether the wokkaman kit can be selected in the kit selector by anyone, in any mode. Default off."}]},"click_event":\
         {"action":"run_command","command":"/function rauch:settings/toggles/toggle_wokkaman_selectability"}},\
   {text:"]\n",color:"dark_gray"},\
   {text:"[",color:"dark_gray"},\
