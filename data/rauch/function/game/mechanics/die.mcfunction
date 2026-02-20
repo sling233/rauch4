@@ -10,6 +10,10 @@ execute as @e[type=marker,tag=remove_on_death] if score @s pnum = t_pnum temp ru
 execute as @e[type=armor_stand,tag=remove_on_death] if score @s pnum = t_pnum temp run kill @s
 scoreboard players reset t_pnum temp
 
+# not in hacker other_died because hack is also used in capture the flag
+#function rauch:game/kits/hacker/r/hack_end
+scoreboard players reset @s hack
+function rauch:game/ui/bossbar/hack/invisible
 
 # kit specific death functions
 function rauch:game/kits/die
@@ -18,10 +22,6 @@ function rauch:game/kits/other_died
 
 scoreboard players set @s armor_target 80
 function rauch:game/mechanics/set_protection
-# not in hacker other_died because hack is also used in capture the flag
-#function rauch:game/kits/hacker/r/hack_end
-scoreboard players reset @s hack
-function rauch:game/ui/bossbar/hack/invisible
 
 function rauch:game/mechanics/unstun
 
