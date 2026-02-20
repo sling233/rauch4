@@ -69,17 +69,9 @@ function rauch:game/ui/bossbar/setplayers
 function rauch:game/ui/bossbar/allinvisible
 
 # block interaction
-execute if score t_disable_block_interaction temp matches 1 as @a[tag=game] run attribute @s minecraft:block_interaction_range base set -1
+execute if score t_disable_block_interaction temp matches 1 as @s run attribute @s minecraft:block_interaction_range base set -1
 
 # tp
-execute if entity @s[team=Red] run data modify storage temp spawn_loc.x set from storage map_data active.red[0]
-execute if entity @s[team=Red] run data modify storage temp spawn_loc.y set from storage map_data active.red[1]
-execute if entity @s[team=Red] run data modify storage temp spawn_loc.z set from storage map_data active.red[2]
-execute if entity @s[team=Blue] run data modify storage temp spawn_loc.x set from storage map_data active.blue[0]
-execute if entity @s[team=Blue] run data modify storage temp spawn_loc.y set from storage map_data active.blue[1]
-execute if entity @s[team=Blue] run data modify storage temp spawn_loc.z set from storage map_data active.blue[2]
-
-function rauch:settings/edit_map/tp_macro with storage temp spawn_loc
+execute if entity @s[team=Red] run function rauch:game/framework/tp_to_red_spawn
+execute if entity @s[team=Blue] run function rauch:game/framework/tp_to_blue_spawn
 execute at @s run spawnpoint @s ~ ~ ~
-data remove storage temp spawn_loc
-
