@@ -1,3 +1,4 @@
+function rauch:util/command_limit_check/start
 #general
 execute as @a[scores={drop=1..}] run function rauch:drop
 #lobby
@@ -7,3 +8,5 @@ execute as @a[tag=edit_lobby] run function rauch:settings/edit_lobby/tick
 #game
 execute if score Global game_running matches 1 run function rauch:game/game
 execute as @a[scores={leave=1..}] run function rauch:lobby/rejoin
+
+function rauch:util/command_limit_check/end
