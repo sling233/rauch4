@@ -1,0 +1,1 @@
+scoreboard players reset command_limit_check global
