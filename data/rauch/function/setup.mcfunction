@@ -142,7 +142,7 @@ execute unless score %reload_message_disabled global matches 0.. run scoreboard 
 execute unless score %enable_flag_sprint global matches 0.. run scoreboard players set %enable_flag_sprint global 1
 execute unless score %enable_delayed_clear global matches 0.. run scoreboard players set %enable_delayed_clear global 0
 execute unless score %enable_wokkaman_selectability global matches 0.. run scoreboard players set %enable_wokkaman_selectability global 0
-execute unless score %emulate_1_8 global matches 0.. run scoreboard players set %emulate_1_8 global 0
+execute unless score %emulate_1_8 global matches 0.. run scoreboard players set %emulate_1_8 global 1
 execute unless score %dev_mode global matches 0.. run scoreboard players set %dev_mode global 0
 
 # setup stuff

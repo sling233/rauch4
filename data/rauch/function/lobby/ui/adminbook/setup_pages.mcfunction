@@ -116,7 +116,7 @@ $data modify storage rauch temp.pages append value [\
   {text:"]\n",color:"dark_gray"},\
   {text:"[",color:"dark_gray"},\
     {"text":"Emulate 1.8 Combat",color:"$(emulate_1_8)","hover_event":{"action":"show_text","value":[\
-      {"text":"No attack cooldowns. For better emulation, make sure to install the 1.8 combat version of the resource pack. Default off."}]},"click_event":\
+      {"text":"No attack cooldowns. Make sure to install the correct version of the resource pack depending on this toggle. Default on."}]},"click_event":\
         {"action":"run_command","command":"/function rauch:settings/toggles/toggle_1_8"}},\
   {text:"]\n",color:"dark_gray"},\
   {text:"[",color:"dark_gray"},\
