@@ -53,7 +53,7 @@ hacker.colors = ["#FF0000","#FFBF00","#7FFF00","#00FF3F","#00FFFF","#003FFF","#7
 
 wark = Kit("Wark","Fighter")
 wark.r_ability = "Selects an enemy up to 20 blocks away. Creates a circle around that player. If the player leaves the circle, you get +40% Q charge."
-wark.q_ability = "This ability is a percentage-based charge. You get 1% charge every second passively. Using R, you can get overcharge (above 100% charge), which will deplete back to 100% at a moderate speed. Activating Q grants Speed III, Jump Boost II and +50% damage for 10 seconds. Additionally, the cooldown for F gets shortened to 1s."
+wark.q_ability = "This ability is a percentage-based charge. You get 1.5% charge every second passively. Using R, you can get overcharge (above 100% charge), which will deplete back to 100% at a moderate speed. Activating Q grants Speed III, Jump Boost II and +50% damage for 10 seconds. Additionally, the cooldown for F gets shortened to 1s."
 wark.q_cool = "-"
 wark.f_ability = "An upwards boost for mobility."
 wark.colors = ["#07E6BD","#036654","#049177","#06BB9A","#07E6BD","#07E6BD","#07E6BD","#07E6BD"]
@@ -79,8 +79,8 @@ pikka.colors = ["#FFBF47","#DB00B6","#F20089","#EB8842","#FFBF47","#FFBF47","#FF
 
 # Wokkaman definition:
 wokkaman = WokkamanKit("Wokkaman","Everything")
-wokkaman.r_ability = "A hook (pulls enemies towards you). Press right click again to instead fix the enemy in place and pull youself towards them, lauching them away when arriving."
-wokkaman.sr_ability = "A projectile that looks for enemies closeby, automatically targeting them, and returning to searching once it hits the target. When no more players are found it explodes and stuns all players hit."
+wokkaman.r_ability = "A hook (pulls enemies towards you). Press right click again to instead fix the enemy in place and pull yourself towards them, launching them away when arriving."
+wokkaman.sr_ability = "A projectile that looks for enemies nearby, automatically targeting them, and returning to searching once it hits the target. When no more players are found it explodes and stuns all players hit."
 wokkaman.q_ability = "You get 4 rockets per kill (the ones rotating around you). Press Q to fire them."
 wokkaman.q_cool = "-"
 wokkaman.sq_ability = "Hop onto a nearby enemy, stunning them and dragging them downwards. Stops when arriving at the ground (so the higher you use it the more damage it does)."

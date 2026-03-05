@@ -56,7 +56,7 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
        {"text":"Type: ","color":"gray"},{"text":"Fighter\n","color":"#036654"},\
        {"text":"Stats:  "},{"text":"❤16  ","color":"#049177"},{"text":"⚔1.2  ","color":"#06BB9A"},{"text":"Range: 3\n\n","color":"#07E6BD"},\
        {"text":"R (10s): ","color":"#07E6BD"},{"text":"Selects an enemy up to 20 blocks away. Creates a circle around that player. If the player leaves the circle, you get +40% Q charge.\n\n"},\
-       {"text":"Q (-): ","color":"#07E6BD"},{"text":"This ability is a percentage-based charge. You get 1% charge every second passively. Using R, you can get overcharge (above 100% charge), which will deplete back to 100% at a moderate speed. Activating Q grants Speed III, Jump Boost II and +50% damage for 10 seconds. Additionally, the cooldown for F gets shortened to 1s.\n\n"},\
+       {"text":"Q (-): ","color":"#07E6BD"},{"text":"This ability is a percentage-based charge. You get 1.5% charge every second passively. Using R, you can get overcharge (above 100% charge), which will deplete back to 100% at a moderate speed. Activating Q grants Speed III, Jump Boost II and +50% damage for 10 seconds. Additionally, the cooldown for F gets shortened to 1s.\n\n"},\
        {"text":"F (10s): ","color":"#07E6BD"},{"text":"An upwards boost for mobility."}\
    ]}\
 },\
@@ -104,10 +104,10 @@ $item replace entity @s hotbar.8 with written_book[written_book_content={title:"
        {"text":"Name: ","color":"gray"},{"text":"Wokkaman\n","color":"red"},\
        {"text":"Type: ","color":"gray"},{"text":"Everything\n","color":"red"},\
        {"text":"Stats:  "},{"text":"❤40  ","color":"red"},{"text":"⚔2.0  ","color":"red"},{"text":"Range: 3.6\n\n","color":"red"},\
-       {"text":"R (8s): ","color":"red"},{"text":"A hook (pulls enemies towards you). Press right click again to instead fix the enemy in place and pull youself towards them, lauching them away when arriving.\n\n"},\
+       {"text":"R (8s): ","color":"red"},{"text":"A hook (pulls enemies towards you). Press right click again to instead fix the enemy in place and pull yourself towards them, launching them away when arriving.\n\n"},\
        {"text":"Q (-): ","color":"red"},{"text":"You get 4 rockets per kill (the ones rotating around you). Press Q to fire them.\n\n"},\
        {"text":"F (7s): ","color":"red"},{"text":"When on the ground, launches you in the air. This is the only case the cooldown is used for.\nWhen in the air, it makes you hover for a little bit.\nWhen hovering, it launches you downwards.\nWhen flying using the elytra, it cancels the elytra.\n\n"},\
-           {"text":"Shift-R (8s): ","color":"red"},{"text":"A projectile that looks for enemies closeby, automatically targeting them, and returning to searching once it hits the target. When no more players are found it explodes and stuns all players hit.\n\n"},\
+           {"text":"Shift-R (8s): ","color":"red"},{"text":"A projectile that looks for enemies nearby, automatically targeting them, and returning to searching once it hits the target. When no more players are found it explodes and stuns all players hit.\n\n"},\
            {"text":"Shift-Q (9s): ","color":"red"},{"text":"Hop onto a nearby enemy, stunning them and dragging them downwards. Stops when arriving at the ground (so the higher you use it the more damage it does).\n\n"},\
            {"text":"Shift-F (3.5s): ","color":"red"},{"text":"Teleport behind the player you are looking at."}\
    ]}\
