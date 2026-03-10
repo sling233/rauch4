@@ -3,6 +3,11 @@
 tellraw @a [{"text":"- As of version 7.0.0, downpatching is no longer supported due to the multitude of unfixable issues arising. \
 If you want to use an older version, please create a new world. \
 You can re-install the newer version with no risk.","color":"red"}]
+
+tellraw @a [{"text":"------------------------------------","color":"green"}]
+scoreboard players reset latest_version temp
+
+
 # remove scores (avoids bugs due to objectives changing type over version)
 # function rauch:settings/removeobj
 # avoid reload message from showing a second time

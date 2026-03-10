@@ -37,7 +37,7 @@ execute unless score Global version matches 611.. run function rauch:settings/ve
 execute unless score Global version matches 612.. run function rauch:settings/versions/v612
 
 # downpatch
-execute if score Global version > latest_version temp run function rauch:settings/versions/downpatch
+execute if score Global version > latest_version temp run return run function rauch:settings/versions/downpatch
 
 tellraw @a [{"text":"Checking if maps have updated:","color":"green"}]
 function rauch:settings/versions/maps/map_check
