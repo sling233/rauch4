@@ -1,6 +1,6 @@
 # downpatch
 # tellraw @a [{"text":"dev611","color":"light_purple"},{"text":" <- ","color":"red"},{"text":"Future Version (Id: ","color":"aqua"},{"score":{"name":"Global","objective":"version"}},{"text":")","color":"aqua"}]
-tellraw @a [{"text":"- As of version dev611, downpatching is no longer supported due to the multitude of unfixable issues arising. \
+tellraw @a [{"text":"- As of version 7.0.0, downpatching is no longer supported due to the multitude of unfixable issues arising. \
 If you want to use an older version, please create a new world. \
 You can re-install the newer version with no risk.","color":"red"}]
 # remove scores (avoids bugs due to objectives changing type over version)

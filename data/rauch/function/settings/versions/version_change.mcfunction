@@ -34,6 +34,7 @@ execute unless score Global version matches 608.. run function rauch:settings/ve
 execute unless score Global version matches 609.. run function rauch:settings/versions/v609
 execute unless score Global version matches 610.. run function rauch:settings/versions/v610
 execute unless score Global version matches 611.. run function rauch:settings/versions/v611
+execute unless score Global version matches 612.. run function rauch:settings/versions/v612
 
 # downpatch
 execute if score Global version > latest_version temp run function rauch:settings/versions/downpatch

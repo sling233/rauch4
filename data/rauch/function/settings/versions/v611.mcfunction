@@ -24,7 +24,6 @@ scoreboard objectives remove wokkaman_max_mace_count
 scoreboard objectives remove wokkaman_starting_mace_count
 scoreboard objectives remove wokkaman_starting_firework_rocket_count
 scoreboard objectives remove wokkaman_starting_rocket_count
-scoreboard objectives remove wokkaman_max_mace_count
 # every scoreboard that changed type
 #scoreboard objectives remove changed_type
 #scoreboard objectives add changed_type new_type
