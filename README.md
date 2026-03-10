@@ -7,7 +7,7 @@ wip
 ## Game Modes
 wip
 ## Installation
-- Go to the [latest release] and download wokkagames.zip. No need to extract.
+- Go to the [latest release](https://github.com/sling233/rauch4/releases/tag/v7.0.0) and download wokkagames.zip. No need to extract.
 - The release page also links to a resource pack - install it (instructions available there).
 - Use the exact Minecraft version specified in the release (latest version uses 1.21.11)
 - Create a new creative world, preferrably a completely empty one (eg. by creating a superflat World and using the "The Void" preset).
