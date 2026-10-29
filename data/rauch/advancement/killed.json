@@ -3,8 +3,10 @@
     "asdfasdfasdf": {
       "trigger": "minecraft:entity_killed_player",
       "conditions": {
-        "entity": {
-          "type": "minecraft:player"
+        "killing_blow": {
+          "source_entity": {
+            "minecraft:entity_type": "player"
+          }
         }
       }
     }

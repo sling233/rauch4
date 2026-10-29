@@ -7,4 +7,4 @@ $data modify storage rauch temp.pages[$(page)] append value [{"text":"\n[","colo
 "click_event":{"action":"run_command","command":"/function rauch:settings/edit_map/edit_initialize_check {\"map_id\":$(index)}"}},\
 {"text":"⬤","color":"red","hover_event":{"action":"show_text","value":[{"text":"Remove"}]},\
 "click_event":{"action":"run_command","command":"/function rauch:settings/remove_map/remove_map {\"map_id\":$(index)}"}},\
-{"text":"] ","color":"dark_gray"},{"storage":"map_data","nbt":"maps[$(index)].name","color":"$(is_active)"}]
+{"text":"] ","color":"dark_gray"},{"storage":"map_data","nbt":"maps[$(index)].name","color":"$(is_active)","interpret":true}]

@@ -153,14 +153,14 @@ execute as @a[tag=admin] unless score %reload_message_disabled global matches 1 
 
 # map values
 data modify storage map_data versions set value [\
-  {id:"splat",version:6},\
-  {id:"ancient",version:5},\
-  {id:"greck",version:4},\
-  {id:"mork",version:6},\
-  {id:"klotz",version:6},\
-  {id:"arena",version:3},\
-  {id:"cherry",version:1},\
-  {id:"wcity",version:6}\
+  {id:"splat",  version:6, delete_command:"fill ~ ~ ~ ~74 ~32 ~22 air"},\
+  {id:"ancient",version:5, delete_command:"fill ~ ~ ~ ~64 ~20 ~40 air"},\
+  {id:"greck",  version:4, delete_command:"fill ~ ~ ~ ~88 ~26 ~24 air"},\
+  {id:"mork",   version:6, delete_command:"fill ~ ~ ~ ~78 ~27 ~26 air"},\
+  {id:"klotz",  version:6, delete_command:"fill ~ ~ ~ ~46 ~42 ~46 air"},\
+  {id:"arena",  version:3, delete_command:"fill ~ ~ ~ ~60 ~25 ~30 air"},\
+  {id:"cherry", version:1, delete_command:"fill ~ ~ ~ ~92 ~78 ~46 air"},\
+  {id:"wcity",  version:6, delete_command:"fill ~ ~ ~ ~67 ~98 ~67 air"}\
 ]
 # lobby version
 data modify storage lobby_data latest_version set value 3

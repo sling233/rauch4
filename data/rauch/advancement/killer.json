@@ -1,12 +1,7 @@
 {
   "criteria": {
     "asdfasdfasdf": {
-      "trigger": "minecraft:player_killed_entity",
-      "conditions": {
-        "entity": {
-          "type": "minecraft:player"
-        }
-      }
+      "trigger": "minecraft:player_killed_entity"
     }
   },
   "rewards": {

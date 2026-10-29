@@ -9,7 +9,7 @@ execute unless score @s cool1 matches 0 run return 1
 # }
 
 item modify entity @s saddle {\
-  "function": "minecraft:set_enchantments",\
+  "type": "minecraft:set_enchantments",\
   "enchantments": {\
     "rauch:impulse": 13\
   }\

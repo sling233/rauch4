@@ -2,7 +2,7 @@
 execute unless items entity @s hotbar.1 firework_rocket run return run function rauch:game/kits/wokkaman/fireworks/give_new_firework
 
 item modify entity @s hotbar.1 {\
-  "function": "minecraft:set_count",\
+  "type": "minecraft:set_count",\
   "count": {\
     "type": "minecraft:score",\
     "target": {\

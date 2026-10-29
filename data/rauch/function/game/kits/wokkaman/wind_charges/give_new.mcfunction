@@ -1,7 +1,7 @@
 item replace entity @s hotbar.3 with minecraft:wind_charge 1
 
 item modify entity @s hotbar.3 {\
-  "function": "minecraft:set_count",\
+  "type": "minecraft:set_count",\
   "count": {\
     "type": "minecraft:score",\
     "target": {\

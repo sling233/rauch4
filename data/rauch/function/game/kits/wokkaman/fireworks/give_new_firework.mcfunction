@@ -6,7 +6,7 @@ item replace entity @s hotbar.1 with minecraft:firework_rocket[\
 ] 1
 
 item modify entity @s hotbar.1 {\
-  "function": "minecraft:set_count",\
+  "type": "minecraft:set_count",\
   "count": {\
     "type": "minecraft:score",\
     "target": {\

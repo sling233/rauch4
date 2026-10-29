@@ -2,7 +2,7 @@
 execute unless items entity @s hotbar.3 wind_charge run return run function rauch:game/kits/wokkaman/wind_charges/give_new
 
 item modify entity @s hotbar.3 {\
-  "function": "minecraft:set_count",\
+  "type": "minecraft:set_count",\
   "count": {\
     "type": "minecraft:score",\
     "target": {\

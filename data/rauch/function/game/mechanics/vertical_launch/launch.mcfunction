@@ -7,19 +7,19 @@ $execute if score 256 const matches ..$(power) run return run tellraw @a {text:"
 execute store result score t_rotation_y temp run data get entity @s Rotation[1]
 # rot: 0 = straight, negative = looking up, pos = looking down
 $execute if score t_rotation_y temp matches ..-45 run item modify entity @s saddle {\
-  "function": "minecraft:set_enchantments",\
+  "type": "minecraft:set_enchantments",\
   "enchantments": {\
     "rauch:impulse_vertical_looking_up": $(power)\
   }\
 }
 $execute if score t_rotation_y temp matches -44..44 run item modify entity @s saddle {\
-  "function": "minecraft:set_enchantments",\
+  "type": "minecraft:set_enchantments",\
   "enchantments": {\
     "rauch:impulse_vertical_looking_hor": $(power)\
   }\
 }
 $execute if score t_rotation_y temp matches 45.. run item modify entity @s saddle {\
-  "function": "minecraft:set_enchantments",\
+  "type": "minecraft:set_enchantments",\
   "enchantments": {\
     "rauch:impulse_vertical_looking_down": $(power)\
   }\
