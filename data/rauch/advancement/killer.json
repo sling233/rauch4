@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "asdfasdfasdf": {
+    "asdf": {
       "trigger": "minecraft:player_killed_entity"
     }
   },
