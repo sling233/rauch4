@@ -14,5 +14,6 @@ execute if score t_version temp matches 609 run return run data modify storage r
 execute if score t_version temp matches 610 run return run data modify storage rauch temp.version_name set value "dev610"
 execute if score t_version temp matches 611 run return run data modify storage rauch temp.version_name set value "7.0.0"
 execute if score t_version temp matches 612 run return run data modify storage rauch temp.version_name set value "7.0.1"
+execute if score t_version temp matches 613 run return run data modify storage rauch temp.version_name set value "7.1.0"
 
 data modify storage rauch temp.version_name set value "Unknown future version"
