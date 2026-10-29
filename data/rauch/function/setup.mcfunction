@@ -209,7 +209,7 @@ gamerule fire_spread_radius_around_player 0
 gamerule fire_damage false
 gamerule random_tick_speed 0
 gamerule mob_griefing false
-
+gamerule max_block_modifications 1000000
 
 #teams
 team add Red

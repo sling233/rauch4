@@ -17,27 +17,9 @@ $execute positioned $(x) $(y) $(z) align xyz store success score t_success_2 tem
 $execute positioned $(x) $(y) $(z) align xyz store success score t_success_3 temp run place template rauch:cherry01 ~ ~48 ~
 $execute positioned $(x) $(y) $(z) align xyz store success score t_success_4 temp run place template rauch:cherry11 ~48 ~48 ~
 
-#fillbiome
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_5 temp run fillbiome ~ ~ ~ ~92 ~3 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_6 temp run fillbiome ~ ~4 ~ ~92 ~7 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_7 temp run fillbiome ~ ~8 ~ ~92 ~11 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_8 temp run fillbiome ~ ~12 ~ ~92 ~15 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_9 temp run fillbiome ~ ~16 ~ ~92 ~19 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_10 temp run fillbiome ~ ~20 ~ ~92 ~23 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_11 temp run fillbiome ~ ~24 ~ ~92 ~27 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_12 temp run fillbiome ~ ~28 ~ ~92 ~31 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_13 temp run fillbiome ~ ~32 ~ ~92 ~35 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_14 temp run fillbiome ~ ~36 ~ ~92 ~39 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_15 temp run fillbiome ~ ~40 ~ ~92 ~43 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_16 temp run fillbiome ~ ~44 ~ ~92 ~47 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_17 temp run fillbiome ~ ~48 ~ ~92 ~51 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_18 temp run fillbiome ~ ~52 ~ ~92 ~55 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_19 temp run fillbiome ~ ~56 ~ ~92 ~59 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_20 temp run fillbiome ~ ~60 ~ ~92 ~63 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_21 temp run fillbiome ~ ~64 ~ ~92 ~67 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_22 temp run fillbiome ~ ~68 ~ ~92 ~71 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_23 temp run fillbiome ~ ~72 ~ ~92 ~75 ~47 minecraft:cherry_grove
-$execute positioned $(x) $(y) $(z) align xyz store success score t_success_24 temp run fillbiome ~ ~76 ~ ~92 ~79 ~47 minecraft:cherry_grove
+# fill with void first because if the biome is cherry_grove already the command will fail
+$execute positioned $(x) $(y) $(z) align xyz run fillbiome ~ ~ ~ ~92 ~79 ~47 minecraft:the_void
+$execute positioned $(x) $(y) $(z) align xyz store success score t_success_5 temp run fillbiome ~ ~ ~ ~92 ~79 ~47 minecraft:cherry_grove
 
 scoreboard players operation t_success_1 temp *= t_success_2 temp
 scoreboard players operation t_success_1 temp *= t_success_3 temp
