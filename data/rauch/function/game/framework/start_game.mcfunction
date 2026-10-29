@@ -22,16 +22,6 @@ execute unless score Global mode matches 6 as @a[tag=queue] run function rauch:g
 function rauch:game/ui/bossbar/setplayers
 function rauch:game/ui/bossbar/allinvisible
 
-# team setup
-# removes all offline palyers from the teams while keeping the online players
-tag @a[team=Red] add t_red
-tag @a[team=Blue] add t_blu
-team empty Red
-team empty Blue
-team join Red @a[tag=t_red]
-team join Blue @a[tag=t_blu]
-tag @a remove t_red
-tag @a remove t_blu
 function rauch:game/mode/team_setup
 
 execute as @a[tag=game] run function rauch:game/framework/player_setup
