@@ -11,7 +11,7 @@ scoreboard players operation @s cool5 = @s cool5_target
 
 execute as @a[tag=t_found,sort=nearest,limit=1] run tag @s add wok_stepped_on
 
-execute at @a[tag=wok_stepped_on] run summon block_display ~ ~1 ~ {Tags:["wok_sq_vehicle","setup"]}
+execute at @a[tag=wok_stepped_on] run summon block_display ~ ~1 ~ {Tags:["wok_sq_vehicle","setup","remove_on_game_end"]}
 scoreboard players operation @e[type=block_display,tag=wok_sq_vehicle,tag=setup,limit=1] wokkaman_weapon = @s pnum
 scoreboard players operation @e[type=block_display,tag=wok_sq_vehicle,tag=setup,limit=1] pnum = @a[tag=wok_stepped_on,limit=1] pnum
 tag @e[type=block_display,tag=wok_sq_vehicle] remove setup

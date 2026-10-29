@@ -1,6 +1,6 @@
 execute unless score @s cool3 matches 0 run return 1
 
-execute at @s run summon marker ~ ~ ~ {Tags:["setup","zar_point","remove_on_death"]}
+execute at @s run summon marker ~ ~ ~ {Tags:["setup","zar_point","remove_on_death","remove_on_game_end"]}
 #nur zur sicherheit:
 execute at @s as @e[type=marker,tag=zar_point] if score @s pnum = @p pnum run kill @s
 

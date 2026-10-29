@@ -18,6 +18,6 @@ execute as @e[type=block_display,tag=zarzahn_vehicle] if score @s pnum = t_pnum2
 scoreboard players reset t_pnum2 temp
 
 # else spawn vehicle
-execute at @s run summon minecraft:block_display ~ ~0.4 ~ {Tags:["zarzahn_vehicle","setup"]}
+execute at @s run summon minecraft:block_display ~ ~0.4 ~ {Tags:["zarzahn_vehicle","setup","remove_on_game_end"]}
 scoreboard players operation @e[type=block_display,tag=zarzahn_vehicle,tag=setup] pnum = @s pnum
 tag @e[type=block_display,tag=zarzahn_vehicle,tag=setup] remove setup

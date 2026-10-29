@@ -1,4 +1,6 @@
 # as flag
+tag @s add remove_on_game_end
+
 kill @e[type=armor_stand,tag=flag]
 data merge entity @s {Silent:1b,Marker:1b,Invisible:1b}
 tag @s add flag

@@ -15,7 +15,7 @@ execute as @s[scores={pnum=12}] run bossbar set minecraft:wark12 max 20
 function rauch:game/ui/bossbar/wark/visible
 execute at @s run playsound minecraft:entity.warden.death master @s
 
-execute at @s run summon marker ~ ~ ~ {Tags:["wark_detect","setup"]}
+execute at @s run summon marker ~ ~ ~ {Tags:["wark_detect","setup","remove_on_game_end"]}
 scoreboard players operation @e[type=marker,tag=wark_detect,tag=setup,limit=1] pnum = @a[tag=t_wark,limit=1] pnum
 scoreboard players operation @e[type=marker,tag=wark_detect,tag=setup,limit=1] wark_charge = @s pnum
 tag @e[type=marker,tag=wark_detect,tag=setup] remove setup

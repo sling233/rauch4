@@ -4,8 +4,8 @@ execute at @s as @e[type=marker,tag=zarzahn] if score @s pnum = @p pnum run retu
 execute if score @s zarzahn_hooking matches 0.. run return 1
 execute unless score @s cool1 matches 0 run return 1
 
-execute at @s[team=Red] run summon marker ~ ~ ~ {Tags:["projectile","zarzahn","setup","red","remove_on_death"]}
-execute at @s[team=Blue] run summon marker ~ ~ ~ {Tags:["projectile","zarzahn","setup","blu","remove_on_death"]}
+execute at @s[team=Red] run summon marker ~ ~ ~ {Tags:["projectile","zarzahn","setup","red","remove_on_death","remove_on_game_end"]}
+execute at @s[team=Blue] run summon marker ~ ~ ~ {Tags:["projectile","zarzahn","setup","blu","remove_on_death","remove_on_game_end"]}
 execute at @s rotated as @s run tp @e[type=marker,tag=setup,tag=zarzahn] ~ ~1.6 ~ ~ ~
 scoreboard players operation @e[type=marker,tag=setup,tag=zarzahn,limit=1] pnum = @s pnum
 tag @e[type=marker,tag=setup,tag=zarzahn] remove setup

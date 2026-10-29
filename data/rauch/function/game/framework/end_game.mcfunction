@@ -1,22 +1,5 @@
-kill @e[type=marker,tag=maxline]
-kill @e[type=marker,tag=koth]
-kill @e[type=armor_stand,tag=stun]
-kill @e[type=armor_stand,tag=flag]
-kill @e[type=marker,tag=flag_pos]
-kill @e[type=spider,tag=raucher_spider]
-kill @e[type=armor_stand,tag=projectile]
-kill @e[type=marker,tag=shield]
-kill @e[type=marker,tag=indicator]
-kill @e[type=marker,tag=projectile]
-kill @e[type=marker,tag=zar_point]
-kill @e[type=marker,tag=hacker_bomb]
-kill @e[type=marker,tag=wark_detect]
-kill @e[type=block_display,tag=zarzahn_vehicle]
-kill @e[type=block_display,tag=wok_vehicle]
-#kill @e[type=boat,tag=wok_boat]
-kill @e[type=marker,tag=wok_boat_rider]
-kill @e[type=item_display,tag=wok_rocket]
 tp @e[type=slime,tag=push] ~ ~-1000 ~
+kill @e[tag=remove_on_game_end]
 #global times und so
 #scoreboard players reset Global center_red
 #scoreboard players reset Global center_blue

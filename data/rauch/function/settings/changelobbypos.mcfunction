@@ -1,4 +1,4 @@
-execute at @s align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["lobby_update"]}
+execute at @s align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["lobby_update","remove_on_game_end"]}
 data modify storage lobby_data position set from entity @e[type=marker,tag=lobby_update,limit=1] Pos
 execute at @e[type=marker,tag=lobby_update] run setworldspawn ~ ~ ~
 kill @e[type=marker,tag=lobby_update]

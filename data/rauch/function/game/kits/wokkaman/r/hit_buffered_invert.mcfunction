@@ -2,7 +2,7 @@
 # if vehicle already exists, cancel
 execute at @s as @e[type=block_display,tag=wok_vehicle] if score @s pnum = @p pnum run return 0
 # else spawn vehicle
-execute as @a if score @s pnum = t_pnum temp at @s run summon minecraft:block_display ~ ~0.4 ~ {Tags:["wok_vehicle","setup"]}
+execute as @a if score @s pnum = t_pnum temp at @s run summon minecraft:block_display ~ ~0.4 ~ {Tags:["wok_vehicle","setup","remove_on_game_end"]}
 scoreboard players operation @e[type=block_display,tag=wok_vehicle,tag=setup] pnum = @s pnum
 tag @e[type=block_display,tag=wok_vehicle,tag=setup] remove setup
 

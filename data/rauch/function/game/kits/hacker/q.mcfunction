@@ -1,7 +1,7 @@
 execute unless score @s cool2 matches 0 run return 1
 
-execute as @s[team=Red] at @s anchored eyes run summon armor_stand ^ ^ ^0.1 {Small:1b,Invulnerable:1b,Invisible:1b,Tags:["red","hacker_bomb","setup","projectile","remove_on_death"]}
-execute as @s[team=Blue] at @s anchored eyes run summon armor_stand ^ ^ ^0.1 {Small:1b,Invulnerable:1b,Invisible:1b,Tags:["blu","hacker_bomb","setup","projectile","remove_on_death"]}
+execute as @s[team=Red] at @s anchored eyes run summon armor_stand ^ ^ ^0.1 {Small:1b,Invulnerable:1b,Invisible:1b,Tags:["red","hacker_bomb","setup","projectile","remove_on_death","remove_on_game_end"]}
+execute as @s[team=Blue] at @s anchored eyes run summon armor_stand ^ ^ ^0.1 {Small:1b,Invulnerable:1b,Invisible:1b,Tags:["blu","hacker_bomb","setup","projectile","remove_on_death","remove_on_game_end"]}
 
 execute as @s at @s anchored eyes run summon marker ^ ^ ^ {Tags:["vector"]}
 

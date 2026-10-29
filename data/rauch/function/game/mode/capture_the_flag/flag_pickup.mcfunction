@@ -1,7 +1,7 @@
 kill @e[type=armor_stand,tag=flag]
 tag @s add flagPickedUp
 effect give @s minecraft:glowing infinite 0 true
-execute at @s run summon marker ~ ~ ~ {Tags:["flag_pos"]}
+execute at @s run summon marker ~ ~ ~ {Tags:["flag_pos","remove_on_game_end"]}
 #scoreboard players set Global flag_min_distance_red 9999999
 #scoreboard players set Global flag_min_distance_blue 9999999
 
