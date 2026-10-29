@@ -1,3 +1,5 @@
+# players have game tag, teams are as the selected (red blue or random)
+
 execute if score Global mode matches 0 run return run function rauch:game/framework/equal_team_setup
 execute if score Global mode matches 1 run return run function rauch:game/framework/equal_team_setup
 execute if score Global mode matches 2 run return run function rauch:game/framework/equal_team_setup
