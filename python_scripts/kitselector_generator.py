@@ -26,7 +26,7 @@ class WokkamanKit(Kit):
 
 
 bolt = Kit("Bolt","Fighter")
-bolt.r_ability = "A short-ranged projectile that explodes after a short travel time, dealing 1.5❤ Damage. If your Q is active this can be used to get extra hits."
+bolt.r_ability = "A projectile that explodes after a short travel time, dealing 1.5❤ Damage. If your Q is active this can be used to get extra hits."
 bolt.q_ability = "You have 4 seconds to hit as many distinct players as possible. After the timer ends, you recieve a +20% damage buff for every unique player hit (stacks additively). You can press Q again to end the timer immediately, to get the damage boost early."
 bolt.f_ability = "+40% Speed for 5 seconds."
 bolt.colors = ["#4AF6F0","#247774","#30A19E","#3DCCC7","#4AF6F0","#4AF6F0","#4AF6F0","#4AF6F0"]
