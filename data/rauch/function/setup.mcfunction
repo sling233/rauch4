@@ -196,6 +196,8 @@ gamerule mob_drops false
 gamerule spawn_mobs false
 execute if score %dev_mode global matches 0 run gamerule send_command_feedback false
 execute if score %dev_mode global matches 1 run gamerule send_command_feedback true
+execute if score %dev_mode global matches 0 run gamerule command_block_output false
+execute if score %dev_mode global matches 1 run gamerule command_block_output true
 gamerule keep_inventory true
 gamerule immediate_respawn true
 gamerule natural_health_regeneration false

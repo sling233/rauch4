@@ -2,9 +2,11 @@
 execute unless score %dev_mode global matches 1 run scoreboard players set %dev_mode global 2
 execute if score %dev_mode global matches 2 run tellraw @a [{selector:"@s"},{"text":" enabled Dev Mode","color":"green"}]
 execute if score %dev_mode global matches 2 run gamerule send_command_feedback true
+execute if score %dev_mode global matches 2 run gamerule command_block_output true
 # on, turn off
 execute if score %dev_mode global matches 1 run tellraw @a [{selector:"@s"},{"text":" disabled Dev Mode","color":"green"}]
 execute if score %dev_mode global matches 1 run gamerule send_command_feedback false
+execute if score %dev_mode global matches 1 run gamerule command_block_output false
 execute if score %dev_mode global matches 1 run scoreboard players set %dev_mode global 0
 
 # actually turn on
