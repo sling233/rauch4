@@ -9,9 +9,9 @@ execute unless score Global version matches 0.. run return run function rauch:se
 # version changed:
 tellraw @a[tag=admin] [{"text":"You installed a new version of the pack, click","color":"yellow"},\
 {"text":" HERE ","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/versions/version_change"}},\
-{"text":"to update."}]
+{"text":"to apply the update."}]
 execute unless entity @a[tag=admin] run tellraw @a [{"text":"You installed a new version of the pack, click","color":"yellow"},\
 {"text":" HERE ","color":"gold","italic":true,"click_event":{"action":"run_command","command":"/function rauch:settings/versions/version_change"}},\
-{"text":"to update."}]
+{"text":"to apply the update."}]
 
 scoreboard players reset latest_version temp
